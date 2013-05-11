@@ -1,0 +1,11 @@
+Package: m23-mdk-base
+Version: 13.1-100646
+Section: base
+Priority: optional
+Architecture: all
+Installed-Size: 208
+Pre-Depends: debconf
+Depends: bash, dialog
+Maintainer: Hauke Goos-Habermann <hhabermann@pc-kiel.de>
+Description: m23 development kit base package
+ This package contains the basic parts of the MDK.

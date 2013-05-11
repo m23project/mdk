@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>./inc/server.php</TITLE>
+<META NAME="description" CONTENT="./inc/server.php">
+<META NAME="keywords" CONTENT="devguide">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="devguide.css">
+
+<LINK REL="next" HREF="node968.html">
+<LINK REL="previous" HREF="node922.html">
+<LINK REL="up" HREF="node133.html">
+<LINK REL="next" HREF="node926.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html14951"
+  HREF="node926.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html14947"
+  HREF="node133.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html14941"
+  HREF="node924.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html14949"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html14952"
+  HREF="node926.html">SERVER_killPID</A>
+<B> Up:</B> <A NAME="tex2html14948"
+  HREF="node133.html">m23 API reference</A>
+<B> Previous:</B> <A NAME="tex2html14942"
+  HREF="node924.html">SCREDIT_newScriptTemplate</A>
+ &nbsp; <B>  <A NAME="tex2html14950"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION008310000000000000000">
+./inc/server.php</A>
+</H1>
+ Author: Hauke Goos-Habermann (HHabermann@pc-kiel.de)
+<BR>
+Description: functions for getting information from the server
+<BR>
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html14953"
+  HREF="node926.html">SERVER_killPID</A>
+<LI><A NAME="tex2html14954"
+  HREF="node927.html">SERVER_killBackgroundJob</A>
+<LI><A NAME="tex2html14955"
+  HREF="node928.html">SERVER_insertLineNumber</A>
+<LI><A NAME="tex2html14956"
+  HREF="node929.html">SERVER_addAdmin</A>
+<LI><A NAME="tex2html14957"
+  HREF="node930.html">SERVER_delAdmin</A>
+<LI><A NAME="tex2html14958"
+  HREF="node931.html">SERVER_fileExists</A>
+<LI><A NAME="tex2html14959"
+  HREF="node932.html">SERVER_getPublicSSHKeyOfm23Server</A>
+<LI><A NAME="tex2html14960"
+  HREF="node933.html">SERVER_changeHtpasswd</A>
+<LI><A NAME="tex2html14961"
+  HREF="node934.html">SERVER_delFromHtpasswd</A>
+<LI><A NAME="tex2html14962"
+  HREF="node935.html">SERVER_addToHtpasswd</A>
+<LI><A NAME="tex2html14963"
+  HREF="node936.html">SERVER_dhcpServerInNetWarn</A>
+<LI><A NAME="tex2html14964"
+  HREF="node937.html">SERVER_sendScriptToSF</A>
+<LI><A NAME="tex2html14965"
+  HREF="node938.html">SERVER_dynamicIPWarn</A>
+<LI><A NAME="tex2html14966"
+  HREF="node939.html">SERVER_tmpNotWritable</A>
+<LI><A NAME="tex2html14967"
+  HREF="node940.html">SERVER_rootFreeSpace</A>
+<LI><A NAME="tex2html14968"
+  HREF="node941.html">SERVER_isProgramRunning</A>
+<LI><A NAME="tex2html14969"
+  HREF="node942.html">SERVER_checkPackageInstalled</A>
+<LI><A NAME="tex2html14970"
+  HREF="node943.html">SERVER_daemonStartStop</A>
+<LI><A NAME="tex2html14971"
+  HREF="node944.html">SERVER_installTool</A>
+<LI><A NAME="tex2html14972"
+  HREF="node945.html">SERVER_programmStatus</A>
+<LI><A NAME="tex2html14973"
+  HREF="node946.html">SERVER_apacheInfo</A>
+<LI><A NAME="tex2html14974"
+  HREF="node947.html">SERVER_mysqlInfo</A>
+<LI><A NAME="tex2html14975"
+  HREF="node948.html">SERVER_dhcpInfo</A>
+<LI><A NAME="tex2html14976"
+  HREF="node949.html">SERVER_LDAPInfo</A>
+<LI><A NAME="tex2html14977"
+  HREF="node950.html">SERVER_programmStatusTableHeader</A>
+<LI><A NAME="tex2html14978"
+  HREF="node951.html">SERVER_runInBackground</A>
+<LI><A NAME="tex2html14979"
+  HREF="node952.html">SERVER_runningInBackground</A>
+<LI><A NAME="tex2html14980"
+  HREF="node953.html">SERVER_runningInScreen</A>
+<LI><A NAME="tex2html14981"
+  HREF="node954.html">SERVER_addLineToFile</A>
+<LI><A NAME="tex2html14982"
+  HREF="node955.html">SERVER_deleteFile</A>
+<LI><A NAME="tex2html14983"
+  HREF="node956.html">SERVER_getFileContents</A>
+<LI><A NAME="tex2html14984"
+  HREF="node957.html">SERVER_putFileContents</A>
+<LI><A NAME="tex2html14985"
+  HREF="node958.html">SERVER_delLineFromFile</A>
+<LI><A NAME="tex2html14986"
+  HREF="node959.html">SERVER_addEtcHosts</A>
+<LI><A NAME="tex2html14987"
+  HREF="node960.html">SERVER_delEtcHosts</A>
+<LI><A NAME="tex2html14988"
+  HREF="node961.html">SERVER_getInstallationMedium</A>
+<LI><A NAME="tex2html14989"
+  HREF="node962.html">SERVER_getOS</A>
+<LI><A NAME="tex2html14990"
+  HREF="node963.html">SERVER_checkDownload</A>
+<LI><A NAME="tex2html14991"
+  HREF="node964.html">SERVER_checkDiskFree</A>
+<LI><A NAME="tex2html14992"
+  HREF="node965.html">SERVER_checkRunInVM</A>
+<LI><A NAME="tex2html14993"
+  HREF="node966.html">SERVER_checkKernel</A>
+<LI><A NAME="tex2html14994"
+  HREF="node967.html">SERVER_multiMkDir</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+root
+2013-05-11
+</ADDRESS>
+</BODY>
+</HTML>

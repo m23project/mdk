@@ -1,0 +1,18 @@
+Date: Sa, 11 Mai 2013 21:13:54 UTC
+Origin: m23
+Suite: stable
+MD5Sum:
+ d3a1709821668a179b24ab9f9b23f1fb            26237 Packages
+ fa57ff0808abb062038821967643cdaf             7963 Packages.bz2
+ 152b0d88c1f7cddeff8d8bd0ab5166c1             7937 Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e                0 Release
+SHA1:
+ 01cbcf5a224aeee5278a645e1d09d11184471362            26237 Packages
+ bb1957e130ac5628b48b0fd1f8576029f7ecbd6d             7963 Packages.bz2
+ 52ec0b48778a5c623905f2bae5f9aa3d25dcd161             7937 Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Release
+SHA256:
+ 9f304c66b9690f005eed6bdf1a5bd3fb5d5705279b4e2b886912d2433d3e61df            26237 Packages
+ f30722794e2c27324a94b04804caac1269a42f977a65993ccf7cac6c6d28b6e7             7963 Packages.bz2
+ e52a1a99a84d2f8fa4df4aeb2192f08c61a0752eaad72bcc7acd1ec241b13f82             7937 Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Release
