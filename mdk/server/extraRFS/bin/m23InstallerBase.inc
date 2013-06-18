@@ -113,6 +113,9 @@ do
 	echo "$host" > /etc/hostname
 done
 
+	grep -v '192\.168\.1' /etc/hosts > /tmp/hosts
+	cat /tmp/hosts > /etc/hosts
+
 	#/etc/hosts
 	echo "$ip	$host" >> /etc/hosts
 
@@ -453,7 +456,7 @@ showRootPwDialog()
 showNetworkDialog()
 {
 	# enter hostname
-	showDialog "$I18N_windowheader" "$I18N_hostnameheader" inputbox 10 51 "$I18N_hostnametext"
+	showDialog "$I18N_windowheader" "$I18N_hostnameheader" inputbox 11 51 "$I18N_hostnametext"
 	host=`cat /tmp/dialog.value`
 
 	# enter IP

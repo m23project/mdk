@@ -182,7 +182,7 @@ then
 	lennyConfigured=$?
 
 	#this part could be executed more times
-	if  $lennyConfigured || [ ! -f /m23/dhcp/dhcpd.conf ] || [ `grep domain-name-servers /m23/dhcp/dhcpd.conf -c` -eq 0 ] || $reconf
+	if [ $lennyConfigured -eq 0 ] || [ ! -f /m23/dhcp/dhcpd.conf ] || [ `grep domain-name-servers /m23/dhcp/dhcpd.conf -c` -eq 0 ] || $reconf
 	then
 	
 		#Create /m23/dhcp if it's missing, set permissions and owner
@@ -586,13 +586,20 @@ then
 	#Delete localhost alias
 	sed -i '/Host_Alias[ \t]*LOCALHOST/d' /etc/sudoers
 	sed -i '/Host alias specification/d' /etc/sudoers
+	
+	grdmAmount=$(grep -c grdmgpg /etc/sudoers)
+	if [ $grdmAmount -eq 0 ]
+	then
+		echo "# User privilege specification
+www-data          ALL= (grdmgpg) NOPASSWD:/usr/bin/gpg
+
+" >> /etc/sudoers
+	fi
+	
 
 	#add access to sudo: the Apache user should be able to call gpg under the grdmgpg user
 	echo "# Host alias specification
 Host_Alias	LOCALHOST=127.0.0.1/255.255.255.0, `hostname`
-
-# User privilege specification
-www-data          ALL= (grdmgpg) NOPASSWD:/usr/bin/gpg
 " >> /etc/sudoers
 
 	#Write a file with settings for the GPG key generation
@@ -774,6 +781,22 @@ grep "`cat ~/.ssh/id_dsa.pub 2> /dev/null`" ~/.ssh/authorized_keys -c 2> /dev/nu
 if [ $? -ne 0 ]
 then
 	cat ~/.ssh/id_dsa.pub 2> /dev/null >> ~/.ssh/authorized_keys
+fi
+
+
+#Fix /etc/sudoers, if there are more than one entry for grdmgpg
+grdmAmount=$(grep -c grdmgpg /etc/sudoers)
+if [ $grdmAmount -gt 1 ]
+then
+	awk -vAM=$grdmAmount '
+	BEGIN { cnt=1 }
+	/grdmgpg/ {
+		if (cnt < AM)
+		{ cnt++; next}
+	}
+	{ print }
+	' /etc/sudoers > /tmp/sudoers
+	cat /tmp/sudoers > /etc/sudoers
 fi
 
 db_stop
