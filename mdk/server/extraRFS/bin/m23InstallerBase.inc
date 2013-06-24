@@ -139,6 +139,8 @@ ifconfig lo up
 #configure the MySQL server configuration file my.cnf
 configureMySQLmycnf()
 {
+	chmod 777 /tmp
+
 	echo "$I18N_ConfiguringMySQL: /etc/mysql/my.cnf"
 
 	#rerun mysql-server configure if the needed database structures are not present
@@ -158,6 +160,11 @@ configureMySQLmycnf()
 		mv /tmp/my.cnf /etc/mysql/my.cnf
 		chown root.root /etc/mysql/my.cnf
 		chmod 644 /etc/mysql/my.cnf
+	fi
+	
+	if [ $(grep -c 'Debian GNU/Linux 7' /etc/issue) -gt 0 ]
+	then
+		sed -i 's/skip-innodb/#skip-innodb/g' /etc/mysql/my.cnf
 	fi
 
 	#starting the server
@@ -703,6 +710,7 @@ extractFromCD()
 	cd $installPath
 	rm mkAllMissingDirectories.sh 2> /dev/null
 	extractFile /mnt/cdrom/m23image.tar.7z "$I18N_extractingservertext"
+
 	cd /mnt/cdrom
 	extractBaseFiles
 }
@@ -750,6 +758,7 @@ chrootSystem()
 	
 	#cat /lib/modules/*/modules.dep > "/lib/modules/$(uname -r)/modules.dep"
 
+	chmod 777 /tmp
 
 	mount /proc
 	mount /sys
@@ -828,8 +837,16 @@ installGrub()
 		createInitrd
 
 		grub-mkdevicemap
+		
+		rm /boot/grub/menu.lst
+		
 		grub-install --recheck --force $bootDevice
-		update-grub
+		update-grub -y
+
+		if [ $? -ne 0 ]
+		then
+			/usr/sbin/update-grub
+		fi
 	fi
 
 	showDialog "$I18N_windowheader" "$I18N_windowheader" msgbox 14 45 "$I18N_installationfinishedtext"
