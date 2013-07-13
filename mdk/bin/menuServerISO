@@ -95,7 +95,7 @@ case $choice in
 
 #transfers the m23 base system image to the master server
 	"transfer")
-		scp $ISOBuildDir/m23image.tar.7z 192.168.1.77:$ISOBuildDir
+		scp -o UserKnownHostsFile=/dev/null -o VerifyHostKeyDNS=no -o CheckHostIP=no -o StrictHostKeyChecking=no $ISOBuildDir/m23image.tar.7z root@192.168.1.77:$ISOBuildDir
 		exit;;
 
 #download and make kernel
@@ -107,7 +107,10 @@ case $choice in
 
 #build m23image.7z
 	"osimage")
-		createOSImage
+		if [ ! $(hostname) = 'tux09' ]
+		then
+			createOSImage
+		fi
 		/mdk/bin/menuServerISO
 		exit;;
 

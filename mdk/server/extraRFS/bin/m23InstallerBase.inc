@@ -554,7 +554,8 @@ normalPartition()
 	#create the installation partition
 	showDialog "$I18N_windowheader" "$I18N_formatinghdtext" infobox 12 70 "$I18N_creatingbootpartition"
 	parted -s /dev/$installdrive mkpart primary 2 $rootsize > /dev/null
-	mkfs.ext3 /dev/$installdrive"1" > /dev/null
+	modprobe ext4
+	mkfs.ext4 /dev/$installdrive"1" > /dev/null
 
 	#create the swap partition
 	showDialog "$I18N_windowheader" "$I18N_formatinghdtext" infobox 12 70 "$I18N_creatingswappartition"
@@ -805,6 +806,11 @@ setRootPwd()
 #Creates the initrds for all installed kernel
 createInitrd()
 {
+	for kernelName in `ls /lib/modules/ | grep -v m23`
+	do
+		touch "/boot/initrd.img-$kernelName"
+	done
+
 	for kimgpkg in `dpkg --get-selections | grep linux-image | grep -v deinstall$ | tr -d '[:blank:]' | sed 's/install$//g'`
 	do
 		dpkg-reconfigure $kimgpkg
@@ -836,13 +842,9 @@ installGrub()
 
 		createInitrd
 
-		grub-mkdevicemap
-		
-		rm /boot/grub/menu.lst
-		
 		grub-install --recheck --force $bootDevice
-		update-grub -y
 
+		update-grub -y 2> /dev/null
 		if [ $? -ne 0 ]
 		then
 			/usr/sbin/update-grub

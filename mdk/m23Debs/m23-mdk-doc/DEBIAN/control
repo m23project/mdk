@@ -1,9 +1,9 @@
 Package: m23-mdk-doc
-Version: 13.1-100656
+Version: 13.2-100668
 Section: base
 Priority: optional
 Architecture: all
-Installed-Size: 22404
+Installed-Size: 22412
 Pre-Depends: debconf
 Depends: bash, dialog
 Suggests: m23-mdk-screenshots
