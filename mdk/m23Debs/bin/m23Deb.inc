@@ -5,6 +5,21 @@ debPath="/mdk/server/iso/pool/"
 
 
 
+#Determines the maximum upload speed
+rsyncUploadSpeedLimit()
+{
+	type rsUS 2> /dev/null > /dev/null
+	if [ $? -eq 0 ]
+	then
+		rsUS
+	else
+		echo -n '--bwlimit=0'
+	fi
+}
+
+
+
+
 
 #Generates a list of all base system packages for all (Debian/Ubuntu) releases
 mkAllBaseSysFileLists()
@@ -347,11 +362,11 @@ uploadClientPackagesToSF()
 	makePackages
 	mkRelease
 	#Upload to webspace
-	rsync -raPy -e ssh --delete-after --delete /mdk/m23Debs/debs/ hhabermann,m23@web.sourceforge.net:/home/project-web/m23/htdocs/m23debs/
+	rsync `rsyncUploadSpeedLimit` -raPy -e ssh --delete-after --delete /mdk/m23Debs/debs/ hhabermann,m23@web.sourceforge.net:/home/project-web/m23/htdocs/m23debs/
 	#Upload to FRS
-	rsync -avPyrL -e ssh --delete-after --delete /mdk/m23Debs/debs/ "hhabermann,m23@frs.sourceforge.net:/home/frs/project/m/m2/m23/m23debs"
+	rsync `rsyncUploadSpeedLimit` -avPyrL -e ssh --delete-after --delete /mdk/m23Debs/debs/ "hhabermann,m23@frs.sourceforge.net:/home/frs/project/m/m2/m23/m23debs"
 	#Upload to backups
-	rsync -avPyrL -e ssh /mdk/m23Debs/debs/*.deb "hhabermann,m23@frs.sourceforge.net:/home/frs/project/m/m2/m23/m23clientpackages"
+	rsync `rsyncUploadSpeedLimit` -avPyrL -e ssh /mdk/m23Debs/debs/*.deb "hhabermann,m23@frs.sourceforge.net:/home/frs/project/m/m2/m23/m23clientpackages"
 }
 
 
