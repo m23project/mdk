@@ -448,7 +448,7 @@ mkRelease()
 	apt-ftparchive release -o APT::FTPArchive::Release::Origin=m23 -o APT::FTPArchive::Release::Suite=stable .  > Release
 	
 	id dodger 2> /dev/null > /dev/null
-	if [ $0 -eq 0 ]
+	if [ $? -eq 0 ]
 	then
 		cat Release | sudo -u dodger gpg --default-key 0x3305E63A --no-options --detach-sign --armor --textmode > Release.gpg
 		if [ $(find Release.gpg -printf "%s") -eq 0 ]
