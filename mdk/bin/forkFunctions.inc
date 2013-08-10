@@ -655,6 +655,8 @@ moveDevel2Release()
 	#Generate postfix for the outdated directories
 	outdated=$(date +"outdated_by_%F_%H-%M")
 
+	/mdk/doc/changelog-merger.php $m23DevelDir/doc/changelog $m23ReleaseDir/doc/changelog /tmp/changelog
+
 	#Rename the release directories of m23/MDK to outdated directories
 	mv $m23ReleaseDir "$m23ReleaseDir$outdated"
 	mv $mdkReleaseDir "$mdkReleaseDir$outdated"
@@ -665,6 +667,9 @@ moveDevel2Release()
 
 	#Remove the -devel tag from the codename
 	sed -i 's/rock-devel/rock/' $m23ReleaseDir/inc/version.php
+
+	cp $m23ReleaseDir/doc/changelog $m23ReleaseDir/doc/changelog.bak
+	cat /tmp/changelog > $m23ReleaseDir/doc/changelog
 
 	#Make the release version active
 	switchRelease
