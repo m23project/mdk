@@ -31,14 +31,14 @@ Package: hwdata-knoppix
 Version: 0.172-5
 Architecture: all
 Maintainer: Klaus Knopper <knoppix@knopper.net>
-Installed-Size: 1316
+Installed-Size: 1476
 Replaces: hwdata
 Provides: hwdata
 Filename: ./hwdata-knoppix_0.172-5_all.deb
-Size: 315326
-MD5sum: d1930bd663f948ee3cce1a5f382a082e
-SHA1: a5364febcf62de1ea4ab8441d6e62343e55e90df
-SHA256: 494f9d0735fdc8a8e3602f662644f9e1b7018bab981e2a4a69119ad7fce42d63
+Size: 346780
+MD5sum: 91bda064bbfe231a4ba1e2c5bce37320
+SHA1: 556b60769db39d82465f82f923de78540f9a0dcf
+SHA256: 4a5cf19ceb8abe29474f219de89e9cd4914d26ff774ffcb32fc918d53d2acc66
 Section: misc
 Priority: optional
 Description: hardware identification / configuration data
@@ -47,18 +47,18 @@ Description: hardware identification / configuration data
  Its needed for the kudzu/hwsetup hardware detection of KNOPPIX.
 
 Package: hwsetup
-Version: 1.4-15
+Version: 1.4-19
 Architecture: i386
 Maintainer: Klaus Knopper <knoppix@knopper.net>
 Installed-Size: 52
 Conflicts: xorgconfig-knoppix
 Replaces: xorgconfig-knoppix
 Provides: xorgconfig-knoppix
-Filename: ./hwsetup_1.4-15_i386.deb
-Size: 10384
-MD5sum: 183624c1f1cffc6b5233ea1766de2290
-SHA1: 9f495d4cf807fc254330702e17303bdfc4ebcdb0
-SHA256: 7933e0c4f3156cfeea7b2906b93c6eba3148478e2864c9dac37548d0ef23db13
+Filename: ./hwsetup_1.4-19_i386.deb
+Size: 10502
+MD5sum: 84029d4a54d5b186f6b791a3c3238675
+SHA1: 68f2159cbc01f206e03ac599169dd521c2eeeb6d
+SHA256: eb8254d9fb895c985509ece1f14c7447ce1c708f60f0e0ebae63a859eed1e56e
 Section: devel
 Priority: optional
 Description: Automatic hardware configuration for KNOPPIX
@@ -434,10 +434,10 @@ Architecture: all
 Maintainer: Klaus Knopper <knopper@knopper.net>
 Installed-Size: 56
 Filename: ./xf86config-knoppix_0.8-6_all.deb
-Size: 8012
-MD5sum: 1121ce4c29610a729f30e6ee11fee302
-SHA1: 2692e60538044906fec0441446925e56fccfbf65
-SHA256: 87d680509545c5911c74a9f8d66d232f71ca71b67136aa40b99d0c4457cb7de6
+Size: 8016
+MD5sum: 07fff3aae47c042e17f6c0c098cbfa3f
+SHA1: 77f8177a3d7c066c2cc148a64e143d65f9249b7f
+SHA256: a8a8f1311973452526723b4f24b7e5d78a1cb65d6c538026692c41bb2daacf59
 Section: knoppix
 Priority: optional
 Description: XFree86 template config files and setup program for knoppix
@@ -450,10 +450,10 @@ Architecture: all
 Maintainer: Klaus Knopper <knopper@knopper.net>
 Installed-Size: 56
 Filename: ./xorgconfig-knoppix_0.9-12_all.deb
-Size: 9512
-MD5sum: bb9446b4f4ef3f009077c891e3db1277
-SHA1: 15fa3c06ee7be126ad1a642bb5e495828d11e641
-SHA256: 16a324ffc454a69b0743f4eb8dbb23170008a8ed8f196d5b06c098f65613dc61
+Size: 9514
+MD5sum: 49488abe78abecab6c9885e4f5e32f13
+SHA1: 52fd8e3a05af6421cb249c187d4f97c8b96af4e5
+SHA256: 22ff9524d487e73ce646357df50affe72561fe000f2d28712dd8de0d481db6b9
 Section: knoppix
 Priority: optional
 Description: Xorg template config files and setup program for knoppix

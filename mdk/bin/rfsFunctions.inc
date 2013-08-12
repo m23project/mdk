@@ -279,6 +279,9 @@ createRFSBins()
 	createRFScopyLib libhal.so.1
 	createRFScopyLib libudev.so.0
 	createRFScopyLib libtinfo.so.5
+	createRFScopyLib libtasn1.so.3
+	createRFScopyLib libncurses.so.5
+	createRFScopyLib libp11-kit.so.0
 	echo "done"
 }
 
@@ -619,6 +622,9 @@ done
 
 mkdir completeExtracted
 	dpkg-deb -X /mdk/m23Debs/debs/hwsetup*$arch*.deb completeExtracted
+	dpkg-deb -X /mdk/m23Debs/debs/hwsetup*.deb completeExtracted
+	read lala
+
 	dpkg-deb -X /mdk/m23Debs/debs/hwdata-knoppix*.deb completeExtracted
 	dpkg-deb -X /mdk/m23Debs/debs/ddcxinfo-knoppix*.deb completeExtracted
 	dpkg-deb -X /mdk/m23Debs/debs/m23hwscanner_*$arch*.deb completeExtracted
