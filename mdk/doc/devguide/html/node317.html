@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>DHCP_bootTypeToNewFormat</TITLE>
-<META NAME="description" CONTENT="DHCP_bootTypeToNewFormat">
+<TITLE>DHCP_delSubnetDefinition</TITLE>
+<META NAME="description" CONTENT="DHCP_delSubnetDefinition">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node318.html">
 <LINK REL="previous" HREF="node316.html">
-<LINK REL="up" HREF="node309.html">
+<LINK REL="up" HREF="node313.html">
 <LINK REL="next" HREF="node318.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html7123"
+<A NAME="tex2html7173"
   HREF="node318.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html7119"
-  HREF="node309.html">
+<A NAME="tex2html7169"
+  HREF="node313.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html7113"
+<A NAME="tex2html7163"
   HREF="node316.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html7121"
+<A NAME="tex2html7171"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html7124"
-  HREF="node318.html">DHCP_addClient</A>
-<B> Up:</B> <A NAME="tex2html7120"
-  HREF="node309.html">./inc/dhcp.php</A>
-<B> Previous:</B> <A NAME="tex2html7114"
-  HREF="node316.html">DHCP_delDynamicRange</A>
- &nbsp; <B>  <A NAME="tex2html7122"
+<B> Next:</B> <A NAME="tex2html7174"
+  HREF="node318.html">DHCP_addDynamicRange</A>
+<B> Up:</B> <A NAME="tex2html7170"
+  HREF="node313.html">./inc/dhcp.php</A>
+<B> Previous:</B> <A NAME="tex2html7164"
+  HREF="node316.html">DHCP_addSubnetDefinition</A>
+ &nbsp; <B>  <A NAME="tex2html7172"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00898000000000000000">
-DHCP_bootTypeToNewFormat</A>
+<H2><A NAME="SECTION00894000000000000000">
+DHCP_delSubnetDefinition</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Converts a boolean boot type to the new string format.
+<SPAN  CLASS="textbf">Description:</SPAN> Removes a subnet definition from the dhcpd.conf.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>bootType: Boolean or string format (e.g. "pxe") boot type.
+<LI>subnet: The subnet.
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>String format (e.g. "pxe") boot type.
+<LI>netmask: netmask for the ip
 </LI>
 </UL>
 
@@ -74,7 +70,7 @@ DHCP_bootTypeToNewFormat</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

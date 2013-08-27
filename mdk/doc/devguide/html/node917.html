@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>RMV_set</TITLE>
-<META NAME="description" CONTENT="RMV_set">
+<TITLE>PREF_getClientPreferences</TITLE>
+<META NAME="description" CONTENT="PREF_getClientPreferences">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node918.html">
 <LINK REL="previous" HREF="node916.html">
-<LINK REL="up" HREF="node913.html">
+<LINK REL="up" HREF="node911.html">
 <LINK REL="next" HREF="node918.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html14857"
+<A NAME="tex2html14907"
   HREF="node918.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html14853"
-  HREF="node913.html">
+<A NAME="tex2html14903"
+  HREF="node911.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html14847"
+<A NAME="tex2html14897"
   HREF="node916.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html14855"
+<A NAME="tex2html14905"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html14858"
-  HREF="node918.html">RMV_get</A>
-<B> Up:</B> <A NAME="tex2html14854"
-  HREF="node913.html">./inc/remotevar.php</A>
-<B> Previous:</B> <A NAME="tex2html14848"
-  HREF="node916.html">RMV_get4IP</A>
- &nbsp; <B>  <A NAME="tex2html14856"
+<B> Next:</B> <A NAME="tex2html14908"
+  HREF="node918.html">PREF_getValue</A>
+<B> Up:</B> <A NAME="tex2html14904"
+  HREF="node911.html">./inc/preferences.php</A>
+<B> Previous:</B> <A NAME="tex2html14898"
+  HREF="node916.html">PREF_loadAllPreferenceValues</A>
+ &nbsp; <B>  <A NAME="tex2html14906"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008294000000000000000">
-RMV_set</A>
+<H2><A NAME="SECTION008286000000000000000">
+PREF_getClientPreferences</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> creates or updates a variable for the ip of the calling client
+<SPAN  CLASS="textbf">Description:</SPAN> list all preferences
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>var: name of the variable to store
+<LI>default: The name of the preference to list first
 </LI>
-<LI>value: value to set
+<LI>directOutput: If enabled the preference names will be given out as a HTML option list. If disabled an array with the preference names as key and value will be returned.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Array with the preference names or nothing on enabled directOutput.
 </LI>
 </UL>
 
@@ -70,7 +76,7 @@ RMV_set</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

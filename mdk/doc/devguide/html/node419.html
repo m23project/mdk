@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_getAfterPartition</TITLE>
-<META NAME="description" CONTENT="FDISK_getAfterPartition">
+<TITLE>FDISK_definePartitionSelection</TITLE>
+<META NAME="description" CONTENT="FDISK_definePartitionSelection">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node420.html">
 <LINK REL="previous" HREF="node418.html">
-<LINK REL="up" HREF="node357.html">
+<LINK REL="up" HREF="node362.html">
 <LINK REL="next" HREF="node420.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html8477"
+<A NAME="tex2html8527"
   HREF="node420.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html8473"
-  HREF="node357.html">
+<A NAME="tex2html8523"
+  HREF="node362.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html8467"
+<A NAME="tex2html8517"
   HREF="node418.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html8475"
+<A NAME="tex2html8525"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html8478"
-  HREF="node420.html">FDISK_getBeforeFristPartition</A>
-<B> Up:</B> <A NAME="tex2html8474"
-  HREF="node357.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html8468"
-  HREF="node418.html">FDISK_getPartitionPercent</A>
- &nbsp; <B>  <A NAME="tex2html8476"
+<B> Next:</B> <A NAME="tex2html8528"
+  HREF="node420.html">FDISK_getPartitionsFromParam</A>
+<B> Up:</B> <A NAME="tex2html8524"
+  HREF="node362.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html8518"
+  HREF="node418.html">FDISK_listPartitions</A>
+ &nbsp; <B>  <A NAME="tex2html8526"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081262000000000000000">
-FDISK_getAfterPartition</A>
+<H2><A NAME="SECTION0081257000000000000000">
+FDISK_definePartitionSelection</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> calculates ??? of free size after a selected partition
+<SPAN  CLASS="textbf">Description:</SPAN> Defines a HTML selection with the partitions (/dev/hda1, /dev/hda2, ...) of a device
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
-<LI>vDev: Virtual (internally used) device number.
+<LI>vDev: Virtual (internally used) device number or -1, if all partitions on all devices should be listed.
 </LI>
-<LI>vPart: Virtual (internally used) partition number. This is normally another number than the physical number (e.g. 1 on /dev/hda1)
+<LI>selName: name of the selection
 </LI>
-<LI>factor: the factor to multiplay percent amount of free space
+<LI>excludeType: type of partitions, not to show in the selection
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>The selected partition.
 </LI>
 </UL>
 
@@ -74,7 +80,7 @@ FDISK_getAfterPartition</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

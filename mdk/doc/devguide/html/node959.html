@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_addEtcHosts</TITLE>
-<META NAME="description" CONTENT="SERVER_addEtcHosts">
+<TITLE>SERVER_daemonStartStop</TITLE>
+<META NAME="description" CONTENT="SERVER_daemonStartStop">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node960.html">
 <LINK REL="previous" HREF="node958.html">
-<LINK REL="up" HREF="node925.html">
+<LINK REL="up" HREF="node936.html">
 <LINK REL="next" HREF="node960.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15401"
+<A NAME="tex2html15462"
   HREF="node960.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15397"
-  HREF="node925.html">
+<A NAME="tex2html15458"
+  HREF="node936.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15391"
+<A NAME="tex2html15452"
   HREF="node958.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15399"
+<A NAME="tex2html15460"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15402"
-  HREF="node960.html">SERVER_delEtcHosts</A>
-<B> Up:</B> <A NAME="tex2html15398"
-  HREF="node925.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html15392"
-  HREF="node958.html">SERVER_delLineFromFile</A>
- &nbsp; <B>  <A NAME="tex2html15400"
+<B> Next:</B> <A NAME="tex2html15463"
+  HREF="node960.html">SERVER_installTool</A>
+<B> Up:</B> <A NAME="tex2html15459"
+  HREF="node936.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html15453"
+  HREF="node958.html">SERVER_checkPackageInstalled</A>
+ &nbsp; <B>  <A NAME="tex2html15461"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083134000000000000000">
-SERVER_addEtcHosts</A>
+<H2><A NAME="SECTION0083123000000000000000">
+SERVER_daemonStartStop</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Adds a host to /etc/hosts and /etc/backuppc/hosts (if it doesn't exists allready)
+<SPAN  CLASS="textbf">Description:</SPAN> starts, stops and restarts daemons
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>hostname: name of the host to add
+<LI>daemonScript: the file name of the script, that handles the real starting, stopping and restarting and understands the $action
 </LI>
-<LI>ip: its IP
+<LI>action: start, stop or restart
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: true on successfully execution otherwise false.
 </LI>
 </UL>
 
@@ -70,7 +76,7 @@ SERVER_addEtcHosts</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

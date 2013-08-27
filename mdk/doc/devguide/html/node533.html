@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELP_getHelp</TITLE>
-<META NAME="description" CONTENT="HELP_getHelp">
+<TITLE>HELPER_getFileContents</TITLE>
+<META NAME="description" CONTENT="HELPER_getFileContents">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node534.html">
 <LINK REL="previous" HREF="node532.html">
-<LINK REL="up" HREF="node531.html">
+<LINK REL="up" HREF="node501.html">
 <LINK REL="next" HREF="node534.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9905"
+<A NAME="tex2html9953"
   HREF="node534.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9901"
-  HREF="node531.html">
+<A NAME="tex2html9949"
+  HREF="node501.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9895"
+<A NAME="tex2html9943"
   HREF="node532.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9903"
+<A NAME="tex2html9951"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9906"
-  HREF="node534.html">HELP_getHelpString</A>
-<B> Up:</B> <A NAME="tex2html9902"
-  HREF="node531.html">./inc/help.php</A>
-<B> Previous:</B> <A NAME="tex2html9896"
-  HREF="node532.html">HELP_showHelp</A>
- &nbsp; <B>  <A NAME="tex2html9904"
+<B> Next:</B> <A NAME="tex2html9954"
+  HREF="node534.html">HELPER_showFileContents</A>
+<B> Up:</B> <A NAME="tex2html9950"
+  HREF="node501.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html9944"
+  HREF="node532.html">HELPER_putFileContents</A>
+ &nbsp; <B>  <A NAME="tex2html9952"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008152000000000000000">
-HELP_getHelp</A>
+<H2><A NAME="SECTION0081432000000000000000">
+HELPER_getFileContents</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returnes the help block for the online help
+<SPAN  CLASS="textbf">Description:</SPAN> returnes the contents of a file (the file is read to a maximum of 5 MB)
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>topic: the name of the help file or name of a man page starting with "man://" e.g. man://tar
-</LI>
-<LI>language: two character language description (e.g. de, en, fr,...)
-</LI>
-<LI>fileName: full path to a help file in a directory with language short name
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>help block string
+<LI>fileName: name of the file to read
 </LI>
 </UL>
 
@@ -78,7 +68,7 @@ HELP_getHelp</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

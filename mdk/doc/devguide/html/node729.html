@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>MASS_minMaxIP</TITLE>
-<META NAME="description" CONTENT="MASS_minMaxIP">
+<TITLE>MASS_readDBFile</TITLE>
+<META NAME="description" CONTENT="MASS_readDBFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node730.html">
 <LINK REL="previous" HREF="node728.html">
-<LINK REL="up" HREF="node710.html">
+<LINK REL="up" HREF="node718.html">
 <LINK REL="next" HREF="node730.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12440"
+<A NAME="tex2html12493"
   HREF="node730.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12436"
-  HREF="node710.html">
+<A NAME="tex2html12489"
+  HREF="node718.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12430"
+<A NAME="tex2html12483"
   HREF="node728.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12438"
+<A NAME="tex2html12491"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12441"
-  HREF="node730.html">MASS_generateNetmask</A>
-<B> Up:</B> <A NAME="tex2html12437"
-  HREF="node710.html">./inc/massTools.php</A>
-<B> Previous:</B> <A NAME="tex2html12431"
-  HREF="node728.html">MASS_ipGenerator</A>
- &nbsp; <B>  <A NAME="tex2html12439"
+<B> Next:</B> <A NAME="tex2html12494"
+  HREF="node730.html">MASS_readDBFileRaw</A>
+<B> Up:</B> <A NAME="tex2html12490"
+  HREF="node718.html">./inc/massTools.php</A>
+<B> Previous:</B> <A NAME="tex2html12484"
+  HREF="node728.html">MASS_openDBFile</A>
+ &nbsp; <B>  <A NAME="tex2html12492"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082119000000000000000">
-MASS_minMaxIP</A>
+<H2><A NAME="SECTION0082111000000000000000">
+MASS_readDBFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> calculates the possible minimum and maximum IP of a given netmask. The IPs are returned as an array: index 0 = minimum; index 1 = maximum.
+<SPAN  CLASS="textbf">Description:</SPAN> reads a line from the DB file and returnes an associated array with the properties as key and the fields of the file as values.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>netmask: netmask to use
+<LI>fileName: name of the DB file
 </LI>
-<LI>ip: is used if the can only be set the current part of the ip (max and min ip part == 255)
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Associative array with the values of the DB line or false, if the line was empty.
 </LI>
 </UL>
 
@@ -70,7 +74,7 @@ MASS_minMaxIP</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

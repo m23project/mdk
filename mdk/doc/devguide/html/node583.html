@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_getValidSelected</TITLE>
-<META NAME="description" CONTENT="HTML_getValidSelected">
+<TITLE>HTML_showTableHeader</TITLE>
+<META NAME="description" CONTENT="HTML_showTableHeader">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node584.html">
 <LINK REL="previous" HREF="node582.html">
-<LINK REL="up" HREF="node536.html">
+<LINK REL="up" HREF="node541.html">
 <LINK REL="next" HREF="node584.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10559"
+<A NAME="tex2html10612"
   HREF="node584.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10555"
-  HREF="node536.html">
+<A NAME="tex2html10608"
+  HREF="node541.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10549"
+<A NAME="tex2html10602"
   HREF="node582.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10557"
+<A NAME="tex2html10610"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10560"
-  HREF="node584.html">HTML_selection</A>
-<B> Up:</B> <A NAME="tex2html10556"
-  HREF="node536.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html10550"
-  HREF="node582.html">array_makeFirst</A>
- &nbsp; <B>  <A NAME="tex2html10558"
+<B> Next:</B> <A NAME="tex2html10613"
+  HREF="node584.html">HTML_showTableEnd</A>
+<B> Up:</B> <A NAME="tex2html10609"
+  HREF="node541.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html10603"
+  HREF="node582.html">HTML_listSelection</A>
+ &nbsp; <B>  <A NAME="tex2html10611"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081647000000000000000">
-HTML_getValidSelected</A>
+<H2><A NAME="SECTION0081642000000000000000">
+HTML_showTableHeader</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Checks for a valid selected value from a list of possible values. In case the value could not be found, a default value is taken.
+<SPAN  CLASS="textbf">Description:</SPAN> prints the header of a shadowed table
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>selected: Array or single value to check, if it is on the list aof array keys.
+<LI>centerTable: set to true if the table should be centered vertically
 </LI>
-<LI>arrayKeys: An array that holds the possible returned values (array keys).
+<LI>tableStyle: CSS class of the inner table.
 </LI>
-<LI>defaultSelection: The value of the item to select by default.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>A valid value from a list of possible values.
+<LI>width: Width of the table.
 </LI>
 </UL>
 
@@ -78,7 +72,7 @@ HTML_getValidSelected</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

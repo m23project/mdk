@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_JSMenuOpener</TITLE>
-<META NAME="description" CONTENT="HTML_JSMenuOpener">
+<TITLE>HTML_liveLogArea</TITLE>
+<META NAME="description" CONTENT="HTML_liveLogArea">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node555.html">
 <LINK REL="previous" HREF="node553.html">
-<LINK REL="up" HREF="node536.html">
+<LINK REL="up" HREF="node541.html">
 <LINK REL="next" HREF="node555.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10211"
+<A NAME="tex2html10264"
   HREF="node555.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10207"
-  HREF="node536.html">
+<A NAME="tex2html10260"
+  HREF="node541.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10201"
+<A NAME="tex2html10254"
   HREF="node553.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10209"
+<A NAME="tex2html10262"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10212"
-  HREF="node555.html">HTML_jQueryMenu</A>
-<B> Up:</B> <A NAME="tex2html10208"
-  HREF="node536.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html10202"
-  HREF="node553.html">HTML_JSMenuCloseAllEntries</A>
- &nbsp; <B>  <A NAME="tex2html10210"
+<B> Next:</B> <A NAME="tex2html10265"
+  HREF="node555.html">HTML_checkboxChangerButtons</A>
+<B> Up:</B> <A NAME="tex2html10261"
+  HREF="node541.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html10255"
+  HREF="node553.html">HTML_hiddenVar</A>
+ &nbsp; <B>  <A NAME="tex2html10263"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081618000000000000000">
-HTML_JSMenuOpener</A>
+<H2><A NAME="SECTION0081613000000000000000">
+HTML_liveLogArea</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Opens a menu entry when moving the mouse over the title and closes all other entries of the same menu.
+<SPAN  CLASS="textbf">Description:</SPAN> Creates a log area that updates itself via AJAX by polling from a given URL.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>menuName: Name of the complete menu. This name must be the same on all entries belonging to the same menu.
+<LI>htmlNames: Name of the log area.
 </LI>
-<LI>entryName: Name of the entry. This name must be unique.
+<LI>width: The width in characters of the log area.
 </LI>
-<LI>title: Title for the menu entry.
+<LI>height: The height in characters of the log area.
 </LI>
-<LI>html: HTML code of the menu entry. Here can stand all that is expressable with HTML. This part is shown and hidden.
+<LI>url: The HTTP URL to poll.
 </LI>
-<LI>titleCSS: CSS class for marking the title.
+<LI>timeout: Time in milliseconds to poll the URL for new status.
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>The HTML code for displaying the menu entry.
+<LI>maxLines: Maximum amount of lines to show in the log area (older lines are removed, when there are too many).
 </LI>
 </UL>
 
@@ -82,7 +78,7 @@ HTML_JSMenuOpener</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

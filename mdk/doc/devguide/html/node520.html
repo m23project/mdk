@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_listFilesInDir</TITLE>
-<META NAME="description" CONTENT="HELPER_listFilesInDir">
+<TITLE>HELPER_passGenerator</TITLE>
+<META NAME="description" CONTENT="HELPER_passGenerator">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node521.html">
 <LINK REL="previous" HREF="node519.html">
-<LINK REL="up" HREF="node496.html">
+<LINK REL="up" HREF="node501.html">
 <LINK REL="next" HREF="node521.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9747"
+<A NAME="tex2html9797"
   HREF="node521.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9743"
-  HREF="node496.html">
+<A NAME="tex2html9793"
+  HREF="node501.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9737"
+<A NAME="tex2html9787"
   HREF="node519.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9745"
+<A NAME="tex2html9795"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9748"
-  HREF="node521.html">HELPER_getTimeZones</A>
-<B> Up:</B> <A NAME="tex2html9744"
-  HREF="node496.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html9738"
-  HREF="node519.html">HELPER_grubMd5Crypt</A>
- &nbsp; <B>  <A NAME="tex2html9746"
+<B> Next:</B> <A NAME="tex2html9798"
+  HREF="node521.html">HELPER_array2AssociativeArray</A>
+<B> Up:</B> <A NAME="tex2html9794"
+  HREF="node501.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html9788"
+  HREF="node519.html">HELPER_getRemoteFileContents</A>
+ &nbsp; <B>  <A NAME="tex2html9796"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081424000000000000000">
-HELPER_listFilesInDir</A>
+<H2><A NAME="SECTION0081419000000000000000">
+HELPER_passGenerator</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Lists all files in a directory and returns an array with all file names.
+<SPAN  CLASS="textbf">Description:</SPAN> Generates semi-random passwords via pwgen or DB_genPassword.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>dirname: Name of the directory.
+<LI>length: The length of the passwords.
+</LI>
+<LI>amount: The amount of passwords to generate.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>Array with all file names.
+<LI>Array with the generated passwords if $amount <SPAN CLASS="MATH"></SPAN> 1 or the password string directly if $amount = 1.
 </LI>
 </UL>
 
@@ -74,7 +76,7 @@ HELPER_listFilesInDir</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

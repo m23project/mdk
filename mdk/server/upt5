@@ -1,2 +1,2 @@
 #!/bin/sh
-rsync `rsUS` -avPyrL $1 bt@tux05:/up
+rsync `rsUS` -bavPyrL $1 bt@tux05:/up

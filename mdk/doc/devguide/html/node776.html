@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_addRecommendPackages</TITLE>
-<META NAME="description" CONTENT="PKG_addRecommendPackages">
+<TITLE>PKG_isSpecialPackageAvailableForClient</TITLE>
+<META NAME="description" CONTENT="PKG_isSpecialPackageAvailableForClient">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node777.html">
 <LINK REL="previous" HREF="node775.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node777.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13108"
+<A NAME="tex2html13164"
   HREF="node777.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13104"
-  HREF="node758.html">
+<A NAME="tex2html13160"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13098"
+<A NAME="tex2html13154"
   HREF="node775.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13106"
+<A NAME="tex2html13162"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13109"
-  HREF="node777.html">PKG_addPackageSelection</A>
-<B> Up:</B> <A NAME="tex2html13105"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html13099"
-  HREF="node775.html">PKG_listRecommendSubPackages</A>
- &nbsp; <B>  <A NAME="tex2html13107"
+<B> Next:</B> <A NAME="tex2html13165"
+  HREF="node777.html">PKG_OptionPageHeader2</A>
+<B> Up:</B> <A NAME="tex2html13161"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html13155"
+  HREF="node775.html">PKG_translateClientjobsStatus</A>
+ &nbsp; <B>  <A NAME="tex2html13163"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082418000000000000000">
-PKG_addRecommendPackages</A>
+<H2><A NAME="SECTION0082410000000000000000">
+PKG_isSpecialPackageAvailableForClient</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> adds recommeded packages to db
+<SPAN  CLASS="textbf">Description:</SPAN> Checks if a special package is available for the client's distribution.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>amount: amount of selected packages
+<LI>client: Name of the client.
 </LI>
-<LI>client: name of client to install packages on
+<LI>package: Name of the special package.
 </LI>
-<LI>normalPackageType2: m23normal, m23normalRemove or orig: select if the packages should be (de)installed or use the saved action
-</LI>
-<LI>distr: Name of the distribution.
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>True if the special package is available otherwise false.
 </LI>
 </UL>
 
@@ -74,7 +76,7 @@ PKG_addRecommendPackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

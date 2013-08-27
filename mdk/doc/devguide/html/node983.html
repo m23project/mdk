@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_supportedFS</TITLE>
-<META NAME="description" CONTENT="SRCLST_supportedFS">
+<TITLE>SERVER_multiMkDir</TITLE>
+<META NAME="description" CONTENT="SERVER_multiMkDir">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,54 +19,49 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
-<LINK REL="next" HREF="node984.html">
 <LINK REL="previous" HREF="node982.html">
-<LINK REL="up" HREF="node968.html">
+<LINK REL="up" HREF="node936.html">
 <LINK REL="next" HREF="node984.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15714"
+<A NAME="tex2html15748"
   HREF="node984.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15710"
-  HREF="node968.html">
+<A NAME="tex2html15744"
+  HREF="node936.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15704"
+<A NAME="tex2html15740"
   HREF="node982.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15712"
+<A NAME="tex2html15746"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15715"
-  HREF="node984.html">SRCLST_alternativeFS</A>
-<B> Up:</B> <A NAME="tex2html15711"
-  HREF="node968.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html15705"
-  HREF="node982.html">SRCLST_getStorageFS</A>
- &nbsp; <B>  <A NAME="tex2html15713"
+<B> Next:</B> <A NAME="tex2html15749"
+  HREF="node984.html">./inc/sourceslist.php</A>
+<B> Up:</B> <A NAME="tex2html15745"
+  HREF="node936.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html15741"
+  HREF="node982.html">SERVER_checkKernel</A>
+ &nbsp; <B>  <A NAME="tex2html15747"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083215000000000000000">
-SRCLST_supportedFS</A>
+<H2><A NAME="SECTION0083147000000000000000">
+SERVER_multiMkDir</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns an array with file systems that supported by the OS.
+<SPAN  CLASS="textbf">Description:</SPAN> Creates a directory and all needed directories on the way to the destination path.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>sourceName: The name of the package source list
+<LI>path: The complete path to create.
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>: Array with file systems supported by the OS.
+<LI>mode: The access mode of the path to create (should start with "0" e.g. 0777)
 </LI>
 </UL>
 
@@ -74,7 +69,7 @@ SRCLST_supportedFS</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>LDAP_matchLDAPserver</TITLE>
-<META NAME="description" CONTENT="LDAP_matchLDAPserver">
+<TITLE>LDAP_addNewID</TITLE>
+<META NAME="description" CONTENT="LDAP_addNewID">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,49 +19,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
+<LINK REL="next" HREF="node638.html">
 <LINK REL="previous" HREF="node636.html">
-<LINK REL="up" HREF="node614.html">
+<LINK REL="up" HREF="node622.html">
 <LINK REL="next" HREF="node638.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11241"
+<A NAME="tex2html11296"
   HREF="node638.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11237"
-  HREF="node614.html">
+<A NAME="tex2html11292"
+  HREF="node622.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11233"
+<A NAME="tex2html11286"
   HREF="node636.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11239"
+<A NAME="tex2html11294"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11242"
-  HREF="node638.html">./inc/m23shared/m23shared.php</A>
-<B> Up:</B> <A NAME="tex2html11238"
-  HREF="node614.html">./inc/ldap.php</A>
-<B> Previous:</B> <A NAME="tex2html11234"
-  HREF="node636.html">LDAP_getFreeGroupIDs</A>
- &nbsp; <B>  <A NAME="tex2html11240"
+<B> Next:</B> <A NAME="tex2html11297"
+  HREF="node638.html">LDAP_deleteID</A>
+<B> Up:</B> <A NAME="tex2html11293"
+  HREF="node622.html">./inc/ldap.php</A>
+<B> Previous:</B> <A NAME="tex2html11287"
+  HREF="node636.html">LDAP_getNextUserID</A>
+ &nbsp; <B>  <A NAME="tex2html11295"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081923000000000000000">
-LDAP_matchLDAPserver</A>
+<H2><A NAME="SECTION0081915000000000000000">
+LDAP_addNewID</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Searches for the name of a LDAP server and returns the name of the found server or false
+<SPAN  CLASS="textbf">Description:</SPAN> Adds a new ID to the table of used IDs or returns "false" if the ID exists
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>host: the IP or hostname of the LDAP server
+<LI>type: "user" for user IDs
 </LI>
-<LI>base: the base DN (e.g. dc=m23, dc=de)
+<LI>id: number of the new ID
 </LI>
 </UL>
 
@@ -69,7 +70,7 @@ LDAP_matchLDAPserver</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

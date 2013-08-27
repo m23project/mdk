@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>EDIT_uncomment</TITLE>
-<META NAME="description" CONTENT="EDIT_uncomment">
+<TITLE>EDIT_setOption</TITLE>
+<META NAME="description" CONTENT="EDIT_setOption">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node342.html">
 <LINK REL="previous" HREF="node340.html">
-<LINK REL="up" HREF="node335.html">
+<LINK REL="up" HREF="node340.html">
 <LINK REL="next" HREF="node342.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html7434"
+<A NAME="tex2html7484"
   HREF="node342.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html7430"
-  HREF="node335.html">
+<A NAME="tex2html7480"
+  HREF="node340.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html7424"
+<A NAME="tex2html7474"
   HREF="node340.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html7432"
+<A NAME="tex2html7482"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html7435"
-  HREF="node342.html">EDIT_commentout</A>
-<B> Up:</B> <A NAME="tex2html7431"
-  HREF="node335.html">./inc/edit.php</A>
-<B> Previous:</B> <A NAME="tex2html7425"
-  HREF="node340.html">EDIT_calc</A>
- &nbsp; <B>  <A NAME="tex2html7433"
+<B> Next:</B> <A NAME="tex2html7485"
+  HREF="node342.html">EDIT_genClientm23Random</A>
+<B> Up:</B> <A NAME="tex2html7481"
+  HREF="node340.html">./inc/edit.php</A>
+<B> Previous:</B> <A NAME="tex2html7475"
+  HREF="node340.html">./inc/edit.php</A>
+ &nbsp; <B>  <A NAME="tex2html7483"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008116000000000000000">
-EDIT_uncomment</A>
+<H2><A NAME="SECTION008111000000000000000">
+EDIT_setOption</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> uncomments all with m23 commented lines of a file
+<SPAN  CLASS="textbf">Description:</SPAN> Changes an option in a configuration file to a given value.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>file: the name of the file
+<LI>file: Name of the file to change.
+</LI>
+<LI>option: Name of the option to change.
+</LI>
+<LI>value: Value to set.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>sed code to change the option in the file to the value.
 </LI>
 </UL>
 
@@ -68,7 +78,7 @@ EDIT_uncomment</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_convertSwitchStatusInfo</TITLE>
-<META NAME="description" CONTENT="VM_convertSwitchStatusInfo">
+<TITLE>VM_setVBoxAddonAsDefault</TITLE>
+<META NAME="description" CONTENT="VM_setVBoxAddonAsDefault">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1025.html">
 <LINK REL="previous" HREF="node1023.html">
-<LINK REL="up" HREF="node1001.html">
+<LINK REL="up" HREF="node1017.html">
 <LINK REL="next" HREF="node1025.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16249"
+<A NAME="tex2html16310"
   HREF="node1025.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16245"
-  HREF="node1001.html">
+<A NAME="tex2html16306"
+  HREF="node1017.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16239"
+<A NAME="tex2html16300"
   HREF="node1023.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16247"
+<A NAME="tex2html16308"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16250"
-  HREF="node1025.html">VM_getSWandHost</A>
-<B> Up:</B> <A NAME="tex2html16246"
-  HREF="node1001.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html16240"
-  HREF="node1023.html">VM_activateNetboot</A>
- &nbsp; <B>  <A NAME="tex2html16248"
+<B> Next:</B> <A NAME="tex2html16311"
+  HREF="node1025.html">VM_downloadedVBoxAddons</A>
+<B> Up:</B> <A NAME="tex2html16307"
+  HREF="node1017.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html16301"
+  HREF="node1023.html">VM_getVBoxVersion</A>
+ &nbsp; <B>  <A NAME="tex2html16309"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083423000000000000000">
-VM_convertSwitchStatusInfo</A>
+<H2><A NAME="SECTION008347000000000000000">
+VM_setVBoxAddonAsDefault</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns the status of a VM guest in several ways.
+<SPAN  CLASS="textbf">Description:</SPAN> Sets a choosen VirtualBox addition package version as default.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>status: Status of the VM guest (one of VM_STATE_*)
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Associative array with: $out['text']: The status as text in the current language. $out['icon']: The icon of the given status (as traffic lights). $out['imgTag']: The status as traffic light in an HTML img tag with the written status as title.
+<LI>version: Version number of the VirtualBox addition to set as default.
 </LI>
 </UL>
 
@@ -74,7 +68,7 @@ VM_convertSwitchStatusInfo</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_autoPart</TITLE>
-<META NAME="description" CONTENT="FDISK_autoPart">
+<TITLE>FDISK_addJob</TITLE>
+<META NAME="description" CONTENT="FDISK_addJob">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node443.html">
 <LINK REL="previous" HREF="node441.html">
-<LINK REL="up" HREF="node357.html">
+<LINK REL="up" HREF="node362.html">
 <LINK REL="next" HREF="node443.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html8753"
+<A NAME="tex2html8803"
   HREF="node443.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html8749"
-  HREF="node357.html">
+<A NAME="tex2html8799"
+  HREF="node362.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html8743"
+<A NAME="tex2html8793"
   HREF="node441.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html8751"
+<A NAME="tex2html8801"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html8754"
-  HREF="node443.html">FDISK_printColorDefinitions</A>
-<B> Up:</B> <A NAME="tex2html8750"
-  HREF="node357.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html8744"
-  HREF="node441.html">FDISK_getFreeSpaces</A>
- &nbsp; <B>  <A NAME="tex2html8752"
+<B> Next:</B> <A NAME="tex2html8804"
+  HREF="node443.html">FDISK_bootflagJob</A>
+<B> Up:</B> <A NAME="tex2html8800"
+  HREF="node362.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html8794"
+  HREF="node441.html">FDISK_rmJob</A>
+ &nbsp; <B>  <A NAME="tex2html8802"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081285000000000000000">
-FDISK_autoPart</A>
+<H2><A NAME="SECTION0081280000000000000000">
+FDISK_addJob</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> generation of param string and command list for automatic partition
+<SPAN  CLASS="textbf">Description:</SPAN> generates a partition add job
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>clientName: name of the client
+<LI>path: selected device (e.g. /dev/hda)
 </LI>
-<LI>command: parted commands are written to $command
+<LI>start: start point fo the partition
 </LI>
-<LI>dev: selected device (e.g. /dev/hda)
+<LI>end: end point fo the partition
 </LI>
-<LI>param: parameter string containing status informations about the harddisks
+<LI>type: type of the partition (primary, logical)
 </LI>
-<LI>instPart: the variable the installation device name is written to
+<LI>partJobs: associative array with partition jobs
 </LI>
-<LI>swapPart: the variable the swap device name is written to
+<LI>fullPath: full path for the partition
 </LI>
-<LI>minSwap: Minimal size of the swap partition in MB.
-</LI>
-<LI>maxSwap: Maximal size of the swap partition in MB.
+<LI>devNr: number of the device (e.g. 1 with /dev/hda1)
 </LI>
 </UL>
 
@@ -82,7 +80,7 @@ FDISK_autoPart</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

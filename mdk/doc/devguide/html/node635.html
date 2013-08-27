@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>LDAP_getFreeUserIDs</TITLE>
-<META NAME="description" CONTENT="LDAP_getFreeUserIDs">
+<TITLE>LDAP_getNextID</TITLE>
+<META NAME="description" CONTENT="LDAP_getNextID">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node636.html">
 <LINK REL="previous" HREF="node634.html">
-<LINK REL="up" HREF="node614.html">
+<LINK REL="up" HREF="node622.html">
 <LINK REL="next" HREF="node636.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11219"
+<A NAME="tex2html11272"
   HREF="node636.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11215"
-  HREF="node614.html">
+<A NAME="tex2html11268"
+  HREF="node622.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11209"
+<A NAME="tex2html11262"
   HREF="node634.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11217"
+<A NAME="tex2html11270"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11220"
-  HREF="node636.html">LDAP_getFreeGroupIDs</A>
-<B> Up:</B> <A NAME="tex2html11216"
-  HREF="node614.html">./inc/ldap.php</A>
-<B> Previous:</B> <A NAME="tex2html11210"
-  HREF="node634.html">LDAP_getFreeIDs</A>
- &nbsp; <B>  <A NAME="tex2html11218"
+<B> Next:</B> <A NAME="tex2html11273"
+  HREF="node636.html">LDAP_getNextUserID</A>
+<B> Up:</B> <A NAME="tex2html11269"
+  HREF="node622.html">./inc/ldap.php</A>
+<B> Previous:</B> <A NAME="tex2html11263"
+  HREF="node634.html">LDAP_I18NLdapType</A>
+ &nbsp; <B>  <A NAME="tex2html11271"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081921000000000000000">
-LDAP_getFreeUserIDs</A>
+<H2><A NAME="SECTION0081913000000000000000">
+LDAP_getNextID</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns an array with free user IDs of the selected type.
+<SPAN  CLASS="textbf">Description:</SPAN> Returns the next higher than the highest ID
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>start: start ID to check if it's free
-</LI>
-<LI>amount: the amount of IDs to return
+<LI>type: "user" for user IDs
 </LI>
 </UL>
 
@@ -70,7 +68,7 @@ LDAP_getFreeUserIDs</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

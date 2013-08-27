@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>DHCP_lineNumberAffterLastClient</TITLE>
-<META NAME="description" CONTENT="DHCP_lineNumberAffterLastClient">
+<TITLE>delFromArray</TITLE>
+<META NAME="description" CONTENT="delFromArray">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node311.html">
 <LINK REL="previous" HREF="node309.html">
-<LINK REL="up" HREF="node309.html">
+<LINK REL="up" HREF="node281.html">
 <LINK REL="next" HREF="node311.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html7039"
+<A NAME="tex2html7072"
   HREF="node311.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html7035"
-  HREF="node309.html">
+<A NAME="tex2html7068"
+  HREF="node281.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html7029"
+<A NAME="tex2html7062"
   HREF="node309.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html7037"
+<A NAME="tex2html7070"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html7040"
-  HREF="node311.html">DHCP_addSubnetDefinition</A>
-<B> Up:</B> <A NAME="tex2html7036"
-  HREF="node309.html">./inc/dhcp.php</A>
-<B> Previous:</B> <A NAME="tex2html7030"
-  HREF="node309.html">./inc/dhcp.php</A>
- &nbsp; <B>  <A NAME="tex2html7038"
+<B> Next:</B> <A NAME="tex2html7073"
+  HREF="node311.html">delValuesFromArray</A>
+<B> Up:</B> <A NAME="tex2html7069"
+  HREF="node281.html">./inc/db.php</A>
+<B> Previous:</B> <A NAME="tex2html7063"
+  HREF="node309.html">pingIP</A>
+ &nbsp; <B>  <A NAME="tex2html7071"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00891000000000000000">
-DHCP_lineNumberAffterLastClient</A>
+<H2><A NAME="SECTION008829000000000000000">
+delFromArray</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Gets the line number with the last client definition in the dhcpd.conf.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> deletes all entries in the array $arr assigned by the keys stored in the array $delKeys. the new array without the entries in $delKeys is returned.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>Line number with the last client definition in the dhcpd.conf.
+<LI>arr: array with the entries to filter
+</LI>
+<LI>delKeys: array with all keys to delete from $arr
 </LI>
 </UL>
 
@@ -68,7 +70,7 @@ DHCP_lineNumberAffterLastClient</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

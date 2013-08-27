@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CLIENT_getActiveNetDevices</TITLE>
-<META NAME="description" CONTENT="CLIENT_getActiveNetDevices">
+<TITLE>CLIENT_getCurrentMemoryUsage</TITLE>
+<META NAME="description" CONTENT="CLIENT_getCurrentMemoryUsage">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,42 +21,42 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node214.html">
 <LINK REL="previous" HREF="node212.html">
-<LINK REL="up" HREF="node191.html">
+<LINK REL="up" HREF="node194.html">
 <LINK REL="next" HREF="node214.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html5831"
+<A NAME="tex2html5879"
   HREF="node214.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html5827"
-  HREF="node191.html">
+<A NAME="tex2html5875"
+  HREF="node194.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html5821"
+<A NAME="tex2html5869"
   HREF="node212.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html5829"
+<A NAME="tex2html5877"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html5832"
-  HREF="node214.html">CLIENT_executeOnClientOrIP</A>
-<B> Up:</B> <A NAME="tex2html5828"
-  HREF="node191.html">./inc/client.php</A>
-<B> Previous:</B> <A NAME="tex2html5822"
-  HREF="node212.html">CLIENT_getClientID</A>
- &nbsp; <B>  <A NAME="tex2html5830"
+<B> Next:</B> <A NAME="tex2html5880"
+  HREF="node214.html">CLIENT_getCurrentFreeSpaceInDir</A>
+<B> Up:</B> <A NAME="tex2html5876"
+  HREF="node194.html">./inc/client.php</A>
+<B> Previous:</B> <A NAME="tex2html5870"
+  HREF="node212.html">CLIENT_getClientAmount</A>
+ &nbsp; <B>  <A NAME="tex2html5878"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008722000000000000000">
-CLIENT_getActiveNetDevices</A>
+<H2><A NAME="SECTION008719000000000000000">
+CLIENT_getCurrentMemoryUsage</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Checks for active network devices on a client or localhost.
+<SPAN  CLASS="textbf">Description:</SPAN> Gets the amount of free and total memory on a client or localhost.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
@@ -66,7 +66,7 @@ CLIENT_getActiveNetDevices</A>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>Associtative array with active network cards (e.g. Array ( [0] =<SPAN CLASS="MATH"></SPAN> Array ( [dev] =<SPAN CLASS="MATH"></SPAN> eth0 [type] =<SPAN CLASS="MATH"></SPAN> encap:Ethernet [mac] =<SPAN CLASS="MATH"></SPAN> 00:52:66:23:00:23 ) [1] =<SPAN CLASS="MATH"></SPAN> Array ( [dev] =<SPAN CLASS="MATH"></SPAN> venet0 [type] =<SPAN CLASS="MATH"></SPAN> encap:UNSPEC [mac] =<SPAN CLASS="MATH"></SPAN> 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00 ) )
+<LI>Associative array with the free memory in $out['free'] and the total memory in $out['all'] in KB.
 </LI>
 </UL>
 
@@ -74,7 +74,7 @@ CLIENT_getActiveNetDevices</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

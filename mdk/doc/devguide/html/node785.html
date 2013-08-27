@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_listSelectedpackages</TITLE>
-<META NAME="description" CONTENT="PKG_listSelectedpackages">
+<TITLE>PKG_listRecommendPackages</TITLE>
+<META NAME="description" CONTENT="PKG_listRecommendPackages">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node786.html">
 <LINK REL="previous" HREF="node784.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node786.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13216"
+<A NAME="tex2html13272"
   HREF="node786.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13212"
-  HREF="node758.html">
+<A NAME="tex2html13268"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13206"
+<A NAME="tex2html13262"
   HREF="node784.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13214"
+<A NAME="tex2html13270"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13217"
-  HREF="node786.html">PKG_countSelectedpackages</A>
-<B> Up:</B> <A NAME="tex2html13213"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html13207"
-  HREF="node784.html">PKG_rmSelectedPackages</A>
- &nbsp; <B>  <A NAME="tex2html13215"
+<B> Next:</B> <A NAME="tex2html13273"
+  HREF="node786.html">PKG_listRecommendSubPackages</A>
+<B> Up:</B> <A NAME="tex2html13269"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html13263"
+  HREF="node784.html">PKG_getNextPackage</A>
+ &nbsp; <B>  <A NAME="tex2html13271"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082427000000000000000">
-PKG_listSelectedpackages</A>
+<H2><A NAME="SECTION0082419000000000000000">
+PKG_listRecommendPackages</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> lists the packages with wait4acc status
+<SPAN  CLASS="textbf">Description:</SPAN> lists recommended packages matching the key
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>client: name of client to install packages on
+<LI>key: search key
 </LI>
-<LI>distr: the name of the distribution
-</LI>
-<LI>release: release of the distribution
+<LI>install: set to true, if the selection for installing all packages should be first
 </LI>
 </UL>
 
@@ -72,7 +70,7 @@ PKG_listSelectedpackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

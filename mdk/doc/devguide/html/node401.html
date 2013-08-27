@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_checkFreeSpace</TITLE>
-<META NAME="description" CONTENT="FDISK_checkFreeSpace">
+<TITLE>FDISK_nextPrimaryDevNr</TITLE>
+<META NAME="description" CONTENT="FDISK_nextPrimaryDevNr">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,42 +21,42 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node402.html">
 <LINK REL="previous" HREF="node400.html">
-<LINK REL="up" HREF="node357.html">
+<LINK REL="up" HREF="node362.html">
 <LINK REL="next" HREF="node402.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html8261"
+<A NAME="tex2html8311"
   HREF="node402.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html8257"
-  HREF="node357.html">
+<A NAME="tex2html8307"
+  HREF="node362.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html8251"
+<A NAME="tex2html8301"
   HREF="node400.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html8259"
+<A NAME="tex2html8309"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html8262"
-  HREF="node402.html">FDISK_installExistingDialog</A>
-<B> Up:</B> <A NAME="tex2html8258"
-  HREF="node357.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html8252"
-  HREF="node400.html">FDISK_canPartTypeBeCreated</A>
- &nbsp; <B>  <A NAME="tex2html8260"
+<B> Next:</B> <A NAME="tex2html8312"
+  HREF="node402.html">FDISK_correctLogical</A>
+<B> Up:</B> <A NAME="tex2html8308"
+  HREF="node362.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html8302"
+  HREF="node400.html">FDISK_nextLogicalDevNr</A>
+ &nbsp; <B>  <A NAME="tex2html8310"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081244000000000000000">
-FDISK_checkFreeSpace</A>
+<H2><A NAME="SECTION0081239000000000000000">
+FDISK_nextPrimaryDevNr</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> checks if there is a free space between $start and $end
+<SPAN  CLASS="textbf">Description:</SPAN> gets the next free primary device number
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
@@ -64,21 +64,13 @@ FDISK_checkFreeSpace</A>
 </LI>
 <LI>vDev: Virtual (internally used) device number.
 </LI>
-<LI>type: type of the partition (primary, extended, logical)
-</LI>
-<LI>start: start position for the search
-</LI>
-<LI>end: end position for the search
-</LI>
-<LI>freeSpaces: array of the free space information
-</LI>
 </UL>
 
 <P>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

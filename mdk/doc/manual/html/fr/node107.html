@@ -28,26 +28,26 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html1813"
+<A NAME="tex2html1821"
   HREF="node108.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html1809"
+<A NAME="tex2html1817"
   HREF="node105.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html1803"
+<A NAME="tex2html1811"
   HREF="node106.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html1811"
+<A NAME="tex2html1819"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> suivant:</B> <A NAME="tex2html1814"
-  HREF="node108.html">Proxy DHCP</A>
-<B> monter:</B> <A NAME="tex2html1810"
+<B> suivant:</B> <A NAME="tex2html1822"
+  HREF="node108.html">Serveur DHCP ISC</A>
+<B> monter:</B> <A NAME="tex2html1818"
   HREF="node105.html">Utiliser m23 conjointement avec</A>
-<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1804"
-  HREF="node106.html">Si l'autre serveur DHCP</A>
- &nbsp; <B>  <A NAME="tex2html1812"
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1812"
+  HREF="node106.html">Si le serveur DHCP</A>
+ &nbsp; <B>  <A NAME="tex2html1820"
   HREF="node1.html">Table des mati&#232;res</A></B> 
 <BR>
 <BR></DIV>
@@ -56,51 +56,12 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 <H2><A NAME="SECTION001022000000000000000">
 Si l'autre serveur DHCP NE PEUT PAS &#234;tre d&#233;sactiv&#233;:</A>
 </H2>
-Dans ce cas, vous devez ajuster la configuration de l'autre serveur DHCP manuellement et &#233;ventuellement installer un serveur TFTP. Suivez le manuel de vos serveurs DHCP et TFTP quant &#224; la configuration &#224; y apporter. 
+Dans ce cas, vous devez ajuster la configuration du serveur DHCP externe manuellement et &#233;ventuellement installer un serveur TFTP. Suivez le manuel de vos serveurs DHCP et TFTP quant &#224; la configuration &#224; y apporter. 
 <BR>
-<OL>
-<LI>Dans l'interface web de m23, choisissez <SPAN  CLASS="textit">"gPXE/DHCP"</SPAN> quand vous cr&#233;ez un nouveau poste client sous <SPAN  CLASS="textit">"Type de boot"</SPAN>. Utilisez le m&#234;me nom de poste client sous <SPAN  CLASS="textit">"Nom du poste client"</SPAN>, que celui utilis&#233; par votre serveur DHCP pour le poste client en question.
-<BR></LI>
-<LI>Ajustez votre serveur DHCP de sorte qu'il assigne le nom du poste client indiqu&#233; dans l'interface web m23 au poste client m23.
-<BR></LI>
-<LI>Le nom du noyau, transmis par votre serveur DHCP au poste client, doit &#234;tre <SPAN  CLASS="textbf">pxelinux.0</SPAN>. Le serveur TFTP est le serveur m23.
-<BR></LI>
-<LI>De plus, vous devez configurer votre serveur DHCP de fa&#231;on &#224; ce qu'il diffuse les param&#232;tres suivants comme param&#232;tres du noyau au poste client:
-<BR>
-m23clientID="<SPAN  CLASS="textbf"><SPAN CLASS="MATH"></SPAN>num&#233;ro du poste client m23<SPAN CLASS="MATH"></SPAN></SPAN>" m23server="<SPAN  CLASS="textbf"><SPAN CLASS="MATH"></SPAN>Nom de domaine du serveur m23 ou son adresse IP<SPAN CLASS="MATH"></SPAN></SPAN>" devfs=nomount vga=normal load_ramdisk=1 prompt_ramdisk=0 ramdisk_size=<SPAN  CLASS="textbf">45000</SPAN> initrd=initrd.gz root=/dev/ram0 rw
-<BR>
-Remplacez <SPAN  CLASS="textbf"><SPAN CLASS="MATH"></SPAN>num&#233;ro du poste client m23<SPAN CLASS="MATH"></SPAN></SPAN> par le num&#233;ro du poste client m23 (que vous pouvez trouver chez <SPAN  CLASS="textit">"Vue d&amp;apos;ensemble des postes clients"</SPAN> dans le lien &#224; chaque poste client) et le <SPAN  CLASS="textbf"><SPAN CLASS="MATH"></SPAN>Nom de domaine du serveur m23 ou son adresse IP<SPAN CLASS="MATH"></SPAN></SPAN> par le nom de domaine du serveur m23 r&#233;solvable par le poste client m23 ou son adresse IP. Il sera &#233;ventuellement n&#233;cessaire de remplacer le num&#233;ro <SPAN  CLASS="textbf">45000</SPAN> par la valeur indiqu&#233;e dans le fichier /m23/inc/kernelRamDisk.inc.
-<BR></LI>
-<LI>Si malgr&#233; cela, l'ajustage de votre serveur DHCP ne fonctionne pas, vous devez installer un serveur TFTP sur l'ordinateur h&#233;bergeant votre serveur DHCP. La configuration de base du serveur TFTP peut s'inspirer des fichiers de configuration du r&#233;pertoire /m23/tftp/.
-<BR></LI>
-</OL>
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A NAME="tex2html1813"
-  HREF="node108.html">
-<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html1809"
-  HREF="node105.html">
-<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html1803"
-  HREF="node106.html">
-<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html1811"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> suivant:</B> <A NAME="tex2html1814"
-  HREF="node108.html">Proxy DHCP</A>
-<B> monter:</B> <A NAME="tex2html1810"
-  HREF="node105.html">Utiliser m23 conjointement avec</A>
-<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html1804"
-  HREF="node106.html">Si l'autre serveur DHCP</A>
- &nbsp; <B>  <A NAME="tex2html1812"
-  HREF="node1.html">Table des mati&#232;res</A></B> </DIV>
-<!--End of Navigation Panel-->
+<BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_showTableHeading</TITLE>
-<META NAME="description" CONTENT="HTML_showTableHeading">
+<TITLE>array_makeFirst</TITLE>
+<META NAME="description" CONTENT="array_makeFirst">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node591.html">
 <LINK REL="previous" HREF="node589.html">
-<LINK REL="up" HREF="node536.html">
+<LINK REL="up" HREF="node541.html">
 <LINK REL="next" HREF="node591.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10643"
+<A NAME="tex2html10696"
   HREF="node591.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10639"
-  HREF="node536.html">
+<A NAME="tex2html10692"
+  HREF="node541.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10633"
+<A NAME="tex2html10686"
   HREF="node589.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10641"
+<A NAME="tex2html10694"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10644"
-  HREF="node591.html">HTML_textArea</A>
-<B> Up:</B> <A NAME="tex2html10640"
-  HREF="node536.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html10634"
-  HREF="node589.html">HTML_showTableRow</A>
- &nbsp; <B>  <A NAME="tex2html10642"
+<B> Next:</B> <A NAME="tex2html10697"
+  HREF="node591.html">HTML_getValidSelected</A>
+<B> Up:</B> <A NAME="tex2html10693"
+  HREF="node541.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html10687"
+  HREF="node589.html">HTML_input</A>
+ &nbsp; <B>  <A NAME="tex2html10695"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081654000000000000000">
-HTML_showTableHeading</A>
+<H2><A NAME="SECTION0081649000000000000000">
+array_makeFirst</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Shows a table heading row with a variable amount of entries. The parameters are shown side by side as rows in a table. If more than one HTML_showTableRow commands are executed in one table it is needed to always use the same amount of paramaters in each call.
+<SPAN  CLASS="textbf">Description:</SPAN> special sort function that makes a special element the first element and leaves the other elements in its previous order.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>Arbitrary amount of cells to show in a table.
+<LI>arr: Array to sort
+</LI>
+<LI>first: Value of the element that should be put on top
 </LI>
 </UL>
 
@@ -68,7 +70,7 @@ HTML_showTableHeading</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

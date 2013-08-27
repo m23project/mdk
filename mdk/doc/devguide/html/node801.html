@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_addStatusJob</TITLE>
-<META NAME="description" CONTENT="PKG_addStatusJob">
+<TITLE>PKG_addPackageToPackageselection</TITLE>
+<META NAME="description" CONTENT="PKG_addPackageToPackageselection">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node802.html">
 <LINK REL="previous" HREF="node800.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node802.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13408"
+<A NAME="tex2html13464"
   HREF="node802.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13404"
-  HREF="node758.html">
+<A NAME="tex2html13460"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13398"
+<A NAME="tex2html13454"
   HREF="node800.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13406"
+<A NAME="tex2html13462"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13409"
-  HREF="node802.html">PKG_acceptJobs</A>
-<B> Up:</B> <A NAME="tex2html13405"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html13399"
-  HREF="node800.html">PKG_addWait4AccJob</A>
- &nbsp; <B>  <A NAME="tex2html13407"
+<B> Next:</B> <A NAME="tex2html13465"
+  HREF="node802.html">PKG_listSpecialpackages</A>
+<B> Up:</B> <A NAME="tex2html13461"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html13455"
+  HREF="node800.html">PKG_savePackageselection</A>
+ &nbsp; <B>  <A NAME="tex2html13463"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082443000000000000000">
-PKG_addStatusJob</A>
+<H2><A NAME="SECTION0082435000000000000000">
+PKG_addPackageToPackageselection</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> adds a job to the clientjobs table
+<SPAN  CLASS="textbf">Description:</SPAN> Add packages to selection
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>client: name of the client
+<LI>client: name of client to install packages on
 </LI>
-<LI>packageName: name of the package
+<LI>selectionName: name for the package selection
 </LI>
-<LI>priority: priority of the package
+<LI>packageName: name of the normal package
 </LI>
-<LI>params: parameter for installing the package
+<LI>params: parameter for the package
 </LI>
-<LI>status: the status of the package
+<LI>normalPackage: the name of a normal package
+</LI>
+<LI>installedSize: the size of the package if it is installed
+</LI>
+<LI>priority: The priority of the package.
 </LI>
 </UL>
 
@@ -76,7 +80,7 @@ PKG_addStatusJob</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

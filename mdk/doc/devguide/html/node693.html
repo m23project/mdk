@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>m23SHARED_prepareBillMailSending</TITLE>
-<META NAME="description" CONTENT="m23SHARED_prepareBillMailSending">
+<TITLE>m23SHARED_getCustomerBankHTML</TITLE>
+<META NAME="description" CONTENT="m23SHARED_getCustomerBankHTML">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node694.html">
 <LINK REL="previous" HREF="node692.html">
-<LINK REL="up" HREF="node638.html">
+<LINK REL="up" HREF="node646.html">
 <LINK REL="next" HREF="node694.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11984"
+<A NAME="tex2html12037"
   HREF="node694.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11980"
-  HREF="node638.html">
+<A NAME="tex2html12033"
+  HREF="node646.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11974"
+<A NAME="tex2html12027"
   HREF="node692.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11982"
+<A NAME="tex2html12035"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11985"
-  HREF="node694.html">m23SHARED_markBillMailAsSent</A>
-<B> Up:</B> <A NAME="tex2html11981"
-  HREF="node638.html">./inc/m23shared/m23shared.php</A>
-<B> Previous:</B> <A NAME="tex2html11975"
-  HREF="node692.html">m23SHARED_switchUser</A>
- &nbsp; <B>  <A NAME="tex2html11983"
+<B> Next:</B> <A NAME="tex2html12038"
+  HREF="node694.html">m23SHARED_pdfBill</A>
+<B> Up:</B> <A NAME="tex2html12034"
+  HREF="node646.html">./inc/m23shared/m23shared.php</A>
+<B> Previous:</B> <A NAME="tex2html12028"
+  HREF="node692.html">m23SHARED_getCustomerAddress</A>
+ &nbsp; <B>  <A NAME="tex2html12036"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082055000000000000000">
-m23SHARED_prepareBillMailSending</A>
+<H2><A NAME="SECTION0082047000000000000000">
+m23SHARED_getCustomerBankHTML</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Prepares the bill mail sending queue.
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Returns HTML formatted bank account information for the current customer.
+<BR><SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>month: Month to mail the bill for.
-</LI>
-<LI>year: Year to mail the bill for.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Array with all users that have bill mails to send.
+<LI>Bank account information for the current customer.
 </LI>
 </UL>
 
@@ -76,7 +68,7 @@ m23SHARED_prepareBillMailSending</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

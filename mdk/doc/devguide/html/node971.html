@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_genList</TITLE>
-<META NAME="description" CONTENT="SRCLST_genList">
+<TITLE>SERVER_deleteFile</TITLE>
+<META NAME="description" CONTENT="SERVER_deleteFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node972.html">
 <LINK REL="previous" HREF="node970.html">
-<LINK REL="up" HREF="node968.html">
+<LINK REL="up" HREF="node936.html">
 <LINK REL="next" HREF="node972.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15570"
+<A NAME="tex2html15606"
   HREF="node972.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15566"
-  HREF="node968.html">
+<A NAME="tex2html15602"
+  HREF="node936.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15560"
+<A NAME="tex2html15596"
   HREF="node970.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15568"
+<A NAME="tex2html15604"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15571"
-  HREF="node972.html">SRCLST_saveArchitectures</A>
-<B> Up:</B> <A NAME="tex2html15567"
-  HREF="node968.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html15561"
-  HREF="node970.html">SRCLST_getRelease</A>
- &nbsp; <B>  <A NAME="tex2html15569"
+<B> Next:</B> <A NAME="tex2html15607"
+  HREF="node972.html">SERVER_getFileContents</A>
+<B> Up:</B> <A NAME="tex2html15603"
+  HREF="node936.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html15597"
+  HREF="node970.html">SERVER_addLineToFile</A>
+ &nbsp; <B>  <A NAME="tex2html15605"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008323000000000000000">
-SRCLST_genList</A>
+<H2><A NAME="SECTION0083135000000000000000">
+SERVER_deleteFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> generates the sources.list file for the client
+<SPAN  CLASS="textbf">Description:</SPAN> Deletes a file from the server.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>clientName: the name of the client
+<LI>fileName: Name of the file to delete.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: true on successfully execution otherwise false.
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ SRCLST_genList</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

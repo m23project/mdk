@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_showFileContents</TITLE>
-<META NAME="description" CONTENT="HELPER_showFileContents">
+<TITLE>HELPER_getFdiskMountPoints</TITLE>
+<META NAME="description" CONTENT="HELPER_getFdiskMountPoints">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node530.html">
 <LINK REL="previous" HREF="node528.html">
-<LINK REL="up" HREF="node496.html">
+<LINK REL="up" HREF="node501.html">
 <LINK REL="next" HREF="node530.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9855"
+<A NAME="tex2html9905"
   HREF="node530.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9851"
-  HREF="node496.html">
+<A NAME="tex2html9901"
+  HREF="node501.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9845"
+<A NAME="tex2html9895"
   HREF="node528.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9853"
+<A NAME="tex2html9903"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9856"
-  HREF="node530.html">HELPER_getFileContents</A>
-<B> Up:</B> <A NAME="tex2html9852"
-  HREF="node496.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html9846"
-  HREF="node528.html">HELPER_getFileContents</A>
- &nbsp; <B>  <A NAME="tex2html9854"
+<B> Next:</B> <A NAME="tex2html9906"
+  HREF="node530.html">HELPER_getApacheUser</A>
+<B> Up:</B> <A NAME="tex2html9902"
+  HREF="node501.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html9896"
+  HREF="node528.html">HELPER_grep</A>
+ &nbsp; <B>  <A NAME="tex2html9904"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081433000000000000000">
-HELPER_showFileContents</A>
+<H2><A NAME="SECTION0081428000000000000000">
+HELPER_getFdiskMountPoints</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Shows the contents of a file (the file is read to a maximum of 5 MB)
+<SPAN  CLASS="textbf">Description:</SPAN> Returnes an array with all mount points listed in /etc/fstab
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>fileName: name of the file to read
+<LI>excludeExtra: set to true, if you want to exclude /proc and /sys from the array
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Found mount points as array keys and values.
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ HELPER_showFileContents</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

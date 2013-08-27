@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_saveList</TITLE>
-<META NAME="description" CONTENT="SRCLST_saveList">
+<TITLE>SERVER_putFileContents</TITLE>
+<META NAME="description" CONTENT="SERVER_putFileContents">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node974.html">
 <LINK REL="previous" HREF="node972.html">
-<LINK REL="up" HREF="node968.html">
+<LINK REL="up" HREF="node936.html">
 <LINK REL="next" HREF="node974.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15594"
+<A NAME="tex2html15630"
   HREF="node974.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15590"
-  HREF="node968.html">
+<A NAME="tex2html15626"
+  HREF="node936.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15584"
+<A NAME="tex2html15620"
   HREF="node972.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15592"
+<A NAME="tex2html15628"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15595"
-  HREF="node974.html">SRCLST_querySourceslists</A>
-<B> Up:</B> <A NAME="tex2html15591"
-  HREF="node968.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html15585"
-  HREF="node972.html">SRCLST_saveArchitectures</A>
- &nbsp; <B>  <A NAME="tex2html15593"
+<B> Next:</B> <A NAME="tex2html15631"
+  HREF="node974.html">SERVER_delLineFromFile</A>
+<B> Up:</B> <A NAME="tex2html15627"
+  HREF="node936.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html15621"
+  HREF="node972.html">SERVER_getFileContents</A>
+ &nbsp; <B>  <A NAME="tex2html15629"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008325000000000000000">
-SRCLST_saveList</A>
+<H2><A NAME="SECTION0083137000000000000000">
+SERVER_putFileContents</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> saves the package source list
+<SPAN  CLASS="textbf">Description:</SPAN> Stores a text to a file and changes it's mode, user and group.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>name: the name of the package source list
+<LI>fileName: Name of the file to put the text to.
 </LI>
-<LI>list: the list of sources as simple text
+<LI>text: The contents the file should have.
 </LI>
-<LI>description: a descriptive text for the list
+<LI>mode: The access mode the file should have.
 </LI>
-<LI>distr: the name of the distribution the list is for
+<LI>user: The owner of the file.
 </LI>
-<LI>release: the name of the release the list is for
+<LI>group: The owning group of the file.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>true on success and false otherwise.
 </LI>
 </UL>
 
@@ -76,7 +82,7 @@ SRCLST_saveList</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

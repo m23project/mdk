@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_showPagePrintButton</TITLE>
-<META NAME="description" CONTENT="HTML_showPagePrintButton">
+<TITLE>HTML_selection</TITLE>
+<META NAME="description" CONTENT="HTML_selection">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,49 +19,76 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
+<LINK REL="next" HREF="node593.html">
 <LINK REL="previous" HREF="node591.html">
-<LINK REL="up" HREF="node536.html">
+<LINK REL="up" HREF="node541.html">
 <LINK REL="next" HREF="node593.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10665"
+<A NAME="tex2html10720"
   HREF="node593.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10661"
-  HREF="node536.html">
+<A NAME="tex2html10716"
+  HREF="node541.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10657"
+<A NAME="tex2html10710"
   HREF="node591.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10663"
+<A NAME="tex2html10718"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10666"
-  HREF="node593.html">./inc/hwinfo.php</A>
-<B> Up:</B> <A NAME="tex2html10662"
-  HREF="node536.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html10658"
-  HREF="node591.html">HTML_textArea</A>
- &nbsp; <B>  <A NAME="tex2html10664"
+<B> Next:</B> <A NAME="tex2html10721"
+  HREF="node593.html">HTML_checkBox</A>
+<B> Up:</B> <A NAME="tex2html10717"
+  HREF="node541.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html10711"
+  HREF="node591.html">HTML_getValidSelected</A>
+ &nbsp; <B>  <A NAME="tex2html10719"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081656000000000000000">
-HTML_showPagePrintButton</A>
+<H2><A NAME="SECTION0081651000000000000000">
+HTML_selection</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Shows a print button that allows easy printing of the current m23 administration interface.
-<BR>
+<SPAN  CLASS="textbf">Description:</SPAN> Shows a list of radio buttons or a selection.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+
+<UL>
+<LI>htmlName: Name of the HTML element.
+</LI>
+<LI>array: An array that hold the returned values (array keys) the naming for the elements (array values).
+</LI>
+<LI>type: SELTYPE_selection for a selection or SELTYPE_radio for radio buttons.
+</LI>
+<LI>vertical: Set to true if the radio buttons should be aligned vertically or to false for horizontal aligning. This parameter is ignored by selections.
+</LI>
+<LI>defaultSelection: The value of the item to select by default.
+</LI>
+<LI>prefKey: Variable name of the preference the dialog element stands for.
+</LI>
+<LI>js: Here can JavaScript or other parameters be added.
+</LI>
+<LI>multipleSize: If set to a number (and not to false) a multi selection is generated, where the user can select multiple entries. The number sets the amount of entries to show the user.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>The value of the selected element or false if nothing was selected.
+</LI>
+</UL>
+
 <P>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

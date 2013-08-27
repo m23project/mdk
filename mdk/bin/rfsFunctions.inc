@@ -282,6 +282,7 @@ createRFSBins()
 	createRFScopyLib libtasn1.so.3
 	createRFScopyLib libncurses.so.5
 	createRFScopyLib libp11-kit.so.0
+	createRFScopyLib libnsl.so.1		#for dropbear
 	echo "done"
 }
 
@@ -621,9 +622,10 @@ done
 
 
 mkdir completeExtracted
-	dpkg-deb -X /mdk/m23Debs/debs/hwsetup*$arch*.deb completeExtracted
-	dpkg-deb -X /mdk/m23Debs/debs/hwsetup*.deb completeExtracted
-	read lala
+# 	dpkg-deb -X /mdk/m23Debs/debs/hwsetup*$arch*.deb completeExtracted
+	#The newer releases are containing only BASH code
+	dpkg-deb -X /mdk/m23Debs/debs/hwsetup*_i386.deb completeExtracted
+# 	read lala
 
 	dpkg-deb -X /mdk/m23Debs/debs/hwdata-knoppix*.deb completeExtracted
 	dpkg-deb -X /mdk/m23Debs/debs/ddcxinfo-knoppix*.deb completeExtracted

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>MASS_getAllFromFile</TITLE>
-<META NAME="description" CONTENT="MASS_getAllFromFile">
+<TITLE>MASS_passGenerator</TITLE>
+<META NAME="description" CONTENT="MASS_passGenerator">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node735.html">
 <LINK REL="previous" HREF="node733.html">
-<LINK REL="up" HREF="node710.html">
+<LINK REL="up" HREF="node718.html">
 <LINK REL="next" HREF="node735.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12500"
+<A NAME="tex2html12553"
   HREF="node735.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12496"
-  HREF="node710.html">
+<A NAME="tex2html12549"
+  HREF="node718.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12490"
+<A NAME="tex2html12543"
   HREF="node733.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12498"
+<A NAME="tex2html12551"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12501"
-  HREF="node735.html">MASS_getLongestLength</A>
-<B> Up:</B> <A NAME="tex2html12497"
-  HREF="node710.html">./inc/massTools.php</A>
-<B> Previous:</B> <A NAME="tex2html12491"
-  HREF="node733.html">MASS_showOverview</A>
- &nbsp; <B>  <A NAME="tex2html12499"
+<B> Next:</B> <A NAME="tex2html12554"
+  HREF="node735.html">MASS_loginGenerator</A>
+<B> Up:</B> <A NAME="tex2html12550"
+  HREF="node718.html">./inc/massTools.php</A>
+<B> Previous:</B> <A NAME="tex2html12544"
+  HREF="node733.html">MASS_showGeneratorOptions</A>
+ &nbsp; <B>  <A NAME="tex2html12552"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082124000000000000000">
-MASS_getAllFromFile</A>
+<H2><A NAME="SECTION0082116000000000000000">
+MASS_passGenerator</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> returnes all values from one key of the DB file as an array.
+<SPAN  CLASS="textbf">Description:</SPAN> generates the selected amount of passwords with a random algorithm or the pwgen tool.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>key: the key of the property
+<LI>length: length of the passwords to generate
 </LI>
-<LI>generateAmount: the amount of values to be read from the DB file
+<LI>method: random or pwgen generated passwords that can be memorized by humans easily
 </LI>
-<LI>EGKparams: enter generate keep parameters, that hold information about handling of the properties
+<LI>amount: the amount of passwords to generate
 </LI>
-<LI>fromDBFile: 2D array filled with the values for the keys
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Array with the generated passwords as keys.
 </LI>
 </UL>
 
@@ -74,7 +78,7 @@ MASS_getAllFromFile</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

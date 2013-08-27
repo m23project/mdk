@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>deleteClientLogs</TITLE>
-<META NAME="description" CONTENT="deleteClientLogs">
+<TITLE>sendClientStageStatus</TITLE>
+<META NAME="description" CONTENT="sendClientStageStatus">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node296.html">
 <LINK REL="previous" HREF="node294.html">
-<LINK REL="up" HREF="node278.html">
+<LINK REL="up" HREF="node281.html">
 <LINK REL="next" HREF="node296.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html6843"
+<A NAME="tex2html6892"
   HREF="node296.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html6839"
-  HREF="node278.html">
+<A NAME="tex2html6888"
+  HREF="node281.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html6833"
+<A NAME="tex2html6882"
   HREF="node294.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html6841"
+<A NAME="tex2html6890"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html6844"
-  HREF="node296.html">executeNextWork</A>
-<B> Up:</B> <A NAME="tex2html6840"
-  HREF="node278.html">./inc/db.php</A>
-<B> Previous:</B> <A NAME="tex2html6834"
-  HREF="node294.html">sendClientLogStatus</A>
- &nbsp; <B>  <A NAME="tex2html6842"
+<B> Next:</B> <A NAME="tex2html6893"
+  HREF="node296.html">returnClientStageStatus</A>
+<B> Up:</B> <A NAME="tex2html6889"
+  HREF="node281.html">./inc/db.php</A>
+<B> Previous:</B> <A NAME="tex2html6883"
+  HREF="node294.html">sendClientStatus</A>
+ &nbsp; <B>  <A NAME="tex2html6891"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008817000000000000000">
-deleteClientLogs</A>
+<H2><A NAME="SECTION008814000000000000000">
+sendClientStageStatus</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> deletes the installation logs
+<SPAN  CLASS="textbf">Description:</SPAN> generates a bash script to send a stage status to the server
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>clientName: name of the client to delete all logs
+<LI>status: 0: client waiting for hardware detection, 1 hardware detection done, 2 partitionated and formated, base system is installed
 </LI>
 </UL>
 
@@ -68,7 +68,7 @@ deleteClientLogs</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

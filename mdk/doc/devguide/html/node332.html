@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_previewInstall</TITLE>
-<META NAME="description" CONTENT="PKG_previewInstall">
+<TITLE>DHCP_isNetworkBootingActive</TITLE>
+<META NAME="description" CONTENT="DHCP_isNetworkBootingActive">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,56 +19,53 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
-<LINK REL="next" HREF="node333.html">
 <LINK REL="previous" HREF="node331.html">
-<LINK REL="up" HREF="node328.html">
+<LINK REL="up" HREF="node313.html">
 <LINK REL="next" HREF="node333.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html7307"
+<A NAME="tex2html7351"
   HREF="node333.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html7303"
-  HREF="node328.html">
+<A NAME="tex2html7347"
+  HREF="node313.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html7297"
+<A NAME="tex2html7343"
   HREF="node331.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html7305"
+<A NAME="tex2html7349"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html7308"
-  HREF="node333.html">PKG_getKernels</A>
-<B> Up:</B> <A NAME="tex2html7304"
-  HREF="node328.html">./inc/distr/halfSister/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html7298"
-  HREF="node331.html">PKG_listPackages</A>
- &nbsp; <B>  <A NAME="tex2html7306"
+<B> Next:</B> <A NAME="tex2html7352"
+  HREF="node333.html">./inc/distr/halfSister/packages.php</A>
+<B> Up:</B> <A NAME="tex2html7348"
+  HREF="node313.html">./inc/dhcp.php</A>
+<B> Previous:</B> <A NAME="tex2html7344"
+  HREF="node331.html">DHCP_removePXEcfg</A>
+ &nbsp; <B>  <A NAME="tex2html7350"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008104000000000000000">
-PKG_previewInstall</A>
+<H2><A NAME="SECTION008919000000000000000">
+DHCP_isNetworkBootingActive</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> shows what happens if packages get (de)installed
+<SPAN  CLASS="textbf">Description:</SPAN> Checks, if a client has network booting enabled.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>clientName: name of the client
 </LI>
-<LI>distr: the distribution name
-</LI>
-<LI>packagesource: name of the package source
-</LI>
-<LI>packages: the packages to be installed
-</LI>
-<LI>aptCommand: sets the apt-get command: install, remove
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: True, if network booting is active, false otherwise.
 </LI>
 </UL>
 
@@ -76,7 +73,7 @@ PKG_previewInstall</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

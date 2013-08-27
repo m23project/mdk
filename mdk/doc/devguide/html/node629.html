@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>LDAP_addNewID</TITLE>
-<META NAME="description" CONTENT="LDAP_addNewID">
+<TITLE>LDAP_installServer</TITLE>
+<META NAME="description" CONTENT="LDAP_installServer">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node630.html">
 <LINK REL="previous" HREF="node628.html">
-<LINK REL="up" HREF="node614.html">
+<LINK REL="up" HREF="node622.html">
 <LINK REL="next" HREF="node630.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11147"
+<A NAME="tex2html11200"
   HREF="node630.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11143"
-  HREF="node614.html">
+<A NAME="tex2html11196"
+  HREF="node622.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11137"
+<A NAME="tex2html11190"
   HREF="node628.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11145"
+<A NAME="tex2html11198"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11148"
-  HREF="node630.html">LDAP_deleteID</A>
-<B> Up:</B> <A NAME="tex2html11144"
-  HREF="node614.html">./inc/ldap.php</A>
-<B> Previous:</B> <A NAME="tex2html11138"
-  HREF="node628.html">LDAP_getNextUserID</A>
- &nbsp; <B>  <A NAME="tex2html11146"
+<B> Next:</B> <A NAME="tex2html11201"
+  HREF="node630.html">LDAP_addServerTophpLdapAdmin</A>
+<B> Up:</B> <A NAME="tex2html11197"
+  HREF="node622.html">./inc/ldap.php</A>
+<B> Previous:</B> <A NAME="tex2html11191"
+  HREF="node628.html">LDAP_fqdn2dn</A>
+ &nbsp; <B>  <A NAME="tex2html11199"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081915000000000000000">
-LDAP_addNewID</A>
+<H2><A NAME="SECTION008197000000000000000">
+LDAP_installServer</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Adds a new ID to the table of used IDs or returns "false" if the ID exists
+<SPAN  CLASS="textbf">Description:</SPAN> Generates a script that installs and configures an openLDAP server
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>type: "user" for user IDs
+<LI>host: the IP or hostname of the LDAP server
 </LI>
-<LI>id: number of the new ID
+<LI>org: name of the organisation
+</LI>
+<LI>domain: the DN (e.g. foo.m23.de)
+</LI>
+<LI>pwd: the unencrypted password for the admin
 </LI>
 </UL>
 
@@ -70,7 +74,7 @@ LDAP_addNewID</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

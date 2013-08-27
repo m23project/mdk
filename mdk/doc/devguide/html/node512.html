@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>print_r2</TITLE>
-<META NAME="description" CONTENT="print_r2">
+<TITLE>HELPER_arrayReOrderKeynumbers</TITLE>
+<META NAME="description" CONTENT="HELPER_arrayReOrderKeynumbers">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node513.html">
 <LINK REL="previous" HREF="node511.html">
-<LINK REL="up" HREF="node496.html">
+<LINK REL="up" HREF="node501.html">
 <LINK REL="next" HREF="node513.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9651"
+<A NAME="tex2html9701"
   HREF="node513.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9647"
-  HREF="node496.html">
+<A NAME="tex2html9697"
+  HREF="node501.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9641"
+<A NAME="tex2html9691"
   HREF="node511.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9649"
+<A NAME="tex2html9699"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9652"
-  HREF="node513.html">HELPER_debugBacktraceToFile</A>
-<B> Up:</B> <A NAME="tex2html9648"
-  HREF="node496.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html9642"
-  HREF="node511.html">HELPER_array2m23Array</A>
- &nbsp; <B>  <A NAME="tex2html9650"
+<B> Next:</B> <A NAME="tex2html9702"
+  HREF="node513.html">HELPER_arrayInsertBeforeKeynumber</A>
+<B> Up:</B> <A NAME="tex2html9698"
+  HREF="node501.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html9692"
+  HREF="node511.html">HELPER_createSelfSignedCAAndServerCertificate</A>
+ &nbsp; <B>  <A NAME="tex2html9700"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081416000000000000000">
-print_r2</A>
+<H2><A NAME="SECTION0081411000000000000000">
+HELPER_arrayReOrderKeynumbers</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Function like print_r, but sorts the entries, if the input is an array and converts newlines to HTML breaks.
+<SPAN  CLASS="textbf">Description:</SPAN> Changes all keys of the input array to simple ascending numbers, if the key of the inpur array is a number (if not, the key will be left unchanged). The order of the keys is preserved.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>in: Value to print.
+<LI>inArray: The input array.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>New array with the ascending key numbers.
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ print_r2</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

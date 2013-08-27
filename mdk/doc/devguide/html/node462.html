@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_addRaidJobs</TITLE>
-<META NAME="description" CONTENT="FDISK_addRaidJobs">
+<TITLE>FDISK_virtualAddDrive</TITLE>
+<META NAME="description" CONTENT="FDISK_virtualAddDrive">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node463.html">
 <LINK REL="previous" HREF="node461.html">
-<LINK REL="up" HREF="node357.html">
+<LINK REL="up" HREF="node362.html">
 <LINK REL="next" HREF="node463.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html8993"
+<A NAME="tex2html9043"
   HREF="node463.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html8989"
-  HREF="node357.html">
+<A NAME="tex2html9039"
+  HREF="node362.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html8983"
+<A NAME="tex2html9033"
   HREF="node461.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html8991"
+<A NAME="tex2html9041"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html8994"
-  HREF="node463.html">FDISK_addRaidBeforeFormat</A>
-<B> Up:</B> <A NAME="tex2html8990"
-  HREF="node357.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html8984"
-  HREF="node461.html">FDISK_buildRaidDialog</A>
- &nbsp; <B>  <A NAME="tex2html8992"
+<B> Next:</B> <A NAME="tex2html9044"
+  HREF="node463.html">FDISK_getDrivePartitionSize</A>
+<B> Up:</B> <A NAME="tex2html9040"
+  HREF="node362.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html9034"
+  HREF="node461.html">FDISK_adjustFdiskParams</A>
+ &nbsp; <B>  <A NAME="tex2html9042"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00812105000000000000000">
-FDISK_addRaidJobs</A>
+<H2><A NAME="SECTION00812100000000000000000">
+FDISK_virtualAddDrive</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates jobs to create all RAIDs
+<SPAN  CLASS="textbf">Description:</SPAN> Adds a new drive to the param array.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>partJobs: associative array with partition jobs
+<LI>param: parameter string containing status informations about the harddisks
 </LI>
-<LI>param: parameter string containing status information about the harddisks
+<LI>path: Device name of the new drive (e.g. /dev/md0)
+</LI>
+<LI>size: Size in MB of the new drive.
 </LI>
 </UL>
 
@@ -70,7 +72,7 @@ FDISK_addRaidJobs</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

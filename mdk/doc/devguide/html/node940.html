@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_rootFreeSpace</TITLE>
-<META NAME="description" CONTENT="SERVER_rootFreeSpace">
+<TITLE>SERVER_getServerSetting</TITLE>
+<META NAME="description" CONTENT="SERVER_getServerSetting">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node941.html">
 <LINK REL="previous" HREF="node939.html">
-<LINK REL="up" HREF="node925.html">
+<LINK REL="up" HREF="node936.html">
 <LINK REL="next" HREF="node941.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15173"
+<A NAME="tex2html15234"
   HREF="node941.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15169"
-  HREF="node925.html">
+<A NAME="tex2html15230"
+  HREF="node936.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15163"
+<A NAME="tex2html15224"
   HREF="node939.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15171"
+<A NAME="tex2html15232"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15174"
-  HREF="node941.html">SERVER_isProgramRunning</A>
-<B> Up:</B> <A NAME="tex2html15170"
-  HREF="node925.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html15164"
-  HREF="node939.html">SERVER_tmpNotWritable</A>
- &nbsp; <B>  <A NAME="tex2html15172"
+<B> Next:</B> <A NAME="tex2html15235"
+  HREF="node941.html">SERVER_existsServerSetting</A>
+<B> Up:</B> <A NAME="tex2html15231"
+  HREF="node936.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html15225"
+  HREF="node939.html">SERVER_setServerSetting</A>
+ &nbsp; <B>  <A NAME="tex2html15233"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083115000000000000000">
-SERVER_rootFreeSpace</A>
+<H2><A NAME="SECTION008314000000000000000">
+SERVER_getServerSetting</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Shows an error message if the free space of the root partition is low.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Gets the value of a server setting.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>: false, if there is enough space.
+<LI>: var: Name of the setting.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: Value the setting.
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ SERVER_rootFreeSpace</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>MSG_DeActivateBlogDialog</TITLE>
-<META NAME="description" CONTENT="MSG_DeActivateBlogDialog">
+<TITLE>MSG_showWarning</TITLE>
+<META NAME="description" CONTENT="MSG_showWarning">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,61 +19,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
+<LINK REL="next" HREF="node758.html">
 <LINK REL="previous" HREF="node756.html">
-<LINK REL="up" HREF="node741.html">
+<LINK REL="up" HREF="node749.html">
 <LINK REL="next" HREF="node758.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12789"
+<A NAME="tex2html12844"
   HREF="node758.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12785"
-  HREF="node741.html">
+<A NAME="tex2html12840"
+  HREF="node749.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12781"
+<A NAME="tex2html12834"
   HREF="node756.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12787"
+<A NAME="tex2html12842"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12790"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Up:</B> <A NAME="tex2html12786"
-  HREF="node741.html">./inc/message.php</A>
-<B> Previous:</B> <A NAME="tex2html12782"
-  HREF="node756.html">MSG_showNewFeature</A>
- &nbsp; <B>  <A NAME="tex2html12788"
+<B> Next:</B> <A NAME="tex2html12845"
+  HREF="node758.html">MSG_show</A>
+<B> Up:</B> <A NAME="tex2html12841"
+  HREF="node749.html">./inc/message.php</A>
+<B> Previous:</B> <A NAME="tex2html12835"
+  HREF="node756.html">MSG_showError</A>
+ &nbsp; <B>  <A NAME="tex2html12843"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082316000000000000000">
-MSG_DeActivateBlogDialog</A>
+<H2><A NAME="SECTION008238000000000000000">
+MSG_showWarning</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Creates a dialog to en/disable a blog. The displaying state is written to the DB.
+<SPAN  CLASS="textbf">Description:</SPAN> Shows the warning block for the warning messages.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>blogVarName: Variable name of the blog to store in the DB.
+<LI>message: the text for the info message
 </LI>
-<LI>css: Name of the CSS class to color the dialog.
+<LI>language: two character language description (e.g. de, en, fr,...)
 </LI>
-<LI>blogName: Name of the blog als human readle heading.
-</LI>
-<LI>width: Width of the box containing the switch dialog.
-</LI>
-<LI>dialogCode: The HTML code of the dialog element is written to this variable.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>: True if the blog should be shown otherwise false.
+<LI>width: width of the box
 </LI>
 </UL>
 
@@ -81,7 +72,7 @@ MSG_DeActivateBlogDialog</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

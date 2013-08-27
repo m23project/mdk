@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Crit&#232;res d'ajustement</TITLE>
-<META NAME="description" CONTENT="Crit&#232;res d'ajustement">
+<TITLE>D&#233;finir le type et la taille du disque dur</TITLE>
+<META NAME="description" CONTENT="D&#233;finir le type et la taille du disque dur">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,7 +19,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="manual.css">
 
-<LINK REL="next" HREF="node185.html">
+<LINK REL="next" HREF="node188.html">
 <LINK REL="previous" HREF="node183.html">
 <LINK REL="up" HREF="node182.html">
 <LINK REL="next" HREF="node185.html">
@@ -28,75 +28,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html2803"
+<A NAME="tex2html2808"
   HREF="node185.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2799"
+<A NAME="tex2html2804"
   HREF="node182.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2793"
+<A NAME="tex2html2798"
   HREF="node183.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2801"
+<A NAME="tex2html2806"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> suivant:</B> <A NAME="tex2html2804"
+<B> suivant:</B> <A NAME="tex2html2809"
   HREF="node185.html">Notez</A>
-<B> monter:</B> <A NAME="tex2html2800"
-  HREF="node182.html">D&#233;finir le type et</A>
-<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2794"
-  HREF="node183.html">Notez</A>
- &nbsp; <B>  <A NAME="tex2html2802"
+<B> monter:</B> <A NAME="tex2html2805"
+  HREF="node182.html">Outils de masse</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2799"
+  HREF="node183.html">D&#233;finir un poste client</A>
+ &nbsp; <B>  <A NAME="tex2html2807"
   HREF="node1.html">Table des mati&#232;res</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION001522000000000000000">
-Crit&#232;res d'ajustement</A>
-</H2>
-Nous supposons que les param&#232;tres du disque dur d&#233;finis ne peuvent s'appliquer &#224; tous vos postes clients. M23 fournit diff&#233;rentes m&#233;thodes pour l'adaptation individuelle des partitions pour vos diff&#233;rents clients.
+<H1><A NAME="SECTION001520000000000000000">
+D&#233;finir le type et la taille du disque dur</A>
+</H1>
+<IMG
+  WIDTH="1126" HEIGHT="1356" ALIGN="BOTTOM" BORDER="0"
+ SRC="./diskDefine.png"
+ ALT="Image diskDefine"> 
 <BR>
-<UL>
-<LI>Le <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Crit&#232;re de s&#233;lection du disque dur<SPAN CLASS="MATH"></SPAN></SPAN> d&#233;termine l'algorithme de s&#233;lection du disque dur dans le cas ou il y en aurait plusieurs.
+Entrez les propri&#233;t&#233;s du disque dur pour le poste client ma&#238;tre, puisqu'elles ne peuvent &#234;tre collect&#233;es sur ce dernier. Vous devez d&#233;finir le type de disque dur (IDE, SCSI) et la taille &#224; utiliser. La taille ainsi d&#233;finie devrait correspondre, &#224; peu de chose pr&#232;s, &#224; la taille du disque dur des postes client r&#233;els.
 <BR>
-<UL>
-<LI>La fonction <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Comme indiqu&#233;<SPAN CLASS="MATH"></SPAN></SPAN> force l'utilisation du disque dur s&#233;lectionn&#233; ci-dessus, bien qu'il puisse y avoir des disques durs dont la taille correspondrait mieux &#224; la taille requise. Si ce disque dur n'existait pas (par exemple s'il n'y a pas de /dev/hda pour un syst&#232;me SCSI), un autre disque dur sera s&#233;lectionn&#233;. Si cette fonction n'est pas activ&#233;e, le disque dur le mieux adapt&#233; sera s&#233;lectionn&#233; selon les crit&#232;res suivants:
-<BR></LI>
-<LI>Les bornes de tol&#233;rance pour <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Du m&#234;me type<SPAN CLASS="MATH"></SPAN></SPAN> et <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>D&amp;apos;un autre type<SPAN CLASS="MATH"></SPAN></SPAN> indiquent la taille maximum (le disque dur du client est plus grand que celui du poste client ma&#238;tre) et la taille minimum (le disque dur du client est plus petit que celui du client ma&#238;tre). Des disques durs dont la taille est comprise entre ces deux valeurs sont conformes. Lorsque des disques durs d'un m&#234;me type doivent (par exemple du type IDE) &#234;tre utilis&#233;s, s&#233;lectionnez des bornes de tol&#233;rences plus restreintes (mettre les bornes de tol&#233;rances sup&#233;rieures et inf&#233;rieures sur 0) pour le disque dur <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>D&amp;apos;un autre type<SPAN CLASS="MATH"></SPAN></SPAN>.
-<BR>		
-</LI>
-</UL>
-</LI>
-</UL>
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A NAME="tex2html2803"
-  HREF="node185.html">
-<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2799"
-  HREF="node182.html">
-<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2793"
-  HREF="node183.html">
-<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2801"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> suivant:</B> <A NAME="tex2html2804"
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Sous-sections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html2810"
   HREF="node185.html">Notez</A>
-<B> monter:</B> <A NAME="tex2html2800"
-  HREF="node182.html">D&#233;finir le type et</A>
-<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2794"
-  HREF="node183.html">Notez</A>
- &nbsp; <B>  <A NAME="tex2html2802"
-  HREF="node1.html">Table des mati&#232;res</A></B> </DIV>
-<!--End of Navigation Panel-->
+<LI><A NAME="tex2html2811"
+  HREF="node186.html">Crit&#232;res d'ajustement</A>
+<LI><A NAME="tex2html2812"
+  HREF="node187.html">Notez</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

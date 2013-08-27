@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_copyPackagesToClient</TITLE>
-<META NAME="description" CONTENT="PKG_copyPackagesToClient">
+<TITLE>PKG_previewInstallationDeinstallation</TITLE>
+<META NAME="description" CONTENT="PKG_previewInstallationDeinstallation">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node831.html">
 <LINK REL="previous" HREF="node829.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node831.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13756"
+<A NAME="tex2html13812"
   HREF="node831.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13752"
-  HREF="node758.html">
+<A NAME="tex2html13808"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13746"
+<A NAME="tex2html13802"
   HREF="node829.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13754"
+<A NAME="tex2html13810"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13757"
-  HREF="node831.html">PKG_remNormalPackages</A>
-<B> Up:</B> <A NAME="tex2html13753"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html13747"
-  HREF="node829.html">PKG_copyWait4accPackagesToClient</A>
- &nbsp; <B>  <A NAME="tex2html13755"
+<B> Next:</B> <A NAME="tex2html13813"
+  HREF="node831.html">PKG_showPreviewInstallationDeinstallation</A>
+<B> Up:</B> <A NAME="tex2html13809"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html13803"
+  HREF="node829.html">PKG_getRecommendPackageAllInstalledSize</A>
+ &nbsp; <B>  <A NAME="tex2html13811"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082472000000000000000">
-PKG_copyPackagesToClient</A>
+<H2><A NAME="SECTION0082464000000000000000">
+PKG_previewInstallationDeinstallation</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> copies all with a selected status jobs from one client to another
+<SPAN  CLASS="textbf">Description:</SPAN> showes what happens if a client deinstalls/ installs waiting packages and generates a table with title
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>from: the source client
+<LI>clientName: name of the client
 </LI>
-<LI>to: the destination client
-</LI>
-<LI>status: can be set to a package status or be empty to copy all jobs
+<LI>install: set to true, if packages should be installed. if false the packages should be deinstalled
 </LI>
 </UL>
 
@@ -72,7 +70,7 @@ PKG_copyPackagesToClient</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.14)  11 MAY 2013 21:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.1.14)  18 AUG 2013 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -385,7 +385,7 @@ LaTeX Info: Redefining \nameref on input line 18.
 \openout3 = `manual.out'.
 
 
-</mdk/doc/manual/screenshots/m23biglogo.png, id=812, 339.2675pt x 253.94875pt>
+</mdk/doc/manual/screenshots/m23biglogo.png, id=820, 339.2675pt x 253.94875pt>
 File: /mdk/doc/manual/screenshots/m23biglogo.png Graphic file (type png)
 
 <use /mdk/doc/manual/screenshots/m23biglogo.png>
@@ -457,7 +457,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 14.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 21.
-</mdk/doc/manual/screenshots/debianlogo.png, id=1050, 36.8577pt x 48.4209pt>
+</mdk/doc/manual/screenshots/debianlogo.png, id=1060, 36.8577pt x 48.4209pt>
 File: /mdk/doc/manual/screenshots/debianlogo.png Graphic file (type png)
 
 <use /mdk/doc/manual/screenshots/debianlogo.png>
@@ -484,7 +484,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
  []
 
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst1.png, id=1067, 722.7pt x 400
+</mdk/doc/manual/screenshots/serverinstall/en/inst1.png, id=1077, 722.7pt x 400
 .49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst1.png Graphic file (type
  png)
@@ -493,7 +493,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst1.png
  used on input line 15.
 (pdftex.def)             Requested size: 325.21199pt x 180.22165pt.
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst2.png, id=1068, 722.7pt x 400
+</mdk/doc/manual/screenshots/serverinstall/en/inst2.png, id=1078, 722.7pt x 400
 .49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst2.png Graphic file (type
  png)
@@ -504,7 +504,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst2.png
  [11
 
  </mdk/doc/manual/screenshots/serverinstall/en/inst1.png (PNG copy)>]
-</mdk/doc/manual/screenshots/serverinstall/en/inst3.png, id=1073, 722.7pt x 400
+</mdk/doc/manual/screenshots/serverinstall/en/inst3.png, id=1083, 722.7pt x 400
 .49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst3.png Graphic file (type
  png)
@@ -513,7 +513,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst3.png
  used on input line 22.
 (pdftex.def)             Requested size: 325.21199pt x 180.22165pt.
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst4.png, id=1074, 722.7pt x 400
+</mdk/doc/manual/screenshots/serverinstall/en/inst4.png, id=1084, 722.7pt x 400
 .49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst4.png Graphic file (type
  png)
@@ -522,7 +522,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst4.png
  used on input line 27.
 (pdftex.def)             Requested size: 325.21199pt x 180.22165pt.
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst5.png, id=1075, 722.7pt x 400
+</mdk/doc/manual/screenshots/serverinstall/en/inst5.png, id=1085, 722.7pt x 400
 .49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst5.png Graphic file (type
  png)
@@ -533,7 +533,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst5.png
  [12 </mdk/doc/manual/screenshots/serverinstall/en/inst2.png (PNG copy)> </mdk/
 doc/manual/screenshots/serverinstall/en/inst3.png (PNG copy)> </mdk/doc/manual/
 screenshots/serverinstall/en/inst4.png (PNG copy)>]
-</mdk/doc/manual/screenshots/serverinstall/en/inst6.png, id=1082, 722.7pt x 400
+</mdk/doc/manual/screenshots/serverinstall/en/inst6.png, id=1092, 722.7pt x 400
 .49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst6.png Graphic file (type
  png)
@@ -542,7 +542,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst6.png
  used on input line 38.
 (pdftex.def)             Requested size: 325.21199pt x 180.22165pt.
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst7.png, id=1083, 722.7pt x 400
+</mdk/doc/manual/screenshots/serverinstall/en/inst7.png, id=1093, 722.7pt x 400
 .49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst7.png Graphic file (type
  png)
@@ -551,7 +551,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst7.png
  used on input line 43.
 (pdftex.def)             Requested size: 325.21199pt x 180.22165pt.
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst8.png, id=1084, 722.7pt x 400
+</mdk/doc/manual/screenshots/serverinstall/en/inst8.png, id=1094, 722.7pt x 400
 .49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst8.png Graphic file (type
  png)
@@ -567,7 +567,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--50
 [13 </mdk/doc/manual/screenshots/serverinstall/en/inst5.png (PNG copy)> </mdk/d
 oc/manual/screenshots/serverinstall/en/inst6.png (PNG copy)> </mdk/doc/manual/s
 creenshots/serverinstall/en/inst7.png (PNG copy)>]
-</mdk/doc/manual/screenshots/serverinstall/en/inst9.png, id=1089, 722.7pt x 400
+</mdk/doc/manual/screenshots/serverinstall/en/inst9.png, id=1099, 722.7pt x 400
 .49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst9.png Graphic file (type
  png)
@@ -576,7 +576,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst9.png
  used on input line 53.
 (pdftex.def)             Requested size: 325.21199pt x 180.22165pt.
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst10.png, id=1090, 722.7pt x 40
+</mdk/doc/manual/screenshots/serverinstall/en/inst10.png, id=1100, 722.7pt x 40
 0.49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst10.png Graphic file (typ
 e png)
@@ -585,7 +585,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst10.pn
 g used on input line 59.
 (pdftex.def)             Requested size: 325.21199pt x 180.22165pt.
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst11.png, id=1091, 722.7pt x 40
+</mdk/doc/manual/screenshots/serverinstall/en/inst11.png, id=1101, 722.7pt x 40
 0.49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst11.png Graphic file (typ
 e png)
@@ -597,7 +597,7 @@ g used on input line 65.
 [14 </mdk/doc/manual/screenshots/serverinstall/en/inst8.png (PNG copy)> </mdk/d
 oc/manual/screenshots/serverinstall/en/inst9.png (PNG copy)> </mdk/doc/manual/s
 creenshots/serverinstall/en/inst10.png (PNG copy)>]
-</mdk/doc/manual/screenshots/serverinstall/en/inst12.png, id=1096, 722.7pt x 40
+</mdk/doc/manual/screenshots/serverinstall/en/inst12.png, id=1106, 722.7pt x 40
 0.49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst12.png Graphic file (typ
 e png)
@@ -606,7 +606,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst12.pn
 g used on input line 71.
 (pdftex.def)             Requested size: 325.21199pt x 180.22165pt.
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst13.png, id=1097, 722.7pt x 40
+</mdk/doc/manual/screenshots/serverinstall/en/inst13.png, id=1107, 722.7pt x 40
 0.49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst13.png Graphic file (typ
 e png)
@@ -622,7 +622,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--80
 [15 </mdk/doc/manual/screenshots/serverinstall/en/inst11.png (PNG copy)> </mdk/
 doc/manual/screenshots/serverinstall/en/inst12.png (PNG copy)> </mdk/doc/manual
 /screenshots/serverinstall/en/inst13.png (PNG copy)>]
-</mdk/doc/manual/screenshots/serverinstall/en/inst14.png, id=1102, 722.7pt x 40
+</mdk/doc/manual/screenshots/serverinstall/en/inst14.png, id=1112, 722.7pt x 40
 0.49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst14.png Graphic file (typ
 e png)
@@ -631,7 +631,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst14.pn
 g used on input line 88.
 (pdftex.def)             Requested size: 325.21199pt x 180.22165pt.
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst15.png, id=1103, 722.7pt x 40
+</mdk/doc/manual/screenshots/serverinstall/en/inst15.png, id=1113, 722.7pt x 40
 0.49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst15.png Graphic file (typ
 e png)
@@ -645,7 +645,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--96
  []
 
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst16.png, id=1104, 722.7pt x 40
+</mdk/doc/manual/screenshots/serverinstall/en/inst16.png, id=1114, 722.7pt x 40
 0.49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst16.png Graphic file (typ
 e png)
@@ -660,7 +660,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
 [16 </mdk/doc/manual/screenshots/serverinstall/en/inst14.png (PNG copy)> </mdk/
 doc/manual/screenshots/serverinstall/en/inst15.png (PNG copy)>]
-</mdk/doc/manual/screenshots/serverinstall/en/inst17.png, id=1109, 722.7pt x 40
+</mdk/doc/manual/screenshots/serverinstall/en/inst17.png, id=1119, 722.7pt x 40
 0.49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst17.png Graphic file (typ
 e png)
@@ -674,7 +674,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--106
  []
 
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst18.png, id=1110, 722.7pt x 40
+</mdk/doc/manual/screenshots/serverinstall/en/inst18.png, id=1120, 722.7pt x 40
 0.49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst18.png Graphic file (typ
 e png)
@@ -683,7 +683,7 @@ Package pdftex.def Info: /mdk/doc/manual/screenshots/serverinstall/en/inst18.pn
 g used on input line 108.
 (pdftex.def)             Requested size: 325.21199pt x 180.22165pt.
 
-</mdk/doc/manual/screenshots/serverinstall/en/inst19.png, id=1111, 722.7pt x 40
+</mdk/doc/manual/screenshots/serverinstall/en/inst19.png, id=1121, 722.7pt x 40
 0.49625pt>
 File: /mdk/doc/manual/screenshots/serverinstall/en/inst19.png Graphic file (typ
 e png)
@@ -724,7 +724,7 @@ r
 ]
 Chapitre 6.
 (../htaccess.hlp.tex
-</mdk/doc/manual/screenshots/fr/htaccess.png, id=1125, 1130.2225pt x 400.49625p
+</mdk/doc/manual/screenshots/fr/htaccess.png, id=1135, 1130.2225pt x 400.49625p
 t>
 File: /mdk/doc/manual/screenshots/fr/htaccess.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/htaccess.png>
@@ -747,7 +747,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
  []
 
 ) (../serverupdate.hlp.tex
-</mdk/doc/manual/screenshots/fr/serverupdate.png, id=1126, 1152.305pt x 512.916
+</mdk/doc/manual/screenshots/fr/serverupdate.png, id=1136, 1152.305pt x 512.916
 24pt>
 File: /mdk/doc/manual/screenshots/fr/serverupdate.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/serverupdate.png>
@@ -830,7 +830,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/daemonsAndPrograms.png, id=1146, 1130.2225pt x 
+</mdk/doc/manual/screenshots/fr/daemonsAndPrograms.png, id=1156, 1130.2225pt x 
 801.99625pt>
 File: /mdk/doc/manual/screenshots/fr/daemonsAndPrograms.png Graphic file (type 
 png)
@@ -884,7 +884,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
  []
 
 ) (../ldapSettings.hlp.tex
-</mdk/doc/manual/screenshots/fr/ldapSettings.png, id=1153, 1129.21875pt x 554.0
+</mdk/doc/manual/screenshots/fr/ldapSettings.png, id=1163, 1129.21875pt x 554.0
 7pt>
 File: /mdk/doc/manual/screenshots/fr/ldapSettings.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/ldapSettings.png>
@@ -922,7 +922,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
  []
 
 ) (../manageGPGKeysDialog.hlp.tex
-</mdk/doc/manual/screenshots/fr/manageGPGKeysDialog.png, id=1159, 1253.68375pt 
+</mdk/doc/manual/screenshots/fr/manageGPGKeysDialog.png, id=1169, 1253.68375pt 
 x 505.89pt>
 File: /mdk/doc/manual/screenshots/fr/manageGPGKeysDialog.png Graphic file (type
  png)
@@ -966,7 +966,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
  []
 
 ) (../manageImageFiles.hlp.tex
-</mdk/doc/manual/screenshots/fr/manageImageFiles.png, id=1160, 1130.2225pt x 29
+</mdk/doc/manual/screenshots/fr/manageImageFiles.png, id=1170, 1130.2225pt x 29
 3.095pt>
 File: /mdk/doc/manual/screenshots/fr/manageImageFiles.png Graphic file (type pn
 g)
@@ -991,7 +991,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/serverBackup.png, id=1172, 1305.87875pt x 909.3
+</mdk/doc/manual/screenshots/fr/serverBackup.png, id=1182, 1305.87875pt x 909.3
 975pt>
 File: /mdk/doc/manual/screenshots/fr/serverBackup.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/serverBackup.png>
@@ -1243,7 +1243,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/serverBackupList.png, id=1200, 1128.215pt x 665
+</mdk/doc/manual/screenshots/fr/serverBackupList.png, id=1210, 1128.215pt x 665
 .48625pt>
 File: /mdk/doc/manual/screenshots/fr/serverBackupList.png Graphic file (type pn
 g)
@@ -1272,7 +1272,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/serverRestore.png, id=1201, 1.00375pt x 1.00375
+</mdk/doc/manual/screenshots/fr/serverRestore.png, id=1211, 1.00375pt x 1.00375
 pt>
 File: /mdk/doc/manual/screenshots/fr/serverRestore.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/serverRestore.png>
@@ -1350,7 +1350,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
  []
 
 ) (../ipManagement.hlp.tex
-</mdk/doc/manual/screenshots/fr/ipManagement.png, id=1208, 1104.125pt x 1196.47
+</mdk/doc/manual/screenshots/fr/ipManagement.png, id=1218, 1104.125pt x 1196.47
 pt>
 File: /mdk/doc/manual/screenshots/fr/ipManagement.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/ipManagement.png>
@@ -1460,7 +1460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/themeChoice.png, id=1231, 390.45876pt x 693.591
+</mdk/doc/manual/screenshots/fr/themeChoice.png, id=1241, 390.45876pt x 693.591
 25pt>
 File: /mdk/doc/manual/screenshots/fr/themeChoice.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/themeChoice.png>
@@ -1475,7 +1475,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--41
 [32] [33 </mdk/doc/manual/screenshots/fr/themeChoice.png>]
 Chapitre 7.
 (../RASInstalled.hlp.tex
-</mdk/doc/manual/screenshots/fr/RASInstalled.png, id=1241, 1064.97874pt x 824.0
+</mdk/doc/manual/screenshots/fr/RASInstalled.png, id=1251, 1064.97874pt x 824.0
 7875pt>
 File: /mdk/doc/manual/screenshots/fr/RASInstalled.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/RASInstalled.png>
@@ -1496,7 +1496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--1
 [34
 
  </mdk/doc/manual/screenshots/fr/RASInstalled.png>]
-</mdk/doc/manual/screenshots/fr/RASNotInstalled.png, id=1247, 927.465pt x 829.0
+</mdk/doc/manual/screenshots/fr/RASNotInstalled.png, id=1258, 927.465pt x 829.0
 975pt>
 File: /mdk/doc/manual/screenshots/fr/RASNotInstalled.png Graphic file (type png
 )
@@ -1616,7 +1616,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--45
 [36]
 Chapitre 8.
 (../clients_overview.hlp.tex
-</mdk/doc/manual/screenshots/fr/clients_overview.png, id=1259, 1053.9375pt x 59
+</mdk/doc/manual/screenshots/fr/clients_overview.png, id=1269, 1053.9375pt x 59
 6.2275pt>
 File: /mdk/doc/manual/screenshots/fr/clients_overview.png Graphic file (type pn
 g)
@@ -1729,7 +1729,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--48
  []
 
 (../clientdetails.hlp.tex
-</mdk/doc/manual/screenshots/fr/clientdetails.png, id=1265, 781.92125pt x 2583.
+</mdk/doc/manual/screenshots/fr/clientdetails.png, id=1275, 781.92125pt x 2583.
 6525pt>
 File: /mdk/doc/manual/screenshots/fr/clientdetails.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/clientdetails.png>
@@ -1785,7 +1785,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/clientinfo_hardware.png, id=1275, 1129.21875pt 
+</mdk/doc/manual/screenshots/fr/clientinfo_hardware.png, id=1285, 1129.21875pt 
 x 3309.36375pt>
 File: /mdk/doc/manual/screenshots/fr/clientinfo_hardware.png Graphic file (type
  png)
@@ -1804,7 +1804,7 @@ Overfull \vbox (191.59549pt too high) has occurred while \output is active []
 
 
 [42 </mdk/doc/manual/screenshots/fr/clientinfo_hardware.png>]
-</mdk/doc/manual/screenshots/fr/clients_packages.png, id=1290, 1129.21875pt x 4
+</mdk/doc/manual/screenshots/fr/clients_packages.png, id=1300, 1129.21875pt x 4
 26.59375pt>
 File: /mdk/doc/manual/screenshots/fr/clients_packages.png Graphic file (type pn
 g)
@@ -1824,7 +1824,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/clientinfo_clientLog.png, id=1291, 1284.8pt x 2
+</mdk/doc/manual/screenshots/fr/clientinfo_clientLog.png, id=1301, 1284.8pt x 2
 915.89375pt>
 File: /mdk/doc/manual/screenshots/fr/clientinfo_clientLog.png Graphic file (typ
 e png)
@@ -1848,7 +1848,7 @@ Overfull \vbox (494.61711pt too high) has occurred while \output is active []
 
 
 [44 </mdk/doc/manual/screenshots/fr/clientinfo_clientLog.png>]
-</mdk/doc/manual/screenshots/fr/clientinfo_addToGroup.png, id=1302, 1127.21124p
+</mdk/doc/manual/screenshots/fr/clientinfo_addToGroup.png, id=1312, 1127.21124p
 t x 351.3125pt>
 File: /mdk/doc/manual/screenshots/fr/clientinfo_addToGroup.png Graphic file (ty
 pe png)
@@ -1867,7 +1867,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/clientinfo_delFromGroup.png, id=1303, 1127.2112
+</mdk/doc/manual/screenshots/fr/clientinfo_delFromGroup.png, id=1313, 1127.2112
 4pt x 372.39125pt>
 File: /mdk/doc/manual/screenshots/fr/clientinfo_delFromGroup.png Graphic file (
 type png)
@@ -1888,7 +1888,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/clients_recover.png, id=1304, 1130.2225pt x 103
+</mdk/doc/manual/screenshots/fr/clients_recover.png, id=1314, 1130.2225pt x 103
 4.86626pt>
 File: /mdk/doc/manual/screenshots/fr/clients_recover.png Graphic file (type png
 )
@@ -1925,7 +1925,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-</mdk/doc/manual/screenshots/fr/rescue_client.png, id=1311, 1130.2225pt x 1034.
+</mdk/doc/manual/screenshots/fr/rescue_client.png, id=1321, 1130.2225pt x 1034.
 86626pt>
 File: /mdk/doc/manual/screenshots/fr/rescue_client.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/rescue_client.png>
@@ -1961,7 +1961,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/client_status.png, id=1317, 1128.215pt x 426.59
+</mdk/doc/manual/screenshots/fr/client_status.png, id=1327, 1128.215pt x 426.59
 375pt>
 File: /mdk/doc/manual/screenshots/fr/client_status.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/client_status.png>
@@ -2082,7 +2082,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/client_debug.png, id=1329, 1128.215pt x 373.395
+</mdk/doc/manual/screenshots/fr/client_debug.png, id=1339, 1128.215pt x 373.395
 pt>
 File: /mdk/doc/manual/screenshots/fr/client_debug.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/client_debug.png>
@@ -2101,7 +2101,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/client_directConnection.png, id=1330, 1.00375pt
+</mdk/doc/manual/screenshots/fr/client_directConnection.png, id=1340, 1.00375pt
  x 1.00375pt>
 File: /mdk/doc/manual/screenshots/fr/client_directConnection.png Graphic file (
 type png)
@@ -2121,7 +2121,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/edit_client.png, id=1336, 1130.2225pt x 1546.77
+</mdk/doc/manual/screenshots/fr/edit_client.png, id=1346, 1130.2225pt x 1546.77
 875pt>
 File: /mdk/doc/manual/screenshots/fr/edit_client.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/edit_client.png>
@@ -2159,7 +2159,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/client_changejobs.png, id=1347, 1130.2225pt x 4
+</mdk/doc/manual/screenshots/fr/client_changejobs.png, id=1357, 1130.2225pt x 4
 72.76625pt>
 File: /mdk/doc/manual/screenshots/fr/client_changejobs.png Graphic file (type p
 ng)
@@ -2214,7 +2214,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `alignment tab' on input line 1.
 
 
-</mdk/doc/manual/screenshots/fr/client_createImage.png, id=1348, 1150.2975pt x 
+</mdk/doc/manual/screenshots/fr/client_createImage.png, id=1358, 1150.2975pt x 
 963.6pt>
 File: /mdk/doc/manual/screenshots/fr/client_createImage.png Graphic file (type 
 png)
@@ -2290,12 +2290,12 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Overfull \hbox (47.67932pt too wide) in paragraph at lines 2--8
+Overfull \hbox (47.67932pt too wide) in paragraph at lines 2--10
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--8
+Underfull \hbox (badness 10000) in paragraph at lines 2--10
 
  []
 
@@ -2303,7 +2303,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--8
 ! Misplaced alignment tab character &.
 <argument> "Créer l&
                     apos;image"
-l.9 ... cliqu\'e sur \textit{"Créer l&apos;image"}
+l.11 ...cliqu\'e sur \textit{"Créer l&apos;image"}
                                                   . Ensuite, la cr\'eation d...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2315,7 +2315,7 @@ might try typing `S' now just to see what is salvageable.
 ! Misplaced alignment tab character &.
 <argument> "Créer l&
                     apos;image"
-l.10 ...lidation sur \textit{"Créer l&apos;image"}
+l.12 ...lidation sur \textit{"Créer l&apos;image"}
                                                    \textbf{seront perdues}!\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -2325,17 +2325,12 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--17
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
 
  []
 
 [53 </mdk/doc/manual/screenshots/fr/client_createImage.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 14--19
 
  []
 
@@ -2350,22 +2345,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-) (../client_backup.hlp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 27--1
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 
-</mdk/doc/manual/screenshots/fr/client_backup.png, id=1359, 1130.2225pt x 349.3
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+) (../client_backup.hlp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 29--1
+
+ []
+
+
+</mdk/doc/manual/screenshots/fr/client_backup.png, id=1370, 1130.2225pt x 349.3
 05pt>
 File: /mdk/doc/manual/screenshots/fr/client_backup.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/client_backup.png>
@@ -2384,7 +2384,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/poolFromClient.png, id=1360, 1318.9275pt x 321.
+</mdk/doc/manual/screenshots/fr/poolFromClient.png, id=1371, 1318.9275pt x 321.
 2pt>
 File: /mdk/doc/manual/screenshots/fr/poolFromClient.png Graphic file (type png)
 
@@ -2414,7 +2414,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--66
 reenshots/fr/poolFromClient.png>]
 Chapitre 9.
 (../client_add.hlp.tex
-</mdk/doc/manual/screenshots/fr/client_add.png, id=1373, 1130.2225pt x 1462.463
+</mdk/doc/manual/screenshots/fr/client_add.png, id=1383, 1130.2225pt x 1462.463
 75pt>
 File: /mdk/doc/manual/screenshots/fr/client_add.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/client_add.png>
@@ -2787,7 +2787,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/externalDHCP.png, id=1391, 1.00375pt x 1.00375p
+</mdk/doc/manual/screenshots/fr/externalDHCP.png, id=1401, 1.00375pt x 1.00375p
 t>
 File: /mdk/doc/manual/screenshots/fr/externalDHCP.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/externalDHCP.png>
@@ -2830,50 +2830,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-! Misplaced alignment tab character &.
-<argument> "Vue d&
-                  apos;ensemble des postes clients"
-l.20 ...{"Vue d&apos;ensemble des postes clients"}
-                                                   dans le lien \`a chaque p...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+! You can't use `macro parameter character #' in horizontal mode.
+l.18 ...ntez la ligne ci-dessous en ajoutant un "#
+                                                  " au d\'ebut de celle-ci I...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.18 ...NTERFACES=... cette derni\`ere deviendra #
+                                                  INTERFACES=... puis ajoute...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-Overfull \hbox (10.97353pt too wide) in paragraph at lines 18--21
-\T1/ptm/b/n/10 son adresse IP$\OMS/cmsy/m/n/10 i$\T1/ptm/m/n/10 " de-vfs=nomoun
-t vga=normal load_ramdisk=1 prompt_ramdisk=0 ramdisk_size=\T1/ptm/b/n/10 45000
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--21
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-) (../clientPartitionFormat.hlp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 24--1
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-</mdk/doc/manual/screenshots/fr/clientPartitionFormat.png, id=1398, 1180.41pt x
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Overfull \hbox (71.5685pt too wide) in paragraph at lines 24--24
+ []\T1/pcr/m/n/10 $\langle$A partir des donn\'ees de exportDHCPSettings.php ins
+\'er\'ees$\rangle$[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+[61]) (../clientPartitionFormat.hlp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 37--1
+
+ []
+
+
+</mdk/doc/manual/screenshots/fr/clientPartitionFormat.png, id=1420, 1180.41pt x
  1142.2675pt>
 File: /mdk/doc/manual/screenshots/fr/clientPartitionFormat.png Graphic file (ty
 pe png)
@@ -2891,7 +2920,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--5
 
  []
 
-[61]
+[62]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -2901,7 +2930,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[62 </mdk/doc/manual/screenshots/fr/clientPartitionFormat.png>]
+[63 </mdk/doc/manual/screenshots/fr/clientPartitionFormat.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
@@ -2936,7 +2965,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-[63]
+[64]
 ! Misplaced alignment tab character &.
 <argument> Partition pour l&
                             apos;installation et le swap
@@ -2967,7 +2996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/client_distr.png, id=1420, 1129.21875pt x 523.9
+</mdk/doc/manual/screenshots/fr/client_distr.png, id=1438, 1129.21875pt x 523.9
 575pt>
 File: /mdk/doc/manual/screenshots/fr/client_distr.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/client_distr.png>
@@ -2984,7 +3013,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
 
-[64 </mdk/doc/manual/screenshots/fr/client_distr.png>]
+[65 </mdk/doc/manual/screenshots/fr/client_distr.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -3051,7 +3080,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 ! Misplaced alignment tab character &.
 <argument> $\ll $Installer un MBR à partir d&
                                              apos;une image ou installer un ...
-l.18 ...image ou installer un MBR générique.$\gg$}
+l.20 ...image ou installer un MBR générique.$\gg$}
                                                    entre le nom du fichier o...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -3060,18 +3089,30 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
+! Misplaced alignment tab character &.
+<argument> "Configurer l&
+                         apos;image comme"
+l.21 ...s \textit{"Configurer l&apos;image comme"}
+                                                  , m23 essaiera de configur...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
 
  []
 
 ) (../clients_delete.hlp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 20--1
+Underfull \hbox (badness 10000) in paragraph at lines 23--1
 
  []
 
 
-</mdk/doc/manual/screenshots/fr/clients_delete.png, id=1426, 1053.9375pt x 523.
+</mdk/doc/manual/screenshots/fr/clients_delete.png, id=1444, 1053.9375pt x 523.
 9575pt>
 File: /mdk/doc/manual/screenshots/fr/clients_delete.png Graphic file (type png)
 
@@ -3089,7 +3130,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
 
-[65]
+[66]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -3139,7 +3180,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
-[66 </mdk/doc/manual/screenshots/fr/clients_delete.png>]
+[67 </mdk/doc/manual/screenshots/fr/clients_delete.png>]
 ! Misplaced alignment tab character &.
 <argument> Effacer d&
                      apos;un groupe:
@@ -3188,7 +3229,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/client_assimilate.png, id=1437, 1130.2225pt x 4
+</mdk/doc/manual/screenshots/fr/client_assimilate.png, id=1455, 1130.2225pt x 4
 06.51875pt>
 File: /mdk/doc/manual/screenshots/fr/client_assimilate.png Graphic file (type p
 ng)
@@ -3216,7 +3257,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[67 </mdk/doc/manual/screenshots/fr/client_assimilate.png>]
+[68 </mdk/doc/manual/screenshots/fr/client_assimilate.png>]
 ! Misplaced alignment tab character &.
 <argument> Nom de l&
                     apos;utilisateur d&apos;*Ubuntu (seulement pour *Ubuntu,...
@@ -3301,10 +3342,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--74
 
  []
 
-[68]
+[69]
 Chapitre 10.
 (../createVM.hlp.tex
-</mdk/doc/manual/screenshots/fr/createVM.png, id=1447, 1130.2225pt x 695.59875p
+</mdk/doc/manual/screenshots/fr/createVM.png, id=1465, 1130.2225pt x 695.59875p
 t>
 File: /mdk/doc/manual/screenshots/fr/createVM.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/createVM.png>
@@ -3331,7 +3372,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-[69
+[70
 
  </mdk/doc/manual/screenshots/fr/createVM.png>]
 ! Misplaced alignment tab character &.
@@ -3399,7 +3440,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/downloadVBoxAddons.png, id=1455, 1497.595pt x 7
+</mdk/doc/manual/screenshots/fr/downloadVBoxAddons.png, id=1474, 1497.595pt x 7
 34.745pt>
 File: /mdk/doc/manual/screenshots/fr/downloadVBoxAddons.png Graphic file (type 
 png)
@@ -3417,7 +3458,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-[70]
+[71]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
@@ -3432,10 +3473,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--78
 
  []
 
-[71 </mdk/doc/manual/screenshots/fr/downloadVBoxAddons.png>]
+[72 </mdk/doc/manual/screenshots/fr/downloadVBoxAddons.png>]
 Chapitre 11.
 (../groups_overview.hlp.tex
-</mdk/doc/manual/screenshots/fr/groups_overview.png, id=1467, 1128.215pt x 356.
+</mdk/doc/manual/screenshots/fr/groups_overview.png, id=1486, 1128.215pt x 356.
 33125pt>
 File: /mdk/doc/manual/screenshots/fr/groups_overview.png Graphic file (type png
 )
@@ -3479,7 +3520,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
  []
 
 ) (../create_group.hlp.tex
-</mdk/doc/manual/screenshots/fr/create_group.png, id=1468, 1129.21875pt x 312.1
+</mdk/doc/manual/screenshots/fr/create_group.png, id=1487, 1129.21875pt x 312.1
 6624pt>
 File: /mdk/doc/manual/screenshots/fr/create_group.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/create_group.png>
@@ -3496,20 +3537,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--82
 
  []
 
-[72
+[73
 
- </mdk/doc/manual/screenshots/fr/groups_overview.png>] [73 </mdk/doc/manual/scr
+ </mdk/doc/manual/screenshots/fr/groups_overview.png>] [74 </mdk/doc/manual/scr
 eenshots/fr/create_group.png>]
 Chapitre 12.
 (../install_packages.hlp.tex
-</mdk/doc/manual/screenshots/fr/install_packages.png, id=1484, 709.65125pt x 96
-3.6pt>
+</mdk/doc/manual/screenshots/fr/install_packages.png, id=1502, 724.7075pt x 100
+5.7575pt>
 File: /mdk/doc/manual/screenshots/fr/install_packages.png Graphic file (type pn
 g)
  <use /mdk/doc/manual/screenshots/fr/install_packages.png>
 Package pdftex.def Info: /mdk/doc/manual/screenshots/fr/install_packages.png us
 ed on input line 2.
-(pdftex.def)             Requested size: 283.85547pt x 385.43317pt.
+(pdftex.def)             Requested size: 289.87787pt x 402.29587pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
@@ -3520,14 +3561,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
+[75
 
+ </mdk/doc/manual/screenshots/fr/install_packages.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[74
 
- </mdk/doc/manual/screenshots/fr/install_packages.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
@@ -3594,18 +3635,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-
+[76]
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-[75]) (../deinstall_packages.hlp.tex
+) (../deinstall_packages.hlp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 29--1
 
  []
 
 
-</mdk/doc/manual/screenshots/fr/deinstall_packages.png, id=1500, 1129.21875pt x
+</mdk/doc/manual/screenshots/fr/deinstall_packages.png, id=1518, 1129.21875pt x
  943.525pt>
 File: /mdk/doc/manual/screenshots/fr/deinstall_packages.png Graphic file (type 
 png)
@@ -3623,12 +3664,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-
+[77 </mdk/doc/manual/screenshots/fr/deinstall_packages.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[76 </mdk/doc/manual/screenshots/fr/deinstall_packages.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -3685,23 +3726,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
 ) (../update_packages.hlp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 27--1
+Underfull \hbox (badness 10000) in paragraph at lines 22--1
 
  []
 
-[77]
-</mdk/doc/manual/screenshots/fr/update_packages.png, id=1516, 1129.21875pt x 34
+
+</mdk/doc/manual/screenshots/fr/update_packages.png, id=1524, 1129.21875pt x 34
 2.27875pt>
 File: /mdk/doc/manual/screenshots/fr/update_packages.png Graphic file (type png
 )
@@ -3719,7 +3750,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-
+[78]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -3730,7 +3761,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
  []
 
 ) (../client_sourceslist.hlp.tex
-</mdk/doc/manual/screenshots/fr/client_sourceslist.png, id=1517, 1260.71pt x 97
+</mdk/doc/manual/screenshots/fr/client_sourceslist.png, id=1536, 1260.71pt x 97
 1.63pt>
 File: /mdk/doc/manual/screenshots/fr/client_sourceslist.png Graphic file (type 
 png)
@@ -3748,7 +3779,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-[78 </mdk/doc/manual/screenshots/fr/update_packages.png>]
+[79 </mdk/doc/manual/screenshots/fr/update_packages.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
@@ -3763,7 +3794,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[79 </mdk/doc/manual/screenshots/fr/client_sourceslist.png>]
+[80 </mdk/doc/manual/screenshots/fr/client_sourceslist.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -3789,7 +3820,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
  []
 
 ) (../editPackageSelection.hlp.tex
-</mdk/doc/manual/screenshots/fr/editPackageSelection.png, id=1529, 1130.2225pt 
+</mdk/doc/manual/screenshots/fr/editPackageSelection.png, id=1547, 1130.2225pt 
 x 928.46875pt>
 File: /mdk/doc/manual/screenshots/fr/editPackageSelection.png Graphic file (typ
 e png)
@@ -3807,7 +3838,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-[80]
+[81]
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
@@ -3847,13 +3878,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-) (../packageBuilder.hlp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 15--1
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-[81 </mdk/doc/manual/screenshots/fr/editPackageSelection.png>]
-</mdk/doc/manual/screenshots/fr/packageBuilder.png, id=1547, 1221.56375pt x 119
+[82 </mdk/doc/manual/screenshots/fr/editPackageSelection.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+) (../packageBuilder.hlp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 19--1
+
+ []
+
+
+</mdk/doc/manual/screenshots/fr/packageBuilder.png, id=1565, 1221.56375pt x 119
 0.4475pt>
 File: /mdk/doc/manual/screenshots/fr/packageBuilder.png Graphic file (type png)
 
@@ -3871,7 +3912,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
 
-[82 </mdk/doc/manual/screenshots/fr/packageBuilder.png>]
+[83]
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
@@ -3881,7 +3922,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-
+[84 </mdk/doc/manual/screenshots/fr/packageBuilder.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
@@ -3904,7 +3945,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/scriptEditor.png, id=1553, 1411.2725pt x 943.52
+</mdk/doc/manual/screenshots/fr/scriptEditor.png, id=1579, 1411.2725pt x 943.52
 5pt>
 File: /mdk/doc/manual/screenshots/fr/scriptEditor.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/scriptEditor.png>
@@ -3921,12 +3962,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-[83 </mdk/doc/manual/screenshots/fr/scriptEditor.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-
+[85 </mdk/doc/manual/screenshots/fr/scriptEditor.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -3967,10 +4008,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-) [84]
+) [86]
 Chapitre 13.
 (../poolBuilderCreateEditDelete.hlp.tex
-</mdk/doc/manual/screenshots/fr/poolBuilderCreateEditDelete.png, id=1567, 1281.
+</mdk/doc/manual/screenshots/fr/poolBuilderCreateEditDelete.png, id=1590, 1281.
 78876pt x 1018.80624pt>
 File: /mdk/doc/manual/screenshots/fr/poolBuilderCreateEditDelete.png Graphic fi
 le (type png)
@@ -3989,7 +4030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-[85
+[87
 
  </mdk/doc/manual/screenshots/fr/poolBuilderCreateEditDelete.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
@@ -4049,7 +4090,7 @@ venant
  []
 
 
-</mdk/doc/manual/screenshots/fr/poolBuilderReadCD.png, id=1574, 1261.71375pt x 
+</mdk/doc/manual/screenshots/fr/poolBuilderReadCD.png, id=1596, 1261.71375pt x 
 1235.61626pt>
 File: /mdk/doc/manual/screenshots/fr/poolBuilderReadCD.png Graphic file (type p
 ng)
@@ -4067,7 +4108,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-[86]
+[88]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
@@ -4099,9 +4140,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[87 </mdk/doc/manual/screenshots/fr/poolBuilderReadCD.png>])
+[89 </mdk/doc/manual/screenshots/fr/poolBuilderReadCD.png>])
 (../poolBuilderCreateIndex.hlp.tex
-</mdk/doc/manual/screenshots/fr/poolBuilderCreateIndex.png, id=1584, 1300.86pt 
+</mdk/doc/manual/screenshots/fr/poolBuilderCreateIndex.png, id=1606, 1300.86pt 
 x 1006.76125pt>
 File: /mdk/doc/manual/screenshots/fr/poolBuilderCreateIndex.png Graphic file (t
 ype png)
@@ -4123,7 +4164,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--1
 
 
 </mdk/doc/manual/screenshots/fr/poolBuilderSelectPackageSourcesAndPackages.png,
- id=1585, 1391.1975pt x 1648.1575pt>
+ id=1607, 1391.1975pt x 1648.1575pt>
 File: /mdk/doc/manual/screenshots/fr/poolBuilderSelectPackageSourcesAndPackages
 .png Graphic file (type png)
 
@@ -4142,11 +4183,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-[88 </mdk/doc/manual/screenshots/fr/poolBuilderCreateIndex.png>] [89]
+[90 </mdk/doc/manual/screenshots/fr/poolBuilderCreateIndex.png>] [91]
 Overfull \vbox (42.26613pt too high) has occurred while \output is active []
 
 
-[90 </mdk/doc/manual/screenshots/fr/poolBuilderSelectPackageSourcesAndPackages.
+[92 </mdk/doc/manual/screenshots/fr/poolBuilderSelectPackageSourcesAndPackages.
 png>]
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
@@ -4219,7 +4260,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-[91]
+[93]
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
@@ -4235,7 +4276,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--1
  []
 
 
-</mdk/doc/manual/screenshots/fr/poolBuilderStartDownload.png, id=1607, 1261.713
+</mdk/doc/manual/screenshots/fr/poolBuilderStartDownload.png, id=1629, 1261.713
 75pt x 1449.415pt>
 File: /mdk/doc/manual/screenshots/fr/poolBuilderStartDownload.png Graphic file 
 (type png)
@@ -4255,8 +4296,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--1
 
  []
 
-[92]
-</mdk/doc/manual/screenshots/fr/poolBuilderDownloadStatus.png, id=1614, 1300.86
+[94]
+</mdk/doc/manual/screenshots/fr/poolBuilderDownloadStatus.png, id=1636, 1300.86
 pt x 917.4275pt>
 File: /mdk/doc/manual/screenshots/fr/poolBuilderDownloadStatus.png Graphic file
  (type png)
@@ -4276,8 +4317,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--1
 
  []
 
-[93 </mdk/doc/manual/screenshots/fr/poolBuilderStartDownload.png>]
-</mdk/doc/manual/screenshots/fr/poolBuilderShowSourcesList.png, id=1620, 1300.8
+[95 </mdk/doc/manual/screenshots/fr/poolBuilderStartDownload.png>]
+</mdk/doc/manual/screenshots/fr/poolBuilderShowSourcesList.png, id=1642, 1300.8
 6pt x 357.335pt>
 File: /mdk/doc/manual/screenshots/fr/poolBuilderShowSourcesList.png Graphic fil
 e (type png)
@@ -4296,11 +4337,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--100
 
  []
 
-[94 </mdk/doc/manual/screenshots/fr/poolBuilderDownloadStatus.png> </mdk/doc/ma
-nual/screenshots/fr/poolBuilderShowSourcesList.png>] [95]
+[96 </mdk/doc/manual/screenshots/fr/poolBuilderDownloadStatus.png> </mdk/doc/ma
+nual/screenshots/fr/poolBuilderShowSourcesList.png>] [97]
 Chapitre 14.
 (../clientBuilder.hlp.tex
-</mdk/doc/manual/screenshots/fr/clientBuilder.png, id=1631, 1130.2225pt x 1361.
+</mdk/doc/manual/screenshots/fr/clientBuilder.png, id=1654, 1130.2225pt x 1361.
 085pt>
 File: /mdk/doc/manual/screenshots/fr/clientBuilder.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/clientBuilder.png>
@@ -4318,10 +4359,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
  []
 
-[96
+[98
 
 ]
-</mdk/doc/manual/screenshots/fr/diskDefine.png, id=1637, 1130.2225pt x 1361.085
+</mdk/doc/manual/screenshots/fr/diskDefine.png, id=1659, 1130.2225pt x 1361.085
 pt>
 File: /mdk/doc/manual/screenshots/fr/diskDefine.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/diskDefine.png>
@@ -4338,12 +4379,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-[97 </mdk/doc/manual/screenshots/fr/clientBuilder.png>]
+[99 </mdk/doc/manual/screenshots/fr/clientBuilder.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[98 </mdk/doc/manual/screenshots/fr/diskDefine.png>]
+[100 </mdk/doc/manual/screenshots/fr/diskDefine.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
@@ -4393,7 +4434,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
  []
 
 ) (../mi_step0.hlp.tex
-</mdk/doc/manual/screenshots/fr/mi_step0.png, id=1648, 1130.2225pt x 1018.80624
+</mdk/doc/manual/screenshots/fr/mi_step0.png, id=1670, 1130.2225pt x 1018.80624
 pt>
 File: /mdk/doc/manual/screenshots/fr/mi_step0.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/mi_step0.png>
@@ -4410,7 +4451,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-[99]
+[101]
 Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
@@ -4426,7 +4467,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
  []
 
 ) (../mi_step1.hlp.tex
-</mdk/doc/manual/screenshots/fr/mi_step1.png, id=1653, 1137.24875pt x 339.2675p
+</mdk/doc/manual/screenshots/fr/mi_step1.png, id=1675, 1137.24875pt x 339.2675p
 t>
 File: /mdk/doc/manual/screenshots/fr/mi_step1.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/mi_step1.png>
@@ -4443,8 +4484,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--1
 
  []
 
-[100 </mdk/doc/manual/screenshots/fr/mi_step0.png>]
-</mdk/doc/manual/screenshots/fr/mi_step2.png, id=1659, 1129.21875pt x 440.64626
+[102 </mdk/doc/manual/screenshots/fr/mi_step0.png>]
+</mdk/doc/manual/screenshots/fr/mi_step2.png, id=1682, 1129.21875pt x 440.64626
 pt>
 File: /mdk/doc/manual/screenshots/fr/mi_step2.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/mi_step2.png>
@@ -4481,7 +4522,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-[101 </mdk/doc/manual/screenshots/fr/mi_step1.png> </mdk/doc/manual/screenshots
+[103 </mdk/doc/manual/screenshots/fr/mi_step1.png> </mdk/doc/manual/screenshots
 /fr/mi_step2.png>]
 ! Misplaced alignment tab character &.
 <argument> Enregistrer les données d&
@@ -4566,7 +4607,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--34
  []
 
 ) (../mi_step3.hlp.tex
-</mdk/doc/manual/screenshots/fr/mi_step3.png, id=1666, 1129.21875pt x 435.6275p
+</mdk/doc/manual/screenshots/fr/mi_step3.png, id=1689, 1129.21875pt x 435.6275p
 t>
 File: /mdk/doc/manual/screenshots/fr/mi_step3.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/mi_step3.png>
@@ -4588,7 +4629,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[102 </mdk/doc/manual/screenshots/fr/mi_step3.png>]
+[104 </mdk/doc/manual/screenshots/fr/mi_step3.png>]
 ! Misplaced alignment tab character &.
 <argument> Nom d&
                  apos;authentification sur le système:
@@ -4644,7 +4685,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
  []
 
 ) (../mi_step4.hlp.tex
-</mdk/doc/manual/screenshots/fr/mi_step4.png, id=1677, 3999.94376pt x 596.2275p
+</mdk/doc/manual/screenshots/fr/mi_step4.png, id=1700, 3999.94376pt x 596.2275p
 t>
 File: /mdk/doc/manual/screenshots/fr/mi_step4.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/mi_step4.png>
@@ -4661,15 +4702,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-[103])
+[105])
 Underfull \hbox (badness 10000) in paragraph at lines 4--109
 
  []
 
-[104 </mdk/doc/manual/screenshots/fr/mi_step4.png>]
+[106 </mdk/doc/manual/screenshots/fr/mi_step4.png>]
 Chapitre 15.
 (../makeBootDisk.hlp.tex
-</mdk/doc/manual/screenshots/fr/makeBootDisk.png, id=1687, 1128.215pt x 322.203
+</mdk/doc/manual/screenshots/fr/makeBootDisk.png, id=1710, 1128.215pt x 322.203
 75pt>
 File: /mdk/doc/manual/screenshots/fr/makeBootDisk.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/makeBootDisk.png>
@@ -4702,7 +4743,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
  []
 
 ) (../makeBootCD.hlp.tex
-</mdk/doc/manual/screenshots/fr/makeBootCD.png, id=1688, 1128.215pt x 791.95876
+</mdk/doc/manual/screenshots/fr/makeBootCD.png, id=1711, 1128.215pt x 791.95876
 pt>
 File: /mdk/doc/manual/screenshots/fr/makeBootCD.png Graphic file (type png)
  <use /mdk/doc/manual/screenshots/fr/makeBootCD.png>
@@ -4719,7 +4760,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--3
 
  []
 
-[105
+[107
 
  </mdk/doc/manual/screenshots/fr/makeBootDisk.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -4746,7 +4787,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--113
 
  []
 
-(../../gpl.tex [106 </mdk/doc/manual/screenshots/fr/makeBootCD.png>]
+(../../gpl.tex [108 </mdk/doc/manual/screenshots/fr/makeBootCD.png>]
 Chapitre 16.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 8.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
@@ -4754,7 +4795,7 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
- [107
+ [109
 
 ]
 Overfull \hbox (0.15573pt too wide) in paragraph at lines 183--189
@@ -4762,32 +4803,32 @@ Overfull \hbox (0.15573pt too wide) in paragraph at lines 183--189
 e dis-tri-bu-tion, a com-plete machine-
  []
 
-[108] [109]
+[110] [111]
 Underfull \hbox (badness 10000) in paragraph at lines 362--364
 
  []
 
-[110]
+[112]
 Underfull \hbox (badness 10000) in paragraph at lines 404--406
 
  []
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
- [111]
+ [113]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
  (./manual.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
 Package rerunfilecheck Info: File `manual.out' has not changed.
-(rerunfilecheck)             Checksum: 9CC077A3663CDB3D15325AA7A2B35D26;16003.
+(rerunfilecheck)             Checksum: 4CEE448F71FC0135D7BB407C05123D09;16168.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 8250 strings out of 495007
- 131356 string characters out of 3179690
+ 8260 strings out of 495007
+ 131472 string characters out of 3179690
  199841 words of memory out of 3000000
- 10613 multiletter control sequences out of 15000+200000
+ 10615 multiletter control sequences out of 15000+200000
  52839 words of font info for 69 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,6n,31p,1299b,606s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4796,10 +4837,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on manual.pdf (112 pages, 3667254 bytes).
+Output written on manual.pdf (114 pages, 3676404 bytes).
 PDF statistics:
- 1860 PDF objects out of 2073 (max. 8388607)
- 1577 compressed objects within 16 object streams
- 419 named destinations out of 1000 (max. 500000)
- 2029 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1884 PDF objects out of 2073 (max. 8388607)
+ 1599 compressed objects within 16 object streams
+ 427 named destinations out of 1000 (max. 500000)
+ 2045 words of extra memory for PDF output out of 10000 (max. 10000000)
 

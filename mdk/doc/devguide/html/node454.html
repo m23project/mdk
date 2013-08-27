@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_AFPlinearScale</TITLE>
-<META NAME="description" CONTENT="FDISK_AFPlinearScale">
+<TITLE>FDISK_listPartJobs</TITLE>
+<META NAME="description" CONTENT="FDISK_listPartJobs">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node455.html">
 <LINK REL="previous" HREF="node453.html">
-<LINK REL="up" HREF="node357.html">
+<LINK REL="up" HREF="node362.html">
 <LINK REL="next" HREF="node455.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html8897"
+<A NAME="tex2html8947"
   HREF="node455.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html8893"
-  HREF="node357.html">
+<A NAME="tex2html8943"
+  HREF="node362.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html8887"
+<A NAME="tex2html8937"
   HREF="node453.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html8895"
+<A NAME="tex2html8945"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html8898"
-  HREF="node455.html">FDISK_AFPgetPartSizes</A>
-<B> Up:</B> <A NAME="tex2html8894"
-  HREF="node357.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html8888"
-  HREF="node453.html">FDISK_AFPselectDrive</A>
- &nbsp; <B>  <A NAME="tex2html8896"
+<B> Next:</B> <A NAME="tex2html8948"
+  HREF="node455.html">FDISK_getDiskType</A>
+<B> Up:</B> <A NAME="tex2html8944"
+  HREF="node362.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html8938"
+  HREF="node453.html">FDISK_genPartedCommands</A>
+ &nbsp; <B>  <A NAME="tex2html8946"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081297000000000000000">
-FDISK_AFPlinearScale</A>
+<H2><A NAME="SECTION0081292000000000000000">
+FDISK_listPartJobs</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> scales all partitions sizes to match the full disk size.
+<SPAN  CLASS="textbf">Description:</SPAN> print all part jobs in the table
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>driveToUse: device to use (e.g. /dev/hda)
-</LI>
-<LI>driveToUseSize: Size of the real drive to use.
-</LI>
-<LI>options: options array of the client
-</LI>
-<LI>command: array that stores the modificated format parameters
-</LI>
-<LI>formatarr: array that contains the original format parameters
+<LI>partJobs: string with information about all created partition jobs
 </LI>
 </UL>
 
@@ -76,7 +68,7 @@ FDISK_AFPlinearScale</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

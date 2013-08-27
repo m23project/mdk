@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_OptionPageHeader</TITLE>
-<META NAME="description" CONTENT="PKG_OptionPageHeader">
+<TITLE>PKG_addStatusJob</TITLE>
+<META NAME="description" CONTENT="PKG_addStatusJob">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node813.html">
 <LINK REL="previous" HREF="node811.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node813.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13540"
+<A NAME="tex2html13596"
   HREF="node813.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13536"
-  HREF="node758.html">
+<A NAME="tex2html13592"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13530"
+<A NAME="tex2html13586"
   HREF="node811.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13538"
+<A NAME="tex2html13594"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13541"
-  HREF="node813.html">PKG_OptionPageRender</A>
-<B> Up:</B> <A NAME="tex2html13537"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html13531"
-  HREF="node811.html">PKG_setAllParams</A>
- &nbsp; <B>  <A NAME="tex2html13539"
+<B> Next:</B> <A NAME="tex2html13597"
+  HREF="node813.html">PKG_acceptJobs</A>
+<B> Up:</B> <A NAME="tex2html13593"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html13587"
+  HREF="node811.html">PKG_addWait4AccJob</A>
+ &nbsp; <B>  <A NAME="tex2html13595"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082454000000000000000">
-PKG_OptionPageHeader</A>
+<H2><A NAME="SECTION0082446000000000000000">
+PKG_addStatusJob</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> starts the option page with all necessary options
+<SPAN  CLASS="textbf">Description:</SPAN> adds a job to the clientjobs table
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>title: the window title of the OptionPage
+<LI>client: name of the client
+</LI>
+<LI>packageName: name of the package
+</LI>
+<LI>priority: priority of the package
+</LI>
+<LI>params: parameter for installing the package
+</LI>
+<LI>status: the status of the package
 </LI>
 </UL>
 
@@ -68,7 +76,7 @@ PKG_OptionPageHeader</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

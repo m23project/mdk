@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_xargsRecursive</TITLE>
-<META NAME="description" CONTENT="HELPER_xargsRecursive">
+<TITLE>GRP_listAllClientsInGroups</TITLE>
+<META NAME="description" CONTENT="GRP_listAllClientsInGroups">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node498.html">
 <LINK REL="previous" HREF="node496.html">
-<LINK REL="up" HREF="node496.html">
+<LINK REL="up" HREF="node472.html">
 <LINK REL="next" HREF="node498.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9471"
+<A NAME="tex2html9489"
   HREF="node498.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9467"
-  HREF="node496.html">
+<A NAME="tex2html9485"
+  HREF="node472.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9461"
+<A NAME="tex2html9479"
   HREF="node496.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9469"
+<A NAME="tex2html9487"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9472"
-  HREF="node498.html">HELPER_getNewLogLines</A>
-<B> Up:</B> <A NAME="tex2html9468"
-  HREF="node496.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html9462"
-  HREF="node496.html">./inc/helper.php</A>
- &nbsp; <B>  <A NAME="tex2html9470"
+<B> Next:</B> <A NAME="tex2html9490"
+  HREF="node498.html">GRP_HTMLBackToOverview</A>
+<B> Up:</B> <A NAME="tex2html9486"
+  HREF="node472.html">./inc/groups.php</A>
+<B> Previous:</B> <A NAME="tex2html9480"
+  HREF="node496.html">GRP_showSelDistrSources</A>
+ &nbsp; <B>  <A NAME="tex2html9488"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008141000000000000000">
-HELPER_xargsRecursive</A>
+<H2><A NAME="SECTION0081325000000000000000">
+GRP_listAllClientsInGroups</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Executes a BASH command with a list of arguments. If the BASH command fails, the argument list is split in two parts and recursively executed again.
+<SPAN  CLASS="textbf">Description:</SPAN> returns an array with all client names contained in the groups
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>cmd: BASH command
-</LI>
-<LI>argsA: Array of commands for the BASH command.
-</LI>
-<LI>tabAmount: Amount of identing to start with.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Recursive calls of the BASH command with error checking.
+<LI>groupNames: the names of the groups stored in an array
 </LI>
 </UL>
 
@@ -78,7 +68,7 @@ HELPER_xargsRecursive</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

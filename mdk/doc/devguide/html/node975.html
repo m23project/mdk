@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_genSelection</TITLE>
-<META NAME="description" CONTENT="SRCLST_genSelection">
+<TITLE>SERVER_addEtcHosts</TITLE>
+<META NAME="description" CONTENT="SERVER_addEtcHosts">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node976.html">
 <LINK REL="previous" HREF="node974.html">
-<LINK REL="up" HREF="node968.html">
+<LINK REL="up" HREF="node936.html">
 <LINK REL="next" HREF="node976.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15618"
+<A NAME="tex2html15654"
   HREF="node976.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15614"
-  HREF="node968.html">
+<A NAME="tex2html15650"
+  HREF="node936.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15608"
+<A NAME="tex2html15644"
   HREF="node974.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15616"
+<A NAME="tex2html15652"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15619"
-  HREF="node976.html">SRCLST_getValue</A>
-<B> Up:</B> <A NAME="tex2html15615"
-  HREF="node968.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html15609"
-  HREF="node974.html">SRCLST_querySourceslists</A>
- &nbsp; <B>  <A NAME="tex2html15617"
+<B> Next:</B> <A NAME="tex2html15655"
+  HREF="node976.html">SERVER_delEtcHosts</A>
+<B> Up:</B> <A NAME="tex2html15651"
+  HREF="node936.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html15645"
+  HREF="node974.html">SERVER_delLineFromFile</A>
+ &nbsp; <B>  <A NAME="tex2html15653"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008327000000000000000">
-SRCLST_genSelection</A>
+<H2><A NAME="SECTION0083139000000000000000">
+SERVER_addEtcHosts</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> generates a HTML selection with the names of alls package sources
+<SPAN  CLASS="textbf">Description:</SPAN> Adds a host to /etc/hosts and /etc/backuppc/hosts (if it doesn't exists allready)
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>selName: the name of the selection
+<LI>hostname: name of the host to add
 </LI>
-<LI>first: the package source that should be shown first
-</LI>
-<LI>distr: the distribution the sources list is for or "*" for all distributions
+<LI>ip: its IP
 </LI>
 </UL>
 
@@ -72,7 +70,7 @@ SRCLST_genSelection</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

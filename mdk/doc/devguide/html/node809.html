@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_addShutdownOrRebootPackage</TITLE>
-<META NAME="description" CONTENT="PKG_addShutdownOrRebootPackage">
+<TITLE>PKG_addJob</TITLE>
+<META NAME="description" CONTENT="PKG_addJob">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node810.html">
 <LINK REL="previous" HREF="node808.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node810.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13504"
+<A NAME="tex2html13560"
   HREF="node810.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13500"
-  HREF="node758.html">
+<A NAME="tex2html13556"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13494"
+<A NAME="tex2html13550"
   HREF="node808.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13502"
+<A NAME="tex2html13558"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13505"
-  HREF="node810.html">PKG_getAllParams</A>
-<B> Up:</B> <A NAME="tex2html13501"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html13495"
-  HREF="node808.html">PKG_addShutdownPackage</A>
- &nbsp; <B>  <A NAME="tex2html13503"
+<B> Next:</B> <A NAME="tex2html13561"
+  HREF="node810.html">PKG_discardNormalJob</A>
+<B> Up:</B> <A NAME="tex2html13557"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html13551"
+  HREF="node808.html">PKG_rmNormalJob</A>
+ &nbsp; <B>  <A NAME="tex2html13559"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082451000000000000000">
-PKG_addShutdownOrRebootPackage</A>
+<H2><A NAME="SECTION0082443000000000000000">
+PKG_addJob</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Adds a shutdown or a reboot package. No new job is addedm if there is already a waiting shutdown or reboot job. A shutdown package is added if the client can't be pinged and a reboot package if it is reachable via the network.
+<SPAN  CLASS="textbf">Description:</SPAN> adds a job to the clientjobs table
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>client: name of the client
+</LI>
+<LI>packageName: name of the package
+</LI>
+<LI>priority: priority of the package
+</LI>
+<LI>params: parameter for installing the package
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ PKG_addShutdownOrRebootPackage</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

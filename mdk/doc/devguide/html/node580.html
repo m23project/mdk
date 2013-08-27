@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_submitImg</TITLE>
-<META NAME="description" CONTENT="HTML_submitImg">
+<TITLE>HTML_storableCheckBox</TITLE>
+<META NAME="description" CONTENT="HTML_storableCheckBox">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,58 +21,64 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node581.html">
 <LINK REL="previous" HREF="node579.html">
-<LINK REL="up" HREF="node536.html">
+<LINK REL="up" HREF="node541.html">
 <LINK REL="next" HREF="node581.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10523"
+<A NAME="tex2html10576"
   HREF="node581.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10519"
-  HREF="node536.html">
+<A NAME="tex2html10572"
+  HREF="node541.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10513"
+<A NAME="tex2html10566"
   HREF="node579.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10521"
+<A NAME="tex2html10574"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10524"
-  HREF="node581.html">HTML_input</A>
-<B> Up:</B> <A NAME="tex2html10520"
-  HREF="node536.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html10514"
-  HREF="node579.html">HTML_submit</A>
- &nbsp; <B>  <A NAME="tex2html10522"
+<B> Next:</B> <A NAME="tex2html10577"
+  HREF="node581.html">HTML_getElementValue</A>
+<B> Up:</B> <A NAME="tex2html10573"
+  HREF="node541.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html10567"
+  HREF="node579.html">HTML_storableSelection</A>
+ &nbsp; <B>  <A NAME="tex2html10575"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081644000000000000000">
-HTML_submitImg</A>
+<H2><A NAME="SECTION0081639000000000000000">
+HTML_storableCheckBox</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Defines a graphical submit button.
+<SPAN  CLASS="textbf">Description:</SPAN> Shows a check box with label with loading and storing the checking state to and from the session.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>htmlName: Name of the HTML element.
 </LI>
-<LI>img: Name of the image to show.
+<LI>label: Label of the element.
 </LI>
-<LI>alt: Alternative text to show when no images can be shown.
+<LI>prefKey: Variable name of the preference the dialog element stands for.
 </LI>
-<LI>extra: Extra options for the HTML input tag.
+<LI>defaultCheck: Set to true if the check box should be checked if no HTML value is given.
+</LI>
+<LI>storePointer: Additional pointer to the variable where to store the entered value.
+</LI>
+<LI>checkedValue: The value that should be stored into $storePointer if the check box is checked.
+</LI>
+<LI>unCheckedValue: The value that should be stored into $storePointer if the check box is NOT checked.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>True if it was clicked otherwise false.
+<LI>true if the check box is checked.
 </LI>
 </UL>
 
@@ -80,7 +86,7 @@ HTML_submitImg</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

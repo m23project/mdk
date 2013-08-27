@@ -19,13 +19,8 @@
 \subsection{ASSI\_addUbuntuRoot}
 \textbf{Description:} Enables the root account in Ubuntu if a Ubuntu installation is found.\\
 
-\subsection{ASSI\_showClientAddDialog}
-\textbf{Description:} sets the last modified time of a client\\
-\textbf{Parameter:}
-\begin{itemize}
-\item id: id of the client
-\item client: name of the client
-\end{itemize}
+\subsection{ASSI\_prepareClient}
+\textbf{Description:} Prepares a client for assimilisation.\\
 
 \newpage\section{./inc/backup.php}
  Author: Hauke Goos-Habermann (HHabermann@pc-kiel.de)\\
@@ -1226,6 +1221,13 @@
 \item clientName: name of the client to delete all logs
 \end{itemize}
 
+\subsection{workPhpName}
+\textbf{Description:} Generates an unique name for storing the work.php file.\\
+\textbf{Returns:}
+\begin{itemize}
+\item Unique name for storing the work.php file.
+\end{itemize}
+
 \subsection{executeNextWork}
 \textbf{Description:} generates a bash script that fetches the next work.php from server\\
 
@@ -1326,6 +1328,9 @@
 \newpage\section{./inc/dhcp.php}
  Author: Daniel Kasten (DKasten@pc-kiel.de), Hauke Goos-Habermann (HHabermann@pc-kiel.de)\\
  Description: functions to add and remove a client to/from the dhcp server list.\\
+
+\subsection{DHCP\_exportDHCPSettingsForExternalDHCPServer}
+\textbf{Description:} Exports the DHCP settings of m23 clients that are booting over the network and adds settings for external DHCP servers.\\
 
 \subsection{DHCP\_lineNumberAffterLastClient}
 \textbf{Description:} Gets the line number with the last client definition in the dhcpd.conf.\\
@@ -3378,6 +3383,46 @@ Description: Basic package operations (search, add,...) for halfSister distribut
  Author: Hauke Goos-Habermann (HHabermann@pc-kiel.de)\\
  Description: functions for generating often used HTML code\\
 
+\subsection{HTML\_imgSwitch}
+\textbf{Description:} Defines an image button with two states and a text next to it.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item \$htmlName: Name of the html image input element.
+\item \$off\_img: Name and path of image to be displayed if its state is "off"
+\item \$on\_img: Name and path of image to be displayed it its state is "on"
+\item \$off\_text: Text to be displayed if state is "off"
+\item \$on\_text: Text to be displayed if state is "on"
+\item \$separator: Anything which shall be displayed between the picture (clickable) and the text (not clickable)
+\item \$default: State of the image input element on first load of page ("on" or "off")
+\item \$outState: Current state of element (true for "on" or false for "off").
+\end{itemize}
+\textbf{Returns:}
+\begin{itemize}
+\item true, if the button was clicked otherwise false.
+\end{itemize}
+
+\subsection{HTML\_uploadFile}
+\textbf{Description:} Shows a dialog for uploading image files.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item htmlName: Name of the HTML element
+\item label: The visual naming of the HTML element.
+\item maxFileSize: The maximum allowed filesize in bytes.
+\end{itemize}
+\textbf{Returns:}
+\begin{itemize}
+\item The full path to the uploaded file or false in case of an error.
+\end{itemize}
+
+\subsection{HTML\_urlButton}
+\textbf{Description:} Defines a link that appears like a button.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item htmlNames: Name of the constant.
+\item label: Label of the button.
+\item url: The URL where the link button should point to.
+\end{itemize}
+
 \subsection{HTML\_sourceViewer}
 \textbf{Description:} Creates a source code viewer area with syntax highlighting.\\
 \textbf{Parameter:}
@@ -5220,6 +5265,28 @@ Description: Basic package operations (search, add,...) for halfSister distribut
 Author: Hauke Goos-Habermann (HHabermann@pc-kiel.de)\\
 Description: basic package operations (search, add,...)\\
 
+\subsection{PKG\_combinem23normal}
+\textbf{Description:} Combines the package names of multiple entries for m23normal and m23normalRemove jobs ind a package selection.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item packageSelectionName: Name of the package selection to optimise.
+\end{itemize}
+
+\subsection{PKG\_importSelectedPackagesFromFile}
+\textbf{Description:} Imports space-seperated packages from a file and adds them to the wait4acc/selected packages of a client.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item client: Name of the client or empty.
+\item file: Name of the file with full path containing space-seperated packages.
+\end{itemize}
+
+\subsection{PKG\_exportSelectedPackages}
+\textbf{Description:} Exports the wait4acc/selected packages of a client.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item client: Name of the client or empty.
+\end{itemize}
+
 \subsection{PKG\_getDebootstrapCacheFilename}
 \textbf{Description:} Returns the file name of the debootstrap cache file (without path).\\
 \textbf{Parameter:}
@@ -6499,6 +6566,50 @@ Description: basic package operations (search, add,...)\\
 \newpage\section{./inc/server.php}
  Author: Hauke Goos-Habermann (HHabermann@pc-kiel.de)\\
  Description: functions for getting information from the server\\
+
+\subsection{SERVER\_setSSLCertCheckDisabled}
+\textbf{Description:} Sets, if the SSL certificate check is disabled globally for all clients.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item : disableSSLCertCheck: true, if the check is disabled otherwise false.
+\end{itemize}
+
+\subsection{SERVER\_isSSLCertCheckDisabled}
+\textbf{Description:} Determines, if the SSL certificate check is disabled globally for all clients.\\
+\textbf{Returns:}
+\begin{itemize}
+\item : true, if the check is disabled otherwise false.
+\end{itemize}
+
+\subsection{SERVER\_setServerSetting}
+\textbf{Description:} Sets the value of a server setting.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item : var: Name of the setting.
+\item : val: Value of the setting.
+\end{itemize}
+
+\subsection{SERVER\_getServerSetting}
+\textbf{Description:} Gets the value of a server setting.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item : var: Name of the setting.
+\end{itemize}
+\textbf{Returns:}
+\begin{itemize}
+\item : Value the setting.
+\end{itemize}
+
+\subsection{SERVER\_existsServerSetting}
+\textbf{Description:} Checks, if a named server setting exists in the DB.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item : var: Name of the setting.
+\end{itemize}
+\textbf{Returns:}
+\begin{itemize}
+\item : True if the setting exists.
+\end{itemize}
 
 \subsection{SERVER\_killPID}
 \textbf{Description:} Kills a process running under a given PID or sends a signal.\\

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>EDIT_savePerms</TITLE>
-<META NAME="description" CONTENT="EDIT_savePerms">
+<TITLE>EDIT_searchLineNumber</TITLE>
+<META NAME="description" CONTENT="EDIT_searchLineNumber">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node352.html">
 <LINK REL="previous" HREF="node350.html">
-<LINK REL="up" HREF="node335.html">
+<LINK REL="up" HREF="node340.html">
 <LINK REL="next" HREF="node352.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html7554"
+<A NAME="tex2html7604"
   HREF="node352.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html7550"
-  HREF="node335.html">
+<A NAME="tex2html7600"
+  HREF="node340.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html7544"
+<A NAME="tex2html7594"
   HREF="node350.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html7552"
+<A NAME="tex2html7602"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html7555"
-  HREF="node352.html">EDIT_restorePerms</A>
-<B> Up:</B> <A NAME="tex2html7551"
-  HREF="node335.html">./inc/edit.php</A>
-<B> Previous:</B> <A NAME="tex2html7545"
-  HREF="node350.html">EDIT_prepareStr</A>
- &nbsp; <B>  <A NAME="tex2html7553"
+<B> Next:</B> <A NAME="tex2html7605"
+  HREF="node352.html">EDIT_searchLastLineNumber</A>
+<B> Up:</B> <A NAME="tex2html7601"
+  HREF="node340.html">./inc/edit.php</A>
+<B> Previous:</B> <A NAME="tex2html7595"
+  HREF="node350.html">EDIT_insertLineNumber</A>
+ &nbsp; <B>  <A NAME="tex2html7603"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081116000000000000000">
-EDIT_savePerms</A>
+<H2><A NAME="SECTION0081111000000000000000">
+EDIT_searchLineNumber</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> saves the permissions and owner of a file
+<SPAN  CLASS="textbf">Description:</SPAN> searches for the first line that contains "searchLine" and stores the line number in the BASH variable "m23searchLine"
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>file: the name to the file
+<LI>file: the name of the file
+</LI>
+<LI>searchLine: line to search
+</LI>
+<LI>startFrom: the line number to start searching from
 </LI>
 </UL>
 
@@ -68,7 +72,7 @@ EDIT_savePerms</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

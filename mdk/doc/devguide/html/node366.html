@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_installFilesystems</TITLE>
-<META NAME="description" CONTENT="FDISK_installFilesystems">
+<TITLE>FDISK_getFstabArray</TITLE>
+<META NAME="description" CONTENT="FDISK_getFstabArray">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node367.html">
 <LINK REL="previous" HREF="node365.html">
-<LINK REL="up" HREF="node357.html">
+<LINK REL="up" HREF="node362.html">
 <LINK REL="next" HREF="node367.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html7841"
+<A NAME="tex2html7891"
   HREF="node367.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html7837"
-  HREF="node357.html">
+<A NAME="tex2html7887"
+  HREF="node362.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html7831"
+<A NAME="tex2html7881"
   HREF="node365.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html7839"
+<A NAME="tex2html7889"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html7842"
-  HREF="node367.html">FDISK_getUnusedMDs</A>
-<B> Up:</B> <A NAME="tex2html7838"
-  HREF="node357.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html7832"
-  HREF="node365.html">FDISK_finalChecksAndRealPartitionAndFormatStart</A>
- &nbsp; <B>  <A NAME="tex2html7840"
+<B> Next:</B> <A NAME="tex2html7892"
+  HREF="node367.html">FDISK_findFstabMountPointByDev</A>
+<B> Up:</B> <A NAME="tex2html7888"
+  HREF="node362.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html7882"
+  HREF="node365.html">FDISK_mdToEndOfArray</A>
+ &nbsp; <B>  <A NAME="tex2html7890"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008129000000000000000">
-FDISK_installFilesystems</A>
+<H2><A NAME="SECTION008124000000000000000">
+FDISK_getFstabArray</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns an array with the filesystems usable for installation.
-<BR>
+<SPAN  CLASS="textbf">Description:</SPAN> Gets the fstab of a client as array.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+
+<UL>
+<LI>client: Name of the client.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Array with the fstab (each line of the fstab as item).
+</LI>
+</UL>
+
 <P>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

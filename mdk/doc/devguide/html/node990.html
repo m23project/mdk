@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_isArchAvailable</TITLE>
-<META NAME="description" CONTENT="SRCLST_isArchAvailable">
+<TITLE>SRCLST_querySourceslists</TITLE>
+<META NAME="description" CONTENT="SRCLST_querySourceslists">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node991.html">
 <LINK REL="previous" HREF="node989.html">
-<LINK REL="up" HREF="node968.html">
+<LINK REL="up" HREF="node984.html">
 <LINK REL="next" HREF="node991.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15798"
+<A NAME="tex2html15859"
   HREF="node991.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15794"
-  HREF="node968.html">
+<A NAME="tex2html15855"
+  HREF="node984.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15788"
+<A NAME="tex2html15849"
   HREF="node989.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15796"
+<A NAME="tex2html15857"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15799"
-  HREF="node991.html">SRCLST_getArchitectures</A>
-<B> Up:</B> <A NAME="tex2html15795"
-  HREF="node968.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html15789"
-  HREF="node989.html">SRCLST_showAlternativeArchitectureSelection</A>
- &nbsp; <B>  <A NAME="tex2html15797"
+<B> Next:</B> <A NAME="tex2html15860"
+  HREF="node991.html">SRCLST_genSelection</A>
+<B> Up:</B> <A NAME="tex2html15856"
+  HREF="node984.html">./inc/sourceslist.php</A>
+<B> Previous:</B> <A NAME="tex2html15850"
+  HREF="node989.html">SRCLST_saveList</A>
+ &nbsp; <B>  <A NAME="tex2html15858"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083222000000000000000">
-SRCLST_isArchAvailable</A>
+<H2><A NAME="SECTION008326000000000000000">
+SRCLST_querySourceslists</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Checks if a given architecture is supported by the sources list.
+<SPAN  CLASS="textbf">Description:</SPAN> returns the result of the DB query after sourceslists for a special distribution
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>sourceName: the name of the package source list
-</LI>
-<LI>arch: Architecture to check for.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>true, if the architecture is supported, false otherwise.
+<LI>distr: the distribution the sources list is for or "*" for all distributions
 </LI>
 </UL>
 
@@ -76,7 +68,7 @@ SRCLST_isArchAvailable</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

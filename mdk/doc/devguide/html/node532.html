@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELP_showHelp</TITLE>
-<META NAME="description" CONTENT="HELP_showHelp">
+<TITLE>HELPER_putFileContents</TITLE>
+<META NAME="description" CONTENT="HELPER_putFileContents">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node533.html">
 <LINK REL="previous" HREF="node531.html">
-<LINK REL="up" HREF="node531.html">
+<LINK REL="up" HREF="node501.html">
 <LINK REL="next" HREF="node533.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9893"
+<A NAME="tex2html9941"
   HREF="node533.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9889"
-  HREF="node531.html">
+<A NAME="tex2html9937"
+  HREF="node501.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9883"
+<A NAME="tex2html9931"
   HREF="node531.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9891"
+<A NAME="tex2html9939"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9894"
-  HREF="node533.html">HELP_getHelp</A>
-<B> Up:</B> <A NAME="tex2html9890"
-  HREF="node531.html">./inc/help.php</A>
-<B> Previous:</B> <A NAME="tex2html9884"
-  HREF="node531.html">./inc/help.php</A>
- &nbsp; <B>  <A NAME="tex2html9892"
+<B> Next:</B> <A NAME="tex2html9942"
+  HREF="node533.html">HELPER_getFileContents</A>
+<B> Up:</B> <A NAME="tex2html9938"
+  HREF="node501.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html9932"
+  HREF="node531.html">HELPER_getApacheGroup</A>
+ &nbsp; <B>  <A NAME="tex2html9940"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008151000000000000000">
-HELP_showHelp</A>
+<H2><A NAME="SECTION0081431000000000000000">
+HELPER_putFileContents</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> showes the help block for the online help
+<SPAN  CLASS="textbf">Description:</SPAN> Writes data to a file.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>topic: the name of the help file
+<LI>fileName: name of the file to write
 </LI>
-<LI>language: two character language description (e.g. de, en, fr,...)
+<LI>contents: Text or data that should be written to the file.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Error code from fwrite.
 </LI>
 </UL>
 
@@ -70,7 +76,7 @@ HELP_showHelp</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CLIENT_deleteClient</TITLE>
-<META NAME="description" CONTENT="CLIENT_deleteClient">
+<TITLE>CLIENT_addChangeElement</TITLE>
+<META NAME="description" CONTENT="CLIENT_addChangeElement">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node273.html">
 <LINK REL="previous" HREF="node271.html">
-<LINK REL="up" HREF="node191.html">
+<LINK REL="up" HREF="node194.html">
 <LINK REL="next" HREF="node273.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html6539"
+<A NAME="tex2html6587"
   HREF="node273.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html6535"
-  HREF="node191.html">
+<A NAME="tex2html6583"
+  HREF="node194.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html6529"
+<A NAME="tex2html6577"
   HREF="node271.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html6537"
+<A NAME="tex2html6585"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html6540"
-  HREF="node273.html">CLIENT_getNames</A>
-<B> Up:</B> <A NAME="tex2html6536"
-  HREF="node191.html">./inc/client.php</A>
-<B> Previous:</B> <A NAME="tex2html6530"
-  HREF="node271.html">CLIENT_showAddDialog</A>
- &nbsp; <B>  <A NAME="tex2html6538"
+<B> Next:</B> <A NAME="tex2html6588"
+  HREF="node273.html">CLIENT_showDelDialog</A>
+<B> Up:</B> <A NAME="tex2html6584"
+  HREF="node194.html">./inc/client.php</A>
+<B> Previous:</B> <A NAME="tex2html6578"
+  HREF="node271.html">CLIENT_query</A>
+ &nbsp; <B>  <A NAME="tex2html6586"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008781000000000000000">
-CLIENT_deleteClient</A>
+<H2><A NAME="SECTION008778000000000000000">
+CLIENT_addChangeElement</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> deletes a client and shows an optional message
+<SPAN  CLASS="textbf">Description:</SPAN> Generates a HTML dialog element for changing a client property.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>client: name of the client to delete
+<LI>elem: Name of the element.
 </LI>
-<LI>showMsg: set to true, is a success message should me shown
-</LI>
-<LI>deleteVM: Set to true to delete the VM too.
+<LI>serverOnlyElement: Set to true if the element could only be changed in the DB and not on the server (e.g. a misspelled MAC)
 </LI>
 </UL>
 
@@ -72,7 +70,7 @@ CLIENT_deleteClient</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

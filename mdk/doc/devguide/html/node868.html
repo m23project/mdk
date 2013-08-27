@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PLG_checkOverwriting</TITLE>
-<META NAME="description" CONTENT="PLG_checkOverwriting">
+<TITLE>PLG_listMenuPlugins</TITLE>
+<META NAME="description" CONTENT="PLG_listMenuPlugins">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node869.html">
 <LINK REL="previous" HREF="node867.html">
-<LINK REL="up" HREF="node856.html">
+<LINK REL="up" HREF="node867.html">
 <LINK REL="next" HREF="node869.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html14236"
+<A NAME="tex2html14292"
   HREF="node869.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html14232"
-  HREF="node856.html">
+<A NAME="tex2html14288"
+  HREF="node867.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html14226"
+<A NAME="tex2html14282"
   HREF="node867.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html14234"
+<A NAME="tex2html14290"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html14237"
-  HREF="node869.html">PLG_DBInstall</A>
-<B> Up:</B> <A NAME="tex2html14233"
-  HREF="node856.html">./inc/plugin.php</A>
-<B> Previous:</B> <A NAME="tex2html14227"
-  HREF="node867.html">PLG_showDownloadStatus</A>
- &nbsp; <B>  <A NAME="tex2html14235"
+<B> Next:</B> <A NAME="tex2html14293"
+  HREF="node869.html">PLG_isPluginSelected</A>
+<B> Up:</B> <A NAME="tex2html14289"
+  HREF="node867.html">./inc/plugin.php</A>
+<B> Previous:</B> <A NAME="tex2html14283"
+  HREF="node867.html">./inc/plugin.php</A>
+ &nbsp; <B>  <A NAME="tex2html14291"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082612000000000000000">
-PLG_checkOverwriting</A>
+<H2><A NAME="SECTION008261000000000000000">
+PLG_listMenuPlugins</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> checks if the plugin files would overwrite existing files. the plugin file is extracted to a temporary directory. all file names are logged to a file that contains only the file names. these file names are checked against currently installed files. this routine checks if current files would be overwritten by the files of the plugin package. a list of files that would be overwritten is generated and aligned by a table.
+<SPAN  CLASS="textbf">Description:</SPAN> generate the menu entries for the plugins
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>logfile: filename with whole path of the logfile containing the file names of the plugin file
-</LI>
-<LI>tempDir: where to store the plugin file temporary
+<LI>path: the path you want to scan for plugins
 </LI>
 </UL>
 
@@ -70,7 +68,7 @@ PLG_checkOverwriting</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

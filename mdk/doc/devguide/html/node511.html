@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_array2m23Array</TITLE>
-<META NAME="description" CONTENT="HELPER_array2m23Array">
+<TITLE>HELPER_createSelfSignedCAAndServerCertificate</TITLE>
+<META NAME="description" CONTENT="HELPER_createSelfSignedCAAndServerCertificate">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node512.html">
 <LINK REL="previous" HREF="node510.html">
-<LINK REL="up" HREF="node496.html">
+<LINK REL="up" HREF="node501.html">
 <LINK REL="next" HREF="node512.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9639"
+<A NAME="tex2html9689"
   HREF="node512.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9635"
-  HREF="node496.html">
+<A NAME="tex2html9685"
+  HREF="node501.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9629"
+<A NAME="tex2html9679"
   HREF="node510.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9637"
+<A NAME="tex2html9687"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9640"
-  HREF="node512.html">print_r2</A>
-<B> Up:</B> <A NAME="tex2html9636"
-  HREF="node496.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html9630"
-  HREF="node510.html">HELPER_m23Array2Array</A>
- &nbsp; <B>  <A NAME="tex2html9638"
+<B> Next:</B> <A NAME="tex2html9690"
+  HREF="node512.html">HELPER_arrayReOrderKeynumbers</A>
+<B> Up:</B> <A NAME="tex2html9686"
+  HREF="node501.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html9680"
+  HREF="node510.html">HELPER_randomUsername</A>
+ &nbsp; <B>  <A NAME="tex2html9688"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081415000000000000000">
-HELPER_array2m23Array</A>
+<H2><A NAME="SECTION0081410000000000000000">
+HELPER_createSelfSignedCAAndServerCertificate</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Converts a normal array to an m23 array.
+<SPAN  CLASS="textbf">Description:</SPAN> Creates a selfsigned CA and a server certificate.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>array: A normal array, that may be edited more easyly. (e.g [0] =<SPAN CLASS="MATH"></SPAN> Array([command] =<SPAN CLASS="MATH"></SPAN> format, [path] =<SPAN CLASS="MATH"></SPAN> /dev/md0, [fs] =<SPAN CLASS="MATH"></SPAN> ext4 ))
+<LI>CADn: Information about the CA.
+</LI>
+<LI>serverDn: Information about the server.
+</LI>
+<LI>password: Password for the private server key.
+</LI>
+<LI>expirationDate: Expiration of the certificates in days.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>The m23 array, that is a 2D array, that consists of keys build of a parameter names combined with a parameter number. Parameter names with the same parameter number belong together. (e.g. [command0] =<SPAN CLASS="MATH"></SPAN> format, [path0] =<SPAN CLASS="MATH"></SPAN> /dev/md0, [fs0] =<SPAN CLASS="MATH"></SPAN> ext4, ...)
+<LI>Associative array with the certificate of the CA, the certificate and private key of the server.
 </LI>
 </UL>
 
@@ -74,7 +80,7 @@ HELPER_array2m23Array</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

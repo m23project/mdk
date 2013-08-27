@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_setHostInDB</TITLE>
-<META NAME="description" CONTENT="VM_setHostInDB">
+<TITLE>VM_stopVM</TITLE>
+<META NAME="description" CONTENT="VM_stopVM">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1033.html">
 <LINK REL="previous" HREF="node1031.html">
-<LINK REL="up" HREF="node1001.html">
+<LINK REL="up" HREF="node1017.html">
 <LINK REL="next" HREF="node1033.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16345"
+<A NAME="tex2html16406"
   HREF="node1033.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16341"
-  HREF="node1001.html">
+<A NAME="tex2html16402"
+  HREF="node1017.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16335"
+<A NAME="tex2html16396"
   HREF="node1031.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16343"
+<A NAME="tex2html16404"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16346"
-  HREF="node1033.html">VM_setGuestInDB</A>
-<B> Up:</B> <A NAME="tex2html16342"
-  HREF="node1001.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html16336"
-  HREF="node1031.html">VM_setVisualURL</A>
- &nbsp; <B>  <A NAME="tex2html16344"
+<B> Next:</B> <A NAME="tex2html16407"
+  HREF="node1033.html">VM_pauseVM</A>
+<B> Up:</B> <A NAME="tex2html16403"
+  HREF="node1017.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html16397"
+  HREF="node1031.html">VM_listDownloadableVBoxAddons</A>
+ &nbsp; <B>  <A NAME="tex2html16405"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083431000000000000000">
-VM_setHostInDB</A>
+<H2><A NAME="SECTION0083415000000000000000">
+VM_stopVM</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Sets the password for the login to the visual management console on the host for all guests, the host flag and the type of used virtualisation software.
+<SPAN  CLASS="textbf">Description:</SPAN> Generates a BASH command to stop a virtual machine.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>VMhost: Name of the host with the virtualisation software.
+<LI>type: VM_SW_VBOX for VirtualBox OSE
 </LI>
-<LI>password: Password to set.
-</LI>
-<LI>vmSoftware: Type of the virtualisation software.
+<LI>vmname: Name of the VM.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>MySQL resource or false on error.
+<LI>BASH code to stop a virtual machine.
 </LI>
 </UL>
 
@@ -78,7 +76,7 @@ VM_setHostInDB</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

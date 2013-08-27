@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>m23SHARED_calculateBill</TITLE>
-<META NAME="description" CONTENT="m23SHARED_calculateBill">
+<TITLE>m23SHARED_sendActivationMail</TITLE>
+<META NAME="description" CONTENT="m23SHARED_sendActivationMail">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node677.html">
 <LINK REL="previous" HREF="node675.html">
-<LINK REL="up" HREF="node638.html">
+<LINK REL="up" HREF="node646.html">
 <LINK REL="next" HREF="node677.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11780"
+<A NAME="tex2html11833"
   HREF="node677.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11776"
-  HREF="node638.html">
+<A NAME="tex2html11829"
+  HREF="node646.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11770"
+<A NAME="tex2html11823"
   HREF="node675.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11778"
+<A NAME="tex2html11831"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11781"
-  HREF="node677.html">m23SHARED_getLicenseType</A>
-<B> Up:</B> <A NAME="tex2html11777"
-  HREF="node638.html">./inc/m23shared/m23shared.php</A>
-<B> Previous:</B> <A NAME="tex2html11771"
-  HREF="node675.html">m23SHARED_priceFormater</A>
- &nbsp; <B>  <A NAME="tex2html11779"
+<B> Next:</B> <A NAME="tex2html11834"
+  HREF="node677.html">m23SHARED_sendActivationMail</A>
+<B> Up:</B> <A NAME="tex2html11830"
+  HREF="node646.html">./inc/m23shared/m23shared.php</A>
+<B> Previous:</B> <A NAME="tex2html11824"
+  HREF="node675.html">m23SHARED_getCustomerLanguage</A>
+ &nbsp; <B>  <A NAME="tex2html11832"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082038000000000000000">
-m23SHARED_calculateBill</A>
+<H2><A NAME="SECTION0082030000000000000000">
+m23SHARED_sendActivationMail</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Calculates the bill for a choosen month in a selected year.
+<SPAN  CLASS="textbf">Description:</SPAN> Prepares and sends the activation mail.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>month: Month to get the bill for.
+<LI>eMail: eMail address of the new customer.
 </LI>
-<LI>year: Year to get the bill for.
+<LI>username: Username of the new customer.
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Associative array with the bill data.
+<LI>lang: Language that should be used in the eMail.
 </LI>
 </UL>
 
@@ -76,7 +72,7 @@ m23SHARED_calculateBill</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

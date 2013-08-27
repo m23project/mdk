@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_showPreviewInstallationDeinstallation</TITLE>
-<META NAME="description" CONTENT="PKG_showPreviewInstallationDeinstallation">
+<TITLE>PKG_addShutdownOrRebootPackage</TITLE>
+<META NAME="description" CONTENT="PKG_addShutdownOrRebootPackage">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node821.html">
 <LINK REL="previous" HREF="node819.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node821.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13636"
+<A NAME="tex2html13692"
   HREF="node821.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13632"
-  HREF="node758.html">
+<A NAME="tex2html13688"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13626"
+<A NAME="tex2html13682"
   HREF="node819.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13634"
+<A NAME="tex2html13690"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13637"
-  HREF="node821.html">PKG_updateSourcesListAtAllClients</A>
-<B> Up:</B> <A NAME="tex2html13633"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html13627"
-  HREF="node819.html">PKG_previewInstallationDeinstallation</A>
- &nbsp; <B>  <A NAME="tex2html13635"
+<B> Next:</B> <A NAME="tex2html13693"
+  HREF="node821.html">PKG_getAllParams</A>
+<B> Up:</B> <A NAME="tex2html13689"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html13683"
+  HREF="node819.html">PKG_addShutdownPackage</A>
+ &nbsp; <B>  <A NAME="tex2html13691"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082462000000000000000">
-PKG_showPreviewInstallationDeinstallation</A>
+<H2><A NAME="SECTION0082454000000000000000">
+PKG_addShutdownOrRebootPackage</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> showes what happens if a client installs / deinstalls waiting packages and generates a table with title
+<SPAN  CLASS="textbf">Description:</SPAN> Adds a shutdown or a reboot package. No new job is addedm if there is already a waiting shutdown or reboot job. A shutdown package is added if the client can't be pinged and a reboot package if it is reachable via the network.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>clientName: name of the client
-</LI>
-<LI>install: set to true, if packages should be installed. if false the packages should be deinstalled
+<LI>client: name of the client
 </LI>
 </UL>
 
@@ -70,7 +68,7 @@ PKG_showPreviewInstallationDeinstallation</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_isReconfiguredWithExtraDistr</TITLE>
-<META NAME="description" CONTENT="PKG_isReconfiguredWithExtraDistr">
+<TITLE>MSG_showUpdateInfo</TITLE>
+<META NAME="description" CONTENT="MSG_showUpdateInfo">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node764.html">
 <LINK REL="previous" HREF="node762.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node749.html">
 <LINK REL="next" HREF="node764.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12952"
+<A NAME="tex2html12916"
   HREF="node764.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12948"
-  HREF="node758.html">
+<A NAME="tex2html12912"
+  HREF="node749.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12942"
+<A NAME="tex2html12906"
   HREF="node762.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12950"
+<A NAME="tex2html12914"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12953"
-  HREF="node764.html">PKG_translateClientjobsStatus</A>
-<B> Up:</B> <A NAME="tex2html12949"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html12943"
-  HREF="node762.html">PKG_getDebootstrapCacheServerFile</A>
- &nbsp; <B>  <A NAME="tex2html12951"
+<B> Next:</B> <A NAME="tex2html12917"
+  HREF="node764.html">MSG_showNewFeature</A>
+<B> Up:</B> <A NAME="tex2html12913"
+  HREF="node749.html">./inc/message.php</A>
+<B> Previous:</B> <A NAME="tex2html12907"
+  HREF="node762.html">MSG_showUpdateInfo</A>
+ &nbsp; <B>  <A NAME="tex2html12915"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008245000000000000000">
-PKG_isReconfiguredWithExtraDistr</A>
+<H2><A NAME="SECTION0082314000000000000000">
+MSG_showUpdateInfo</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Checks, if the distribution is used for configuring a system that was installed via image.
+<SPAN  CLASS="textbf">Description:</SPAN> shows a info message about stored jobs on N clients
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>pkgID: The ID of the base installation package.
+<LI>jobNr: the amount of jobs
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>True, if the distribution is used for configuring, otherwise false.
+<LI>clNr: the amount of clients
+</LI>
+<LI>language: two character language description (e.g. de, en, fr,...)
 </LI>
 </UL>
 
@@ -74,7 +72,7 @@ PKG_isReconfiguredWithExtraDistr</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

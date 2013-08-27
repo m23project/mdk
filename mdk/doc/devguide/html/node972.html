@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_saveArchitectures</TITLE>
-<META NAME="description" CONTENT="SRCLST_saveArchitectures">
+<TITLE>SERVER_getFileContents</TITLE>
+<META NAME="description" CONTENT="SERVER_getFileContents">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node973.html">
 <LINK REL="previous" HREF="node971.html">
-<LINK REL="up" HREF="node968.html">
+<LINK REL="up" HREF="node936.html">
 <LINK REL="next" HREF="node973.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15582"
+<A NAME="tex2html15618"
   HREF="node973.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15578"
-  HREF="node968.html">
+<A NAME="tex2html15614"
+  HREF="node936.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15572"
+<A NAME="tex2html15608"
   HREF="node971.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15580"
+<A NAME="tex2html15616"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15583"
-  HREF="node973.html">SRCLST_saveList</A>
-<B> Up:</B> <A NAME="tex2html15579"
-  HREF="node968.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html15573"
-  HREF="node971.html">SRCLST_genList</A>
- &nbsp; <B>  <A NAME="tex2html15581"
+<B> Next:</B> <A NAME="tex2html15619"
+  HREF="node973.html">SERVER_putFileContents</A>
+<B> Up:</B> <A NAME="tex2html15615"
+  HREF="node936.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html15609"
+  HREF="node971.html">SERVER_deleteFile</A>
+ &nbsp; <B>  <A NAME="tex2html15617"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008324000000000000000">
-SRCLST_saveArchitectures</A>
+<H2><A NAME="SECTION0083136000000000000000">
+SERVER_getFileContents</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Saves the architectures for package source list.
+<SPAN  CLASS="textbf">Description:</SPAN> Get the contents of any file (even if only readable by root).
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>sourceName: the name of the package source list
+<LI>fileName: Name of the file to read.
 </LI>
-<LI>archs: Associative array with the supported CPU architectures.
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: Contents of the file
 </LI>
 </UL>
 
@@ -70,7 +74,7 @@ SRCLST_saveArchitectures</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

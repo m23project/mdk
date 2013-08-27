@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PDF_init</TITLE>
-<META NAME="description" CONTENT="PDF_init">
+<TITLE>PKG_getPackageIDsByName</TITLE>
+<META NAME="description" CONTENT="PKG_getPackageIDsByName">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node855.html">
 <LINK REL="previous" HREF="node853.html">
-<LINK REL="up" HREF="node850.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node855.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html14047"
+<A NAME="tex2html14100"
   HREF="node855.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html14043"
-  HREF="node850.html">
+<A NAME="tex2html14096"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html14037"
+<A NAME="tex2html14090"
   HREF="node853.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html14045"
+<A NAME="tex2html14098"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html14048"
-  HREF="node855.html">PDF_output</A>
-<B> Up:</B> <A NAME="tex2html14044"
-  HREF="node850.html">./inc/pdf.php</A>
-<B> Previous:</B> <A NAME="tex2html14038"
-  HREF="node853.html">PDF_showTableEnd</A>
- &nbsp; <B>  <A NAME="tex2html14046"
+<B> Next:</B> <A NAME="tex2html14101"
+  HREF="node855.html">PKG_getClientPackages</A>
+<B> Up:</B> <A NAME="tex2html14097"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html14091"
+  HREF="node853.html">PKG_getPackageParamsVar</A>
+ &nbsp; <B>  <A NAME="tex2html14099"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008254000000000000000">
-PDF_init</A>
+<H2><A NAME="SECTION0082488000000000000000">
+PKG_getPackageIDsByName</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Inits some basic variables for PDF creation.
+<SPAN  CLASS="textbf">Description:</SPAN> returnes all IDs as an array for jobs matching the client and job name and are a normal or special package.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>orientation: Orientation of the PDF document (P or Portrait, L or Landscape)
+<LI>client: the name of the client, the jobs are for
 </LI>
-<LI>unit: pt (point), mm (millimeter), cm (centimeter) or in (inch)
+<LI>packageName: name of the package, can be the name of a normal or special package
 </LI>
-<LI>format: PDF page format A3, A4, A5, Letter or Legal
+<LI>specialPackage: set to true, if you want to search for a special package
 </LI>
 </UL>
 
@@ -72,7 +72,7 @@ PDF_init</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

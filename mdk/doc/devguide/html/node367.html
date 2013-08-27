@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_getUnusedMDs</TITLE>
-<META NAME="description" CONTENT="FDISK_getUnusedMDs">
+<TITLE>FDISK_findFstabMountPointByDev</TITLE>
+<META NAME="description" CONTENT="FDISK_findFstabMountPointByDev">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node368.html">
 <LINK REL="previous" HREF="node366.html">
-<LINK REL="up" HREF="node357.html">
+<LINK REL="up" HREF="node362.html">
 <LINK REL="next" HREF="node368.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html7853"
+<A NAME="tex2html7903"
   HREF="node368.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html7849"
-  HREF="node357.html">
+<A NAME="tex2html7899"
+  HREF="node362.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html7843"
+<A NAME="tex2html7893"
   HREF="node366.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html7851"
+<A NAME="tex2html7901"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html7854"
-  HREF="node368.html">FDISK_listDrivesAndPartitions2</A>
-<B> Up:</B> <A NAME="tex2html7850"
-  HREF="node357.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html7844"
-  HREF="node366.html">FDISK_installFilesystems</A>
- &nbsp; <B>  <A NAME="tex2html7852"
+<B> Next:</B> <A NAME="tex2html7904"
+  HREF="node368.html">FDISK_swapFilesystems</A>
+<B> Up:</B> <A NAME="tex2html7900"
+  HREF="node362.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html7894"
+  HREF="node366.html">FDISK_getFstabArray</A>
+ &nbsp; <B>  <A NAME="tex2html7902"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081210000000000000000">
-FDISK_getUnusedMDs</A>
+<H2><A NAME="SECTION008125000000000000000">
+FDISK_findFstabMountPointByDev</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns an associative array with the unused MDs (e.g. /dev/md0, /dev/md1, ...) as key and value.
+<SPAN  CLASS="textbf">Description:</SPAN> Searches a client's fstab for a device and figures out the according mount point.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>param: parameter string containing status informations about the harddisks
+<LI>fstabA: The fstab as array.
+</LI>
+<LI>dev: The device.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>Associative array with the unused MDs (e.g. /dev/md0, /dev/md1, ...) as key and value.
+<LI>Mount point for the device.
 </LI>
 </UL>
 
@@ -74,7 +76,7 @@ FDISK_getUnusedMDs</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

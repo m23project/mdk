@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>MASS_passGenerator</TITLE>
-<META NAME="description" CONTENT="MASS_passGenerator">
+<TITLE>MASS_showTableDefinition</TITLE>
+<META NAME="description" CONTENT="MASS_showTableDefinition">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node727.html">
 <LINK REL="previous" HREF="node725.html">
-<LINK REL="up" HREF="node710.html">
+<LINK REL="up" HREF="node718.html">
 <LINK REL="next" HREF="node727.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12404"
+<A NAME="tex2html12457"
   HREF="node727.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12400"
-  HREF="node710.html">
+<A NAME="tex2html12453"
+  HREF="node718.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12394"
+<A NAME="tex2html12447"
   HREF="node725.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12402"
+<A NAME="tex2html12455"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12405"
-  HREF="node727.html">MASS_loginGenerator</A>
-<B> Up:</B> <A NAME="tex2html12401"
-  HREF="node710.html">./inc/massTools.php</A>
-<B> Previous:</B> <A NAME="tex2html12395"
-  HREF="node725.html">MASS_showGeneratorOptions</A>
- &nbsp; <B>  <A NAME="tex2html12403"
+<B> Next:</B> <A NAME="tex2html12458"
+  HREF="node727.html">MASS_checkAndSaveFields</A>
+<B> Up:</B> <A NAME="tex2html12454"
+  HREF="node718.html">./inc/massTools.php</A>
+<B> Previous:</B> <A NAME="tex2html12448"
+  HREF="node725.html">MASS_I18NTokey</A>
+ &nbsp; <B>  <A NAME="tex2html12456"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082116000000000000000">
-MASS_passGenerator</A>
+<H2><A NAME="SECTION008218000000000000000">
+MASS_showTableDefinition</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> generates the selected amount of passwords with a random algorithm or the pwgen tool.
+<SPAN  CLASS="textbf">Description:</SPAN> shows a dialog that lets the user define which field in the DB file should be assigned to which property
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>length: length of the passwords to generate
+<LI>EGKparams: enter generate keep parameters, that hold information about handling of the properties
 </LI>
-<LI>method: random or pwgen generated passwords that can be memorized by humans easily
-</LI>
-<LI>amount: the amount of passwords to generate
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Array with the generated passwords as keys.
+<LI>DBfileName: file name of the DB file
 </LI>
 </UL>
 
@@ -78,7 +70,7 @@ MASS_passGenerator</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

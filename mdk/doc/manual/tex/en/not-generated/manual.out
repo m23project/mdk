@@ -105,56 +105,56 @@
 \BOOKMARK [1][-]{section.8.2}{Using m23 with an external DHCP server}{chapter.8}% 105
 \BOOKMARK [2][-]{subsection.8.2.1}{The other DHCP server can be deactivated}{section.8.2}% 106
 \BOOKMARK [2][-]{subsection.8.2.2}{The other DHCP server CANNOT be deactivated}{section.8.2}% 107
-\BOOKMARK [2][-]{subsection.8.2.3}{Proxy DHCP}{section.8.2}% 108
-\BOOKMARK [1][-]{section.8.3}{Client partitioning and formating}{chapter.8}% 109
-\BOOKMARK [2][-]{subsection.8.3.1}{Hint: Undoing your changes}{section.8.3}% 110
-\BOOKMARK [2][-]{subsection.8.3.2}{Hint: Usage of JavaScript}{section.8.3}% 111
-\BOOKMARK [2][-]{subsection.8.3.3}{Overview of the menu entries}{section.8.3}% 112
-\BOOKMARK [2][-]{subsection.8.3.4}{Step by step}{section.8.3}% 113
-\BOOKMARK [2][-]{subsection.8.3.5}{Hint for RAIDs and partitions}{section.8.3}% 114
-\BOOKMARK [2][-]{subsection.8.3.6}{Hint for the installation of operating systems on a RAID}{section.8.3}% 115
-\BOOKMARK [1][-]{section.8.4}{Select the client distribution}{chapter.8}% 116
-\BOOKMARK [2][-]{subsection.8.4.1}{Information:}{section.8.4}% 117
-\BOOKMARK [2][-]{subsection.8.4.2}{Hint for imaging}{section.8.4}% 118
-\BOOKMARK [2][-]{subsection.8.4.3}{Hint:}{section.8.4}% 119
-\BOOKMARK [1][-]{section.8.5}{Delete a client}{chapter.8}% 120
-\BOOKMARK [2][-]{subsection.8.5.1}{Status description}{section.8.5}% 121
-\BOOKMARK [2][-]{subsection.8.5.2}{Jobs}{section.8.5}% 122
-\BOOKMARK [2][-]{subsection.8.5.3}{Work on multiple clients}{section.8.5}% 123
-\BOOKMARK [2][-]{subsection.8.5.4}{Hint}{section.8.5}% 124
-\BOOKMARK [2][-]{subsection.8.5.5}{Gimmicks}{section.8.5}% 125
-\BOOKMARK [1][-]{section.8.6}{Client assimilation}{chapter.8}% 126
-\BOOKMARK [2][-]{subsection.8.6.1}{Hint}{section.8.6}% 127
-\BOOKMARK [2][-]{subsection.8.6.2}{Manual assimilation}{section.8.6}% 128
-\BOOKMARK [2][-]{subsection.8.6.3}{Hint for the assimilation of an Ubuntu system}{section.8.6}% 129
-\BOOKMARK [0][-]{chapter.9}{Virtualisation}{}% 130
-\BOOKMARK [1][-]{section.9.1}{Create VM}{chapter.9}% 131
-\BOOKMARK [2][-]{subsection.9.1.1}{Step by step}{section.9.1}% 132
-\BOOKMARK [2][-]{subsection.9.1.2}{Hints about the VM host}{section.9.1}% 133
-\BOOKMARK [2][-]{subsection.9.1.3}{Memory, harddisk and CPU}{section.9.1}% 134
-\BOOKMARK [1][-]{section.9.2}{Download VirtualBox additions}{chapter.9}% 135
-\BOOKMARK [2][-]{subsection.9.2.1}{Downloading of guest additions}{section.9.2}% 136
-\BOOKMARK [2][-]{subsection.9.2.2}{Choose a default version}{section.9.2}% 137
-\BOOKMARK [2][-]{subsection.9.2.3}{Deleting of additions}{section.9.2}% 138
-\BOOKMARK [0][-]{chapter.10}{Group management}{}% 139
-\BOOKMARK [1][-]{section.10.1}{Groups overview}{chapter.10}% 140
-\BOOKMARK [2][-]{subsection.10.1.1}{Store jobs for groups}{section.10.1}% 141
-\BOOKMARK [2][-]{subsection.10.1.2}{Step by step:}{section.10.1}% 142
-\BOOKMARK [1][-]{section.10.2}{Add group}{chapter.10}% 143
-\BOOKMARK [0][-]{chapter.11}{Packages}{}% 144
-\BOOKMARK [1][-]{section.11.1}{Install packages}{chapter.11}% 145
-\BOOKMARK [2][-]{subsection.11.1.1}{Hint}{section.11.1}% 146
-\BOOKMARK [2][-]{subsection.11.1.2}{Installation of packages:}{section.11.1}% 147
-\BOOKMARK [2][-]{subsection.11.1.3}{Changing the package priority}{section.11.1}% 148
-\BOOKMARK [2][-]{subsection.11.1.4}{Installation preview}{section.11.1}% 149
-\BOOKMARK [2][-]{subsection.11.1.5}{Hint for package selections}{section.11.1}% 150
-\BOOKMARK [2][-]{subsection.11.1.6}{Hint}{section.11.1}% 151
-\BOOKMARK [1][-]{section.11.2}{Deinstall packages}{chapter.11}% 152
-\BOOKMARK [2][-]{subsection.11.2.1}{Hint}{section.11.2}% 153
-\BOOKMARK [2][-]{subsection.11.2.2}{Deinstallation of packages:}{section.11.2}% 154
-\BOOKMARK [2][-]{subsection.11.2.3}{Deinstallation preview}{section.11.2}% 155
-\BOOKMARK [2][-]{subsection.11.2.4}{Hint for package selections}{section.11.2}% 156
-\BOOKMARK [2][-]{subsection.11.2.5}{Hint}{section.11.2}% 157
+\BOOKMARK [2][-]{subsection.8.2.3}{ISC DHCP server}{section.8.2}% 108
+\BOOKMARK [2][-]{subsection.8.2.4}{Other DHCP server}{section.8.2}% 109
+\BOOKMARK [2][-]{subsection.8.2.5}{Proxy DHCP}{section.8.2}% 110
+\BOOKMARK [1][-]{section.8.3}{Client partitioning and formating}{chapter.8}% 111
+\BOOKMARK [2][-]{subsection.8.3.1}{Hint: Undoing your changes}{section.8.3}% 112
+\BOOKMARK [2][-]{subsection.8.3.2}{Hint: Usage of JavaScript}{section.8.3}% 113
+\BOOKMARK [2][-]{subsection.8.3.3}{Overview of the menu entries}{section.8.3}% 114
+\BOOKMARK [2][-]{subsection.8.3.4}{Step by step}{section.8.3}% 115
+\BOOKMARK [2][-]{subsection.8.3.5}{Hint for RAIDs and partitions}{section.8.3}% 116
+\BOOKMARK [2][-]{subsection.8.3.6}{Hint for the installation of operating systems on a RAID}{section.8.3}% 117
+\BOOKMARK [1][-]{section.8.4}{Select the client distribution}{chapter.8}% 118
+\BOOKMARK [2][-]{subsection.8.4.1}{Information:}{section.8.4}% 119
+\BOOKMARK [2][-]{subsection.8.4.2}{Hint for imaging}{section.8.4}% 120
+\BOOKMARK [2][-]{subsection.8.4.3}{Hint:}{section.8.4}% 121
+\BOOKMARK [1][-]{section.8.5}{Delete a client}{chapter.8}% 122
+\BOOKMARK [2][-]{subsection.8.5.1}{Status description}{section.8.5}% 123
+\BOOKMARK [2][-]{subsection.8.5.2}{Jobs}{section.8.5}% 124
+\BOOKMARK [2][-]{subsection.8.5.3}{Work on multiple clients}{section.8.5}% 125
+\BOOKMARK [2][-]{subsection.8.5.4}{Hint}{section.8.5}% 126
+\BOOKMARK [2][-]{subsection.8.5.5}{Gimmicks}{section.8.5}% 127
+\BOOKMARK [1][-]{section.8.6}{Client assimilation}{chapter.8}% 128
+\BOOKMARK [2][-]{subsection.8.6.1}{Hint}{section.8.6}% 129
+\BOOKMARK [2][-]{subsection.8.6.2}{Manual assimilation}{section.8.6}% 130
+\BOOKMARK [2][-]{subsection.8.6.3}{Hint for the assimilation of an Ubuntu system}{section.8.6}% 131
+\BOOKMARK [0][-]{chapter.9}{Virtualisation}{}% 132
+\BOOKMARK [1][-]{section.9.1}{Create VM}{chapter.9}% 133
+\BOOKMARK [2][-]{subsection.9.1.1}{Step by step}{section.9.1}% 134
+\BOOKMARK [2][-]{subsection.9.1.2}{Hints about the VM host}{section.9.1}% 135
+\BOOKMARK [2][-]{subsection.9.1.3}{Memory, harddisk and CPU}{section.9.1}% 136
+\BOOKMARK [1][-]{section.9.2}{Download VirtualBox additions}{chapter.9}% 137
+\BOOKMARK [2][-]{subsection.9.2.1}{Downloading of guest additions}{section.9.2}% 138
+\BOOKMARK [2][-]{subsection.9.2.2}{Choose a default version}{section.9.2}% 139
+\BOOKMARK [2][-]{subsection.9.2.3}{Deleting of additions}{section.9.2}% 140
+\BOOKMARK [0][-]{chapter.10}{Group management}{}% 141
+\BOOKMARK [1][-]{section.10.1}{Groups overview}{chapter.10}% 142
+\BOOKMARK [2][-]{subsection.10.1.1}{Store jobs for groups}{section.10.1}% 143
+\BOOKMARK [2][-]{subsection.10.1.2}{Step by step:}{section.10.1}% 144
+\BOOKMARK [1][-]{section.10.2}{Add group}{chapter.10}% 145
+\BOOKMARK [0][-]{chapter.11}{Packages}{}% 146
+\BOOKMARK [1][-]{section.11.1}{Install packages}{chapter.11}% 147
+\BOOKMARK [2][-]{subsection.11.1.1}{Hint}{section.11.1}% 148
+\BOOKMARK [2][-]{subsection.11.1.2}{Installation of packages:}{section.11.1}% 149
+\BOOKMARK [2][-]{subsection.11.1.3}{Changing the package priority}{section.11.1}% 150
+\BOOKMARK [2][-]{subsection.11.1.4}{Installation preview}{section.11.1}% 151
+\BOOKMARK [2][-]{subsection.11.1.5}{Hint for package selections}{section.11.1}% 152
+\BOOKMARK [2][-]{subsection.11.1.6}{Hint}{section.11.1}% 153
+\BOOKMARK [1][-]{section.11.2}{Deinstall packages}{chapter.11}% 154
+\BOOKMARK [2][-]{subsection.11.2.1}{Hint}{section.11.2}% 155
+\BOOKMARK [2][-]{subsection.11.2.2}{Deinstallation of packages:}{section.11.2}% 156
+\BOOKMARK [2][-]{subsection.11.2.3}{Deinstallation preview}{section.11.2}% 157
 \BOOKMARK [1][-]{section.11.3}{Update}{chapter.11}% 158
 \BOOKMARK [2][-]{subsection.11.3.1}{Update types}{section.11.3}% 159
 \BOOKMARK [1][-]{section.11.4}{Edit package sources}{chapter.11}% 160
@@ -163,39 +163,41 @@
 \BOOKMARK [1][-]{section.11.5}{Edit package selections}{chapter.11}% 163
 \BOOKMARK [2][-]{subsection.11.5.1}{Step by step}{section.11.5}% 164
 \BOOKMARK [2][-]{subsection.11.5.2}{Deletion of selection}{section.11.5}% 165
-\BOOKMARK [1][-]{section.11.6}{Package builder}{chapter.11}% 166
-\BOOKMARK [2][-]{subsection.11.6.1}{Hint}{section.11.6}% 167
-\BOOKMARK [1][-]{section.11.7}{Script editor}{chapter.11}% 168
-\BOOKMARK [2][-]{subsection.11.7.1}{Hints}{section.11.7}% 169
-\BOOKMARK [0][-]{chapter.12}{Poll builder}{}% 170
-\BOOKMARK [1][-]{section.12.1}{Pool builder \(Create, edit, delete pool\)}{chapter.12}% 171
-\BOOKMARK [2][-]{subsection.12.1.1}{Hint}{section.12.1}% 172
-\BOOKMARK [1][-]{section.12.2}{Pool builder \(Read packages from CD\)}{chapter.12}% 173
-\BOOKMARK [1][-]{section.12.3}{Pool builder \(Create package index\)}{chapter.12}% 174
-\BOOKMARK [1][-]{section.12.4}{Pool builder \(Select package sources and packages\)}{chapter.12}% 175
-\BOOKMARK [2][-]{subsection.12.4.1}{Hint}{section.12.4}% 176
-\BOOKMARK [1][-]{section.12.5}{Pool builder \(Start download\)}{chapter.12}% 177
-\BOOKMARK [1][-]{section.12.6}{Pool builder \(Packages are beeing downloaded\)}{chapter.12}% 178
-\BOOKMARK [1][-]{section.12.7}{Package sources}{chapter.12}% 179
-\BOOKMARK [0][-]{chapter.13}{Mass installation}{}% 180
-\BOOKMARK [1][-]{section.13.1}{Client builder}{chapter.13}% 181
-\BOOKMARK [1][-]{section.13.2}{Define disk type and size}{chapter.13}% 182
-\BOOKMARK [2][-]{subsection.13.2.1}{Hint}{section.13.2}% 183
-\BOOKMARK [2][-]{subsection.13.2.2}{Adjustment criteria}{section.13.2}% 184
-\BOOKMARK [2][-]{subsection.13.2.3}{Hint}{section.13.2}% 185
-\BOOKMARK [1][-]{section.13.3}{Select value generation method}{chapter.13}% 186
-\BOOKMARK [2][-]{subsection.13.3.1}{There are 3 methods}{section.13.3}% 187
-\BOOKMARK [1][-]{section.13.4}{Select data source}{chapter.13}% 188
-\BOOKMARK [1][-]{section.13.5}{Select data source/Assign columns}{chapter.13}% 189
-\BOOKMARK [2][-]{subsection.13.5.1}{Select and upload a database file}{section.13.5}% 190
-\BOOKMARK [2][-]{subsection.13.5.2}{Hint}{section.13.5}% 191
-\BOOKMARK [2][-]{subsection.13.5.3}{Assign the fields to the client options}{section.13.5}% 192
-\BOOKMARK [2][-]{subsection.13.5.4}{Step by step}{section.13.5}% 193
-\BOOKMARK [1][-]{section.13.6}{Generator options}{chapter.13}% 194
-\BOOKMARK [1][-]{section.13.7}{Enter missing values/overview}{chapter.13}% 195
-\BOOKMARK [2][-]{subsection.13.7.1}{Change the number of clients}{section.13.7}% 196
-\BOOKMARK [0][-]{chapter.14}{Tools}{}% 197
-\BOOKMARK [1][-]{section.14.1}{Make bootdisk for m23 installation}{chapter.14}% 198
-\BOOKMARK [1][-]{section.14.2}{Make boot CD}{chapter.14}% 199
-\BOOKMARK [2][-]{subsection.14.2.1}{Hint}{section.14.2}% 200
-\BOOKMARK [0][-]{chapter.15}{The GNU General Public License}{}% 201
+\BOOKMARK [2][-]{subsection.11.5.3}{Im/Export selected packages}{section.11.5}% 166
+\BOOKMARK [2][-]{subsection.11.5.4}{Hint}{section.11.5}% 167
+\BOOKMARK [1][-]{section.11.6}{Package builder}{chapter.11}% 168
+\BOOKMARK [2][-]{subsection.11.6.1}{Hint}{section.11.6}% 169
+\BOOKMARK [1][-]{section.11.7}{Script editor}{chapter.11}% 170
+\BOOKMARK [2][-]{subsection.11.7.1}{Hints}{section.11.7}% 171
+\BOOKMARK [0][-]{chapter.12}{Poll builder}{}% 172
+\BOOKMARK [1][-]{section.12.1}{Pool builder \(Create, edit, delete pool\)}{chapter.12}% 173
+\BOOKMARK [2][-]{subsection.12.1.1}{Hint}{section.12.1}% 174
+\BOOKMARK [1][-]{section.12.2}{Pool builder \(Read packages from CD\)}{chapter.12}% 175
+\BOOKMARK [1][-]{section.12.3}{Pool builder \(Create package index\)}{chapter.12}% 176
+\BOOKMARK [1][-]{section.12.4}{Pool builder \(Select package sources and packages\)}{chapter.12}% 177
+\BOOKMARK [2][-]{subsection.12.4.1}{Hint}{section.12.4}% 178
+\BOOKMARK [1][-]{section.12.5}{Pool builder \(Start download\)}{chapter.12}% 179
+\BOOKMARK [1][-]{section.12.6}{Pool builder \(Packages are beeing downloaded\)}{chapter.12}% 180
+\BOOKMARK [1][-]{section.12.7}{Package sources}{chapter.12}% 181
+\BOOKMARK [0][-]{chapter.13}{Mass installation}{}% 182
+\BOOKMARK [1][-]{section.13.1}{Client builder}{chapter.13}% 183
+\BOOKMARK [1][-]{section.13.2}{Define disk type and size}{chapter.13}% 184
+\BOOKMARK [2][-]{subsection.13.2.1}{Hint}{section.13.2}% 185
+\BOOKMARK [2][-]{subsection.13.2.2}{Adjustment criteria}{section.13.2}% 186
+\BOOKMARK [2][-]{subsection.13.2.3}{Hint}{section.13.2}% 187
+\BOOKMARK [1][-]{section.13.3}{Select value generation method}{chapter.13}% 188
+\BOOKMARK [2][-]{subsection.13.3.1}{There are 3 methods}{section.13.3}% 189
+\BOOKMARK [1][-]{section.13.4}{Select data source}{chapter.13}% 190
+\BOOKMARK [1][-]{section.13.5}{Select data source/Assign columns}{chapter.13}% 191
+\BOOKMARK [2][-]{subsection.13.5.1}{Select and upload a database file}{section.13.5}% 192
+\BOOKMARK [2][-]{subsection.13.5.2}{Hint}{section.13.5}% 193
+\BOOKMARK [2][-]{subsection.13.5.3}{Assign the fields to the client options}{section.13.5}% 194
+\BOOKMARK [2][-]{subsection.13.5.4}{Step by step}{section.13.5}% 195
+\BOOKMARK [1][-]{section.13.6}{Generator options}{chapter.13}% 196
+\BOOKMARK [1][-]{section.13.7}{Enter missing values/overview}{chapter.13}% 197
+\BOOKMARK [2][-]{subsection.13.7.1}{Change the number of clients}{section.13.7}% 198
+\BOOKMARK [0][-]{chapter.14}{Tools}{}% 199
+\BOOKMARK [1][-]{section.14.1}{Make bootdisk for m23 installation}{chapter.14}% 200
+\BOOKMARK [1][-]{section.14.2}{Make boot CD}{chapter.14}% 201
+\BOOKMARK [2][-]{subsection.14.2.1}{Hint}{section.14.2}% 202
+\BOOKMARK [0][-]{chapter.15}{The GNU General Public License}{}% 203

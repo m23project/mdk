@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_countPartitions</TITLE>
-<META NAME="description" CONTENT="FDISK_countPartitions">
+<TITLE>FDISK_getvPart</TITLE>
+<META NAME="description" CONTENT="FDISK_getvPart">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node441.html">
 <LINK REL="previous" HREF="node439.html">
-<LINK REL="up" HREF="node357.html">
+<LINK REL="up" HREF="node362.html">
 <LINK REL="next" HREF="node441.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html8729"
+<A NAME="tex2html8779"
   HREF="node441.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html8725"
-  HREF="node357.html">
+<A NAME="tex2html8775"
+  HREF="node362.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html8719"
+<A NAME="tex2html8769"
   HREF="node439.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html8727"
+<A NAME="tex2html8777"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html8730"
-  HREF="node441.html">FDISK_getFreeSpaces</A>
-<B> Up:</B> <A NAME="tex2html8726"
-  HREF="node357.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html8720"
-  HREF="node439.html">FDISK_formatJob</A>
- &nbsp; <B>  <A NAME="tex2html8728"
+<B> Next:</B> <A NAME="tex2html8780"
+  HREF="node441.html">FDISK_rmJob</A>
+<B> Up:</B> <A NAME="tex2html8776"
+  HREF="node362.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html8770"
+  HREF="node439.html">FDISK_formatExisting</A>
+ &nbsp; <B>  <A NAME="tex2html8778"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081283000000000000000">
-FDISK_countPartitions</A>
+<H2><A NAME="SECTION0081278000000000000000">
+FDISK_getvPart</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> count all partitions of a selected type
+<SPAN  CLASS="textbf">Description:</SPAN> returns vPart with the real device number.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
-<LI>vDev: Virtual (internally used) device number.
+<LI>dev: selected device (e.g. hda)
 </LI>
-<LI>type: type of the partition (primary, extended, logical)
+<LI>devNr: number of partition
 </LI>
 </UL>
 
@@ -72,7 +72,7 @@ FDISK_countPartitions</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

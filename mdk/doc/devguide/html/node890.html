@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>POOL_createExtendedPackageIndex</TITLE>
-<META NAME="description" CONTENT="POOL_createExtendedPackageIndex">
+<TITLE>PLG_realUpdate</TITLE>
+<META NAME="description" CONTENT="PLG_realUpdate">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,48 +19,49 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
-<LINK REL="next" HREF="node891.html">
 <LINK REL="previous" HREF="node889.html">
-<LINK REL="up" HREF="node880.html">
+<LINK REL="up" HREF="node867.html">
 <LINK REL="next" HREF="node891.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html14517"
+<A NAME="tex2html14554"
   HREF="node891.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html14513"
-  HREF="node880.html">
+<A NAME="tex2html14550"
+  HREF="node867.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html14507"
+<A NAME="tex2html14546"
   HREF="node889.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html14515"
+<A NAME="tex2html14552"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html14518"
-  HREF="node891.html">POOL_showCreatePackageIndex</A>
-<B> Up:</B> <A NAME="tex2html14514"
-  HREF="node880.html">./inc/pool.php</A>
-<B> Previous:</B> <A NAME="tex2html14508"
-  HREF="node889.html">POOL_readCD</A>
- &nbsp; <B>  <A NAME="tex2html14516"
+<B> Next:</B> <A NAME="tex2html14555"
+  HREF="node891.html">./inc/pool.php</A>
+<B> Up:</B> <A NAME="tex2html14551"
+  HREF="node867.html">./inc/plugin.php</A>
+<B> Previous:</B> <A NAME="tex2html14547"
+  HREF="node889.html">PLG_listInfofile</A>
+ &nbsp; <B>  <A NAME="tex2html14553"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082710000000000000000">
-POOL_createExtendedPackageIndex</A>
+<H2><A NAME="SECTION0082623000000000000000">
+PLG_realUpdate</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> creates the Packages* index files for the pool
+<SPAN  CLASS="textbf">Description:</SPAN> does the real installation/update
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>poolName: name of the pool
+<LI>name: name of the plugin
+</LI>
+<LI>url: the place where to get the plugin file from. following transport protocols are allowed: http, ftp and local files. e.g. "http://myserver.de/test.m23plg" is avalid url.
 </LI>
 </UL>
 
@@ -68,7 +69,7 @@ POOL_createExtendedPackageIndex</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_logArea</TITLE>
-<META NAME="description" CONTENT="HTML_logArea">
+<TITLE>HTML_liveSpan</TITLE>
+<META NAME="description" CONTENT="HTML_liveSpan">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node550.html">
 <LINK REL="previous" HREF="node548.html">
-<LINK REL="up" HREF="node536.html">
+<LINK REL="up" HREF="node541.html">
 <LINK REL="next" HREF="node550.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10151"
+<A NAME="tex2html10204"
   HREF="node550.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10147"
-  HREF="node536.html">
+<A NAME="tex2html10200"
+  HREF="node541.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10141"
+<A NAME="tex2html10194"
   HREF="node548.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10149"
+<A NAME="tex2html10202"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10152"
-  HREF="node550.html">HTML_getQuestionnaireURL</A>
-<B> Up:</B> <A NAME="tex2html10148"
-  HREF="node536.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html10142"
-  HREF="node548.html">HTML_jsCheckboxChanger</A>
- &nbsp; <B>  <A NAME="tex2html10150"
+<B> Next:</B> <A NAME="tex2html10205"
+  HREF="node550.html">HTML_manipulateOutputBuffer</A>
+<B> Up:</B> <A NAME="tex2html10201"
+  HREF="node541.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html10195"
+  HREF="node548.html">HTML_AJAXAutoSubmit</A>
+ &nbsp; <B>  <A NAME="tex2html10203"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081613000000000000000">
-HTML_logArea</A>
+<H2><A NAME="SECTION008168000000000000000">
+HTML_liveSpan</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Shows a text area for log information (readonly).
+<SPAN  CLASS="textbf">Description:</SPAN> Creates a span that updates itself via AJAX by polling from a given URL.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>htmlName: Name of the HTML element.
+<LI>htmlNames: Name of the span.
 </LI>
-<LI>cols: Number of columns.
+<LI>url: The HTTP URL to poll.
 </LI>
-<LI>rows: Number of rows to show.
+<LI>staticValue: Value that should be shown, when AJAX is not available (e.g. when JavaScript is disabled)
 </LI>
-<LI>text: The log information to show.
+<LI>timeout: Time in milliseconds to poll the URL for new status.
 </LI>
 </UL>
 
@@ -74,7 +74,7 @@ HTML_logArea</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_putFileContents</TITLE>
-<META NAME="description" CONTENT="SERVER_putFileContents">
+<TITLE>SERVER_isProgramRunning</TITLE>
+<META NAME="description" CONTENT="SERVER_isProgramRunning">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node958.html">
 <LINK REL="previous" HREF="node956.html">
-<LINK REL="up" HREF="node925.html">
+<LINK REL="up" HREF="node936.html">
 <LINK REL="next" HREF="node958.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15377"
+<A NAME="tex2html15438"
   HREF="node958.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15373"
-  HREF="node925.html">
+<A NAME="tex2html15434"
+  HREF="node936.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15367"
+<A NAME="tex2html15428"
   HREF="node956.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15375"
+<A NAME="tex2html15436"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15378"
-  HREF="node958.html">SERVER_delLineFromFile</A>
-<B> Up:</B> <A NAME="tex2html15374"
-  HREF="node925.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html15368"
-  HREF="node956.html">SERVER_getFileContents</A>
- &nbsp; <B>  <A NAME="tex2html15376"
+<B> Next:</B> <A NAME="tex2html15439"
+  HREF="node958.html">SERVER_checkPackageInstalled</A>
+<B> Up:</B> <A NAME="tex2html15435"
+  HREF="node936.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html15429"
+  HREF="node956.html">SERVER_rootFreeSpace</A>
+ &nbsp; <B>  <A NAME="tex2html15437"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083132000000000000000">
-SERVER_putFileContents</A>
+<H2><A NAME="SECTION0083121000000000000000">
+SERVER_isProgramRunning</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Stores a text to a file and changes it's mode, user and group.
+<SPAN  CLASS="textbf">Description:</SPAN> checks if a certain program is running and returns true, if yes "no" otherwise
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>fileName: Name of the file to put the text to.
-</LI>
-<LI>text: The contents the file should have.
-</LI>
-<LI>mode: The access mode the file should have.
-</LI>
-<LI>user: The owner of the file.
-</LI>
-<LI>group: The owning group of the file.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>true on success and false otherwise.
+<LI>progname: the name of the programm (e.g. "apache" for the Apache web server)
 </LI>
 </UL>
 
@@ -82,7 +68,7 @@ SERVER_putFileContents</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

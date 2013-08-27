@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_array2AssociativeArray</TITLE>
-<META NAME="description" CONTENT="HELPER_array2AssociativeArray">
+<TITLE>HELPER_array2m23Array</TITLE>
+<META NAME="description" CONTENT="HELPER_array2m23Array">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node517.html">
 <LINK REL="previous" HREF="node515.html">
-<LINK REL="up" HREF="node496.html">
+<LINK REL="up" HREF="node501.html">
 <LINK REL="next" HREF="node517.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9699"
+<A NAME="tex2html9749"
   HREF="node517.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9695"
-  HREF="node496.html">
+<A NAME="tex2html9745"
+  HREF="node501.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9689"
+<A NAME="tex2html9739"
   HREF="node515.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9697"
+<A NAME="tex2html9747"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9700"
-  HREF="node517.html">HELPER_randomMAC</A>
-<B> Up:</B> <A NAME="tex2html9696"
-  HREF="node496.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html9690"
-  HREF="node515.html">HELPER_passGenerator</A>
- &nbsp; <B>  <A NAME="tex2html9698"
+<B> Next:</B> <A NAME="tex2html9750"
+  HREF="node517.html">print_r2</A>
+<B> Up:</B> <A NAME="tex2html9746"
+  HREF="node501.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html9740"
+  HREF="node515.html">HELPER_m23Array2Array</A>
+ &nbsp; <B>  <A NAME="tex2html9748"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081420000000000000000">
-HELPER_array2AssociativeArray</A>
+<H2><A NAME="SECTION0081415000000000000000">
+HELPER_array2m23Array</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Copies the values of an array as keys AND values to a new assiciative array.
+<SPAN  CLASS="textbf">Description:</SPAN> Converts a normal array to an m23 array.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>in: Input array.
+<LI>array: A normal array, that may be edited more easyly. (e.g [0] =<SPAN CLASS="MATH"></SPAN> Array([command] =<SPAN CLASS="MATH"></SPAN> format, [path] =<SPAN CLASS="MATH"></SPAN> /dev/md0, [fs] =<SPAN CLASS="MATH"></SPAN> ext4 ))
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>Associative array with equal keys and values.
+<LI>The m23 array, that is a 2D array, that consists of keys build of a parameter names combined with a parameter number. Parameter names with the same parameter number belong together. (e.g. [command0] =<SPAN CLASS="MATH"></SPAN> format, [path0] =<SPAN CLASS="MATH"></SPAN> /dev/md0, [fs0] =<SPAN CLASS="MATH"></SPAN> ext4, ...)
 </LI>
 </UL>
 
@@ -74,7 +74,7 @@ HELPER_array2AssociativeArray</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_shutdownAndDisableNetboot</TITLE>
-<META NAME="description" CONTENT="VM_shutdownAndDisableNetboot">
+<TITLE>SRCLST_showAlternativeArchitectureSelection</TITLE>
+<META NAME="description" CONTENT="SRCLST_showAlternativeArchitectureSelection">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1006.html">
 <LINK REL="previous" HREF="node1004.html">
-<LINK REL="up" HREF="node1001.html">
+<LINK REL="up" HREF="node984.html">
 <LINK REL="next" HREF="node1006.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16021"
+<A NAME="tex2html16039"
   HREF="node1006.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16017"
-  HREF="node1001.html">
+<A NAME="tex2html16035"
+  HREF="node984.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16011"
+<A NAME="tex2html16029"
   HREF="node1004.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16019"
+<A NAME="tex2html16037"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16022"
-  HREF="node1006.html">VM_rebootChangeBootDevice</A>
-<B> Up:</B> <A NAME="tex2html16018"
-  HREF="node1001.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html16012"
-  HREF="node1004.html">VM_shutdownAndDisableNetbootAfterInstall</A>
- &nbsp; <B>  <A NAME="tex2html16020"
+<B> Next:</B> <A NAME="tex2html16040"
+  HREF="node1006.html">SRCLST_isArchAvailable</A>
+<B> Up:</B> <A NAME="tex2html16036"
+  HREF="node984.html">./inc/sourceslist.php</A>
+<B> Previous:</B> <A NAME="tex2html16030"
+  HREF="node1004.html">SRCLST_showDesktopsSel</A>
+ &nbsp; <B>  <A NAME="tex2html16038"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008344000000000000000">
-VM_shutdownAndDisableNetboot</A>
+<H2><A NAME="SECTION0083221000000000000000">
+SRCLST_showAlternativeArchitectureSelection</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates a BASH command to shut down an VM and to disable network booting.
+<SPAN  CLASS="textbf">Description:</SPAN> Shows a list with available CPU architectures of the sources list, in case that the wanted architecture is not available in the sources list. The alternative architecture will be written to the arch option of the client.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>type: VM_SW_VBOX for VirtualBox OSE
+<LI>sourceName: The name of the package source list.
 </LI>
-<LI>vmname: Name of the VM.
+<LI>wantedArch: The CPU architecture of the m23 client.
+</LI>
+<LI>client: Name of the client.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>BASH code to shut down an VM and to disable network booting.
+<LI>: A CPU architecture supported by the package source list.
 </LI>
 </UL>
 
@@ -76,7 +78,7 @@ VM_shutdownAndDisableNetboot</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

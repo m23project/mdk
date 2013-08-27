@@ -1,9 +1,9 @@
 Package: m23-mdk-client
-Version: 13.1-100666
+Version: 13.2-100674
 Section: base
 Priority: optional
 Architecture: all
-Installed-Size: 50116
+Installed-Size: 55132
 Pre-Depends: debconf
 Replaces: m23-mdk-bootimage
 Conflicts: m23-mdk-bootimage

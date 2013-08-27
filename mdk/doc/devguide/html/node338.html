@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>EDIT_commentoutInsert</TITLE>
-<META NAME="description" CONTENT="EDIT_commentoutInsert">
+<TITLE>PKG_getKernels</TITLE>
+<META NAME="description" CONTENT="PKG_getKernels">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node339.html">
 <LINK REL="previous" HREF="node337.html">
-<LINK REL="up" HREF="node335.html">
+<LINK REL="up" HREF="node333.html">
 <LINK REL="next" HREF="node339.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html7398"
+<A NAME="tex2html7429"
   HREF="node339.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html7394"
-  HREF="node335.html">
+<A NAME="tex2html7425"
+  HREF="node333.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html7388"
+<A NAME="tex2html7419"
   HREF="node337.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html7396"
+<A NAME="tex2html7427"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html7399"
-  HREF="node339.html">EDIT_countMatches</A>
-<B> Up:</B> <A NAME="tex2html7395"
-  HREF="node335.html">./inc/edit.php</A>
-<B> Previous:</B> <A NAME="tex2html7389"
-  HREF="node337.html">EDIT_genClientm23Random</A>
- &nbsp; <B>  <A NAME="tex2html7397"
+<B> Next:</B> <A NAME="tex2html7430"
+  HREF="node339.html">PKG_translateClientPackageStatus</A>
+<B> Up:</B> <A NAME="tex2html7426"
+  HREF="node333.html">./inc/distr/halfSister/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html7420"
+  HREF="node337.html">PKG_previewInstall</A>
+ &nbsp; <B>  <A NAME="tex2html7428"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008113000000000000000">
-EDIT_commentoutInsert</A>
+<H2><A NAME="SECTION008105000000000000000">
+PKG_getKernels</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Comments out a matched line and inserts a new line after it.
+<SPAN  CLASS="textbf">Description:</SPAN> Generates an associative array with the available kernels for an architecture and distribution as keys and values.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>file: the name of the file
+<LI>distr: the distribution name
 </LI>
-<LI>search: Search string to match the line to comment out.
+<LI>packagesource: name of the package source
 </LI>
-<LI>lineToInsert: The text of the line to insert.
+<LI>arch: Architecture to get package infos for.
 </LI>
-<LI>commentStr: string to comment out (e.g. "#" for BASH or "//" for C/C++ style)
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Asssociative array with the available kernels for an architecture and distribution as keys and values.
 </LI>
 </UL>
 
@@ -74,7 +78,7 @@ EDIT_commentoutInsert</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_printBars</TITLE>
-<META NAME="description" CONTENT="FDISK_printBars">
+<TITLE>FDISK_getPartitions</TITLE>
+<META NAME="description" CONTENT="FDISK_getPartitions">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node427.html">
 <LINK REL="previous" HREF="node425.html">
-<LINK REL="up" HREF="node357.html">
+<LINK REL="up" HREF="node362.html">
 <LINK REL="next" HREF="node427.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html8561"
+<A NAME="tex2html8611"
   HREF="node427.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html8557"
-  HREF="node357.html">
+<A NAME="tex2html8607"
+  HREF="node362.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html8551"
+<A NAME="tex2html8601"
   HREF="node425.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html8559"
+<A NAME="tex2html8609"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html8562"
-  HREF="node427.html">FDISK_getSupportedFS</A>
-<B> Up:</B> <A NAME="tex2html8558"
-  HREF="node357.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html8552"
-  HREF="node425.html">FDISK_getPartInfoIcon</A>
- &nbsp; <B>  <A NAME="tex2html8560"
+<B> Next:</B> <A NAME="tex2html8612"
+  HREF="node427.html">FDISK_getPartInfoString</A>
+<B> Up:</B> <A NAME="tex2html8608"
+  HREF="node362.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html8602"
+  HREF="node425.html">FDISK_getBeforeFristPartition</A>
+ &nbsp; <B>  <A NAME="tex2html8610"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081269000000000000000">
-FDISK_printBars</A>
+<H2><A NAME="SECTION0081264000000000000000">
+FDISK_getPartitions</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> prints the partitions as colored table
+<SPAN  CLASS="textbf">Description:</SPAN> get the partition info for the client from db
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>param: parameter string containing status informations about the harddisks
-</LI>
-<LI>dev: selected device (e.g. /dev/hda)
-</LI>
-<LI>addJavaScript: Set to true to add JavaScript code that calls the JS function emptySpace(), if empty parts of the drive are clicked, selectPartition(), if a partition is clicked and showPartTable(), if the mouse is over the bar.
-</LI>
-<LI>fstabA: Associative array with fstab information.
+<LI>client: name of the client
 </LI>
 </UL>
 
@@ -74,7 +68,7 @@ FDISK_printBars</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

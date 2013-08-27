@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_discardNormalJob</TITLE>
-<META NAME="description" CONTENT="PKG_discardNormalJob">
+<TITLE>PKG_hasOptions</TITLE>
+<META NAME="description" CONTENT="PKG_hasOptions">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node800.html">
 <LINK REL="previous" HREF="node798.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node800.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13384"
+<A NAME="tex2html13440"
   HREF="node800.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13380"
-  HREF="node758.html">
+<A NAME="tex2html13436"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13374"
+<A NAME="tex2html13430"
   HREF="node798.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13382"
+<A NAME="tex2html13438"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13385"
-  HREF="node800.html">PKG_addWait4AccJob</A>
-<B> Up:</B> <A NAME="tex2html13381"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html13375"
-  HREF="node798.html">PKG_addJob</A>
- &nbsp; <B>  <A NAME="tex2html13383"
+<B> Next:</B> <A NAME="tex2html13441"
+  HREF="node800.html">PKG_savePackageselection</A>
+<B> Up:</B> <A NAME="tex2html13437"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html13431"
+  HREF="node798.html">PKG_countJobs</A>
+ &nbsp; <B>  <A NAME="tex2html13439"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082441000000000000000">
-PKG_discardNormalJob</A>
+<H2><A NAME="SECTION0082433000000000000000">
+PKG_hasOptions</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> discards all normal packages from the clientjobs table, that match the param
+<SPAN  CLASS="textbf">Description:</SPAN> generates a link to the package option page (if it exists)
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>client: name of the client
+<LI>package: name of package
 </LI>
-<LI>packageName: name of the package
+<LI>packageID: id for the selected package
+</LI>
+<LI>distr: the name of the distribution
+</LI>
+<LI>client: Name of the current client.
+</LI>
+<LI>release: The release of the client's distribution.
 </LI>
 </UL>
 
@@ -70,7 +76,7 @@ PKG_discardNormalJob</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

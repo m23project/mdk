@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_adjustFstabParam</TITLE>
-<META NAME="description" CONTENT="FDISK_adjustFstabParam">
+<TITLE>FDISK_addFstab</TITLE>
+<META NAME="description" CONTENT="FDISK_addFstab">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node409.html">
 <LINK REL="previous" HREF="node407.html">
-<LINK REL="up" HREF="node357.html">
+<LINK REL="up" HREF="node362.html">
 <LINK REL="next" HREF="node409.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html8345"
+<A NAME="tex2html8395"
   HREF="node409.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html8341"
-  HREF="node357.html">
+<A NAME="tex2html8391"
+  HREF="node362.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html8335"
+<A NAME="tex2html8385"
   HREF="node407.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html8343"
+<A NAME="tex2html8393"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html8346"
-  HREF="node409.html">FDISK_genManualFstab</A>
-<B> Up:</B> <A NAME="tex2html8342"
-  HREF="node357.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html8336"
-  HREF="node407.html">FDISK_fstabAddDialog</A>
- &nbsp; <B>  <A NAME="tex2html8344"
+<B> Next:</B> <A NAME="tex2html8396"
+  HREF="node409.html">FDISK_delFstab</A>
+<B> Up:</B> <A NAME="tex2html8392"
+  HREF="node362.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html8386"
+  HREF="node407.html">FDISK_installExistingDialog</A>
+ &nbsp; <B>  <A NAME="tex2html8394"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081251000000000000000">
-FDISK_adjustFstabParam</A>
+<H2><A NAME="SECTION0081246000000000000000">
+FDISK_addFstab</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Adjust the parameter block of a fstab line to make it use an supported FS.
+<SPAN  CLASS="textbf">Description:</SPAN> Adds a new entry to the fstab that is stored in the param array.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>param: The parameter block of a fstab line
+<LI>fstab: Array that contains the fstab information. The changed fstab will be written to this parameter too.
 </LI>
-<LI>sourceName: The name of the package source list
+<LI>dev: Device to mount (e.g. /dev/hda1)
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Adjust the parameter block of a fstab line
+<LI>mountpoint: Location where to mount the device (e.g. /mnt/hda1)
 </LI>
 </UL>
 
@@ -76,7 +72,7 @@ FDISK_adjustFstabParam</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

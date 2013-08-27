@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_putFileContents</TITLE>
-<META NAME="description" CONTENT="HELPER_putFileContents">
+<TITLE>HELPER_calcMBSize</TITLE>
+<META NAME="description" CONTENT="HELPER_calcMBSize">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,49 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node528.html">
 <LINK REL="previous" HREF="node526.html">
-<LINK REL="up" HREF="node496.html">
+<LINK REL="up" HREF="node501.html">
 <LINK REL="next" HREF="node528.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9831"
+<A NAME="tex2html9881"
   HREF="node528.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9827"
-  HREF="node496.html">
+<A NAME="tex2html9877"
+  HREF="node501.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9821"
+<A NAME="tex2html9871"
   HREF="node526.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9829"
+<A NAME="tex2html9879"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9832"
-  HREF="node528.html">HELPER_getFileContents</A>
-<B> Up:</B> <A NAME="tex2html9828"
-  HREF="node496.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html9822"
-  HREF="node526.html">HELPER_getApacheGroup</A>
- &nbsp; <B>  <A NAME="tex2html9830"
+<B> Next:</B> <A NAME="tex2html9882"
+  HREF="node528.html">HELPER_grep</A>
+<B> Up:</B> <A NAME="tex2html9878"
+  HREF="node501.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html9872"
+  HREF="node526.html">HELPER_getTimeZones</A>
+ &nbsp; <B>  <A NAME="tex2html9880"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081431000000000000000">
-HELPER_putFileContents</A>
+<H2><A NAME="SECTION0081426000000000000000">
+HELPER_calcMBSize</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Writes data to a file.
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> calculates the size in MB from a given input that can be a GB value or measured in <SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>fileName: name of the file to write
+<LI>number: the number to convert
 </LI>
-<LI>contents: Text or data that should be written to the file.
+<LI>from: if number is a percent value, the output will be the percentage of the from value
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Error code from fwrite.
+<LI>trunc: set to true, if the output value should be trunced
 </LI>
 </UL>
 
@@ -76,7 +71,7 @@ HELPER_putFileContents</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

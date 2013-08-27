@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Skript-Editor</TITLE>
-<META NAME="description" CONTENT="Skript-Editor">
+<TITLE>Paket-Architekt</TITLE>
+<META NAME="description" CONTENT="Paket-Architekt">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,98 +19,99 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="manual.css">
 
-<LINK REL="previous" HREF="node168.html">
-<LINK REL="up" HREF="node146.html">
+<LINK REL="next" HREF="node172.html">
+<LINK REL="previous" HREF="node165.html">
+<LINK REL="up" HREF="node148.html">
 <LINK REL="next" HREF="node171.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html2618"
+<A NAME="tex2html2629"
   HREF="node171.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2614"
-  HREF="node146.html">
+<A NAME="tex2html2625"
+  HREF="node148.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2610"
+<A NAME="tex2html2619"
   HREF="node169.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2616"
+<A NAME="tex2html2627"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> N&auml;chste Seite:</B> <A NAME="tex2html2619"
-  HREF="node171.html">Hinweise</A>
-<B> Aufw&auml;rts:</B> <A NAME="tex2html2615"
-  HREF="node146.html">Pakete</A>
-<B> Vorherige Seite:</B> <A NAME="tex2html2611"
+<B> N&auml;chste Seite:</B> <A NAME="tex2html2630"
+  HREF="node171.html">Hinweis</A>
+<B> Aufw&auml;rts:</B> <A NAME="tex2html2626"
+  HREF="node148.html">Pakete</A>
+<B> Vorherige Seite:</B> <A NAME="tex2html2620"
   HREF="node169.html">Hinweis</A>
- &nbsp; <B>  <A NAME="tex2html2617"
+ &nbsp; <B>  <A NAME="tex2html2628"
   HREF="node1.html">Inhalt</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A NAME="SECTION001270000000000000000">
-Skript-Editor</A>
+<H1><A NAME="SECTION001260000000000000000">
+Paket-Architekt</A>
 </H1>
 <IMG
-  WIDTH="1437" HEIGHT="940" ALIGN="BOTTOM" BORDER="0"
- SRC="./scriptEditor.png"
- ALT="Image scriptEditor"> 
+  WIDTH="1154" HEIGHT="1111" ALIGN="BOTTOM" BORDER="0"
+ SRC="./packageBuilder.png"
+ ALT="Image packageBuilder"> 
 <BR>
-Mit dem Skript-Editor ist das Ausf&#252;hren von wiederkehrenden Aufgaben auf den Clients so einfach wie die Installation eines Paketes. Mithilfe des Editors k&#246;nnen Sie eigene Skripte erstellen und dabei den ganzen Funktionsumfang von m23 nutzen, um den auf den Clients auszuf&#252;hrenden BASH-Code zu generieren. Sie k&#246;nnen dabei alle BASH-Befehle verwenden, sowie alle auf den Clients installierten Kommandozeilenprogramme. Die &#220;bersicht &#252;ber die m23-Befehle finden Sie im <SPAN  CLASS="textit">&#34;Development Guide&#34;</SPAN>, der links im Men&#252; zu finden ist.
+Der in m23 integrierte Paket-Architekt ist ein komfortables Werkzeug, um direkt aus der m23-Oberfl&#228;che heraus Debian-Pakete zu erstellen, die dann wie gewohnt auf den Clients installiert werden k&#246;nnen. Diese Pakete k&#246;nnen einzelne Dateien oder ganze Verzeichnisb&#228;ume enthalten.
 <BR>
-<UL>
-<LI><SPAN  CLASS="textbf">Vorhandene Skripte &#246;ffnen</SPAN>: W&#228;hlen Sie hierzu das betreffende Skript aus der Liste unter <SPAN  CLASS="textit">&#34;Datei zum Editieren &#246;ffnen&#34;</SPAN> und klicken Sie anschlie&#223;end auf <SPAN  CLASS="textit">&#34;Laden&#34;</SPAN>. Darauf erscheint der Quelltext im Editorfenster.
-<BR></LI>
-<LI><SPAN  CLASS="textbf">Erstellung eines neuen Skriptes</SPAN>: Geben Sie hierzu einen Namen f&#252;r das neue Skript bei <SPAN  CLASS="textit">&#34;Neues Skript erstellen&#34;</SPAN> ein und best&#228;tigen Sie mit einem Klick auf <SPAN  CLASS="textit">&#196;nlegen&#34;</SPAN>. In das Editorfenster wird ein kurzes Beispielskript geladen, das Sie anpassen k&#246;nnen.
-<BR></LI>
-<LI><SPAN  CLASS="textbf">Skripte speichern und l&#246;schen</SPAN>: Klicken Sie hierzu entweder auf <SPAN  CLASS="textit">SSpeichern&#34;</SPAN> oder <SPAN  CLASS="textit">&#34;L&#246;schen&#34;</SPAN>. Die Operationen beziehen sie jeweils auf das gerade geladenen Skript.
-<BR></LI>
-<LI><SPAN  CLASS="textbf">Teilen Sie Ihre Skripte mit anderen m23-Benutzern</SPAN>: Der Editor beinhaltet eine einfache M&#246;glichkeit, Ihre Skripte mit anderen m23-Benutzern zu teilen und somit einmal erstellte Skripte f&#252;r einen gr&#246;&#223;eren Nutzerkreis zu &#246;ffnen. Alle Skripte werden auf der m23-Webseite in der Rubrik SSkripte von Benutzern&#34; ver&#246;ffentlicht. Um das aktuell geladene Skript zu ver&#246;ffentlichen, geben Sie bitte unter <SPAN  CLASS="textit">&#34;Beschreibung&#34;</SPAN> an, wof&#252;r Ihr Skript verwendet werden kann. Geben Sie bitte zus&#228;tzlich unter <SPAN  CLASS="textit">&#196;utor&#34;</SPAN> Ihr K&#252;rzel, Ihren Namen oder etwas anderes an, womit Ihre freigegebenen Skripte identifiziert werden k&#246;nnen. Klicken Sie anschlie&#223;end auf <SPAN  CLASS="textit">SSkript auf m23.sf.net ver&#246;ffentlichen&#34;</SPAN>. Ihr Skript wird nun umgehend hochgeladen und erscheint auf der m23-Webseite.
+Die Pakete werden aus Archivdateien im tar-Format mit bzip2- oder gzip-Kompression erzeugt. Darin enthaltene Benutzer- und Zugriffsrechte von Dateien und Verzeichnissen werden dabei ohne Neukompression beibehalten. Die erzeugten Debian-Pakete sind unabh&#228;ngig von einer Distribution und einer Distributionsversion und k&#246;nnen somit auf Debian-, Ubuntu- oder Kubuntu-Clients verwendet werden.
 <BR>
-Sollten Sie sich zu einer Ver&#246;ffentlichung Ihres Skriptes entscheiden, so stimmen Sie einer Ver&#246;ffentlichung nach den Bestimmungen der GPLv2 zu.
-</LI>
-</UL>
+Die Erstellung des Paketes l&#228;uft folgenderma&#223;en ab:
+<BR>
+<OL>
+<LI>Ablegen der tar-Datei in das Verzeichnis /m23/data+scripts/extraDebs/. Dies kann z.B. durch Hochladen mittels scp geschehen oder durch den integrierten Datei-Upload <SPAN  CLASS="textit">&#34;Tar-Datei zum Umwandeln hochladen&#34;</SPAN>.
+<BR></LI>
+<LI>Nach dem Ablegen der Datei klicken Sie auf <SPAN  CLASS="textit">&#196;ktualisieren&#34;</SPAN>, damit diese in der Liste <SPAN  CLASS="textit">&#34;Dateiliste&#34;</SPAN> erscheinen.
+<BR></LI>
+<LI>W&#228;hlen Sie die Datei aus, die sie umwandeln m&#246;chten und klicken neben dem Dateinamen auf <SPAN  CLASS="textit">&#207;n Debian-Paket umwandeln&#34;</SPAN>. Die Aktualisierung der Paketindexdateien erfolgt automatisch, so da&#223; die Paketquelle sofort verwendet werden kann.
+<BR></LI>
+</OL>
 <BR><HR>
 <!--Table of Child-Links-->
 <A NAME="CHILD_LINKS"><STRONG>Unterabschnitte</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A NAME="tex2html2620"
-  HREF="node171.html">Hinweise</A>
+<LI><A NAME="tex2html2631"
+  HREF="node171.html">Hinweis</A>
 </UL>
 <!--End of Table of Child-Links-->
 
 <DIV CLASS="navigation"><HR>
 <!--Navigation Panel-->
-<A NAME="tex2html2618"
+<A NAME="tex2html2629"
   HREF="node171.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2614"
-  HREF="node146.html">
+<A NAME="tex2html2625"
+  HREF="node148.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2610"
+<A NAME="tex2html2619"
   HREF="node169.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2616"
+<A NAME="tex2html2627"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> N&auml;chste Seite:</B> <A NAME="tex2html2619"
-  HREF="node171.html">Hinweise</A>
-<B> Aufw&auml;rts:</B> <A NAME="tex2html2615"
-  HREF="node146.html">Pakete</A>
-<B> Vorherige Seite:</B> <A NAME="tex2html2611"
+<B> N&auml;chste Seite:</B> <A NAME="tex2html2630"
+  HREF="node171.html">Hinweis</A>
+<B> Aufw&auml;rts:</B> <A NAME="tex2html2626"
+  HREF="node148.html">Pakete</A>
+<B> Vorherige Seite:</B> <A NAME="tex2html2620"
   HREF="node169.html">Hinweis</A>
- &nbsp; <B>  <A NAME="tex2html2617"
+ &nbsp; <B>  <A NAME="tex2html2628"
   HREF="node1.html">Inhalt</A></B> </DIV>
 <!--End of Navigation Panel-->
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

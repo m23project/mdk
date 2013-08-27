@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>EDIT_setOption</TITLE>
-<META NAME="description" CONTENT="EDIT_setOption">
+<TITLE>PKG_listPackages</TITLE>
+<META NAME="description" CONTENT="PKG_listPackages">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node337.html">
 <LINK REL="previous" HREF="node335.html">
-<LINK REL="up" HREF="node335.html">
+<LINK REL="up" HREF="node333.html">
 <LINK REL="next" HREF="node337.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html7374"
+<A NAME="tex2html7405"
   HREF="node337.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html7370"
-  HREF="node335.html">
+<A NAME="tex2html7401"
+  HREF="node333.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html7364"
+<A NAME="tex2html7395"
   HREF="node335.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html7372"
+<A NAME="tex2html7403"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html7375"
-  HREF="node337.html">EDIT_genClientm23Random</A>
-<B> Up:</B> <A NAME="tex2html7371"
-  HREF="node335.html">./inc/edit.php</A>
-<B> Previous:</B> <A NAME="tex2html7365"
-  HREF="node335.html">./inc/edit.php</A>
- &nbsp; <B>  <A NAME="tex2html7373"
+<B> Next:</B> <A NAME="tex2html7406"
+  HREF="node337.html">PKG_previewInstall</A>
+<B> Up:</B> <A NAME="tex2html7402"
+  HREF="node333.html">./inc/distr/halfSister/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html7396"
+  HREF="node335.html">pkgUpdateCacheOnServer</A>
+ &nbsp; <B>  <A NAME="tex2html7404"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008111000000000000000">
-EDIT_setOption</A>
+<H2><A NAME="SECTION008103000000000000000">
+PKG_listPackages</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Changes an option in a configuration file to a given value.
+<SPAN  CLASS="textbf">Description:</SPAN> list packages matching the key
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>file: Name of the file to change.
+<LI>key: search key
 </LI>
-<LI>option: Name of the option to change.
+<LI>distr: the distribution name
 </LI>
-<LI>value: Value to set.
+<LI>packagesource: name of the package source
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>sed code to change the option in the file to the value.
+<LI>client: Name of the client the packages are searched for. (Not used here and only for halfSister)
 </LI>
 </UL>
 
@@ -78,7 +74,7 @@ EDIT_setOption</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

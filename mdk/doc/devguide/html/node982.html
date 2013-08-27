@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_getStorageFS</TITLE>
-<META NAME="description" CONTENT="SRCLST_getStorageFS">
+<TITLE>SERVER_checkKernel</TITLE>
+<META NAME="description" CONTENT="SERVER_checkKernel">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node983.html">
 <LINK REL="previous" HREF="node981.html">
-<LINK REL="up" HREF="node968.html">
+<LINK REL="up" HREF="node936.html">
 <LINK REL="next" HREF="node983.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15702"
+<A NAME="tex2html15738"
   HREF="node983.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15698"
-  HREF="node968.html">
+<A NAME="tex2html15734"
+  HREF="node936.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15692"
+<A NAME="tex2html15728"
   HREF="node981.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15700"
+<A NAME="tex2html15736"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15703"
-  HREF="node983.html">SRCLST_supportedFS</A>
-<B> Up:</B> <A NAME="tex2html15699"
-  HREF="node968.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html15693"
-  HREF="node981.html">SRCLST_packageInformationOlderThan</A>
- &nbsp; <B>  <A NAME="tex2html15701"
+<B> Next:</B> <A NAME="tex2html15739"
+  HREF="node983.html">SERVER_multiMkDir</A>
+<B> Up:</B> <A NAME="tex2html15735"
+  HREF="node936.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html15729"
+  HREF="node981.html">SERVER_checkRunInVM</A>
+ &nbsp; <B>  <A NAME="tex2html15737"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083214000000000000000">
-SRCLST_getStorageFS</A>
+<H2><A NAME="SECTION0083146000000000000000">
+SERVER_checkKernel</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns a file systems that can be used to install the OS and to store data. A wished file system is given and an alternative FS is returned, if this FS is not supported.
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Returns the kernel information string of "uname -a".
+<BR><SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>fs: File system to probe.
-</LI>
-<LI>sourceName: The name of the package source list
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>: File systems that can be used to install the OS and to store data
+<LI>: Kernel information string.
 </LI>
 </UL>
 
@@ -76,7 +68,7 @@ SRCLST_getStorageFS</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

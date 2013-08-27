@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_OptionPageRender2</TITLE>
-<META NAME="description" CONTENT="PKG_OptionPageRender2">
+<TITLE>PKG_exportSelectedPackages</TITLE>
+<META NAME="description" CONTENT="PKG_exportSelectedPackages">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node770.html">
 <LINK REL="previous" HREF="node768.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node770.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13024"
+<A NAME="tex2html13080"
   HREF="node770.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13020"
-  HREF="node758.html">
+<A NAME="tex2html13076"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13014"
+<A NAME="tex2html13070"
   HREF="node768.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13022"
+<A NAME="tex2html13078"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13025"
-  HREF="node770.html">PKG_countSpecialPackages</A>
-<B> Up:</B> <A NAME="tex2html13021"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html13015"
-  HREF="node768.html">PKG_decodeDebconfDescription</A>
- &nbsp; <B>  <A NAME="tex2html13023"
+<B> Next:</B> <A NAME="tex2html13081"
+  HREF="node770.html">PKG_getDebootstrapCacheFilename</A>
+<B> Up:</B> <A NAME="tex2html13077"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html13071"
+  HREF="node768.html">PKG_importSelectedPackagesFromFile</A>
+ &nbsp; <B>  <A NAME="tex2html13079"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082411000000000000000">
-PKG_OptionPageRender2</A>
+<H2><A NAME="SECTION008243000000000000000">
+PKG_exportSelectedPackages</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Renderes the layout of an OptionPage for debconf and stored the debconf settings into the DB.
+<SPAN  CLASS="textbf">Description:</SPAN> Exports the wait4acc/selected packages of a client.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>layout: The elements (variable name, type (string, boolean, (multi)select), default value, description) of the debconf templates.
-</LI>
-<LI>client: The name of the client, the debconf settings should be stored for.
-</LI>
-<LI>package: Name of the package, the debconf settings should be stored for.
+<LI>client: Name of the client or empty.
 </LI>
 </UL>
 
@@ -72,7 +68,7 @@ PKG_OptionPageRender2</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>

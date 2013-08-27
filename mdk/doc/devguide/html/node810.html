@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_getAllParams</TITLE>
-<META NAME="description" CONTENT="PKG_getAllParams">
+<TITLE>PKG_discardNormalJob</TITLE>
+<META NAME="description" CONTENT="PKG_discardNormalJob">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node811.html">
 <LINK REL="previous" HREF="node809.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node766.html">
 <LINK REL="next" HREF="node811.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13516"
+<A NAME="tex2html13572"
   HREF="node811.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13512"
-  HREF="node758.html">
+<A NAME="tex2html13568"
+  HREF="node766.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13506"
+<A NAME="tex2html13562"
   HREF="node809.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13514"
+<A NAME="tex2html13570"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13517"
-  HREF="node811.html">PKG_setAllParams</A>
-<B> Up:</B> <A NAME="tex2html13513"
-  HREF="node758.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html13507"
-  HREF="node809.html">PKG_addShutdownOrRebootPackage</A>
- &nbsp; <B>  <A NAME="tex2html13515"
+<B> Next:</B> <A NAME="tex2html13573"
+  HREF="node811.html">PKG_addWait4AccJob</A>
+<B> Up:</B> <A NAME="tex2html13569"
+  HREF="node766.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html13563"
+  HREF="node809.html">PKG_addJob</A>
+ &nbsp; <B>  <A NAME="tex2html13571"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082452000000000000000">
-PKG_getAllParams</A>
+<H2><A NAME="SECTION0082444000000000000000">
+PKG_discardNormalJob</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> gets all parameters of the parameters column of a clientjob
+<SPAN  CLASS="textbf">Description:</SPAN> discards all normal packages from the clientjobs table, that match the param
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>packageID: the ID of the package
+<LI>client: name of the client
+</LI>
+<LI>packageName: name of the package
 </LI>
 </UL>
 
@@ -68,7 +70,7 @@ PKG_getAllParams</A>
 <BR><HR>
 <ADDRESS>
 root
-2013-05-11
+2013-08-18
 </ADDRESS>
 </BODY>
 </HTML>
