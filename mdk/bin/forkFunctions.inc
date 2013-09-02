@@ -282,6 +282,44 @@ diffExcludeMeldOld()
 
 
 #####
+# name getm23Dir
+# description Shows the full path to the active m23 directory or exits with an error.
+#####
+getm23Dir()
+{
+	isDevelReturn
+	if [ $? -eq 0 ]
+	then
+		echo $m23DevelDir
+	else
+		echo $m23ReleaseDir
+	fi
+}
+
+
+
+
+
+#####
+# name getmdkDir
+# description Shows the full path to the active mdk directory or exits with an error.
+#####
+getmdkDir()
+{
+	isDevelReturn
+	if [ $? -eq 0 ]
+	then
+		echo $mdkDevelDir
+	else
+		echo $mdkReleaseDir
+	fi
+}
+
+
+
+
+
+#####
 # name getm23ReleaseDir
 # description Shows the full path to the m23 release directory or exits with an error.
 #####
