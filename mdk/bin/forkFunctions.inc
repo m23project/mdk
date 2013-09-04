@@ -320,6 +320,44 @@ getmdkDir()
 
 
 #####
+# name mergeChangelog
+# description Merges the changelogs from release and development tree (if both are existing) or just copies the existing changelog.
+# parameter: Destination file to write the (combined) changelog to.
+#####
+mergeChangelog()
+{
+	#Get the names of the log files with full path
+	develLog="$(getm23DevelDir)/doc/changelog"
+	releaseLog="$(getm23ReleaseDir)/doc/changelog"
+	dest="$1"
+
+	#If both are existing => merge them
+	if [ -f "$develLog" ] && [ -f "$releaseLog" ]
+	then
+		/mdk/doc/changelog-merger.php "$(getm23DevelDir)/doc/changelog" "$(getm23ReleaseDir)/doc/changelog" "$dest"
+		return 0
+	fi
+
+	#Only the development log exists => copy it
+	if [ -f "$develLog" ]
+	then
+		cp -a "$develLog" "$dest"
+		return 0
+	fi
+
+	#Only the release log exists => copy it
+	if [ -f "$releaseLog" ]
+	then
+		cp -a "$releaseLog" "$dest"
+		return 0
+	fi
+}
+
+
+
+
+
+#####
 # name getm23ReleaseDir
 # description Shows the full path to the m23 release directory or exits with an error.
 #####

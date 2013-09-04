@@ -23,12 +23,10 @@ if (!is_file($changelogReleaseFile) || !file_exists($changelogReleaseFile))
 	exit(2);
 }
 
-if (!is_file($mergedChangelogFile))
+if (file_exists($mergedChangelogFile))
 {
-	echo("ERROR: Merged changelog file name invalid: \"$changelogDevelFile\"\n");
-	exit(3);
+	unlink($mergedChangelogFile);
 }
-
 
 //Read all files
 $cl_devel = array_reverse(file($changelogDevelFile)); //Read the development version changelog into an array and reverse that array (oldest entry first)
@@ -50,7 +48,8 @@ for ($i=0; $i < $min_length; $i++)
 	}
 }
 
-$common = array_reverse(array_slice($cl_release, 0, $different-1)); //This part is the same in both arrays, must be appended to the end of the file at the end of this script, each line written in a for loop
+
+$common = array_reverse(array_slice($cl_release, 0, $different)); //This part is the same in both arrays, must be appended to the end of the file at the end of this script, each line written in a for loop
 
 $cl_devel_new = array_reverse(array_slice($cl_devel, $different)); //new part of the development log, some lines may be identical to below array, newest entry first
 $cl_release_new = array_reverse(array_slice($cl_release, $different)); //new part of the release log, some lines may be identical to above array, newest entry first
@@ -122,4 +121,29 @@ foreach ($common as $common_line_num => $common_line)
 	fwrite($merged_file, $common_line); //append all lines which are common to both versions to the end of the file
 
 fclose($merged_file); //close the file
+
+//remove surplus plusses
+$raw = (file($mergedChangelogFile));
+
+$rawlen = count($raw);
+
+$out = array();
+
+for ($i = 0; $i < $rawlen; $i++)
+{
+	if ($raw[$i][0] == '+' && !is_numeric($raw[$i+1][0]))
+	{continue;}
+	else
+	{$out[] = $raw[$i];}
+}
+
+
+$merged_file = fopen($mergedChangelogFile, "w");
+
+foreach ($out as $nextline)
+{
+	fwrite($merged_file, $nextline);
+}
+fclose($merged_file);
+
 ?>
