@@ -21,6 +21,56 @@ err=0
 
 
 #####
+# name downloadBazaarRepo
+# description Downloads a Bazaar repository to the current directory.
+#####
+downloadBazaarRepo()
+{
+	echo -n "Please enter the name of the new repository: "
+	read reponame
+
+	#Build the directory structure for Bazaar
+	bzr init
+
+	#Upload the commit
+	bzr pull --remember "bzr+ssh://bbazzarr@tux05/home/bbazzarr/$reponame/"
+}
+
+
+
+
+
+#####
+# name createNewBazaarRepo
+# description Adds the files and directories of the current directory to a new Bazaar repository
+#####
+createNewBazaarRepo()
+{
+	echo -n "Please enter the name of the new repository: "
+	read reponame
+
+	#Build the directory structure for Bazaar
+	bzr init
+
+	#Add the ignore rules
+	cat /mdk/m23Debs/indices/exclude* | sort -u | grep -v '\(\[\|\$\)' | sed 's#\\##g' > .bzrignore
+	cat /mdk/m23Debs/indices/exclude* | sort -u | grep '\(\[\|\$\)' | awk '{print("RE:"$0)}' >> .bzrignore
+
+	#Add all files
+	bzr add
+
+	#Make an initial commit
+	bzr commit --message "Initial development commit for $reponame"
+
+	#Upload the commit
+	bzr push --remember "bzr+ssh://bbazzarr@tux05/home/bbazzarr/$reponame/"
+}
+
+
+
+
+
+#####
 # name diffExcludeMeld
 # description Checks for differences between a development and a release directory and calls meld with the changed files.
 # parameter: Full path to the development directory.
@@ -637,6 +687,11 @@ copym23()
 	cd $m23ReadLink
 	tar cv "." --exclude=./var/cache/clients/* --exclude=./var/cache/m23apt/* --exclude=./tmp/* | tar xp --same-owner --directory=$m23DevelDir
 	sed -i 's/rock/rock-devel/' $m23DevelDir/inc/version.php
+	
+	cd $m23DevelDir
+	createNewBazaarRepo
+
+	cd $m23ReadLink
 }
 
 
