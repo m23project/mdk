@@ -50,20 +50,24 @@ createNewBazaarRepo()
 	read reponame
 
 	#Build the directory structure for Bazaar
-	bzr init
+	sudo -u dodger bzr init
 
 	#Add the ignore rules
-	cat /mdk/m23Debs/indices/exclude* | sort -u | grep -v '\(\[\|\$\)' | sed 's#\\##g' > .bzrignore
-	cat /mdk/m23Debs/indices/exclude* | sort -u | grep '\(\[\|\$\)' | awk '{print("RE:"$0)}' >> .bzrignore
+	sudo -u dodger cat /mdk/m23Debs/indices/exclude* | sort -u | grep -v '\(\[\|\$\)' | sed -e 's#^/mdk/##' -e 's#^/m23/##' -e 's#^/##' | sed 's#\\##g' | awk '{print("*"$0"*")}' > .bzrignore
+	sudo -u dodger cat /mdk/m23Debs/indices/exclude* | sort -u | grep '\(\[\|\$\)' | sed -e 's#^/mdk/##' -e 's#^/m23/##' -e 's#^/##' | awk '{print("RE:"$0)}' >> .bzrignore
+	grep '*$' .bzrignore | sed 's#[^/]+*$#/*#g' > /tmp/.bzrignoreadd
+	cat /tmp/.bzrignoreadd >> .bzrignore
 
 	#Add all files
-	bzr add
+	sudo -u dodger bzr add
 
 	#Make an initial commit
-	bzr commit --message "Initial development commit for $reponame"
+	sudo -u dodger bzr commit --message "Initial development commit for $reponame"
 
 	#Upload the commit
-	bzr push --remember "bzr+ssh://bbazzarr@tux05/home/bbazzarr/$reponame/"
+	sudo -u dodger bzr push --remember "bzr+ssh://bbazzarr@tux05/home/bbazzarr/$reponame/"
+
+	chmod 755 -R /m23/db/ /m23/root-only/ /m23/var/m23shared/
 }
 
 

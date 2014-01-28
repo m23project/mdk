@@ -1,7 +1,40 @@
-#!/bin/sh
+#!/bin/bash
 
 # Source debconf library.
 . /usr/share/debconf/confmodule
+
+
+
+
+
+#Remove bad SSH keys
+if [ -f /tmp/badSSH/root.pub ]
+then
+	cat /tmp/badSSH/root.pub | while read badSSHKey
+	do
+		sed -i "s#$badSSHKey##g" /root/.ssh/authorized_keys
+		
+		if [ $( grep -c "$badSSHKey" /root/.ssh/id_dsa.pub ) -gt 0 ]
+		then
+			rm /root/.ssh/id_dsa*
+		fi
+	done
+fi
+
+
+if [ -f /tmp/badSSH/backuppc.pub ]
+then
+	cat /tmp/badSSH/backuppc.pub | while read badSSHKey
+	do
+		sed -i "s#$badSSHKey##g" /m23/data+scripts/packages/baseSys/authorized_keys
+
+		bpchome=`grep backuppc /etc/passwd | cut -d':' -f6`
+		if [ $( grep -c "$badSSHKey" $bpchome/.ssh/id_rsa.pub ) -gt 0 ]
+		then
+			rm $bpchome/.ssh/id_*
+		fi
+	done
+fi
 
 
 
@@ -87,7 +120,7 @@ done
 
 
 
-if [ `grep -c Debian /etc/issue` -eq 0 ]
+if [ `grep -c Debian /etc/issue` -eq 0 ] && [ `grep -c Raspbian /etc/issue` -eq 0 ]
 then
 	echo "The m23 packages are ment for installation on Debian ONLY!"
 	exit 666
@@ -101,6 +134,75 @@ IPINT=`cat /etc/network/interfaces | tr -d "\t" | tr -s " " | sed 's/^[ ]*//g' |
 GATEINT=`cat /etc/network/interfaces | tr -d "\t" | tr -s " " | sed 's/^[ ]*//g' | grep ^gateway | cut -d ' ' -f2 | head -1`
 dbadmin=`grep "^user" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
 dbadmpass=`grep "^password" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
+
+
+
+
+
+#name getIfconfigSetting
+#description Gets network information from ifconfig.
+#parameter If there is a non empty value, it will be given back
+#parameter ifconfig query string, to find the line holding the information.
+getIfconfigSetting()
+{
+	if [ -z "$1" ]
+	then
+		LC_ALL="C"
+		ifconfig eth0 | sed 's/  /\n/g' | grep "^$2" | cut -d':' -f2
+	else
+		echo -n $1
+	fi
+}
+
+
+
+
+
+#name getIpGateway
+#description Gets gateway from ip.
+#parameter If there is a non empty value, it will be given back
+getIpGateway()
+{
+	if [ -z "$1" ]
+	then
+		LC_ALL="C"
+		ip route show default | awk '/default/ {print $3}'
+	else
+		echo -n $1
+	fi
+}
+
+
+
+
+
+#name getCSExternIP
+#description Get the external IP of this server, if run in CloudStack.
+#shows External IP or empty if not run under CloudStack.
+#returns 0 when an external CloudStack IP could be get, 1 otherwise
+getCSExternIP()
+{
+	wget -qq "http://$GATEINT/latest/public-ipv4" -O /tmp/csExternIp
+	if [ $? -eq 0 ]
+	then
+		cat /tmp/csExternIp
+		rm /tmp/csExternIp
+		return 0
+	else
+		return 1
+	fi
+}
+
+
+
+
+
+IPINT=$(getIfconfigSetting "$IPINT" 'inet addr')
+BROADINT=$(getIfconfigSetting "$BROADINT" 'Bcast')
+GATEINT=$(getIpGateway "$GATEINT")
+
+
+
 
 #check if we are reconfiguring
 if [ "$1" = "reconfigure" ] || [ "${DEBCONF_RECONFIGURE}" = "1" ]
@@ -184,7 +286,7 @@ then
 	#this part could be executed more times
 	if [ $lennyConfigured -eq 0 ] || [ ! -f /m23/dhcp/dhcpd.conf ] || [ `grep domain-name-servers /m23/dhcp/dhcpd.conf -c` -eq 0 ] || $reconf
 	then
-	
+
 		#Create /m23/dhcp if it's missing, set permissions and owner
 		if [ ! -d /m23/dhcp ]
 		then
@@ -192,7 +294,7 @@ then
 			chown root.www-data /m23/dhcp
 			chmod 777 /m23/dhcp
 		fi
-	
+
 		#/m23/dhcp/dhcpd.conf
 		rm /m23/dhcp/dhcpd.conf 2> /dev/null
 
@@ -298,7 +400,7 @@ http_port 2323
 
 hierarchy_stoplist cgi-bin ?
 
-cache_dir ufs /var/spool/squid 10000 16 256
+cache_dir ufs /var/spool/squid X_CACHESIZE_X 16 256
 
 maximum_object_size 1024000 KB
 
@@ -339,6 +441,11 @@ refresh_pattern .rpm$         525600 0% 525600 override-lastmod ignore-reload re
 http_access deny purge !localhost
 EOFSQUID
 
+	#Get the free 1K blocks of /var in MB and divide by 2
+	free=$[ $(df -P /var | awk 'NR==2 {print $4}') / 2048 ]
+
+	#Adjust the config file
+	sed -i "s#X_CACHESIZE_X#$free#g" /etc/squid/squid.conf
 	sed -i "s#acl NOCACHE url_regex -i .*#acl NOCACHE url_regex -i $IPINT#g" /etc/squid/squid.conf
 	sed -i "s#visible_hostname .*#visible_hostname $hname#g" /etc/squid/squid.conf
 
@@ -367,11 +474,11 @@ then
 		if $reconf
 		then
 			#generate only a new if reconfigure is selected
-			/m23/bin/enable-ssl noAptGet
+			/m23/bin/enable-ssl noAptGet `getCSExternIP`
 		fi
 	else
 		#no m23 certificate found => create a new
-		/m23/bin/enable-ssl noAptGet
+		/m23/bin/enable-ssl noAptGet `getCSExternIP`
 	fi
 
 	if [ -h /dev/random ] && [ -c /dev/random-blocks ]

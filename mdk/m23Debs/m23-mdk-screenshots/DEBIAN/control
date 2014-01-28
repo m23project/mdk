@@ -1,9 +1,9 @@
 Package: m23-mdk-screenshots
-Version: 13.2-100675
+Version: 14.1-100734
 Section: base
 Priority: optional
 Architecture: all
-Installed-Size: 11800
+Installed-Size: 9628
 Pre-Depends: debconf
 Depends: bash, dialog
 Maintainer: Hauke Goos-Habermann <hhabermann@pc-kiel.de>

@@ -4,6 +4,11 @@
 
 touch /var/run/utmp
 
+for i in $( seq 0 9 )
+do
+	ifconfig eth$i 1.1.1.$i
+done
+
 #Show the MAC adress(es)
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 echo "MAC addresses"
@@ -11,8 +16,11 @@ ifconfig | grep eth
 echo "Press Ctrl+C if the output is too fast"
 echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
+ln -s /bin/dhclient-script /sbin/dhclient-script
+
 #Configure via DHCP
-/bin/dhclient
+dhclient-script
+dhclient
 
 #Stop dhclient to make sure that the IP configuration will not be changed during installation
 for dhClientPID in `ps | grep dhclient | tr -s [:blank:] | cut -d' ' -f2`
@@ -27,7 +35,10 @@ mv /dev/random /dev/random-blocks
 ln -s /dev/urandom /dev/random
 
 
-
+for i in `seq 1 9`
+do
+	mknod /dev/vda$i b 254 $i
+done
 
 
 
@@ -124,6 +135,28 @@ startDropbear()
 
 
 
+#Checks, if there is another m23 server (another than the DHCP server)
+checkAlternativeM23Server()
+{
+	touch /m23clientIDAdd
+
+	wget -qq "http://$1/latest/availability-zone" -O /dev/null
+
+	if [ $? -eq 0 ]
+	then
+		wget -qq "http://$1/latest/user-data" -O /tmp/CSud
+		echo -n "?m23clientID=`hostname`" > /m23clientIDAdd
+		hostname > /m23clientID
+		grep m23server /tmp/CSud | cut -d'=' -f2
+	else
+		echo -n "$1"
+	fi
+}
+
+
+
+
+
 if [ $m23server ]
 then
 	server=$m23server
@@ -166,7 +199,8 @@ else
 	#Get the server via DHCP log
 	for i in `grep dhcp-server-identifier /var/lib/dhcp/dhclient.leases | cut -d' ' -f5 | cut -d';' -f1`
 	do
-		server=$i
+		server=$(checkAlternativeM23Server "$i")
+		m23Client=$( cat /m23clientIDAdd )
 	done
 fi
 

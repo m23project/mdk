@@ -756,7 +756,7 @@ chrootSystem()
 	# Workaround for missing modules.dep to disable the repeated showing of the "FATAL" error.
 	[ -d "/lib/modules/$(uname -r)" ] || mkdir -p "/lib/modules/$(uname -r)"
 	[ -f "/lib/modules/$(uname -r)/modules.dep" ] || echo 'neverusefakemodule.ko:' > "/lib/modules/$(uname -r)/modules.dep"
-	
+
 	#cat /lib/modules/*/modules.dep > "/lib/modules/$(uname -r)/modules.dep"
 
 	chmod 777 /tmp
@@ -808,6 +808,7 @@ createInitrd()
 {
 	for kernelName in `ls /lib/modules/ | grep -v m23`
 	do
+		rm "/boot/initrd.img-$kernelName" 2> /dev/null
 		touch "/boot/initrd.img-$kernelName"
 	done
 
@@ -1034,9 +1035,20 @@ updateSystem()
 	showDialog "$I18N_windowheader" "$I18N_updateheader" yesno 5 61 "$I18N_updatetext" notDisabled
 	if [ $? -eq 0 ]
 	then
+		#Deactivate init
+		mv /sbin/init /sbin/init.deactivated
+		#Make sure, ischroot will return 2 to stop sysvinit from shuting down the installation
+		mv /usr/bin/ischroot /usr/bin/ischroot.deactivated
+
 		apt-get -y --force-yes update
 		export DEBIAN_FRONTEND=noninteractive
 		apt-get -y --force-yes upgrade
+
+		createInitrd
+
+		#Reactivate init
+		mv /sbin/init.deactivated /sbin/init
+		mv /usr/bin/ischroot.deactivated /usr/bin/ischroot
 	fi
 }
 
@@ -1098,6 +1110,14 @@ m23-tftp m23-tftp/configureTFTP boolean true
 
 	#force the deb to create a new SSH key pair
 	rm /root/.ssh/id_dsa* 2> /dev/null
+	rm /root/.ssh/authorized_keys 2> /dev/null
+	rm /m23/data+scripts/packages/baseSys/authorized_keys 2> /dev/null
+	rm /root/.ssh/authorized_keys 2> /dev/null
+	bpchome=`grep backuppc /etc/passwd | cut -d':' -f6`
+	if [ $( grep -c "$badSSHKey" $bpchome/.ssh/id_rsa.pub ) -gt 0 ]
+	then
+		rm $bpchome/.ssh/id_*
+	fi
 	export DEBIAN_FRONTEND=noninteractive
 
 	installDebs
