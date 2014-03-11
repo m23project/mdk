@@ -49,17 +49,57 @@ createNewBazaarRepo()
 	echo -n "Please enter the name of the new repository: "
 	read reponame
 
+	rm -r .bzr
+
 	#Build the directory structure for Bazaar
 	sudo -u dodger bzr init
 
-	#Add the ignore rules
-	sudo -u dodger cat /mdk/m23Debs/indices/exclude* | sort -u | grep -v '\(\[\|\$\)' | sed -e 's#^/mdk/##' -e 's#^/m23/##' -e 's#^/##' | sed 's#\\##g' | awk '{print("*"$0"*")}' > .bzrignore
-	sudo -u dodger cat /mdk/m23Debs/indices/exclude* | sort -u | grep '\(\[\|\$\)' | sed -e 's#^/mdk/##' -e 's#^/m23/##' -e 's#^/##' | awk '{print("RE:"$0)}' >> .bzrignore
-	grep '*$' .bzrignore | sed 's#[^/]+*$#/*#g' > /tmp/.bzrignoreadd
-	cat /tmp/.bzrignoreadd >> .bzrignore
+# 	#Add the ignore rules
+# 	sudo -u dodger cat /mdk/m23Debs/indices/exclude* | sort -u | grep -v '\(\[\|\$\)' | sed -e 's#^/mdk/##' -e 's#^/m23/##' -e 's#^/##' | sed 's#\\##g' | awk '{print("*"$0"*")}' > .bzrignore
+# 	sudo -u dodger cat /mdk/m23Debs/indices/exclude* | sort -u | grep '\(\[\|\$\)' | sed -e 's#^/mdk/##' -e 's#^/m23/##' -e 's#^/##' | awk '{print("RE:"$0)}' >> .bzrignore
+# 	grep '*$' .bzrignore | sed 's#[^/]+*$#/*#g' > /tmp/.bzrignoreadd
+# 	cat /tmp/.bzrignoreadd >> .bzrignore
+# 
+# 	#Delete lines with only **
+# 	sed -i '/\*\*/d' .bzrignore
+
+	rm .bzrignore
+cat >> .bzrignore << "EOF"
+*.7z
+*.gz
+*.iso
+./m23admin/serverBackups/
+./bin.RemoteAdministrationServiceOpenTunnel-*
+./bin/.mkcert.serial
+./bin/roms/
+./data+scripts/activate.php
+./data+scripts/clientImages/
+./data+scripts/extraDebs/
+./data+scripts/m23admin/phpldapadmin/
+./data+scripts/m23admin/phpMyAdmin/
+./data+scripts/packages/baseSys/ca.crt
+./data+scripts/packages/baseSys/ca.hash
+./data+scripts/packages/baseSys/m23server.rGH1ikdPm8/
+./data+scripts/pool/
+./db/
+./dhcp/dhcpd.conf
+./dhcp/dhcpd.leases
+./etc/.htpasswd
+./etc/.phpMyLDAPAdminHtpasswd
+./inc/cronSecret.php
+./log/
+./root-only/
+./tftp/
+./tmp/
+./var/
+./vms/
+EOF
+	chown dodger.dodger .bzrignore
 
 	#Add all files
-	sudo -u dodger bzr add
+	sudo -u dodger bzr add *
+	sudo -u dodger bzr add data+scripts/*
+	sudo -u dodger bzr add inc/*
 
 	#Make an initial commit
 	sudo -u dodger bzr commit --message "Initial development commit for $reponame"
@@ -689,7 +729,7 @@ copym23()
 	chown www-data.www-data $m23DevelDir
 
 	cd $m23ReadLink
-	tar cv "." --exclude=./var/cache/clients/* --exclude=./var/cache/m23apt/* --exclude=./tmp/* | tar xp --same-owner --directory=$m23DevelDir
+	tar cv "." --exclude=.bzr/* --exclude=./var/cache/clients/* --exclude=./var/cache/m23apt/* --exclude=./tmp/* | tar xp --same-owner --directory=$m23DevelDir
 	sed -i 's/rock/rock-devel/' $m23DevelDir/inc/version.php
 	
 	cd $m23DevelDir
@@ -711,7 +751,7 @@ copymdk()
 	mkdir -p -m777 $mdkDevelDir
 	chown www-data.www-data $mdkDevelDir
 	
-	exclude=''
+	exclude='--exclude=.bzr/*'
 
 	if [ $excludeMDKKernel -eq 0 ]
 	then
