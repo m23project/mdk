@@ -67,3 +67,7 @@ authorized_keys
 /m23/bin/m23RemoteAdministrationServiceOpenTunnel-[a-zA-Z_0-9-]*
 /.bzr/
 \.bzr
+/m23/inc/userGUIAddons/
+/m23/inc/distr/ubuntu/packages/m23TUBSClientInstall.php
+mailConf.php
+CloudStackConf.php

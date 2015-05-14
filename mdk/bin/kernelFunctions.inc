@@ -60,11 +60,13 @@ checkKernelBranch()
 	else
 dialog --clear --title "Kernel version" \
         --menu "Please select the kernel version" 11 40 4 \
+"3.16" "Linux kernel v3.16" \
+"3.18" "Linux kernel v3.18" \
+"3.4" "Linux kernel v3.4" \
+"3.9" "Linux kernel v3.9" \
 "2.4" "Linux kernel v2.4" \
 "2.6" "Linux kernel v2.6" \
-"3.2" "Linux kernel v3.2" \
-"3.4" "Linux kernel v3.4" \
-"3.9" "Linux kernel v3.9" 2> /tmp/kernelMenuBranch
+"3.2" "Linux kernel v3.2" 2> /tmp/kernelMenuBranch
 retval=$?
 case $retval in
 	1)
@@ -111,7 +113,7 @@ listKernelVersions()
 	else
 		# Kernels 3.x
 		wget -o /dev/null ftp://ftp.kernel.org/pub/linux/kernel/v3.x/
-		for kernelname in `grep "linux-" index.html | cut -d'"' -f2 | grep tar.bz2 | grep -v sign | tr -s ' ' | cut -d' ' -f9  | cut -d'/' -f8 | grep "linux-$kernelBranch" | sort -t'.' -k2,3 -n -r`
+		for kernelname in `grep "linux-" index.html | cut -d'"' -f2 | grep tar.xz | grep -v sign | tr -s ' ' | cut -d' ' -f9  | cut -d'/' -f8 | grep "linux-$kernelBranch" | sort -t'.' -k2,3 -n -r`
 		do
 			echo "\"$kernelname\" \"\" \\"
 		done
@@ -167,9 +169,15 @@ echo "Downloading the kernel"
 wget -c ftp://ftp.kernel.org/pub/linux/kernel/v'$kernelDownloadDir'/$kernelDownloadFile
 
 echo "Extracting kernel"
-tar xfj $kernelDownloadFile
 
-echo $kernelDownloadFile | sed "s/.tar.bz2//" > /tmp/m23kernelDir
+if [ $( file $kernelDownloadFile | grep -c XZ) -gt 0 ]
+then
+	tar xfJ $kernelDownloadFile
+	echo $kernelDownloadFile | sed "s/.tar.xz//" > /tmp/m23kernelDir
+else
+	tar xfj $kernelDownloadFile
+	echo $kernelDownloadFile | sed "s/.tar.bz2//" > /tmp/m23kernelDir
+fi
 
 rm `echo $kernelDownload`
 
@@ -293,12 +301,27 @@ compileKernel()
 		make INSTALL_MOD_PATH=`getCompiledDirWithArch` ARCH=i386 modules
 		make INSTALL_MOD_PATH=`getCompiledDirWithArch` ARCH=i386 modules_install
 	else
+		make INSTALL_MOD_PATH=`getCompiledDirWithArch` ARCH=x86_64 CC=gcc-4.4 dep
 
 		EDIT_addIfNotExists .config "^CONFIG_IA32_EMULATION=y" "CONFIG_IA32_EMULATION=y"
 		EDIT_addIfNotExists .config "^CONFIG_IA32_AOUT=y" "CONFIG_IA32_AOUT=y"
 		EDIT_commentOut .config "^CONFIG_PHYSICAL_START=0x100000" "#"
 		EDIT_addIfNotExists .config "^CONFIG_PHYSICAL_START=0x200000" "CONFIG_PHYSICAL_START=0x200000"
-
+		EDIT_addIfNotExists .config "^CONFIG_EFIVAR_FS=y" "CONFIG_EFIVAR_FS=y"
+		EDIT_addIfNotExists .config "^CONFIG_EFI_VARS=y" "CONFIG_EFI_VARS=y"
+		EDIT_addIfNotExists .config "^CONFIG_EFI_PARTITION=y" "CONFIG_EFI_PARTITION=y"
+		EDIT_addIfNotExists .config "^CONFIG_EFI=y" "CONFIG_EFI=y"
+		EDIT_addIfNotExists .config "^CONFIG_EFI_STUB=y" "CONFIG_EFI_STUB=y"
+		EDIT_addIfNotExists .config "^CONFIG_EFI_MIXED=y" "CONFIG_EFI_MIXED=y"
+		EDIT_addIfNotExists .config "^CONFIG_DMI_SCAN_MACHINE_NON_EFI_FALLBACK=y" "CONFIG_DMI_SCAN_MACHINE_NON_EFI_FALLBACK=y"
+		EDIT_addIfNotExists .config "^CONFIG_RELOCATABLE=y" "CONFIG_RELOCATABLE=y"
+		EDIT_addIfNotExists .config "^CONFIG_FB_EFI=y" "CONFIG_FB_EFI=y"
+		EDIT_addIfNotExists .config "^CONFIG_FRAMEBUFFER_CONSOLE=y" "CONFIG_FRAMEBUFFER_CONSOLE=y"
+		EDIT_addIfNotExists .config "^CONFIG_DRM=n" "CONFIG_DRM=n"
+		EDIT_addIfNotExists .config "^CONFIG_DRM_KMS_HELPER=n" "CONFIG_DRM_KMS_HELPER=n"
+		EDIT_addIfNotExists .config "^CONFIG_FB_NVIDIA=n" "CONFIG_FB_NVIDIA=n"
+		EDIT_addIfNotExists .config "^CONFIG_DRM_NOUVEAU=n" "CONFIG_DRM_NOUVEAU=n"
+		EDIT_addIfNotExists .config "^CONFIG_FB=y" "CONFIG_FB=y"
 		checkForx86_64Toolchain
 
 		if [ $lastCompilationArch != "x86-64" ]
@@ -308,7 +331,6 @@ compileKernel()
 			cp  /tmp/.config .
 		fi
 
-		make INSTALL_MOD_PATH=`getCompiledDirWithArch` ARCH=x86_64 CC=gcc-4.4 dep
 		make INSTALL_MOD_PATH=`getCompiledDirWithArch` ARCH=x86_64 CC=gcc-4.4 bzImage
 		make INSTALL_MOD_PATH=`getCompiledDirWithArch` ARCH=x86_64 CC=gcc-4.4 modules
 		make INSTALL_MOD_PATH=`getCompiledDirWithArch` ARCH=x86_64 CC=gcc-4.4 modules_install

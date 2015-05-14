@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Schrittweises Vorgehen zum Anlegen eines RAIDs</TITLE>
-<META NAME="description" CONTENT="Schrittweises Vorgehen zum Anlegen eines RAIDs">
+<TITLE>Hinweis</TITLE>
+<META NAME="description" CONTENT="Hinweis">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,81 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node123.html">
 <LINK REL="previous" HREF="node121.html">
-<LINK REL="up" HREF="node117.html">
+<LINK REL="up" HREF="node118.html">
 <LINK REL="next" HREF="node123.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html2040"
+<A NAME="tex2html2074"
   HREF="node123.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2036"
-  HREF="node117.html">
+<A NAME="tex2html2070"
+  HREF="node118.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2030"
+<A NAME="tex2html2064"
   HREF="node121.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2038"
+<A NAME="tex2html2072"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> N&auml;chste Seite:</B> <A NAME="tex2html2041"
-  HREF="node123.html">Hinweis zu RAIDs und</A>
-<B> Aufw&auml;rts:</B> <A NAME="tex2html2037"
-  HREF="node117.html">Clientpartitionierung und -formatierung</A>
-<B> Vorherige Seite:</B> <A NAME="tex2html2031"
-  HREF="node121.html">Hinweis zu Dateisystemen</A>
- &nbsp; <B>  <A NAME="tex2html2039"
+<B> N&auml;chste Seite:</B> <A NAME="tex2html2075"
+  HREF="node123.html">Hinweis zu UEFI</A>
+<B> Aufw&auml;rts:</B> <A NAME="tex2html2071"
+  HREF="node118.html">Clientpartitionierung und -formatierung</A>
+<B> Vorherige Seite:</B> <A NAME="tex2html2065"
+  HREF="node121.html">Menüpunkte im Überblick</A>
+ &nbsp; <B>  <A NAME="tex2html2073"
   HREF="node1.html">Inhalt</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00935000000000000000">
-Schrittweises Vorgehen zum Anlegen eines RAIDs</A>
+<H2><A NAME="SECTION00934000000000000000">
+Hinweis</A>
 </H2>
-
-<OL>
-<LI><SPAN  CLASS="textbf">Anlegen des RAID-Laufwerks:</SPAN> W&#228;hlen Sie aus der Liste <SPAN  CLASS="textit">&#34;RAID-Laufwerksname&#34;</SPAN> einen Namen aus und klicken Sie anschlie&#223;end auf <SPAN  CLASS="textit">&#34;RAID-Laufwerk anlegen&#34;</SPAN>. Dieses Laufwerk ist ein virtuelles Multi-Device.
+Die so erstellten virtuellen Festplatten werden wie die realen Festplatten einen Clients eingerichtet (Partitionieren, Formatieren, Software-RAIDs, Installations- und Swappartition). Die Gr&#246;&#223;en sollten &#228;hnlich (oder identisch), die Laufwerksnamen m&#252;ssen hingegen identisch zu den in Ihren Clients verbauten realen Festplatten sein. Bei Abweichung der virtuellen von der realen Festplattengr&#246;&#223;e werden die Partitionsgr&#246;&#223;en prozentual angepasst.
+<BR><SPAN  CLASS="textbf">Partitionierungsschema</SPAN>
+Unter diesem Men&#252;punkt k&#246;nnen Sie ein vordefiniertes Schema zum Partitionieren und Formatieren der Festplatte des m23-Clients ausw&#228;hlen und durch einen Klick auf <SPAN  CLASS="textit">''Schema anwenden''</SPAN> anwenden.
+<BR>
+<UL>
+<LI><SPAN  CLASS="textbf">Automatische Partitionierung</SPAN>: Bei der automatischen Partitionierung werden alle Daten auf der ersten Festplatte gel&#246;scht und zwei neue Partitionen angelegt. Es wird eine Partition f&#252;r Daten und das Betriebssystem und die andere zum tempor&#228;ren Auslagern (Swappen) erstellt.
 <BR></LI>
-<LI><SPAN  CLASS="textbf">Hinzuf&#252;gen von Partitionen und Laufwerken:</SPAN> In dem Kasten <SPAN  CLASS="textit">&#34;Laufwerke und Partitionen zum RAID hinzuf&#252;gen&#34;</SPAN> finden Sie alle ben&#246;tigten Funktionen zum Zuweisen von Partitionen und Laufwerken zu einem RAID. W&#228;hlen Sie dazu den RAID-Typ und das RAID-Laufwerk aus den entsprechenden Listen aus. Sie k&#246;nnen anschlie&#223;end die weiter unten aufgelistete Partition bzw. das Laufwerk aus der Liste <SPAN  CLASS="textit">&#34;Reale(s) Laufwerk bzw. Partition&#34;</SPAN> dem RAID mit einem Klick auf <SPAN  CLASS="textit">&#34;Hinzuf&#252;gen&#34;</SPAN> zuweisen. In der Tabelle <SPAN  CLASS="textit">SZugewiesene(s) Laufwerk(e)/Partition(en)&#34;</SPAN> sehen Sie die bereits zugewiesenen Laufwerke und Partitionen.
-<BR></LI>
-<LI><SPAN  CLASS="textbf">RAID-Erstellung abschlie&#223;en:</SPAN> Klicken Sie anschlie&#223;end auf <SPAN  CLASS="textit">&#34;N&#228;chster Schritt (Partitionen formatieren)&#34;</SPAN>.
-<BR></LI>
-</OL>
-<BR><HR>
+</UL>
+<SPAN  CLASS="textbf">Aktuelle Partition l&#246;schen</SPAN>
+Mit einem Klick auf <SPAN  CLASS="textit">''L&#246;schen''</SPAN> entfernen Sie die aktuelle (unter <SPAN  CLASS="textit">''Aktuelle Partition''</SPAN> angegebene) Partition.
+<BR><SPAN  CLASS="textbf">Neue Partition anlegen</SPAN>
+Mit dieser Funktion k&#246;nnen Sie neue Partitionen innerhalb eines freien Bereiches auf der Festplatte anlegen. Zum W&#228;hlen von Start- und Endpunkt der neuen Partition klicken Sie (bei aktivertem JavaScript) auf einen wei&#223;en Bereich oder geben diese unter <SPAN  CLASS="textit">''Start''</SPAN> und <SPAN  CLASS="textit">''Ende''</SPAN> an. Sie k&#246;nnen nat&#252;rlich auch eine Partition anlegen, die nicht den ganzen freien Platz einnimmt. W&#228;hlen Sie zudem unter <SPAN  CLASS="textit">''Typ''</SPAN> aus, ob Sie eine prim&#228;re (primary), erweiterte (extended) oder logische (logical) Partition erstellen m&#246;chten. Klicken Sie abschlie&#223;end auf <SPAN  CLASS="textit">''Hinzuf&#252;gen''</SPAN>.
+<BR>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2074"
+  HREF="node123.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html2070"
+  HREF="node118.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html2064"
+  HREF="node121.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html2072"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> N&auml;chste Seite:</B> <A NAME="tex2html2075"
+  HREF="node123.html">Hinweis zu UEFI</A>
+<B> Aufw&auml;rts:</B> <A NAME="tex2html2071"
+  HREF="node118.html">Clientpartitionierung und -formatierung</A>
+<B> Vorherige Seite:</B> <A NAME="tex2html2065"
+  HREF="node121.html">Menüpunkte im Überblick</A>
+ &nbsp; <B>  <A NAME="tex2html2073"
+  HREF="node1.html">Inhalt</A></B> </DIV>
+<!--End of Navigation Panel-->
 <ADDRESS>
-dodger
-2014-01-22
+root
+2015-04-30
 </ADDRESS>
 </BODY>
 </HTML>

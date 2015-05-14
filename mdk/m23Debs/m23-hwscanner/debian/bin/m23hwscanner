@@ -68,7 +68,7 @@ getDrives()
 {
 	echo No | parted -m -l 2> /dev/null | grep "dev" | sed 's#Error: ##g' | sed -e '/Read-only file system/b1;b;:1 N;d' | cut -d':' -f1 | sed 's#[^a-z0-9A-Z/]##g' > /tmp/getDrives.list
 	dmesg | grep '\* md[0-9].* configuration \*' | sed 's#[^md0-9]##g' | awk '{print("/dev/"$0)}' >> /tmp/getDrives.list
-	sort -u /tmp/getDrives.list | grep dev
+	sort -u /tmp/getDrives.list | grep dev | grep -v dev/sc
 }
 
 
@@ -578,7 +578,7 @@ getPartFS()
 {
 	fs=$(echo "$1" | cut -d'#' -f6)
 	
-	if [ -z $fs ]
+	if [ -z $fs ] || [ -d /sys/firmware/efi ]
 	then
 		echo "$1" | cut -d'#' -f5 | awk '/primary|extended|logical/ {print(""); exit 0}
 {print}'
@@ -623,6 +623,9 @@ scanDisksPartitions()
 
 		#label the partition
 		checkdisklabel "$path" 2> /dev/null > /dev/null
+		
+		[ `parted -s $path print | grep Table | grep -i -c gpt` -gt 0 ]
+		isGPT=$?
 
 		#Get all information about the drive
 		driveInfo=`getDriveInfo "$path"`
@@ -654,13 +657,19 @@ scanDisksPartitions()
 			
 			#echo "$path: $partInfo dn: $devNr pn: $partNr fs:`getPartFS $partInfo`"
 
-			#Only add a type here if it's not a MD (MDs get RAID-? as type)
-			if [ `echo $path | grep md -c` -eq 0 ]
+			if [ $isGPT -eq 0 ]
 			then
-				addAssoc `printf "dev%ipart%i_type" $devNr $partNr` `getPartType $partInfo`
+				addAssoc `printf "dev%ipart%i_type" $devNr $partNr` 'efipart'
 				partPath="$path`getPartNr $partInfo`"
 			else
-				partPath=$path
+				#Only add a type here if it's not a MD (MDs get RAID-? as type)
+				if [ `echo $path | grep md -c` -eq 0 ]
+				then
+					addAssoc `printf "dev%ipart%i_type" $devNr $partNr` `getPartType $partInfo`
+					partPath="$path`getPartNr $partInfo`"
+				else
+					partPath=$path
+				fi
 			fi
 
 			#figure out, if the partition is bootable
@@ -737,6 +746,22 @@ fi
 
 
 
+#name checkUEFI()
+#description Checks, if UEFI is active and stores the result in the associative array.
+checkUEFI()
+{
+	if [ -d /sys/firmware/efi ]
+	then
+		addAssoc "uefi" "1"
+	else
+		addAssoc "uefi" "0"
+	fi
+}
+
+
+
+
+
 bootDevice=$1
 rootDevice=$2
 export rootDevice
@@ -771,6 +796,7 @@ fi
 
 addAssoc "ver" "2"
 
+checkUEFI
 scanDisksPartitions
 getHardwareData
 

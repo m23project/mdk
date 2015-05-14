@@ -4,6 +4,9 @@
 . /usr/share/debconf/confmodule
 
 
+#Create a symlinks to the System-V-Init directory to get the Bittorrent tracker and initial client, if there are .torrent files in the share directory
+ln -s /m23/vms/bin/restoreBTServer /etc/init.d/
+update-rc.d -f restoreBTServer defaults
 
 
 
@@ -13,13 +16,16 @@ then
 	cat /tmp/badSSH/root.pub | while read badSSHKey
 	do
 		sed -i "s#$badSSHKey##g" /root/.ssh/authorized_keys
-		
-		if [ $( grep -c "$badSSHKey" /root/.ssh/id_dsa.pub ) -gt 0 ]
+		rootbadkeyexists=`grep -c "$badSSHKey" /root/.ssh/id_dsa.pub`
+		if [ ${rootbadkeyexists:-0} -gt 0 ]
 		then
 			rm /root/.ssh/id_dsa*
 		fi
 	done
 fi
+
+
+
 
 
 if [ -f /tmp/badSSH/backuppc.pub ]
@@ -29,7 +35,8 @@ then
 		sed -i "s#$badSSHKey##g" /m23/data+scripts/packages/baseSys/authorized_keys
 
 		bpchome=`grep backuppc /etc/passwd | cut -d':' -f6`
-		if [ $( grep -c "$badSSHKey" $bpchome/.ssh/id_rsa.pub ) -gt 0 ]
+		bpcbadkeyexists=`grep -c "$badSSHKey" $bpchome/.ssh/id_rsa.pub`
+		if [ ${bpcbadkeyexists:-0} -gt 0 ]
 		then
 			rm $bpchome/.ssh/id_*
 		fi
@@ -357,6 +364,12 @@ then
 	#copy the public key to the m23 directory
 	cp /root/.ssh/id_dsa.pub /m23/data+scripts/packages/baseSys/authorized_keys
 	chown www-data.www-data /m23/data+scripts/packages/baseSys/authorized_keys
+else
+	if [ ! -f /m23/data+scripts/packages/baseSys/authorized_keys ]
+	then
+		cp /root/.ssh/id_dsa.pub /m23/data+scripts/packages/baseSys/authorized_keys
+		chown www-data.www-data /m23/data+scripts/packages/baseSys/authorized_keys
+	fi
 fi
 
 
@@ -841,6 +854,9 @@ updateSQLIfOlder $oldversionint 131100637 "CREATE TABLE m23Admins ( ID int(10) u
 #Increase the size of the normalPackage field to LONGTEXT
 updateSQLIfOlder $oldversionint 131100669 "ALTER TABLE recommendpackages CHANGE normalPackage normalPackage LONGTEXT NOT NULL"
 
+updateSQLIfOlder $oldversionint 143100752 "ALTER TABLE clients ADD CFDiskTemp LONGBLOB NOT NULL AFTER partitions"
+
+
 ######################
 # DB adjustments END #
 ######################
@@ -851,7 +867,7 @@ updateDB
 
 #Adjust the ramdisk sizes of all PXE settings
 kernelRamDisk=`grep kernelRamDisk /m23/inc/kernelRamDisk.inc | sed 's/[^0-9]//g'`
-sed -i "s/ramdisk_size=[0-9]*/ramdisk_size=$kernelRamDisk/g" /m23/tftp/pxelinux.cfg/*
+sed -i "s/ramdisk_size=[0-9]*/ramdisk_size=$kernelRamDisk/g" /m23/tftp/pxelinux.cfg/* /m23/tftp/grub/grub.cfg
 restartDHCPServer
 
 

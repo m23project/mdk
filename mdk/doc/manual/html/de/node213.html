@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>m23-Bootdiskette erstellen</TITLE>
-<META NAME="description" CONTENT="m23-Bootdiskette erstellen">
+<TITLE>Anpassungskriterien</TITLE>
+<META NAME="description" CONTENT="Anpassungskriterien">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,81 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node214.html">
 <LINK REL="previous" HREF="node212.html">
-<LINK REL="up" HREF="node212.html">
+<LINK REL="up" HREF="node211.html">
 <LINK REL="next" HREF="node214.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html3200"
+<A NAME="tex2html3255"
   HREF="node214.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html3196"
-  HREF="node212.html">
+<A NAME="tex2html3251"
+  HREF="node211.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html3190"
+<A NAME="tex2html3245"
   HREF="node212.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html3198"
+<A NAME="tex2html3253"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> N&auml;chste Seite:</B> <A NAME="tex2html3201"
-  HREF="node214.html">Boot-CD brennen</A>
-<B> Aufw&auml;rts:</B> <A NAME="tex2html3197"
-  HREF="node212.html">Tools</A>
-<B> Vorherige Seite:</B> <A NAME="tex2html3191"
-  HREF="node212.html">Tools</A>
- &nbsp; <B>  <A NAME="tex2html3199"
+<B> N&auml;chste Seite:</B> <A NAME="tex2html3256"
+  HREF="node214.html">Hinweis</A>
+<B> Aufw&auml;rts:</B> <A NAME="tex2html3252"
+  HREF="node211.html">Festplattentyp und Größe definieren</A>
+<B> Vorherige Seite:</B> <A NAME="tex2html3246"
+  HREF="node212.html">Hinweis</A>
+ &nbsp; <B>  <A NAME="tex2html3254"
   HREF="node1.html">Inhalt</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A NAME="SECTION001510000000000000000">
-m23-Bootdiskette erstellen</A>
-</H1>Hier k&#246;nnen Sie eine Bootdiskette zum Booten von m23-Clients anlegen. Diese Diskette wird ben&#246;tigt, um Clients einzurichten und ist im normalen Betrieb nicht mehr n&#246;tig. Anstelle der Bootdiskette k&#246;nnen Sie auch das Bootrom Ihrer Netzwerkkarte benutzen. 
-<BR><IMG
-  WIDTH="1042" HEIGHT="321" ALIGN="BOTTOM" BORDER="0"
- SRC="./makeBootDisk.png"
- ALT="Image makeBootDisk"> 
+<H2><A NAME="SECTION001422000000000000000">
+Anpassungskriterien</A>
+</H2>
+Da davon auszugehen ist, da&#223; die hier definierten Festplatten-Parameter nicht f&#252;r alle Ihre Clients zutreffen, gibt es verschiedene Methoden, wie m23 die Partitionen individuell f&#252;r die einzelnen Clients anpassen kann.
 <BR>
-Gehen Sie wie folgt vor:
+<UL>
+<LI>Das <SPAN  CLASS="textit">''Festplattenauswahl-Kriterium''</SPAN> legt fest, nach welchem Schema die Festplatte im Zielrechner ausgew&#228;hlt werden soll, falls mehrere Festplatten vorhanden sind.
 <BR>
-<OL>
-<LI>Legen Sie eine Diskette in das erste Diskettenlaufwerk (Laufwerk a:) des Servers ein.
+<UL>
+<LI><SPAN  CLASS="textit">''Wie angegeben''</SPAN> benutzt die oben angegebene Festplatte auch, wenn im Client Festplatten vorhanden sind, die in ihrer Gr&#246;&#223;e &#228;hnlicher sind. Existiert diese Festplatte nicht (z.B. kein Laufwerk /dev/hda in einem reinen SCSI-System), so wird eine andere Festplatte ausgew&#228;hlt. Wird diese Funktion nicht aktiviert, so wird automatisch die beste Festplatte nach den folgenden Kriterien ausgew&#228;hlt.
 <BR></LI>
-<LI>W&#228;hlen Sie den Netzwerkkartentyp aus der Liste aus.
+<LI>Die Toleranzangaben bei <SPAN  CLASS="textit">''Gleicher Typ''</SPAN> und <SPAN  CLASS="textit">''Anderer Typ''</SPAN> geben an, wie gro&#223; die Toleranz nach oben (Client-Festplatte ist gr&#246;&#223;er als die definierte) und unten (Client-Festplatte ist kleiner) von der definierten Gr&#246;&#223;e sein soll. Festplatten, die innerhalb der Toleranz liegen, werden als &#220;bereinstimmung mit der Definition gewertet. Wenn Festplatten gleichen Typs (z.B. vom Typ IDE) bevorzugt werden sollen, so w&#228;hlen Sie bei <SPAN  CLASS="textit">Anderer Typ</SPAN> einen kleineren oder keinen (obere und untere Toleranzgrenze auf 0 setzen) Toleranzbereich.
 <BR></LI>
-<LI>Klicken Sie auf <SPAN  CLASS="textit">SSchreiben&#34;</SPAN>.
-<BR></LI>
-</OL>
-<BR><HR>
+</UL>
+</LI>
+</UL>
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3255"
+  HREF="node214.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html3251"
+  HREF="node211.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html3245"
+  HREF="node212.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
+<A NAME="tex2html3253"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> N&auml;chste Seite:</B> <A NAME="tex2html3256"
+  HREF="node214.html">Hinweis</A>
+<B> Aufw&auml;rts:</B> <A NAME="tex2html3252"
+  HREF="node211.html">Festplattentyp und Größe definieren</A>
+<B> Vorherige Seite:</B> <A NAME="tex2html3246"
+  HREF="node212.html">Hinweis</A>
+ &nbsp; <B>  <A NAME="tex2html3254"
+  HREF="node1.html">Inhalt</A></B> </DIV>
+<!--End of Navigation Panel-->
 <ADDRESS>
-dodger
-2014-01-22
+root
+2015-04-30
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Select and upload a database file</TITLE>
-<META NAME="description" CONTENT="Select and upload a database file">
+<TITLE>Note: UEFI</TITLE>
+<META NAME="description" CONTENT="Note: UEFI">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,53 +21,47 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node202.html">
 <LINK REL="previous" HREF="node200.html">
-<LINK REL="up" HREF="node200.html">
+<LINK REL="up" HREF="node199.html">
 <LINK REL="next" HREF="node202.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html3043"
+<A NAME="tex2html3083"
   HREF="node202.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html3039"
-  HREF="node200.html">
+<A NAME="tex2html3079"
+  HREF="node199.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html3033"
+<A NAME="tex2html3073"
   HREF="node200.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html3041"
+<A NAME="tex2html3081"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html3044"
+<B> Next:</B> <A NAME="tex2html3084"
   HREF="node202.html">Hint</A>
-<B> Up:</B> <A NAME="tex2html3040"
-  HREF="node200.html">Select data source/Assign columns</A>
-<B> Previous:</B> <A NAME="tex2html3034"
-  HREF="node200.html">Select data source/Assign columns</A>
- &nbsp; <B>  <A NAME="tex2html3042"
+<B> Up:</B> <A NAME="tex2html3080"
+  HREF="node199.html">Client builder</A>
+<B> Previous:</B> <A NAME="tex2html3074"
+  HREF="node200.html">Note: External DHCP server</A>
+ &nbsp; <B>  <A NAME="tex2html3082"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION001451000000000000000">
-Select and upload a database file</A>
+<H2><A NAME="SECTION001412000000000000000">
+Note: UEFI</A>
 </H2>
-Select a file with the diealog and click on <SPAN  CLASS="textit">"Upload"</SPAN>.
-<BR>
-A special data format is needed to make the value recognition possible for m23. The values for a single client are specified in every line. The client options are separated by a separator character (here ";")::
-<BR><PRE>
-option1;option2;option3;...
-</PRE>
-You can use other combinations of a maximum of 4 characters. The order of the options has to be the same in all lines.
-<BR>
+If you would like to boot your client using UEFI, you need to select <SPAN  CLASS="textit">''UEFI x86_64''</SPAN>. The architecture will automaticall be set to 64bit, as m23 only supports UEFI for 64bit systems. If your client computer does not support network boot in UEFI mode, you can use the 64bit boot ISO (see menu item <SPAN  CLASS="textit">''Make boot CD''</SPAN>).
+<BR><SPAN  CLASS="textbf">Bootloader:</SPAN> Choose the boot loader/boot manager for starting the Linux kernel and possibly already installed other operating systems. You can choose between LILO (LInux LOader) and GRUB (GRand Unified Bootloader).
 <BR><HR>
 <ADDRESS>
-dodger
-2014-01-22
+root
+2015-04-30
 </ADDRESS>
 </BODY>
 </HTML>

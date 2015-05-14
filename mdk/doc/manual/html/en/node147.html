@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Apache CloudStack</TITLE>
-<META NAME="description" CONTENT="Apache CloudStack">
+<TITLE>Hint</TITLE>
+<META NAME="description" CONTENT="Hint">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,96 +19,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="manual.css">
 
-<LINK REL="previous" HREF="node143.html">
-<LINK REL="up" HREF="node138.html">
+<LINK REL="next" HREF="node148.html">
+<LINK REL="previous" HREF="node146.html">
+<LINK REL="up" HREF="node143.html">
 <LINK REL="next" HREF="node148.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html2342"
+<A NAME="tex2html2381"
   HREF="node148.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2338"
-  HREF="node138.html">
+<A NAME="tex2html2377"
+  HREF="node143.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2334"
+<A NAME="tex2html2371"
   HREF="node146.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2340"
+<A NAME="tex2html2379"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html2343"
-  HREF="node148.html">Hint</A>
-<B> Up:</B> <A NAME="tex2html2339"
-  HREF="node138.html">Virtualisation</A>
-<B> Previous:</B> <A NAME="tex2html2335"
-  HREF="node146.html">Deleting of additions</A>
- &nbsp; <B>  <A NAME="tex2html2341"
+<B> Next:</B> <A NAME="tex2html2382"
+  HREF="node148.html">Hints about the VM</A>
+<B> Up:</B> <A NAME="tex2html2378"
+  HREF="node143.html">Create VM</A>
+<B> Previous:</B> <A NAME="tex2html2372"
+  HREF="node146.html">Apache CloudStack</A>
+ &nbsp; <B>  <A NAME="tex2html2380"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A NAME="SECTION001030000000000000000">
-Apache CloudStack<SUP></SUP></A>
-</H1>This dialogue allows you to make settings for Apache CloudStack<SUP></SUP>.
-<BR><IMG
-  WIDTH="902" HEIGHT="648" ALIGN="BOTTOM" BORDER="0"
- SRC="./cloudStack.png"
- ALT="Image cloudStack"> 
+<H2><A NAME="SECTION001014000000000000000">
+Hint</A>
+</H2>
+		If you would like to create <SPAN  CLASS="textbf">more than a single VM</SPAN>, you will have to replace the network identification number (<SPAN  CLASS="textit">''Network ID''</SPAN>) at  <SPAN  CLASS="textit">''Server''</SPAN> <!-- MATH
+ $\rightarrow$
+ -->
+<SPAN CLASS="MATH"></SPAN> <SPAN  CLASS="textit">''Server settings''</SPAN> <!-- MATH
+ $\rightarrow$
+ -->
+<SPAN CLASS="MATH"></SPAN> <SPAN  CLASS="textit">''Apache CloudStack<SUP></SUP>''</SPAN> by an unused identification number of a network available for your ''Apache CloudStack<SUP></SUP>'' user account after every creation of a virtual machine. 
 <BR>
-Please enter your user credentials at <SPAN  CLASS="textit">"Credentials"</SPAN>, to enable the m23 server to contact your Apache CloudStack<SUP></SUP> service. You will get these parameters from your Apache CloudStack<SUP></SUP> provider or from your own Apache CloudStack<SUP></SUP> installation.
+Into the field <SPAN  CLASS="textit">''VM name''</SPAN> enter the name for the VM you want to create and finally, click on <SPAN  CLASS="textit">''Create''</SPAN>.
+<BR>	
 <BR>
-At <SPAN  CLASS="textit">"API Endpoint"</SPAN>, please enter the address (e.g. https://my-server/client/api ) for the communication with the Apache CloudStack<SUP></SUP> service. To get access, you will also need an API key and a secret API key, which you will have to enter at <SPAN  CLASS="textit">"API key"</SPAN> and <SPAN  CLASS="textit">"Secret API key"</SPAN>.
-<BR><SPAN  CLASS="textit">"Service offering ID"</SPAN> (CPU and RAM), <SPAN  CLASS="textit">"Network ID"</SPAN> (virtual Apache CloudStack<SUP></SUP> network) and <SPAN  CLASS="textit">"Disk offering ID"</SPAN> (type of the virtual hard disk) specify the values of a newly created m23 client in Apache CloudStack<SUP></SUP>.
-<BR>(Currently) You cannot change the choice of the boot medium from which the operating system installation will be started, the <SPAN  CLASS="textit">"ISO ID"</SPAN>, the virtualisation software used: <SPAN  CLASS="textit">"Virtualisation software"</SPAN> and the identification number of the operating system: <SPAN  CLASS="textit">"Operating system type ID"</SPAN>.
-<BR>
-By clicking on <SPAN  CLASS="textit">"Save"</SPAN> or on <SPAN  CLASS="textit">"Test it"</SPAN>, you save the configuration. The second button will execute a connection check first and only save the configuration if there was no error.
-<BR>
-At <SPAN  CLASS="textit">"Apache CloudStack<SUP></SUP> client boot ISO"</SPAN>, you can select the Apache CloudStack<SUP></SUP> zone (<SPAN  CLASS="textit">"VM host"</SPAN>), where the m23 client boot ISO will be uploaded to (if it is not yet there). You can start the upload by clicking on <SPAN  CLASS="textit">"Upload"</SPAN>. <SPAN  CLASS="textit">"ISO ID"</SPAN> will be adapted automatically after the upload.
-<BR>
-These settings are stored on the server in the file <SPAN  CLASS="textit">"/m23/inc/CloudStackConf.php"</SPAN> and can be edited with a texteditor.
+You <SPAN  CLASS="textbf">necessarily need</SPAN> to click on the link <SPAN  CLASS="textit">''<SPAN CLASS="MATH"></SPAN> <SPAN CLASS="MATH"></SPAN> <SPAN CLASS="MATH"></SPAN> Add client <SPAN CLASS="MATH"></SPAN> <SPAN CLASS="MATH"></SPAN> <SPAN CLASS="MATH"></SPAN>''</SPAN> after the successful creation of the VM. Otherwise there will be no m23 client and the VM would not be manageable via m23. Any error messages of the virtualisation software will be shown in a red box if there occurs an error while creating the VM.
 <BR>
 <BR><HR>
-<!--Table of Child-Links-->
-<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
-
-<UL CLASS="ChildLinks">
-<LI><A NAME="tex2html2344"
-  HREF="node148.html">Hint</A>
-</UL>
-<!--End of Table of Child-Links-->
-
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A NAME="tex2html2342"
-  HREF="node148.html">
-<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2338"
-  HREF="node138.html">
-<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2334"
-  HREF="node146.html">
-<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2340"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> Next:</B> <A NAME="tex2html2343"
-  HREF="node148.html">Hint</A>
-<B> Up:</B> <A NAME="tex2html2339"
-  HREF="node138.html">Virtualisation</A>
-<B> Previous:</B> <A NAME="tex2html2335"
-  HREF="node146.html">Deleting of additions</A>
- &nbsp; <B>  <A NAME="tex2html2341"
-  HREF="node1.html">Contents</A></B> </DIV>
-<!--End of Navigation Panel-->
 <ADDRESS>
-dodger
-2014-01-22
+root
+2015-04-30
 </ADDRESS>
 </BODY>
 </HTML>

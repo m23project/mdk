@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Package builder</TITLE>
-<META NAME="description" CONTENT="Package builder">
+<TITLE>Information</TITLE>
+<META NAME="description" CONTENT="Information">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,99 +19,97 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="manual.css">
 
-<LINK REL="next" HREF="node179.html">
-<LINK REL="previous" HREF="node172.html">
-<LINK REL="up" HREF="node155.html">
+<LINK REL="next" HREF="node178.html">
+<LINK REL="previous" HREF="node176.html">
+<LINK REL="up" HREF="node176.html">
 <LINK REL="next" HREF="node178.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html2734"
+<A NAME="tex2html2770"
   HREF="node178.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2730"
-  HREF="node155.html">
+<A NAME="tex2html2766"
+  HREF="node176.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2724"
+<A NAME="tex2html2760"
   HREF="node176.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2732"
+<A NAME="tex2html2768"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html2735"
+<B> Next:</B> <A NAME="tex2html2771"
   HREF="node178.html">Hint</A>
-<B> Up:</B> <A NAME="tex2html2731"
-  HREF="node155.html">Packages</A>
-<B> Previous:</B> <A NAME="tex2html2725"
-  HREF="node176.html">Hint</A>
- &nbsp; <B>  <A NAME="tex2html2733"
+<B> Up:</B> <A NAME="tex2html2767"
+  HREF="node176.html">Edit package sources</A>
+<B> Previous:</B> <A NAME="tex2html2761"
+  HREF="node176.html">Edit package sources</A>
+ &nbsp; <B>  <A NAME="tex2html2769"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A NAME="SECTION001260000000000000000">
-Package builder</A>
-</H1>
+<H2><A NAME="SECTION001241000000000000000">
+Information</A>
+</H2>
 <IMG
-  WIDTH="1097" HEIGHT="1171" ALIGN="BOTTOM" BORDER="0"
- SRC="./packageBuilder.png"
- ALT="Image packageBuilder"> 
+  WIDTH="1142" HEIGHT="934" ALIGN="BOTTOM" BORDER="0"
+ SRC="./client_sourceslist.png"
+ ALT="Image client_sourceslist"> 
 <BR>
-The integrated Package builder is a comfortable tool to create Debian packages directly from the m23 webinterface. These packages can be installed on the m23 clients like any other package and can contain single files or complete file directory trees.
+Software packages can be installed from different sources (HTTP,FTP,CDRom etc.). Different sources are needed, if not all of the software packages can be installed from the same medium. To make it easy for you to administrate these package sources, you can enter them as expected by your selected distribution.
 <BR>
-The packages are created from archive files in tar format compressed with bzip2 or gzip. User and access rights of files and directories are tranferred to the Debian package without recompression. The resulting Debian packages are independent of a certain distribution or release branch. This means that the same package can be installed on Debian, Ubuntu or Kubuntu clients.
-<BR>
-Creation of the package step-by-step:
-<BR>
-<OL>
-<LI>Filing of the tar file into the directory /m23/data+scripts/extraDebs/. This can be done e.g. with scp or the integrated file upload <SPAN  CLASS="textit">"Upload tar file for conversion"</SPAN>.
+<UL>
+<LI><SPAN  CLASS="textbf">Loading a package source</SPAN>: Select a package source from the list (top/right) and click on <SPAN  CLASS="textit">''Load''</SPAN>. The package source will be loaded in the editor.
 <BR></LI>
-<LI>Click on <SPAN  CLASS="textit">"Refresh"</SPAN> after the filing to see the file in the list <SPAN  CLASS="textit">"File list"</SPAN>.
+<LI><SPAN  CLASS="textbf">Deletion a package source</SPAN>: To delete the package source loaded in the editor, click on the <SPAN  CLASS="textit">''Delete''</SPAN> button and accept your decision in the next dialog.
 <BR></LI>
-<LI>Choose the tar file you want to convert and click after its file name on <SPAN  CLASS="textit">"Convert to Debian package"</SPAN>. The package index files are re-created automatically to ensure a ready-for-use package source.
+<LI><SPAN  CLASS="textbf">Saving a package source</SPAN>: The system will always save the package source loaded in the editor. It doesn't matter which package source is selected in the list. After you have selected a distribution, it is possible that you need to specify your choice. Choose a user interface from the list displayed under the editor and select the architecture(s) supported by the package sources list under <SPAN  CLASS="textit">''Architecture''</SPAN>. Think about a good name for your package source and enter it below <SPAN  CLASS="textit">''Package source name''</SPAN>. If you have loaded a package source before, the package source name is written into the field <SPAN  CLASS="textit">''Package source name''</SPAN> automatically. If you want, you can enter a comment into the <SPAN  CLASS="textit">''Description''</SPAN> text field. Afterwards, click on the <SPAN  CLASS="textit">''Save''</SPAN> button.
 <BR></LI>
-</OL>
-<BR><HR>
-<!--Table of Child-Links-->
-<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
-
-<UL CLASS="ChildLinks">
-<LI><A NAME="tex2html2736"
-  HREF="node178.html">Hint</A>
+<LI><SPAN  CLASS="textbf">Test the package source</SPAN>: After entering a package source list, you should test if all sources are working properly. Simply click on the <SPAN  CLASS="textit">''Test''</SPAN> button. The package description files will be downloaded and a test report will be shown thereafter. It can take minutes until the report is shown, depending on your internet connection speed and the speed of the used software package servers.
+<BR></LI>
+<LI><SPAN  CLASS="textbf">Select Mirror</SPAN>: If you would like to use a different mirror (the standard server is ftp.debian.org) for the installation of the base system, enter it as follows in a new line of your package source: 
+<BR><PRE>
+#mirror: [URL to the packages]
+</PRE>
+. <SPAN  CLASS="textit">URL to the packages</SPAN> describes the protocol, the hostname or the IP and the directory that contains the packages. A valid URL may look like this: 
+<BR><PRE>
+#mirror: http://192.168.7.14/debianCDs
+</PRE>
+.
+<BR></LI>
 </UL>
-<!--End of Table of Child-Links-->
-
 <DIV CLASS="navigation"><HR>
 <!--Navigation Panel-->
-<A NAME="tex2html2734"
+<A NAME="tex2html2770"
   HREF="node178.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2730"
-  HREF="node155.html">
+<A NAME="tex2html2766"
+  HREF="node176.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2724"
+<A NAME="tex2html2760"
   HREF="node176.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2732"
+<A NAME="tex2html2768"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html2735"
+<B> Next:</B> <A NAME="tex2html2771"
   HREF="node178.html">Hint</A>
-<B> Up:</B> <A NAME="tex2html2731"
-  HREF="node155.html">Packages</A>
-<B> Previous:</B> <A NAME="tex2html2725"
-  HREF="node176.html">Hint</A>
- &nbsp; <B>  <A NAME="tex2html2733"
+<B> Up:</B> <A NAME="tex2html2767"
+  HREF="node176.html">Edit package sources</A>
+<B> Previous:</B> <A NAME="tex2html2761"
+  HREF="node176.html">Edit package sources</A>
+ &nbsp; <B>  <A NAME="tex2html2769"
   HREF="node1.html">Contents</A></B> </DIV>
 <!--End of Navigation Panel-->
 <ADDRESS>
-dodger
-2014-01-22
+root
+2015-04-30
 </ADDRESS>
 </BODY>
 </HTML>

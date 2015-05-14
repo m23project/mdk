@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>The other DHCP server CANNOT be deactivated</TITLE>
-<META NAME="description" CONTENT="The other DHCP server CANNOT be deactivated">
+<TITLE>The other DHCP server can be deactivated</TITLE>
+<META NAME="description" CONTENT="The other DHCP server can be deactivated">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,47 +21,55 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node114.html">
 <LINK REL="previous" HREF="node112.html">
-<LINK REL="up" HREF="node111.html">
+<LINK REL="up" HREF="node112.html">
 <LINK REL="next" HREF="node114.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html1919"
+<A NAME="tex2html1946"
   HREF="node114.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html1915"
-  HREF="node111.html">
+<A NAME="tex2html1942"
+  HREF="node112.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html1909"
+<A NAME="tex2html1936"
   HREF="node112.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html1917"
+<A NAME="tex2html1944"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html1920"
-  HREF="node114.html">ISC DHCP server</A>
-<B> Up:</B> <A NAME="tex2html1916"
-  HREF="node111.html">Using m23 with an</A>
-<B> Previous:</B> <A NAME="tex2html1910"
-  HREF="node112.html">The other DHCP server</A>
- &nbsp; <B>  <A NAME="tex2html1918"
+<B> Next:</B> <A NAME="tex2html1947"
+  HREF="node114.html">The other DHCP server</A>
+<B> Up:</B> <A NAME="tex2html1943"
+  HREF="node112.html">Using m23 with an</A>
+<B> Previous:</B> <A NAME="tex2html1937"
+  HREF="node112.html">Using m23 with an</A>
+ &nbsp; <B>  <A NAME="tex2html1945"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00922000000000000000">
-The other DHCP server CANNOT be deactivated</A>
+<H2><A NAME="SECTION00921000000000000000">
+The other DHCP server can be deactivated</A>
 </H2>
-In this case you need to adjust the configuration of the other DHCP server manually and set up a TFTP server if necessary. Have a look into the documentation of your DHCP and TFTP servers for correct configuration.
+Solutions:
 <BR>
+<UL>
+<LI>Disable the other DHCP server for the MAC addresses of the clients you want to install (at least) during the operating system installation.
+<BR></LI>
+<LI>Or: Reconfigure the DHCP server to make it send its network settings with a delay of 2 seconds, to give the m23 server the chance for answering earlier.
+<BR></LI>
+<LI>Or: Deactivate the other DHCP server during the operating system installation with m23.
+<BR></LI>
+</UL>
 <BR><HR>
 <ADDRESS>
-dodger
-2014-01-22
+root
+2015-04-30
 </ADDRESS>
 </BODY>
 </HTML>

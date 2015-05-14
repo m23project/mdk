@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Information pour l'installation d'un système d'exploitation sur des systèmes RAID</TITLE>
-<META NAME="description" CONTENT="Information pour l'installation d'un système d'exploitation sur des systèmes RAID">
+<TITLE>Note &#224; propos de l'UEFI</TITLE>
+<META NAME="description" CONTENT="Note &#224; propos de l'UEFI">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,75 +19,51 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="manual.css">
 
+<LINK REL="next" HREF="node123.html">
 <LINK REL="previous" HREF="node121.html">
-<LINK REL="up" HREF="node116.html">
+<LINK REL="up" HREF="node117.html">
 <LINK REL="next" HREF="node123.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html2030"
+<A NAME="tex2html2056"
   HREF="node123.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2026"
-  HREF="node116.html">
+<A NAME="tex2html2052"
+  HREF="node117.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2022"
+<A NAME="tex2html2046"
   HREF="node121.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2028"
+<A NAME="tex2html2054"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> suivant:</B> <A NAME="tex2html2031"
-  HREF="node123.html">Choisir la distribution des</A>
-<B> monter:</B> <A NAME="tex2html2027"
-  HREF="node116.html">Partitionnement et formatage du</A>
-<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2023"
-  HREF="node121.html">Informations suppl&#233;mentaires concernant les</A>
- &nbsp; <B>  <A NAME="tex2html2029"
+<B> suivant:</B> <A NAME="tex2html2057"
+  HREF="node123.html">Note &#224; propos des</A>
+<B> monter:</B> <A NAME="tex2html2053"
+  HREF="node117.html">Partitionnement et formatage du</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2047"
+  HREF="node121.html">Note</A>
+ &nbsp; <B>  <A NAME="tex2html2055"
   HREF="node1.html">Table des mati&#232;res</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION001036000000000000000">
-Information pour l'installation d'un syst&#232;me d'exploitation sur des syst&#232;mes RAID</A>
+<H2><A NAME="SECTION001035000000000000000">
+Note &#224; propos de l'UEFI</A>
 </H2>
-Lorsque le syst&#232;me d'exploitation doit &#234;tre install&#233; sur un lecteur RAID, il est n&#233;cessaire dans la plupart des cas (sauf pour RAID-1) que vous &#233;tablissiez une partition suppl&#233;mentaire pour le noyau et les modules (/boot), ne faisant pas partie du lecteur RAID. Une taille d'environ 250 MB suffit &#224; cette partition pour conserver plusieures versions de noyau. S'il n'y avait plus de partition libre, cliquez sur le bouton <SPAN  CLASS="textit">Pr&#233;cedent</SPAN> jusqu'&#224; ce que vous atteigniez la cr&#233;ation et l'effacement de partitions puis cr&#233;ez la partition n&#233;cessaire (/boot) avant le lecteur RAID.
-<BR><SPAN  CLASS="textbf">Partition pour l&amp;apos;installation et le swap</SPAN>
-Pour l'installation du poste client m23, vous devez choisir une partition pour l'installation du syst&#232;me d'exploitation sous <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Partition pour l&amp;apos;installation<SPAN CLASS="MATH"></SPAN></SPAN> et une partition pour l'espace de swap sous <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Partition pour le swap<SPAN CLASS="MATH"></SPAN></SPAN>, puis cliquez sur <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Choisir<SPAN CLASS="MATH"></SPAN></SPAN>.
-<BR><SPAN  CLASS="textbf">D&#233;finir les points de montage</SPAN>
-Si vous d&#233;sirez des points de montage additionels, vous pouvez les d&#233;finir sous <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>D&#233;finir les points de montage<SPAN CLASS="MATH"></SPAN></SPAN>. Entrez la partition, le point de montage et les param&#232;tres requis au montage, puis cliquez sur <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Ajouter<SPAN CLASS="MATH"></SPAN></SPAN>. Ces informations correspondent &#224; celles pouvant &#234;tre trouv&#233;es dans le fichier <SPAN  CLASS="textbf">/etc/fstab</SPAN> d'un syst&#232;me Linux. Vous pouvez voir les points de montage d&#233;j&#224; d&#233;finis dans la table sous le champs de saisie. Si vous d&#233;sirez effacer un point de montage cr&#233;&#233;, cliquez sur <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Effacer<SPAN CLASS="MATH"></SPAN></SPAN> sur la ligne concern&#233;e.
+Si votre client m23 utilise l'UEFI, vous devez cr&#233;er, en premier lieu une partition EFI d'amor&#231;age. La position et la taille de cette partition sont param&#233;tr&#233;s automatiquement et ne peuvent &#234;tre chang&#233;s.
+<BR><SPAN  CLASS="textbf">Formater la partition</SPAN>
+En cliquant sur <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Formater<SPAN CLASS="MATH"></SPAN></SPAN>, vous formatez la partition actuellement s&#233;lectionn&#233;e apr&#232;s avoir choisi le type de syst&#232;me de fichiers sous <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Type<SPAN CLASS="MATH"></SPAN></SPAN>.
 <BR>
-<DIV CLASS="navigation"><HR>
-<!--Navigation Panel-->
-<A NAME="tex2html2030"
-  HREF="node123.html">
-<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2026"
-  HREF="node116.html">
-<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2022"
-  HREF="node121.html">
-<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2028"
-  HREF="node1.html">
-<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
-<BR>
-<B> suivant:</B> <A NAME="tex2html2031"
-  HREF="node123.html">Choisir la distribution des</A>
-<B> monter:</B> <A NAME="tex2html2027"
-  HREF="node116.html">Partitionnement et formatage du</A>
-<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2023"
-  HREF="node121.html">Informations suppl&#233;mentaires concernant les</A>
- &nbsp; <B>  <A NAME="tex2html2029"
-  HREF="node1.html">Table des mati&#232;res</A></B> </DIV>
-<!--End of Navigation Panel-->
+<BR><HR>
 <ADDRESS>
-dodger
-2014-01-22
+root
+2015-04-30
 </ADDRESS>
 </BODY>
 </HTML>

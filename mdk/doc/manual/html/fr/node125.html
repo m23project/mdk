@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Concernant les fichiers image</TITLE>
-<META NAME="description" CONTENT="Concernant les fichiers image">
+<TITLE>Informations suppl&#233;mentaires concernant les configurations RAID et les partitions</TITLE>
+<META NAME="description" CONTENT="Informations suppl&#233;mentaires concernant les configurations RAID et les partitions">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,55 +21,47 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node126.html">
 <LINK REL="previous" HREF="node124.html">
-<LINK REL="up" HREF="node123.html">
+<LINK REL="up" HREF="node117.html">
 <LINK REL="next" HREF="node126.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html2069"
+<A NAME="tex2html2092"
   HREF="node126.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2065"
-  HREF="node123.html">
+<A NAME="tex2html2088"
+  HREF="node117.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2059"
+<A NAME="tex2html2082"
   HREF="node124.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2067"
+<A NAME="tex2html2090"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> suivant:</B> <A NAME="tex2html2070"
-  HREF="node126.html">Information suppl&#233;mentaire:</A>
-<B> monter:</B> <A NAME="tex2html2066"
-  HREF="node123.html">Choisir la distribution des</A>
-<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2060"
-  HREF="node124.html">Information</A>
- &nbsp; <B>  <A NAME="tex2html2068"
+<B> suivant:</B> <A NAME="tex2html2093"
+  HREF="node126.html">Information pour l'installation d'un</A>
+<B> monter:</B> <A NAME="tex2html2089"
+  HREF="node117.html">Partitionnement et formatage du</A>
+<B> pr&eacute;c&eacute;dent:</B> <A NAME="tex2html2083"
+  HREF="node124.html">Cr&#233;ation d'un syst&#232;me RAID</A>
+ &nbsp; <B>  <A NAME="tex2html2091"
   HREF="node1.html">Table des mati&#232;res</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION001042000000000000000">
-Concernant les fichiers image</A>
+<H2><A NAME="SECTION001038000000000000000">
+Informations suppl&#233;mentaires concernant les configurations RAID et les partitions</A>
 </H2>
-Dans la liste des sources de paquets, s&#233;lectionnez <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>l'image<SPAN CLASS="MATH"></SPAN></SPAN> pour l'installation du fichier image d&#233;sir&#233;.
-<BR>
-Si la liste vous n'offre pas d'interfaces graphiques, n&#233;anmoins confirmez par un clic sur <SPAN  CLASS="textit">"Choisir"</SPAN> pour pouvoir proc&#233;der &#224; la prochaine partie du dialogue.
-<BR>
-Maintenant, selectionnez la partition o&#249; vous voudriez que le MBR (Master Boot Record) soit install&#233; et assignez les fichiers image (ou rien) aux partitions de la machine destinataire.
-<BR>
-Vous pouvez choisir d'installer sur le poste client le MBR (Master Boot Record) &#224; partir d'un fichier cr&#233;&#233; pr&#233;c&#233;demment ou bien le MBR g&#233;n&#233;rique de m23. Pour ce faire, choisissez sous <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>Installer un MBR &#224; partir d&amp;apos;une image ou installer un MBR g&#233;n&#233;rique.<SPAN CLASS="MATH"></SPAN></SPAN> entre le nom du fichier ou <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>MBR g&#233;n&#233;rique<SPAN CLASS="MATH"></SPAN></SPAN>.
-<BR>
-Si vous choisissez une distribution correspondante &#224; celle du fichier image sous <SPAN  CLASS="textit">"Configurer l&amp;apos;image comme"</SPAN>, m23 essaiera de configurer la machine tant qu'elle peut &#234;tre administr&#233;e par m23.
+Les RAIDs logiciels seront acc&#233;d&#233;s &#224; travers <SPAN  CLASS="textit"><SPAN CLASS="MATH"></SPAN>multi device<SPAN CLASS="MATH"></SPAN></SPAN> du noyau Linux. Ces disques RAID se comportent comme des partitions et ne peuvent donc pas &#234;tre partitionn&#233;s. La r&#233;cente fonctionnalit&#233; du RAID permettant le partitionnement des disques RAID n'est volontairement pas utilis&#233;e par m23, ceci afin de garantir la compatibilit&#233; avec des noyaux ant&#233;rieurs.
 <BR>
 <BR><HR>
 <ADDRESS>
-dodger
-2014-01-22
+root
+2015-04-30
 </ADDRESS>
 </BODY>
 </HTML>

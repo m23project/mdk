@@ -187,7 +187,7 @@ createRFSBins()
 
 
 	#halt: Now in BusyBox
-	for bin in ar bzip2 cryptsetup dhclient dialog dmidecode dmraid dropbear dropbearkey e2fsck find grub grub-install grub-md5-crypt hdparm install-mbr losetup lspci mdadm mke2fs mkfs mkfs.minix mkfs.msdos mkfs.vfat mkreiserfs mkswap mtools nano parted partimage partprobe pivot_root scanlogd setterm testdisk ddcxinfo-knoppix hwsetup cfdisk tar wget MAKEDEV getty ping md5sum discover discover-modprobe discover-pkginstall discover-config badblocks sfdisk tset hwinfo rsync mkntfs ntfscat ntfsclone ntfscluster ntfscmp ntfscp ntfsfix ntfsinfo ntfslabel ntfsls ntfsresize ntfsundelete ntfs-3g ntfs-3g.probe mount bash mkfifo gptsync mountpoint gawk modinfo blockdev scp partclone.btrfs partclone.extfs partclone.fat partclone.dd partclone.ntfs partclone.ntfsfixboot partclone.reiser4 partclone.restore resize_reiserfs resize2fs xfs_growfs #lvchange lvconvert lvcreate lvdisplay lvextend lvm lvmchange lvmdiskscan lvmsadc lvmsar lvreduce lvremove lvrename lvresize lvs lvscan pvchange pvcreate pvdisplay pvmove pvremove pvresize pvs pvscan vgcfgbackup vgcfgrestore vgchange vgck vgconvert vgcreate vgdisplay vgexport vgextend vgimport vgmerge vgmknodes vgreduce vgremove vgrename vgs vgscan vgsplit #lvmiopversion #mount.ntfs-3g ms-sys ntfsmount
+	for bin in ar bzip2 cryptsetup dhclient dialog dmidecode dmraid dropbear dropbearkey e2fsck find grub grub-install grub-md5-crypt hdparm install-mbr losetup lspci mdadm mke2fs mkfs mkfs.minix mkfs.msdos mkfs.vfat mkreiserfs mkswap mtools nano parted partimage partprobe pivot_root scanlogd setterm testdisk ddcxinfo-knoppix hwsetup cfdisk tar wget MAKEDEV getty ping md5sum discover discover-modprobe discover-pkginstall discover-config badblocks sfdisk tset hwinfo rsync mkntfs ntfscat ntfsclone ntfscluster ntfscmp ntfscp ntfsfix ntfsinfo ntfslabel ntfsls ntfsresize ntfsundelete ntfs-3g ntfs-3g.probe mount bash mkfifo gptsync mountpoint gawk modinfo blockdev scp partclone.btrfs partclone.extfs partclone.fat partclone.dd partclone.ntfs partclone.ntfsfixboot partclone.reiser4 partclone.restore resize_reiserfs resize2fs xfs_growfs sgdisk #lvchange lvconvert lvcreate lvdisplay lvextend lvm lvmchange lvmdiskscan lvmsadc lvmsar lvreduce lvremove lvrename lvresize lvs lvscan pvchange pvcreate pvdisplay pvmove pvremove pvresize pvs pvscan vgcfgbackup vgcfgrestore vgchange vgck vgconvert vgcreate vgdisplay vgexport vgextend vgimport vgmerge vgmknodes vgreduce vgremove vgrename vgs vgscan vgsplit #lvmiopversion #mount.ntfs-3g ms-sys ntfsmount
 	do
 		foundBins=$[ $(find $extractedDebsDir -name $bin -xtype f | grep bin -c) + $(find $extractedDebsDir -name $bin -type l | grep bin -c) ]
 
@@ -277,6 +277,9 @@ createRFSBins()
 	#Needed for lspci (but seems not to be detected on amd64)
 	createRFScopyLib libresolv.so.2
 
+	#Needed for sgdisk (but seems not to be detected on amd64)
+	createRFScopyLib libicudata.so.48
+
 	createRFScopyLib libdbus-1.so.3
 	createRFScopyLib libhal.so.1
 	createRFScopyLib libudev.so.0
@@ -350,6 +353,10 @@ createRFSCopyExtraFilesAndDirs()
 	tar --same-owner -C $rootFSExtraDir -c . | tar x
 	tar --same-owner -C `getRootFSDownloadDirWithArch`/completeExtracted -c . | tar x
 	cp -n -a `getCompiledDirWithArch`/* .
+
+	#Copy the current version of m23hwscanner
+	cp -v /mdk/m23Debs/m23-hwscanner/debian/bin/m23hwscanner bin
+
 
 	kernelName=$(ls lib/modules/)
 	depmod -a -b . $kernelName
@@ -454,7 +461,7 @@ createRFSFinishInitrd()
 	#prepare the kernel image
 	chmod 0555 $kernelSDir/bzImage
 	chown root:root $kernelSDir/bzImage
-	rdev $kernelSDir/bzImage /dev/ram0
+#	rdev $kernelSDir/bzImage /dev/ram0
 
 	#compress the initrd image and move it to the directory
 	echo -n "Compressing the initrd..."
@@ -518,9 +525,7 @@ createRFSISO()
 
 	#adjust the size of the kernel ramdisk in the isolinux configuration
 	ramdiskSize=`getRamDiskSize`
-	sed "s/ramdisk_size=[0-9]*/ramdisk_size=$ramdiskSize/g" isolinux/isolinux.cfg > isolinux.cfg.tmp
-	cat isolinux.cfg.tmp > isolinux/isolinux.cfg
-	rm isolinux.cfg.tmp
+	sed -i "s/ramdisk_size=[0-9]*/ramdisk_size=$ramdiskSize/g" isolinux/isolinux.cfg boot/grub/grub.cfg
 
 	#copy the initrd and kernel to the dir the mkiso expects
 	cp $initrdBuildDir/initrd.gz `getKernelStoreDirWithArch`/bzImage isolinux
@@ -534,8 +539,14 @@ createRFSISO()
 	fi
 
 	#make the iso image
-	#mkisofs -o $bootCDPrefix-$arch.iso -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table .
-	mkisofs -p "The m23 team [http://m23.sf.net]" -A "MDK [m23 development kit]" -T -J -R -V $bootCDPrefix -o $bootCDPrefix-$arch$extraName.iso -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table .
+	if [ $arch = 'amd64' ]
+	then
+	# BIOS + EFI for 64 bit systems
+		mkisofs -p "The m23 team [http://m23.sf.net]" -A "MDK [m23 development kit]" -T -J -joliet-long -R -V $bootCDPrefix -o $bootCDPrefix-$arch$extraName.iso -b isolinux/isolinux.bin -c isolinux/boot.cat --no-emul-boot -boot-load-size 4 -boot-info-table --eltorito-alt-boot boot/grub/efi.img .
+	else
+		# BIOS only for 32 bit systems
+		mkisofs -p "The m23 team [http://m23.sf.net]" -A "MDK [m23 development kit]" -T -J -joliet-long -R -V $bootCDPrefix -m boot -m efi -m .disk -o $bootCDPrefix-$arch$extraName.iso -b isolinux/isolinux.bin -c isolinux/boot.cat --no-emul-boot -boot-load-size 4 -boot-info-table .
+	fi	
 
 	#Check if the iso should be moved to a special directory
 	if [ $isoDir ]
@@ -611,7 +622,7 @@ deb http://dodger-tools.sourceforge.net/debs ./"> ./sources.list
 
 localArchAptUpdate
 
-localArchAptDownload lvm2 binutils bzip2 grub busybox cryptsetup dhcp3-client dialog dmidecode dmraid dropbear e2fsprogs findutils mdadm hdparm sysvinit mbr mount pciutils makedev util-linux dosfstools reiserfsprogs lilo mtools nano coreutils partimage scanlogd snarf tar wget libblkid1 libc6 libbz2-1.0 libuuid1 libselinux1 libsepol1 libpopt0 libpci3 libdebian-installer4 e2fslibs libgcc1 libncurses5 libgcc1 makedev testdisk iputils-ping dmtools parted p7zip discover lsb-base ncurses-bin discover-data hwinfo libdbus-1-3 rsync ntfs-3g ntfsprogs bash mktemp gptsync initscripts gawk module-init-tools dmsetup libudev0 openssh-client firmware-linux-nonfree kmod partclone xfsprogs jfsutils
+localArchAptDownload lvm2 binutils bzip2 grub busybox cryptsetup dhcp3-client dialog dmidecode dmraid dropbear e2fsprogs findutils mdadm hdparm sysvinit mbr mount pciutils makedev util-linux dosfstools reiserfsprogs lilo mtools nano coreutils partimage scanlogd snarf tar wget libblkid1 libc6 libbz2-1.0 libuuid1 libselinux1 libsepol1 libpopt0 libpci3 libdebian-installer4 e2fslibs libgcc1 libncurses5 libgcc1 makedev testdisk iputils-ping dmtools parted p7zip discover lsb-base ncurses-bin discover-data hwinfo libdbus-1-3 rsync ntfs-3g ntfsprogs bash mktemp gptsync initscripts gawk module-init-tools dmsetup libudev0 openssh-client firmware-linux-nonfree kmod partclone xfsprogs jfsutils gdisk
 
 #hwdata-knoppix ddcxinfo-knoppix hwsetup m23hwscanner  #directly extracted from the MDK deb directory
 # Not in Wheezy: ms-sys libntfs-3g31 
@@ -620,8 +631,6 @@ for deb in `ls archivs/*$arch*.deb archivs/*_all.deb`
 do
 	dpkg-deb -X $deb .
 done
-
-
 
 mkdir completeExtracted
 # 	dpkg-deb -X /mdk/m23Debs/debs/hwsetup*$arch*.deb completeExtracted

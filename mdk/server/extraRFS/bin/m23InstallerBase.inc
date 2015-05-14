@@ -803,6 +803,24 @@ setRootPwd()
 
 
 
+# Check for and add extX module, if missing in /etc/initramfs-tools/modules
+addExtModulesToInitramfsConf()
+{
+	for i in `seq 2 4`
+	do
+		ext="ext$i"
+
+		if [ $(grep -c $ext /etc/initramfs-tools/modules) -eq 0 ]
+		then
+			echo $ext >> /etc/initramfs-tools/modules
+		fi
+	done
+}
+
+
+
+
+
 #Creates the initrds for all installed kernel
 createInitrd()
 {
@@ -814,8 +832,13 @@ createInitrd()
 
 	for kimgpkg in `dpkg --get-selections | grep linux-image | grep -v deinstall$ | tr -d '[:blank:]' | sed 's/install$//g'`
 	do
+# 		kernelName=$(echo $kimgpkg | sed 's/^linux-image-//')
+# 		rm "/boot/initrd.img-$kernelName" 2> /dev/null
+# 		touch "/boot/initrd.img-$kernelName"
 		dpkg-reconfigure $kimgpkg
 	done
+
+	apt-get install -f -y --force-yes
 }
 
 
@@ -853,6 +876,8 @@ installGrub()
 	fi
 
 	showDialog "$I18N_windowheader" "$I18N_windowheader" msgbox 14 45 "$I18N_installationfinishedtext"
+
+	eject /mnt/cdrom
 
 	/sbin/reboot -f 2> /dev/null
 	reboot -f 2> /dev/null
@@ -976,9 +1001,9 @@ installDebs()
 
 
 	#Add the URL for server update if missing
-	if [ `grep -c "http://switch.dl.sourceforge.net" /tmp/sources.list` -eq 0 ]
+	if [ `grep -c "http://vorboss.dl.sourceforge.net" /tmp/sources.list` -eq 0 ]
 	then
-		echo "deb http://switch.dl.sourceforge.net/project/m23/m23inst ./" >> /tmp/sources.list
+		echo "deb http://vorboss.dl.sourceforge.net/project/m23/m23inst ./" >> /tmp/sources.list
 	fi
 
 	mv /tmp/sources.list /etc/apt
@@ -1040,7 +1065,12 @@ updateSystem()
 		#Make sure, ischroot will return 2 to stop sysvinit from shuting down the installation
 		mv /usr/bin/ischroot /usr/bin/ischroot.deactivated
 
-		apt-get -y --force-yes update
+		echo 'Acquire::http::Pipeline-Depth "0";' > /etc/apt/apt.conf.d/90localsettings
+		dpkg --clear-avail
+		sync-available
+		echo 3 > /proc/sys/vm/drop_caches
+
+		apt-get -y --force-yes update		
 		export DEBIAN_FRONTEND=noninteractive
 		apt-get -y --force-yes upgrade
 
@@ -1218,6 +1248,8 @@ keyboard-configuration keyboard-configuration/variantcode string' > /tmp/keyboar
 	grep -v "Acquire::http::Proxy" /etc/apt/apt.conf > /tmp/apt.conf
 	cat /tmp/apt.conf > /etc/apt/apt.conf
 	rm /tmp/apt.conf
+
+	addExtModulesToInitramfsConf
 
 	updateSystem
 
