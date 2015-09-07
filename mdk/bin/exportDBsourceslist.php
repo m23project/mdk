@@ -16,7 +16,7 @@ if ($argc > 1)
 else
 {
 	//names of sourceslists that should get exported
-	$allowedNames = array("imaging", "Linux Mint 9 KDE", "HS-Fedora14", "HS-opensuse11.4", "squeeze", "squeeze+libreoffice", "HS-centos62", "precise", "precise+Xorg-updates", "Linux Mint 13 Maya", "wheezy", "trusty", "Linux Mint 17 Qiana", "elementary os");
+	$allowedNames = array("imaging", "Linux Mint 9 KDE", "HS-Fedora14", "HS-opensuse11.4", "squeeze", "squeeze+libreoffice", "HS-centos62", "precise", "precise+Xorg-updates", "Linux Mint 13 Maya", "wheezy", "trusty", "Linux Mint 17 Qiana", "elementary os", "jessie", "Linux Mint 17.1 Rebecca", "Linux Mint 17.2 Rafaela");
 }
 
 $exportSql = $fieldSql = "";
@@ -33,7 +33,7 @@ $result=db_query($exportSql);
 
 //lock table for write operations
 $out = "LOCK TABLES `sourceslist` WRITE;\n";
-while ($row = mysql_fetch_assoc($result))
+while ($row = mysqli_fetch_assoc($result))
 {
 	//check if the sourceslist should get exported
 	if (in_array($row["name"],$allowedNames))

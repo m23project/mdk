@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>UPDATE_getUrl</TITLE>
-<META NAME="description" CONTENT="UPDATE_getUrl">
+<TITLE>SRCLST_doesDistrSupportEFI</TITLE>
+<META NAME="description" CONTENT="SRCLST_doesDistrSupportEFI">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1161.html">
 <LINK REL="previous" HREF="node1159.html">
-<LINK REL="up" HREF="node1157.html">
+<LINK REL="up" HREF="node1136.html">
 <LINK REL="next" HREF="node1161.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18535"
+<A NAME="tex2html18601"
   HREF="node1161.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18531"
-  HREF="node1157.html">
+<A NAME="tex2html18597"
+  HREF="node1136.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18525"
+<A NAME="tex2html18591"
   HREF="node1159.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18533"
+<A NAME="tex2html18599"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18536"
-  HREF="node1161.html">UPDATE_getInfo</A>
-<B> Up:</B> <A NAME="tex2html18532"
-  HREF="node1157.html">./inc/update.php</A>
-<B> Previous:</B> <A NAME="tex2html18526"
-  HREF="node1159.html">UPDATE_running</A>
- &nbsp; <B>  <A NAME="tex2html18534"
+<B> Next:</B> <A NAME="tex2html18602"
+  HREF="node1161.html">SRCLST_getListnamesWithEfiSupport</A>
+<B> Up:</B> <A NAME="tex2html18598"
+  HREF="node1136.html">./inc/sourceslist.php</A>
+<B> Previous:</B> <A NAME="tex2html18592"
+  HREF="node1159.html">SRCLST_showDesktopsSel</A>
+ &nbsp; <B>  <A NAME="tex2html18600"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008373000000000000000">
-UPDATE_getUrl</A>
+<H2><A NAME="SECTION0083624000000000000000">
+SRCLST_doesDistrSupportEFI</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> returnes a correct URL to the update source
+<SPAN  CLASS="textbf">Description:</SPAN> Checks, if a sources list contains a distribution that supports EFI.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>base: URL to the update script
+<LI>sourceName: the name of the package source list
 </LI>
-<LI>command: "info" or "cmd"
-</LI>
-<LI>version: m23 version
-</LI>
-<LI>patchLevel: patch version number
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>true, if the distribution supports EFI, otherwise false.
 </LI>
 </UL>
 
@@ -74,7 +74,7 @@ UPDATE_getUrl</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-04-30
+2015-09-06
 </ADDRESS>
 </BODY>
 </HTML>

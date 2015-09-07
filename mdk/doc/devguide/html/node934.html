@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_listSpecialpackages</TITLE>
-<META NAME="description" CONTENT="PKG_listSpecialpackages">
+<TITLE>PKG_getClientjobsStatus</TITLE>
+<META NAME="description" CONTENT="PKG_getClientjobsStatus">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node935.html">
 <LINK REL="previous" HREF="node933.html">
-<LINK REL="up" HREF="node893.html">
+<LINK REL="up" HREF="node902.html">
 <LINK REL="next" HREF="node935.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15685"
+<A NAME="tex2html15746"
   HREF="node935.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15681"
-  HREF="node893.html">
+<A NAME="tex2html15742"
+  HREF="node902.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15675"
+<A NAME="tex2html15736"
   HREF="node933.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15683"
+<A NAME="tex2html15744"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15686"
-  HREF="node935.html">PKG_addSpecialPackages</A>
-<B> Up:</B> <A NAME="tex2html15682"
-  HREF="node893.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15676"
-  HREF="node933.html">PKG_addPackageToPackageselection</A>
- &nbsp; <B>  <A NAME="tex2html15684"
+<B> Next:</B> <A NAME="tex2html15747"
+  HREF="node935.html">PKG_addNormalPackages</A>
+<B> Up:</B> <A NAME="tex2html15743"
+  HREF="node902.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15737"
+  HREF="node933.html">PKG_countJobsWithStatus</A>
+ &nbsp; <B>  <A NAME="tex2html15745"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082841000000000000000">
-PKG_listSpecialpackages</A>
+<H2><A NAME="SECTION0082832000000000000000">
+PKG_getClientjobsStatus</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> lists special packages matching a key
+<SPAN  CLASS="textbf">Description:</SPAN> return the status of a job
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>key: search key
+<LI>client: name of the client
+</LI>
+<LI>package: name of the package
+</LI>
+<LI>distr: the name of the distribution
+</LI>
+<LI>params: parameter for installing the package
+</LI>
+<LI>normalPackage: the name of a normal package
 </LI>
 </UL>
 
@@ -68,7 +76,7 @@ PKG_listSpecialpackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-04-30
+2015-09-06
 </ADDRESS>
 </BODY>
 </HTML>

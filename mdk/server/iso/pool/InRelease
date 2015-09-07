@@ -1,0 +1,33 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Date: Sun, 06 Sep 2015 21:57:08 UTC
+Origin: m23
+Suite: stable
+MD5Sum:
+ 8020785787d1031c6eba87f6d337f715            17089 Packages
+ 3c18326740326e110d47030f56b21cee             5965 Packages.bz2
+ 30627647940ef0aefa60960127fa66ed             6196 Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e                0 Release
+SHA1:
+ 2086318af30ab4ef3eaa979e984f4b0333cbe32a            17089 Packages
+ 851b84133226206e256d141b6ddec2d314f3a3fd             5965 Packages.bz2
+ d87a9cc02a4af5cf7eea451302999f7b2096e084             6196 Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Release
+SHA256:
+ b76d699b2e636e196223820a0a269033ff30c7ed90945f2c1ee7ee4c6cd0a1e7            17089 Packages
+ 3edb40d04539cbf79d1dd88e04e628acb995129474c9ff085bed8f87c62cc98f             5965 Packages.bz2
+ d43ce893703c08ff928013e06c8bf3cfe4515411be48e11394d0657c853b3c3e             6196 Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Release
+SHA512:
+ 1a21a9bfd6bee96d020348be3736fd9f0e0bf850c115389f367b828a6d62af9235204851d6b86aa2105697589060a1cfef5a87e9a42f6a6a029f6a887c39f7ab            17089 Packages
+ a9f5f810618a643e28faae76226a36874f87a8e3e28126aa8d5027c5672b6844cbd91bf73f81934a708221a351366d8739aaf7ff3c9ab37eabd93ac0e300a4c0             5965 Packages.bz2
+ 97b722ee02dc5e4deb4bab8c32c9d82537d2d136512b7f43c85b4d2092cb0a3f30fe17a303982f764fbafb38dd63ef0c3821022e7871b5db61f625b9d6136ded             6196 Packages.gz
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 Release
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAlXstrQACgkQxvCRPTMF5jphMACeOx6QJr7gXCZ9qg2usKobY7Ti
+uZQAmgLo8OdI4qafXLuocACJ+kFqLESY
+=Q1tE
+-----END PGP SIGNATURE-----

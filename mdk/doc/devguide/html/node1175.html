@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_CloudStackGetVMStatus</TITLE>
-<META NAME="description" CONTENT="VM_CloudStackGetVMStatus">
+<TITLE>UPDATE_doUpdate</TITLE>
+<META NAME="description" CONTENT="UPDATE_doUpdate">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1176.html">
 <LINK REL="previous" HREF="node1174.html">
-<LINK REL="up" HREF="node1162.html">
+<LINK REL="up" HREF="node1174.html">
 <LINK REL="next" HREF="node1176.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18779"
+<A NAME="tex2html18783"
   HREF="node1176.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18775"
-  HREF="node1162.html">
+<A NAME="tex2html18779"
+  HREF="node1174.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18769"
+<A NAME="tex2html18773"
   HREF="node1174.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18777"
+<A NAME="tex2html18781"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18780"
-  HREF="node1176.html">VM_CloudStackClientName2ClientID</A>
-<B> Up:</B> <A NAME="tex2html18776"
-  HREF="node1162.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html18770"
-  HREF="node1174.html">VM_CloudStackStopVM</A>
- &nbsp; <B>  <A NAME="tex2html18778"
+<B> Next:</B> <A NAME="tex2html18784"
+  HREF="node1176.html">UPDATE_running</A>
+<B> Up:</B> <A NAME="tex2html18780"
+  HREF="node1174.html">./inc/update.php</A>
+<B> Previous:</B> <A NAME="tex2html18774"
+  HREF="node1174.html">./inc/update.php</A>
+ &nbsp; <B>  <A NAME="tex2html18782"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083813000000000000000">
-VM_CloudStackGetVMStatus</A>
+<H2><A NAME="SECTION008371000000000000000">
+UPDATE_doUpdate</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> gets the status of a virtual machine
+<SPAN  CLASS="textbf">Description:</SPAN> downloads and executes the update script.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>clientname: CloudStack name of the instance / name of the m23 client.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>textmessage with machine status (like 'Running' or 'Stopped') or FALSE if no status could be retrieved (e.g. if machine doesn't exist)
+<LI>URL: url to fetch the update file from
 </LI>
 </UL>
 
@@ -74,7 +68,7 @@ VM_CloudStackGetVMStatus</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-04-30
+2015-09-06
 </ADDRESS>
 </BODY>
 </HTML>

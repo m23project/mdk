@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_GUIstepCreateCloudStackVM</TITLE>
-<META NAME="description" CONTENT="VM_GUIstepCreateCloudStackVM">
+<TITLE>VM_captureVMScreenAsMovie</TITLE>
+<META NAME="description" CONTENT="VM_captureVMScreenAsMovie">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,74 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1181.html">
 <LINK REL="previous" HREF="node1179.html">
-<LINK REL="up" HREF="node1162.html">
+<LINK REL="up" HREF="node1179.html">
 <LINK REL="next" HREF="node1181.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18839"
+<A NAME="tex2html18907"
   HREF="node1181.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18835"
-  HREF="node1162.html">
+<A NAME="tex2html18903"
+  HREF="node1179.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18829"
+<A NAME="tex2html18897"
   HREF="node1179.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18837"
+<A NAME="tex2html18905"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18840"
-  HREF="node1181.html">VM_CloudStack_available</A>
-<B> Up:</B> <A NAME="tex2html18836"
-  HREF="node1162.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html18830"
-  HREF="node1179.html">VM_CloudStack_getServerIP</A>
- &nbsp; <B>  <A NAME="tex2html18838"
+<B> Next:</B> <A NAME="tex2html18908"
+  HREF="node1181.html">VM_CloudStackDeleteClientVM</A>
+<B> Up:</B> <A NAME="tex2html18904"
+  HREF="node1179.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html18898"
+  HREF="node1179.html">./inc/vm.php</A>
+ &nbsp; <B>  <A NAME="tex2html18906"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083818000000000000000">
-VM_GUIstepCreateCloudStackVM</A>
+<H2><A NAME="SECTION008381000000000000000">
+VM_captureVMScreenAsMovie</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Shows a dialog to create a new VM in CloudStack.
-<BR>
+<SPAN  CLASS="textbf">Description:</SPAN> Enables/disables capturing the screen of a VM to a movie file.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+
+<UL>
+<LI>type: VM_SW_VBOX for VirtualBox OSE
+</LI>
+<LI>vmname: Name of the VM.
+</LI>
+<LI>enable: true for enabling the capturing, false for disabling.
+</LI>
+<LI>movieFile: File to store the capturing in.
+</LI>
+<LI>width: Width of the movie.
+</LI>
+<LI>height: Height of the movie.
+</LI>
+<LI>rate: Bitrate of the movie.
+</LI>
+<LI>fps: Frames per second
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>BASH code for enabling/disabling the capturing of the VM's screens to a movie file.
+</LI>
+</UL>
+
 <P>
 <BR><HR>
 <ADDRESS>
 root
-2015-04-30
+2015-09-06
 </ADDRESS>
 </BODY>
 </HTML>

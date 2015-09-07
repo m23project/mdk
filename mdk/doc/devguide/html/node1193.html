@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_generateVBOXaddonDownloadCMD</TITLE>
-<META NAME="description" CONTENT="VM_generateVBOXaddonDownloadCMD">
+<TITLE>VM_CloudStackClientName2ClientID</TITLE>
+<META NAME="description" CONTENT="VM_CloudStackClientName2ClientID">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1194.html">
 <LINK REL="previous" HREF="node1192.html">
-<LINK REL="up" HREF="node1162.html">
+<LINK REL="up" HREF="node1179.html">
 <LINK REL="next" HREF="node1194.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18995"
+<A NAME="tex2html19063"
   HREF="node1194.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18991"
-  HREF="node1162.html">
+<A NAME="tex2html19059"
+  HREF="node1179.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18985"
+<A NAME="tex2html19053"
   HREF="node1192.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18993"
+<A NAME="tex2html19061"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18996"
-  HREF="node1194.html">VM_downloadVBOXaddons</A>
-<B> Up:</B> <A NAME="tex2html18992"
-  HREF="node1162.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html18986"
-  HREF="node1192.html">VM_getVBoxAddonDefaultVersion</A>
- &nbsp; <B>  <A NAME="tex2html18994"
+<B> Next:</B> <A NAME="tex2html19064"
+  HREF="node1194.html">VM_CloudStackNetBootActivate</A>
+<B> Up:</B> <A NAME="tex2html19060"
+  HREF="node1179.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html19054"
+  HREF="node1192.html">VM_CloudStackGetVMStatus</A>
+ &nbsp; <B>  <A NAME="tex2html19062"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083831000000000000000">
-VM_generateVBOXaddonDownloadCMD</A>
+<H2><A NAME="SECTION0083814000000000000000">
+VM_CloudStackClientName2ClientID</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates the download commands to download a VirtualBox addition ISO and to extract the addition installers for Linux.
+<SPAN  CLASS="textbf">Description:</SPAN> returns the Cloudstack-ID of a client with the given client host name
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>version: Version number of the VirtualBox addition to download and extract.
+<LI>clientname: Host name of the virtual machine
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Cloudstack-Client-ID if the clientname can be retrieved, False otherwise 
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ VM_generateVBOXaddonDownloadCMD</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-04-30
+2015-09-06
 </ADDRESS>
 </BODY>
 </HTML>

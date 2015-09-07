@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_rebootAndActivateNetboot</TITLE>
-<META NAME="description" CONTENT="VM_rebootAndActivateNetboot">
+<TITLE>VM_CloudStackWriteConfFile</TITLE>
+<META NAME="description" CONTENT="VM_CloudStackWriteConfFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1186.html">
 <LINK REL="previous" HREF="node1184.html">
-<LINK REL="up" HREF="node1162.html">
+<LINK REL="up" HREF="node1179.html">
 <LINK REL="next" HREF="node1186.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18899"
+<A NAME="tex2html18967"
   HREF="node1186.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18895"
-  HREF="node1162.html">
+<A NAME="tex2html18963"
+  HREF="node1179.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18889"
+<A NAME="tex2html18957"
   HREF="node1184.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18897"
+<A NAME="tex2html18965"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18900"
-  HREF="node1186.html">VM_shutdownAndDisableNetbootAfterInstall</A>
-<B> Up:</B> <A NAME="tex2html18896"
-  HREF="node1162.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html18890"
-  HREF="node1184.html">VM_shutdownAndDisableNetbootAfterInstall</A>
- &nbsp; <B>  <A NAME="tex2html18898"
+<B> Next:</B> <A NAME="tex2html18968"
+  HREF="node1186.html">VM_CloudStackUploadIso</A>
+<B> Up:</B> <A NAME="tex2html18964"
+  HREF="node1179.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html18958"
+  HREF="node1184.html">VM_CloudStackConfigGUI</A>
+ &nbsp; <B>  <A NAME="tex2html18966"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083823000000000000000">
-VM_rebootAndActivateNetboot</A>
+<H2><A NAME="SECTION008386000000000000000">
+VM_CloudStackWriteConfFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Reboots an VM and activates network booting.
+<SPAN  CLASS="textbf">Description:</SPAN> Writes the CloudStack config file or writes a basic config file, if it does not exist.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>vmname: Name of the VM.
+<LI>overwrite: Set to true, if the config file should be overwritten in any case.
+</LI>
+<LI>CLOUDSTACK_API_ENDPOINT: The API endpoint.
+</LI>
+<LI>CLOUDSTACK_API_KEY: The API key.
+</LI>
+<LI>CLOUDSTACK_SECRET_KEY: The secret API key.
+</LI>
+<LI>CLOUDSTACK_SERVICE_OFFERING_ID: The virtual CPU and RAM combination to use for a new VM.
+</LI>
+<LI>CLOUDSTACK_TEMPLATE_ID: The ID of the m23 client installation ISO.
+</LI>
+<LI>CLOUDSTACK_NETWORKIDS: The ID of the network to use.
+</LI>
+<LI>CLOUDSTACK_DISK_OFFERING_ID: The virtual hard disk type.
 </LI>
 </UL>
 
@@ -68,7 +82,7 @@ VM_rebootAndActivateNetboot</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-04-30
+2015-09-06
 </ADDRESS>
 </BODY>
 </HTML>

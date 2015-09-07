@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_deleteFile</TITLE>
-<META NAME="description" CONTENT="SERVER_deleteFile">
+<TITLE>SERVER_getAptGetInstallCommand</TITLE>
+<META NAME="description" CONTENT="SERVER_getAptGetInstallCommand">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1110.html">
 <LINK REL="previous" HREF="node1108.html">
-<LINK REL="up" HREF="node1073.html">
+<LINK REL="up" HREF="node1083.html">
 <LINK REL="next" HREF="node1110.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html17890"
+<A NAME="tex2html17954"
   HREF="node1110.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html17886"
-  HREF="node1073.html">
+<A NAME="tex2html17950"
+  HREF="node1083.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html17880"
+<A NAME="tex2html17944"
   HREF="node1108.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html17888"
+<A NAME="tex2html17952"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html17891"
-  HREF="node1110.html">SERVER_getFileContents</A>
-<B> Up:</B> <A NAME="tex2html17887"
-  HREF="node1073.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html17881"
-  HREF="node1108.html">SERVER_addLineToFile</A>
- &nbsp; <B>  <A NAME="tex2html17889"
+<B> Next:</B> <A NAME="tex2html17955"
+  HREF="node1110.html">SERVER_installTool</A>
+<B> Up:</B> <A NAME="tex2html17951"
+  HREF="node1083.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html17945"
+  HREF="node1108.html">SERVER_daemonStartStop</A>
+ &nbsp; <B>  <A NAME="tex2html17953"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083536000000000000000">
-SERVER_deleteFile</A>
+<H2><A NAME="SECTION0083526000000000000000">
+SERVER_getAptGetInstallCommand</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Deletes a file from the server.
+<SPAN  CLASS="textbf">Description:</SPAN> Returns the apt-get commands to install a tool on the server.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>fileName: Name of the file to delete.
+<LI>pkgName: name of the software package
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>: true on successfully execution otherwise false.
+<LI>: apt-get commands to install a tool on the server.
 </LI>
 </UL>
 
@@ -74,7 +74,7 @@ SERVER_deleteFile</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-04-30
+2015-09-06
 </ADDRESS>
 </BODY>
 </HTML>

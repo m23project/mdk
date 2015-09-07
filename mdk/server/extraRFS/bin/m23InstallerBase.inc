@@ -12,6 +12,8 @@
 #Checks the fstab for needed entries and adds them, if missing. Then mounts the devices
 checkFstabAndMount()
 {
+	mkdir -p /proc /sys /dev/pts
+
 	if [ `grep -c proc /etc/fstab` -eq 0 ]
 	then
 		echo "none /proc proc defaults 0 0" >> /etc/fstab
@@ -26,10 +28,12 @@ checkFstabAndMount()
 	then
 		echo "none /dev/pts devpts defaults 0 0" >> /etc/fstab
 	fi
-	
-	mount /proc
-	mount /sys
-	mount /dev/pts
+
+	sync
+
+	mount /proc 2> /dev/null
+	mount /sys 2> /dev/null
+	mount /dev/pts 2> /dev/null
 }
 
 
@@ -161,15 +165,16 @@ configureMySQLmycnf()
 		chown root.root /etc/mysql/my.cnf
 		chmod 644 /etc/mysql/my.cnf
 	fi
-	
-	if [ $(grep -c 'Debian GNU/Linux 7' /etc/issue) -gt 0 ]
-	then
-		sed -i 's/skip-innodb/#skip-innodb/g' /etc/mysql/my.cnf
-	fi
+
+	sed -i 's/skip-innodb/#skip-innodb/g' /etc/mysql/my.cnf
 
 	#starting the server
 	/etc/init.d/mysql stop
 	/etc/init.d/mysql start
+	
+# 	echo "DEBUG"
+# 	read lala
+
 
 	#Get username and password for the MySQL database
 	dbadmin=`grep "^user" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
@@ -180,6 +185,10 @@ configureMySQLmycnf()
 	do
 		mysql -u$dbadmin -p$dbadmpass m23 -e "TRUNCATE $table;"
 	done
+
+# echo "DEBUG"
+# mysqlshow -u$dbadmin -p$dbadmpass m23
+# read lala
 
 # 	echo "TRUNCATE clientgroups;
 # 	TRUNCATE clientjobs;
@@ -861,18 +870,28 @@ installGrub()
 
 	if test `cat /tmp/dialog.value` = "y"
 	then
+		checkFstabAndMount
+
 		bootDevice="/dev/$installdrive"
 		rootDevice="/dev/$rootdev"
 
 		createInitrd
-
-		grub-install --recheck --force $bootDevice
-
-		update-grub -y 2> /dev/null
-		if [ $? -ne 0 ]
+		
+		if /usr/sbin/grub-install $bootDevice
 		then
-			/usr/sbin/update-grub
+			echo "grub ok"
+		else
+			grub-install --recheck --force $bootDevice
 		fi
+
+		/usr/sbin/update-grub2
+		sync
+
+# 		update-grub -y 2> /dev/null
+# 		if [ $? -ne 0 ]
+# 		then
+# 			/usr/sbin/update-grub
+# 		fi
 	fi
 
 	showDialog "$I18N_windowheader" "$I18N_windowheader" msgbox 14 45 "$I18N_installationfinishedtext"
@@ -990,20 +1009,26 @@ installDebs()
 
 	apt-get -y --force-yes update
 	export DEBIAN_FRONTEND=noninteractive
+# echo "DEBUG"
 	apt-get -y --force-yes install m23
+# read lala
 
 	#Make sure GPG will be configured and there are no keys stored
 	rm /home/grdmgpg/.gnupg/secring.gpg /home/grdmgpg/.gnupg/pubring.gpg
 
+# echo "DEBUG"
 	dpkg-reconfigure m23
+# read lala
+
+	
 	apt-get -y --force-yes install m23-vbox
 	dpkg-reconfigure m23-vbox
 
 
 	#Add the URL for server update if missing
-	if [ `grep -c "http://vorboss.dl.sourceforge.net" /tmp/sources.list` -eq 0 ]
+	if [ `grep "http://skylink.dl.sourceforge.net" /tmp/sources.list | grep ^deb -c` -eq 0 ]
 	then
-		echo "deb http://vorboss.dl.sourceforge.net/project/m23/m23inst ./" >> /tmp/sources.list
+		echo "deb http://skylink.dl.sourceforge.net/project/m23/m23inst ./" >> /tmp/sources.list
 	fi
 
 	mv /tmp/sources.list /etc/apt
@@ -1067,7 +1092,7 @@ updateSystem()
 
 		echo 'Acquire::http::Pipeline-Depth "0";' > /etc/apt/apt.conf.d/90localsettings
 		dpkg --clear-avail
-		sync-available
+		sync-available 2> /dev/null
 		echo 3 > /proc/sys/vm/drop_caches
 
 		apt-get -y --force-yes update		
@@ -1080,6 +1105,44 @@ updateSystem()
 		mv /sbin/init.deactivated /sbin/init
 		mv /usr/bin/ischroot.deactivated /usr/bin/ischroot
 	fi
+}
+
+
+
+
+
+# Change MySQL init to a version working with the boot CD
+setISOInitMySQL()
+{
+	if [ ! -f /etc/init.d/mysql.m23 ]
+	then
+		mv /etc/init.d/mysql /etc/init.d/mysql.m23
+		
+		cat >> /etc/init.d/mysql << "EOF"
+#!/bin/bash
+case "${1:-''}" in
+	'start')
+		mysqld_safe&
+		sleep 3
+	;;
+	'stop')
+		killall -9 mysqld_safe
+		sleep 1
+	;;
+esac
+EOF
+	chmod +x /etc/init.d/mysql
+	fi
+}
+
+
+
+
+
+# Change MySQL init to a version working with systemd
+setSystemdInitMySQL()
+{
+	mv /etc/init.d/mysql.m23 /etc/init.d/mysql
 }
 
 
@@ -1113,6 +1176,7 @@ startBaseInstallation()
 
 	extractFromCD
 	chrootSystem
+#	setISOInitMySQL
 	configureNetwork
 	configureMySQLmycnf
 	setRootPwd
@@ -1254,6 +1318,6 @@ keyboard-configuration keyboard-configuration/variantcode string' > /tmp/keyboar
 	updateSystem
 
 	umount /mnt/cdrom
-	#installLilo
+#	setSystemdInitMySQL
 	installGrub
 }

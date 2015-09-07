@@ -66,7 +66,7 @@ updateDB()
 		bunzip2 /tmp/m23-install/m23.sql.bz2
 		echo "Entpacken: /tmp/m23-install/m23.sql.bz2"  >> /m23.log
 		sqlfile="/tmp/m23-install/m23.sql"
-		. /usr/share/wwwconfig-common/mysql-exec.sh
+		. /usr/share/wwwconfig-common/mysql-exec.sh >> /m23.log
 		rm $sqlfile
 
 		#create database m23captured
@@ -74,7 +74,7 @@ updateDB()
 		. /usr/share/wwwconfig-common/mysql-createdb.sh
 		bunzip2  /tmp/m23-install/m23captured.sql.bz2	
 		sqlfile="/tmp/m23-install/m23captured.sql"
-		. /usr/share/wwwconfig-common/mysql-exec.sh
+		. /usr/share/wwwconfig-common/mysql-exec.sh >> /m23.log
 		rm $sqlfile
 		rm -r /tmp/m23-install
 	fi
@@ -256,6 +256,9 @@ rm /m23/etc/.htpasswd.orig
 db_get m23/configMySQL
 if [ "$RET" = "true" ]
 then
+	# Make sure, innoDB is enabled
+	sed -i 's/skip-innodb/#skip-innodb/' /etc/mysql/my.cnf
+	/etc/init.d/mysql restart
 
 	dbname="m23"
 	dbserver="localhost"
@@ -456,12 +459,18 @@ refresh_pattern Sources.gz$     0   41%    360
 refresh_pattern Sources$         0   41%    360
 refresh_pattern Sources.bz2$    0   41%    360
 
-refresh_pattern .orig.tar.gz$ 525600 0% 525600 override-lastmod ignore-reload reload-into-ims ignore-no-cache
-refresh_pattern .diff.gz$     525600 0% 525600 override-lastmod ignore-reload reload-into-ims ignore-no-cache
-refresh_pattern .deb$         525600 0% 525600 override-lastmod ignore-reload reload-into-ims ignore-no-cache
-refresh_pattern .tar.7z$     525600 0% 525600 override-lastmod ignore-reload reload-into-ims ignore-no-cache
-refresh_pattern .dsc$         525600 0% 525600 override-lastmod ignore-reload reload-into-ims ignore-no-cache
-refresh_pattern .rpm$         525600 0% 525600 override-lastmod ignore-reload reload-into-ims ignore-no-cache
+
+refresh_pattern deb$			129600 100% 129600
+refresh_pattern udeb$			129600 100% 129600
+refresh_pattern tar.gz$			129600 100% 129600
+refresh_pattern tar.xz$			129600 100% 129600
+refresh_pattern tar.bz2$		129600 100% 129600
+refresh_pattern .orig.tar.gz$	129600 100% 129600
+refresh_pattern .diff.gz$		129600 100% 129600
+refresh_pattern .tar.7z$		129600 100% 129600
+refresh_pattern .dsc$			129600 100% 129600
+refresh_pattern .rpm$			129600 100% 129600
+
 
 http_access deny purge !localhost
 EOFSQUID
@@ -665,7 +674,7 @@ echo "	<VirtualHost *:443>
 	fi
 	
 	#Get the absolute path to the PHP ini file(s)
-	for phpFile in `find /etc/php?/apache* | grep php.ini`
+	for phpFile in `find /etc/php?/apache* | grep php.ini` `find /etc/php?/cli | grep php.ini`
 	do
 		#PHP settings
 		sed -i -e 's/register_globals = Off/register_globals = On/g' -e 's/memory_limit[ =0-9MG]*;/memory_limit = 32M;/g' -e 's/short_open_tag = Off/short_open_tag = On/g' $phpFile

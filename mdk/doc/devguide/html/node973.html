@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_getClientsWithWaitingJobs</TITLE>
-<META NAME="description" CONTENT="PKG_getClientsWithWaitingJobs">
+<TITLE>PKG_showPreviewInstallationDeinstallation</TITLE>
+<META NAME="description" CONTENT="PKG_showPreviewInstallationDeinstallation">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node974.html">
 <LINK REL="previous" HREF="node972.html">
-<LINK REL="up" HREF="node893.html">
+<LINK REL="up" HREF="node902.html">
 <LINK REL="next" HREF="node974.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16153"
+<A NAME="tex2html16214"
   HREF="node974.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16149"
-  HREF="node893.html">
+<A NAME="tex2html16210"
+  HREF="node902.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16143"
+<A NAME="tex2html16204"
   HREF="node972.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16151"
+<A NAME="tex2html16212"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16154"
-  HREF="node974.html">PKG_getClientsByPackages</A>
-<B> Up:</B> <A NAME="tex2html16150"
-  HREF="node893.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16144"
-  HREF="node972.html">PKG_getClientsWithPackage</A>
- &nbsp; <B>  <A NAME="tex2html16152"
+<B> Next:</B> <A NAME="tex2html16215"
+  HREF="node974.html">PKG_updateSourcesListAtAllClients</A>
+<B> Up:</B> <A NAME="tex2html16211"
+  HREF="node902.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16205"
+  HREF="node972.html">PKG_previewInstallationDeinstallation</A>
+ &nbsp; <B>  <A NAME="tex2html16213"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082880000000000000000">
-PKG_getClientsWithWaitingJobs</A>
+<H2><A NAME="SECTION0082871000000000000000">
+PKG_showPreviewInstallationDeinstallation</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Gets all clients that have waiting jobs.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> showes what happens if a client installs / deinstalls waiting packages and generates a table with title
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>Array with all clients that have waiting jobs.
+<LI>clientName: name of the client
+</LI>
+<LI>install: set to true, if packages should be installed. if false the packages should be deinstalled
 </LI>
 </UL>
 
@@ -68,7 +70,7 @@ PKG_getClientsWithWaitingJobs</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-04-30
+2015-09-06
 </ADDRESS>
 </BODY>
 </HTML>
