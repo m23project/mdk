@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_getvPart</TITLE>
-<META NAME="description" CONTENT="FDISK_getvPart">
+<TITLE>FDISK_formatExisting</TITLE>
+<META NAME="description" CONTENT="FDISK_formatExisting">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,51 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node559.html">
 <LINK REL="previous" HREF="node557.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node559.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10853"
+<A NAME="tex2html10863"
   HREF="node559.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10849"
-  HREF="node480.html">
+<A NAME="tex2html10859"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10843"
+<A NAME="tex2html10853"
   HREF="node557.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10851"
+<A NAME="tex2html10861"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10854"
-  HREF="node559.html">FDISK_rmJob</A>
-<B> Up:</B> <A NAME="tex2html10850"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10844"
-  HREF="node557.html">FDISK_formatExisting</A>
- &nbsp; <B>  <A NAME="tex2html10852"
+<B> Next:</B> <A NAME="tex2html10864"
+  HREF="node559.html">FDISK_getvPart</A>
+<B> Up:</B> <A NAME="tex2html10860"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10854"
+  HREF="node557.html">FDISK_listInstPartSelector</A>
+ &nbsp; <B>  <A NAME="tex2html10862"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081678000000000000000">
-FDISK_getvPart</A>
+<H2><A NAME="SECTION0081677000000000000000">
+FDISK_formatExisting</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> returns vPart with the real device number.
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
+<LI>instPart: partition to put the operation system on (e.g. /dev/hda1)
+</LI>
+<LI>swapPart: partition to put the swap file system on (e.g. /dev/hdb2)
+</LI>
+<LI>command: parted commands to do the installation
+</LI>
 <LI>param: parameter string containing status informations about the harddisks
-</LI>
-<LI>dev: selected device (e.g. hda)
-</LI>
-<LI>devNr: number of partition
 </LI>
 </UL>
 
@@ -72,7 +73,7 @@ FDISK_getvPart</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

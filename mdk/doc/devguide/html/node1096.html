@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_fileExists</TITLE>
-<META NAME="description" CONTENT="SERVER_fileExists">
+<TITLE>SERVER_insertLineNumber</TITLE>
+<META NAME="description" CONTENT="SERVER_insertLineNumber">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1097.html">
 <LINK REL="previous" HREF="node1095.html">
-<LINK REL="up" HREF="node1083.html">
+<LINK REL="up" HREF="node1086.html">
 <LINK REL="next" HREF="node1097.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html17798"
+<A NAME="tex2html17810"
   HREF="node1097.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html17794"
-  HREF="node1083.html">
+<A NAME="tex2html17806"
+  HREF="node1086.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html17788"
+<A NAME="tex2html17800"
   HREF="node1095.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html17796"
+<A NAME="tex2html17808"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html17799"
-  HREF="node1097.html">SERVER_getPublicSSHKeyOfm23Server</A>
-<B> Up:</B> <A NAME="tex2html17795"
-  HREF="node1083.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html17789"
-  HREF="node1095.html">SERVER_delAdmin</A>
- &nbsp; <B>  <A NAME="tex2html17797"
+<B> Next:</B> <A NAME="tex2html17811"
+  HREF="node1097.html">SERVER_addAdmin</A>
+<B> Up:</B> <A NAME="tex2html17807"
+  HREF="node1086.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html17801"
+  HREF="node1095.html">SERVER_killBackgroundJob</A>
+ &nbsp; <B>  <A NAME="tex2html17809"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083513000000000000000">
-SERVER_fileExists</A>
+<H2><A NAME="SECTION0083510000000000000000">
+SERVER_insertLineNumber</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Checks if a file exits, that the Apache user has never access to.
+<SPAN  CLASS="textbf">Description:</SPAN> Inserts a text AT or AFTER a line number or creates a new file with the given name, if it doesn't exists.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>: file: Name (with full path) of the file to check.
+<LI>file: the name of the file
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>: True, if the file exists other wise false.
+<LI>lineNumber: reference line number for inserting
+</LI>
+<LI>insertText: text to insert
+</LI>
+<LI>mode: The access mode the newly created file should have.
+</LI>
+<LI>insertMode: "0" insert AT, "1" insert AFTER line number
+</LI>
+<LI>addIfNotExists: set to true, if the the line should be added only if the line doesn't exist. false, if the line should be added on every execution.
 </LI>
 </UL>
 
@@ -74,7 +78,7 @@ SERVER_fileExists</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

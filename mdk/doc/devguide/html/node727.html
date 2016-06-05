@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_submitDefine</TITLE>
-<META NAME="description" CONTENT="HTML_submitDefine">
+<TITLE>HTML_checkBox</TITLE>
+<META NAME="description" CONTENT="HTML_checkBox">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,42 +21,42 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node728.html">
 <LINK REL="previous" HREF="node726.html">
-<LINK REL="up" HREF="node672.html">
+<LINK REL="up" HREF="node674.html">
 <LINK REL="next" HREF="node728.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13012"
+<A NAME="tex2html13023"
   HREF="node728.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13008"
-  HREF="node672.html">
+<A NAME="tex2html13019"
+  HREF="node674.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13002"
+<A NAME="tex2html13013"
   HREF="node726.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13010"
+<A NAME="tex2html13021"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13013"
-  HREF="node728.html">HTML_submitCheck</A>
-<B> Up:</B> <A NAME="tex2html13009"
-  HREF="node672.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html13003"
-  HREF="node726.html">HTML_checkBoxCheckAll</A>
- &nbsp; <B>  <A NAME="tex2html13011"
+<B> Next:</B> <A NAME="tex2html13024"
+  HREF="node728.html">HTML_checkBoxCheckAll</A>
+<B> Up:</B> <A NAME="tex2html13020"
+  HREF="node674.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html13014"
+  HREF="node726.html">HTML_selection</A>
+ &nbsp; <B>  <A NAME="tex2html13022"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082055000000000000000">
-HTML_submitDefine</A>
+<H2><A NAME="SECTION0082053000000000000000">
+HTML_checkBox</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Defines but does not show a button.
+<SPAN  CLASS="textbf">Description:</SPAN> Shows a check box with label.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
@@ -64,7 +64,19 @@ HTML_submitDefine</A>
 </LI>
 <LI>label: Label of the element.
 </LI>
-<LI>extra: Extra options for the HTML input tag.
+<LI>defaultCheck: Set to true if the check box should be checked if no HTML value is given.
+</LI>
+<LI>prefKey: Variable name of the preference the dialog element stands for.
+</LI>
+<LI>htmlValue: Value of the checkbox if clicked.
+</LI>
+<LI>forceReload: Set to true if the check box should be set to the state of $defaultCheck in any case.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>True if the check box is checked.
 </LI>
 </UL>
 
@@ -72,7 +84,7 @@ HTML_submitDefine</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

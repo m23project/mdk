@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>GRP_listAllClientsInGroups</TITLE>
-<META NAME="description" CONTENT="GRP_listAllClientsInGroups">
+<TITLE>GRP_showSelDistrSources</TITLE>
+<META NAME="description" CONTENT="GRP_showSelDistrSources">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node616.html">
 <LINK REL="previous" HREF="node614.html">
-<LINK REL="up" HREF="node590.html">
+<LINK REL="up" HREF="node591.html">
 <LINK REL="next" HREF="node616.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11563"
+<A NAME="tex2html11573"
   HREF="node616.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11559"
-  HREF="node590.html">
+<A NAME="tex2html11569"
+  HREF="node591.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11553"
+<A NAME="tex2html11563"
   HREF="node614.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11561"
+<A NAME="tex2html11571"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11564"
-  HREF="node616.html">GRP_HTMLBackToOverview</A>
-<B> Up:</B> <A NAME="tex2html11560"
-  HREF="node590.html">./inc/groups.php</A>
-<B> Previous:</B> <A NAME="tex2html11554"
-  HREF="node614.html">GRP_showSelDistrSources</A>
- &nbsp; <B>  <A NAME="tex2html11562"
+<B> Next:</B> <A NAME="tex2html11574"
+  HREF="node616.html">GRP_listAllClientsInGroups</A>
+<B> Up:</B> <A NAME="tex2html11570"
+  HREF="node591.html">./inc/groups.php</A>
+<B> Previous:</B> <A NAME="tex2html11564"
+  HREF="node614.html">GRP_getDistrsAndSourcesLists</A>
+ &nbsp; <B>  <A NAME="tex2html11572"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081725000000000000000">
-GRP_listAllClientsInGroups</A>
+<H2><A NAME="SECTION0081724000000000000000">
+GRP_showSelDistrSources</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> returns an array with all client names contained in the groups
+<SPAN  CLASS="textbf">Description:</SPAN> shows a dialog for selection of distribution and package source name. The choices are taken form distr and packagesource values of the clients in the group. If there is only one entry for one or both of the values, the value is written back to the input variable otherwise a HTML selection is shown.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>groupNames: the names of the groups stored in an array
+<LI>groupNames: group names stores in an array
+</LI>
+<LI>distr: distribution to show first and variable to write the distribution name back
+</LI>
+<LI>sourceslist: sources list to show first and variable to write the sources list name back
 </LI>
 </UL>
 
@@ -68,7 +72,7 @@ GRP_listAllClientsInGroups</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_setGuestInDB</TITLE>
-<META NAME="description" CONTENT="VM_setGuestInDB">
+<TITLE>VM_getAllVMHosts</TITLE>
+<META NAME="description" CONTENT="VM_getAllVMHosts">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1233.html">
 <LINK REL="previous" HREF="node1231.html">
-<LINK REL="up" HREF="node1179.html">
+<LINK REL="up" HREF="node1182.html">
 <LINK REL="next" HREF="node1233.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html19531"
+<A NAME="tex2html19543"
   HREF="node1233.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html19527"
-  HREF="node1179.html">
+<A NAME="tex2html19539"
+  HREF="node1182.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html19521"
+<A NAME="tex2html19533"
   HREF="node1231.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html19529"
+<A NAME="tex2html19541"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html19532"
-  HREF="node1233.html">VM_statusIcons</A>
-<B> Up:</B> <A NAME="tex2html19528"
-  HREF="node1179.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html19522"
-  HREF="node1231.html">VM_setHostInDB</A>
- &nbsp; <B>  <A NAME="tex2html19530"
+<B> Next:</B> <A NAME="tex2html19544"
+  HREF="node1233.html">VM_setVisualURL</A>
+<B> Up:</B> <A NAME="tex2html19540"
+  HREF="node1182.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html19534"
+  HREF="node1231.html">VM_GUIstepSelectHost</A>
+ &nbsp; <B>  <A NAME="tex2html19542"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083853000000000000000">
-VM_setGuestInDB</A>
+<H2><A NAME="SECTION0083850000000000000000">
+VM_getAllVMHosts</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Makes the client a VM guest in the DB.
+<SPAN  CLASS="textbf">Description:</SPAN> Returns a list of all VM hosts with a choosen virtualisation software.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>clientName: Name of the m23 client (VM guest)
-</LI>
-<LI>VMSoftware: Type of the virtualisation software.
-</LI>
-<LI>VMHostName: Name of the m23 client (VM host)
+<LI>VM_software: Code number of the virtualisation software.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>MySQL resource or false on error.
+<LI>Associative array with the hostname as key and value.
 </LI>
 </UL>
 
@@ -78,7 +74,7 @@ VM_setGuestInDB</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

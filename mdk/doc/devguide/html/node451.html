@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_fastGetInstalledPackages</TITLE>
-<META NAME="description" CONTENT="PKG_fastGetInstalledPackages">
+<TITLE>PKG_updatePackageSearchCacheFile</TITLE>
+<META NAME="description" CONTENT="PKG_updatePackageSearchCacheFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node452.html">
 <LINK REL="previous" HREF="node450.html">
-<LINK REL="up" HREF="node449.html">
+<LINK REL="up" HREF="node450.html">
 <LINK REL="next" HREF="node452.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9442"
+<A NAME="tex2html9452"
   HREF="node452.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9438"
-  HREF="node449.html">
+<A NAME="tex2html9448"
+  HREF="node450.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9432"
+<A NAME="tex2html9442"
   HREF="node450.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9440"
+<A NAME="tex2html9450"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9443"
-  HREF="node452.html">pkgUpdateCacheOnServer</A>
-<B> Up:</B> <A NAME="tex2html9439"
-  HREF="node449.html">./inc/distr/halfSister/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html9433"
-  HREF="node450.html">PKG_updatePackageSearchCacheFile</A>
- &nbsp; <B>  <A NAME="tex2html9441"
+<B> Next:</B> <A NAME="tex2html9453"
+  HREF="node452.html">PKG_fastGetInstalledPackages</A>
+<B> Up:</B> <A NAME="tex2html9449"
+  HREF="node450.html">./inc/distr/halfSister/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html9443"
+  HREF="node450.html">./inc/distr/halfSister/packages.php</A>
+ &nbsp; <B>  <A NAME="tex2html9451"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008142000000000000000">
-PKG_fastGetInstalledPackages</A>
+<H2><A NAME="SECTION008141000000000000000">
+PKG_updatePackageSearchCacheFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Gets a list of all installed packages (faster than dpkg -get-selections).
+<SPAN  CLASS="textbf">Description:</SPAN> Updates the compressed package search file.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>storeFile: File name to store the list of installed on the client or empty if the list should be outputted to stdout.
+<LI>packagesource: Name of the package sources list.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>The name of the package cache.
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ PKG_fastGetInstalledPackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

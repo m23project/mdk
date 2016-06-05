@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_closeSearch</TITLE>
-<META NAME="description" CONTENT="PKG_closeSearch">
+<TITLE>PKG_OptionPageRender2</TITLE>
+<META NAME="description" CONTENT="PKG_OptionPageRender2">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node926.html">
 <LINK REL="previous" HREF="node924.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node926.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15638"
+<A NAME="tex2html15650"
   HREF="node926.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15634"
-  HREF="node902.html">
+<A NAME="tex2html15646"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15628"
+<A NAME="tex2html15640"
   HREF="node924.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15636"
+<A NAME="tex2html15648"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15639"
-  HREF="node926.html">PKG_getNextPackage</A>
-<B> Up:</B> <A NAME="tex2html15635"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15629"
-  HREF="node924.html">PKG_countWaitingJobs</A>
- &nbsp; <B>  <A NAME="tex2html15637"
+<B> Next:</B> <A NAME="tex2html15651"
+  HREF="node926.html">PKG_countSpecialPackages</A>
+<B> Up:</B> <A NAME="tex2html15647"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15641"
+  HREF="node924.html">PKG_decodeDebconfDescription</A>
+ &nbsp; <B>  <A NAME="tex2html15649"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082823000000000000000">
-PKG_closeSearch</A>
+<H2><A NAME="SECTION0082821000000000000000">
+PKG_OptionPageRender2</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> closes a search request
+<SPAN  CLASS="textbf">Description:</SPAN> Renderes the layout of an OptionPage for debconf and stored the debconf settings into the DB.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>file: file handle
+<LI>layout: The elements (variable name, type (string, boolean, (multi)select), default value, description) of the debconf templates.
+</LI>
+<LI>client: The name of the client, the debconf settings should be stored for.
+</LI>
+<LI>package: Name of the package, the debconf settings should be stored for.
 </LI>
 </UL>
 
@@ -68,7 +72,7 @@ PKG_closeSearch</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

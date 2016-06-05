@@ -3,6 +3,14 @@
 # Source debconf library.
 . /usr/share/debconf/confmodule
 
+# Returns 0, if run on UCS
+UCS_detect()
+{
+	[ -f '/usr/sbin/udm' ]
+	echo $?
+}
+
+
 
 #Create a symlinks to the System-V-Init directory to get the Bittorrent tracker and initial client, if there are .torrent files in the share directory
 ln -s /m23/vms/bin/restoreBTServer /etc/init.d/
@@ -127,7 +135,7 @@ done
 
 
 
-if [ `grep -c Debian /etc/issue` -eq 0 ] && [ `grep -c Raspbian /etc/issue` -eq 0 ]
+if [ `grep -c Debian /etc/issue` -eq 0 ] && [ `grep -c Raspbian /etc/issue` -eq 0 ] && [ `grep -c Univention /etc/issue` -eq 0 ]
 then
 	echo "The m23 packages are ment for installation on Debian ONLY!"
 	exit 666
@@ -254,7 +262,7 @@ fi
 rm /m23/etc/.htpasswd.orig
 
 db_get m23/configMySQL
-if [ "$RET" = "true" ]
+if [ "$RET" = "true" ] || [ $(UCS_detect) -eq 0 ]
 then
 	# Make sure, innoDB is enabled
 	sed -i 's/skip-innodb/#skip-innodb/' /etc/mysql/my.cnf
@@ -287,7 +295,7 @@ fi
 
 
 db_get m23/configDHCP
-if [ "$RET" = "true" ]
+if [ "$RET" = "true" ] && [ $(UCS_detect) -ne 0 ]
 then
 	#Check if the file /etc/init.d/dhcp3-server does exist and DOESN'T contain the m23/dhcp value
 	[ -f /etc/init.d/dhcp3-server ] && [ `grep m23/dhcp /etc/init.d/dhcp3-server -c` -eq 0 ]
@@ -378,22 +386,22 @@ fi
 
 
 db_get m23/configureSquid
-if [ "$RET" = "true" ]
+if [ "$RET" = "true" ] && [ $(UCS_detect) -ne 0 ]
 then
 
-if [ -d /etc/squid3 ]
-then
-	squidName='squid3'
-	squidConf="/etc/squid3/squid.conf"
-else
-	squidName='squid'
-	squidConf="/etc/squid/squid.conf"
-fi
+	if [ -d /etc/squid3 ]
+	then
+		squidName='squid3'
+		squidConf="/etc/squid3/squid.conf"
+	else
+		squidName='squid'
+		squidConf="/etc/squid/squid.conf"
+	fi
 
 
-rm $squidConf 2> /dev/null
+	rm $squidConf 2> /dev/null
 
-hname=`cat /etc/hostname`
+	hname=`cat /etc/hostname`
 
 if [ $squidName = 'squid' ]
 then
@@ -544,7 +552,7 @@ fi
 
 
 db_get m23/configureSSL
-if [ "$RET" = "true" ]
+if [ "$RET" = "true" ] && [ $(UCS_detect) -ne 0 ]
 then
 	if [ -c /dev/random ]
 	then
@@ -570,12 +578,42 @@ then
 		rm /dev/random
 		mv /dev/random-blocks /dev/random
 	fi
-
 fi
 
 
+# Make symlinks on UCS and copy SSL certificate
+if [ $(UCS_detect) -eq 0 ]
+then
+	ln -s /m23/data+scripts/m23admin /var/www
+	ln -s /m23/data+scripts/gfx /var/www
+	ln -s /m23/data+scripts/cron.php /var/www
+	ln -s /m23/data+scripts/debugScreen.php /var/www
+	ln -s /m23/data+scripts/index.php /var/www
+	ln -s /m23/data+scripts/migrate.php /var/www
+	ln -s /m23/data+scripts/postMessage.php /var/www
+	ln -s /m23/data+scripts/work.php /var/www
+	ln -s /m23/data+scripts/devguide /var/www
+	ln -s /m23/data+scripts/extraDebs /var/www
+	ln -s /m23/data+scripts/iso /var/www
+	ln -s /m23/data+scripts/jQuery-gfx /var/www
+	ln -s /m23/data+scripts/java-vnc /var/www
+	ln -s /m23/data+scripts/js /var/www
+	ln -s /m23/data+scripts/packages /var/www
+	ln -s /m23/data+scripts/ace /var/www
+	ln -s /m23/data+scripts/distr /var/www/
+	
+	ucsSSLDir="/etc/univention/ssl/`hostname`"
+	openssl x509 -in "$ucsSSLDir/cert.pem" -subject_hash_old -noout > /m23/data+scripts/packages/baseSys/ca.hash
+	cp "$ucsSSLDir/cert.pem" /m23/data+scripts/packages/baseSys/ca.crt
+	
+	chown www-data.www-data /m23/data+scripts/packages/baseSys/ca.crt /m23/data+scripts/packages/baseSys/ca.hash
+	chmod 644 /m23/data+scripts/packages/baseSys/ca.crt /m23/data+scripts/packages/baseSys/ca.hash
+fi
+
+
+
 db_get m23/configureApache
-if [ "$RET" = "true" ]
+if [ "$RET" = "true" ] && [ $(UCS_detect) -ne 0 ]
 then
 	if [ -f /etc/default/apache2 ] && [ `grep "NO_START=1" /etc/default/apache2 -c` -eq 0 ]
 	then
@@ -677,7 +715,7 @@ echo "	<VirtualHost *:443>
 	for phpFile in `find /etc/php?/apache* | grep php.ini` `find /etc/php?/cli | grep php.ini`
 	do
 		#PHP settings
-		sed -i -e 's/register_globals = Off/register_globals = On/g' -e 's/memory_limit[ =0-9MG]*;/memory_limit = 32M;/g' -e 's/short_open_tag = Off/short_open_tag = On/g' $phpFile
+		sed -i -e 's/register_globals = Off/register_globals = On/g' -e 's/memory_limit[ =0-9MG]*;/memory_limit = 32M;/g' -e 's/short_open_tag = Off/short_open_tag = On/g' -e 's/^session.gc_probability[ =0-9]*/session.gc_probability = 5/g' -e 's/^session.gc_divisor[ =0-9]*/session.gc_divisor = 100/g' $phpFile
 
 		chown root.root $phpFile
 		chmod 644 $phpFile
@@ -709,7 +747,7 @@ echo "	<VirtualHost *:443>
 fi
 
 db_get m23/configureSudo
-if [ "$RET" = "true" ]
+if [ "$RET" = "true" ] || [ $(UCS_detect) -eq 0 ]
 then
 	if test `grep -c "^www-data          ALL=NOPASSWD:ALL" /etc/sudoers` -eq 0
 	then
@@ -720,7 +758,7 @@ fi
 
 
 db_get m23/configureBackupPC
-if [ "$RET" = "true" ]
+if [ "$RET" = "true" ] && [ $(UCS_detect) -ne 0 ]
 then
 	bpchome=`grep backuppc /etc/passwd | cut -d':' -f6`
 	
@@ -803,9 +841,14 @@ then
 
 	#Generate a random password for the GPG user
 	pw=`pwgen -s -c 16`
-	
+
 	#Create the user
-	useradd -m -p $pw grdmgpg
+	if [ $(UCS_detect) -eq 0 ]
+	then
+		useradd --uid 55001 --gid 55001 -m -p $pw grdmgpg
+	else
+		useradd -m -p $pw grdmgpg
+	fi
 
 	#Delete old GPG line
 	sed -i '/NOPASSWD:GPG/d' /etc/sudoers
@@ -948,9 +991,12 @@ updateSQLIfOlder $oldversionint 113100485 "ALTER TABLE clients CHANGE language l
 updateSQLIfOlder $oldversionint 123100598 "CREATE TABLE m23.lockedIPRanges (id BIGINT NOT NULL AUTO_INCREMENT , firstIPInt bigint(20) NOT NULL , lastIPInt bigint(20) NOT NULL , PRIMARY KEY ( id )) ENGINE = MYISAM ;"
 
 #Convert the old dhcpd.conf format to the new
-dhcpdBackup=$(date +'/m23/dhcp/dhcpd.conf.%Y-%m-%d_%H-%M.bak')
-cp /m23/dhcp/dhcpd.conf $dhcpdBackup
-sed -i -e 's/^ subnet [0-9]*\.[0-9]*\.[0-9]*\.[0-9]* netmask [0-9]*\.[0-9]*\.[0-9]*\.0 { //g' -e 's/; } option/; option/g' -e 's/}}$/}/g' -e 's/^ host/host/g' /m23/dhcp/dhcpd.conf
+if [ -f /m23/dhcp/dhcpd.conf ]
+then
+	dhcpdBackup=$(date +'/m23/dhcp/dhcpd.conf.%Y-%m-%d_%H-%M.bak')
+	cp /m23/dhcp/dhcpd.conf $dhcpdBackup
+	sed -i -e 's/^ subnet [0-9]*\.[0-9]*\.[0-9]*\.[0-9]* netmask [0-9]*\.[0-9]*\.[0-9]*\.0 { //g' -e 's/; } option/; option/g' -e 's/}}$/}/g' -e 's/^ host/host/g' /m23/dhcp/dhcpd.conf
+fi
 
 #Add new table for storing the PHP objects
 updateSQLIfOlder $oldversionint 131100629 "CREATE TABLE m23.PHPObjectStorage ( id BIGINT NOT NULL AUTO_INCREMENT , ident VARCHAR( 255 ) NOT NULL , class VARCHAR( 255 ) NOT NULL , object LONGTEXT NOT NULL, last_modified int(10) NOT NULL, PRIMARY KEY ( id ), UNIQUE KEY client (ident,class) ) ENGINE = MYISAM ;"
@@ -963,6 +1009,8 @@ updateSQLIfOlder $oldversionint 131100669 "ALTER TABLE recommendpackages CHANGE 
 
 updateSQLIfOlder $oldversionint 143100752 "ALTER TABLE clients ADD CFDiskTemp LONGBLOB NOT NULL AFTER partitions"
 
+# Add description field to the groups table
+updateSQLIfOlder $oldversionint 162100899 "ALTER TABLE groups ADD description LONGTEXT"
 
 ######################
 # DB adjustments END #
@@ -981,18 +1029,26 @@ restartDHCPServer
 mkdir -p /m23/tmp /m23/log
 
 /m23/bin/fix-permissions
-chown www-data /m23/data+scripts/clientImages
-chmod 755 /m23/data+scripts/clientImages
+if [ -e /m23/data+scripts/clientImages ]
+then
+	chown www-data /m23/data+scripts/clientImages
+	chmod 755 /m23/data+scripts/clientImages
+fi
 
 touch /m23/dhcp/dhcpd.leases
 
 mkdir -p /m23/root-only
 chmod 700 /m23/root-only
 
-rm -r /tmp/m23-install
+rm -r /tmp/m23-install 2> /dev/null
+
+# Make sure the www-data user has a normal login (needed for sudo, e.g. package index creation)
+usermod -s /bin/bash www-data
+# Set a random password
+usermod -p $(< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-64};echo;) www-data
 
 #Make sure that there is no user test
-userdel -r -f test
+userdel -r -f test 2> /dev/null
 
 #Import the key for the signed m23 packages
 wget -T1 -t1 -q http://m23.sourceforge.net/m23-Sign-Key.asc -O - | apt-key add -

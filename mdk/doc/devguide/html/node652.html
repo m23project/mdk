@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_getBootLoaders</TITLE>
-<META NAME="description" CONTENT="HELPER_getBootLoaders">
+<TITLE>HELPER_grubMd5Crypt</TITLE>
+<META NAME="description" CONTENT="HELPER_grubMd5Crypt">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node653.html">
 <LINK REL="previous" HREF="node651.html">
-<LINK REL="up" HREF="node619.html">
+<LINK REL="up" HREF="node620.html">
 <LINK REL="next" HREF="node653.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12052"
+<A NAME="tex2html12063"
   HREF="node653.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12048"
-  HREF="node619.html">
+<A NAME="tex2html12059"
+  HREF="node620.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12042"
+<A NAME="tex2html12053"
   HREF="node651.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12050"
+<A NAME="tex2html12061"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12053"
-  HREF="node653.html">HELPER_getTimeZones</A>
-<B> Up:</B> <A NAME="tex2html12049"
-  HREF="node619.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html12043"
-  HREF="node651.html">HELPER_listFilesInDir</A>
- &nbsp; <B>  <A NAME="tex2html12051"
+<B> Next:</B> <A NAME="tex2html12064"
+  HREF="node653.html">HELPER_listFilesInDir</A>
+<B> Up:</B> <A NAME="tex2html12060"
+  HREF="node620.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html12054"
+  HREF="node651.html">HELPER_generateSalt</A>
+ &nbsp; <B>  <A NAME="tex2html12062"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081833000000000000000">
-HELPER_getBootLoaders</A>
+<H2><A NAME="SECTION0081832000000000000000">
+HELPER_grubMd5Crypt</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns a list of available bootloaders.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Encrypts a password to the MD5 hash as expected by grub.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>Array with available bootloaders.
+<LI>password: Password to encrypt.
+</LI>
+<LI>length: Length of the salt.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Encrypted password in grub style or false if MD5 hash function isn't available.
 </LI>
 </UL>
 
@@ -68,7 +76,7 @@ HELPER_getBootLoaders</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_loadSourceList</TITLE>
-<META NAME="description" CONTENT="SRCLST_loadSourceList">
+<TITLE>SRCLST_genSelection</TITLE>
+<META NAME="description" CONTENT="SRCLST_genSelection">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1147.html">
 <LINK REL="previous" HREF="node1145.html">
-<LINK REL="up" HREF="node1136.html">
+<LINK REL="up" HREF="node1139.html">
 <LINK REL="next" HREF="node1147.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18433"
+<A NAME="tex2html18445"
   HREF="node1147.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18429"
-  HREF="node1136.html">
+<A NAME="tex2html18441"
+  HREF="node1139.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18423"
+<A NAME="tex2html18435"
   HREF="node1145.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18431"
+<A NAME="tex2html18443"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18434"
-  HREF="node1147.html">SRCLST_getDescription</A>
-<B> Up:</B> <A NAME="tex2html18430"
-  HREF="node1136.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html18424"
-  HREF="node1145.html">SRCLST_loadSourceListFromDB</A>
- &nbsp; <B>  <A NAME="tex2html18432"
+<B> Next:</B> <A NAME="tex2html18446"
+  HREF="node1147.html">SRCLST_getValue</A>
+<B> Up:</B> <A NAME="tex2html18442"
+  HREF="node1139.html">./inc/sourceslist.php</A>
+<B> Previous:</B> <A NAME="tex2html18436"
+  HREF="node1145.html">SRCLST_querySourceslists</A>
+ &nbsp; <B>  <A NAME="tex2html18444"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083610000000000000000">
-SRCLST_loadSourceList</A>
+<H2><A NAME="SECTION008367000000000000000">
+SRCLST_genSelection</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Loads and returnes the package source list and tries to find a valid mirror for m23debs.
+<SPAN  CLASS="textbf">Description:</SPAN> generates a HTML selection with the names of alls package sources
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>name: the name of the package source list
+<LI>selName: the name of the selection
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>package source list
+<LI>first: the package source that should be shown first
+</LI>
+<LI>distr: the distribution the sources list is for or "*" for all distributions
 </LI>
 </UL>
 
@@ -74,7 +72,7 @@ SRCLST_loadSourceList</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

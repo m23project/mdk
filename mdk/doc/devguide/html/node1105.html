@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_rootFreeSpace</TITLE>
-<META NAME="description" CONTENT="SERVER_rootFreeSpace">
+<TITLE>SERVER_sendScriptToSF</TITLE>
+<META NAME="description" CONTENT="SERVER_sendScriptToSF">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1106.html">
 <LINK REL="previous" HREF="node1104.html">
-<LINK REL="up" HREF="node1083.html">
+<LINK REL="up" HREF="node1086.html">
 <LINK REL="next" HREF="node1106.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html17906"
+<A NAME="tex2html17918"
   HREF="node1106.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html17902"
-  HREF="node1083.html">
+<A NAME="tex2html17914"
+  HREF="node1086.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html17896"
+<A NAME="tex2html17908"
   HREF="node1104.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html17904"
+<A NAME="tex2html17916"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html17907"
-  HREF="node1106.html">SERVER_isProgramRunning</A>
-<B> Up:</B> <A NAME="tex2html17903"
-  HREF="node1083.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html17897"
-  HREF="node1104.html">SERVER_tmpNotWritable</A>
- &nbsp; <B>  <A NAME="tex2html17905"
+<B> Next:</B> <A NAME="tex2html17919"
+  HREF="node1106.html">SERVER_dynamicIPWarn</A>
+<B> Up:</B> <A NAME="tex2html17915"
+  HREF="node1086.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html17909"
+  HREF="node1104.html">SERVER_dhcpServerInNetWarn</A>
+ &nbsp; <B>  <A NAME="tex2html17917"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083522000000000000000">
-SERVER_rootFreeSpace</A>
+<H2><A NAME="SECTION0083519000000000000000">
+SERVER_sendScriptToSF</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Shows an error message if the free space of the root partition is low.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Uploads a script to m23.sf.net for public use.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>: false, if there is enough space.
+<LI>name: Name of the script.
+</LI>
+<LI>author: Name of the script author.
+</LI>
+<LI>description: Short descriptive text for the purpose of the script.
+</LI>
+<LI>script: Source code of the script.
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ SERVER_rootFreeSpace</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

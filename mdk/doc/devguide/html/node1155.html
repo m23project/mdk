@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_alternativeFS</TITLE>
-<META NAME="description" CONTENT="SRCLST_alternativeFS">
+<TITLE>SRCLST_packageInformationOlderThan</TITLE>
+<META NAME="description" CONTENT="SRCLST_packageInformationOlderThan">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1156.html">
 <LINK REL="previous" HREF="node1154.html">
-<LINK REL="up" HREF="node1136.html">
+<LINK REL="up" HREF="node1139.html">
 <LINK REL="next" HREF="node1156.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18541"
+<A NAME="tex2html18553"
   HREF="node1156.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18537"
-  HREF="node1136.html">
+<A NAME="tex2html18549"
+  HREF="node1139.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18531"
+<A NAME="tex2html18543"
   HREF="node1154.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18539"
+<A NAME="tex2html18551"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18542"
-  HREF="node1156.html">SRCLST_getParameter</A>
-<B> Up:</B> <A NAME="tex2html18538"
-  HREF="node1136.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html18532"
-  HREF="node1154.html">SRCLST_supportedFS</A>
- &nbsp; <B>  <A NAME="tex2html18540"
+<B> Next:</B> <A NAME="tex2html18554"
+  HREF="node1156.html">SRCLST_getStorageFS</A>
+<B> Up:</B> <A NAME="tex2html18550"
+  HREF="node1139.html">./inc/sourceslist.php</A>
+<B> Previous:</B> <A NAME="tex2html18544"
+  HREF="node1154.html">SRCLST_packageInformationChangeTime</A>
+ &nbsp; <B>  <A NAME="tex2html18552"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083619000000000000000">
-SRCLST_alternativeFS</A>
+<H2><A NAME="SECTION0083616000000000000000">
+SRCLST_packageInformationOlderThan</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns the alternative file system that is supported by the OS.
+<SPAN  CLASS="textbf">Description:</SPAN> Checks if a package info is older than a selected amount of minutes or if the package info directory is too smal.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>sourceName: The name of the package source list
+<LI>minutes: the amount of minutes the package information can be older to return true
+</LI>
+<LI>distr: the short name of the distribution
+</LI>
+<LI>sourceName: the name of the package source list
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>: File system.
+<LI>: true when package info is older than a selected amount of minutes or if the package info directory is too smal, otherwise false.
 </LI>
 </UL>
 
@@ -74,7 +78,7 @@ SRCLST_alternativeFS</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

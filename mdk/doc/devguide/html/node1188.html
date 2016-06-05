@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_CloudStackDisablePortForwarding</TITLE>
-<META NAME="description" CONTENT="VM_CloudStackDisablePortForwarding">
+<TITLE>VM_CloudStackWriteConfFile</TITLE>
+<META NAME="description" CONTENT="VM_CloudStackWriteConfFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1189.html">
 <LINK REL="previous" HREF="node1187.html">
-<LINK REL="up" HREF="node1179.html">
+<LINK REL="up" HREF="node1182.html">
 <LINK REL="next" HREF="node1189.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html19003"
+<A NAME="tex2html19015"
   HREF="node1189.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18999"
-  HREF="node1179.html">
+<A NAME="tex2html19011"
+  HREF="node1182.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18993"
+<A NAME="tex2html19005"
   HREF="node1187.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html19001"
+<A NAME="tex2html19013"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html19004"
-  HREF="node1189.html">VM_CloudStackSendSetVisualURL</A>
-<B> Up:</B> <A NAME="tex2html19000"
-  HREF="node1179.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html18994"
-  HREF="node1187.html">VM_CloudStackEnablePortForwarding</A>
- &nbsp; <B>  <A NAME="tex2html19002"
+<B> Next:</B> <A NAME="tex2html19016"
+  HREF="node1189.html">VM_CloudStackUploadIso</A>
+<B> Up:</B> <A NAME="tex2html19012"
+  HREF="node1182.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html19006"
+  HREF="node1187.html">VM_CloudStackConfigGUI</A>
+ &nbsp; <B>  <A NAME="tex2html19014"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008389000000000000000">
-VM_CloudStackDisablePortForwarding</A>
+<H2><A NAME="SECTION008386000000000000000">
+VM_CloudStackWriteConfFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> deletes a port forwarding rule for a virtual machine, with private port and public port being the same (CLOUDSTACK_X2GO_PORTNUMBER)
+<SPAN  CLASS="textbf">Description:</SPAN> Writes the CloudStack config file or writes a basic config file, if it does not exist.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>virtualMachineId: the cloudstack ID of the virtual machine from which the port forwarding rule shall be deleted
+<LI>overwrite: Set to true, if the config file should be overwritten in any case.
 </LI>
-<LI>pFDSuccess: is set to true, if the rule was deleted successfully
+<LI>CLOUDSTACK_API_ENDPOINT: The API endpoint.
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>textmessage about result (errormessage or success message) and sets pFDSuccess to True if action succeeded, false otherwise
+<LI>CLOUDSTACK_API_KEY: The API key.
+</LI>
+<LI>CLOUDSTACK_SECRET_KEY: The secret API key.
+</LI>
+<LI>CLOUDSTACK_SERVICE_OFFERING_ID: The virtual CPU and RAM combination to use for a new VM.
+</LI>
+<LI>CLOUDSTACK_TEMPLATE_ID: The ID of the m23 client installation ISO.
+</LI>
+<LI>CLOUDSTACK_NETWORKIDS: The ID of the network to use.
+</LI>
+<LI>CLOUDSTACK_DISK_OFFERING_ID: The virtual hard disk type.
 </LI>
 </UL>
 
@@ -76,7 +82,7 @@ VM_CloudStackDisablePortForwarding</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

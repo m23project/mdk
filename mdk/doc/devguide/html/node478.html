@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>EDIT_addIfNotExists</TITLE>
-<META NAME="description" CONTENT="EDIT_addIfNotExists">
+<TITLE>EDIT_deleteLinesAmount</TITLE>
+<META NAME="description" CONTENT="EDIT_deleteLinesAmount">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node479.html">
 <LINK REL="previous" HREF="node477.html">
-<LINK REL="up" HREF="node457.html">
+<LINK REL="up" HREF="node458.html">
 <LINK REL="next" HREF="node479.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9786"
+<A NAME="tex2html9796"
   HREF="node479.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9782"
-  HREF="node457.html">
+<A NAME="tex2html9792"
+  HREF="node458.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9776"
+<A NAME="tex2html9786"
   HREF="node477.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9784"
+<A NAME="tex2html9794"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9787"
-  HREF="node479.html">EDIT_deleteMatching</A>
-<B> Up:</B> <A NAME="tex2html9783"
-  HREF="node457.html">./inc/edit.php</A>
-<B> Previous:</B> <A NAME="tex2html9777"
-  HREF="node477.html">EDIT_deleteLinesAmount</A>
- &nbsp; <B>  <A NAME="tex2html9785"
+<B> Next:</B> <A NAME="tex2html9797"
+  HREF="node479.html">EDIT_addIfNotExists</A>
+<B> Up:</B> <A NAME="tex2html9793"
+  HREF="node458.html">./inc/edit.php</A>
+<B> Previous:</B> <A NAME="tex2html9787"
+  HREF="node477.html">EDIT_deleteLines</A>
+ &nbsp; <B>  <A NAME="tex2html9795"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081521000000000000000">
-EDIT_addIfNotExists</A>
+<H2><A NAME="SECTION0081520000000000000000">
+EDIT_deleteLinesAmount</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Adds a new line if the search pattern cannot be found.
+<SPAN  CLASS="textbf">Description:</SPAN> Deletes N lines from a given line number
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>file: the name to the file
 </LI>
-<LI>search: regular expression to search
+<LI>from: start deleting at this line number
 </LI>
-<LI>add: line to add
+<LI>amount: the amount of lines to delete
 </LI>
 </UL>
 
@@ -72,7 +72,7 @@ EDIT_addIfNotExists</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

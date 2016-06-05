@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_getFdiskMountPoints</TITLE>
-<META NAME="description" CONTENT="HELPER_getFdiskMountPoints">
+<TITLE>HELPER_grepNot</TITLE>
+<META NAME="description" CONTENT="HELPER_grepNot">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node659.html">
 <LINK REL="previous" HREF="node657.html">
-<LINK REL="up" HREF="node619.html">
+<LINK REL="up" HREF="node620.html">
 <LINK REL="next" HREF="node659.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12124"
+<A NAME="tex2html12135"
   HREF="node659.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12120"
-  HREF="node619.html">
+<A NAME="tex2html12131"
+  HREF="node620.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12114"
+<A NAME="tex2html12125"
   HREF="node657.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12122"
+<A NAME="tex2html12133"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12125"
-  HREF="node659.html">HELPER_getApacheUser</A>
-<B> Up:</B> <A NAME="tex2html12121"
-  HREF="node619.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html12115"
-  HREF="node657.html">HELPER_grepCount</A>
- &nbsp; <B>  <A NAME="tex2html12123"
+<B> Next:</B> <A NAME="tex2html12136"
+  HREF="node659.html">HELPER_grepCount</A>
+<B> Up:</B> <A NAME="tex2html12132"
+  HREF="node620.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html12126"
+  HREF="node657.html">HELPER_grep</A>
+ &nbsp; <B>  <A NAME="tex2html12134"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081839000000000000000">
-HELPER_getFdiskMountPoints</A>
+<H2><A NAME="SECTION0081838000000000000000">
+HELPER_grepNot</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returnes an array with all mount points listed in /etc/fstab
+<SPAN  CLASS="textbf">Description:</SPAN> Returnes all lines from $string seperated by $cut that do NOT contain $search.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>excludeExtra: set to true, if you want to exclude /proc and /sys from the array
+<LI>string: the text, that should be searched
+</LI>
+<LI>search: the string to be searched
+</LI>
+<LI>cut: seperator for the input and output lines
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>Found mount points as array keys and values.
+<LI>The found lines as string separated by $cut.
 </LI>
 </UL>
 
@@ -74,7 +78,7 @@ HELPER_getFdiskMountPoints</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

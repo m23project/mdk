@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_saveArchitectures</TITLE>
-<META NAME="description" CONTENT="SRCLST_saveArchitectures">
+<TITLE>SRCLST_getAddToFile</TITLE>
+<META NAME="description" CONTENT="SRCLST_getAddToFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1141.html">
 <LINK REL="previous" HREF="node1139.html">
-<LINK REL="up" HREF="node1136.html">
+<LINK REL="up" HREF="node1139.html">
 <LINK REL="next" HREF="node1141.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18361"
+<A NAME="tex2html18373"
   HREF="node1141.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18357"
-  HREF="node1136.html">
+<A NAME="tex2html18369"
+  HREF="node1139.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18351"
+<A NAME="tex2html18363"
   HREF="node1139.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18359"
+<A NAME="tex2html18371"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18362"
-  HREF="node1141.html">SRCLST_saveList</A>
-<B> Up:</B> <A NAME="tex2html18358"
-  HREF="node1136.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html18352"
-  HREF="node1139.html">SRCLST_genList</A>
- &nbsp; <B>  <A NAME="tex2html18360"
+<B> Next:</B> <A NAME="tex2html18374"
+  HREF="node1141.html">SRCLST_getRelease</A>
+<B> Up:</B> <A NAME="tex2html18370"
+  HREF="node1139.html">./inc/sourceslist.php</A>
+<B> Previous:</B> <A NAME="tex2html18364"
+  HREF="node1139.html">./inc/sourceslist.php</A>
+ &nbsp; <B>  <A NAME="tex2html18372"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008364000000000000000">
-SRCLST_saveArchitectures</A>
+<H2><A NAME="SECTION008361000000000000000">
+SRCLST_getAddToFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Saves the architectures for package source list.
+<SPAN  CLASS="textbf">Description:</SPAN> Returns addToFile paramters from the given sources list as an associative array, where file name and file contents are seperated.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>sourceName: the name of the package source list
+<LI>sourceName: The name of the package source list
 </LI>
-<LI>archs: Associative array with the supported CPU architectures.
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: Associative array with file name and file contents (e.g. [0] =<SPAN CLASS="MATH"></SPAN> Array ([file] =<SPAN CLASS="MATH"></SPAN> file1.txt, [text] =<SPAN CLASS="MATH"></SPAN> text1), [1] =<SPAN CLASS="MATH"></SPAN> Array ([file] =<SPAN CLASS="MATH"></SPAN> file2.txt, [text] =<SPAN CLASS="MATH"></SPAN> text2), ...)
 </LI>
 </UL>
 
@@ -70,7 +74,7 @@ SRCLST_saveArchitectures</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_getSpecialPackagePriority</TITLE>
-<META NAME="description" CONTENT="PKG_getSpecialPackagePriority">
+<TITLE>PKG_addPackageToPackageselection</TITLE>
+<META NAME="description" CONTENT="PKG_addPackageToPackageselection">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node947.html">
 <LINK REL="previous" HREF="node945.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node947.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15890"
+<A NAME="tex2html15902"
   HREF="node947.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15886"
-  HREF="node902.html">
+<A NAME="tex2html15898"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15880"
+<A NAME="tex2html15892"
   HREF="node945.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15888"
+<A NAME="tex2html15900"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15891"
-  HREF="node947.html">PKG_getSpecialPackageDescription</A>
-<B> Up:</B> <A NAME="tex2html15887"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15881"
-  HREF="node945.html">PKG_addSpecialPackages</A>
- &nbsp; <B>  <A NAME="tex2html15889"
+<B> Next:</B> <A NAME="tex2html15903"
+  HREF="node947.html">PKG_listSpecialpackages</A>
+<B> Up:</B> <A NAME="tex2html15899"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15893"
+  HREF="node945.html">PKG_savePackageselection</A>
+ &nbsp; <B>  <A NAME="tex2html15901"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082844000000000000000">
-PKG_getSpecialPackagePriority</A>
+<H2><A NAME="SECTION0082842000000000000000">
+PKG_addPackageToPackageselection</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> gets the priority of a special package
+<SPAN  CLASS="textbf">Description:</SPAN> Add packages to selection
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>package: name of package
+<LI>client: name of client to install packages on
+</LI>
+<LI>selectionName: name for the package selection
+</LI>
+<LI>packageName: name of the normal package
+</LI>
+<LI>params: parameter for the package
+</LI>
+<LI>normalPackage: the name of a normal package
+</LI>
+<LI>installedSize: the size of the package if it is installed
+</LI>
+<LI>priority: The priority of the package.
 </LI>
 </UL>
 
@@ -68,7 +80,7 @@ PKG_getSpecialPackagePriority</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

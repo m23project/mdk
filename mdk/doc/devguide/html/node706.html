@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_showStatusBarHTML</TITLE>
-<META NAME="description" CONTENT="HTML_showStatusBarHTML">
+<TITLE>HTML_newStatusBar</TITLE>
+<META NAME="description" CONTENT="HTML_newStatusBar">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,64 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node707.html">
 <LINK REL="previous" HREF="node705.html">
-<LINK REL="up" HREF="node672.html">
+<LINK REL="up" HREF="node674.html">
 <LINK REL="next" HREF="node707.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12760"
+<A NAME="tex2html12771"
   HREF="node707.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12756"
-  HREF="node672.html">
+<A NAME="tex2html12767"
+  HREF="node674.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12750"
+<A NAME="tex2html12761"
   HREF="node705.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12758"
+<A NAME="tex2html12769"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12761"
-  HREF="node707.html">HTML_multiCheckBox</A>
-<B> Up:</B> <A NAME="tex2html12757"
-  HREF="node672.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html12751"
-  HREF="node705.html">HTML_showStatusBar</A>
- &nbsp; <B>  <A NAME="tex2html12759"
+<B> Next:</B> <A NAME="tex2html12772"
+  HREF="node707.html">HTML_showStatusBar</A>
+<B> Up:</B> <A NAME="tex2html12768"
+  HREF="node674.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html12762"
+  HREF="node705.html">HTML_getStatusBarID</A>
+ &nbsp; <B>  <A NAME="tex2html12770"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082034000000000000000">
-HTML_showStatusBarHTML</A>
+<H2><A NAME="SECTION0082032000000000000000">
+HTML_newStatusBar</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Shows the status bar, that is drawn in the iframe (this function is only called by statusBar.php).
+<SPAN  CLASS="textbf">Description:</SPAN> Shows the iframe for a status bar. This actually displays the status bar.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>id: ID of the status bar.
+<LI>name: The name of the status bar.
+</LI>
+<LI>client: The name of the client, the status bar belongs to (or other values for identifying the object the status bar belongs to)
+</LI>
+<LI>type: The method of calculating/getting the percentage to display in the status bar.
+</LI>
+<LI>cmd: BASH command, if type is STATUSBAR_TYPE_bash.
+</LI>
+<LI>refreshtime: Time (in seconds) between refreshes of the status bar.
+</LI>
+<LI>statustext: A text message that should be shown under the status bar.
+</LI>
+<LI>percent: Percent value to write into the DB.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: The status bar ID of the just created status bar or false, if it could not be created.
 </LI>
 </UL>
 
@@ -68,7 +86,7 @@ HTML_showStatusBarHTML</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

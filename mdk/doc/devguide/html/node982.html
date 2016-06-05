@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_getClientsWithPackage</TITLE>
-<META NAME="description" CONTENT="PKG_getClientsWithPackage">
+<TITLE>PKG_previewUpdateSystem</TITLE>
+<META NAME="description" CONTENT="PKG_previewUpdateSystem">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node983.html">
 <LINK REL="previous" HREF="node981.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node983.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16322"
+<A NAME="tex2html16334"
   HREF="node983.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16318"
-  HREF="node902.html">
+<A NAME="tex2html16330"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16312"
+<A NAME="tex2html16324"
   HREF="node981.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16320"
+<A NAME="tex2html16332"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16323"
-  HREF="node983.html">PKG_getClientsWithWaitingJobs</A>
-<B> Up:</B> <A NAME="tex2html16319"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16313"
-  HREF="node981.html">PKG_rmAllSpecialPackagesByName</A>
- &nbsp; <B>  <A NAME="tex2html16321"
+<B> Next:</B> <A NAME="tex2html16335"
+  HREF="node983.html">PKG_showPreviewUpdateSystem</A>
+<B> Up:</B> <A NAME="tex2html16331"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16325"
+  HREF="node981.html">PKG_removeSpecialFromJobList</A>
+ &nbsp; <B>  <A NAME="tex2html16333"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082880000000000000000">
-PKG_getClientsWithPackage</A>
+<H2><A NAME="SECTION0082878000000000000000">
+PKG_previewUpdateSystem</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Gets all clients that have the specific package installed (or with another status).
+<SPAN  CLASS="textbf">Description:</SPAN> returns the information of an system update request
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>packageName: Name of the package.
+<LI>clientName: name of the client 
 </LI>
-<LI>status: The status the package should have.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Array with all clients that have the specific package installed (or with another status).
+<LI>completeUpdate: set it to "true", if it should be a full update (installation and removal of packages) or to "false" for an update of existing packages
 </LI>
 </UL>
 
@@ -76,7 +70,7 @@ PKG_getClientsWithPackage</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

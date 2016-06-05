@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_getElementValue</TITLE>
-<META NAME="description" CONTENT="HTML_getElementValue">
+<TITLE>HTML_storableSelection</TITLE>
+<META NAME="description" CONTENT="HTML_storableSelection">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,42 +21,42 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node714.html">
 <LINK REL="previous" HREF="node712.html">
-<LINK REL="up" HREF="node672.html">
+<LINK REL="up" HREF="node674.html">
 <LINK REL="next" HREF="node714.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12844"
+<A NAME="tex2html12855"
   HREF="node714.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12840"
-  HREF="node672.html">
+<A NAME="tex2html12851"
+  HREF="node674.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12834"
+<A NAME="tex2html12845"
   HREF="node712.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12842"
+<A NAME="tex2html12853"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12845"
-  HREF="node714.html">HTML_listSelection</A>
-<B> Up:</B> <A NAME="tex2html12841"
-  HREF="node672.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html12835"
-  HREF="node712.html">HTML_storableCheckBox</A>
- &nbsp; <B>  <A NAME="tex2html12843"
+<B> Next:</B> <A NAME="tex2html12856"
+  HREF="node714.html">HTML_storableCheckBox</A>
+<B> Up:</B> <A NAME="tex2html12852"
+  HREF="node674.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html12846"
+  HREF="node712.html">HTML_storableInput</A>
+ &nbsp; <B>  <A NAME="tex2html12854"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082041000000000000000">
-HTML_getElementValue</A>
+<H2><A NAME="SECTION0082039000000000000000">
+HTML_storableSelection</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Gets the value for a HTML element by the session data or POST value.
+<SPAN  CLASS="textbf">Description:</SPAN> Shows a list of radio buttons or a selection with loading and storing the checking state to and from the session.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
@@ -64,13 +64,23 @@ HTML_getElementValue</A>
 </LI>
 <LI>prefKey: Variable name of the preference the dialog element stands for.
 </LI>
-<LI>initValue: The initial value if the element is shown first.
+<LI>array: An array that hold the returned values (array keys) the naming for the elements (array values).
+</LI>
+<LI>type: SELTYPE_selection for a selection or SELTYPE_radio for radio buttons.
+</LI>
+<LI>vertical: Set to true if the radio buttons should be aligned vertically or to false for horizontal aligning. This parameter is ignored by selections.
+</LI>
+<LI>defaultSelection: The value of the item to select by default.
+</LI>
+<LI>storePointer: Additional pointer to the variable where to store the entered value.
+</LI>
+<LI>js: Here can JavaScript or other parameters be added.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>Returns the default value, the session value or false.
+<LI>true if the check box is checked.
 </LI>
 </UL>
 
@@ -78,7 +88,7 @@ HTML_getElementValue</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

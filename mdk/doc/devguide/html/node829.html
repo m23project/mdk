@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>m23SHARED_getCustomerBankHTML</TITLE>
-<META NAME="description" CONTENT="m23SHARED_getCustomerBankHTML">
+<TITLE>m23SHARED_downloadBillPDFLink</TITLE>
+<META NAME="description" CONTENT="m23SHARED_downloadBillPDFLink">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node830.html">
 <LINK REL="previous" HREF="node828.html">
-<LINK REL="up" HREF="node782.html">
+<LINK REL="up" HREF="node784.html">
 <LINK REL="next" HREF="node830.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html14345"
+<A NAME="tex2html14356"
   HREF="node830.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html14341"
-  HREF="node782.html">
+<A NAME="tex2html14352"
+  HREF="node784.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html14335"
+<A NAME="tex2html14346"
   HREF="node828.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html14343"
+<A NAME="tex2html14354"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html14346"
-  HREF="node830.html">m23SHARED_pdfBill</A>
-<B> Up:</B> <A NAME="tex2html14342"
-  HREF="node782.html">./inc/m23shared/m23shared.php</A>
-<B> Previous:</B> <A NAME="tex2html14336"
-  HREF="node828.html">m23SHARED_getCustomerAddress</A>
- &nbsp; <B>  <A NAME="tex2html14344"
+<B> Next:</B> <A NAME="tex2html14357"
+  HREF="node830.html">m23SHARED_getCustomerAddress</A>
+<B> Up:</B> <A NAME="tex2html14353"
+  HREF="node784.html">./inc/m23shared/m23shared.php</A>
+<B> Previous:</B> <A NAME="tex2html14347"
+  HREF="node828.html">m23SHARED_getBillDates</A>
+ &nbsp; <B>  <A NAME="tex2html14355"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082447000000000000000">
-m23SHARED_getCustomerBankHTML</A>
+<H2><A NAME="SECTION0082445000000000000000">
+m23SHARED_downloadBillPDFLink</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns HTML formatted bank account information for the current customer.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Generates a HTML link that points to the script that generates the bill for a given monath and year.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>Bank account information for the current customer.
+<LI>month: Month to get the bill for.
+</LI>
+<LI>year: Year to get the bill for.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: HTML link to the bill PDF.
 </LI>
 </UL>
 
@@ -68,7 +76,7 @@ m23SHARED_getCustomerBankHTML</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_captureVMScreenAsMovie</TITLE>
-<META NAME="description" CONTENT="VM_captureVMScreenAsMovie">
+<TITLE>UPDATE_getUrl</TITLE>
+<META NAME="description" CONTENT="UPDATE_getUrl">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,66 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1181.html">
 <LINK REL="previous" HREF="node1179.html">
-<LINK REL="up" HREF="node1179.html">
+<LINK REL="up" HREF="node1177.html">
 <LINK REL="next" HREF="node1181.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18907"
+<A NAME="tex2html18855"
   HREF="node1181.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18903"
-  HREF="node1179.html">
+<A NAME="tex2html18851"
+  HREF="node1177.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18897"
+<A NAME="tex2html18845"
   HREF="node1179.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18905"
+<A NAME="tex2html18853"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18908"
-  HREF="node1181.html">VM_CloudStackDeleteClientVM</A>
-<B> Up:</B> <A NAME="tex2html18904"
-  HREF="node1179.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html18898"
-  HREF="node1179.html">./inc/vm.php</A>
- &nbsp; <B>  <A NAME="tex2html18906"
+<B> Next:</B> <A NAME="tex2html18856"
+  HREF="node1181.html">UPDATE_getInfo</A>
+<B> Up:</B> <A NAME="tex2html18852"
+  HREF="node1177.html">./inc/update.php</A>
+<B> Previous:</B> <A NAME="tex2html18846"
+  HREF="node1179.html">UPDATE_running</A>
+ &nbsp; <B>  <A NAME="tex2html18854"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008381000000000000000">
-VM_captureVMScreenAsMovie</A>
+<H2><A NAME="SECTION008373000000000000000">
+UPDATE_getUrl</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Enables/disables capturing the screen of a VM to a movie file.
+<SPAN  CLASS="textbf">Description:</SPAN> returnes a correct URL to the update source
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>type: VM_SW_VBOX for VirtualBox OSE
+<LI>base: URL to the update script
 </LI>
-<LI>vmname: Name of the VM.
+<LI>command: "info" or "cmd"
 </LI>
-<LI>enable: true for enabling the capturing, false for disabling.
+<LI>version: m23 version
 </LI>
-<LI>movieFile: File to store the capturing in.
-</LI>
-<LI>width: Width of the movie.
-</LI>
-<LI>height: Height of the movie.
-</LI>
-<LI>rate: Bitrate of the movie.
-</LI>
-<LI>fps: Frames per second
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>BASH code for enabling/disabling the capturing of the VM's screens to a movie file.
+<LI>patchLevel: patch version number
 </LI>
 </UL>
 
@@ -88,7 +74,7 @@ VM_captureVMScreenAsMovie</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_addHSUser</TITLE>
-<META NAME="description" CONTENT="PKG_addHSUser">
+<TITLE>MSG_DeActivateBlogDialog</TITLE>
+<META NAME="description" CONTENT="MSG_DeActivateBlogDialog">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,56 +19,61 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
-<LINK REL="next" HREF="node904.html">
 <LINK REL="previous" HREF="node902.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node887.html">
 <LINK REL="next" HREF="node904.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15374"
+<A NAME="tex2html15281"
   HREF="node904.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15370"
-  HREF="node902.html">
+<A NAME="tex2html15277"
+  HREF="node887.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15364"
+<A NAME="tex2html15273"
   HREF="node902.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15372"
+<A NAME="tex2html15279"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15375"
-  HREF="node904.html">PKG_addUbuntuUser</A>
-<B> Up:</B> <A NAME="tex2html15371"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15365"
-  HREF="node902.html">./inc/packages.php</A>
- &nbsp; <B>  <A NAME="tex2html15373"
+<B> Next:</B> <A NAME="tex2html15282"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Up:</B> <A NAME="tex2html15278"
+  HREF="node887.html">./inc/message.php</A>
+<B> Previous:</B> <A NAME="tex2html15274"
+  HREF="node902.html">MSG_showNewFeature</A>
+ &nbsp; <B>  <A NAME="tex2html15280"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008281000000000000000">
-PKG_addHSUser</A>
+<H2><A NAME="SECTION0082716000000000000000">
+MSG_DeActivateBlogDialog</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Adds a job for creating an user on a halfSister client.
+<SPAN  CLASS="textbf">Description:</SPAN> Creates a dialog to en/disable a blog. The displaying state is written to the DB.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>client: Name of the client.
+<LI>blogVarName: Variable name of the blog to store in the DB.
 </LI>
-<LI>login: Login name of the new user.
+<LI>css: Name of the CSS class to color the dialog.
 </LI>
-<LI>firstpw: Password for the new user.
+<LI>blogName: Name of the blog als human readle heading.
 </LI>
-<LI>uid: Optional user ID of the new user.
+<LI>width: Width of the box containing the switch dialog.
 </LI>
-<LI>gid: Optional group ID of the new user.
+<LI>dialogCode: The HTML code of the dialog element is written to this variable.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: True if the blog should be shown otherwise false.
 </LI>
 </UL>
 
@@ -76,7 +81,7 @@ PKG_addHSUser</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

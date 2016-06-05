@@ -3,16 +3,20 @@
 # Source debconf library.
 . /usr/share/debconf/confmodule
 
-db_input high m23-ldap/LDAPhint || true
-
-db_get slapd/password1
-if [ -z $RET ]
+# Only run, if not executed on UCS
+if [ ! -f '/usr/sbin/udm' ]
 then
-	db_get m23-ldap/LDAPpass
+	db_input high m23-ldap/LDAPhint || true
+	
+	db_get slapd/password1
 	if [ -z $RET ]
 	then
-		#only ask for the LDAP admin password if it can't be read from the debconf
-		db_input high m23-ldap/LDAPpass || true
+		db_get m23-ldap/LDAPpass
+		if [ -z $RET ]
+		then
+			#only ask for the LDAP admin password if it can't be read from the debconf
+			db_input high m23-ldap/LDAPpass || true
+		fi
 	fi
 fi
 

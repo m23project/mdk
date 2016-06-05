@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_previewInstall</TITLE>
-<META NAME="description" CONTENT="PKG_previewInstall">
+<TITLE>PKG_listPackages</TITLE>
+<META NAME="description" CONTENT="PKG_listPackages">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node455.html">
 <LINK REL="previous" HREF="node453.html">
-<LINK REL="up" HREF="node449.html">
+<LINK REL="up" HREF="node450.html">
 <LINK REL="next" HREF="node455.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9478"
+<A NAME="tex2html9488"
   HREF="node455.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9474"
-  HREF="node449.html">
+<A NAME="tex2html9484"
+  HREF="node450.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9468"
+<A NAME="tex2html9478"
   HREF="node453.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9476"
+<A NAME="tex2html9486"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9479"
-  HREF="node455.html">PKG_getKernels</A>
-<B> Up:</B> <A NAME="tex2html9475"
-  HREF="node449.html">./inc/distr/halfSister/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html9469"
-  HREF="node453.html">PKG_listPackages</A>
- &nbsp; <B>  <A NAME="tex2html9477"
+<B> Next:</B> <A NAME="tex2html9489"
+  HREF="node455.html">PKG_previewInstall</A>
+<B> Up:</B> <A NAME="tex2html9485"
+  HREF="node450.html">./inc/distr/halfSister/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html9479"
+  HREF="node453.html">pkgUpdateCacheOnServer</A>
+ &nbsp; <B>  <A NAME="tex2html9487"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008145000000000000000">
-PKG_previewInstall</A>
+<H2><A NAME="SECTION008144000000000000000">
+PKG_listPackages</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> shows what happens if packages get (de)installed
+<SPAN  CLASS="textbf">Description:</SPAN> list packages matching the key
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>clientName: name of the client
+<LI>key: search key
 </LI>
 <LI>distr: the distribution name
 </LI>
 <LI>packagesource: name of the package source
 </LI>
-<LI>packages: the packages to be installed
-</LI>
-<LI>aptCommand: sets the apt-get command: install, remove
+<LI>client: Name of the client the packages are searched for. (Not used here and only for halfSister)
 </LI>
 </UL>
 
@@ -76,7 +74,7 @@ PKG_previewInstall</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

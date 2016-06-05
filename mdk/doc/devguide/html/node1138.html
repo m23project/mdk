@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_getRelease</TITLE>
-<META NAME="description" CONTENT="SRCLST_getRelease">
+<TITLE>SERVER_commandAvailable</TITLE>
+<META NAME="description" CONTENT="SERVER_commandAvailable">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,54 +19,53 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
-<LINK REL="next" HREF="node1139.html">
 <LINK REL="previous" HREF="node1137.html">
-<LINK REL="up" HREF="node1136.html">
+<LINK REL="up" HREF="node1086.html">
 <LINK REL="next" HREF="node1139.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18337"
+<A NAME="tex2html18312"
   HREF="node1139.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18333"
-  HREF="node1136.html">
+<A NAME="tex2html18308"
+  HREF="node1086.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18327"
+<A NAME="tex2html18304"
   HREF="node1137.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18335"
+<A NAME="tex2html18310"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18338"
-  HREF="node1139.html">SRCLST_genList</A>
-<B> Up:</B> <A NAME="tex2html18334"
-  HREF="node1136.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html18328"
-  HREF="node1137.html">SRCLST_getAddToFile</A>
- &nbsp; <B>  <A NAME="tex2html18336"
+<B> Next:</B> <A NAME="tex2html18313"
+  HREF="node1139.html">./inc/sourceslist.php</A>
+<B> Up:</B> <A NAME="tex2html18309"
+  HREF="node1086.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html18305"
+  HREF="node1137.html">SERVER_multiMkDir</A>
+ &nbsp; <B>  <A NAME="tex2html18311"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008362000000000000000">
-SRCLST_getRelease</A>
+<H2><A NAME="SECTION0083552000000000000000">
+SERVER_commandAvailable</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Gets a release from the sourceslist table.
+<SPAN  CLASS="textbf">Description:</SPAN> Checks, if a given command is available for the given user.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>name: the name of the package source list
+<LI>user: user the command should be run under.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>Release name of choosen sources list.
+<LI>: true when the command is available otherwise false.
 </LI>
 </UL>
 
@@ -74,7 +73,7 @@ SRCLST_getRelease</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

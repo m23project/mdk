@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_getKernels</TITLE>
-<META NAME="description" CONTENT="PKG_getKernels">
+<TITLE>PKG_previewInstall</TITLE>
+<META NAME="description" CONTENT="PKG_previewInstall">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node456.html">
 <LINK REL="previous" HREF="node454.html">
-<LINK REL="up" HREF="node449.html">
+<LINK REL="up" HREF="node450.html">
 <LINK REL="next" HREF="node456.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9490"
+<A NAME="tex2html9500"
   HREF="node456.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9486"
-  HREF="node449.html">
+<A NAME="tex2html9496"
+  HREF="node450.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9480"
+<A NAME="tex2html9490"
   HREF="node454.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9488"
+<A NAME="tex2html9498"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9491"
-  HREF="node456.html">PKG_translateClientPackageStatus</A>
-<B> Up:</B> <A NAME="tex2html9487"
-  HREF="node449.html">./inc/distr/halfSister/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html9481"
-  HREF="node454.html">PKG_previewInstall</A>
- &nbsp; <B>  <A NAME="tex2html9489"
+<B> Next:</B> <A NAME="tex2html9501"
+  HREF="node456.html">PKG_getKernels</A>
+<B> Up:</B> <A NAME="tex2html9497"
+  HREF="node450.html">./inc/distr/halfSister/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html9491"
+  HREF="node454.html">PKG_listPackages</A>
+ &nbsp; <B>  <A NAME="tex2html9499"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008146000000000000000">
-PKG_getKernels</A>
+<H2><A NAME="SECTION008145000000000000000">
+PKG_previewInstall</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates an associative array with the available kernels for an architecture and distribution as keys and values.
+<SPAN  CLASS="textbf">Description:</SPAN> shows what happens if packages get (de)installed
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
+<LI>clientName: name of the client
+</LI>
 <LI>distr: the distribution name
 </LI>
 <LI>packagesource: name of the package source
 </LI>
-<LI>arch: Architecture to get package infos for.
+<LI>packages: the packages to be installed
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Asssociative array with the available kernels for an architecture and distribution as keys and values.
+<LI>aptCommand: sets the apt-get command: install, remove
 </LI>
 </UL>
 
@@ -78,7 +76,7 @@ PKG_getKernels</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>LDAP_addPosix</TITLE>
-<META NAME="description" CONTENT="LDAP_addPosix">
+<TITLE>LDAP_listServers</TITLE>
+<META NAME="description" CONTENT="LDAP_listServers">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,58 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node764.html">
 <LINK REL="previous" HREF="node762.html">
-<LINK REL="up" HREF="node757.html">
+<LINK REL="up" HREF="node759.html">
 <LINK REL="next" HREF="node764.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13484"
+<A NAME="tex2html13495"
   HREF="node764.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13480"
-  HREF="node757.html">
+<A NAME="tex2html13491"
+  HREF="node759.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13474"
+<A NAME="tex2html13485"
   HREF="node762.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13482"
+<A NAME="tex2html13493"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13485"
-  HREF="node764.html">LDAP_fqdn2dn</A>
-<B> Up:</B> <A NAME="tex2html13481"
-  HREF="node757.html">./inc/ldap.php</A>
-<B> Previous:</B> <A NAME="tex2html13475"
-  HREF="node762.html">LDAP_loadServer</A>
- &nbsp; <B>  <A NAME="tex2html13483"
+<B> Next:</B> <A NAME="tex2html13496"
+  HREF="node764.html">LDAP_loadServer</A>
+<B> Up:</B> <A NAME="tex2html13492"
+  HREF="node759.html">./inc/ldap.php</A>
+<B> Previous:</B> <A NAME="tex2html13486"
+  HREF="node762.html">LDAP_makeConnection</A>
+ &nbsp; <B>  <A NAME="tex2html13494"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008236000000000000000">
-LDAP_addPosix</A>
+<H2><A NAME="SECTION008234000000000000000">
+LDAP_listServers</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Adds a posix account to the LDAP server and encrypts the password with MD5.
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Returns an associative array with the LDAP server names as keys and values.
+<BR><SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>ldapServer: name of the LDAP server stored in the configuration file
-</LI>
-<LI>account: the login name
-</LI>
-<LI>forename: the forename of the user
-</LI>
-<LI>familyname: the familyname of the user
-</LI>
-<LI>pwd: the unencrypted password
-</LI>
-<LI>uid: Linux user ID
-</LI>
-<LI>gid: Linux group ID
+<LI>Associative array with the LDAP server names as keys and values.
 </LI>
 </UL>
 
@@ -80,7 +68,7 @@ LDAP_addPosix</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

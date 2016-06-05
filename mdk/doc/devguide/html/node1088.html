@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_setServerSetting</TITLE>
-<META NAME="description" CONTENT="SERVER_setServerSetting">
+<TITLE>SERVER_logLocalScreenSessionToFile</TITLE>
+<META NAME="description" CONTENT="SERVER_logLocalScreenSessionToFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1089.html">
 <LINK REL="previous" HREF="node1087.html">
-<LINK REL="up" HREF="node1083.html">
+<LINK REL="up" HREF="node1086.html">
 <LINK REL="next" HREF="node1089.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html17702"
+<A NAME="tex2html17714"
   HREF="node1089.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html17698"
-  HREF="node1083.html">
+<A NAME="tex2html17710"
+  HREF="node1086.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html17692"
+<A NAME="tex2html17704"
   HREF="node1087.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html17700"
+<A NAME="tex2html17712"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html17703"
-  HREF="node1089.html">SERVER_getServerSetting</A>
-<B> Up:</B> <A NAME="tex2html17699"
-  HREF="node1083.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html17693"
-  HREF="node1087.html">SERVER_isSSLCertCheckDisabled</A>
- &nbsp; <B>  <A NAME="tex2html17701"
+<B> Next:</B> <A NAME="tex2html17715"
+  HREF="node1089.html">SERVER_setSSLCertCheckDisabled</A>
+<B> Up:</B> <A NAME="tex2html17711"
+  HREF="node1086.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html17705"
+  HREF="node1087.html">SERVER_importGPGPackageSignKey</A>
+ &nbsp; <B>  <A NAME="tex2html17713"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008355000000000000000">
-SERVER_setServerSetting</A>
+<H2><A NAME="SECTION008352000000000000000">
+SERVER_logLocalScreenSessionToFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Sets the value of a server setting.
+<SPAN  CLASS="textbf">Description:</SPAN> Logs the output of a local screen session to a file.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>: var: Name of the setting.
+<LI>session: name screen session to log.
 </LI>
-<LI>: val: Value of the setting.
+<LI>user: user the script runs under
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Full path to the log file.
 </LI>
 </UL>
 
@@ -70,7 +76,7 @@ SERVER_setServerSetting</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

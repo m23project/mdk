@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_printColorDefinitions</TITLE>
-<META NAME="description" CONTENT="FDISK_printColorDefinitions">
+<TITLE>FDISK_autoPart</TITLE>
+<META NAME="description" CONTENT="FDISK_autoPart">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,68 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node567.html">
 <LINK REL="previous" HREF="node565.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node567.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10949"
+<A NAME="tex2html10959"
   HREF="node567.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10945"
-  HREF="node480.html">
+<A NAME="tex2html10955"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10939"
+<A NAME="tex2html10949"
   HREF="node565.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10947"
+<A NAME="tex2html10957"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10950"
-  HREF="node567.html">FDISK_showDiskDefine</A>
-<B> Up:</B> <A NAME="tex2html10946"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10940"
-  HREF="node565.html">FDISK_autoPart</A>
- &nbsp; <B>  <A NAME="tex2html10948"
+<B> Next:</B> <A NAME="tex2html10960"
+  HREF="node567.html">FDISK_printColorDefinitions</A>
+<B> Up:</B> <A NAME="tex2html10956"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10950"
+  HREF="node565.html">FDISK_getFreeSpaces</A>
+ &nbsp; <B>  <A NAME="tex2html10958"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081686000000000000000">
-FDISK_printColorDefinitions</A>
+<H2><A NAME="SECTION0081685000000000000000">
+FDISK_autoPart</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> prints the color definitions for the filesystems
-<BR>
+<SPAN  CLASS="textbf">Description:</SPAN> generation of param string and command list for automatic partition
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+
+<UL>
+<LI>clientName: name of the client
+</LI>
+<LI>command: parted commands are written to $command
+</LI>
+<LI>dev: selected device (e.g. /dev/hda)
+</LI>
+<LI>param: parameter string containing status informations about the harddisks
+</LI>
+<LI>instPart: the variable the installation device name is written to
+</LI>
+<LI>swapPart: the variable the swap device name is written to
+</LI>
+<LI>minSwap: Minimal size of the swap partition in MB.
+</LI>
+<LI>maxSwap: Maximal size of the swap partition in MB.
+</LI>
+</UL>
+
 <P>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

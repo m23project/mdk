@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>POOL_makeRepository</TITLE>
-<META NAME="description" CONTENT="POOL_makeRepository">
+<TITLE>POOL_download</TITLE>
+<META NAME="description" CONTENT="POOL_download">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1055.html">
 <LINK REL="previous" HREF="node1053.html">
-<LINK REL="up" HREF="node1037.html">
+<LINK REL="up" HREF="node1040.html">
 <LINK REL="next" HREF="node1055.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html17227"
+<A NAME="tex2html17239"
   HREF="node1055.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html17223"
-  HREF="node1037.html">
+<A NAME="tex2html17235"
+  HREF="node1040.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html17217"
+<A NAME="tex2html17229"
   HREF="node1053.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html17225"
+<A NAME="tex2html17237"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html17228"
-  HREF="node1055.html">POOL_getCDDistributionRelease</A>
-<B> Up:</B> <A NAME="tex2html17224"
-  HREF="node1037.html">./inc/pool.php</A>
-<B> Previous:</B> <A NAME="tex2html17218"
-  HREF="node1053.html">POOL_prepare</A>
- &nbsp; <B>  <A NAME="tex2html17226"
+<B> Next:</B> <A NAME="tex2html17240"
+  HREF="node1055.html">POOL_showDownloadStatus</A>
+<B> Up:</B> <A NAME="tex2html17236"
+  HREF="node1040.html">./inc/pool.php</A>
+<B> Previous:</B> <A NAME="tex2html17230"
+  HREF="node1053.html">POOL_getDir</A>
+ &nbsp; <B>  <A NAME="tex2html17238"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083117000000000000000">
-POOL_makeRepository</A>
+<H2><A NAME="SECTION0083114000000000000000">
+POOL_download</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates a package source from packages stored in one directory.
+<SPAN  CLASS="textbf">Description:</SPAN> shows error messages if the checks for distribution, sourceslist or packages are failing. Otherwise starts the distribution specific download routine.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>poolName: name of the pool
 </LI>
-<LI>archivPath: start search for packages in this subdirectory
+<LI>distr: name of the distribution
 </LI>
-<LI>addCmds: additional commands that should be executed before starting the screen
+<LI>sourceslist: list of the package sources
+</LI>
+<LI>release: release branch of the choosen distribution to download the packages from
+</LI>
+<LI>downloadBasePackages: set to true if a bunch of basic packages should be included into the pool
+</LI>
+<LI>arch: download the packages for a specific CPU architecture
 </LI>
 </UL>
 
@@ -72,7 +78,7 @@ POOL_makeRepository</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

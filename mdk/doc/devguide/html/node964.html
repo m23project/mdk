@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_setAllParams</TITLE>
-<META NAME="description" CONTENT="PKG_setAllParams">
+<TITLE>PKG_addShutdownPackage</TITLE>
+<META NAME="description" CONTENT="PKG_addShutdownPackage">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node965.html">
 <LINK REL="previous" HREF="node963.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node965.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16106"
+<A NAME="tex2html16118"
   HREF="node965.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16102"
-  HREF="node902.html">
+<A NAME="tex2html16114"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16096"
+<A NAME="tex2html16108"
   HREF="node963.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16104"
+<A NAME="tex2html16116"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16107"
-  HREF="node965.html">PKG_OptionPageHeader</A>
-<B> Up:</B> <A NAME="tex2html16103"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16097"
-  HREF="node963.html">PKG_getAllParams</A>
- &nbsp; <B>  <A NAME="tex2html16105"
+<B> Next:</B> <A NAME="tex2html16119"
+  HREF="node965.html">PKG_addShutdownOrRebootPackage</A>
+<B> Up:</B> <A NAME="tex2html16115"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16109"
+  HREF="node963.html">PKG_setClientPackageInstalledOK</A>
+ &nbsp; <B>  <A NAME="tex2html16117"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082862000000000000000">
-PKG_setAllParams</A>
+<H2><A NAME="SECTION0082860000000000000000">
+PKG_addShutdownPackage</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> sets all parameters in the parameters column of a clientjob
+<SPAN  CLASS="textbf">Description:</SPAN> adds a shutdown package, but only if the client is NOT running. returns true, if a schutdown package is added
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>packageID: the ID of the package
-</LI>
-<LI>params: the parameters as assiciative array
+<LI>client: name of the client
 </LI>
 </UL>
 
@@ -70,7 +68,7 @@ PKG_setAllParams</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

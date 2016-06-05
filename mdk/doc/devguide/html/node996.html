@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_getClientbyPackageID</TITLE>
-<META NAME="description" CONTENT="PKG_getClientbyPackageID">
+<TITLE>PKG_multiPackageSelectionsSelection</TITLE>
+<META NAME="description" CONTENT="PKG_multiPackageSelectionsSelection">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node997.html">
 <LINK REL="previous" HREF="node995.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node997.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16490"
+<A NAME="tex2html16502"
   HREF="node997.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16486"
-  HREF="node902.html">
+<A NAME="tex2html16498"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16480"
+<A NAME="tex2html16492"
   HREF="node995.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16488"
+<A NAME="tex2html16500"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16491"
-  HREF="node997.html">PKG_getInfoFromPackageID</A>
-<B> Up:</B> <A NAME="tex2html16487"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16481"
-  HREF="node995.html">PKG_getPackageParams</A>
- &nbsp; <B>  <A NAME="tex2html16489"
+<B> Next:</B> <A NAME="tex2html16503"
+  HREF="node997.html">PKG_showAllPackageSelections</A>
+<B> Up:</B> <A NAME="tex2html16499"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16493"
+  HREF="node995.html">PKG_getAllPackageSelections</A>
+ &nbsp; <B>  <A NAME="tex2html16501"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082894000000000000000">
-PKG_getClientbyPackageID</A>
+<H2><A NAME="SECTION0082892000000000000000">
+PKG_multiPackageSelectionsSelection</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> gets the clientname that owns a selected package ID
+<SPAN  CLASS="textbf">Description:</SPAN> Generates a multi selection with all package selections.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>id: package ID
+<LI>selName: name of the selection
+</LI>
+<LI>first: entry that should be shown first (this is the internal value and NOT the name shown to the user). the first value from the list will be written to $first. set first to "false" to disable writing the first entry.
+</LI>
+<LI>addEmpty: set to true to add an empty entry at the beginning.
 </LI>
 </UL>
 
@@ -68,7 +72,7 @@ PKG_getClientbyPackageID</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

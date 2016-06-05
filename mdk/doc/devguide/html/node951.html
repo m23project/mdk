@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_addJob</TITLE>
-<META NAME="description" CONTENT="PKG_addJob">
+<TITLE>PKG_getSpecialPackageInfo</TITLE>
+<META NAME="description" CONTENT="PKG_getSpecialPackageInfo">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node952.html">
 <LINK REL="previous" HREF="node950.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node952.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15950"
+<A NAME="tex2html15962"
   HREF="node952.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15946"
-  HREF="node902.html">
+<A NAME="tex2html15958"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15940"
+<A NAME="tex2html15952"
   HREF="node950.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15948"
+<A NAME="tex2html15960"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15951"
-  HREF="node952.html">PKG_discardNormalJob</A>
-<B> Up:</B> <A NAME="tex2html15947"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15941"
-  HREF="node950.html">PKG_rmNormalJob</A>
- &nbsp; <B>  <A NAME="tex2html15949"
+<B> Next:</B> <A NAME="tex2html15963"
+  HREF="node952.html">PKG_getPackageID</A>
+<B> Up:</B> <A NAME="tex2html15959"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15953"
+  HREF="node950.html">PKG_getSpecialPackageDescription</A>
+ &nbsp; <B>  <A NAME="tex2html15961"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082849000000000000000">
-PKG_addJob</A>
+<H2><A NAME="SECTION0082847000000000000000">
+PKG_getSpecialPackageInfo</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> adds a job to the clientjobs table
+<SPAN  CLASS="textbf">Description:</SPAN> gets informations from special packages
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>client: name of the client
+<LI>package: name of package
 </LI>
-<LI>packageName: name of the package
+<LI>infoType: the type of information you want to get
 </LI>
-<LI>priority: priority of the package
+<LI>dist: shortname of the distribution
 </LI>
-<LI>params: parameter for installing the package
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>The information or false, if no information could be got.
 </LI>
 </UL>
 
@@ -74,7 +78,7 @@ PKG_addJob</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_getDriveInfoString</TITLE>
-<META NAME="description" CONTENT="FDISK_getDriveInfoString">
+<TITLE>FDISK_getPartInfoString</TITLE>
+<META NAME="description" CONTENT="FDISK_getPartInfoString">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node547.html">
 <LINK REL="previous" HREF="node545.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node547.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10709"
+<A NAME="tex2html10719"
   HREF="node547.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10705"
-  HREF="node480.html">
+<A NAME="tex2html10715"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10699"
+<A NAME="tex2html10709"
   HREF="node545.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10707"
+<A NAME="tex2html10717"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10710"
-  HREF="node547.html">FDISK_getDriveInfoIcon</A>
-<B> Up:</B> <A NAME="tex2html10706"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10700"
-  HREF="node545.html">FDISK_getPartInfoString</A>
- &nbsp; <B>  <A NAME="tex2html10708"
+<B> Next:</B> <A NAME="tex2html10720"
+  HREF="node547.html">FDISK_getDriveInfoString</A>
+<B> Up:</B> <A NAME="tex2html10716"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10710"
+  HREF="node545.html">FDISK_getPartitions</A>
+ &nbsp; <B>  <A NAME="tex2html10718"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081666000000000000000">
-FDISK_getDriveInfoString</A>
+<H2><A NAME="SECTION0081665000000000000000">
+FDISK_getPartInfoString</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates an info string, that shows information about the device name of the drive and bolonging to a RAID.
+<SPAN  CLASS="textbf">Description:</SPAN> Generates an info string, that shows information about the device name of the partition, its filesystem and bolonging to a RAID.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>vDev: Virtual (internally used) device number.
+</LI>
+<LI>vPart: Virtual (internally used) partition number. This is normally another number than the physical number (e.g. 1 on /dev/hda1)
 </LI>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
@@ -78,7 +80,7 @@ FDISK_getDriveInfoString</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

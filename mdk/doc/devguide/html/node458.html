@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>EDIT_writeToFile</TITLE>
-<META NAME="description" CONTENT="EDIT_writeToFile">
+<TITLE>./inc/edit.php</TITLE>
+<META NAME="description" CONTENT="./inc/edit.php">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,64 +19,103 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
-<LINK REL="next" HREF="node459.html">
-<LINK REL="previous" HREF="node457.html">
-<LINK REL="up" HREF="node457.html">
+<LINK REL="next" HREF="node481.html">
+<LINK REL="previous" HREF="node450.html">
+<LINK REL="up" HREF="node142.html">
 <LINK REL="next" HREF="node459.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9546"
+<A NAME="tex2html9534"
   HREF="node459.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9542"
-  HREF="node457.html">
+<A NAME="tex2html9530"
+  HREF="node142.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9536"
+<A NAME="tex2html9524"
   HREF="node457.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9544"
+<A NAME="tex2html9532"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9547"
-  HREF="node459.html">EDIT_setOption</A>
-<B> Up:</B> <A NAME="tex2html9543"
-  HREF="node457.html">./inc/edit.php</A>
-<B> Previous:</B> <A NAME="tex2html9537"
-  HREF="node457.html">./inc/edit.php</A>
- &nbsp; <B>  <A NAME="tex2html9545"
+<B> Next:</B> <A NAME="tex2html9535"
+  HREF="node459.html">EDIT_writeToFile</A>
+<B> Up:</B> <A NAME="tex2html9531"
+  HREF="node142.html">m23 API reference</A>
+<B> Previous:</B> <A NAME="tex2html9525"
+  HREF="node457.html">PKG_translateClientPackageStatus</A>
+ &nbsp; <B>  <A NAME="tex2html9533"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008151000000000000000">
-EDIT_writeToFile</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Writes a text to a file on a client.
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
-<UL>
-<LI>file: Name of the file.
-</LI>
-<LI>text: The text to insert.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Code for writing a text to a file on a client.
-</LI>
-</UL>
-
+<H1><A NAME="SECTION008150000000000000000">
+./inc/edit.php</A>
+</H1>
+ Author: Hauke Goos-Habermann (HHabermann@pc-kiel.de)
+<BR>
+Description: routines for editing files with sed
+<BR>
 <P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html9536"
+  HREF="node459.html">EDIT_writeToFile</A>
+<LI><A NAME="tex2html9537"
+  HREF="node460.html">EDIT_setOption</A>
+<LI><A NAME="tex2html9538"
+  HREF="node461.html">EDIT_genClientm23Random</A>
+<LI><A NAME="tex2html9539"
+  HREF="node462.html">EDIT_commentoutInsert</A>
+<LI><A NAME="tex2html9540"
+  HREF="node463.html">EDIT_countMatches</A>
+<LI><A NAME="tex2html9541"
+  HREF="node464.html">EDIT_calc</A>
+<LI><A NAME="tex2html9542"
+  HREF="node465.html">EDIT_uncomment</A>
+<LI><A NAME="tex2html9543"
+  HREF="node466.html">EDIT_commentout</A>
+<LI><A NAME="tex2html9544"
+  HREF="node467.html">EDIT_insertAfterLineNumber</A>
+<LI><A NAME="tex2html9545"
+  HREF="node468.html">EDIT_insertAtLineNumber</A>
+<LI><A NAME="tex2html9546"
+  HREF="node469.html">EDIT_insertLineNumber</A>
+<LI><A NAME="tex2html9547"
+  HREF="node470.html">EDIT_searchLineNumber</A>
+<LI><A NAME="tex2html9548"
+  HREF="node471.html">EDIT_searchLastLineNumber</A>
+<LI><A NAME="tex2html9549"
+  HREF="node472.html">EDIT_searchNextLineNumber</A>
+<LI><A NAME="tex2html9550"
+  HREF="node473.html">EDIT_replace</A>
+<LI><A NAME="tex2html9551"
+  HREF="node474.html">EDIT_prepareStr</A>
+<LI><A NAME="tex2html9552"
+  HREF="node475.html">EDIT_savePerms</A>
+<LI><A NAME="tex2html9553"
+  HREF="node476.html">EDIT_restorePerms</A>
+<LI><A NAME="tex2html9554"
+  HREF="node477.html">EDIT_deleteLines</A>
+<LI><A NAME="tex2html9555"
+  HREF="node478.html">EDIT_deleteLinesAmount</A>
+<LI><A NAME="tex2html9556"
+  HREF="node479.html">EDIT_addIfNotExists</A>
+<LI><A NAME="tex2html9557"
+  HREF="node480.html">EDIT_deleteMatching</A>
+</UL>
+<!--End of Table of Child-Links-->
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

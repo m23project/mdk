@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_listPackages</TITLE>
-<META NAME="description" CONTENT="PKG_listPackages">
+<TITLE>pkgUpdateCacheOnServer</TITLE>
+<META NAME="description" CONTENT="pkgUpdateCacheOnServer">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,51 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node454.html">
 <LINK REL="previous" HREF="node452.html">
-<LINK REL="up" HREF="node449.html">
+<LINK REL="up" HREF="node450.html">
 <LINK REL="next" HREF="node454.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9466"
+<A NAME="tex2html9476"
   HREF="node454.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9462"
-  HREF="node449.html">
+<A NAME="tex2html9472"
+  HREF="node450.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9456"
+<A NAME="tex2html9466"
   HREF="node452.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9464"
+<A NAME="tex2html9474"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9467"
-  HREF="node454.html">PKG_previewInstall</A>
-<B> Up:</B> <A NAME="tex2html9463"
-  HREF="node449.html">./inc/distr/halfSister/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html9457"
-  HREF="node452.html">pkgUpdateCacheOnServer</A>
- &nbsp; <B>  <A NAME="tex2html9465"
+<B> Next:</B> <A NAME="tex2html9477"
+  HREF="node454.html">PKG_listPackages</A>
+<B> Up:</B> <A NAME="tex2html9473"
+  HREF="node450.html">./inc/distr/halfSister/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html9467"
+  HREF="node452.html">PKG_fastGetInstalledPackages</A>
+ &nbsp; <B>  <A NAME="tex2html9475"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008144000000000000000">
-PKG_listPackages</A>
+<H2><A NAME="SECTION008143000000000000000">
+pkgUpdateCacheOnServer</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> list packages matching the key
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>key: search key
+<LI>$1 (packagesourcename): Name der Paketquellenliste
 </LI>
-<LI>distr: the distribution name
+<LI>$2 (packagesource): Inhalt der Paketquellenliste
 </LI>
-<LI>packagesource: name of the package source
+<LI>$3 (force): set to true (1) if you want to update the package info and the time is not over
 </LI>
-<LI>client: Name of the client the packages are searched for. (Not used here and only for halfSister)
+<LI>$4 (arch): Architecture (amd64/i386) to get package infos for.
 </LI>
 </UL>
 
@@ -74,7 +73,7 @@ PKG_listPackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

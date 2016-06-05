@@ -14,6 +14,7 @@
 \item ip: IP of the client
 \item password: root password on Debian systems or combines user/root password on Ubuntu systems
 \item ubuntuuser: name of the Ubuntu user or empty if a Debian system is meant.
+\item clientUsesDynamicIP: if set to true, the client uses a dynamic IP address
 \end{itemize}
 
 \subsection{ASSI\_addUbuntuRoot}
@@ -2286,6 +2287,19 @@
 \item String format (e.g. "pxe") boot type.
 \end{itemize}
 
+\subsection{DHCP\_runScript}
+\textbf{Description:} Runs the script for controlling an external DHCP server.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item command: 'add' for adding an entry to the DHCP server or 'remove' for removing.
+\item clientName: name of the client
+\item ip: ip address of the client
+\item netmask: netmask for the ip
+\item mac: mac addresse of the network card
+\item bootType: Parameter can a string: pxe, etherboot, gpxe, none
+\item gateway: The gateway for the client.
+\end{itemize}
+
 \subsection{DHCP\_addClient}
 \textbf{Description:} adds a new client to the dhcpd.conf and restarts the dhcpd-server\\
 \textbf{Parameter:}
@@ -3958,6 +3972,13 @@ Description: Basic package operations (search, add,...) for halfSister distribut
 \textbf{Returns:}
 \begin{itemize}
 \item True, when run in CLI otherwise false.
+\end{itemize}
+
+\subsection{HELPER\_isExecutedOnUCS}
+\textbf{Description:} Checks, if it is run on UCS.\\
+\textbf{Returns:}
+\begin{itemize}
+\item True, when run on UCS otherwise false.
 \end{itemize}
 
 \subsection{HELPER\_getContentFromURL}
@@ -6449,12 +6470,28 @@ Description: basic package operations (search, add,...)\\
 \item The URL to the debootstrap cache file on the SourceForge server.
 \end{itemize}
 
+\subsection{PKG\_baseSysDownloadedCompletelyTom23Server}
+\textbf{Description:} Checks, if the debootstrap cache file was downloaded completely to the m23 server.\\
+\textbf{Parameter:}
+\begin{itemize}
+\item release: Select the Debian/Ubuntu suite (squeeze, sarge, sid, precise).
+\item arch: the computer architecture of the client
+\end{itemize}
+\textbf{Returns:}
+\begin{itemize}
+\item true, on complete download otherwise false.
+\end{itemize}
+
 \subsection{PKG\_downloadBaseSysTom23Server}
 \textbf{Description:} Downloads the debootstrap cache file to the m23 server and checks its validity (by signature).\\
 \textbf{Parameter:}
 \begin{itemize}
 \item release: Select the Debian/Ubuntu suite (squeeze, sarge, sid, precise).
 \item arch: the computer architecture of the client
+\end{itemize}
+\textbf{Returns:}
+\begin{itemize}
+\item true, if the download is completed, otherwise false.
 \end{itemize}
 
 \subsection{PKG\_getDebootstrapCacheServerURL}

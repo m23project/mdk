@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>DHCP_activateBoot</TITLE>
-<META NAME="description" CONTENT="DHCP_activateBoot">
+<TITLE>DHCP_setBootimage</TITLE>
+<META NAME="description" CONTENT="DHCP_setBootimage">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -28,43 +28,41 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9353"
+<A NAME="tex2html9363"
   HREF="node445.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9349"
+<A NAME="tex2html9359"
   HREF="node429.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9343"
+<A NAME="tex2html9353"
   HREF="node443.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9351"
+<A NAME="tex2html9361"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9354"
-  HREF="node445.html">DHCP_calcPXEIP</A>
-<B> Up:</B> <A NAME="tex2html9350"
+<B> Next:</B> <A NAME="tex2html9364"
+  HREF="node445.html">DHCP_activateBoot</A>
+<B> Up:</B> <A NAME="tex2html9360"
   HREF="node429.html">./inc/dhcp.php</A>
-<B> Previous:</B> <A NAME="tex2html9344"
-  HREF="node443.html">DHCP_setBootimage</A>
- &nbsp; <B>  <A NAME="tex2html9352"
+<B> Previous:</B> <A NAME="tex2html9354"
+  HREF="node443.html">DHCP_rmClient</A>
+ &nbsp; <B>  <A NAME="tex2html9362"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
 <H2><A NAME="SECTION0081315000000000000000">
-DHCP_activateBoot</A>
+DHCP_setBootimage</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> switches the network boot on or off
+<SPAN  CLASS="textbf">Description:</SPAN> sets the bootimage of a client for EtherBoot
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>clientName: name of the client
 </LI>
-<LI>on: true activates the network boot, false deactivates
-</LI>
-<LI>bootType: The boot type CAN be given here (e.g. pxe or etherboot)
+<LI>bootImage: name of the bootimage (hdboot, ip address for name)
 </LI>
 </UL>
 
@@ -72,7 +70,7 @@ DHCP_activateBoot</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

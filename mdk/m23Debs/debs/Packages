@@ -47,6 +47,23 @@ Description: hardware identification / configuration data
  Its needed for the kudzu/hwsetup hardware detection of KNOPPIX.
 
 Package: hwsetup
+Version: 1.2-7
+Architecture: amd64
+Maintainer: Klaus Knopper <knopper@knopper.net>
+Installed-Size: 696
+Filename: ./hwsetup_1.2-7_amd64.deb
+Size: 305632
+MD5sum: 141f70c68e22d7f212d6cb6fc94a9557
+SHA1: 928f42a1b6c14c870cc928ae9ed1a6e4a220b7f6
+SHA256: 3198cc9deb1091616991008fea1ae2e56be369a97bf6e9e543adebca22b65080
+Section: devel
+Priority: optional
+Description: Automatic hardware setup using the kudzu library
+ hwsetup is a non-interactive hardware setup tool that tries to read your
+ hardware setup and autoloads all necessary modules, plus generating the
+ symlinks for mouse and cdrom/scanner in /dev.
+
+Package: hwsetup
 Version: 1.4-19
 Architecture: i386
 Maintainer: Klaus Knopper <knoppix@knopper.net>
@@ -69,23 +86,6 @@ Description: Automatic hardware configuration for KNOPPIX
  This version no longer loads modules by itself, which is now udevs
  job, and merely speeds up creation of /etc/X11/xorg.conf via
  mkxorgconfig.
-
-Package: hwsetup
-Version: 1.2-7
-Architecture: amd64
-Maintainer: Klaus Knopper <knopper@knopper.net>
-Installed-Size: 696
-Filename: ./hwsetup_1.2-7_amd64.deb
-Size: 305632
-MD5sum: 141f70c68e22d7f212d6cb6fc94a9557
-SHA1: 928f42a1b6c14c870cc928ae9ed1a6e4a220b7f6
-SHA256: 3198cc9deb1091616991008fea1ae2e56be369a97bf6e9e543adebca22b65080
-Section: devel
-Priority: optional
-Description: Automatic hardware setup using the kudzu library
- hwsetup is a non-interactive hardware setup tool that tries to read your
- hardware setup and autoloads all necessary modules, plus generating the
- symlinks for mouse and cdrom/scanner in /dev.
 
 Package: khtml2png
 Version: 2.6.7
@@ -207,29 +207,29 @@ Description: adds debconf-get-selections and
  debconf-utils package.
 
 Package: m23-grub-splash
-Version: 1.0-141
+Version: 1.0-160
 Architecture: all
 Maintainer: Hauke Goos-Habermann <hhabermann@pc-kiel.de>
-Filename: ./m23-grub-splash_1.0-141_all.deb
-Size: 13588
-MD5sum: e881a7a825761d2cbdbabeffc6f8f376
-SHA1: aeb7387d9e90e0d2ad54188c7dc65673dcae8840
-SHA256: a4ea9c867077e5b92dff6bff1efceebb02e6875339694ea265fffc2d26fb2119
+Filename: ./m23-grub-splash_1.0-160_all.deb
+Size: 13586
+MD5sum: 70cea16b68bc7a3f52cc1e8b5a7a1945
+SHA1: 426d4b9018c43498f6c4a44ec21c953e9815938e
+SHA256: bbdb9713bb46058e56edf941f8feb8de0c6d51a932d76eb7b3c45c62f1d6e40d
 Section: base
 Priority: optional
 Description: Adds a m23 splash screen to the GRUB boot manager.
 
 Package: m23-initscripts
-Version: 0.8-240
+Version: 0.8-259
 Architecture: all
 Maintainer: Hauke Goos-Habermann <hhabermann@pc-kiel.de>
 Depends: bash
 Recommends: hwinfo
-Filename: ./m23-initscripts_0.8-240_all.deb
-Size: 14908
-MD5sum: f92783a8016e53be8e661d0268951e4f
-SHA1: afbb4707b8bd7d53a58f4dcc48f956e3cce934d9
-SHA256: 3ddd303abc05ae5042c639d2014987bdb7802ad5b632e4fae8eb518e13d591b7
+Filename: ./m23-initscripts_0.8-259_all.deb
+Size: 15214
+MD5sum: 427e9b6ebe659005a951c2dad4fab516
+SHA1: a8699d2b3be1410a7e61b147a6ece54efa6e2bae
+SHA256: b0524f7742e5a4be0442880c1f3328445d2804e843b6ac7fd0cf3ca6406f1c47
 Section: base
 Priority: optional
 Description: adds startup files for hwsetup and fetching
@@ -252,45 +252,45 @@ Priority: optional
 Description: Deb package created by m23 package generator from /m23/data+scripts/extraDebs/m23-kde4-wallpaper.tar.gz.
 
 Package: m23-ksplash
-Version: 1.0-151
+Version: 1.0-170
 Architecture: all
 Maintainer: Hauke Goos-Habermann <hhabermann@pc-kiel.de>
 Depends: ksplash | ksplash-trinity
-Filename: ./m23-ksplash_1.0-151_all.deb
-Size: 276570
-MD5sum: c1d4d18151e9fc644a2ee5f28a87697c
-SHA1: 16610ef967556c6300559352c725d728085b0a19
-SHA256: 65634f7ce42fd05b4f60c5d85b33bea259ae1ac9f2a7d07c4dfce4c57169207d
+Filename: ./m23-ksplash_1.0-170_all.deb
+Size: 276604
+MD5sum: d0b7fb6695284cb6bde13a9c58be01f3
+SHA1: d56a5e656e7140881db72919d8245931d39a87f0
+SHA256: 7ccb0b33b2b91951ff5a8fea75f82a36dd51683fb9c3760174e7ce90e168c904
 Section: base
 Priority: optional
 Description: m23 theme for ksplash.
 
 Package: m23-skel
-Version: 1.0-153
+Version: 1.0-172
 Architecture: all
 Maintainer: Hauke Goos-Habermann <hhabermann@pc-kiel.de>
 Depends: bash
-Filename: ./m23-skel_1.0-153_all.deb
-Size: 611666
-MD5sum: 9bc9df43b9e7f27fed15cc6446ea8fd5
-SHA1: 7ff74c0565b46469c70ed8222bfe7740878c8f87
-SHA256: 4ea8391bd55abb3a48db14bb0d89ad8936df276fac2a649e8f68e83b60e791c3
+Filename: ./m23-skel_1.0-172_all.deb
+Size: 611628
+MD5sum: 7ef280a12c134358bd8ae6e2b20db9ac
+SHA1: 5f461fdfca6b6e3496b6d90babbfa8ff4d0c9796
+SHA256: c834ced36034c7babe30d59f80bec2c1b9bcc40989c01087b366e0a7cdddfb01
 Section: base
 Priority: optional
 Description: Skeleton files for new users.
 
 Package: m23-vbox
-Version: 15.2-100786
+Version: 16.2-100898
 Architecture: all
 Maintainer: Hauke Goos-Habermann <hhabermann@pc-kiel.de>
 Installed-Size: 140
 Pre-Depends: debconf
 Depends: bash, flwm, vnc4server, virtualbox-ose | virtualbox, gcc, g++, bcc, iasl, xsltproc, uuid-dev, zlib1g-dev, libidl-dev, libsdl1.2-dev, libxcursor-dev, libasound2-dev, libstdc++5, libhal-dev | bash, libpulse-dev, libxml2-dev, libxslt1-dev, python2.5-dev | python2.7-dev, libqt4-dev, libcap-dev, xterm, x11vnc, screen, wget, bzip2, pwgen, dialog, ssh, sudo, xdialog | zenity, xautomation, xloadimage
-Filename: ./m23-vbox_15.2-100786_all.deb
-Size: 56314
-MD5sum: 3d48b6a9ab3f8b971a978df0d271c5ed
-SHA1: 81be68c002bffcc12e393bbfe0d431bd73a118fa
-SHA256: 15833868ab5a3e839e358be92a760ed3a908bddceb7ecb06fceaeb20451c80b0
+Filename: ./m23-vbox_16.2-100898_all.deb
+Size: 56352
+MD5sum: c3b184ad4e403f421a81f6d117c08a24
+SHA1: b136d1f96f67a8d7a00a11b0688fb6a6ac4c91ef
+SHA256: 6c401c47e3caeef0a0446e917bdeaccf082975a7773a92a286217808b9940d9b
 Section: base
 Priority: optional
 Description: VirtualBox OSE integration into m23
@@ -372,15 +372,15 @@ Description: Linux PCI Utilities
 Package: pciutils-dev
 Source: pciutils
 Version: 1:2.2.7-1.1
-Architecture: i386
+Architecture: amd64
 Maintainer: Debian pciutils Maintainers <pkg-pciutils-discuss@lists.alioth.debian.org>
-Installed-Size: 144
+Installed-Size: 156
 Depends: pciutils (= 1:2.2.7-1.1)
-Filename: ./pciutils-dev_2.2.7-1.1_i386.deb
-Size: 31254
-MD5sum: 36b4e3d5903870d104bfae0192845aba
-SHA1: 62f5f943e78524b20a19aa995cae9c49ce82da53
-SHA256: c034a49391b9f9882b245c4bac995455ef5eec25716f5a137c5afbf5c8322cbd
+Filename: ./pciutils-dev_2.2.7-1.1_amd64.deb
+Size: 31908
+MD5sum: edbc7ea7dd5be6abb3da9e0b95076e5c
+SHA1: 887e8f332355b9bb6623507347f1e16e67ecc4b5
+SHA256: 983c6e606c6a7a00e60d13191ac4b5fd2e79109d805338bea1a63440571ab911
 Section: devel
 Priority: optional
 Description: Linux PCI Utilities (development files)
@@ -392,15 +392,15 @@ Description: Linux PCI Utilities (development files)
 Package: pciutils-dev
 Source: pciutils
 Version: 1:2.2.7-1.1
-Architecture: amd64
+Architecture: i386
 Maintainer: Debian pciutils Maintainers <pkg-pciutils-discuss@lists.alioth.debian.org>
-Installed-Size: 156
+Installed-Size: 144
 Depends: pciutils (= 1:2.2.7-1.1)
-Filename: ./pciutils-dev_2.2.7-1.1_amd64.deb
-Size: 31908
-MD5sum: edbc7ea7dd5be6abb3da9e0b95076e5c
-SHA1: 887e8f332355b9bb6623507347f1e16e67ecc4b5
-SHA256: 983c6e606c6a7a00e60d13191ac4b5fd2e79109d805338bea1a63440571ab911
+Filename: ./pciutils-dev_2.2.7-1.1_i386.deb
+Size: 31254
+MD5sum: 36b4e3d5903870d104bfae0192845aba
+SHA1: 62f5f943e78524b20a19aa995cae9c49ce82da53
+SHA256: c034a49391b9f9882b245c4bac995455ef5eec25716f5a137c5afbf5c8322cbd
 Section: devel
 Priority: optional
 Description: Linux PCI Utilities (development files)

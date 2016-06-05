@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_raidJob</TITLE>
-<META NAME="description" CONTENT="FDISK_raidJob">
+<TITLE>FDISK_addRaidBeforeFormat</TITLE>
+<META NAME="description" CONTENT="FDISK_addRaidBeforeFormat">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,42 +21,42 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node588.html">
 <LINK REL="previous" HREF="node586.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node588.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11201"
+<A NAME="tex2html11211"
   HREF="node588.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11197"
-  HREF="node480.html">
+<A NAME="tex2html11207"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11191"
+<A NAME="tex2html11201"
   HREF="node586.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11199"
+<A NAME="tex2html11209"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11202"
-  HREF="node588.html">FDISK_virtualDeleteDrive</A>
-<B> Up:</B> <A NAME="tex2html11198"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html11192"
-  HREF="node586.html">FDISK_addRaidBeforeFormat</A>
- &nbsp; <B>  <A NAME="tex2html11200"
+<B> Next:</B> <A NAME="tex2html11212"
+  HREF="node588.html">FDISK_raidJob</A>
+<B> Up:</B> <A NAME="tex2html11208"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html11202"
+  HREF="node586.html">FDISK_addRaidJobs</A>
+ &nbsp; <B>  <A NAME="tex2html11210"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00816107000000000000000">
-FDISK_raidJob</A>
+<H2><A NAME="SECTION00816106000000000000000">
+FDISK_addRaidBeforeFormat</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates a job to create a RAID on given drives/partitions.
+<SPAN  CLASS="textbf">Description:</SPAN> Generates and places a job to create a RAID on given drives/partitions before the formating of the RAID device.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
@@ -64,7 +64,9 @@ FDISK_raidJob</A>
 </LI>
 <LI>devList: Space separated list of devices to create the RAID on top (e.g. /dev/sda1 /dev/hda /dev/sbd5).
 </LI>
-<LI>partJobs: associative array with partition jobs
+<LI>partJobs: associative array with partition jobs.
+</LI>
+<LI>raidMode: The type of the RAID (0,1,5, ...)
 </LI>
 </UL>
 
@@ -72,7 +74,7 @@ FDISK_raidJob</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

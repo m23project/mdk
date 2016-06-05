@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_pauseVM</TITLE>
-<META NAME="description" CONTENT="VM_pauseVM">
+<TITLE>VM_wasVBoxAddonDownloaded</TITLE>
+<META NAME="description" CONTENT="VM_wasVBoxAddonDownloaded">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1217.html">
 <LINK REL="previous" HREF="node1215.html">
-<LINK REL="up" HREF="node1179.html">
+<LINK REL="up" HREF="node1182.html">
 <LINK REL="next" HREF="node1217.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html19339"
+<A NAME="tex2html19351"
   HREF="node1217.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html19335"
-  HREF="node1179.html">
+<A NAME="tex2html19347"
+  HREF="node1182.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html19329"
+<A NAME="tex2html19341"
   HREF="node1215.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html19337"
+<A NAME="tex2html19349"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html19340"
-  HREF="node1217.html">VM_resumeVM</A>
-<B> Up:</B> <A NAME="tex2html19336"
-  HREF="node1179.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html19330"
-  HREF="node1215.html">VM_stopVM</A>
- &nbsp; <B>  <A NAME="tex2html19338"
+<B> Next:</B> <A NAME="tex2html19352"
+  HREF="node1217.html">VM_listDownloadableVBoxAddons</A>
+<B> Up:</B> <A NAME="tex2html19348"
+  HREF="node1182.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html19342"
+  HREF="node1215.html">VM_VBOXaddonDownloadDialog</A>
+ &nbsp; <B>  <A NAME="tex2html19350"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083837000000000000000">
-VM_pauseVM</A>
+<H2><A NAME="SECTION0083834000000000000000">
+VM_wasVBoxAddonDownloaded</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates a BASH command to pause a virtual machine.
+<SPAN  CLASS="textbf">Description:</SPAN> Checks, if the VirtualBox addition for a selected version was downloaded to the m23 server.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>type: VM_SW_VBOX for VirtualBox OSE
-</LI>
-<LI>vmname: Name of the VM.
+<LI>version: Version number of the VirtualBox addition to look for.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>BASH code to pause a virtual machine.
+<LI>True, if the addition is there.
 </LI>
 </UL>
 
@@ -76,7 +74,7 @@ VM_pauseVM</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

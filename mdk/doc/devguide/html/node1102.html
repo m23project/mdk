@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_sendScriptToSF</TITLE>
-<META NAME="description" CONTENT="SERVER_sendScriptToSF">
+<TITLE>SERVER_delFromHtpasswd</TITLE>
+<META NAME="description" CONTENT="SERVER_delFromHtpasswd">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1103.html">
 <LINK REL="previous" HREF="node1101.html">
-<LINK REL="up" HREF="node1083.html">
+<LINK REL="up" HREF="node1086.html">
 <LINK REL="next" HREF="node1103.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html17870"
+<A NAME="tex2html17882"
   HREF="node1103.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html17866"
-  HREF="node1083.html">
+<A NAME="tex2html17878"
+  HREF="node1086.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html17860"
+<A NAME="tex2html17872"
   HREF="node1101.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html17868"
+<A NAME="tex2html17880"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html17871"
-  HREF="node1103.html">SERVER_dynamicIPWarn</A>
-<B> Up:</B> <A NAME="tex2html17867"
-  HREF="node1083.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html17861"
-  HREF="node1101.html">SERVER_dhcpServerInNetWarn</A>
- &nbsp; <B>  <A NAME="tex2html17869"
+<B> Next:</B> <A NAME="tex2html17883"
+  HREF="node1103.html">SERVER_addToHtpasswd</A>
+<B> Up:</B> <A NAME="tex2html17879"
+  HREF="node1086.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html17873"
+  HREF="node1101.html">SERVER_changeHtpasswd</A>
+ &nbsp; <B>  <A NAME="tex2html17881"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083519000000000000000">
-SERVER_sendScriptToSF</A>
+<H2><A NAME="SECTION0083516000000000000000">
+SERVER_delFromHtpasswd</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Uploads a script to m23.sf.net for public use.
+<SPAN  CLASS="textbf">Description:</SPAN> Removes a user with password to a htpasswd file.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>name: Name of the script.
+<LI>: htpasswdFile: htpasswd file that contains user names and crypted passwords.
 </LI>
-<LI>author: Name of the script author.
+<LI>: username: Name of the user to remove
 </LI>
-<LI>description: Short descriptive text for the purpose of the script.
-</LI>
-<LI>script: Source code of the script.
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: True if the new user was added sucessfully.
 </LI>
 </UL>
 
@@ -74,7 +76,7 @@ SERVER_sendScriptToSF</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

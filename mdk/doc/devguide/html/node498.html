@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_fdiskSessionClient</TITLE>
-<META NAME="description" CONTENT="FDISK_fdiskSessionClient">
+<TITLE>FDISK_fdiskSessionSetter</TITLE>
+<META NAME="description" CONTENT="FDISK_fdiskSessionSetter">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node499.html">
 <LINK REL="previous" HREF="node497.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node499.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10133"
+<A NAME="tex2html10143"
   HREF="node499.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10129"
-  HREF="node480.html">
+<A NAME="tex2html10139"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10123"
+<A NAME="tex2html10133"
   HREF="node497.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10131"
+<A NAME="tex2html10141"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10134"
-  HREF="node499.html">FDISK_fdiskSessionParam</A>
-<B> Up:</B> <A NAME="tex2html10130"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10124"
-  HREF="node497.html">FDISK_fdiskSessionSetter</A>
- &nbsp; <B>  <A NAME="tex2html10132"
+<B> Next:</B> <A NAME="tex2html10144"
+  HREF="node499.html">FDISK_fdiskSessionClient</A>
+<B> Up:</B> <A NAME="tex2html10140"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10134"
+  HREF="node497.html">FDISK_fdiskSessionSwapPart</A>
+ &nbsp; <B>  <A NAME="tex2html10142"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081618000000000000000">
-FDISK_fdiskSessionClient</A>
+<H2><A NAME="SECTION0081617000000000000000">
+FDISK_fdiskSessionSetter</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns the client name to partition and format.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Generic function to store values in the client partition and format session.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>The client name to partition and format.
+<LI>newVal: The value to set or false for not changing.
+</LI>
+<LI>varName: The name the value should be stored under in the client partition and format session.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>The current value.
 </LI>
 </UL>
 
@@ -68,7 +76,7 @@ FDISK_fdiskSessionClient</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

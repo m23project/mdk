@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_combinem23normal</TITLE>
-<META NAME="description" CONTENT="PKG_combinem23normal">
+<TITLE>PKG_addUser</TITLE>
+<META NAME="description" CONTENT="PKG_addUser">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node909.html">
 <LINK REL="previous" HREF="node907.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node909.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15434"
+<A NAME="tex2html15446"
   HREF="node909.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15430"
-  HREF="node902.html">
+<A NAME="tex2html15442"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15424"
+<A NAME="tex2html15436"
   HREF="node907.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15432"
+<A NAME="tex2html15444"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15435"
-  HREF="node909.html">PKG_importSelectedPackagesFromFile</A>
-<B> Up:</B> <A NAME="tex2html15431"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15425"
-  HREF="node907.html">PKG_cleanPackageLine</A>
- &nbsp; <B>  <A NAME="tex2html15433"
+<B> Next:</B> <A NAME="tex2html15447"
+  HREF="node909.html">PKG_cleanPackageLine</A>
+<B> Up:</B> <A NAME="tex2html15443"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15437"
+  HREF="node907.html">PKG_addDebianUser</A>
+ &nbsp; <B>  <A NAME="tex2html15445"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008286000000000000000">
-PKG_combinem23normal</A>
+<H2><A NAME="SECTION008284000000000000000">
+PKG_addUser</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Combines the package names of multiple entries for m23normal and m23normalRemove jobs in a package selection.
+<SPAN  CLASS="textbf">Description:</SPAN> Adds a job for creating an user on the client.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>packageSelectionName: Name of the package selection to optimise.
+<LI>client: Name of the client.
+</LI>
+<LI>login: Login name of the new user.
+</LI>
+<LI>firstpw: Password for the new user.
+</LI>
+<LI>groups: Array of groups the user should be added.
+</LI>
+<LI>uid: Optional user ID of the new user.
+</LI>
+<LI>gid: Optional group ID of the new user.
 </LI>
 </UL>
 
@@ -68,7 +78,7 @@ PKG_combinem23normal</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

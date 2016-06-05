@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_getDebootstrapCacheFilename</TITLE>
-<META NAME="description" CONTENT="PKG_getDebootstrapCacheFilename">
+<TITLE>PKG_importSelectedPackagesFromFile</TITLE>
+<META NAME="description" CONTENT="PKG_importSelectedPackagesFromFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node912.html">
 <LINK REL="previous" HREF="node910.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node912.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15470"
+<A NAME="tex2html15482"
   HREF="node912.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15466"
-  HREF="node902.html">
+<A NAME="tex2html15478"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15460"
+<A NAME="tex2html15472"
   HREF="node910.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15468"
+<A NAME="tex2html15480"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15471"
-  HREF="node912.html">PKG_getDebootstrapCacheSfURL</A>
-<B> Up:</B> <A NAME="tex2html15467"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15461"
-  HREF="node910.html">PKG_exportSelectedPackages</A>
- &nbsp; <B>  <A NAME="tex2html15469"
+<B> Next:</B> <A NAME="tex2html15483"
+  HREF="node912.html">PKG_exportSelectedPackages</A>
+<B> Up:</B> <A NAME="tex2html15479"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15473"
+  HREF="node910.html">PKG_combinem23normal</A>
+ &nbsp; <B>  <A NAME="tex2html15481"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008289000000000000000">
-PKG_getDebootstrapCacheFilename</A>
+<H2><A NAME="SECTION008287000000000000000">
+PKG_importSelectedPackagesFromFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns the file name of the debootstrap cache file (without path).
+<SPAN  CLASS="textbf">Description:</SPAN> Imports space-seperated packages from a file and adds them to the wait4acc/selected packages of a client.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>release: Select the Debian/Ubuntu suite (squeeze, sarge, sid, precise).
+<LI>client: Name of the client or empty.
 </LI>
-<LI>arch: the computer architecture of the client
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>The file name of the debootstrap cache file (without path).
+<LI>file: Name of the file with full path containing space-seperated packages.
 </LI>
 </UL>
 
@@ -76,7 +70,7 @@ PKG_getDebootstrapCacheFilename</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

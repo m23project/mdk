@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_showEditor</TITLE>
-<META NAME="description" CONTENT="SRCLST_showEditor">
+<TITLE>SRCLST_showAlternativeArchitectureSelection</TITLE>
+<META NAME="description" CONTENT="SRCLST_showAlternativeArchitectureSelection">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1168.html">
 <LINK REL="previous" HREF="node1166.html">
-<LINK REL="up" HREF="node1136.html">
+<LINK REL="up" HREF="node1139.html">
 <LINK REL="next" HREF="node1168.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18685"
+<A NAME="tex2html18697"
   HREF="node1168.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18681"
-  HREF="node1136.html">
+<A NAME="tex2html18693"
+  HREF="node1139.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18675"
+<A NAME="tex2html18687"
   HREF="node1166.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18683"
+<A NAME="tex2html18695"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18686"
-  HREF="node1168.html">SRCLST_getListnames</A>
-<B> Up:</B> <A NAME="tex2html18682"
-  HREF="node1136.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html18676"
-  HREF="node1166.html">SRCLST_getArchitectures</A>
- &nbsp; <B>  <A NAME="tex2html18684"
+<B> Next:</B> <A NAME="tex2html18698"
+  HREF="node1168.html">SRCLST_isArchAvailable</A>
+<B> Up:</B> <A NAME="tex2html18694"
+  HREF="node1139.html">./inc/sourceslist.php</A>
+<B> Previous:</B> <A NAME="tex2html18688"
+  HREF="node1166.html">SRCLST_showErrorIfClientUsesEfiButSourcesListDoesntSupportEfi</A>
+ &nbsp; <B>  <A NAME="tex2html18696"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083631000000000000000">
-SRCLST_showEditor</A>
+<H2><A NAME="SECTION0083628000000000000000">
+SRCLST_showAlternativeArchitectureSelection</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> shows an editor for sources lists
+<SPAN  CLASS="textbf">Description:</SPAN> Shows a list with available CPU architectures of the sources list, in case that the wanted architecture is not available in the sources list. The alternative architecture will be written to the arch option of the client.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>poolName: if it is set, the editor shows a package download dialog for the selected pool
+<LI>sourceName: The name of the package source list.
+</LI>
+<LI>wantedArch: The CPU architecture of the m23 client.
+</LI>
+<LI>client: Name of the client.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: A CPU architecture supported by the package source list.
 </LI>
 </UL>
 
@@ -68,7 +78,7 @@ SRCLST_showEditor</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

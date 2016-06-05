@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>EDIT_searchLineNumber</TITLE>
-<META NAME="description" CONTENT="EDIT_searchLineNumber">
+<TITLE>EDIT_insertLineNumber</TITLE>
+<META NAME="description" CONTENT="EDIT_insertLineNumber">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node470.html">
 <LINK REL="previous" HREF="node468.html">
-<LINK REL="up" HREF="node457.html">
+<LINK REL="up" HREF="node458.html">
 <LINK REL="next" HREF="node470.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html9678"
+<A NAME="tex2html9688"
   HREF="node470.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html9674"
-  HREF="node457.html">
+<A NAME="tex2html9684"
+  HREF="node458.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html9668"
+<A NAME="tex2html9678"
   HREF="node468.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html9676"
+<A NAME="tex2html9686"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html9679"
-  HREF="node470.html">EDIT_searchLastLineNumber</A>
-<B> Up:</B> <A NAME="tex2html9675"
-  HREF="node457.html">./inc/edit.php</A>
-<B> Previous:</B> <A NAME="tex2html9669"
-  HREF="node468.html">EDIT_insertLineNumber</A>
- &nbsp; <B>  <A NAME="tex2html9677"
+<B> Next:</B> <A NAME="tex2html9689"
+  HREF="node470.html">EDIT_searchLineNumber</A>
+<B> Up:</B> <A NAME="tex2html9685"
+  HREF="node458.html">./inc/edit.php</A>
+<B> Previous:</B> <A NAME="tex2html9679"
+  HREF="node468.html">EDIT_insertAtLineNumber</A>
+ &nbsp; <B>  <A NAME="tex2html9687"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081512000000000000000">
-EDIT_searchLineNumber</A>
+<H2><A NAME="SECTION0081511000000000000000">
+EDIT_insertLineNumber</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> searches for the first line that contains "searchLine" and stores the line number in the BASH variable "m23searchLine"
+<SPAN  CLASS="textbf">Description:</SPAN> inserts a text AT or AFTER a line number
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>file: the name of the file
 </LI>
-<LI>searchLine: line to search
+<LI>lineNumber: reference line number for inserting
 </LI>
-<LI>startFrom: the line number to start searching from
+<LI>insertText: text to insert
+</LI>
+<LI>insertMode: "0" insert AT, "1" insert AFTER line number
+</LI>
+<LI>addIfNotExists: set to true, if the the line should be added only if the line doesn't exist. false, if the line should be added on every execution.
 </LI>
 </UL>
 
@@ -72,7 +76,7 @@ EDIT_searchLineNumber</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_previewInstallationDeinstallation</TITLE>
-<META NAME="description" CONTENT="PKG_previewInstallationDeinstallation">
+<TITLE>PKG_OptionPageGetValue</TITLE>
+<META NAME="description" CONTENT="PKG_OptionPageGetValue">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node973.html">
 <LINK REL="previous" HREF="node971.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node973.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16202"
+<A NAME="tex2html16214"
   HREF="node973.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16198"
-  HREF="node902.html">
+<A NAME="tex2html16210"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16192"
+<A NAME="tex2html16204"
   HREF="node971.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16200"
+<A NAME="tex2html16212"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16203"
-  HREF="node973.html">PKG_showPreviewInstallationDeinstallation</A>
-<B> Up:</B> <A NAME="tex2html16199"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16193"
-  HREF="node971.html">PKG_getRecommendPackageAllInstalledSize</A>
- &nbsp; <B>  <A NAME="tex2html16201"
+<B> Next:</B> <A NAME="tex2html16215"
+  HREF="node973.html">PKG_listParams</A>
+<B> Up:</B> <A NAME="tex2html16211"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16205"
+  HREF="node971.html">PKG_OptionPageSaveAlsParameters</A>
+ &nbsp; <B>  <A NAME="tex2html16213"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082870000000000000000">
-PKG_previewInstallationDeinstallation</A>
+<H2><A NAME="SECTION0082868000000000000000">
+PKG_OptionPageGetValue</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> showes what happens if a client deinstalls/ installs waiting packages and generates a table with title
+<SPAN  CLASS="textbf">Description:</SPAN> gets tha value from a variable. The function tries to get the value from the $_GET array, if it doesn't work it falls back to the params array
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>clientName: name of the client
+<LI>variable: the name of the variable you want to get the value from
 </LI>
-<LI>install: set to true, if packages should be installed. if false the packages should be deinstalled
+<LI>params: the parameters as assiciative array
 </LI>
 </UL>
 
@@ -70,7 +70,7 @@ PKG_previewInstallationDeinstallation</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

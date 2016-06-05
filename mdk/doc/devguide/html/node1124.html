@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_putFileContents</TITLE>
-<META NAME="description" CONTENT="SERVER_putFileContents">
+<TITLE>SERVER_addLineToFile</TITLE>
+<META NAME="description" CONTENT="SERVER_addLineToFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1125.html">
 <LINK REL="previous" HREF="node1123.html">
-<LINK REL="up" HREF="node1083.html">
+<LINK REL="up" HREF="node1086.html">
 <LINK REL="next" HREF="node1125.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18134"
+<A NAME="tex2html18146"
   HREF="node1125.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18130"
-  HREF="node1083.html">
+<A NAME="tex2html18142"
+  HREF="node1086.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18124"
+<A NAME="tex2html18136"
   HREF="node1123.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18132"
+<A NAME="tex2html18144"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18135"
-  HREF="node1125.html">SERVER_delLineFromFile</A>
-<B> Up:</B> <A NAME="tex2html18131"
-  HREF="node1083.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html18125"
-  HREF="node1123.html">SERVER_getFileContents</A>
- &nbsp; <B>  <A NAME="tex2html18133"
+<B> Next:</B> <A NAME="tex2html18147"
+  HREF="node1125.html">SERVER_deleteFile</A>
+<B> Up:</B> <A NAME="tex2html18143"
+  HREF="node1086.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html18137"
+  HREF="node1123.html">SERVER_runningInScreen</A>
+ &nbsp; <B>  <A NAME="tex2html18145"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083541000000000000000">
-SERVER_putFileContents</A>
+<H2><A NAME="SECTION0083538000000000000000">
+SERVER_addLineToFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Stores a text to a file and changes it's mode, user and group.
+<SPAN  CLASS="textbf">Description:</SPAN> Adds (if the search pattern can't be found) a line to a file on the server
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>fileName: Name of the file to put the text to.
+<LI>file: name of the file to edit
 </LI>
-<LI>text: The contents the file should have.
+<LI>search: the search pattern
 </LI>
-<LI>mode: The access mode the file should have.
-</LI>
-<LI>user: The owner of the file.
-</LI>
-<LI>group: The owning group of the file.
+<LI>add: the line to add
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>true on success and false otherwise.
+<LI>: true on successfully execution otherwise false.
 </LI>
 </UL>
 
@@ -82,7 +78,7 @@ SERVER_putFileContents</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

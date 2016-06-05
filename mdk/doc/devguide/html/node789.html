@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>m23SHARED_getDBnameByClient</TITLE>
-<META NAME="description" CONTENT="m23SHARED_getDBnameByClient">
+<TITLE>m23SHARED_DBname</TITLE>
+<META NAME="description" CONTENT="m23SHARED_DBname">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node790.html">
 <LINK REL="previous" HREF="node788.html">
-<LINK REL="up" HREF="node782.html">
+<LINK REL="up" HREF="node784.html">
 <LINK REL="next" HREF="node790.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13865"
+<A NAME="tex2html13876"
   HREF="node790.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13861"
-  HREF="node782.html">
+<A NAME="tex2html13872"
+  HREF="node784.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13855"
+<A NAME="tex2html13866"
   HREF="node788.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13863"
+<A NAME="tex2html13874"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13866"
-  HREF="node790.html">m23SHARED_init</A>
-<B> Up:</B> <A NAME="tex2html13862"
-  HREF="node782.html">./inc/m23shared/m23shared.php</A>
-<B> Previous:</B> <A NAME="tex2html13856"
-  HREF="node788.html">m23SHARED_getDBnameByInterface</A>
- &nbsp; <B>  <A NAME="tex2html13864"
+<B> Next:</B> <A NAME="tex2html13877"
+  HREF="node790.html">m23SHARED_getDBnameByInterface</A>
+<B> Up:</B> <A NAME="tex2html13873"
+  HREF="node784.html">./inc/m23shared/m23shared.php</A>
+<B> Previous:</B> <A NAME="tex2html13867"
+  HREF="node788.html">m23SHARED_markForDeletion</A>
+ &nbsp; <B>  <A NAME="tex2html13875"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008247000000000000000">
-m23SHARED_getDBnameByClient</A>
+<H2><A NAME="SECTION008245000000000000000">
+m23SHARED_DBname</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Gets the database name for m23 shared as part of the client ID.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Generates a database name for m23 shared by input and salt.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>Database name or false if there is no DB name in the ID.
+<LI>adminName: Name of the m23shared admin
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Database name.
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ m23SHARED_getDBnameByClient</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

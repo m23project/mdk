@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_getValue</TITLE>
-<META NAME="description" CONTENT="SRCLST_getValue">
+<TITLE>SRCLST_saveList</TITLE>
+<META NAME="description" CONTENT="SRCLST_saveList">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1145.html">
 <LINK REL="previous" HREF="node1143.html">
-<LINK REL="up" HREF="node1136.html">
+<LINK REL="up" HREF="node1139.html">
 <LINK REL="next" HREF="node1145.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18409"
+<A NAME="tex2html18421"
   HREF="node1145.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18405"
-  HREF="node1136.html">
+<A NAME="tex2html18417"
+  HREF="node1139.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18399"
+<A NAME="tex2html18411"
   HREF="node1143.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18407"
+<A NAME="tex2html18419"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18410"
-  HREF="node1145.html">SRCLST_loadSourceListFromDB</A>
-<B> Up:</B> <A NAME="tex2html18406"
-  HREF="node1136.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html18400"
-  HREF="node1143.html">SRCLST_genSelection</A>
- &nbsp; <B>  <A NAME="tex2html18408"
+<B> Next:</B> <A NAME="tex2html18422"
+  HREF="node1145.html">SRCLST_querySourceslists</A>
+<B> Up:</B> <A NAME="tex2html18418"
+  HREF="node1139.html">./inc/sourceslist.php</A>
+<B> Previous:</B> <A NAME="tex2html18412"
+  HREF="node1143.html">SRCLST_saveArchitectures</A>
+ &nbsp; <B>  <A NAME="tex2html18420"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008368000000000000000">
-SRCLST_getValue</A>
+<H2><A NAME="SECTION008365000000000000000">
+SRCLST_saveList</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> gets a value from the sourceslist table
+<SPAN  CLASS="textbf">Description:</SPAN> saves the package source list
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>name: the name of the package source list
 </LI>
-<LI>var: the name of the table row
+<LI>list: the list of sources as simple text
+</LI>
+<LI>description: a descriptive text for the list
+</LI>
+<LI>distr: the name of the distribution the list is for
+</LI>
+<LI>release: the name of the release the list is for
 </LI>
 </UL>
 
@@ -70,7 +76,7 @@ SRCLST_getValue</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_debugBacktraceToFile</TITLE>
-<META NAME="description" CONTENT="HELPER_debugBacktraceToFile">
+<TITLE>HELPER_array2m23Array</TITLE>
+<META NAME="description" CONTENT="HELPER_array2m23Array">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node645.html">
 <LINK REL="previous" HREF="node643.html">
-<LINK REL="up" HREF="node619.html">
+<LINK REL="up" HREF="node620.html">
 <LINK REL="next" HREF="node645.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11956"
+<A NAME="tex2html11967"
   HREF="node645.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11952"
-  HREF="node619.html">
+<A NAME="tex2html11963"
+  HREF="node620.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11946"
+<A NAME="tex2html11957"
   HREF="node643.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11954"
+<A NAME="tex2html11965"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11957"
-  HREF="node645.html">HELPER_getRemoteFileContents</A>
-<B> Up:</B> <A NAME="tex2html11953"
-  HREF="node619.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html11947"
-  HREF="node643.html">print_r2</A>
- &nbsp; <B>  <A NAME="tex2html11955"
+<B> Next:</B> <A NAME="tex2html11968"
+  HREF="node645.html">print_r2</A>
+<B> Up:</B> <A NAME="tex2html11964"
+  HREF="node620.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html11958"
+  HREF="node643.html">HELPER_m23Array2Array</A>
+ &nbsp; <B>  <A NAME="tex2html11966"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081825000000000000000">
-HELPER_debugBacktraceToFile</A>
+<H2><A NAME="SECTION0081824000000000000000">
+HELPER_array2m23Array</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Writes/Appends debug information about all calling functions and parameters into a file.
+<SPAN  CLASS="textbf">Description:</SPAN> Converts a normal array to an m23 array.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>file: File name with full path, where the debug information should be stored.
+<LI>array: A normal array, that may be edited more easyly. (e.g [0] =<SPAN CLASS="MATH"></SPAN> Array([command] =<SPAN CLASS="MATH"></SPAN> format, [path] =<SPAN CLASS="MATH"></SPAN> /dev/md0, [fs] =<SPAN CLASS="MATH"></SPAN> ext4 ))
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>The m23 array, that is a 2D array, that consists of keys build of a parameter names combined with a parameter number. Parameter names with the same parameter number belong together. (e.g. [command0] =<SPAN CLASS="MATH"></SPAN> format, [path0] =<SPAN CLASS="MATH"></SPAN> /dev/md0, [fs0] =<SPAN CLASS="MATH"></SPAN> ext4, ...)
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ HELPER_debugBacktraceToFile</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

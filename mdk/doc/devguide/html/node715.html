@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_showTableHeader</TITLE>
-<META NAME="description" CONTENT="HTML_showTableHeader">
+<TITLE>HTML_getElementValue</TITLE>
+<META NAME="description" CONTENT="HTML_getElementValue">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node716.html">
 <LINK REL="previous" HREF="node714.html">
-<LINK REL="up" HREF="node672.html">
+<LINK REL="up" HREF="node674.html">
 <LINK REL="next" HREF="node716.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12868"
+<A NAME="tex2html12879"
   HREF="node716.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12864"
-  HREF="node672.html">
+<A NAME="tex2html12875"
+  HREF="node674.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12858"
+<A NAME="tex2html12869"
   HREF="node714.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12866"
+<A NAME="tex2html12877"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12869"
-  HREF="node716.html">HTML_showTableEnd</A>
-<B> Up:</B> <A NAME="tex2html12865"
-  HREF="node672.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html12859"
-  HREF="node714.html">HTML_listSelection</A>
- &nbsp; <B>  <A NAME="tex2html12867"
+<B> Next:</B> <A NAME="tex2html12880"
+  HREF="node716.html">HTML_listSelection</A>
+<B> Up:</B> <A NAME="tex2html12876"
+  HREF="node674.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html12870"
+  HREF="node714.html">HTML_storableCheckBox</A>
+ &nbsp; <B>  <A NAME="tex2html12878"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082043000000000000000">
-HTML_showTableHeader</A>
+<H2><A NAME="SECTION0082041000000000000000">
+HTML_getElementValue</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> prints the header of a shadowed table
+<SPAN  CLASS="textbf">Description:</SPAN> Gets the value for a HTML element by the session data or POST value.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>centerTable: set to true if the table should be centered vertically
+<LI>htmlName: Name of the HTML element.
 </LI>
-<LI>tableStyle: CSS class of the inner table.
+<LI>prefKey: Variable name of the preference the dialog element stands for.
 </LI>
-<LI>width: Width of the table.
+<LI>initValue: The initial value if the element is shown first.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Returns the default value, the session value or false.
 </LI>
 </UL>
 
@@ -72,7 +78,7 @@ HTML_showTableHeader</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

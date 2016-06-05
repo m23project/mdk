@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_addSpecialPackages</TITLE>
-<META NAME="description" CONTENT="PKG_addSpecialPackages">
+<TITLE>PKG_savePackageselection</TITLE>
+<META NAME="description" CONTENT="PKG_savePackageselection">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node946.html">
 <LINK REL="previous" HREF="node944.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node946.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15878"
+<A NAME="tex2html15890"
   HREF="node946.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15874"
-  HREF="node902.html">
+<A NAME="tex2html15886"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15868"
+<A NAME="tex2html15880"
   HREF="node944.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15876"
+<A NAME="tex2html15888"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15879"
-  HREF="node946.html">PKG_getSpecialPackagePriority</A>
-<B> Up:</B> <A NAME="tex2html15875"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15869"
-  HREF="node944.html">PKG_listSpecialpackages</A>
- &nbsp; <B>  <A NAME="tex2html15877"
+<B> Next:</B> <A NAME="tex2html15891"
+  HREF="node946.html">PKG_addPackageToPackageselection</A>
+<B> Up:</B> <A NAME="tex2html15887"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15881"
+  HREF="node944.html">PKG_hasOptions</A>
+ &nbsp; <B>  <A NAME="tex2html15889"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082843000000000000000">
-PKG_addSpecialPackages</A>
+<H2><A NAME="SECTION0082841000000000000000">
+PKG_savePackageselection</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> adds normal packages to db
+<SPAN  CLASS="textbf">Description:</SPAN> saves all selected packages a package selection
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>amount: amount of selected packages
-</LI>
 <LI>client: name of client to install packages on
+</LI>
+<LI>selectionName: name for the package selection
+</LI>
+<LI>showMsg: set to true, if a message should be shown
+</LI>
+<LI>status: Status of the clientjobs that should be added.
 </LI>
 </UL>
 
@@ -70,7 +74,7 @@ PKG_addSpecialPackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

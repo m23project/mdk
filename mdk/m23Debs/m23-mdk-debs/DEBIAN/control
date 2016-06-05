@@ -1,9 +1,9 @@
 Package: m23-mdk-debs
-Version: 15.2-100794
+Version: 16.2-100897
 Section: base
 Priority: optional
 Architecture: all
-Installed-Size: 25500
+Installed-Size: 25532
 Pre-Depends: debconf
 Depends: bash, dialog
 Suggests: m23-mdk-screenshots

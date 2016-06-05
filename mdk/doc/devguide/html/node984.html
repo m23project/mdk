@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_getClientsByPackages</TITLE>
-<META NAME="description" CONTENT="PKG_getClientsByPackages">
+<TITLE>PKG_rmAllSpecialPackagesByName</TITLE>
+<META NAME="description" CONTENT="PKG_rmAllSpecialPackagesByName">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,58 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node985.html">
 <LINK REL="previous" HREF="node983.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node985.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16346"
+<A NAME="tex2html16358"
   HREF="node985.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16342"
-  HREF="node902.html">
+<A NAME="tex2html16354"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16336"
+<A NAME="tex2html16348"
   HREF="node983.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16344"
+<A NAME="tex2html16356"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16347"
-  HREF="node985.html">PKG_countPackages</A>
-<B> Up:</B> <A NAME="tex2html16343"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16337"
-  HREF="node983.html">PKG_getClientsWithWaitingJobs</A>
- &nbsp; <B>  <A NAME="tex2html16345"
+<B> Next:</B> <A NAME="tex2html16359"
+  HREF="node985.html">PKG_getClientsWithPackage</A>
+<B> Up:</B> <A NAME="tex2html16355"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16349"
+  HREF="node983.html">PKG_showPreviewUpdateSystem</A>
+ &nbsp; <B>  <A NAME="tex2html16357"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082882000000000000000">
-PKG_getClientsByPackages</A>
+<H2><A NAME="SECTION0082880000000000000000">
+PKG_rmAllSpecialPackagesByName</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Gets all clients that have the specific packages (not) installed (or with another given status).
+<SPAN  CLASS="textbf">Description:</SPAN> deletes all special packages from a client matching the package name
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>packageNames: Array with the packages to check.
+<LI>clientName: name of the client 
 </LI>
-<LI>status: Debian status code or true for "installed".
-</LI>
-<LI>and: Set to true, if all packages must (not) match the status or, if false, at least one package must match the status.
-</LI>
-<LI>not: If set to true, only clients, that have no packes with the given status will be added to the output array.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Array with all clients that have the specific package (not) installed (or with another given status).
+<LI>packageName: name of the special package
 </LI>
 </UL>
 
@@ -80,7 +70,7 @@ PKG_getClientsByPackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

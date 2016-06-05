@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_xargsRecursive</TITLE>
-<META NAME="description" CONTENT="HELPER_xargsRecursive">
+<TITLE>HELPER_getContentFromURL</TITLE>
+<META NAME="description" CONTENT="HELPER_getContentFromURL">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node627.html">
 <LINK REL="previous" HREF="node625.html">
-<LINK REL="up" HREF="node619.html">
+<LINK REL="up" HREF="node620.html">
 <LINK REL="next" HREF="node627.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11740"
+<A NAME="tex2html11751"
   HREF="node627.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11736"
-  HREF="node619.html">
+<A NAME="tex2html11747"
+  HREF="node620.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11730"
+<A NAME="tex2html11741"
   HREF="node625.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11738"
+<A NAME="tex2html11749"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11741"
-  HREF="node627.html">HELPER_getNewLogLines</A>
-<B> Up:</B> <A NAME="tex2html11737"
-  HREF="node619.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html11731"
-  HREF="node625.html">HELPER_trimValue</A>
- &nbsp; <B>  <A NAME="tex2html11739"
+<B> Next:</B> <A NAME="tex2html11752"
+  HREF="node627.html">HELPER_trimValue</A>
+<B> Up:</B> <A NAME="tex2html11748"
+  HREF="node620.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html11742"
+  HREF="node625.html">HELPER_isExecutedOnUCS</A>
+ &nbsp; <B>  <A NAME="tex2html11750"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008187000000000000000">
-HELPER_xargsRecursive</A>
+<H2><A NAME="SECTION008186000000000000000">
+HELPER_getContentFromURL</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Executes a BASH command with a list of arguments. If the BASH command fails, the argument list is split in two parts and recursively executed again.
+<SPAN  CLASS="textbf">Description:</SPAN> Downloads an URL via curl and gives back the site code.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>cmd: BASH command
+<LI>url: The URL to download.
 </LI>
-<LI>argsA: Array of commands for the BASH command.
-</LI>
-<LI>tabAmount: Amount of identing to start with.
+<LI>range: If set, a part of the file will be downloaded. (e.g. 0-500 will download the first 500 kb)
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>Recursive calls of the BASH command with error checking.
+<LI>The downloaded site code or false in case of an error.
 </LI>
 </UL>
 
@@ -78,7 +76,7 @@ HELPER_xargsRecursive</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

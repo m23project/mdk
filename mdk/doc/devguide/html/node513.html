@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_printAllBars</TITLE>
-<META NAME="description" CONTENT="FDISK_printAllBars">
+<TITLE>FDISK_selectDrives</TITLE>
+<META NAME="description" CONTENT="FDISK_selectDrives">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node514.html">
 <LINK REL="previous" HREF="node512.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node514.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10313"
+<A NAME="tex2html10323"
   HREF="node514.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10309"
-  HREF="node480.html">
+<A NAME="tex2html10319"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10303"
+<A NAME="tex2html10313"
   HREF="node512.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10311"
+<A NAME="tex2html10321"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10314"
-  HREF="node514.html">FDISK_getFirstDrive</A>
-<B> Up:</B> <A NAME="tex2html10310"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10304"
-  HREF="node512.html">FDISK_selectDrives</A>
- &nbsp; <B>  <A NAME="tex2html10312"
+<B> Next:</B> <A NAME="tex2html10324"
+  HREF="node514.html">FDISK_printAllBars</A>
+<B> Up:</B> <A NAME="tex2html10320"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10314"
+  HREF="node512.html">FDISK_listDrivesAndPartitions</A>
+ &nbsp; <B>  <A NAME="tex2html10322"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081633000000000000000">
-FDISK_printAllBars</A>
+<H2><A NAME="SECTION0081632000000000000000">
+FDISK_selectDrives</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> showes the partitions bars of all available drives
+<SPAN  CLASS="textbf">Description:</SPAN> creates a selection list of all drives
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
-<LI>fstabA: Associative array with fstab information
+<LI>selName: the name the selection is called in PHP and HTML
+</LI>
+<LI>first: the drive to show first
 </LI>
 </UL>
 
@@ -70,7 +72,7 @@ FDISK_printAllBars</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

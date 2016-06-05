@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_multiMkDir</TITLE>
-<META NAME="description" CONTENT="SERVER_multiMkDir">
+<TITLE>SERVER_checkDiskFree</TITLE>
+<META NAME="description" CONTENT="SERVER_checkDiskFree">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1135.html">
 <LINK REL="previous" HREF="node1133.html">
-<LINK REL="up" HREF="node1083.html">
+<LINK REL="up" HREF="node1086.html">
 <LINK REL="next" HREF="node1135.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18254"
+<A NAME="tex2html18266"
   HREF="node1135.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18250"
-  HREF="node1083.html">
+<A NAME="tex2html18262"
+  HREF="node1086.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18244"
+<A NAME="tex2html18256"
   HREF="node1133.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18252"
+<A NAME="tex2html18264"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18255"
-  HREF="node1135.html">SERVER_commandAvailable</A>
-<B> Up:</B> <A NAME="tex2html18251"
-  HREF="node1083.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html18245"
-  HREF="node1133.html">SERVER_checkKernel</A>
- &nbsp; <B>  <A NAME="tex2html18253"
+<B> Next:</B> <A NAME="tex2html18267"
+  HREF="node1135.html">SERVER_checkRunInVM</A>
+<B> Up:</B> <A NAME="tex2html18263"
+  HREF="node1086.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html18257"
+  HREF="node1133.html">SERVER_checkDownload</A>
+ &nbsp; <B>  <A NAME="tex2html18265"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083551000000000000000">
-SERVER_multiMkDir</A>
+<H2><A NAME="SECTION0083548000000000000000">
+SERVER_checkDiskFree</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Creates a directory and all needed directories on the way to the destination path.
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Reports the free space of all mounted media.
+<BR><SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>path: The complete path to create.
-</LI>
-<LI>mode: The access mode of the path to create (should start with "0" e.g. 0777)
+<LI>: Output of "df".
 </LI>
 </UL>
 
@@ -70,7 +68,7 @@ SERVER_multiMkDir</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_discardRemoveJob</TITLE>
-<META NAME="description" CONTENT="PKG_discardRemoveJob">
+<TITLE>PKG_copyPackagesToClient</TITLE>
+<META NAME="description" CONTENT="PKG_copyPackagesToClient">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node991.html">
 <LINK REL="previous" HREF="node989.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node991.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16418"
+<A NAME="tex2html16430"
   HREF="node991.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16414"
-  HREF="node902.html">
+<A NAME="tex2html16426"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16408"
+<A NAME="tex2html16420"
   HREF="node989.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16416"
+<A NAME="tex2html16428"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16419"
-  HREF="node991.html">PKG_deletePackageselection</A>
-<B> Up:</B> <A NAME="tex2html16415"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16409"
-  HREF="node989.html">PKG_addRemovePackagesToWait4Aac</A>
- &nbsp; <B>  <A NAME="tex2html16417"
+<B> Next:</B> <A NAME="tex2html16431"
+  HREF="node991.html">PKG_remNormalPackages</A>
+<B> Up:</B> <A NAME="tex2html16427"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16421"
+  HREF="node989.html">PKG_copyWait4accPackagesToClient</A>
+ &nbsp; <B>  <A NAME="tex2html16429"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082888000000000000000">
-PKG_discardRemoveJob</A>
+<H2><A NAME="SECTION0082886000000000000000">
+PKG_copyPackagesToClient</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> discards all remove jobs from the clientjobs table, that match the param
+<SPAN  CLASS="textbf">Description:</SPAN> copies all with a selected status jobs from one client to another
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>client: name of the client
+<LI>from: the source client
 </LI>
-<LI>packageName: name of the package
+<LI>to: the destination client
+</LI>
+<LI>status: can be set to a package status or be empty to copy all jobs
 </LI>
 </UL>
 
@@ -70,7 +72,7 @@ PKG_discardRemoveJob</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

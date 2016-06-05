@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_deleteFile</TITLE>
-<META NAME="description" CONTENT="SERVER_deleteFile">
+<TITLE>SERVER_runningInBackground</TITLE>
+<META NAME="description" CONTENT="SERVER_runningInBackground">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1123.html">
 <LINK REL="previous" HREF="node1121.html">
-<LINK REL="up" HREF="node1083.html">
+<LINK REL="up" HREF="node1086.html">
 <LINK REL="next" HREF="node1123.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18110"
+<A NAME="tex2html18122"
   HREF="node1123.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18106"
-  HREF="node1083.html">
+<A NAME="tex2html18118"
+  HREF="node1086.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18100"
+<A NAME="tex2html18112"
   HREF="node1121.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18108"
+<A NAME="tex2html18120"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18111"
-  HREF="node1123.html">SERVER_getFileContents</A>
-<B> Up:</B> <A NAME="tex2html18107"
-  HREF="node1083.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html18101"
-  HREF="node1121.html">SERVER_addLineToFile</A>
- &nbsp; <B>  <A NAME="tex2html18109"
+<B> Next:</B> <A NAME="tex2html18123"
+  HREF="node1123.html">SERVER_runningInScreen</A>
+<B> Up:</B> <A NAME="tex2html18119"
+  HREF="node1086.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html18113"
+  HREF="node1121.html">SERVER_runInBackground</A>
+ &nbsp; <B>  <A NAME="tex2html18121"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083539000000000000000">
-SERVER_deleteFile</A>
+<H2><A NAME="SECTION0083536000000000000000">
+SERVER_runningInBackground</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Deletes a file from the server.
+<SPAN  CLASS="textbf">Description:</SPAN> Returns "true" if a lock file for a given job name is existing.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>fileName: Name of the file to delete.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>: true on successfully execution otherwise false.
+<LI>jobName: name of the job
 </LI>
 </UL>
 
@@ -74,7 +68,7 @@ SERVER_deleteFile</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

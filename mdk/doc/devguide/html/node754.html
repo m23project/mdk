@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>I18N_addClientLanguageToCache</TITLE>
-<META NAME="description" CONTENT="I18N_addClientLanguageToCache">
+<TITLE>I18N_getAllCachedLanguages</TITLE>
+<META NAME="description" CONTENT="I18N_getAllCachedLanguages">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node755.html">
 <LINK REL="previous" HREF="node753.html">
-<LINK REL="up" HREF="node744.html">
+<LINK REL="up" HREF="node746.html">
 <LINK REL="next" HREF="node755.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13354"
+<A NAME="tex2html13365"
   HREF="node755.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13350"
-  HREF="node744.html">
+<A NAME="tex2html13361"
+  HREF="node746.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13344"
+<A NAME="tex2html13355"
   HREF="node753.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13352"
+<A NAME="tex2html13363"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13355"
-  HREF="node755.html">I18N_cacheClientLanguages</A>
-<B> Up:</B> <A NAME="tex2html13351"
-  HREF="node744.html">./inc/i18n.php</A>
-<B> Previous:</B> <A NAME="tex2html13345"
-  HREF="node753.html">I18N_listWebinterfaceLanguages</A>
- &nbsp; <B>  <A NAME="tex2html13353"
+<B> Next:</B> <A NAME="tex2html13366"
+  HREF="node755.html">I18N_listWebinterfaceLanguages</A>
+<B> Up:</B> <A NAME="tex2html13362"
+  HREF="node746.html">./inc/i18n.php</A>
+<B> Previous:</B> <A NAME="tex2html13356"
+  HREF="node753.html">I18N_cacheWebinterfaceLanguages</A>
+ &nbsp; <B>  <A NAME="tex2html13364"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082210000000000000000">
-I18N_addClientLanguageToCache</A>
+<H2><A NAME="SECTION008228000000000000000">
+I18N_getAllCachedLanguages</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Adds a new client language to the i18n DB cache.
+<SPAN  CLASS="textbf">Description:</SPAN> Returns an associative array with the shortnames of the language as keys and the longnames as value.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>shortLanguage: Two letter TLD (or longer code for countries that have more than a language (e.g. be-nl, be-fr))
-</LI>
-<LI>longLanguage: Long human readable country/language name.
-</LI>
-<LI>in: Associative array with the information for the language.
+<LI>webinterface: Set to true, if it is a webinterface language. Set to false, for marking a client language.
 </LI>
 </UL>
 
@@ -72,7 +68,7 @@ I18N_addClientLanguageToCache</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_decodeDebconfDescription</TITLE>
-<META NAME="description" CONTENT="PKG_decodeDebconfDescription">
+<TITLE>PKG_isSpecialPackageAvailableForClient</TITLE>
+<META NAME="description" CONTENT="PKG_isSpecialPackageAvailableForClient">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node922.html">
 <LINK REL="previous" HREF="node920.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node922.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15590"
+<A NAME="tex2html15602"
   HREF="node922.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15586"
-  HREF="node902.html">
+<A NAME="tex2html15598"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15580"
+<A NAME="tex2html15592"
   HREF="node920.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15588"
+<A NAME="tex2html15600"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15591"
-  HREF="node922.html">PKG_OptionPageRender2</A>
-<B> Up:</B> <A NAME="tex2html15587"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15581"
-  HREF="node920.html">PKG_OptionPageTail2</A>
- &nbsp; <B>  <A NAME="tex2html15589"
+<B> Next:</B> <A NAME="tex2html15603"
+  HREF="node922.html">PKG_OptionPageHeader2</A>
+<B> Up:</B> <A NAME="tex2html15599"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15593"
+  HREF="node920.html">PKG_translateClientjobsStatus</A>
+ &nbsp; <B>  <A NAME="tex2html15601"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082819000000000000000">
-PKG_decodeDebconfDescription</A>
+<H2><A NAME="SECTION0082817000000000000000">
+PKG_isSpecialPackageAvailableForClient</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Decodes and HTML-formats the description of a debconf template and extracts its title.
+<SPAN  CLASS="textbf">Description:</SPAN> Checks if a special package is available for the client's distribution.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>descr: Text of the debconf description.
+<LI>client: Name of the client.
 </LI>
-<LI>title: Variable to write the title to.
+<LI>package: Name of the special package.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>: The decoded and HTML-formated description.
+<LI>True if the special package is available otherwise false.
 </LI>
 </UL>
 
@@ -76,7 +76,7 @@ PKG_decodeDebconfDescription</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

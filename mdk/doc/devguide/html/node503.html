@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_fdiskSessionReset</TITLE>
-<META NAME="description" CONTENT="FDISK_fdiskSessionReset">
+<TITLE>FDISK_fdiskSessionFreeSpaces</TITLE>
+<META NAME="description" CONTENT="FDISK_fdiskSessionFreeSpaces">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node504.html">
 <LINK REL="previous" HREF="node502.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node504.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10193"
+<A NAME="tex2html10203"
   HREF="node504.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10189"
-  HREF="node480.html">
+<A NAME="tex2html10199"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10183"
+<A NAME="tex2html10193"
   HREF="node502.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10191"
+<A NAME="tex2html10201"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10194"
-  HREF="node504.html">FDISK_fdiskSessionPartMethod</A>
-<B> Up:</B> <A NAME="tex2html10190"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10184"
-  HREF="node502.html">FDISK_fdiskSessionFreeSpaces</A>
- &nbsp; <B>  <A NAME="tex2html10192"
+<B> Next:</B> <A NAME="tex2html10204"
+  HREF="node504.html">FDISK_fdiskSessionReset</A>
+<B> Up:</B> <A NAME="tex2html10200"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10194"
+  HREF="node502.html">FDISK_fdiskSessionvDevInstall</A>
+ &nbsp; <B>  <A NAME="tex2html10202"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081623000000000000000">
-FDISK_fdiskSessionReset</A>
+<H2><A NAME="SECTION0081622000000000000000">
+FDISK_fdiskSessionFreeSpaces</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Sets back all session variables (client name optionally) for partitioning and formating a client.
+<SPAN  CLASS="textbf">Description:</SPAN> Stores the free space parts of the installation drive in the session or recalculates them for the current installation drive.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>resetClientName: If set to true, the name of the client will be deleted too (and re-set by FDISK_fdiskSessionClient).
+<LI>newSpaces: The new free spaces to set or false for not changing.
+</LI>
+<LI>reset: Re-calculate the free spaces, if set to true.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>The current free spaces.
 </LI>
 </UL>
 
@@ -68,7 +76,7 @@ FDISK_fdiskSessionReset</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

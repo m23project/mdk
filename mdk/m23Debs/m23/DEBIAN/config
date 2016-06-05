@@ -1,35 +1,39 @@
-#!/bin/sh
+#!/bin/bash
 
 # Source debconf library.
 . /usr/share/debconf/confmodule
 
-db_input high m23/experimentalWarn || true
-db_go
+# Only run, if not executed on UCS
+if [ ! -f '/usr/sbin/udm' ]
+then
+	db_input high m23/experimentalWarn || true
+	db_go
 
-#
-db_input high m23/configMySQL || true
-db_go
 
-db_input high m23/configDHCP || true
-db_go
+	db_input high m23/configMySQL || true
+	db_go
 
-db_input high m23/configureSSH || true
-db_go
+	db_input high m23/configDHCP || true
+	db_go
 
-db_input high m23/configureSquid || true
-db_go
+	db_input high m23/configureSSH || true
+	db_go
 
-db_input high m23/configureSSL || true
-db_go
+	db_input high m23/configureSquid || true
+	db_go
 
-db_input high m23/configureApache || true
-db_go
+	db_input high m23/configureSSL || true
+	db_go
 
-db_input high m23/configureSudo || true
-db_go
+	db_input high m23/configureApache || true
+	db_go
 
-db_input high m23/configureBackupPC || true
-db_go
+	db_input high m23/configureSudo || true
+	db_go
+
+	db_input high m23/configureBackupPC || true
+	db_go
+fi
 
 if test `grep address /etc/network/interfaces | wc -l` -eq 0
 then

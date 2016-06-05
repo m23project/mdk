@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_listDrivesAndPartitions2</TITLE>
-<META NAME="description" CONTENT="FDISK_listDrivesAndPartitions2">
+<TITLE>FDISK_getUnusedMDs</TITLE>
+<META NAME="description" CONTENT="FDISK_getUnusedMDs">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node492.html">
 <LINK REL="previous" HREF="node490.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node492.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10049"
+<A NAME="tex2html10059"
   HREF="node492.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10045"
-  HREF="node480.html">
+<A NAME="tex2html10055"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10039"
+<A NAME="tex2html10049"
   HREF="node490.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10047"
+<A NAME="tex2html10057"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10050"
-  HREF="node492.html">FDISK_printAllBars2</A>
-<B> Up:</B> <A NAME="tex2html10046"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10040"
-  HREF="node490.html">FDISK_getUnusedMDs</A>
- &nbsp; <B>  <A NAME="tex2html10048"
+<B> Next:</B> <A NAME="tex2html10060"
+  HREF="node492.html">FDISK_listDrivesAndPartitions2</A>
+<B> Up:</B> <A NAME="tex2html10056"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10050"
+  HREF="node490.html">FDISK_installFilesystems</A>
+ &nbsp; <B>  <A NAME="tex2html10058"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081611000000000000000">
-FDISK_listDrivesAndPartitions2</A>
+<H2><A NAME="SECTION0081610000000000000000">
+FDISK_getUnusedMDs</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates and defines a selection that contains all drives and partitions of a given client.
+<SPAN  CLASS="textbf">Description:</SPAN> Returns an associative array with the unused MDs (e.g. /dev/md0, /dev/md1, ...) as key and value.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
-<LI>default: the drive to show first
-</LI>
-<LI>selName: the name the selection is called in PHP and HTML
-</LI>
-<LI>pathFilter: Set this to another value than false if you want only devices with a given string in it.
-</LI>
-<LI>filterOutSetRaidLvmLock: If set to true, drives and partitions with set raidLvmLock will not be listed.
-</LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>String with the HTML selection.
+<LI>Associative array with the unused MDs (e.g. /dev/md0, /dev/md1, ...) as key and value.
 </LI>
 </UL>
 
@@ -82,7 +74,7 @@ FDISK_listDrivesAndPartitions2</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

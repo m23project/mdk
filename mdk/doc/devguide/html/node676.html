@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_sourceViewer</TITLE>
-<META NAME="description" CONTENT="HTML_sourceViewer">
+<TITLE>HTML_uploadFile</TITLE>
+<META NAME="description" CONTENT="HTML_uploadFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node677.html">
 <LINK REL="previous" HREF="node675.html">
-<LINK REL="up" HREF="node672.html">
+<LINK REL="up" HREF="node674.html">
 <LINK REL="next" HREF="node677.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12400"
+<A NAME="tex2html12411"
   HREF="node677.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12396"
-  HREF="node672.html">
+<A NAME="tex2html12407"
+  HREF="node674.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12390"
+<A NAME="tex2html12401"
   HREF="node675.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12398"
+<A NAME="tex2html12409"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12401"
-  HREF="node677.html">HTML_getOutputBuffer</A>
-<B> Up:</B> <A NAME="tex2html12397"
-  HREF="node672.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html12391"
-  HREF="node675.html">HTML_urlButton</A>
- &nbsp; <B>  <A NAME="tex2html12399"
+<B> Next:</B> <A NAME="tex2html12412"
+  HREF="node677.html">HTML_urlButton</A>
+<B> Up:</B> <A NAME="tex2html12408"
+  HREF="node674.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html12402"
+  HREF="node675.html">HTML_imgSwitch</A>
+ &nbsp; <B>  <A NAME="tex2html12410"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008204000000000000000">
-HTML_sourceViewer</A>
+<H2><A NAME="SECTION008202000000000000000">
+HTML_uploadFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Creates a source code viewer area with syntax highlighting.
+<SPAN  CLASS="textbf">Description:</SPAN> Shows a dialog for uploading image files.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>htmlNames: Name of the source viewer.
+<LI>htmlName: Name of the HTML element
 </LI>
-<LI>code: The source code to show.
+<LI>label: The visual naming of the HTML element.
 </LI>
-<LI>highlighting: The GeSHi language of the source code (e.g. bash).
+<LI>maxFileSize: The maximum allowed filesize in bytes.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>The full path to the uploaded file or false in case of an error.
 </LI>
 </UL>
 
@@ -72,7 +78,7 @@ HTML_sourceViewer</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

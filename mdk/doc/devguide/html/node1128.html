@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_getInstallationMedium</TITLE>
-<META NAME="description" CONTENT="SERVER_getInstallationMedium">
+<TITLE>SERVER_delLineFromFile</TITLE>
+<META NAME="description" CONTENT="SERVER_delLineFromFile">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1129.html">
 <LINK REL="previous" HREF="node1127.html">
-<LINK REL="up" HREF="node1083.html">
+<LINK REL="up" HREF="node1086.html">
 <LINK REL="next" HREF="node1129.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18182"
+<A NAME="tex2html18194"
   HREF="node1129.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18178"
-  HREF="node1083.html">
+<A NAME="tex2html18190"
+  HREF="node1086.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18172"
+<A NAME="tex2html18184"
   HREF="node1127.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18180"
+<A NAME="tex2html18192"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18183"
-  HREF="node1129.html">SERVER_getOS</A>
-<B> Up:</B> <A NAME="tex2html18179"
-  HREF="node1083.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html18173"
-  HREF="node1127.html">SERVER_delEtcHosts</A>
- &nbsp; <B>  <A NAME="tex2html18181"
+<B> Next:</B> <A NAME="tex2html18195"
+  HREF="node1129.html">SERVER_addEtcHosts</A>
+<B> Up:</B> <A NAME="tex2html18191"
+  HREF="node1086.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html18185"
+  HREF="node1127.html">SERVER_putFileContents</A>
+ &nbsp; <B>  <A NAME="tex2html18193"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083545000000000000000">
-SERVER_getInstallationMedium</A>
+<H2><A NAME="SECTION0083542000000000000000">
+SERVER_delLineFromFile</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Tries to figure out how the m23 server was installed
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Deletes lines from the file that match the search pattern
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>: CD, Internet or Unknown source.
+<LI>file: name of the file to edit
+</LI>
+<LI>search: the search pattern
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>: true on successfully execution otherwise false.
 </LI>
 </UL>
 
@@ -68,7 +76,7 @@ SERVER_getInstallationMedium</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

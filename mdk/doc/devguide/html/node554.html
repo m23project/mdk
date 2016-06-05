@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_virtualAddPartition</TITLE>
-<META NAME="description" CONTENT="FDISK_virtualAddPartition">
+<TITLE>FDISK_virtualDeletePartition</TITLE>
+<META NAME="description" CONTENT="FDISK_virtualDeletePartition">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node555.html">
 <LINK REL="previous" HREF="node553.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node555.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10805"
+<A NAME="tex2html10815"
   HREF="node555.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10801"
-  HREF="node480.html">
+<A NAME="tex2html10811"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10795"
+<A NAME="tex2html10805"
   HREF="node553.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10803"
+<A NAME="tex2html10813"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10806"
-  HREF="node555.html">FDISK_listPartTable</A>
-<B> Up:</B> <A NAME="tex2html10802"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10796"
-  HREF="node553.html">FDISK_virtualDeletePartition</A>
- &nbsp; <B>  <A NAME="tex2html10804"
+<B> Next:</B> <A NAME="tex2html10816"
+  HREF="node555.html">FDISK_virtualAddPartition</A>
+<B> Up:</B> <A NAME="tex2html10812"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10806"
+  HREF="node553.html">FDISK_deletePartitionFromParam</A>
+ &nbsp; <B>  <A NAME="tex2html10814"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081674000000000000000">
-FDISK_virtualAddPartition</A>
+<H2><A NAME="SECTION0081673000000000000000">
+FDISK_virtualDeletePartition</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> adds a partition to the param param
+<SPAN  CLASS="textbf">Description:</SPAN> deletes partition from param assigned thru $vDev and $vPart.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>vDev: virtuell internal used device number.
+<LI>vDev: Virtual (internally used) device number.
+</LI>
+<LI>devNr: device number of the real device
 </LI>
 <LI>param: parameter string containing status informations about the harddisks
-</LI>
-<LI>start: start MB of the new partition
-</LI>
-<LI>end: end MB of the new partition
-</LI>
-<LI>type: type of the partition (primary, extended, logical)
-</LI>
-<LI>devNr: returnes the device number
 </LI>
 </UL>
 
@@ -78,7 +72,7 @@ FDISK_virtualAddPartition</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

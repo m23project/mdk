@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_executeOnClientJobs</TITLE>
-<META NAME="description" CONTENT="PKG_executeOnClientJobs">
+<TITLE>PKG_previewInstallationDeinstallation</TITLE>
+<META NAME="description" CONTENT="PKG_previewInstallationDeinstallation">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node976.html">
 <LINK REL="previous" HREF="node974.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node976.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16238"
+<A NAME="tex2html16250"
   HREF="node976.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16234"
-  HREF="node902.html">
+<A NAME="tex2html16246"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16228"
+<A NAME="tex2html16240"
   HREF="node974.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16236"
+<A NAME="tex2html16248"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16239"
-  HREF="node976.html">PKG_removeFromJobList</A>
-<B> Up:</B> <A NAME="tex2html16235"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16229"
-  HREF="node974.html">PKG_updateSourcesListAtAllClients</A>
- &nbsp; <B>  <A NAME="tex2html16237"
+<B> Next:</B> <A NAME="tex2html16251"
+  HREF="node976.html">PKG_showPreviewInstallationDeinstallation</A>
+<B> Up:</B> <A NAME="tex2html16247"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16241"
+  HREF="node974.html">PKG_getRecommendPackageAllInstalledSize</A>
+ &nbsp; <B>  <A NAME="tex2html16249"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082873000000000000000">
-PKG_executeOnClientJobs</A>
+<H2><A NAME="SECTION0082871000000000000000">
+PKG_previewInstallationDeinstallation</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Executes a sql statement on all package IDs.
+<SPAN  CLASS="textbf">Description:</SPAN> showes what happens if a client deinstalls/ installs waiting packages and generates a table with title
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>sql: initial SQL statement e.g. "DELETE FROM `clientjobs` WHERE "
+<LI>clientName: name of the client
 </LI>
-<LI>packageIDList: the list of IDs of jobs to be deleted
+<LI>install: set to true, if packages should be installed. if false the packages should be deinstalled
 </LI>
 </UL>
 
@@ -70,7 +70,7 @@ PKG_executeOnClientJobs</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

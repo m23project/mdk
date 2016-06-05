@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_previewUpdateSystem</TITLE>
-<META NAME="description" CONTENT="PKG_previewUpdateSystem">
+<TITLE>PKG_removeFromJobList</TITLE>
+<META NAME="description" CONTENT="PKG_removeFromJobList">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node980.html">
 <LINK REL="previous" HREF="node978.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node980.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16286"
+<A NAME="tex2html16298"
   HREF="node980.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16282"
-  HREF="node902.html">
+<A NAME="tex2html16294"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16276"
+<A NAME="tex2html16288"
   HREF="node978.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16284"
+<A NAME="tex2html16296"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16287"
-  HREF="node980.html">PKG_showPreviewUpdateSystem</A>
-<B> Up:</B> <A NAME="tex2html16283"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16277"
-  HREF="node978.html">PKG_removeSpecialFromJobList</A>
- &nbsp; <B>  <A NAME="tex2html16285"
+<B> Next:</B> <A NAME="tex2html16299"
+  HREF="node980.html">PKG_changeClientJobsStatus</A>
+<B> Up:</B> <A NAME="tex2html16295"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16289"
+  HREF="node978.html">PKG_executeOnClientJobs</A>
+ &nbsp; <B>  <A NAME="tex2html16297"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082877000000000000000">
-PKG_previewUpdateSystem</A>
+<H2><A NAME="SECTION0082875000000000000000">
+PKG_removeFromJobList</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> returns the information of an system update request
+<SPAN  CLASS="textbf">Description:</SPAN> removes all jobs identified by the IDs in packageIDList
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>clientName: name of the client 
-</LI>
-<LI>completeUpdate: set it to "true", if it should be a full update (installation and removal of packages) or to "false" for an update of existing packages
+<LI>packageIDList: the list of IDs of jobs to be deleted
 </LI>
 </UL>
 
@@ -70,7 +68,7 @@ PKG_previewUpdateSystem</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

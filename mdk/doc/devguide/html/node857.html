@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>MASS_showFileHandDialog</TITLE>
-<META NAME="description" CONTENT="MASS_showFileHandDialog">
+<TITLE>MASS_EGKradioBoxes</TITLE>
+<META NAME="description" CONTENT="MASS_EGKradioBoxes">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node858.html">
 <LINK REL="previous" HREF="node856.html">
-<LINK REL="up" HREF="node854.html">
+<LINK REL="up" HREF="node856.html">
 <LINK REL="next" HREF="node858.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html14705"
+<A NAME="tex2html14716"
   HREF="node858.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html14701"
-  HREF="node854.html">
+<A NAME="tex2html14712"
+  HREF="node856.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html14695"
+<A NAME="tex2html14706"
   HREF="node856.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html14703"
+<A NAME="tex2html14714"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html14706"
-  HREF="node858.html">MASS_propertyKeys</A>
-<B> Up:</B> <A NAME="tex2html14702"
-  HREF="node854.html">./inc/massTools.php</A>
-<B> Previous:</B> <A NAME="tex2html14696"
-  HREF="node856.html">MASS_FHradioBoxes</A>
- &nbsp; <B>  <A NAME="tex2html14704"
+<B> Next:</B> <A NAME="tex2html14717"
+  HREF="node858.html">MASS_FHradioBoxes</A>
+<B> Up:</B> <A NAME="tex2html14713"
+  HREF="node856.html">./inc/massTools.php</A>
+<B> Previous:</B> <A NAME="tex2html14707"
+  HREF="node856.html">./inc/massTools.php</A>
+ &nbsp; <B>  <A NAME="tex2html14715"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008253000000000000000">
-MASS_showFileHandDialog</A>
+<H2><A NAME="SECTION008251000000000000000">
+MASS_EGKradioBoxes</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> shows a dialog for selecting "by file" or "by hand" for the "enter" properties.
+<SPAN  CLASS="textbf">Description:</SPAN> Generates HTML code for showing 3 elements, that can be each a "radio button", selection "disabled" or "always selected".
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>EGKparams: enter generate keep parameters, that hold information about handling of the properties
+<LI>RB_name: name of the radio button
+</LI>
+<LI>arr: array with 3 values for [Enter,Generate,Keep]. Setting a value to "e" means that the user can select, "n" selection is disabled, "y" is always select.
+</LI>
+<LI>checkNr: the number of radio button that is enabled by default.
 </LI>
 </UL>
 
@@ -68,7 +72,7 @@ MASS_showFileHandDialog</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

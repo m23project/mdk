@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_countPackages</TITLE>
-<META NAME="description" CONTENT="PKG_countPackages">
+<TITLE>PKG_getClientsWithPackage</TITLE>
+<META NAME="description" CONTENT="PKG_getClientsWithPackage">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node986.html">
 <LINK REL="previous" HREF="node984.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node986.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16358"
+<A NAME="tex2html16370"
   HREF="node986.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16354"
-  HREF="node902.html">
+<A NAME="tex2html16366"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16348"
+<A NAME="tex2html16360"
   HREF="node984.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16356"
+<A NAME="tex2html16368"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16359"
-  HREF="node986.html">PKG_copyWait4accPackagesToClient</A>
-<B> Up:</B> <A NAME="tex2html16355"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16349"
-  HREF="node984.html">PKG_getClientsByPackages</A>
- &nbsp; <B>  <A NAME="tex2html16357"
+<B> Next:</B> <A NAME="tex2html16371"
+  HREF="node986.html">PKG_getClientsWithWaitingJobs</A>
+<B> Up:</B> <A NAME="tex2html16367"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16361"
+  HREF="node984.html">PKG_rmAllSpecialPackagesByName</A>
+ &nbsp; <B>  <A NAME="tex2html16369"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082883000000000000000">
-PKG_countPackages</A>
+<H2><A NAME="SECTION0082881000000000000000">
+PKG_getClientsWithPackage</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> counts all packages on a client
+<SPAN  CLASS="textbf">Description:</SPAN> Gets all clients that have the specific package installed (or with another status).
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>clientName: name of the client 
+<LI>packageName: Name of the package.
+</LI>
+<LI>status: The status the package should have.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Array with all clients that have the specific package installed (or with another status).
 </LI>
 </UL>
 
@@ -68,7 +76,7 @@ PKG_countPackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

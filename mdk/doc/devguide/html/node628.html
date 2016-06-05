@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_rmRecursive</TITLE>
-<META NAME="description" CONTENT="HELPER_rmRecursive">
+<TITLE>HELPER_xargsRecursive</TITLE>
+<META NAME="description" CONTENT="HELPER_xargsRecursive">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node629.html">
 <LINK REL="previous" HREF="node627.html">
-<LINK REL="up" HREF="node619.html">
+<LINK REL="up" HREF="node620.html">
 <LINK REL="next" HREF="node629.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11764"
+<A NAME="tex2html11775"
   HREF="node629.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11760"
-  HREF="node619.html">
+<A NAME="tex2html11771"
+  HREF="node620.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11754"
+<A NAME="tex2html11765"
   HREF="node627.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11762"
+<A NAME="tex2html11773"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11765"
-  HREF="node629.html">HELPER_showBAfH</A>
-<B> Up:</B> <A NAME="tex2html11761"
-  HREF="node619.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html11755"
-  HREF="node627.html">HELPER_getNewLogLines</A>
- &nbsp; <B>  <A NAME="tex2html11763"
+<B> Next:</B> <A NAME="tex2html11776"
+  HREF="node629.html">HELPER_getNewLogLines</A>
+<B> Up:</B> <A NAME="tex2html11772"
+  HREF="node620.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html11766"
+  HREF="node627.html">HELPER_trimValue</A>
+ &nbsp; <B>  <A NAME="tex2html11774"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008189000000000000000">
-HELPER_rmRecursive</A>
+<H2><A NAME="SECTION008188000000000000000">
+HELPER_xargsRecursive</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Removes a directory with sub-directories and contained files.
+<SPAN  CLASS="textbf">Description:</SPAN> Executes a BASH command with a list of arguments. If the BASH command fails, the argument list is split in two parts and recursively executed again.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>: dir: Full path to the directory.
+<LI>cmd: BASH command
+</LI>
+<LI>argsA: Array of commands for the BASH command.
+</LI>
+<LI>tabAmount: Amount of identing to start with.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Recursive calls of the BASH command with error checking.
 </LI>
 </UL>
 
@@ -68,7 +78,7 @@ HELPER_rmRecursive</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

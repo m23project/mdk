@@ -108,14 +108,15 @@
 \contentsline {subsection}{\numberline {9.1.1}Note: Serveur DHCP externe}{61}{subsection.9.1.1}
 \contentsline {subsection}{\numberline {9.1.2}Note: UEFI}{61}{subsection.9.1.2}
 \contentsline {subsection}{\numberline {9.1.3}Information suppl\'ementaire}{61}{subsection.9.1.3}
-\contentsline {subsection}{\numberline {9.1.4}Renseignement concernant l'architecture du processeur}{62}{subsection.9.1.4}
+\contentsline {subsection}{\numberline {9.1.4}Renseignement concernant l'architecture du processeur}{61}{subsection.9.1.4}
 \contentsline {subsection}{\numberline {9.1.5}Information suppl\'ementaire:}{63}{subsection.9.1.5}
 \contentsline {section}{\numberline {9.2}Utiliser m23 conjointement avec un serveur DHCP externe}{63}{section.9.2}
 \contentsline {subsection}{\numberline {9.2.1}Si le serveur DHCP externe peut \^etre d\'esactiv\'e:}{64}{subsection.9.2.1}
 \contentsline {subsection}{\numberline {9.2.2}Si l'autre serveur DHCP NE PEUT PAS \^etre d\'esactiv\'e:}{64}{subsection.9.2.2}
-\contentsline {subsection}{\numberline {9.2.3}Serveur DHCP ISC}{64}{subsection.9.2.3}
-\contentsline {subsection}{\numberline {9.2.4}Autre serveur DHCP}{64}{subsection.9.2.4}
-\contentsline {subsection}{\numberline {9.2.5}Proxy DHCP}{65}{subsection.9.2.5}
+\contentsline {subsection}{\numberline {9.2.3}Configuration dynamique du serveur DHCP}{64}{subsection.9.2.3}
+\contentsline {subsection}{\numberline {9.2.4}Serveur DHCP ISC}{64}{subsection.9.2.4}
+\contentsline {subsection}{\numberline {9.2.5}Autre serveur DHCP}{65}{subsection.9.2.5}
+\contentsline {subsection}{\numberline {9.2.6}Proxy DHCP}{65}{subsection.9.2.6}
 \contentsline {section}{\numberline {9.3}Partitionnement et formatage du poste client}{65}{section.9.3}
 \contentsline {subsection}{\numberline {9.3.1}Indication concernant l'annulation des actions}{67}{subsection.9.3.1}
 \contentsline {subsection}{\numberline {9.3.2}Indication concernant l'utilisation de JavaScript}{67}{subsection.9.3.2}
@@ -207,20 +208,20 @@
 \contentsline {subsection}{\numberline {14.1.2}Note: UEFI}{109}{subsection.14.1.2}
 \contentsline {subsection}{\numberline {14.1.3}Information suppl\'ementaire}{109}{subsection.14.1.3}
 \contentsline {subsection}{\numberline {14.1.4}Renseignement concernant l'architecture du processeur}{110}{subsection.14.1.4}
-\contentsline {section}{\numberline {14.2}D\'efinir le type et la taille du disque dur}{112}{section.14.2}
+\contentsline {section}{\numberline {14.2}D\'efinir le type et la taille du disque dur}{111}{section.14.2}
 \contentsline {subsection}{\numberline {14.2.1}Notez}{112}{subsection.14.2.1}
 \contentsline {subsection}{\numberline {14.2.2}Crit\`eres d'ajustement}{112}{subsection.14.2.2}
-\contentsline {subsection}{\numberline {14.2.3}Notez}{113}{subsection.14.2.3}
+\contentsline {subsection}{\numberline {14.2.3}Notez}{112}{subsection.14.2.3}
 \contentsline {section}{\numberline {14.3}Choisir la m\'ethode de d\'etermination de valeurs}{113}{section.14.3}
 \contentsline {subsection}{\numberline {14.3.1}Trois m\'ethodes sont possibles:}{113}{subsection.14.3.1}
 \contentsline {section}{\numberline {14.4}Choisir la source de donn\'ees}{114}{section.14.4}
 \contentsline {section}{\numberline {14.5}Choisir la source de donn\'ees/assigner les colonnes}{114}{section.14.5}
 \contentsline {subsection}{\numberline {14.5.1}Choisir le fichier de donn\'ees et le t\'el\'echarger}{114}{subsection.14.5.1}
-\contentsline {subsection}{\numberline {14.5.2}Notez}{115}{subsection.14.5.2}
+\contentsline {subsection}{\numberline {14.5.2}Notez}{114}{subsection.14.5.2}
 \contentsline {subsection}{\numberline {14.5.3}Assigner les colonnes du fichier de donn\'ees aux propri\'et\'es du poste client}{115}{subsection.14.5.3}
 \contentsline {subsection}{\numberline {14.5.4}Proc\'edez comme suit:}{115}{subsection.14.5.4}
-\contentsline {section}{\numberline {14.6}Options de g\'en\'erateur}{116}{section.14.6}
-\contentsline {section}{\numberline {14.7}Entrer les valeurs restantes/Vue d'ensemble}{117}{section.14.7}
+\contentsline {section}{\numberline {14.6}Options de g\'en\'erateur}{115}{section.14.6}
+\contentsline {section}{\numberline {14.7}Entrer les valeurs restantes/Vue d'ensemble}{116}{section.14.7}
 \contentsline {subsection}{\numberline {14.7.1}Changer le nombre de postes client}{117}{subsection.14.7.1}
 \contentsline {chapter}{\numberline {15}Outils}{118}{chapter.15}
 \contentsline {section}{\numberline {15.1}Fabriquer un disque de d\'emarrage pour l'installation de m23}{118}{section.15.1}

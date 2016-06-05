@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_randomMAC</TITLE>
-<META NAME="description" CONTENT="HELPER_randomMAC">
+<TITLE>HELPER_passGenerator</TITLE>
+<META NAME="description" CONTENT="HELPER_passGenerator">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node649.html">
 <LINK REL="previous" HREF="node647.html">
-<LINK REL="up" HREF="node619.html">
+<LINK REL="up" HREF="node620.html">
 <LINK REL="next" HREF="node649.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12004"
+<A NAME="tex2html12015"
   HREF="node649.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12000"
-  HREF="node619.html">
+<A NAME="tex2html12011"
+  HREF="node620.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11994"
+<A NAME="tex2html12005"
   HREF="node647.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12002"
+<A NAME="tex2html12013"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12005"
-  HREF="node649.html">HELPER_generateSalt</A>
-<B> Up:</B> <A NAME="tex2html12001"
-  HREF="node619.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html11995"
-  HREF="node647.html">HELPER_array2AssociativeArray</A>
- &nbsp; <B>  <A NAME="tex2html12003"
+<B> Next:</B> <A NAME="tex2html12016"
+  HREF="node649.html">HELPER_array2AssociativeArray</A>
+<B> Up:</B> <A NAME="tex2html12012"
+  HREF="node620.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html12006"
+  HREF="node647.html">HELPER_getRemoteFileContents</A>
+ &nbsp; <B>  <A NAME="tex2html12014"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081829000000000000000">
-HELPER_randomMAC</A>
+<H2><A NAME="SECTION0081828000000000000000">
+HELPER_passGenerator</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates a random MAC address.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Generates semi-random passwords via pwgen or DB_genPassword.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>Random MAC address in the format XX:XX:XX:XX:XX:XX (e.g. 70:c4:d4:49:6e:27).
+<LI>length: The length of the passwords.
+</LI>
+<LI>amount: The amount of passwords to generate.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>Array with the generated passwords if $amount <SPAN CLASS="MATH"></SPAN> 1 or the password string directly if $amount = 1.
 </LI>
 </UL>
 
@@ -68,7 +76,7 @@ HELPER_randomMAC</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_getBeforeFristPartition</TITLE>
-<META NAME="description" CONTENT="FDISK_getBeforeFristPartition">
+<TITLE>FDISK_getAfterPartition</TITLE>
+<META NAME="description" CONTENT="FDISK_getAfterPartition">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node544.html">
 <LINK REL="previous" HREF="node542.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node544.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10673"
+<A NAME="tex2html10683"
   HREF="node544.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10669"
-  HREF="node480.html">
+<A NAME="tex2html10679"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10663"
+<A NAME="tex2html10673"
   HREF="node542.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10671"
+<A NAME="tex2html10681"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10674"
-  HREF="node544.html">FDISK_getPartitions</A>
-<B> Up:</B> <A NAME="tex2html10670"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10664"
-  HREF="node542.html">FDISK_getAfterPartition</A>
- &nbsp; <B>  <A NAME="tex2html10672"
+<B> Next:</B> <A NAME="tex2html10684"
+  HREF="node544.html">FDISK_getBeforeFristPartition</A>
+<B> Up:</B> <A NAME="tex2html10680"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10674"
+  HREF="node542.html">FDISK_getPartitionPercent</A>
+ &nbsp; <B>  <A NAME="tex2html10682"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081663000000000000000">
-FDISK_getBeforeFristPartition</A>
+<H2><A NAME="SECTION0081662000000000000000">
+FDISK_getAfterPartition</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> gets the free space before the first partition
+<SPAN  CLASS="textbf">Description:</SPAN> calculates ??? of free size after a selected partition
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
-<LI>vDev: virtual device number to access the drive
+<LI>vDev: Virtual (internally used) device number.
+</LI>
+<LI>vPart: Virtual (internally used) partition number. This is normally another number than the physical number (e.g. 1 on /dev/hda1)
 </LI>
 <LI>factor: the factor to multiplay percent amount of free space
 </LI>
@@ -72,7 +74,7 @@ FDISK_getBeforeFristPartition</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

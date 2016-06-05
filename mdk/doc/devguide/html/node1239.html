@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_startVMInExistingXSession</TITLE>
-<META NAME="description" CONTENT="VM_startVMInExistingXSession">
+<TITLE>VM_activateNetbootCMD</TITLE>
+<META NAME="description" CONTENT="VM_activateNetbootCMD">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,42 +21,42 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1240.html">
 <LINK REL="previous" HREF="node1238.html">
-<LINK REL="up" HREF="node1179.html">
+<LINK REL="up" HREF="node1182.html">
 <LINK REL="next" HREF="node1240.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html19615"
+<A NAME="tex2html19627"
   HREF="node1240.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html19611"
-  HREF="node1179.html">
+<A NAME="tex2html19623"
+  HREF="node1182.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html19605"
+<A NAME="tex2html19617"
   HREF="node1238.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html19613"
+<A NAME="tex2html19625"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html19616"
-  HREF="node1240.html">VM_startVM</A>
-<B> Up:</B> <A NAME="tex2html19612"
-  HREF="node1179.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html19606"
-  HREF="node1238.html">VM_insertBootISO</A>
- &nbsp; <B>  <A NAME="tex2html19614"
+<B> Next:</B> <A NAME="tex2html19628"
+  HREF="node1240.html">VM_createVM</A>
+<B> Up:</B> <A NAME="tex2html19624"
+  HREF="node1182.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html19618"
+  HREF="node1238.html">VM_delVMCMD</A>
+ &nbsp; <B>  <A NAME="tex2html19626"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083860000000000000000">
-VM_startVMInExistingXSession</A>
+<H2><A NAME="SECTION0083857000000000000000">
+VM_activateNetbootCMD</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Starts a virtual machine in an existing X session.
+<SPAN  CLASS="textbf">Description:</SPAN> Generates a BASH command line to (de)activate network booting of a VM.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
@@ -64,11 +64,13 @@ VM_startVMInExistingXSession</A>
 </LI>
 <LI>vmName: Name of the VM.
 </LI>
+<LI>activate: true for booting from network, false for booting from the HD.
+</LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>BASH code to start a virtual machine and finding the DISPLAY number of the user who runs this script.
+<LI>BASH code to delete a virtual machine.
 </LI>
 </UL>
 
@@ -76,7 +78,7 @@ VM_startVMInExistingXSession</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

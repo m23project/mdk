@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_addShutdownOrRebootPackage</TITLE>
-<META NAME="description" CONTENT="PKG_addShutdownOrRebootPackage">
+<TITLE>PKG_setClientPackageWait4Rm</TITLE>
+<META NAME="description" CONTENT="PKG_setClientPackageWait4Rm">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node963.html">
 <LINK REL="previous" HREF="node961.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node963.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16082"
+<A NAME="tex2html16094"
   HREF="node963.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16078"
-  HREF="node902.html">
+<A NAME="tex2html16090"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16072"
+<A NAME="tex2html16084"
   HREF="node961.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16080"
+<A NAME="tex2html16092"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16083"
-  HREF="node963.html">PKG_getAllParams</A>
-<B> Up:</B> <A NAME="tex2html16079"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16073"
-  HREF="node961.html">PKG_addShutdownPackage</A>
- &nbsp; <B>  <A NAME="tex2html16081"
+<B> Next:</B> <A NAME="tex2html16095"
+  HREF="node963.html">PKG_setClientPackageInstalledOK</A>
+<B> Up:</B> <A NAME="tex2html16091"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16085"
+  HREF="node961.html">PKG_changeClientPackageAction</A>
+ &nbsp; <B>  <A NAME="tex2html16093"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082860000000000000000">
-PKG_addShutdownOrRebootPackage</A>
+<H2><A NAME="SECTION0082858000000000000000">
+PKG_setClientPackageWait4Rm</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Adds a shutdown or a reboot package. No new job is addedm if there is already a waiting shutdown or reboot job. A shutdown package is added if the client can't be pinged and a reboot package if it is reachable via the network.
+<SPAN  CLASS="textbf">Description:</SPAN> changes the status of a allready installed package to wait 4 delete
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
 <LI>client: name of the client
+</LI>
+<LI>package: name of package
 </LI>
 </UL>
 
@@ -68,7 +70,7 @@ PKG_addShutdownOrRebootPackage</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

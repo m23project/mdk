@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_getPackageIDsByName</TITLE>
-<META NAME="description" CONTENT="PKG_getPackageIDsByName">
+<TITLE>PKG_getInfoFromPackageID</TITLE>
+<META NAME="description" CONTENT="PKG_getInfoFromPackageID">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1001.html">
 <LINK REL="previous" HREF="node999.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node1001.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16538"
+<A NAME="tex2html16550"
   HREF="node1001.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16534"
-  HREF="node902.html">
+<A NAME="tex2html16546"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16528"
+<A NAME="tex2html16540"
   HREF="node999.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16536"
+<A NAME="tex2html16548"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16539"
-  HREF="node1001.html">PKG_getClientPackages</A>
-<B> Up:</B> <A NAME="tex2html16535"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html16529"
-  HREF="node999.html">PKG_getPackageParamsVar</A>
- &nbsp; <B>  <A NAME="tex2html16537"
+<B> Next:</B> <A NAME="tex2html16551"
+  HREF="node1001.html">PKG_getClientIDbyPackageID</A>
+<B> Up:</B> <A NAME="tex2html16547"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html16541"
+  HREF="node999.html">PKG_getClientbyPackageID</A>
+ &nbsp; <B>  <A NAME="tex2html16549"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082898000000000000000">
-PKG_getPackageIDsByName</A>
+<H2><A NAME="SECTION0082896000000000000000">
+PKG_getInfoFromPackageID</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> returnes all IDs as an array for jobs matching the client and job name and are a normal or special package.
+<SPAN  CLASS="textbf">Description:</SPAN> gets a row from "clientjobs" for a given package ID
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>client: the name of the client, the jobs are for
+<LI>id: package ID
 </LI>
-<LI>packageName: name of the package, can be the name of a normal or special package
-</LI>
-<LI>specialPackage: set to true, if you want to search for a special package
+<LI>variable: the name of the row (e.g. client)
 </LI>
 </UL>
 
@@ -72,7 +70,7 @@ PKG_getPackageIDsByName</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

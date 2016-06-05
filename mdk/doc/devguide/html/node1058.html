@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PREF_preferenceLoadManagerHandler</TITLE>
-<META NAME="description" CONTENT="PREF_preferenceLoadManagerHandler">
+<TITLE>POOL_getCDDistributionRelease</TITLE>
+<META NAME="description" CONTENT="POOL_getCDDistributionRelease">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1059.html">
 <LINK REL="previous" HREF="node1057.html">
-<LINK REL="up" HREF="node1057.html">
+<LINK REL="up" HREF="node1040.html">
 <LINK REL="next" HREF="node1059.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html17285"
+<A NAME="tex2html17287"
   HREF="node1059.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html17281"
-  HREF="node1057.html">
+<A NAME="tex2html17283"
+  HREF="node1040.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html17275"
+<A NAME="tex2html17277"
   HREF="node1057.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html17283"
+<A NAME="tex2html17285"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html17286"
-  HREF="node1059.html">PREF_preferenceSaveManagerHandler</A>
-<B> Up:</B> <A NAME="tex2html17282"
-  HREF="node1057.html">./inc/preferences.php</A>
-<B> Previous:</B> <A NAME="tex2html17276"
-  HREF="node1057.html">./inc/preferences.php</A>
- &nbsp; <B>  <A NAME="tex2html17284"
+<B> Next:</B> <A NAME="tex2html17288"
+  HREF="node1059.html">POOL_showSourcesList</A>
+<B> Up:</B> <A NAME="tex2html17284"
+  HREF="node1040.html">./inc/pool.php</A>
+<B> Previous:</B> <A NAME="tex2html17278"
+  HREF="node1057.html">POOL_makeRepository</A>
+ &nbsp; <B>  <A NAME="tex2html17286"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008321000000000000000">
-PREF_preferenceLoadManagerHandler</A>
+<H2><A NAME="SECTION0083118000000000000000">
+POOL_getCDDistributionRelease</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Executes loading and deletion of preferences after pressing the according buttons and defines the buttons for PREF_showPreferenceManager();
-<BR>
+<SPAN  CLASS="textbf">Description:</SPAN> Reads the distribution and the release name from a mounted CD and writes these information to the variables. 
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+
+<UL>
+<LI>mountPoint: the directory where the CD is mounted
+</LI>
+<LI>distr: the variable the name of the distribution (e.g. Debian) should be written to
+</LI>
+<LI>release: the variable release of the distribution (e.g. sarge) should be written to
+</LI>
+</UL>
+
 <P>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

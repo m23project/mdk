@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_OptionPageHeader2</TITLE>
-<META NAME="description" CONTENT="PKG_OptionPageHeader2">
+<TITLE>PKG_isReconfiguredWithExtraDistr</TITLE>
+<META NAME="description" CONTENT="PKG_isReconfiguredWithExtraDistr">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node920.html">
 <LINK REL="previous" HREF="node918.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node920.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15566"
+<A NAME="tex2html15578"
   HREF="node920.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15562"
-  HREF="node902.html">
+<A NAME="tex2html15574"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15556"
+<A NAME="tex2html15568"
   HREF="node918.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15564"
+<A NAME="tex2html15576"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15567"
-  HREF="node920.html">PKG_OptionPageTail2</A>
-<B> Up:</B> <A NAME="tex2html15563"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15557"
-  HREF="node918.html">PKG_isSpecialPackageAvailableForClient</A>
- &nbsp; <B>  <A NAME="tex2html15565"
+<B> Next:</B> <A NAME="tex2html15579"
+  HREF="node920.html">PKG_translateClientjobsStatus</A>
+<B> Up:</B> <A NAME="tex2html15575"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15569"
+  HREF="node918.html">PKG_getDebootstrapCacheServerFile</A>
+ &nbsp; <B>  <A NAME="tex2html15577"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082817000000000000000">
-PKG_OptionPageHeader2</A>
+<H2><A NAME="SECTION0082815000000000000000">
+PKG_isReconfiguredWithExtraDistr</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Starts the option page for debconf settings with all necessary options.
+<SPAN  CLASS="textbf">Description:</SPAN> Checks, if the distribution is used for configuring a system that was installed via image.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>title: the window title of the OptionPage
+<LI>pkgID: The ID of the base installation package.
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>True, if the distribution is used for configuring, otherwise false.
 </LI>
 </UL>
 
@@ -68,7 +74,7 @@ PKG_OptionPageHeader2</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

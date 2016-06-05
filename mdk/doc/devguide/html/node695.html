@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_jQueryMenuHeader</TITLE>
-<META NAME="description" CONTENT="HTML_jQueryMenuHeader">
+<TITLE>HTML_JSMenuOpener</TITLE>
+<META NAME="description" CONTENT="HTML_JSMenuOpener">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node696.html">
 <LINK REL="previous" HREF="node694.html">
-<LINK REL="up" HREF="node672.html">
+<LINK REL="up" HREF="node674.html">
 <LINK REL="next" HREF="node696.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12628"
+<A NAME="tex2html12639"
   HREF="node696.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12624"
-  HREF="node672.html">
+<A NAME="tex2html12635"
+  HREF="node674.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12618"
+<A NAME="tex2html12629"
   HREF="node694.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12626"
+<A NAME="tex2html12637"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12629"
-  HREF="node696.html">HTML_jQueryReStoreYWindowPosition</A>
-<B> Up:</B> <A NAME="tex2html12625"
-  HREF="node672.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html12619"
-  HREF="node694.html">HTML_jQueryMenu</A>
- &nbsp; <B>  <A NAME="tex2html12627"
+<B> Next:</B> <A NAME="tex2html12640"
+  HREF="node696.html">HTML_jQueryMenu</A>
+<B> Up:</B> <A NAME="tex2html12636"
+  HREF="node674.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html12630"
+  HREF="node694.html">HTML_JSMenuCloseAllEntries</A>
+ &nbsp; <B>  <A NAME="tex2html12638"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082023000000000000000">
-HTML_jQueryMenuHeader</A>
+<H2><A NAME="SECTION0082021000000000000000">
+HTML_JSMenuOpener</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generate code for beginning a the jQuery accordion menu.
+<SPAN  CLASS="textbf">Description:</SPAN> Opens a menu entry when moving the mouse over the title and closes all other entries of the same menu.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>menuName: Name of the menu.
+<LI>menuName: Name of the complete menu. This name must be the same on all entries belonging to the same menu.
+</LI>
+<LI>entryName: Name of the entry. This name must be unique.
+</LI>
+<LI>title: Title for the menu entry.
+</LI>
+<LI>html: HTML code of the menu entry. Here can stand all that is expressable with HTML. This part is shown and hidden.
+</LI>
+<LI>titleCSS: CSS class for marking the title.
 </LI>
 </UL>
 <SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>The jQuery code for beginning the menu.
+<LI>The HTML code for displaying the menu entry.
 </LI>
 </UL>
 
@@ -74,7 +82,7 @@ HTML_jQueryMenuHeader</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

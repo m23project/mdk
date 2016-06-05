@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_changePrioritySelectedPackages</TITLE>
-<META NAME="description" CONTENT="PKG_changePrioritySelectedPackages">
+<TITLE>PKG_countJobsWithStatus</TITLE>
+<META NAME="description" CONTENT="PKG_countJobsWithStatus">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node937.html">
 <LINK REL="previous" HREF="node935.html">
-<LINK REL="up" HREF="node902.html">
+<LINK REL="up" HREF="node904.html">
 <LINK REL="next" HREF="node937.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15770"
+<A NAME="tex2html15782"
   HREF="node937.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15766"
-  HREF="node902.html">
+<A NAME="tex2html15778"
+  HREF="node904.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15760"
+<A NAME="tex2html15772"
   HREF="node935.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15768"
+<A NAME="tex2html15780"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15771"
-  HREF="node937.html">PKG_rmSelectedPackages</A>
-<B> Up:</B> <A NAME="tex2html15767"
-  HREF="node902.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html15761"
-  HREF="node935.html">PKG_addNormalPackages</A>
- &nbsp; <B>  <A NAME="tex2html15769"
+<B> Next:</B> <A NAME="tex2html15783"
+  HREF="node937.html">PKG_getClientjobsStatus</A>
+<B> Up:</B> <A NAME="tex2html15779"
+  HREF="node904.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15773"
+  HREF="node935.html">PKG_addSpecialPackagesToWait4Aac</A>
+ &nbsp; <B>  <A NAME="tex2html15781"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082834000000000000000">
-PKG_changePrioritySelectedPackages</A>
+<H2><A NAME="SECTION0082832000000000000000">
+PKG_countJobsWithStatus</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Changes the priority of selected wait4acc packages.
+<SPAN  CLASS="textbf">Description:</SPAN> Counts named jobs on a client that have a special status.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>amount: amount of selected packages
+<LI>client: name of the client
 </LI>
-<LI>client: name of client to install packages on
+<LI>package: name of the package
 </LI>
-<LI>newPriority: The new priority to set.
+<LI>status: The status to search for
+</LI>
+</UL>
+<SPAN  CLASS="textbf">Returns:</SPAN>
+
+<UL>
+<LI>The amount of packages on the client with the given status.
 </LI>
 </UL>
 
@@ -72,7 +78,7 @@ PKG_changePrioritySelectedPackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

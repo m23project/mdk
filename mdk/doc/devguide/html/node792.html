@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>m23SHARED_setLicense</TITLE>
-<META NAME="description" CONTENT="m23SHARED_setLicense">
+<TITLE>m23SHARED_init</TITLE>
+<META NAME="description" CONTENT="m23SHARED_init">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node793.html">
 <LINK REL="previous" HREF="node791.html">
-<LINK REL="up" HREF="node782.html">
+<LINK REL="up" HREF="node784.html">
 <LINK REL="next" HREF="node793.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13901"
+<A NAME="tex2html13912"
   HREF="node793.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13897"
-  HREF="node782.html">
+<A NAME="tex2html13908"
+  HREF="node784.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13891"
+<A NAME="tex2html13902"
   HREF="node791.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13899"
+<A NAME="tex2html13910"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13902"
-  HREF="node793.html">m23SHARED_evaluationDaysLeft</A>
-<B> Up:</B> <A NAME="tex2html13898"
-  HREF="node782.html">./inc/m23shared/m23shared.php</A>
-<B> Previous:</B> <A NAME="tex2html13892"
-  HREF="node791.html">m23SHARED_new</A>
- &nbsp; <B>  <A NAME="tex2html13900"
+<B> Next:</B> <A NAME="tex2html13913"
+  HREF="node793.html">m23SHARED_new</A>
+<B> Up:</B> <A NAME="tex2html13909"
+  HREF="node784.html">./inc/m23shared/m23shared.php</A>
+<B> Previous:</B> <A NAME="tex2html13903"
+  HREF="node791.html">m23SHARED_getDBnameByClient</A>
+ &nbsp; <B>  <A NAME="tex2html13911"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082410000000000000000">
-m23SHARED_setLicense</A>
+<H2><A NAME="SECTION008248000000000000000">
+m23SHARED_init</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Sets the maximum allowed amount of clients and the evaluation time in days.
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Checks if a m23shared environment is present, sets the variables in the session and chooses the according DB.
+<BR><SPAN  CLASS="textbf">Returns:</SPAN>
 
 <UL>
-<LI>payType: Payment type (M23SHARED_PAYTYPE_EVAL, M23SHARED_PAYTYPE_PROFESSIONAL)
-</LI>
-<LI>clientAmount: Amount of clients that can be manages with the license.
-</LI>
-<LI>evaluationDays: Days for evaluation time.
+<LI>True if an m23 m23shared environment is present, false on error or no m23shared.
 </LI>
 </UL>
 
@@ -72,7 +68,7 @@ m23SHARED_setLicense</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

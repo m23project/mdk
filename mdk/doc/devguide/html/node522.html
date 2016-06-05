@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_partCreationSelect</TITLE>
-<META NAME="description" CONTENT="FDISK_partCreationSelect">
+<TITLE>FDISK_findDevNrPosition</TITLE>
+<META NAME="description" CONTENT="FDISK_findDevNrPosition">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node523.html">
 <LINK REL="previous" HREF="node521.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node523.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10421"
+<A NAME="tex2html10431"
   HREF="node523.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10417"
-  HREF="node480.html">
+<A NAME="tex2html10427"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10411"
+<A NAME="tex2html10421"
   HREF="node521.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10419"
+<A NAME="tex2html10429"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10422"
-  HREF="node523.html">FDISK_canPartTypeBeCreated</A>
-<B> Up:</B> <A NAME="tex2html10418"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10412"
-  HREF="node521.html">FDISK_findDevNrPosition</A>
- &nbsp; <B>  <A NAME="tex2html10420"
+<B> Next:</B> <A NAME="tex2html10432"
+  HREF="node523.html">FDISK_partCreationSelect</A>
+<B> Up:</B> <A NAME="tex2html10428"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10422"
+  HREF="node521.html">FDISK_correctLogical</A>
+ &nbsp; <B>  <A NAME="tex2html10430"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081642000000000000000">
-FDISK_partCreationSelect</A>
+<H2><A NAME="SECTION0081641000000000000000">
+FDISK_findDevNrPosition</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> retunes a selection for selecting a partition type to create.
+<SPAN  CLASS="textbf">Description:</SPAN> returns the device position for the new device
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
+<LI>start: start position for the search
+</LI>
+<LI>end: end position for the search
+</LI>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
 <LI>vDev: Virtual (internally used) device number.
+</LI>
+<LI>newPartNr: stores the new device number
+</LI>
+<LI>type: type of the new partition
 </LI>
 </UL>
 
@@ -70,7 +78,7 @@ FDISK_partCreationSelect</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_adjustFstabParam</TITLE>
-<META NAME="description" CONTENT="FDISK_adjustFstabParam">
+<TITLE>FDISK_fstabAddDialog</TITLE>
+<META NAME="description" CONTENT="FDISK_fstabAddDialog">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node532.html">
 <LINK REL="previous" HREF="node530.html">
-<LINK REL="up" HREF="node480.html">
+<LINK REL="up" HREF="node481.html">
 <LINK REL="next" HREF="node532.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10529"
+<A NAME="tex2html10539"
   HREF="node532.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10525"
-  HREF="node480.html">
+<A NAME="tex2html10535"
+  HREF="node481.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10519"
+<A NAME="tex2html10529"
   HREF="node530.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10527"
+<A NAME="tex2html10537"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10530"
-  HREF="node532.html">FDISK_genManualFstab</A>
-<B> Up:</B> <A NAME="tex2html10526"
-  HREF="node480.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10520"
-  HREF="node530.html">FDISK_fstabAddDialog</A>
- &nbsp; <B>  <A NAME="tex2html10528"
+<B> Next:</B> <A NAME="tex2html10540"
+  HREF="node532.html">FDISK_adjustFstabParam</A>
+<B> Up:</B> <A NAME="tex2html10536"
+  HREF="node481.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10530"
+  HREF="node530.html">FDISK_fstabAddDialog2</A>
+ &nbsp; <B>  <A NAME="tex2html10538"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081651000000000000000">
-FDISK_adjustFstabParam</A>
+<H2><A NAME="SECTION0081650000000000000000">
+FDISK_fstabAddDialog</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Adjust the parameter block of a fstab line to make it use an supported FS.
+<SPAN  CLASS="textbf">Description:</SPAN> Dialog for adding fstab entries.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>param: The parameter block of a fstab line
+<LI>param: parameter string containing status informations about the harddisks
 </LI>
-<LI>sourceName: The name of the package source list
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Adjust the parameter block of a fstab line
+<LI>fstab: Array that contains the fstab information. The changed fstab will be written to this parameter too.
 </LI>
 </UL>
 
@@ -76,7 +70,7 @@ FDISK_adjustFstabParam</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>

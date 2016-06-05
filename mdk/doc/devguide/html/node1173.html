@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_getWorkingm23debsMirror</TITLE>
-<META NAME="description" CONTENT="SRCLST_getWorkingm23debsMirror">
+<TITLE>SRCLST_matchList</TITLE>
+<META NAME="description" CONTENT="SRCLST_matchList">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,47 +19,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
+<LINK REL="next" HREF="node1174.html">
 <LINK REL="previous" HREF="node1172.html">
-<LINK REL="up" HREF="node1136.html">
+<LINK REL="up" HREF="node1139.html">
 <LINK REL="next" HREF="node1174.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18755"
+<A NAME="tex2html18769"
   HREF="node1174.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18751"
-  HREF="node1136.html">
+<A NAME="tex2html18765"
+  HREF="node1139.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18747"
+<A NAME="tex2html18759"
   HREF="node1172.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18753"
+<A NAME="tex2html18767"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18756"
-  HREF="node1174.html">./inc/update.php</A>
-<B> Up:</B> <A NAME="tex2html18752"
-  HREF="node1136.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html18748"
-  HREF="node1172.html">SRCLST_checkm23debsMirror</A>
- &nbsp; <B>  <A NAME="tex2html18754"
+<B> Next:</B> <A NAME="tex2html18770"
+  HREF="node1174.html">SRCLST_possiblem23debsMirrors</A>
+<B> Up:</B> <A NAME="tex2html18766"
+  HREF="node1139.html">./inc/sourceslist.php</A>
+<B> Previous:</B> <A NAME="tex2html18760"
+  HREF="node1172.html">SRCLST_cleanList</A>
+ &nbsp; <B>  <A NAME="tex2html18768"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083637000000000000000">
-SRCLST_getWorkingm23debsMirror</A>
+<H2><A NAME="SECTION0083634000000000000000">
+SRCLST_matchList</A>
 </H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Get the url of a working m23debs mirror.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Returns the name of the sources list that matches the searched sources list contents for the distribution or false
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 
 <UL>
-<LI>Url to a working m23debs mirror or false, if none could be found.
+<LI>distr: the distribution to search the name of the sources list under
+</LI>
+<LI>search: the contents of the sources list to search
 </LI>
 </UL>
 
@@ -67,7 +70,7 @@ SRCLST_getWorkingm23debsMirror</A>
 <BR><HR>
 <ADDRESS>
 root
-2015-09-06
+2016-04-19
 </ADDRESS>
 </BODY>
 </HTML>
