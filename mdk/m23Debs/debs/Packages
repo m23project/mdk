@@ -298,15 +298,15 @@ Description: VirtualBox OSE integration into m23
  m23 server.
 
 Package: m23hwscanner
-Version: 3.0-111
+Version: 3.0-112
 Architecture: all
 Maintainer: Hauke Goos-Habermann <hhabermann@pc-kiel.de>
 Depends: bash, sed, coreutils, awk | gawk
-Filename: ./m23hwscanner_3.0-111_all.deb
-Size: 6442
-MD5sum: 2fef2c872e9ab64986fa1dc5ed0a1ef1
-SHA1: 7ed75025dbc488da721eb64a9572645175c6c7e7
-SHA256: 647c7313cec2702da79c39688d35a4f691b0ec967c987ad162865a2b12203a61
+Filename: ./m23hwscanner_3.0-112_all.deb
+Size: 6514
+MD5sum: 8a77632225fb061d031b07284e8136cd
+SHA1: cbffe3c63e0d09e11fa9e49f37994f373157e898
+SHA256: 47554d3c06e3b32f3b3bc7c15cc2af285ab647c36e0e4706c11a43992e2005d7
 Section: base
 Priority: optional
 Description: m23hwscanner has 2 functions: 1. Scans the
