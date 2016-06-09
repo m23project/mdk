@@ -137,6 +137,9 @@ END {
 }
 
 
+
+
+
 #get the version information string from the currently installed m23 software
 getm23VersionString()
 {
@@ -145,6 +148,8 @@ getm23VersionString()
 	
 	echo "$ver-$patch"
 }
+
+
 
 
 
@@ -170,6 +175,10 @@ adjustControl()
 
 	echo $pkg"_"$ver"_"$arch".deb"
 }
+
+
+
+
 
 #check if building is needed and create index
 prepareBuilding()
@@ -197,6 +206,9 @@ prepareBuilding()
 }
 
 
+
+
+
 finishBuilding()
 {
 	#$1: package name to build
@@ -215,6 +227,9 @@ finishBuilding()
 	rm -f "/tmp/$1""deb.list" 2> /dev/null
 	rm -f -r m23 mdk 2> /dev/null
 }
+
+
+
 
 
 simpleBuild()
@@ -243,6 +258,10 @@ simpleBuild()
 #build package
 	finishBuilding "$1"
 }
+
+
+
+
 
 updatePackages()
 {
