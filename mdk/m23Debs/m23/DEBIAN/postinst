@@ -1010,7 +1010,9 @@ updateSQLIfOlder $oldversionint 131100669 "ALTER TABLE recommendpackages CHANGE 
 updateSQLIfOlder $oldversionint 143100752 "ALTER TABLE clients ADD CFDiskTemp LONGBLOB NOT NULL AFTER partitions"
 
 # Add description field to the groups table
-updateSQLIfOlder $oldversionint 162100899 "ALTER TABLE groups ADD description LONGTEXT"
+updateSQLIfOlder $oldversionint 162100899 "ALTER TABLE groups ADD description LONGTEXT; ALTER TABLE clients ADD keyValueStore LONGTEXT"
+
+
 
 ######################
 # DB adjustments END #
