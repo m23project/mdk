@@ -1,33 +1,33 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-Date: Sun, 19 Jun 2016 23:02:30 UTC
+Date: Tue, 28 Jun 2016 18:31:42 UTC
 Origin: m23
 Suite: stable
 MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e                0 Packages
  4059d198768f9f8dc9372dc1c54bc3c3               14 Packages.bz2
- ccf2692959813a1982512671828eef53               29 Packages.gz
+ de150547df8c66eadb822559e4a42817               29 Packages.gz
  d41d8cd98f00b204e9800998ecf8427e                0 Release
 SHA1:
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Packages
  64a543afbb5f4bf728636bdcbbe7a2ed0804adc2               14 Packages.bz2
- 49e2f964c0b15e2b4ee4bb7b7cf411d6766fbf24               29 Packages.gz
+ 323429c30485e076a7e5e9ba09a3b309c4431703               29 Packages.gz
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Release
 SHA256:
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Packages
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058               14 Packages.bz2
- b19d95a884d6656fe95fc724a77aa0fdf5fdeed58546611fec822afb63b9093b               29 Packages.gz
+ ab7abe026cbcfdd8126c8d8feebd3b99ed2cec4b863df4e4642c1776b1245f77               29 Packages.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Release
 SHA512:
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 Packages
  6de201dfed1d45412509c65deb34690dc2d09c6aafccfe491fd2f440f92842b9c755b61dc7bcdd4cc0c9f18cf46c2b3a1241e99c4c2a33fff5555e7b2f0b6348               14 Packages.bz2
- e13ab2f15085d48f155a05b348d9b4230477b9e3ee54da52b23124fa7706d6a003eeeff6ed0fca7c9dbfb8b5587b5b8d9a5b292cf0afc3d4f242626be7a1f509               29 Packages.gz
+ 100c89bbfc7d63aecc53b212bc3dc47f2ea25376e37d244c07ac7728c4c82da317c40177366de90cb704acb474aad83603ac5976aa124026f60066ee178f0d0e               29 Packages.gz
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 Release
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iEYEARECAAYFAldnJIYACgkQxvCRPTMF5jo4cgCeIMITsPcJ5XIPYacbDbsmH4p2
-B/QAnRYjHD8jRkcWOSbxE8M7iLI+nv/h
-=3Fgo
+iEYEARECAAYFAldywo4ACgkQxvCRPTMF5jqd9gCePEqm7U0w3eDs5YSSsNxV7RbE
+dYUAoIElJm87G6b7I97Nq9EUwcupgXR3
+=kFk7
 -----END PGP SIGNATURE-----

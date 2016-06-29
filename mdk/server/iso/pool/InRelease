@@ -1,33 +1,33 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-Date: Sun, 19 Jun 2016 23:02:29 UTC
+Date: Tue, 28 Jun 2016 18:31:41 UTC
 Origin: m23
 Suite: stable
 MD5Sum:
- 0ff271713592fd51256a08832ac4b83f            17190 Packages
- a38d2c50ad8ae066709d8a245c2e5523             6031 Packages.bz2
- d0e15124347e05c91d10e7404fcb0fd9             6252 Packages.gz
+ 21bf8587255bad0f6fbff4f9ac0db92b            12511 Packages
+ 4f6d62158585c8ae9dfba1f8ac5c0ce4             4179 Packages.bz2
+ 609f2805d52c2db40f75e8ddc5257ae4             4314 Packages.gz
  d41d8cd98f00b204e9800998ecf8427e                0 Release
 SHA1:
- 9546c144dda8c9f3bfd825248b411adb3d5c1cc5            17190 Packages
- 3211811bc5c33ff1cfc04e87c4878b0d548c53fa             6031 Packages.bz2
- f896caa39e2835e592abbe8d1ab16bc1fb84e82e             6252 Packages.gz
+ c56dfab804196639aa81ac57130dc8891a372774            12511 Packages
+ 487b201fade8e35422fbc32fd25227952c216b03             4179 Packages.bz2
+ f36cee7353f6496787d9337a837f3a62425b572b             4314 Packages.gz
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 Release
 SHA256:
- 55a8cbe02e5248d11fefac64a1b35cff82d7e01750c8c734fb25184f35482969            17190 Packages
- a3e2f2fb1fb72ec1531f29f32bbdd577438bdfe8eba41621fcd70837ac2c7082             6031 Packages.bz2
- 76be87c3c76292c2114d4b724ed0c145029671211eb18f67d0a2531e19b27e5f             6252 Packages.gz
+ c06d4aaf0948fbb3cb6564f0e1834490062458f6b6938b0d99049cb521556898            12511 Packages
+ d5f1ef447507f7b8a8d7a8bf24ec3b65ae8663bd8bb70cdbb9797e743ad65dd6             4179 Packages.bz2
+ a32e5a7abd3acf25f3fc7d383e1c35f4b1d81e34aa281dec59ca897c4303abab             4314 Packages.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 Release
 SHA512:
- 5381d376823e8138e0961f2f5732e49a6595bcf1073df38eda2f3d39349659f868a85d339deebb92ed5aa256921f952542ba374ecee2fe2a73a8d37a28c87e9c            17190 Packages
- 14b28287ba528eea9baa3ad315a7bf38273e819237a98f3d8720bd7ae17ce6e49d06fb3eb078fd6167e5621a0e70d43d7d34744963fe7a43a19a21648e7868e5             6031 Packages.bz2
- b691dd2de2d2cd6c783dedd5a40138d519d9657a375fd7518489627d7886302f6d2ca44f787e4b97060c4008ef4b19b49aec535539038f50af35032da4072247             6252 Packages.gz
+ ff05d2de966703e65361f78872680890f777198f96017d666aeee2c71be50867c41ff4db5d8d458779d55da0882cb0e40eed35542839bd0fdad3869ea9ef9a39            12511 Packages
+ c671ee5317acdb4f798d87c04231958cb7aed18f883b39f0d84adccd02c974fc26c00e1be9abd7ccff9475683ac59009f1c27b8c7f7888e08bd9c6a48fff2344             4179 Packages.bz2
+ 7baacaa04c5ef4aa5e4f08bef37c246e2d20f958ef9c52714e61543e06293d77a5ebae651d262397730883934e2f1248df38f4ec2901c15ad4603c881c0b069b             4314 Packages.gz
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 Release
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iEYEARECAAYFAldnJIUACgkQxvCRPTMF5jokqwCfaaJuaS3VNMLL/r93IOuI4hKv
-IAoAn2i5iveQoJUGQXofOpQKBzu71YQI
-=EY8x
+iEYEARECAAYFAldywo0ACgkQxvCRPTMF5jqjtQCeMziQ+31xC3ZIV3hwTfoUl75/
+V+sAn2g3+MDVg+dR6ROVlJ6zKgaWFWu1
+=m6pO
 -----END PGP SIGNATURE-----
