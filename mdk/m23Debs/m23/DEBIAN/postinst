@@ -495,6 +495,7 @@ acl Safe_ports port 488         # gss-http
 acl Safe_ports port 591         # filemaker
 acl Safe_ports port 777         # multiling http
 acl CONNECT method CONNECT
+acl m23server dstdomain 192.168.1.6
 
 http_access deny !Safe_ports
 http_access deny CONNECT !SSL_ports
@@ -510,8 +511,9 @@ access_log /var/log/squid3/access.log squid
 
 coredump_dir /var/spool/squid3
 
-acl NOCACHE url_regex -i 192.168.1.6
-no_cache deny NOCACHE
+#acl NOCACHE url_regex -i 192.168.1.6
+#no_cache deny NOCACHE
+always_direct allow m23server
 
 visible_hostname m23iso
 
@@ -539,6 +541,7 @@ fi
 	#Adjust the config file
 	sed -i "s#X_CACHESIZE_X#$free#g" $squidConf
 	sed -i "s#acl NOCACHE url_regex -i .*#acl NOCACHE url_regex -i $IPINT#g" $squidConf
+	sed -i "s#acl m23server dstdomain .*#acl m23server dstdomain $IPINT#g" $squidConf
 	sed -i "s#visible_hostname .*#visible_hostname $hname#g" $squidConf
 
 	chown root.root $squidConf
