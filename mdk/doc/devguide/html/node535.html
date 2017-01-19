@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_delPart</TITLE>
-<META NAME="description" CONTENT="FDISK_delPart">
+<TITLE>FDISK_defineDrive</TITLE>
+<META NAME="description" CONTENT="FDISK_defineDrive">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,66 +21,70 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node536.html">
 <LINK REL="previous" HREF="node534.html">
-<LINK REL="up" HREF="node481.html">
+<LINK REL="up" HREF="node447.html">
 <LINK REL="next" HREF="node536.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10587"
+<A NAME="tex2html10521"
   HREF="node536.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10583"
-  HREF="node481.html">
+<A NAME="tex2html10517"
+  HREF="node447.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10577"
+<A NAME="tex2html10511"
   HREF="node534.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10585"
+<A NAME="tex2html10519"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10588"
-  HREF="node536.html">FDISK_addPart</A>
-<B> Up:</B> <A NAME="tex2html10584"
-  HREF="node481.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10578"
-  HREF="node534.html">FDISK_getBelongingRaidDev</A>
- &nbsp; <B>  <A NAME="tex2html10586"
+<B> Next:</B> <A NAME="tex2html10522"
+  HREF="node536.html">FDISK_dev2LDevLPart</A>
+<B> Up:</B> <A NAME="tex2html10518"
+  HREF="node447.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10512"
+  HREF="node534.html">FDISK_showDiskDefine</A>
+ &nbsp; <B>  <A NAME="tex2html10520"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081654000000000000000">
-FDISK_delPart</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> deletes a partition from the param string and generates the parted commands
+<H2><A NAME="SECTION0091688000000000000000">
+FDISK_defineDrive</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> defines drive information for the clientBuilder
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>dev: the partition to delete (e.g. /dev/hda4)
+<LI>client: client name
 </LI>
-<LI>param: parameter string containing status informations about the harddisks
+<LI>path: path to the drive (/dev/hda, /dev/hdb, ...)
 </LI>
-<LI>partJobs: parted commands
+<LI>size: size of the drive in MB
 </LI>
-<LI>deleteBelongingRaid: If set to true, the RAID, the partition belongs to will be destroyed.
+<LI>upperI: upper tolerance border for disks with identical type
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Changed param string.
+<LI>lowerI: lower tolerance border for disks with identical type
 </LI>
-</UL>
-
+<LI>upperO: upper tolerance border for disks with other type
+</LI>
+<LI>lowerO: lower tolerance border for disks with other type
+</LI>
+<LI>asSpeciefied: use the speciefied disk, if it exists (is set to "yes" or empty)
+</LI>
+<LI>sizeAdjustmentType: defines how the partitions should be adjusted, if there is more or less space on the client that the defined one. "system" increases or tries to keep the size of the system partition. "percentage" makes a percentage adjustment of all partitions.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

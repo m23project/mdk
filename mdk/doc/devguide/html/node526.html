@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_installExistingDialog</TITLE>
-<META NAME="description" CONTENT="FDISK_installExistingDialog">
+<TITLE>FDISK_rmJob</TITLE>
+<META NAME="description" CONTENT="FDISK_rmJob">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node527.html">
 <LINK REL="previous" HREF="node525.html">
-<LINK REL="up" HREF="node481.html">
+<LINK REL="up" HREF="node447.html">
 <LINK REL="next" HREF="node527.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10479"
+<A NAME="tex2html10413"
   HREF="node527.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10475"
-  HREF="node481.html">
+<A NAME="tex2html10409"
+  HREF="node447.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10469"
+<A NAME="tex2html10403"
   HREF="node525.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10477"
+<A NAME="tex2html10411"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10480"
-  HREF="node527.html">FDISK_addFstab</A>
-<B> Up:</B> <A NAME="tex2html10476"
-  HREF="node481.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10470"
-  HREF="node525.html">FDISK_checkFreeSpace</A>
- &nbsp; <B>  <A NAME="tex2html10478"
+<B> Next:</B> <A NAME="tex2html10414"
+  HREF="node527.html">FDISK_addJob</A>
+<B> Up:</B> <A NAME="tex2html10410"
+  HREF="node447.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10404"
+  HREF="node525.html">FDISK_getvPart</A>
+ &nbsp; <B>  <A NAME="tex2html10412"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081645000000000000000">
-FDISK_installExistingDialog</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> showes the dialog for installation on existing partitions
+<H2><A NAME="SECTION0091679000000000000000">
+FDISK_rmJob</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> generates a partition remove job
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>param: parameter string containing status informations about the harddisks
+<LI>dev: selected device (e.g. hda)
 </LI>
-</UL>
-
+<LI>devNr: number of partition, minor number in parted
+</LI>
+<LI>partJobs: associative array with partition jobs
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

@@ -1,9 +1,9 @@
 Package: m23-mdk-helper
-Version: 16.2-100891
+Version: 17.1-100946
 Section: base
 Priority: optional
 Architecture: all
-Installed-Size: 33536
+Installed-Size: 33564
 Pre-Depends: debconf
 Depends: bash, dialog
 Maintainer: Hauke Goos-Habermann <hhabermann@pc-kiel.de>

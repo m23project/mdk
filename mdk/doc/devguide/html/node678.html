@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_sourceViewer</TITLE>
-<META NAME="description" CONTENT="HTML_sourceViewer">
+<TITLE>HTML_setStatusBarStatusByID</TITLE>
+<META NAME="description" CONTENT="HTML_setStatusBarStatusByID">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,58 +21,64 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node679.html">
 <LINK REL="previous" HREF="node677.html">
-<LINK REL="up" HREF="node674.html">
+<LINK REL="up" HREF="node648.html">
 <LINK REL="next" HREF="node679.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html12435"
+<A NAME="tex2html12378"
   HREF="node679.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html12431"
-  HREF="node674.html">
+<A NAME="tex2html12374"
+  HREF="node648.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html12425"
+<A NAME="tex2html12368"
   HREF="node677.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html12433"
+<A NAME="tex2html12376"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html12436"
-  HREF="node679.html">HTML_getOutputBuffer</A>
-<B> Up:</B> <A NAME="tex2html12432"
-  HREF="node674.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html12426"
-  HREF="node677.html">HTML_urlButton</A>
- &nbsp; <B>  <A NAME="tex2html12434"
+<B> Next:</B> <A NAME="tex2html12379"
+  HREF="node679.html">HTML_setStatusBarStatus</A>
+<B> Up:</B> <A NAME="tex2html12375"
+  HREF="node648.html">./inc/html.php</A>
+<B> Previous:</B> <A NAME="tex2html12369"
+  HREF="node677.html">HTML_setStatusBarStatusByName</A>
+ &nbsp; <B>  <A NAME="tex2html12377"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008204000000000000000">
-HTML_sourceViewer</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Creates a source code viewer area with syntax highlighting.
+<H2><A NAME="SECTION0092030000000000000000">
+HTML_setStatusBarStatusByID</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Sets new percent value and/or new status text by status bar ID.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>htmlNames: Name of the source viewer.
+<LI>id: ID of the status bar
 </LI>
-<LI>code: The source code to show.
+<LI>percent: Percent value to write into the DB (may be false, if it should not be changed).
 </LI>
-<LI>highlighting: The GeSHi language of the source code (e.g. bash).
+<LI>statustext: A text message that should be shown under the status bar and written to the DB (may be false, if it should not be changed).
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>: false on parameter error.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Filling main.cpp</TITLE>
-<META NAME="description" CONTENT="Filling main.cpp">
+<TITLE>installing a kernel</TITLE>
+<META NAME="description" CONTENT="installing a kernel">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,8 +19,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
-<LINK REL="next" HREF="node51.html">
-<LINK REL="previous" HREF="node44.html">
+<LINK REL="next" HREF="node49.html">
+<LINK REL="previous" HREF="node46.html">
 <LINK REL="up" HREF="node38.html">
 <LINK REL="next" HREF="node48.html">
 </HEAD>
@@ -28,35 +28,42 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html3157"
+<A NAME="tex2html3102"
   HREF="node48.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html3153"
+<A NAME="tex2html3098"
   HREF="node38.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html3147"
+<A NAME="tex2html3092"
   HREF="node46.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html3155"
+<A NAME="tex2html3100"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html3158"
-  HREF="node48.html">Connecting to the server</A>
-<B> Up:</B> <A NAME="tex2html3154"
-  HREF="node38.html">how to access mysql</A>
-<B> Previous:</B> <A NAME="tex2html3148"
-  HREF="node46.html">Adjusting project properties</A>
- &nbsp; <B>  <A NAME="tex2html3156"
+<B> Next:</B> <A NAME="tex2html3103"
+  HREF="node48.html">in case of an</A>
+<B> Up:</B> <A NAME="tex2html3099"
+  HREF="node38.html">How to generate a</A>
+<B> Previous:</B> <A NAME="tex2html3093"
+  HREF="node46.html">source update and cleanup</A>
+ &nbsp; <B>  <A NAME="tex2html3101"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
 <H2><A NAME="SECTION00645000000000000000">
-Filling main.cpp</A>
+installing a kernel</A>
 </H2>
-After all preparations we step forward to the source code. You need to include <SPAN  CLASS="textbf">include &lt;mysql/mysql.h&gt;</SPAN> and create a global variable called mysql from the type MYSQL.
+You can list all available kernels with the following command:
+<PRE>
+apt-cache search kernel | grep kernel-image
+</PRE>
+Pick one out adjust the <SPAN  CLASS="textit">image</SPAN> value in your new <SPAN  CLASS="textit">lilo.conf</SPAN>. To install your new kernel type the following:
+<PRE>
+apt-get install myChosenKernel-Image
+</PRE>
 
 <P>
 <BR><HR>
@@ -64,18 +71,14 @@ After all preparations we step forward to the source code. You need to include <
 <A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
 
 <UL CLASS="ChildLinks">
-<LI><A NAME="tex2html3159"
-  HREF="node48.html">Connecting to the server</A>
-<LI><A NAME="tex2html3160"
-  HREF="node49.html">Disconnecting from the server</A>
-<LI><A NAME="tex2html3161"
-  HREF="node50.html">Send SQL statements</A>
+<LI><A NAME="tex2html3104"
+  HREF="node48.html">in case of an error</A>
 </UL>
 <!--End of Table of Child-Links-->
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

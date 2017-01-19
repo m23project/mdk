@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_isExecutedInCLI</TITLE>
-<META NAME="description" CONTENT="HELPER_isExecutedInCLI">
+<TITLE>HELPER_generateSalt</TITLE>
+<META NAME="description" CONTENT="HELPER_generateSalt">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node625.html">
 <LINK REL="previous" HREF="node623.html">
-<LINK REL="up" HREF="node620.html">
+<LINK REL="up" HREF="node590.html">
 <LINK REL="next" HREF="node625.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11727"
+<A NAME="tex2html11669"
   HREF="node625.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11723"
-  HREF="node620.html">
+<A NAME="tex2html11665"
+  HREF="node590.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11717"
+<A NAME="tex2html11659"
   HREF="node623.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11725"
+<A NAME="tex2html11667"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11728"
-  HREF="node625.html">HELPER_isExecutedOnUCS</A>
-<B> Up:</B> <A NAME="tex2html11724"
-  HREF="node620.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html11718"
-  HREF="node623.html">HELPER_filesize</A>
- &nbsp; <B>  <A NAME="tex2html11726"
+<B> Next:</B> <A NAME="tex2html11670"
+  HREF="node625.html">HELPER_grubMd5Crypt</A>
+<B> Up:</B> <A NAME="tex2html11666"
+  HREF="node590.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html11660"
+  HREF="node623.html">HELPER_randomMAC</A>
+ &nbsp; <B>  <A NAME="tex2html11668"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008184000000000000000">
-HELPER_isExecutedInCLI</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Checks, if it is run in CLI.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
-
+<H2><A NAME="SECTION0091834000000000000000">
+HELPER_generateSalt</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Generates a random salt string.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+</SMALL></SMALL>
 <UL>
-<LI>True, when run in CLI otherwise false.
+<LI>length: Length of the salt.
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>Random salt of given length.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

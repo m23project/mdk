@@ -18,10 +18,211 @@
 \usepackage[pdftex]{graphicx}
 \usepackage[pdftex]{graphics}
 
+%
+\providecommand{\bildrechts}[1]{ %#1: Bild, das nach rechts fließen soll
+\begin{wrapfigure}{r}{0.2\textwidth}
+		\includegraphics[width=0.19\textwidth]{#1}
+\end{wrapfigure}
+} 
+
+%
+\providecommand{\code}[1]{ %
+ \ \\
+	\medskip
+	\begin{tabularx}{17cm}{X}\hline
+	\rowcolor[rgb]{0.8,0.8,0.8}
+	\bf \sffamily \normalsize \textcolor{psrotfnt}{Ausgabe} \\\hline
+	\rowcolor[rgb]{0.9,0.9,0.9}
+	\normalsize \sffamily \verb°#1° \\\hline
+	\end{tabularx}
+	\smallskip 
+
+} 
+
+%
+\providecommand{\beschreibung}[1]{ %
+\\{\bf Beschreibung:} \textit{#1} \\
+} 
+
+%
+\providecommand{\hinweis}[1]{ %
+ \smallskip
+	\begin{tabularx}{17cm}{X}\hline
+	\rowcolor[cmyk]{0.44,0.16,0.0,0.10}
+	\bf \sffamily \normalsize \textcolor{psrotfnt}{Hinweis} \\\hline
+	\rowcolor[cmyk]{0.0,0.02,0.10,0.0}
+	\normalsize \sffamily #1 \\\hline
+	\end{tabularx}
+	\smallskip 
+
+} 
+
+%
+\providecommand{\portierung}[1]{ %
+\\\smallskip
+	\begin{tabularx}{17cm}{X}\hline
+	\rowcolor[cmyk]{0.44,0.16,0.0,0.10}
+	\bf \sffamily \normalsize \textcolor{psrotfnt}{Portierung} \\\hline
+	\rowcolor[cmyk]{0.0,0.02,0.10,0.0}
+	\normalsize \sffamily #1 \\\hline
+	\end{tabularx}
+	\smallskip 
+ \\
+} 
+
+%
+\providecommand{\fragen}[1]{ %
+\\\smallskip
+	\begin{tabularx}{17cm}{X}\hline
+	\rowcolor[cmyk]{0.0,0.01,0.63,0.18}
+	\bf \sffamily \normalsize \textcolor{psrotfnt}{Fragen} \\\hline
+	\rowcolor[cmyk]{0.0,0.02,0.10,0.0}
+	\normalsize \sffamily #1 \\\hline
+	\end{tabularx}
+	\smallskip 
+\ 
+} 
+
+%
+\providecommand{\problem}[1]{ %
+\\\smallskip
+	\begin{tabularx}{17cm}{X}\hline
+	\rowcolor[cmyk]{0.0,0.92,1.0,0.34}
+	\bf \sffamily \normalsize \textcolor{psrotfnt}{Problematisch} \\\hline
+	\rowcolor[cmyk]{0.0,0.02,0.10,0.0}
+	\normalsize \sffamily #1 \\\hline
+	\end{tabularx}
+	\smallskip 
+ \\
+} 
+
+%
+\providecommand{\rotkasten}[2]{ %
+\smallskip
+	\begin{tabularx}{17cm}{X}\hline
+	\rowcolor[cmyk]{0.0,0.92,1.0,0.34}
+	\bf \sffamily \normalsize \textcolor{psrotfnt}{#1} \\\hline
+	\rowcolor[cmyk]{0.0,0.02,0.10,0.0}
+	\normalsize \sffamily #2 \\\hline
+	\end{tabularx}
+	\smallskip
+} 
+
+%
+\providecommand{\blaukasten}[2]{ %
+\smallskip
+	\begin{tabularx}{17cm}{X}\hline
+	\rowcolor[cmyk]{0.44,0.16,0.0,0.10}
+	\bf \sffamily \normalsize \textcolor{psrotfnt}{#1} \\\hline
+	\rowcolor[cmyk]{0.0,0.02,0.10,0.0}
+	\normalsize \sffamily #2 \\\hline
+	\end{tabularx}
+	\smallskip
+} 
+
+%
+\providecommand{\gelbkasten}[3]{ %
+\smallskip
+	\begin{tabularx}{17cm}{X}\hline
+	\rowcolor[cmyk]{0.0,0.01,0.63,0.18}
+	\bf \sffamily \normalsize \textcolor{psrotfnt}{#1} \\\hline
+	\rowcolor[cmyk]{0.0,0.02,0.10,0.0}
+	\normalsize \sffamily #2 \\\hline
+	\end{tabularx}
+	\smallskip
+} 
+
+%
+\providecommand{\ausgabe}[1]{ %
+\ \\
+	\medskip
+	\begin{tabularx}{17cm}{X}\hline
+	\rowcolor[rgb]{0.8,0.8,0.8}
+	\bf \sffamily \normalsize \textcolor{psrotfnt}{Ausgabe} \\\hline
+	\rowcolor[rgb]{0.9,0.9,0.9}
+	\normalsize \sffamily \verb°#1° \\\hline
+	\end{tabularx}
+	\smallskip
+} 
+
+%
+\providecommand{\entspr}{
+$\mathop{\hat{=}}$
+} 
+
+%
+\providecommand{\paket}[1]{ %
+"\emph{#1}"
+} 
+
+%
+\providecommand{\kommandoOR}[1]{ %
+\fboxsep0.6mm
+	\colorbox{bgGray}{\fbox{\textbf{\tt{#1}}}}
+} 
+
+%
+\providecommand{\kommando}[1]{ %
+\fboxsep0.6mm
+	\colorbox{bgGray}{\fbox{\textbf{\tt{#1} \keys{\return}}}}
+} 
+
+%
+\providecommand{\includeDIFF}[1]{ %
+\ \\
+	\\
+	\inputminted[linenos, numbersep=5pt, frame=lines, framesep=2mm, bgcolor=bgGray, fontseries=sffamily, funcnamehighlighting=true, obeytabs=true, fontsize=\footnotesize]{diff}{#1}
+	\smallskip
+} 
+
+%
+\providecommand{\includeBASH}[1]{ %
+\ \\
+	\\
+	\inputminted[linenos, numbersep=5pt, frame=lines, framesep=2mm, bgcolor=bgGray, fontseries=sffamily, funcnamehighlighting=true, obeytabs=true, fontsize=\footnotesize]{bash}{#1}
+	\smallskip
+} 
+
+%
+\providecommand{\includeHTML}[1]{ %
+\ \\
+	\\
+	\inputminted[linenos, numbersep=5pt, frame=lines, framesep=2mm, bgcolor=bgGray, fontseries=sffamily, funcnamehighlighting=true, obeytabs=true, fontsize=\footnotesize]{html}{#1}
+	\smallskip
+} 
+
+%
+\providecommand{\includePHP}[1]{ %
+\ \\
+	\\
+	\inputminted[linenos, numbersep=5pt, frame=lines, framesep=2mm, bgcolor=bgGray, fontseries=sffamily, funcnamehighlighting=true, obeytabs=true, fontsize=\footnotesize]{php}{#1}
+	\caption{#1}\\
+	\smallskip
+} 
+
+%
+\providecommand{\datei}[1]{ %
+\textbf{\tt{#1}}} 
+
+%
+\providecommand{\sieheSeite}[1]{ %
+(siehe Seite \pageref{#1})} 
+
+%
+\providecommand{\siehe}[1]{ %
+(siehe \ref{#1})} 
+
+%
+\providecommand{\link}[1]{ %
+\footnote{\url{#1}}} 
+\usepackage{minted}
+\newminted{php}{linenos, numbersep=5pt, frame=lines, framesep=2mm, bgcolor=bgGray, fontseries=sffamily, funcnamehighlighting=true, obeytabs=true, fontsize=\footnotesize }
+\newmint{php}{linenos, numbersep=5pt, framesep=2mm, bgcolor=bgGray, fontseries=sffamily, funcnamehighlighting=true, obeytabs=true, fontsize=\footnotesize }
+
 
 \author{Hauke Goos-Habermann}
 \title{\includegraphics[scale=1]{/mdk/doc/devguide/m23biglogo.png}\\m23 Development Guide\\for %
-m23 rock 16.2
+m23 rock 17.1
 }
 
 
@@ -126,20 +327,20 @@ m23 rock 16.2
   \else\expandafter\vss\fi}%
 \providecommand{\selectlanguage}[1]{}%
 \makeatletter \tracingstats = 1 
-\providecommand{\Alpha}{\textrm{A}}
 \providecommand{\Zeta}{\textrm{Z}}
-\providecommand{\Beta}{\textrm{B}}
-\providecommand{\Iota}{\textrm{J}}
-\providecommand{\Kappa}{\textrm{K}}
-\providecommand{\Mu}{\textrm{M}}
+\providecommand{\Omicron}{\textrm{O}}
 \providecommand{\Nu}{\textrm{N}}
 \providecommand{\Rho}{\textrm{R}}
-\providecommand{\Eta}{\textrm{H}}
-\providecommand{\omicron}{\textrm{o}}
-\providecommand{\Epsilon}{\textrm{E}}
-\providecommand{\Chi}{\textrm{X}}
+\providecommand{\Kappa}{\textrm{K}}
+\providecommand{\Iota}{\textrm{J}}
 \providecommand{\Tau}{\textrm{T}}
-\providecommand{\Omicron}{\textrm{O}}
+\providecommand{\Epsilon}{\textrm{E}}
+\providecommand{\Beta}{\textrm{B}}
+\providecommand{\Mu}{\textrm{M}}
+\providecommand{\Eta}{\textrm{H}}
+\providecommand{\Alpha}{\textrm{A}}
+\providecommand{\Chi}{\textrm{X}}
+\providecommand{\omicron}{\textrm{o}}
 
 
 \begin{document}
@@ -203,35 +404,6 @@ m23 rock 16.2
 \stepcounter{section}
 \stepcounter{subsection}
 \stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{subsubsection}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{subsubsection}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{subsubsection}
-\stepcounter{subsubsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{subsubsection}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
 \stepcounter{subsubsection}
 \stepcounter{subsubsection}
 \stepcounter{subsubsection}
@@ -282,28 +454,22 @@ m23 rock 16.2
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
+\stepcounter{chapter}
 \stepcounter{section}
 \stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{subsubsection}
-\stepcounter{subsection}
-\stepcounter{section}
+{\newpage\clearpage
+\lthtmlinlinemathA{tex2html_wrap_inline9572}%
+$ --$%
+\lthtmlinlinemathZ
+\lthtmlcheckvsize\clearpage}
+
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{section}
 \stepcounter{subsection}
+\stepcounter{section}
 \stepcounter{subsection}
-\stepcounter{subsection}
+\stepcounter{section}
 \stepcounter{chapter}
 \stepcounter{section}
 \stepcounter{subsection}
@@ -399,7 +565,7 @@ m23 rock 16.2
 \stepcounter{section}
 \stepcounter{subsection}
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline9383}%
+\lthtmlinlinemathA{tex2html_wrap_inline9681}%
 $ >$%
 \lthtmlinlinemathZ
 \lthtmlcheckvsize\clearpage}
@@ -532,8 +698,10 @@ $ >$%
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
 {\newpage\clearpage
-\lthtmlinlinemathA{tex2html_wrap_inline9539}%
+\lthtmlinlinemathA{tex2html_wrap_inline9839}%
 $ <$%
 \lthtmlinlinemathZ
 \lthtmlcheckvsize\clearpage}
@@ -547,25 +715,6 @@ $ <$%
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{section}
 \stepcounter{subsection}
@@ -587,148 +736,7 @@ $ <$%
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
 \stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
@@ -786,7 +794,7 @@ $ <$%
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
-\stepcounter{subsection}
+\stepcounter{section}
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
@@ -804,264 +812,6 @@ $ <$%
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{subsection}
-\stepcounter{section}
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
@@ -1184,6 +934,441 @@ $ <$%
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
 \stepcounter{section}
 \stepcounter{subsection}
 \stepcounter{subsection}
@@ -1314,6 +1499,7 @@ $ <$%
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{section}
+\stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}

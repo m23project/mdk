@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Hints about the VM host (VirtualBox)</TITLE>
-<META NAME="description" CONTENT="Hints about the VM host (VirtualBox)">
+<TITLE>Hint</TITLE>
+<META NAME="description" CONTENT="Hint">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node153.html">
 <LINK REL="previous" HREF="node151.html">
-<LINK REL="up" HREF="node147.html">
+<LINK REL="up" HREF="node148.html">
 <LINK REL="next" HREF="node153.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html2468"
+<A NAME="tex2html2479"
   HREF="node153.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2464"
-  HREF="node147.html">
+<A NAME="tex2html2475"
+  HREF="node148.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2458"
+<A NAME="tex2html2469"
   HREF="node151.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2466"
+<A NAME="tex2html2477"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html2469"
-  HREF="node153.html">Memory, harddisk and CPU</A>
-<B> Up:</B> <A NAME="tex2html2465"
-  HREF="node147.html">Create VM</A>
-<B> Previous:</B> <A NAME="tex2html2459"
-  HREF="node151.html">Hint</A>
- &nbsp; <B>  <A NAME="tex2html2467"
+<B> Next:</B> <A NAME="tex2html2480"
+  HREF="node153.html">Hints about the VM</A>
+<B> Up:</B> <A NAME="tex2html2476"
+  HREF="node148.html">Create VM</A>
+<B> Previous:</B> <A NAME="tex2html2470"
+  HREF="node151.html">Apache CloudStack</A>
+ &nbsp; <B>  <A NAME="tex2html2478"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION001015000000000000000">
-Hints about the VM host (VirtualBox)</A>
+<H2><A NAME="SECTION001014000000000000000">
+Hint</A>
 </H2>
-The m23 client needs to have installed the m23 virtualisation package <SPAN  CLASS="textit">''m23VirtualBox''</SPAN> to be capable of creating and running virtual m23 clients. The package can be found under <SPAN  CLASS="textit">''Special packages (for skilled users only)''</SPAN> in the package installation dialogue (<SPAN  CLASS="textit">Packages</SPAN> <!-- MATH
+		If you would like to create <SPAN  CLASS="textbf">more than a single VM</SPAN>, you will have to replace the network identification number (<SPAN  CLASS="textit">''Network ID''</SPAN>) at  <SPAN  CLASS="textit">''Server''</SPAN> <!-- MATH
  $\rightarrow$
  -->
-<SPAN CLASS="MATH"></SPAN> <SPAN  CLASS="textit">Install</SPAN>) in the m23 administration interface and can be installed on any m23 client.
+<SPAN CLASS="MATH"></SPAN> <SPAN  CLASS="textit">''Server settings''</SPAN> <!-- MATH
+ $\rightarrow$
+ -->
+<SPAN CLASS="MATH"></SPAN> <SPAN  CLASS="textit">''Apache CloudStack<SUP></SUP>''</SPAN> by an unused identification number of a network available for your ''Apache CloudStack<SUP></SUP>'' user account after every creation of a virtual machine. 
 <BR>
-Remember that the VM host needs enough free disk space and free memory and adequate CPU power, because all virtual machines share the resources of the host's physical hardware.
+Into the field <SPAN  CLASS="textit">''VM name''</SPAN> enter the name for the VM you want to create and finally, click on <SPAN  CLASS="textit">''Create''</SPAN>.
+<BR>	
+<BR>
+You <SPAN  CLASS="textbf">necessarily need</SPAN> to click on the link <SPAN  CLASS="textit">''<SPAN CLASS="MATH"></SPAN> <SPAN CLASS="MATH"></SPAN> <SPAN CLASS="MATH"></SPAN> Add client <SPAN CLASS="MATH"></SPAN> <SPAN CLASS="MATH"></SPAN> <SPAN CLASS="MATH"></SPAN>''</SPAN> after the successful creation of the VM. Otherwise there will be no m23 client and the VM would not be manageable via m23. Any error messages of the virtualisation software will be shown in a red box if there occurs an error while creating the VM.
 <BR>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

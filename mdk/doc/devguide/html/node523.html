@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_partCreationSelect</TITLE>
-<META NAME="description" CONTENT="FDISK_partCreationSelect">
+<TITLE>FDISK_listInstPartSelector</TITLE>
+<META NAME="description" CONTENT="FDISK_listInstPartSelector">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node524.html">
 <LINK REL="previous" HREF="node522.html">
-<LINK REL="up" HREF="node481.html">
+<LINK REL="up" HREF="node447.html">
 <LINK REL="next" HREF="node524.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10443"
+<A NAME="tex2html10377"
   HREF="node524.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10439"
-  HREF="node481.html">
+<A NAME="tex2html10373"
+  HREF="node447.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10433"
+<A NAME="tex2html10367"
   HREF="node522.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10441"
+<A NAME="tex2html10375"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10444"
-  HREF="node524.html">FDISK_canPartTypeBeCreated</A>
-<B> Up:</B> <A NAME="tex2html10440"
-  HREF="node481.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10434"
-  HREF="node522.html">FDISK_findDevNrPosition</A>
- &nbsp; <B>  <A NAME="tex2html10442"
+<B> Next:</B> <A NAME="tex2html10378"
+  HREF="node524.html">FDISK_formatExisting</A>
+<B> Up:</B> <A NAME="tex2html10374"
+  HREF="node447.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10368"
+  HREF="node522.html">FDISK_listPartTable</A>
+ &nbsp; <B>  <A NAME="tex2html10376"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081642000000000000000">
-FDISK_partCreationSelect</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> retunes a selection for selecting a partition type to create.
+<H2><A NAME="SECTION0091676000000000000000">
+FDISK_listInstPartSelector</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> lists all partitions to select for swap and install partition
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
-<LI>vDev: Virtual (internally used) device number.
+<LI>default: partition that should be shown as selected
 </LI>
-</UL>
-
+<LI>type: array with filesystems that are possible for installation or swap
+</LI>
+<LI>selName: name of the selection
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

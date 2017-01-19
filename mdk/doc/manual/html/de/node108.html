@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Clients einrichten</TITLE>
-<META NAME="description" CONTENT="Clients einrichten">
+<TITLE>Paketquelle und Paketzusammenstellung von Client erstellen </TITLE>
+<META NAME="description" CONTENT="Paketquelle und Paketzusammenstellung von Client erstellen ">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,143 +19,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="manual.css">
 
-<LINK REL="next" HREF="node146.html">
-<LINK REL="previous" HREF="node69.html">
-<LINK REL="up" HREF="manual.html">
+<LINK REL="previous" HREF="node107.html">
+<LINK REL="up" HREF="node70.html">
 <LINK REL="next" HREF="node109.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html1866"
+<A NAME="tex2html1877"
   HREF="node109.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html1862"
-  HREF="manual.html">
+<A NAME="tex2html1873"
+  HREF="node70.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html1856"
+<A NAME="tex2html1869"
   HREF="node107.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html1864"
+<A NAME="tex2html1875"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> N&auml;chste Seite:</B> <A NAME="tex2html1867"
-  HREF="node109.html">Client hinzufügen</A>
-<B> Aufw&auml;rts:</B> <A NAME="tex2html1863"
-  HREF="manual.html">m23-Benutzerhandbuch m23 rock 16.2</A>
-<B> Vorherige Seite:</B> <A NAME="tex2html1857"
-  HREF="node107.html">Paketquelle und Paketzusammenstellung von</A>
- &nbsp; <B>  <A NAME="tex2html1865"
+<B> N&auml;chste Seite:</B> <A NAME="tex2html1878"
+  HREF="node109.html">Clients einrichten</A>
+<B> Aufw&auml;rts:</B> <A NAME="tex2html1874"
+  HREF="node70.html">Clients verwalten</A>
+<B> Vorherige Seite:</B> <A NAME="tex2html1870"
+  HREF="node107.html">Backup</A>
+ &nbsp; <B>  <A NAME="tex2html1876"
   HREF="node1.html">Inhalt</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A NAME="SECTION00900000000000000000">
-Clients einrichten</A>
-</H1> <BR><HR>
-<!--Table of Child-Links-->
-<A NAME="CHILD_LINKS"><STRONG>Unterabschnitte</STRONG></A>
-
-<UL CLASS="ChildLinks">
-<LI><A NAME="tex2html1868"
-  HREF="node109.html">Client hinzufügen</A>
-<UL>
-<LI><A NAME="tex2html1869"
-  HREF="node110.html">Hinweis: Externer DHCP-Server</A>
-<LI><A NAME="tex2html1870"
-  HREF="node111.html">Hinweis: UEFI</A>
-<LI><A NAME="tex2html1871"
-  HREF="node112.html">Hinweis</A>
-<LI><A NAME="tex2html1872"
-  HREF="node113.html">Hinweis zur Rechnerarchitektur</A>
-<LI><A NAME="tex2html1873"
-  HREF="node114.html">Hinweis:</A>
-</UL>
+<H1><A NAME="SECTION008170000000000000000">
+Paketquelle und Paketzusammenstellung von Client erstellen </A>
+</H1>Mit diesem Dialog k&#246;nnen Sie eine Paketquelle erstellen, die alle Pakete enth&#228;lt, die auf dem Client installiert sind. Zudem wird eine Paketzusammenstellung angelegt, die die dazugeh&#246;rigen Paketnamen enth&#228;lt.
+<BR><IMG
+  WIDTH="995" HEIGHT="320" ALIGN="BOTTOM" BORDER="0"
+ SRC="./poolFromClient.png"
+ ALT="Image poolFromClient"> 
 <BR>
-<LI><A NAME="tex2html1874"
-  HREF="node115.html">m23 mit einem externen DHCP-Server benutzen</A>
-<UL>
-<LI><A NAME="tex2html1875"
-  HREF="node116.html">Der andere DHCP-Server kann deaktiviert werden</A>
-<LI><A NAME="tex2html1876"
-  HREF="node117.html">Der andere DHCP-Server kann NICHT deaktiviert werden</A>
-<LI><A NAME="tex2html1877"
-  HREF="node118.html">Dynamische Konfiguration von DHCP-Servern</A>
-<LI><A NAME="tex2html1878"
-  HREF="node119.html">ISC DHCP Server</A>
-<LI><A NAME="tex2html1879"
-  HREF="node120.html">Anderer DHCP-Server</A>
-<LI><A NAME="tex2html1880"
-  HREF="node121.html">Proxy DHCP</A>
-</UL>
+Hierbei haben die Paketquelle und die Paketzusammenstellung den Namen <SPAN  CLASS="textit">''Build_from_<SPAN CLASS="MATH"></SPAN>Clientname<SPAN CLASS="MATH"></SPAN>''</SPAN>.
 <BR>
-<LI><A NAME="tex2html1881"
-  HREF="node122.html">Clientpartitionierung und -formatierung</A>
-<UL>
-<LI><A NAME="tex2html1882"
-  HREF="node123.html">Hinweis zum Rückgängigmachen von Aktionen</A>
-<LI><A NAME="tex2html1883"
-  HREF="node124.html">Hinweis zur Verwendung von JavaScript</A>
-<LI><A NAME="tex2html1884"
-  HREF="node125.html">Menüpunkte im Überblick</A>
-<LI><A NAME="tex2html1885"
-  HREF="node126.html">Hinweis</A>
-<LI><A NAME="tex2html1886"
-  HREF="node127.html">Hinweis zu UEFI</A>
-<LI><A NAME="tex2html1887"
-  HREF="node128.html">Hinweis zu Dateisystemen</A>
-<LI><A NAME="tex2html1888"
-  HREF="node129.html">Schrittweises Vorgehen zum Anlegen eines RAIDs</A>
-<LI><A NAME="tex2html1889"
-  HREF="node130.html">Hinweis zu RAIDs und Partitionen</A>
-<LI><A NAME="tex2html1890"
-  HREF="node131.html">Hinweis zur Installation von Betriebssystemen auf RAIDs</A>
-</UL>
-<BR>
-<LI><A NAME="tex2html1891"
-  HREF="node132.html">Wählen der Client-Distribution</A>
-<UL>
-<LI><A NAME="tex2html1892"
-  HREF="node133.html">Information:</A>
-<LI><A NAME="tex2html1893"
-  HREF="node134.html">Hinweis zu Abbilddateien</A>
-<LI><A NAME="tex2html1894"
-  HREF="node135.html">Hinweis:</A>
-</UL>
-<BR>
-<LI><A NAME="tex2html1895"
-  HREF="node136.html">Client löschen</A>
-<UL>
-<LI><A NAME="tex2html1896"
-  HREF="node137.html">Statuserklärung</A>
-<LI><A NAME="tex2html1897"
-  HREF="node138.html">Aufträge</A>
-<LI><A NAME="tex2html1898"
-  HREF="node139.html">Mehrere Clients bearbeiten</A>
-<LI><A NAME="tex2html1899"
-  HREF="node140.html">Hinweis</A>
-<LI><A NAME="tex2html1900"
-  HREF="node141.html">Tricks</A>
-</UL>
-<BR>
-<LI><A NAME="tex2html1901"
-  HREF="node142.html">Client integrieren</A>
-<UL>
-<LI><A NAME="tex2html1902"
-  HREF="node143.html">Hinweis</A>
-<LI><A NAME="tex2html1903"
-  HREF="node144.html">Manuelle Integration</A>
-<LI><A NAME="tex2html1904"
-  HREF="node145.html">Hinweis für die Integration von Ubuntu-Systemen</A>
-</UL></UL>
-<!--End of Table of Child-Links-->
+<P>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

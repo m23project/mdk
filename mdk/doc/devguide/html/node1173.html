@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_matchList</TITLE>
-<META NAME="description" CONTENT="SRCLST_matchList">
+<TITLE>VM_CloudStackStopVM</TITLE>
+<META NAME="description" CONTENT="VM_CloudStackStopVM">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,62 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1174.html">
 <LINK REL="previous" HREF="node1172.html">
-<LINK REL="up" HREF="node1139.html">
+<LINK REL="up" HREF="node1161.html">
 <LINK REL="next" HREF="node1174.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18769"
+<A NAME="tex2html18782"
   HREF="node1174.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18765"
-  HREF="node1139.html">
+<A NAME="tex2html18778"
+  HREF="node1161.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18759"
+<A NAME="tex2html18772"
   HREF="node1172.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18767"
+<A NAME="tex2html18780"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18770"
-  HREF="node1174.html">SRCLST_possiblem23debsMirrors</A>
-<B> Up:</B> <A NAME="tex2html18766"
-  HREF="node1139.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html18760"
-  HREF="node1172.html">SRCLST_cleanList</A>
- &nbsp; <B>  <A NAME="tex2html18768"
+<B> Next:</B> <A NAME="tex2html18783"
+  HREF="node1174.html">VM_CloudStackGetVMStatus</A>
+<B> Up:</B> <A NAME="tex2html18779"
+  HREF="node1161.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html18773"
+  HREF="node1172.html">VM_CloudStackStartVM</A>
+ &nbsp; <B>  <A NAME="tex2html18781"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083634000000000000000">
-SRCLST_matchList</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns the name of the sources list that matches the searched sources list contents for the distribution or false
+<H2><A NAME="SECTION0093812000000000000000">
+VM_CloudStackStopVM</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> stops a virtual machine in CloudStack
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>distr: the distribution to search the name of the sources list under
+<LI>clientname: CloudStack name of the instance / name of the m23 client.
 </LI>
-<LI>search: the contents of the sources list to search
+<LI>stopVMOK: true if stopped successfully or already stopped, false otherwise
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>textmessage with result of stop or error message
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

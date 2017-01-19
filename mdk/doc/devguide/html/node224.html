@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CAutoTest::showAndLogMessage</TITLE>
-<META NAME="description" CONTENT="CAutoTest::showAndLogMessage">
+<TITLE>CHECK_float</TITLE>
+<META NAME="description" CONTENT="CHECK_float">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,64 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node225.html">
 <LINK REL="previous" HREF="node223.html">
-<LINK REL="up" HREF="node192.html">
+<LINK REL="up" HREF="node216.html">
 <LINK REL="next" HREF="node225.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html6528"
+<A NAME="tex2html6492"
   HREF="node225.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html6524"
-  HREF="node192.html">
+<A NAME="tex2html6488"
+  HREF="node216.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html6518"
+<A NAME="tex2html6482"
   HREF="node223.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html6526"
+<A NAME="tex2html6490"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html6529"
-  HREF="node225.html">CAutoTest::elemOk</A>
-<B> Up:</B> <A NAME="tex2html6525"
-  HREF="node192.html">./inc/CAutoTest.php</A>
-<B> Previous:</B> <A NAME="tex2html6519"
-  HREF="node223.html">CAutoTest::nextCurElement</A>
- &nbsp; <B>  <A NAME="tex2html6527"
+<B> Next:</B> <A NAME="tex2html6493"
+  HREF="node225.html">CHECK_strAlpha</A>
+<B> Up:</B> <A NAME="tex2html6489"
+  HREF="node216.html">./inc/checks.php</A>
+<B> Previous:</B> <A NAME="tex2html6483"
+  HREF="node223.html">CHECK_int</A>
+ &nbsp; <B>  <A NAME="tex2html6491"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008632000000000000000">
-CAutoTest::showAndLogMessage</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Shows a message and logs it to the log file.
+<H2><A NAME="SECTION00988000000000000000">
+CHECK_float</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Checks if the input value is a float number and shuts down the application if not.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>msg: Message to show in the console and the log file.
+<LI>val: Input value to check.
 </LI>
-<LI>prefix: A prefix show before the message to indicate the type of the message.
+<LI>allowEmpty: Set to true if you want to allow empty strings.
 </LI>
-</UL>
-
+<LI>returnNoDie: Set to true if you want to return (instead of aborting the program) when an error in the input is found.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>The input value if it's a float number or false on an error.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

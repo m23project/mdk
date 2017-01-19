@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>I18N_listWebinterfaceLanguages</TITLE>
-<META NAME="description" CONTENT="I18N_listWebinterfaceLanguages">
+<TITLE>LDAP_getFreeIDs</TITLE>
+<META NAME="description" CONTENT="LDAP_getFreeIDs">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node756.html">
 <LINK REL="previous" HREF="node754.html">
-<LINK REL="up" HREF="node746.html">
+<LINK REL="up" HREF="node734.html">
 <LINK REL="next" HREF="node756.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13377"
+<A NAME="tex2html13342"
   HREF="node756.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13373"
-  HREF="node746.html">
+<A NAME="tex2html13338"
+  HREF="node734.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13367"
+<A NAME="tex2html13332"
   HREF="node754.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13375"
+<A NAME="tex2html13340"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13378"
-  HREF="node756.html">I18N_addClientLanguageToCache</A>
-<B> Up:</B> <A NAME="tex2html13374"
-  HREF="node746.html">./inc/i18n.php</A>
-<B> Previous:</B> <A NAME="tex2html13368"
-  HREF="node754.html">I18N_getAllCachedLanguages</A>
- &nbsp; <B>  <A NAME="tex2html13376"
+<B> Next:</B> <A NAME="tex2html13343"
+  HREF="node756.html">LDAP_getFreeUserIDs</A>
+<B> Up:</B> <A NAME="tex2html13339"
+  HREF="node734.html">./inc/ldap.php</A>
+<B> Previous:</B> <A NAME="tex2html13333"
+  HREF="node754.html">LDAP_getNextGroupID</A>
+ &nbsp; <B>  <A NAME="tex2html13341"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008229000000000000000">
-I18N_listWebinterfaceLanguages</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Lists all languages, the m23 webinterface is available in, as option lines
+<H2><A NAME="SECTION0092321000000000000000">
+LDAP_getFreeIDs</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Returns an array with free IDs of the selected type.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>default: the language that should be shown first
+<LI>type: "user" for user IDs
 </LI>
-<LI>directOutputtedSelection: Set to true, if the selection should be shown instead of returned.
+<LI>start: start ID to check if it's free
 </LI>
-</UL>
-
+<LI>amount: the amount of IDs to return
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

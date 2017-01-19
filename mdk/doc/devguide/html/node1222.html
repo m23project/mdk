@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_delete</TITLE>
-<META NAME="description" CONTENT="VM_delete">
+<TITLE>VM_startVM</TITLE>
+<META NAME="description" CONTENT="VM_startVM">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,64 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1223.html">
 <LINK REL="previous" HREF="node1221.html">
-<LINK REL="up" HREF="node1182.html">
+<LINK REL="up" HREF="node1161.html">
 <LINK REL="next" HREF="node1223.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html19423"
+<A NAME="tex2html19370"
   HREF="node1223.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html19419"
-  HREF="node1182.html">
+<A NAME="tex2html19366"
+  HREF="node1161.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html19413"
+<A NAME="tex2html19360"
   HREF="node1221.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html19421"
+<A NAME="tex2html19368"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html19424"
-  HREF="node1223.html">VM_vmSwNr2Name</A>
-<B> Up:</B> <A NAME="tex2html19420"
-  HREF="node1182.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html19414"
-  HREF="node1221.html">VM_webAction</A>
- &nbsp; <B>  <A NAME="tex2html19422"
+<B> Next:</B> <A NAME="tex2html19371"
+  HREF="node1223.html">VM_startVMCommandFile</A>
+<B> Up:</B> <A NAME="tex2html19367"
+  HREF="node1161.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html19361"
+  HREF="node1221.html">VM_startVMInExistingXSession</A>
+ &nbsp; <B>  <A NAME="tex2html19369"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083840000000000000000">
-VM_delete</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Deletes a virtual machine from a VM host.
+<H2><A NAME="SECTION0093861000000000000000">
+VM_startVM</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Starts a virtual machine.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>vmname: Name of the VM.
+<LI>type: VM_SW_VBOX for VirtualBox OSE
 </LI>
-</UL>
+<LI>vmName: Name of the VM.
+</LI>
+<LI>vnc: Set to true if the VM should be accessible since the booting via VNC.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>true if it's an VM or false if not.
+<LI>BASH code to start a virtual machine.
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_setSSLCertCheckDisabled</TITLE>
-<META NAME="description" CONTENT="SERVER_setSSLCertCheckDisabled">
+<TITLE>SERVER_daemonStartStop</TITLE>
+<META NAME="description" CONTENT="SERVER_daemonStartStop">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,62 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1090.html">
 <LINK REL="previous" HREF="node1088.html">
-<LINK REL="up" HREF="node1086.html">
+<LINK REL="up" HREF="node1064.html">
 <LINK REL="next" HREF="node1090.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html17726"
+<A NAME="tex2html17672"
   HREF="node1090.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html17722"
-  HREF="node1086.html">
+<A NAME="tex2html17668"
+  HREF="node1064.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html17716"
+<A NAME="tex2html17662"
   HREF="node1088.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html17724"
+<A NAME="tex2html17670"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html17727"
-  HREF="node1090.html">SERVER_isSSLCertCheckDisabled</A>
-<B> Up:</B> <A NAME="tex2html17723"
-  HREF="node1086.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html17717"
-  HREF="node1088.html">SERVER_logLocalScreenSessionToFile</A>
- &nbsp; <B>  <A NAME="tex2html17725"
+<B> Next:</B> <A NAME="tex2html17673"
+  HREF="node1090.html">SERVER_getAptGetInstallCommand</A>
+<B> Up:</B> <A NAME="tex2html17669"
+  HREF="node1064.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html17663"
+  HREF="node1088.html">SERVER_checkPackageInstalled</A>
+ &nbsp; <B>  <A NAME="tex2html17671"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008353000000000000000">
-SERVER_setSSLCertCheckDisabled</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Sets, if the SSL certificate check is disabled globally for all clients.
+<H2><A NAME="SECTION0093525000000000000000">
+SERVER_daemonStartStop</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> starts, stops and restarts daemons
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>: disableSSLCertCheck: true, if the check is disabled otherwise false.
+<LI>daemonScript: the file name of the script, that handles the real starting, stopping and restarting and understands the $action
 </LI>
-</UL>
-
+<LI>action: start, stop or restart
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>: true on successfully execution otherwise false.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

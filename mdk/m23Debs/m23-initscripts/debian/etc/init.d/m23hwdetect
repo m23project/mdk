@@ -2,8 +2,8 @@
 
 ### BEGIN INIT INFO
 # Provides:          m23hwdetect
-# Required-Start:    $local_fs $syslog $remote_fs
-# Required-Stop:     $local_fs $syslog $remote_fs
+# Required-Start:    $local_fs $syslog
+# Required-Stop:     $local_fs $syslog
 # Default-Start:     S
 # Default-Stop:
 # Short-Description: Configurates hardware
@@ -164,6 +164,9 @@ then
 	done
 	echo " done"
 fi
+
+# Add nic ID of DELL Optiplex 5040/7040
+echo "8086:15B8" >> e1000e.ids
 
 cd $cacheDir
 

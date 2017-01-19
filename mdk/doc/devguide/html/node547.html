@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_getDriveInfoString</TITLE>
-<META NAME="description" CONTENT="FDISK_getDriveInfoString">
+<TITLE>FDISK_virtualAddDrive</TITLE>
+<META NAME="description" CONTENT="FDISK_virtualAddDrive">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,64 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node548.html">
 <LINK REL="previous" HREF="node546.html">
-<LINK REL="up" HREF="node481.html">
+<LINK REL="up" HREF="node447.html">
 <LINK REL="next" HREF="node548.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10731"
+<A NAME="tex2html10665"
   HREF="node548.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10727"
-  HREF="node481.html">
+<A NAME="tex2html10661"
+  HREF="node447.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10721"
+<A NAME="tex2html10655"
   HREF="node546.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10729"
+<A NAME="tex2html10663"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10732"
-  HREF="node548.html">FDISK_getDriveInfoIcon</A>
-<B> Up:</B> <A NAME="tex2html10728"
-  HREF="node481.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10722"
-  HREF="node546.html">FDISK_getPartInfoString</A>
- &nbsp; <B>  <A NAME="tex2html10730"
+<B> Next:</B> <A NAME="tex2html10666"
+  HREF="node548.html">FDISK_getDrivePartitionSize</A>
+<B> Up:</B> <A NAME="tex2html10662"
+  HREF="node447.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10656"
+  HREF="node546.html">FDISK_adjustFdiskParams</A>
+ &nbsp; <B>  <A NAME="tex2html10664"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081666000000000000000">
-FDISK_getDriveInfoString</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Generates an info string, that shows information about the device name of the drive and bolonging to a RAID.
+<H2><A NAME="SECTION00916100000000000000000">
+FDISK_virtualAddDrive</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Adds a new drive to the param array.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>vDev: Virtual (internally used) device number.
-</LI>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
-<LI>fstabA: Associative array with fstab information.
+<LI>path: Device name of the new drive (e.g. /dev/md0)
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Info string.
+<LI>size: Size in MB of the new drive.
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

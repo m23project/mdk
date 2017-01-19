@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_xargsRecursive</TITLE>
-<META NAME="description" CONTENT="HELPER_xargsRecursive">
+<TITLE>HELPER_getTimeZones</TITLE>
+<META NAME="description" CONTENT="HELPER_getTimeZones">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,64 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node629.html">
 <LINK REL="previous" HREF="node627.html">
-<LINK REL="up" HREF="node620.html">
+<LINK REL="up" HREF="node590.html">
 <LINK REL="next" HREF="node629.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html11775"
+<A NAME="tex2html11717"
   HREF="node629.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html11771"
-  HREF="node620.html">
+<A NAME="tex2html11713"
+  HREF="node590.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html11765"
+<A NAME="tex2html11707"
   HREF="node627.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html11773"
+<A NAME="tex2html11715"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html11776"
-  HREF="node629.html">HELPER_getNewLogLines</A>
-<B> Up:</B> <A NAME="tex2html11772"
-  HREF="node620.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html11766"
-  HREF="node627.html">HELPER_trimValue</A>
- &nbsp; <B>  <A NAME="tex2html11774"
+<B> Next:</B> <A NAME="tex2html11718"
+  HREF="node629.html">HELPER_calcMBSize</A>
+<B> Up:</B> <A NAME="tex2html11714"
+  HREF="node590.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html11708"
+  HREF="node627.html">HELPER_getBootLoaders</A>
+ &nbsp; <B>  <A NAME="tex2html11716"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008188000000000000000">
-HELPER_xargsRecursive</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Executes a BASH command with a list of arguments. If the BASH command fails, the argument list is split in two parts and recursively executed again.
+<H2><A NAME="SECTION0091838000000000000000">
+HELPER_getTimeZones</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Searches for all time zones.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>cmd: BASH command
+<LI>country: two letter country name that is used to select a timezone if none is set with $first.
 </LI>
-<LI>argsA: Array of commands for the BASH command.
-</LI>
-<LI>tabAmount: Amount of identing to start with.
-</LI>
-</UL>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>Recursive calls of the BASH command with error checking.
+<LI>Array with all time zones.
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

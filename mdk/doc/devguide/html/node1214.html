@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_downloadVBOXaddons</TITLE>
-<META NAME="description" CONTENT="VM_downloadVBOXaddons">
+<TITLE>VM_setGuestInDB</TITLE>
+<META NAME="description" CONTENT="VM_setGuestInDB">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,64 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1215.html">
 <LINK REL="previous" HREF="node1213.html">
-<LINK REL="up" HREF="node1182.html">
+<LINK REL="up" HREF="node1161.html">
 <LINK REL="next" HREF="node1215.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html19327"
+<A NAME="tex2html19274"
   HREF="node1215.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html19323"
-  HREF="node1182.html">
+<A NAME="tex2html19270"
+  HREF="node1161.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html19317"
+<A NAME="tex2html19264"
   HREF="node1213.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html19325"
+<A NAME="tex2html19272"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html19328"
-  HREF="node1215.html">VM_VBOXaddonDownloadDialog</A>
-<B> Up:</B> <A NAME="tex2html19324"
-  HREF="node1182.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html19318"
-  HREF="node1213.html">VM_generateVBOXaddonDownloadCMD</A>
- &nbsp; <B>  <A NAME="tex2html19326"
+<B> Next:</B> <A NAME="tex2html19275"
+  HREF="node1215.html">VM_statusIcons</A>
+<B> Up:</B> <A NAME="tex2html19271"
+  HREF="node1161.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html19265"
+  HREF="node1213.html">VM_setHostInDB</A>
+ &nbsp; <B>  <A NAME="tex2html19273"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083832000000000000000">
-VM_downloadVBOXaddons</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Downloads the VirtualBox addition ISOs and extracts the addition installers for Linux.
+<H2><A NAME="SECTION0093853000000000000000">
+VM_setGuestInDB</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Makes the client a VM guest in the DB.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>checkedVersions: Array with all version numbers of the VirtualBox additions to download.
+<LI>clientName: Name of the m23 client (VM guest)
 </LI>
-</UL>
-
+<LI>VMSoftware: Type of the virtualisation software.
+</LI>
+<LI>VMHostName: Name of the m23 client (VM host)
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>MySQL resource or false on error.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

@@ -1,9 +1,9 @@
 Package: m23-tftp
-Version: 16.2-100905
+Version: 16.3-100927
 Section: base
 Priority: optional
 Architecture: all
-Installed-Size: 159804
+Installed-Size: 159348
 Pre-Depends: debconf
 Depends: bash, tftpd-hpa
 Maintainer: Hauke Goos-Habermann <hhabermann@pc-kiel.de>

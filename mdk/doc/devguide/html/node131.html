@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Patching</TITLE>
-<META NAME="description" CONTENT="Patching">
+<TITLE>BURN_getDevice</TITLE>
+<META NAME="description" CONTENT="BURN_getDevice">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,7 +19,7 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
-<LINK REL="next" HREF="node134.html">
+<LINK REL="next" HREF="node132.html">
 <LINK REL="previous" HREF="node130.html">
 <LINK REL="up" HREF="node129.html">
 <LINK REL="next" HREF="node132.html">
@@ -28,55 +28,47 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html4232"
+<A NAME="tex2html5290"
   HREF="node132.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html4228"
+<A NAME="tex2html5286"
   HREF="node129.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html4222"
+<A NAME="tex2html5280"
   HREF="node130.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html4230"
+<A NAME="tex2html5288"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html4233"
-  HREF="node132.html">screen 4.0.3</A>
-<B> Up:</B> <A NAME="tex2html4229"
-  HREF="node129.html">Screen</A>
-<B> Previous:</B> <A NAME="tex2html4223"
-  HREF="node130.html">Purpose</A>
- &nbsp; <B>  <A NAME="tex2html4231"
+<B> Next:</B> <A NAME="tex2html5291"
+  HREF="node132.html">BURN_blank</A>
+<B> Up:</B> <A NAME="tex2html5287"
+  HREF="node129.html">./inc/burn.php</A>
+<B> Previous:</B> <A NAME="tex2html5281"
+  HREF="node130.html">BURN_listBurners</A>
+ &nbsp; <B>  <A NAME="tex2html5289"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00762000000000000000">
-Patching</A>
-</H2>
-The patch solves the problem with getpwuid, that the current user can't be figured out. If applied this patch is applied, root is the current user, otherwise screen can't be executed.
-<BR>
-<BR>
-This should be used for the booimage only, because it can be a security risk.
-
+<H2><A NAME="SECTION00942000000000000000">
+BURN_getDevice</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> returnes the device name for cdrecord from a specific burner
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>burner: device name and burner name
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
-<BR><HR>
-<!--Table of Child-Links-->
-<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
-
-<UL CLASS="ChildLinks">
-<LI><A NAME="tex2html4234"
-  HREF="node132.html">screen 4.0.3</A>
-<LI><A NAME="tex2html4235"
-  HREF="node133.html">For old screen 4.0.2</A>
-</UL>
-<!--End of Table of Child-Links-->
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

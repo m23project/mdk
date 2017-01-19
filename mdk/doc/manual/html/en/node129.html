@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Step by step</TITLE>
-<META NAME="description" CONTENT="Step by step">
+<TITLE>Note about file systems</TITLE>
+<META NAME="description" CONTENT="Note about file systems">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,49 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node130.html">
 <LINK REL="previous" HREF="node128.html">
-<LINK REL="up" HREF="node122.html">
+<LINK REL="up" HREF="node123.html">
 <LINK REL="next" HREF="node130.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html2172"
+<A NAME="tex2html2183"
   HREF="node130.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2168"
-  HREF="node122.html">
+<A NAME="tex2html2179"
+  HREF="node123.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2162"
+<A NAME="tex2html2173"
   HREF="node128.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2170"
+<A NAME="tex2html2181"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html2173"
-  HREF="node130.html">Hint for RAIDs and</A>
-<B> Up:</B> <A NAME="tex2html2169"
-  HREF="node122.html">Client partitioning and formating</A>
-<B> Previous:</B> <A NAME="tex2html2163"
-  HREF="node128.html">Note about file systems</A>
- &nbsp; <B>  <A NAME="tex2html2171"
+<B> Next:</B> <A NAME="tex2html2184"
+  HREF="node130.html">Step by step</A>
+<B> Up:</B> <A NAME="tex2html2180"
+  HREF="node123.html">Client partitioning and formating</A>
+<B> Previous:</B> <A NAME="tex2html2174"
+  HREF="node128.html">Note about UEFI</A>
+ &nbsp; <B>  <A NAME="tex2html2182"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00937000000000000000">
-Step by step</A>
+<H2><A NAME="SECTION00936000000000000000">
+Note about file systems</A>
 </H2>
-
-<OL>
-<LI><SPAN  CLASS="textbf">Create a RAID drive:</SPAN>At  <SPAN  CLASS="textit">''Create RAID drive''</SPAN> choose a device name from the list <SPAN  CLASS="textit">''RAID drive name''</SPAN>, then at <SPAN  CLASS="textit">''RAID level''</SPAN> select the RAID level and click on <SPAN  CLASS="textit">''Create RAID drive''</SPAN>. This device is a virtual multi device.
-<BR></LI>
-<LI><SPAN  CLASS="textbf">Add partitions and drives:</SPAN> You can find all necessary functions for assigning partitions and drives to a RAID in the box <SPAN  CLASS="textit">''Add drives and partitions to the RAID''</SPAN>. 
+If you choose a file system which is not supported by the distribution of the client (which you will select in a later step), the file system will automatically be set to one that is supported.
+<BR><SPAN  CLASS="textbf">''RAID drives''</SPAN>
+You can join partitions and/or complete drives to create software RAIDs in that space. m23 and accordingly the program mdadm support RAID levels 0, 1, 4, 5, 6 and 10. These RAID levels have advantages and disadvantages in relation to speed increase and data reliability. For additional information about RAIDs read the Wikipedia page http://en.wikipedia.org/wiki/RAID, please. You can create several RAIDs on a single client and use the RAIDs for operating system installation, the swap partition etc. Please read the hint if you want to install an operating system on a RAID.
 <BR>
-At <SPAN  CLASS="textit">''RAID drive''</SPAN>, select the RAID drive and confirm by clicking on <SPAN  CLASS="textit">''Select''</SPAN>. Assign a partition from the list below or the drive from the list <SPAN  CLASS="textit">''Real drive or partition''</SPAN> to the RAID by clicking on <SPAN  CLASS="textit">''Add to RAID''</SPAN>. The table <SPAN  CLASS="textit">''Assigned drives and partitions''</SPAN> displays the drives and partitions which are already assigned. It also allows you to remove partitions and drives from the RAID.
-<BR></LI>
-</OL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

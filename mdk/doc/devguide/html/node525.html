@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_checkFreeSpace</TITLE>
-<META NAME="description" CONTENT="FDISK_checkFreeSpace">
+<TITLE>FDISK_getvPart</TITLE>
+<META NAME="description" CONTENT="FDISK_getvPart">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,64 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node526.html">
 <LINK REL="previous" HREF="node524.html">
-<LINK REL="up" HREF="node481.html">
+<LINK REL="up" HREF="node447.html">
 <LINK REL="next" HREF="node526.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10467"
+<A NAME="tex2html10401"
   HREF="node526.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10463"
-  HREF="node481.html">
+<A NAME="tex2html10397"
+  HREF="node447.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10457"
+<A NAME="tex2html10391"
   HREF="node524.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10465"
+<A NAME="tex2html10399"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10468"
-  HREF="node526.html">FDISK_installExistingDialog</A>
-<B> Up:</B> <A NAME="tex2html10464"
-  HREF="node481.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10458"
-  HREF="node524.html">FDISK_canPartTypeBeCreated</A>
- &nbsp; <B>  <A NAME="tex2html10466"
+<B> Next:</B> <A NAME="tex2html10402"
+  HREF="node526.html">FDISK_rmJob</A>
+<B> Up:</B> <A NAME="tex2html10398"
+  HREF="node447.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10392"
+  HREF="node524.html">FDISK_formatExisting</A>
+ &nbsp; <B>  <A NAME="tex2html10400"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081644000000000000000">
-FDISK_checkFreeSpace</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> checks if there is a free space between $start and $end
+<H2><A NAME="SECTION0091678000000000000000">
+FDISK_getvPart</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> returns vPart with the real device number.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
-<LI>vDev: Virtual (internally used) device number.
+<LI>dev: selected device (e.g. hda)
 </LI>
-<LI>type: type of the partition (primary, extended, logical)
+<LI>devNr: number of partition
 </LI>
-<LI>start: start position for the search
-</LI>
-<LI>end: end position for the search
-</LI>
-<LI>freeSpaces: array of the free space information
-</LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

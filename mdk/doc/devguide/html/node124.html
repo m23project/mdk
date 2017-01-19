@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Introduction</TITLE>
-<META NAME="description" CONTENT="Introduction">
+<TITLE>BACKUP_getBackupDirs</TITLE>
+<META NAME="description" CONTENT="BACKUP_getBackupDirs">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node125.html">
 <LINK REL="previous" HREF="node123.html">
-<LINK REL="up" HREF="node123.html">
+<LINK REL="up" HREF="node122.html">
 <LINK REL="next" HREF="node125.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html4146"
+<A NAME="tex2html5200"
   HREF="node125.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html4142"
-  HREF="node123.html">
+<A NAME="tex2html5196"
+  HREF="node122.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html4136"
+<A NAME="tex2html5190"
   HREF="node123.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html4144"
+<A NAME="tex2html5198"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html4147"
-  HREF="node125.html">usage</A>
-<B> Up:</B> <A NAME="tex2html4143"
-  HREF="node123.html">genFStab/fstabnew</A>
-<B> Previous:</B> <A NAME="tex2html4137"
-  HREF="node123.html">genFStab/fstabnew</A>
- &nbsp; <B>  <A NAME="tex2html4145"
+<B> Next:</B> <A NAME="tex2html5201"
+  HREF="node125.html">BACKUP_saveBackupDirs</A>
+<B> Up:</B> <A NAME="tex2html5197"
+  HREF="node122.html">./inc/backup.php</A>
+<B> Previous:</B> <A NAME="tex2html5191"
+  HREF="node123.html">BACKUP_showClientSettings</A>
+ &nbsp; <B>  <A NAME="tex2html5199"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00731000000000000000">
-Introduction</A>
-</H2>
-This tool generates the following files for you:
-<BR>
+<H2><A NAME="SECTION00932000000000000000">
+BACKUP_getBackupDirs</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Returns the comma seperated list of directories that should be backupped on the client
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+</SMALL></SMALL>
 <UL>
-<LI>/etc/fstab: this is the place, where the root and swap device are set and where cdrom/DVD drives and other partitions are made available for mounting.
+<LI>client: name of the client
 </LI>
-<LI>/etc/lilo.conf: this file is used for the bootloader, to make booting of the angelOne Linux system and other operating systems possible.
-</LI>
-</UL>
-All information is fetched from the partition table, the files are written automatical and icons for partitions and CDRom/DVD drives are put on the KDE desktop. The only thing you have to do is to select the device number for the root device and a splitter character for the parted numbers. parted is used for fetching the partition data. In different LANG settings you have to adjust the splitter. In this version you can only install on the first harddisk (hda), if you want the root device on hda3 you have to use '3' for the rootDevice number.
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
+<P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

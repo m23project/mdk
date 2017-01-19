@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_cleanList</TITLE>
-<META NAME="description" CONTENT="SRCLST_cleanList">
+<TITLE>VM_CloudStackStartVM</TITLE>
+<META NAME="description" CONTENT="VM_CloudStackStartVM">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,62 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1173.html">
 <LINK REL="previous" HREF="node1171.html">
-<LINK REL="up" HREF="node1139.html">
+<LINK REL="up" HREF="node1161.html">
 <LINK REL="next" HREF="node1173.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18757"
+<A NAME="tex2html18770"
   HREF="node1173.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18753"
-  HREF="node1139.html">
+<A NAME="tex2html18766"
+  HREF="node1161.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18747"
+<A NAME="tex2html18760"
   HREF="node1171.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18755"
+<A NAME="tex2html18768"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18758"
-  HREF="node1173.html">SRCLST_matchList</A>
-<B> Up:</B> <A NAME="tex2html18754"
-  HREF="node1139.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html18748"
-  HREF="node1171.html">SRCLST_getListnames</A>
- &nbsp; <B>  <A NAME="tex2html18756"
+<B> Next:</B> <A NAME="tex2html18771"
+  HREF="node1173.html">VM_CloudStackStopVM</A>
+<B> Up:</B> <A NAME="tex2html18767"
+  HREF="node1161.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html18761"
+  HREF="node1171.html">VM_CloudStackSendSetVisualURL</A>
+ &nbsp; <B>  <A NAME="tex2html18769"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083633000000000000000">
-SRCLST_cleanList</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns an array with all lines of the sources list that contain Debian sources
+<H2><A NAME="SECTION0093811000000000000000">
+VM_CloudStackStartVM</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> starts a virtual machine in CloudStack
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>list: the contents of the sources list
+<LI>clientname: CloudStack name of the instance / name of the m23 client.
 </LI>
-</UL>
-
+<LI>startVMOK: true if started successfully or already running, false otherwise
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>textmessage with result of start or error message
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

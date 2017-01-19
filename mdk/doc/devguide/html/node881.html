@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>MASS_getLongestLength</TITLE>
-<META NAME="description" CONTENT="MASS_getLongestLength">
+<TITLE>PKG_addUbuntuUser</TITLE>
+<META NAME="description" CONTENT="PKG_addUbuntuUser">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,58 +21,62 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node882.html">
 <LINK REL="previous" HREF="node880.html">
-<LINK REL="up" HREF="node856.html">
+<LINK REL="up" HREF="node879.html">
 <LINK REL="next" HREF="node882.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15004"
+<A NAME="tex2html15068"
   HREF="node882.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15000"
-  HREF="node856.html">
+<A NAME="tex2html15064"
+  HREF="node879.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html14994"
+<A NAME="tex2html15058"
   HREF="node880.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15002"
+<A NAME="tex2html15066"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15005"
-  HREF="node882.html">MASS_startInstall</A>
-<B> Up:</B> <A NAME="tex2html15001"
-  HREF="node856.html">./inc/massTools.php</A>
-<B> Previous:</B> <A NAME="tex2html14995"
-  HREF="node880.html">MASS_getAllFromFile</A>
- &nbsp; <B>  <A NAME="tex2html15003"
+<B> Next:</B> <A NAME="tex2html15069"
+  HREF="node882.html">PKG_addDebianUser</A>
+<B> Up:</B> <A NAME="tex2html15065"
+  HREF="node879.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15059"
+  HREF="node880.html">PKG_addHSUser</A>
+ &nbsp; <B>  <A NAME="tex2html15067"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082525000000000000000">
-MASS_getLongestLength</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> returnes the length of the longest entry in the array or max if bigger than max
+<H2><A NAME="SECTION009282000000000000000">
+PKG_addUbuntuUser</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Adds a job for creating an user on a Ubuntu client.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>arr: the array
+<LI>client: Name of the client.
 </LI>
-<LI>amount: the amount of entries in the array
+<LI>login: Login name of the new user.
 </LI>
-<LI>max: maximal value to be returned
+<LI>firstpw: Password for the new user.
 </LI>
-</UL>
-
+<LI>uid: Optional user ID of the new user.
+</LI>
+<LI>gid: Optional group ID of the new user.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

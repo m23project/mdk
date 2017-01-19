@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_fdiskSessionFstab</TITLE>
-<META NAME="description" CONTENT="FDISK_fdiskSessionFstab">
+<TITLE>FDISK_getAfterPartition</TITLE>
+<META NAME="description" CONTENT="FDISK_getAfterPartition">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node510.html">
 <LINK REL="previous" HREF="node508.html">
-<LINK REL="up" HREF="node481.html">
+<LINK REL="up" HREF="node447.html">
 <LINK REL="next" HREF="node510.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10275"
+<A NAME="tex2html10209"
   HREF="node510.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10271"
-  HREF="node481.html">
+<A NAME="tex2html10205"
+  HREF="node447.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10265"
+<A NAME="tex2html10199"
   HREF="node508.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10273"
+<A NAME="tex2html10207"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10276"
-  HREF="node510.html">FDISK_getPartitionByType</A>
-<B> Up:</B> <A NAME="tex2html10272"
-  HREF="node481.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10266"
-  HREF="node508.html">FDISK_fdiskSessionTitle</A>
- &nbsp; <B>  <A NAME="tex2html10274"
+<B> Next:</B> <A NAME="tex2html10210"
+  HREF="node510.html">FDISK_getBeforeFristPartition</A>
+<B> Up:</B> <A NAME="tex2html10206"
+  HREF="node447.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html10200"
+  HREF="node508.html">FDISK_getPartitionPercent</A>
+ &nbsp; <B>  <A NAME="tex2html10208"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081628000000000000000">
-FDISK_fdiskSessionFstab</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Stores the fstab in the session.
+<H2><A NAME="SECTION0091662000000000000000">
+FDISK_getAfterPartition</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> calculates ??? of free size after a selected partition
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>newFstab: The new fstab to set or false for not changing.
+<LI>param: parameter string containing status informations about the harddisks
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>The current fstab.
+<LI>vDev: Virtual (internally used) device number.
 </LI>
-</UL>
-
+<LI>vPart: Virtual (internally used) partition number. This is normally another number than the physical number (e.g. 1 on /dev/hda1)
+</LI>
+<LI>factor: the factor to multiplay percent amount of free space
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_addJob</TITLE>
-<META NAME="description" CONTENT="FDISK_addJob">
+<TITLE>GRP_getNameById</TITLE>
+<META NAME="description" CONTENT="GRP_getNameById">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,66 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node562.html">
 <LINK REL="previous" HREF="node560.html">
-<LINK REL="up" HREF="node481.html">
+<LINK REL="up" HREF="node557.html">
 <LINK REL="next" HREF="node562.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10899"
+<A NAME="tex2html10863"
   HREF="node562.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10895"
-  HREF="node481.html">
+<A NAME="tex2html10859"
+  HREF="node557.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10889"
+<A NAME="tex2html10853"
   HREF="node560.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10897"
+<A NAME="tex2html10861"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10900"
-  HREF="node562.html">FDISK_bootflagJob</A>
-<B> Up:</B> <A NAME="tex2html10896"
-  HREF="node481.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10890"
-  HREF="node560.html">FDISK_rmJob</A>
- &nbsp; <B>  <A NAME="tex2html10898"
+<B> Next:</B> <A NAME="tex2html10864"
+  HREF="node562.html">GRP_del</A>
+<B> Up:</B> <A NAME="tex2html10860"
+  HREF="node557.html">./inc/groups.php</A>
+<B> Previous:</B> <A NAME="tex2html10854"
+  HREF="node560.html">GRP_getIdByName</A>
+ &nbsp; <B>  <A NAME="tex2html10862"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081680000000000000000">
-FDISK_addJob</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> generates a partition add job
+<H2><A NAME="SECTION009174000000000000000">
+GRP_getNameById</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> gets the groupname of an Id
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>path: selected device (e.g. /dev/hda)
+<LI>groupId: Index of the group
 </LI>
-<LI>start: start point fo the partition
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>Group name or false, if no matching group is found.
 </LI>
-<LI>end: end point fo the partition
-</LI>
-<LI>type: type of the partition (primary, logical)
-</LI>
-<LI>partJobs: associative array with partition jobs
-</LI>
-<LI>fullPath: full path for the partition
-</LI>
-<LI>devNr: number of the device (e.g. 1 with /dev/hda1)
-</LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

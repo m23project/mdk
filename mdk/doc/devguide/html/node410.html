@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>sendClientStatus</TITLE>
-<META NAME="description" CONTENT="sendClientStatus">
+<TITLE>DHCP_writePXEcfg</TITLE>
+<META NAME="description" CONTENT="DHCP_writePXEcfg">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node411.html">
 <LINK REL="previous" HREF="node409.html">
-<LINK REL="up" HREF="node393.html">
+<LINK REL="up" HREF="node392.html">
 <LINK REL="next" HREF="node411.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html8937"
+<A NAME="tex2html8886"
   HREF="node411.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html8933"
-  HREF="node393.html">
+<A NAME="tex2html8882"
+  HREF="node392.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html8927"
+<A NAME="tex2html8876"
   HREF="node409.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html8935"
+<A NAME="tex2html8884"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html8938"
-  HREF="node411.html">sendClientStageStatus</A>
-<B> Up:</B> <A NAME="tex2html8934"
-  HREF="node393.html">./inc/db.php</A>
-<B> Previous:</B> <A NAME="tex2html8928"
-  HREF="node409.html">getServerGateway</A>
- &nbsp; <B>  <A NAME="tex2html8936"
+<B> Next:</B> <A NAME="tex2html8887"
+  HREF="node411.html">DHCP_removePXEcfg</A>
+<B> Up:</B> <A NAME="tex2html8883"
+  HREF="node392.html">./inc/dhcp.php</A>
+<B> Previous:</B> <A NAME="tex2html8877"
+  HREF="node409.html">DHCP_calcPXEIP</A>
+ &nbsp; <B>  <A NAME="tex2html8885"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081217000000000000000">
-sendClientStatus</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> generates a bash script to send a status to the server
+<H2><A NAME="SECTION0091318000000000000000">
+DHCP_writePXEcfg</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> writes the pxe config file for te client
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>id: package ID
+<LI>clientName: name of the client
 </LI>
-<LI>status: done, waiting; finished jobs should be set to done, waiting should not be used from this place
+<LI>arch: computer architecture (i386 or amd64)
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

@@ -564,11 +564,12 @@ normalPartition()
 	showDialog "$I18N_windowheader" "$I18N_formatinghdtext" infobox 12 70 "$I18N_creatingbootpartition"
 	parted -s /dev/$installdrive mkpart primary 2 $rootsize > /dev/null
 	modprobe ext4
-	mkfs.ext4 /dev/$installdrive"1" > /dev/null
+	mkfs.ext4 -F /dev/$installdrive"1" > /dev/null
 
 	#create the swap partition
 	showDialog "$I18N_windowheader" "$I18N_formatinghdtext" infobox 12 70 "$I18N_creatingswappartition"
-	parted -s /dev/$installdrive mkpartfs primary linux-swap $swapbegin $hdsize > /dev/null
+	parted -s /dev/$installdrive mkpart primary linux-swap $swapbegin $hdsize > /dev/null
+	mkswap /dev/$installdrive"2" > /dev/null
 
 	showDialog "$I18N_windowheader" "$I18N_formatinghdtext" infobox 12 70 "$I18N_normalformatfinishedtext"
 
@@ -1026,9 +1027,9 @@ installDebs()
 
 
 	#Add the URL for server update if missing
-	if [ `grep "http://heanet.dl.sourceforge.net" /tmp/sources.list | grep ^deb -c` -eq 0 ]
+	if [ `grep "http://m23inst.goos-habermann.de" /tmp/sources.list | grep ^deb -c` -eq 0 ]
 	then
-		echo "deb http://heanet.dl.sourceforge.net/project/m23/m23inst ./" >> /tmp/sources.list
+		echo "deb http://m23inst.goos-habermann.de ./" >> /tmp/sources.list
 	fi
 
 	mv /tmp/sources.list /etc/apt

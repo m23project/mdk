@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>AUTOTEST_VM_create</TITLE>
-<META NAME="description" CONTENT="AUTOTEST_VM_create">
+<TITLE>CClient::__construct</TITLE>
+<META NAME="description" CONTENT="CClient::__construct">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,66 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node153.html">
 <LINK REL="previous" HREF="node151.html">
-<LINK REL="up" HREF="node148.html">
+<LINK REL="up" HREF="node151.html">
 <LINK REL="next" HREF="node153.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html5605"
+<A NAME="tex2html5591"
   HREF="node153.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html5601"
-  HREF="node148.html">
+<A NAME="tex2html5587"
+  HREF="node151.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html5595"
+<A NAME="tex2html5581"
   HREF="node151.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html5603"
+<A NAME="tex2html5589"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html5606"
-  HREF="node153.html">AUTOTEST_VM_enableCapture</A>
-<B> Up:</B> <A NAME="tex2html5602"
-  HREF="node148.html">./inc/autoTest.php</A>
-<B> Previous:</B> <A NAME="tex2html5596"
-  HREF="node151.html">AUTOTEST_keyAndRelease</A>
- &nbsp; <B>  <A NAME="tex2html5604"
+<B> Next:</B> <A NAME="tex2html5592"
+  HREF="node153.html">CAutoTest::readAndDefineOrDieXML</A>
+<B> Up:</B> <A NAME="tex2html5588"
+  HREF="node151.html">./inc/CAutoTest.php</A>
+<B> Previous:</B> <A NAME="tex2html5582"
+  HREF="node151.html">./inc/CAutoTest.php</A>
+ &nbsp; <B>  <A NAME="tex2html5590"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00824000000000000000">
-AUTOTEST_VM_create</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Creates a new VM with virtual hard drive in VirtualBox.
+<H2><A NAME="SECTION00961000000000000000">
+CClient::__construct</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Constructor for new CClient objects. The object holds all information about a single client and loads the values from the DB.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>vmName: Name of the VM.
+<LI>in: ID of an existing client (to load), name of an existing or nonexisting (to create) client or associative array of parameters.
 </LI>
-<LI>diskSize: Size of the virtual HD in MB.
+<LI>checkMode: Check for the input variable.
 </LI>
-<LI>ramSize: Size of RAM in MB.
-</LI>
-<LI>VMCreationMessage: Variable where the VirtualBox (error) messages will be written to.
-</LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>true, when the creation was successfully, otherwise false.
-</LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>m23SHARED_getDBnameByInterface</TITLE>
-<META NAME="description" CONTENT="m23SHARED_getDBnameByInterface">
+<TITLE>m23SHARED_sendActivationMail</TITLE>
+<META NAME="description" CONTENT="m23SHARED_sendActivationMail">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node791.html">
 <LINK REL="previous" HREF="node789.html">
-<LINK REL="up" HREF="node784.html">
+<LINK REL="up" HREF="node759.html">
 <LINK REL="next" HREF="node791.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html13888"
+<A NAME="tex2html13831"
   HREF="node791.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html13884"
-  HREF="node784.html">
+<A NAME="tex2html13827"
+  HREF="node759.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html13878"
+<A NAME="tex2html13821"
   HREF="node789.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html13886"
+<A NAME="tex2html13829"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html13889"
-  HREF="node791.html">m23SHARED_getDBnameByClient</A>
-<B> Up:</B> <A NAME="tex2html13885"
-  HREF="node784.html">./inc/m23shared/m23shared.php</A>
-<B> Previous:</B> <A NAME="tex2html13879"
-  HREF="node789.html">m23SHARED_DBname</A>
- &nbsp; <B>  <A NAME="tex2html13887"
+<B> Next:</B> <A NAME="tex2html13832"
+  HREF="node791.html">m23SHARED_setRealName</A>
+<B> Up:</B> <A NAME="tex2html13828"
+  HREF="node759.html">./inc/m23shared/m23shared.php</A>
+<B> Previous:</B> <A NAME="tex2html13822"
+  HREF="node789.html">m23SHARED_sendActivationMail</A>
+ &nbsp; <B>  <A NAME="tex2html13830"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008246000000000000000">
-m23SHARED_getDBnameByInterface</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Calculates the database name for m23 shared by setting in the user interface
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
-
+<H2><A NAME="SECTION0092431000000000000000">
+m23SHARED_sendActivationMail</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Prepares and sends the welcome mail.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+</SMALL></SMALL>
 <UL>
-<LI>Database name or false if there is no user logged in.
+<LI>eMail: eMail address of the new customer.
 </LI>
-</UL>
-
+<LI>username: Username of the new customer.
+</LI>
+<LI>lang: Language that should be used in the eMail.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

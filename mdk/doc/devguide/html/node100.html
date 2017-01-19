@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>xxx.info</TITLE>
-<META NAME="description" CONTENT="xxx.info">
+<TITLE>Applying patches on m23 update</TITLE>
+<META NAME="description" CONTENT="Applying patches on m23 update">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,52 +19,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
-<LINK REL="next" HREF="node101.html">
-<LINK REL="previous" HREF="node99.html">
-<LINK REL="up" HREF="node97.html">
+<LINK REL="previous" HREF="node98.html">
+<LINK REL="up" HREF="node91.html">
 <LINK REL="next" HREF="node101.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html3823"
+<A NAME="tex2html3764"
   HREF="node101.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html3819"
-  HREF="node97.html">
+<A NAME="tex2html3760"
+  HREF="node91.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html3813"
+<A NAME="tex2html3756"
   HREF="node99.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html3821"
+<A NAME="tex2html3762"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html3824"
-  HREF="node101.html">xxx.text</A>
-<B> Up:</B> <A NAME="tex2html3820"
-  HREF="node97.html">The files</A>
-<B> Previous:</B> <A NAME="tex2html3814"
-  HREF="node99.html">xxx.end</A>
- &nbsp; <B>  <A NAME="tex2html3822"
+<B> Next:</B> <A NAME="tex2html3765"
+  HREF="node101.html">m23 API reference</A>
+<B> Up:</B> <A NAME="tex2html3761"
+  HREF="node91.html">m23customPatch</A>
+<B> Previous:</B> <A NAME="tex2html3757"
+  HREF="node99.html">Return/error codes</A>
+ &nbsp; <B>  <A NAME="tex2html3763"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H3><A NAME="SECTION006101300000000000000">
-xxx.info</A>
-</H3>
-<PRE>
-shiver
-</PRE>
-
+<H1><A NAME="SECTION00840000000000000000">
+Applying patches on m23 update</A>
+</H1><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+After an update of the m23 software, the patches need to be re-applied again. To automatise this step, you can place a BASH script with the needed calls to m23cutomPatch under /m23/bin/postinstHook.sh. This script will be called when the m23 package is configured. This happens during installation or during update.
+</SMALL></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

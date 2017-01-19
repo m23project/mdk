@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_CloudStackCreateVM</TITLE>
-<META NAME="description" CONTENT="VM_CloudStackCreateVM">
+<TITLE>VM_pauseVM</TITLE>
+<META NAME="description" CONTENT="VM_pauseVM">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,62 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1199.html">
 <LINK REL="previous" HREF="node1197.html">
-<LINK REL="up" HREF="node1182.html">
+<LINK REL="up" HREF="node1161.html">
 <LINK REL="next" HREF="node1199.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html19135"
+<A NAME="tex2html19082"
   HREF="node1199.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html19131"
-  HREF="node1182.html">
+<A NAME="tex2html19078"
+  HREF="node1161.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html19125"
+<A NAME="tex2html19072"
   HREF="node1197.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html19133"
+<A NAME="tex2html19080"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html19136"
-  HREF="node1199.html">VM_CloudStack_getServerIP</A>
-<B> Up:</B> <A NAME="tex2html19132"
-  HREF="node1182.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html19126"
-  HREF="node1197.html">VM_CloudStackNetBootActivate</A>
- &nbsp; <B>  <A NAME="tex2html19134"
+<B> Next:</B> <A NAME="tex2html19083"
+  HREF="node1199.html">VM_resumeVM</A>
+<B> Up:</B> <A NAME="tex2html19079"
+  HREF="node1161.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html19073"
+  HREF="node1197.html">VM_stopVM</A>
+ &nbsp; <B>  <A NAME="tex2html19081"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083816000000000000000">
-VM_CloudStackCreateVM</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Creates a virtual machine for use with m23 in CloudStack
+<H2><A NAME="SECTION0093837000000000000000">
+VM_pauseVM</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Generates a BASH command to pause a virtual machine.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>name: Name of the virtual machine, can contain ASCII letters 'a' through 'z', the digits '0' through '9', and the hyphen ('-'), must be between 1 and 63 characters long, and can't start or end with "-" and can't start with digit
+<LI>type: VM_SW_VBOX for VirtualBox OSE
 </LI>
-<LI>zoneID: zoneID for CloudStack
+<LI>vmname: Name of the VM.
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>BASH code to pause a virtual machine.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

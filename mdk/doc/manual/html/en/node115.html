@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Using m23 with an external DHCP server</TITLE>
-<META NAME="description" CONTENT="Using m23 with an external DHCP server">
+<TITLE>Additional information:</TITLE>
+<META NAME="description" CONTENT="Additional information:">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,75 +19,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="manual.css">
 
-<LINK REL="next" HREF="node122.html">
-<LINK REL="previous" HREF="node109.html">
-<LINK REL="up" HREF="node108.html">
+<LINK REL="previous" HREF="node114.html">
+<LINK REL="up" HREF="node110.html">
 <LINK REL="next" HREF="node116.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html1991"
+<A NAME="tex2html2002"
   HREF="node116.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html1987"
-  HREF="node108.html">
+<A NAME="tex2html1998"
+  HREF="node110.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html1981"
+<A NAME="tex2html1994"
   HREF="node114.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html1989"
+<A NAME="tex2html2000"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html1992"
-  HREF="node116.html">The other DHCP server</A>
-<B> Up:</B> <A NAME="tex2html1988"
-  HREF="node108.html">Control clients</A>
-<B> Previous:</B> <A NAME="tex2html1982"
-  HREF="node114.html">Additional information:</A>
- &nbsp; <B>  <A NAME="tex2html1990"
+<B> Next:</B> <A NAME="tex2html2003"
+  HREF="node116.html">Using m23 with an</A>
+<B> Up:</B> <A NAME="tex2html1999"
+  HREF="node110.html">Add a new client</A>
+<B> Previous:</B> <A NAME="tex2html1995"
+  HREF="node114.html">Note: Computer architectures</A>
+ &nbsp; <B>  <A NAME="tex2html2001"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H1><A NAME="SECTION00920000000000000000">
-Using m23 with an external DHCP server</A>
-</H1>Scenario: There is an existing DHCP server in your network, that distributes network settings (IP, netmask, ...) to all your computers and an m23 server, that should install the clients.
-<BR><IMG
-  WIDTH="1" HEIGHT="1" ALIGN="BOTTOM" BORDER="0"
- SRC="./externalDHCP.png"
- ALT="Image externalDHCP"> 
+<H2><A NAME="SECTION00915000000000000000">
+Additional information:</A>
+</H2>
+After adding a new client, (if PXE network booting and Wake-On-LAN are activated in the client's BIOS) the client will boot over the network and runs through a hardware detection sequence. Hardware data (hard disk size, partitions etc.) will be sent to the server. When the data transfer is finished the client will change its status to <SPAN  CLASS="textit">''yellow''</SPAN>. You can setup your client now. To setup your client click on <SPAN  CLASS="textit">''Clients''</SPAN> <!-- MATH
+ $\rightarrow$
+ -->
+<SPAN CLASS="MATH"></SPAN> <SPAN  CLASS="textit">''Setup''</SPAN> in the menu.
 <BR>
-Problem: The installation of the m23 clients doesn't work, because the other DHCP server assigns the network settings faster that the m23 server.
-<BR>
-Reason: The m23 server needs to assign the IP and other network settings to let the client boot and install via the network. If these settings are distributed by another DHCP server, the client cannot find the m23 server, cannot download the network bootimage and cannot be installed. This cannot be changed generally, because there are standards in the network and boot protocols, that define a standardised network booting procedure.
-<BR>
-<BR><HR>
-<!--Table of Child-Links-->
-<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
-
-<UL CLASS="ChildLinks">
-<LI><A NAME="tex2html1993"
-  HREF="node116.html">The other DHCP server can be deactivated</A>
-<LI><A NAME="tex2html1994"
-  HREF="node117.html">The other DHCP server CANNOT be deactivated</A>
-<LI><A NAME="tex2html1995"
-  HREF="node118.html">Configuring DHCP servers dynamically</A>
-<LI><A NAME="tex2html1996"
-  HREF="node119.html">ISC DHCP server</A>
-<LI><A NAME="tex2html1997"
-  HREF="node120.html">Other DHCP server</A>
-<LI><A NAME="tex2html1998"
-  HREF="node121.html">Proxy DHCP</A>
-</UL>
-<!--End of Table of Child-Links-->
-<BR><HR>
+Please note that the client needs to be connected to a wired network. Wireless connections cannot be used to install the operating system.
+<BR>	<BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

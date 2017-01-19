@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_getUnusedMDs</TITLE>
-<META NAME="description" CONTENT="FDISK_getUnusedMDs">
+<TITLE>FDISK_checkFreeSpace</TITLE>
+<META NAME="description" CONTENT="FDISK_checkFreeSpace">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,64 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node492.html">
 <LINK REL="previous" HREF="node490.html">
-<LINK REL="up" HREF="node481.html">
+<LINK REL="up" HREF="node447.html">
 <LINK REL="next" HREF="node492.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html10059"
+<A NAME="tex2html9993"
   HREF="node492.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html10055"
-  HREF="node481.html">
+<A NAME="tex2html9989"
+  HREF="node447.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html10049"
+<A NAME="tex2html9983"
   HREF="node490.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html10057"
+<A NAME="tex2html9991"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html10060"
-  HREF="node492.html">FDISK_listDrivesAndPartitions2</A>
-<B> Up:</B> <A NAME="tex2html10056"
-  HREF="node481.html">./inc/fdisk.php</A>
-<B> Previous:</B> <A NAME="tex2html10050"
-  HREF="node490.html">FDISK_installFilesystems</A>
- &nbsp; <B>  <A NAME="tex2html10058"
+<B> Next:</B> <A NAME="tex2html9994"
+  HREF="node492.html">FDISK_installExistingDialog</A>
+<B> Up:</B> <A NAME="tex2html9990"
+  HREF="node447.html">./inc/fdisk.php</A>
+<B> Previous:</B> <A NAME="tex2html9984"
+  HREF="node490.html">FDISK_canPartTypeBeCreated</A>
+ &nbsp; <B>  <A NAME="tex2html9992"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0081610000000000000000">
-FDISK_getUnusedMDs</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Returns an associative array with the unused MDs (e.g. /dev/md0, /dev/md1, ...) as key and value.
+<H2><A NAME="SECTION0091644000000000000000">
+FDISK_checkFreeSpace</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> checks if there is a free space between $start and $end
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
 <LI>param: parameter string containing status informations about the harddisks
 </LI>
-</UL>
-<SPAN  CLASS="textbf">Returns:</SPAN>
-
-<UL>
-<LI>Associative array with the unused MDs (e.g. /dev/md0, /dev/md1, ...) as key and value.
+<LI>vDev: Virtual (internally used) device number.
 </LI>
-</UL>
-
+<LI>type: type of the partition (primary, extended, logical)
+</LI>
+<LI>start: start position for the search
+</LI>
+<LI>end: end position for the search
+</LI>
+<LI>freeSpaces: array of the free space information
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

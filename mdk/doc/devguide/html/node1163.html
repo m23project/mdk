@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SRCLST_doesDistrSupportEFI</TITLE>
-<META NAME="description" CONTENT="SRCLST_doesDistrSupportEFI">
+<TITLE>VM_CloudStackDeleteClientVM</TITLE>
+<META NAME="description" CONTENT="VM_CloudStackDeleteClientVM">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,62 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1164.html">
 <LINK REL="previous" HREF="node1162.html">
-<LINK REL="up" HREF="node1139.html">
+<LINK REL="up" HREF="node1161.html">
 <LINK REL="next" HREF="node1164.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18649"
+<A NAME="tex2html18662"
   HREF="node1164.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18645"
-  HREF="node1139.html">
+<A NAME="tex2html18658"
+  HREF="node1161.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18639"
+<A NAME="tex2html18652"
   HREF="node1162.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18647"
+<A NAME="tex2html18660"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18650"
-  HREF="node1164.html">SRCLST_getListnamesWithEfiSupport</A>
-<B> Up:</B> <A NAME="tex2html18646"
-  HREF="node1139.html">./inc/sourceslist.php</A>
-<B> Previous:</B> <A NAME="tex2html18640"
-  HREF="node1162.html">SRCLST_showDesktopsSel</A>
- &nbsp; <B>  <A NAME="tex2html18648"
+<B> Next:</B> <A NAME="tex2html18663"
+  HREF="node1164.html">VM_isCloudStackClient</A>
+<B> Up:</B> <A NAME="tex2html18659"
+  HREF="node1161.html">./inc/vm.php</A>
+<B> Previous:</B> <A NAME="tex2html18653"
+  HREF="node1162.html">VM_captureVMScreenAsMovie</A>
+ &nbsp; <B>  <A NAME="tex2html18661"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083624000000000000000">
-SRCLST_doesDistrSupportEFI</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Checks, if a sources list contains a distribution that supports EFI.
+<H2><A NAME="SECTION009382000000000000000">
+VM_CloudStackDeleteClientVM</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Deletes a virtual machine for use with m23 in CloudStack, only a cloudstack admin can recover it
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>sourceName: the name of the package source list
+<LI>virtualMachineId:  CloudStack ID of the virtual machine
 </LI>
-</UL>
+<LI>VMDeletionOK: True if VM was successfully deleted, false otherwise
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>true, if the distribution supports EFI, otherwise false.
+<LI>ErrorMessages or Success messages, sets parameter VMDeletionOK (true if all went well, false if an error ocurred)
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

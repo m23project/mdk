@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>MSG_showUpdateInfo</TITLE>
-<META NAME="description" CONTENT="MSG_showUpdateInfo">
+<TITLE>PKG_decodeDebconfDescription</TITLE>
+<META NAME="description" CONTENT="PKG_decodeDebconfDescription">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,62 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node901.html">
 <LINK REL="previous" HREF="node899.html">
-<LINK REL="up" HREF="node887.html">
+<LINK REL="up" HREF="node879.html">
 <LINK REL="next" HREF="node901.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15247"
+<A NAME="tex2html15296"
   HREF="node901.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15243"
-  HREF="node887.html">
+<A NAME="tex2html15292"
+  HREF="node879.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15237"
+<A NAME="tex2html15286"
   HREF="node899.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15245"
+<A NAME="tex2html15294"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15248"
-  HREF="node901.html">MSG_showUpdateInfo</A>
-<B> Up:</B> <A NAME="tex2html15244"
-  HREF="node887.html">./inc/message.php</A>
-<B> Previous:</B> <A NAME="tex2html15238"
-  HREF="node899.html">MSG_showMessageBox</A>
- &nbsp; <B>  <A NAME="tex2html15246"
+<B> Next:</B> <A NAME="tex2html15297"
+  HREF="node901.html">PKG_OptionPageRender2</A>
+<B> Up:</B> <A NAME="tex2html15293"
+  HREF="node879.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html15287"
+  HREF="node899.html">PKG_OptionPageTail2</A>
+ &nbsp; <B>  <A NAME="tex2html15295"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082713000000000000000">
-MSG_showUpdateInfo</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> shows a info message about the stored update jobs
+<H2><A NAME="SECTION0092821000000000000000">
+PKG_decodeDebconfDescription</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Decodes and HTML-formats the description of a debconf template and extracts its title.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>unr: the amount of update jobs and clients
+<LI>descr: Text of the debconf description.
 </LI>
-<LI>language: two character language description (e.g. de, en, fr,...)
+<LI>title: Variable to write the title to.
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>: The decoded and HTML-formated description.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>m23SHARED_blockAccount</TITLE>
-<META NAME="description" CONTENT="m23SHARED_blockAccount">
+<TITLE>MASS_minMaxIP</TITLE>
+<META NAME="description" CONTENT="MASS_minMaxIP">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node851.html">
 <LINK REL="previous" HREF="node849.html">
-<LINK REL="up" HREF="node784.html">
+<LINK REL="up" HREF="node831.html">
 <LINK REL="next" HREF="node851.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html14608"
+<A NAME="tex2html14575"
   HREF="node851.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html14604"
-  HREF="node784.html">
+<A NAME="tex2html14571"
+  HREF="node831.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html14598"
+<A NAME="tex2html14565"
   HREF="node849.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html14606"
+<A NAME="tex2html14573"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html14609"
-  HREF="node851.html">m23SHARED_isAccountBlocked</A>
-<B> Up:</B> <A NAME="tex2html14605"
-  HREF="node784.html">./inc/m23shared/m23shared.php</A>
-<B> Previous:</B> <A NAME="tex2html14599"
-  HREF="node849.html">m23SHARED_showAdminDialog</A>
- &nbsp; <B>  <A NAME="tex2html14607"
+<B> Next:</B> <A NAME="tex2html14576"
+  HREF="node851.html">MASS_generateNetmask</A>
+<B> Up:</B> <A NAME="tex2html14572"
+  HREF="node831.html">./inc/massTools.php</A>
+<B> Previous:</B> <A NAME="tex2html14566"
+  HREF="node849.html">MASS_ipGenerator</A>
+ &nbsp; <B>  <A NAME="tex2html14574"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0082466000000000000000">
-m23SHARED_blockAccount</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Blocks or unblocks an account.
+<H2><A NAME="SECTION0092519000000000000000">
+MASS_minMaxIP</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> calculates the possible minimum and maximum IP of a given netmask. The IPs are returned as an array: index 0 = minimum; index 1 = maximum.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>block: Set to true blocks, false unblocks.
+<LI>netmask: netmask to use
 </LI>
-</UL>
-
+<LI>ip: is used if the can only be set the current part of the ip (max and min ip part == 255)
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

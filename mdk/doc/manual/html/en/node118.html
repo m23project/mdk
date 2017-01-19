@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Configuring DHCP servers dynamically</TITLE>
-<META NAME="description" CONTENT="Configuring DHCP servers dynamically">
+<TITLE>The other DHCP server CANNOT be deactivated</TITLE>
+<META NAME="description" CONTENT="The other DHCP server CANNOT be deactivated">
 <META NAME="keywords" CONTENT="manual">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,47 +21,47 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node119.html">
 <LINK REL="previous" HREF="node117.html">
-<LINK REL="up" HREF="node115.html">
+<LINK REL="up" HREF="node116.html">
 <LINK REL="next" HREF="node119.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html2033"
+<A NAME="tex2html2044"
   HREF="node119.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html2029"
-  HREF="node115.html">
+<A NAME="tex2html2040"
+  HREF="node116.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html2023"
+<A NAME="tex2html2034"
   HREF="node117.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html2031"
+<A NAME="tex2html2042"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html2034"
-  HREF="node119.html">ISC DHCP server</A>
-<B> Up:</B> <A NAME="tex2html2030"
-  HREF="node115.html">Using m23 with an</A>
-<B> Previous:</B> <A NAME="tex2html2024"
+<B> Next:</B> <A NAME="tex2html2045"
+  HREF="node119.html">Configuring DHCP servers dynamically</A>
+<B> Up:</B> <A NAME="tex2html2041"
+  HREF="node116.html">Using m23 with an</A>
+<B> Previous:</B> <A NAME="tex2html2035"
   HREF="node117.html">The other DHCP server</A>
- &nbsp; <B>  <A NAME="tex2html2032"
+ &nbsp; <B>  <A NAME="tex2html2043"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00923000000000000000">
-Configuring DHCP servers dynamically</A>
+<H2><A NAME="SECTION00922000000000000000">
+The other DHCP server CANNOT be deactivated</A>
 </H2>
-Each time the network boot status of a client is changed (activated / deactivated), the script <SPAN  CLASS="textit">''/m23/bin/externalDHCPControl.sh''</SPAN> is called. You can adapt this script according to your needs in order to dynamically configure an existing DHCP server. More information can be found in the comments inside the script file.
+In this case you need to adjust the configuration of the other DHCP server manually and set up a TFTP server if necessary. Have a look into the documentation of your DHCP and TFTP servers for correct configuration.
 <BR>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>

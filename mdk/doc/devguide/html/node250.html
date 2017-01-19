@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>FDISK_defineDrive</TITLE>
-<META NAME="description" CONTENT="FDISK_defineDrive">
+<TITLE>CLIENT_filterLinesFromLiveScreenRecording</TITLE>
+<META NAME="description" CONTENT="CLIENT_filterLinesFromLiveScreenRecording">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,70 +21,60 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node251.html">
 <LINK REL="previous" HREF="node249.html">
-<LINK REL="up" HREF="node234.html">
+<LINK REL="up" HREF="node241.html">
 <LINK REL="next" HREF="node251.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html6860"
+<A NAME="tex2html6897"
   HREF="node251.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html6856"
-  HREF="node234.html">
+<A NAME="tex2html6893"
+  HREF="node241.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html6850"
+<A NAME="tex2html6887"
   HREF="node249.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html6858"
+<A NAME="tex2html6895"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html6861"
-  HREF="node251.html">FDISK_getDiskType</A>
-<B> Up:</B> <A NAME="tex2html6857"
-  HREF="node234.html">./inc/CFDiskAlles.php</A>
-<B> Previous:</B> <A NAME="tex2html6851"
-  HREF="node249.html">FDISK_listInstPartSelector</A>
- &nbsp; <B>  <A NAME="tex2html6859"
+<B> Next:</B> <A NAME="tex2html6898"
+  HREF="node251.html">CLIENT_getOverviewSearchLine</A>
+<B> Up:</B> <A NAME="tex2html6894"
+  HREF="node241.html">./inc/client.php</A>
+<B> Previous:</B> <A NAME="tex2html6888"
+  HREF="node249.html">CLIENT_startLiveScreenRecording</A>
+ &nbsp; <B>  <A NAME="tex2html6896"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION008716000000000000000">
-FDISK_defineDrive</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> defines drive information for the clientBuilder
+<H2><A NAME="SECTION009109000000000000000">
+CLIENT_filterLinesFromLiveScreenRecording</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Filters out unwanted lines from the live log.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>client: client name
+<LI>in: Input line to give out or not.
 </LI>
-<LI>path: path to the drive (/dev/hda, /dev/hdb, ...)
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>Empty string, if the line should be filtered out or input line.
 </LI>
-<LI>size: size of the drive in MB
-</LI>
-<LI>upperI: upper tolerance border for disks with identical type
-</LI>
-<LI>lowerI: lower tolerance border for disks with identical type
-</LI>
-<LI>upperO: upper tolerance border for disks with other type
-</LI>
-<LI>lowerO: lower tolerance border for disks with other type
-</LI>
-<LI>asSpeciefied: use the speciefied disk, if it exists (is set to "yes" or empty)
-</LI>
-<LI>sizeAdjustmentType: defines how the partitions should be adjusted, if there is more or less space on the client that the defined one. "system" increases or tries to keep the size of the system partition. "percentage" makes a percentage adjustment of all partitions.
-</LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-01-05
 </ADDRESS>
 </BODY>
 </HTML>
