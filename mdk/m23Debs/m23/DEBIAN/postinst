@@ -12,9 +12,45 @@ UCS_detect()
 
 
 
-#Create a symlinks to the System-V-Init directory to get the Bittorrent tracker and initial client, if there are .torrent files in the share directory
-ln -s /m23/vms/bin/restoreBTServer /etc/init.d/
+#Shows the MySQL / MariaDB admin userln -s /m23/vms/bin/restoreBTServer /etc/init.d/
 update-rc.d -f restoreBTServer defaults
+
+
+
+
+
+#Shows the mysql password (if needed (only on MySQL))
+showDBAdmPassword()
+{
+	grep "^password" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1
+}
+
+
+
+
+
+#Shows the MySQL / MariaDB password parameter (if needed (only on MySQL))
+showDBAdmPasswordParameter()
+{
+	dbadmpass=`showDBAdmPassword`
+
+	if [ $dbadmpass ]
+	then
+		echo -n "-p$dbadmpass"
+	fi
+}
+
+
+
+
+
+#Shows the MySQL / MariaDB admin user
+showDBAdmUser()
+{
+	grep "^user" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1
+}
+
+
 
 
 
@@ -62,8 +98,9 @@ updateDB()
 	dbname="m23"
 	dbserver="localhost"
 	#get username and password of the debian MySQL system 
-	dbadmin=`grep "^user" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
-	dbadmpass=`grep "^password" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
+	dbadmin=`showDBAdmUser`
+	dbadmpassParam=`showDBAdmPasswordParameter`
+	dbadmpass=`showDBAdmPassword`
 
 	#create database m23
 	. /usr/share/wwwconfig-common/mysql-createdb.sh
@@ -88,8 +125,8 @@ updateDB()
 	fi
 
 	#Make sure the i18n table is always empty
-	mysql -u$dbadmin -p$dbadmpass m23 -e "delete from i18n"
-	mysql -u$dbadmin -p$dbadmpass m23captured -e "delete from i18n"
+	mysql -u$dbadmin $dbadmpassParam m23 -e "delete from i18n"
+	mysql -u$dbadmin $dbadmpassParam m23captured -e "delete from i18n"
 }
 
 
@@ -109,10 +146,10 @@ updateSQLIfOlder()
 
 	if [ -n "$oldversionint" ] && [ $oldversionint -lt $olderThan ]
 	then
-		dbadmin=`grep "^user" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
-		dbadmpass=`grep "^password" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
+		dbadmin=`showDBAdmUser`
+		dbadmpassParam=`showDBAdmPasswordParameter`
 
-		echo "$sql" | mysql -u $dbadmin -p$dbadmpass m23
+		echo "$sql" | mysql -u $dbadmin $dbadmpassParam m23
 	fi
 }
 
@@ -145,10 +182,15 @@ ln -s /sbin/lilo /sbin/update-grub 2> /dev/null
 
 DNS=`cat /etc/resolv.conf | head -n 1 | cut -d' ' -f2`
 BROADINT=`cat /etc/network/interfaces | tr -d "\t" | tr -s " " | sed 's/^[ ]*//g' | grep ^broadcast | cut -d ' ' -f2 | head -1`
-IPINT=`cat /etc/network/interfaces | tr -d "\t" | tr -s " " | sed 's/^[ ]*//g' | grep ^address | cut -d ' ' -f2 | head -1`
+if [ -z $BROADINT ]
+then
+	BROADINT=`LC_ALL=C; ifconfig | grep broadcast | sed 's/.*broadcast //'`
+fi
+IPINT=`cat /etc/network/interfaces | tr -d "\t" | tr -s " " | sed 's/^[ ]*//g' | grep ^address | cut -d ' ' -f2 | head -1 | sed 's#/.*##'`
 GATEINT=`cat /etc/network/interfaces | tr -d "\t" | tr -s " " | sed 's/^[ ]*//g' | grep ^gateway | cut -d ' ' -f2 | head -1`
-dbadmin=`grep "^user" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
-dbadmpass=`grep "^password" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
+dbadmin=`showDBAdmUser`
+dbadmpassParam=`showDBAdmPasswordParameter`
+dbadmpass=`showDBAdmPassword`
 
 
 
@@ -198,7 +240,8 @@ getIpGateway()
 getCSExternIP()
 {
 	wget -qq "http://$GATEINT/latest/public-ipv4" -O /tmp/csExternIp
-	if [ $? -eq 0 ]
+
+	if [ $? -eq 0 ] && [ -f /tmp/csExternIp ] && [ $(grep -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' -c /tmp/csExternIp) -eq 1 ]
 	then
 		cat /tmp/csExternIp
 		rm /tmp/csExternIp
@@ -266,31 +309,40 @@ if [ "$RET" = "true" ] || [ $(UCS_detect) -eq 0 ]
 then
 	# Make sure, innoDB is enabled
 	sed -i 's/skip-innodb/#skip-innodb/' /etc/mysql/my.cnf
+	
+	# Make sure MariaDB uses latin1 and not 4-byte utf8 which would lead to an exceeding of the 1000 bytes limit for unique keys
+	if [ -d /etc/mysql/mariadb.conf.d ]
+	then
+		sed -i 's/utf8mb4/latin1/g' /etc/mysql/mariadb.conf.d/*
+	fi
+
 	/etc/init.d/mysql restart
 
 	dbname="m23"
 	dbserver="localhost"
 	#get username and password of the debian MySQL system 
-	dbadmin=`grep "^user" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
-	dbadmpass=`grep "^password" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
+	dbadmin=`showDBAdmUser`
+	dbadmpassParam=`showDBAdmPasswordParameter`
+	dbadmpass=`showDBAdmPassword`
+
 
 	#create database m23
 	. /usr/share/wwwconfig-common/mysql-createdb.sh
 
 	updateDB
 
-	echo  "GRANT SELECT , INSERT , UPDATE , DELETE , FILE ON * . * TO 'm23dbuser'@'localhost' IDENTIFIED BY 'm23secret' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 ;" | mysql -u $dbadmin -p$dbadmpass m23
+	echo  "GRANT SELECT , INSERT , UPDATE , DELETE , FILE ON * . * TO 'm23dbuser'@'localhost' IDENTIFIED BY 'm23secret' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 ;" | mysql -u $dbadmin $dbadmpassParam m23
 
-	echo "GRANT SELECT , INSERT , UPDATE , DELETE , CREATE , DROP , FILE , INDEX , ALTER , CREATE TEMPORARY TABLES , LOCK TABLES ON * . * TO 'm23dbroot'@'localhost' IDENTIFIED BY 'm23secretroot' WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 ;" | mysql -u $dbadmin -p$dbadmpass m23
+	echo "GRANT SELECT , INSERT , UPDATE , DELETE , CREATE , DROP , FILE , INDEX , ALTER , CREATE TEMPORARY TABLES , LOCK TABLES ON * . * TO 'm23dbroot'@'localhost' IDENTIFIED BY 'm23secretroot' WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 ;" | mysql -u $dbadmin $dbadmpassParam m23
 
 	#Delete all unused "defaut" groups (every configuration adds a new instance of the default group => if they don't get deleted there will be lots of unused default groups where no client is in. Only the first occurrance of the default group should have clients in it.)
-	echo "DELETE FROM groups WHERE id NOT IN (SELECT id FROM (SELECT groups.id FROM clientgroups, groups WHERE clientgroups.groupid = groups.id) as temp)" | mysql -u $dbadmin -p$dbadmpass m23
+	echo "DELETE FROM groups WHERE id NOT IN (SELECT id FROM (SELECT groups.id FROM clientgroups, groups WHERE clientgroups.groupid = groups.id) as temp)" | mysql -u $dbadmin $dbadmpassParam m23
 
 	#Make the groupname unique
-	echo "ALTER TABLE groups ADD UNIQUE (groupname); ALTER TABLE groups DROP INDEX groupname" | mysql -u $dbadmin -p$dbadmpass m23
+	echo "ALTER TABLE groups ADD UNIQUE (groupname); ALTER TABLE groups DROP INDEX groupname" | mysql -u $dbadmin $dbadmpassParam m23
 
 	#Make sure that a default group exists
-	echo "INSERT INTO groups (id , groupname) VALUES ('1', 'default')" | mysql -u $dbadmin -p$dbadmpass m23
+	echo "INSERT INTO groups (id , groupname) VALUES ('1', 'default')" | mysql -u $dbadmin $dbadmpassParam m23
 fi
 
 
@@ -356,6 +408,7 @@ ddns-update-style none;\
 		mv /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.beforem23
 		ln -s /m23/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf
 		sed -i "s/INTERFACES=.*/INTERFACES=\"$netDevices\"/g" /etc/default/isc-dhcp-server
+		sed -i "s/INTERFACESv4=.*/INTERFACESv4=\"$netDevices\"/g" /etc/default/isc-dhcp-server
 	fi
 fi
 
@@ -615,6 +668,24 @@ then
 	
 	chown www-data.www-data /m23/data+scripts/packages/baseSys/ca.crt /m23/data+scripts/packages/baseSys/ca.hash
 	chmod 644 /m23/data+scripts/packages/baseSys/ca.crt /m23/data+scripts/packages/baseSys/ca.hash
+
+	# Convert to UTF-8 on UCS > 4.1
+	if [ $(grep ' 4\.1-' /etc/issue -c) -ne 1 ]
+	then
+		# Convert the files to UTF-8
+		find /m23 | grep php$ | xargs -n1 recode ISO-8859-1..utf-8
+		find /m23/inc | grep inc$ | xargs -n1 recode ISO-8859-1..utf-8
+		find /m23/inc | grep hlp$ | xargs -n1 recode ISO-8859-1..utf-8
+		sed -i 's/ISO-8859-1/UTF-8/' /m23/data+scripts/index.php
+	fi
+
+	for phpFile in `find /etc/php?/apache* /etc/php/7.0 2> /dev/null | grep php.ini` `find /etc/php?/cli | grep php.ini`
+	do
+		#PHP settings
+		sed -i -e 's/short_open_tag = Off/short_open_tag = On/g' $phpFile
+	done
+
+	/etc/init.d/apache2 restart
 fi
 
 
@@ -622,7 +693,7 @@ fi
 db_get m23/configureApache
 if [ "$RET" = "true" ] && [ $(UCS_detect) -ne 0 ]
 then
-	if [ -f /etc/default/apache2 ] && [ `grep "NO_START=1" /etc/default/apache2 -c` -eq 0 ]
+	if ( [ -f /etc/default/apache2 ] && [ `grep "NO_START=1" /etc/default/apache2 -c` -eq 0 ] ) || ( [ -f /etc/apache2/ports.conf ] )
 	then
 		#Configuration for Apache 2.x
 
@@ -719,10 +790,15 @@ echo "	<VirtualHost *:443>
 	fi
 	
 	#Get the absolute path to the PHP ini file(s)
-	for phpFile in `find /etc/php?/apache* | grep php.ini` `find /etc/php?/cli | grep php.ini`
+	for phpFile in `find /etc/php?/apache* /etc/php/7.0 | grep php.ini` `find /etc/php?/cli | grep php.ini`
 	do
 		#PHP settings
 		sed -i -e 's/register_globals = Off/register_globals = On/g' -e 's/memory_limit[ =0-9MG]*;/memory_limit = 32M;/g' -e 's/short_open_tag = Off/short_open_tag = On/g' -e 's/^session.gc_probability[ =0-9]*/session.gc_probability = 5/g' -e 's/^session.gc_divisor[ =0-9]*/session.gc_divisor = 100/g' $phpFile
+		
+		if [ -e /etc/php/7.0 ]
+		then
+			sed -i -e 's/^session.gc_probability[ =0-9]*/session.gc_probability = 0/g' $phpFile
+		fi
 
 		chown root.root $phpFile
 		chmod 644 $phpFile
@@ -954,7 +1030,7 @@ php -r "
 fi
 
 #Add the server to the list of clients if it's missing
-localhostCount=`echo "SELECT COUNT(*) FROM clients WHERE client='localhost'" | mysql -u $dbadmin -p$dbadmpass m23 | tail -1`
+localhostCount=`echo "SELECT COUNT(*) FROM clients WHERE client='localhost'" | mysql -u $dbadmin $dbadmpassParam m23 | tail -1`
 if [ $localhostCount -eq 0 ]
 then
 	#Add the server to the list of clients as "localhost"
@@ -964,7 +1040,7 @@ then
 	cpu=`grep name /proc/cpuinfo | cut -d':' -f2`
 	mhz=`grep MHz /proc/cpuinfo | cut -d':' -f2 | cut -d' ' -f2`
 
-	echo "INSERT INTO clients (client,ip,installdate,lastmodify,status,cpu,MHz) VALUES ('localhost','$IPINT','$ts','$ts','2','$cpu','$mhz')" | mysql -u $dbadmin -p$dbadmpass m23
+	echo "INSERT INTO clients (client,ip,installdate,lastmodify,status,cpu,MHz) VALUES ('localhost','$IPINT','$ts','$ts','2','$cpu','$mhz')" | mysql -u $dbadmin $dbadmpassParam m23
 fi
 
 #Increased the size of the fields "cpu" and "MHz" in the table "clients".
@@ -1020,6 +1096,12 @@ updateSQLIfOlder $oldversionint 143100752 "ALTER TABLE clients ADD CFDiskTemp LO
 # Add description field to the groups table
 updateSQLIfOlder $oldversionint 162100899 "ALTER TABLE groups ADD description LONGTEXT; ALTER TABLE clients ADD keyValueStore LONGTEXT"
 
+# Add new table for storing the autoUpdate schedule
+updateSQLIfOlder $oldversionint 172100985 "CREATE TABLE autoUpdateSchedule ( id int(11) NOT NULL, startsEnds text NOT NULL, groups text NOT NULL, type varchar(1) NOT NULL, parallelUpdates int(11) NOT NULL, lastRun timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, active tinyint(1) NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=latin1;"
+
+# Extend the client table by fields for storing autoUpdate values
+updateSQLIfOlder $oldversionint 172100985 "ALTER TABLE clients ADD autoUpdate_lastAttempt int(10) DEFAULT NULL AFTER keyValueStore, ADD autoUpdate_gotJob BOOLEAN NOT NULL AFTER autoUpdate_lastAttempt, ADD autoUpdate_fails INT NOT NULL AFTER autoUpdate_gotJob;"
+
 
 
 ######################
@@ -1044,6 +1126,13 @@ then
 	chown www-data /m23/data+scripts/clientImages
 	chmod 755 /m23/data+scripts/clientImages
 fi
+
+
+chown www-data.www-data /m23/data+scripts/packages/userPackages /m23/log
+mkdir -p /m23/var/cache/m23apt
+chown www-data.www-data /m23/var/cache/m23apt /m23/tmp /m23/tftp/pxelinux.cfg
+chmod 755 /m23/log
+
 
 touch /m23/dhcp/dhcpd.leases
 

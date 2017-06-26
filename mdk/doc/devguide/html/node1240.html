@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>VM_createVM</TITLE>
-<META NAME="description" CONTENT="VM_createVM">
+<TITLE>PKG_getKernels</TITLE>
+<META NAME="description" CONTENT="PKG_getKernels">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,70 +21,64 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1241.html">
 <LINK REL="previous" HREF="node1239.html">
-<LINK REL="up" HREF="node1182.html">
+<LINK REL="up" HREF="node1216.html">
 <LINK REL="next" HREF="node1241.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html19639"
+<A NAME="tex2html23250"
   HREF="node1241.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html19635"
-  HREF="node1182.html">
+<A NAME="tex2html23246"
+  HREF="node1216.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html19629"
+<A NAME="tex2html23240"
   HREF="node1239.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html19637"
+<A NAME="tex2html23248"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html19640"
-  HREF="node1241.html">VM_insertBootISO</A>
-<B> Up:</B> <A NAME="tex2html19636"
-  HREF="node1182.html">./inc/vm.php</A>
-<B> Previous:</B> <A NAME="tex2html19630"
-  HREF="node1239.html">VM_activateNetbootCMD</A>
- &nbsp; <B>  <A NAME="tex2html19638"
+<B> Next:</B> <A NAME="tex2html23251"
+  HREF="node1241.html">PKG_downloadPool</A>
+<B> Up:</B> <A NAME="tex2html23247"
+  HREF="node1216.html">./inc/distr/debian/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html23241"
+  HREF="node1239.html">PKG_previewInstall</A>
+ &nbsp; <B>  <A NAME="tex2html23249"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0083858000000000000000">
-VM_createVM</A>
-</H2>
-<SPAN  CLASS="textbf">Description:</SPAN> Creates a virtual machine.
+<H2><A NAME="SECTION0094124000000000000000">
+PKG_getKernels</A>
+</H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Description:</SPAN> Generates an associative array with the available kernels for an architecture and distribution as keys and values, where kernels containing the term 'generic' are at the front.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>type: VM_SW_VBOX for VirtualBox OSE
+<LI>distr: the distribution name
 </LI>
-<LI>vmName: Name of the VM.
+<LI>packagesource: name of the package source
 </LI>
-<LI>ramSize: Size of the memory in MB.
+<LI>arch: Architecture to get package infos for.
 </LI>
-<LI>diskName: Name of the virtual harddisk file.
-</LI>
-<LI>mac: MAC address of the virtual network card. It can be in the format 12:23:34:45:56:78 or 122334455678.
-</LI>
-<LI>netDev: Device of the real network card that is used to let the VM communictae with the outer world.
-</LI>
-</UL>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
-
+</SMALL></SMALL>
 <UL>
-<LI>BASH code to create a virtual machine.
+<LI>Associative array with the available kernels for an architecture and distribution as keys and values with kernels containing the term 'generic' at the front, sorted by length and then by alphabet.
 </LI>
-</UL>
-
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
+<SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2016-04-19
+2017-06-22
 </ADDRESS>
 </BODY>
 </HTML>
