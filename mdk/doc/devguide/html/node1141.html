@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CLCFG_installLightDM</TITLE>
-<META NAME="description" CONTENT="CLCFG_installLightDM">
+<TITLE>DHCP_activateBoot</TITLE>
+<META NAME="description" CONTENT="DHCP_activateBoot">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,48 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1142.html">
 <LINK REL="previous" HREF="node1140.html">
-<LINK REL="up" HREF="node1131.html">
+<LINK REL="up" HREF="node1125.html">
 <LINK REL="next" HREF="node1142.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html22033"
+<A NAME="tex2html22100"
   HREF="node1142.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html22029"
-  HREF="node1131.html">
+<A NAME="tex2html22096"
+  HREF="node1125.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html22023"
+<A NAME="tex2html22090"
   HREF="node1140.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html22031"
+<A NAME="tex2html22098"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html22034"
-  HREF="node1142.html">CLCFG_setDebConfDirect</A>
-<B> Up:</B> <A NAME="tex2html22030"
-  HREF="node1131.html">./inc/distr/debian/clientConfigCommon.php</A>
-<B> Previous:</B> <A NAME="tex2html22024"
-  HREF="node1140.html">CLCFG_activateBOOT_DEGRADED</A>
- &nbsp; <B>  <A NAME="tex2html22032"
+<B> Next:</B> <A NAME="tex2html22101"
+  HREF="node1142.html">DHCP_calcPXEIP</A>
+<B> Up:</B> <A NAME="tex2html22097"
+  HREF="node1125.html">./inc/dhcp.php</A>
+<B> Previous:</B> <A NAME="tex2html22091"
+  HREF="node1140.html">DHCP_setBootimage</A>
+ &nbsp; <B>  <A NAME="tex2html22099"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0093910000000000000000">
-CLCFG_installLightDM</A>
+<H2><A NAME="SECTION0093816000000000000000">
+DHCP_activateBoot</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Installs the light DM display manager.
+<SPAN  CLASS="textbf">Description:</SPAN> switches the network boot on or off
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>session: Name of the session to select by default.
+<LI>clientName: name of the client
 </LI>
-<LI>addSessionWrapper: Set to true, if an additional line with "session-wrapper=/etc/X11/Xsession" should be added.
+<LI>on: true activates the network boot, false deactivates
+</LI>
+<LI>bootType: The boot type CAN be given here (e.g. pxe or etherboot)
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -70,7 +72,7 @@ CLCFG_installLightDM</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

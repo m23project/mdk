@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CFDiskIO::FDISK_dev2VDiskVPart_Legacy</TITLE>
-<META NAME="description" CONTENT="CFDiskIO::FDISK_dev2VDiskVPart_Legacy">
+<TITLE>CFDiskIO::virtualAddPartition</TITLE>
+<META NAME="description" CONTENT="CFDiskIO::virtualAddPartition">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,58 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node609.html">
 <LINK REL="previous" HREF="node607.html">
-<LINK REL="up" HREF="node542.html">
+<LINK REL="up" HREF="node543.html">
 <LINK REL="next" HREF="node609.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15158"
+<A NAME="tex2html15289"
   HREF="node609.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15154"
-  HREF="node542.html">
+<A NAME="tex2html15285"
+  HREF="node543.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15148"
+<A NAME="tex2html15279"
   HREF="node607.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15156"
+<A NAME="tex2html15287"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15159"
-  HREF="node609.html">CFDiskIO::collidesWithPartitionOfType</A>
-<B> Up:</B> <A NAME="tex2html15155"
-  HREF="node542.html">./inc/CFDiskIO.php</A>
-<B> Previous:</B> <A NAME="tex2html15149"
-  HREF="node607.html">CFDiskIO::getBelongingRaidDev</A>
- &nbsp; <B>  <A NAME="tex2html15157"
+<B> Next:</B> <A NAME="tex2html15290"
+  HREF="node609.html">CFDiskIO::virtualAddDisk</A>
+<B> Up:</B> <A NAME="tex2html15286"
+  HREF="node543.html">./inc/CFDiskIO.php</A>
+<B> Previous:</B> <A NAME="tex2html15280"
+  HREF="node607.html">CFDiskIO::getLowestValueOf</A>
+ &nbsp; <B>  <A NAME="tex2html15288"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0091566000000000000000">
-CFDiskIO::FDISK_dev2VDiskVPart_Legacy</A>
+<H2><A NAME="SECTION0091565000000000000000">
+CFDiskIO::virtualAddPartition</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> searches a special device (e.g. /dev/hda2) and writes the virtual device and partition numbers to the variables. These values can be used to access the file system via $param["dev$vDev"."part$vPart"."_fs"]
+<SPAN  CLASS="textbf">Description:</SPAN> Creates a new (virtual) partition on a disk.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>param: the associative array containing all values describing the drives of the client
+<LI>dev: The device (e.g. /dev/sda2).
 </LI>
-<LI>dev: the device (e.g. /dev/hda2)
+<LI>start: Start position (in MB) of the partition to create.
 </LI>
-<LI>vDev: the virtual device number, that is used to build the variable name to access the associative array.
+<LI>end: End position (in MB) of the partition to create.
 </LI>
-<LI>vPart: the virtual partition number, that is used to build the variable name to access the associative array. This number has not to be qual to the partition number of the real drive (e.g. /dev/hda5 can be $vPart == 3). If it is set to "empty", only vDev is calculated.
+<LI>type: type of the partition (CFDiskIO::PT_PRIMARY, CFDiskIO::PT_EXTENDED, CFDiskIO::PT_LOGICAL, CFDiskIO::PT_EFI)
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>true if the search worked otherwise false.
+<LI>Physical partition number of the new partition.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -80,7 +80,7 @@ CFDiskIO::FDISK_dev2VDiskVPart_Legacy</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

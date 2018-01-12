@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>SERVER_checkDownload</TITLE>
-<META NAME="description" CONTENT="SERVER_checkDownload">
+<TITLE>SERVER_changeHtpasswd</TITLE>
+<META NAME="description" CONTENT="SERVER_changeHtpasswd">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node2315.html">
 <LINK REL="previous" HREF="node2313.html">
-<LINK REL="up" HREF="node2267.html">
+<LINK REL="up" HREF="node2290.html">
 <LINK REL="next" HREF="node2315.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html37110"
+<A NAME="tex2html37268"
   HREF="node2315.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html37106"
-  HREF="node2267.html">
+<A NAME="tex2html37264"
+  HREF="node2290.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html37100"
+<A NAME="tex2html37258"
   HREF="node2313.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html37108"
+<A NAME="tex2html37266"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html37111"
-  HREF="node2315.html">SERVER_checkDiskFree</A>
-<B> Up:</B> <A NAME="tex2html37107"
-  HREF="node2267.html">./inc/server.php</A>
-<B> Previous:</B> <A NAME="tex2html37101"
-  HREF="node2313.html">SERVER_getOS</A>
- &nbsp; <B>  <A NAME="tex2html37109"
+<B> Next:</B> <A NAME="tex2html37269"
+  HREF="node2315.html">SERVER_delFromHtpasswd</A>
+<B> Up:</B> <A NAME="tex2html37265"
+  HREF="node2290.html">./inc/server.php</A>
+<B> Previous:</B> <A NAME="tex2html37259"
+  HREF="node2313.html">SERVER_getPublicSSHKeyOfm23Server</A>
+ &nbsp; <B>  <A NAME="tex2html37267"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0097647000000000000000">
-SERVER_checkDownload</A>
+<H2><A NAME="SECTION0097624000000000000000">
+SERVER_changeHtpasswd</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Downloads a special file from m23.sf.net and checks if the size and md5 sum are matching.
+<SPAN  CLASS="textbf">Description:</SPAN> Changes the password of a user in a htpasswd file.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>: useProxy: Set to true if the local proxy should be used.
+<LI>: htpasswdFile: htpasswd file that contains user names and crypted passwords.
+</LI>
+<LI>: username: Name of the user to change
+</LI>
+<LI>: password: The according new password
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>: Status information if file size and md5 sum are matching.
+<LI>: True if the password was changed sucessfully.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -74,7 +78,7 @@ SERVER_checkDownload</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

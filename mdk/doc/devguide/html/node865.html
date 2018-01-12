@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>Cm23Admin::changePw</TITLE>
-<META NAME="description" CONTENT="Cm23Admin::changePw">
+<TITLE>CLIENT_isDedicatedAndReachable</TITLE>
+<META NAME="description" CONTENT="CLIENT_isDedicatedAndReachable">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node866.html">
 <LINK REL="previous" HREF="node864.html">
-<LINK REL="up" HREF="node861.html">
+<LINK REL="up" HREF="node764.html">
 <LINK REL="next" HREF="node866.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18429"
+<A NAME="tex2html18555"
   HREF="node866.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18425"
-  HREF="node861.html">
+<A NAME="tex2html18551"
+  HREF="node764.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18419"
+<A NAME="tex2html18545"
   HREF="node864.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18427"
+<A NAME="tex2html18553"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18430"
-  HREF="node866.html">Cm23Admin::setCSS</A>
-<B> Up:</B> <A NAME="tex2html18426"
-  HREF="node861.html">./inc/Cm23Admin.php</A>
-<B> Previous:</B> <A NAME="tex2html18420"
-  HREF="node864.html">Cm23Admin::delete</A>
- &nbsp; <B>  <A NAME="tex2html18428"
+<B> Next:</B> <A NAME="tex2html18556"
+  HREF="node866.html">CLIENT_generateHTMLDedicatedAndReachableStatus</A>
+<B> Up:</B> <A NAME="tex2html18552"
+  HREF="node764.html">./inc/client.php</A>
+<B> Previous:</B> <A NAME="tex2html18546"
+  HREF="node864.html">CLIENT_isAssimilated</A>
+ &nbsp; <B>  <A NAME="tex2html18554"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION009244000000000000000">
-Cm23Admin::changePw</A>
+<H2><A NAME="SECTION00922101000000000000000">
+CLIENT_isDedicatedAndReachable</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Changes the password of an m23 administrator in the password hash files for m23, backup, backuppc and phpmyldap.
+<SPAN  CLASS="textbf">Description:</SPAN> Checks, if a client is dedicated to this M23-Server and reachable.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>$oldpassword: Password entered by the user, must be correct to be able to change password
-</LI>
-<LI>$newpassword: New password chosen by the user
+<LI>clientName: name of the client
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>: True if password was changed successfully, false otherwise
+<LI>true, if the client is dedicated and pingable. false, if any of the conditions is false.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -76,7 +74,7 @@ Cm23Admin::changePw</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

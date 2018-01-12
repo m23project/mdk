@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CSystemProxy::areProxySettingsAvailable</TITLE>
-<META NAME="description" CONTENT="CSystemProxy::areProxySettingsAvailable">
+<TITLE>CSYSTEMPROXY_getEnvironmentVariables</TITLE>
+<META NAME="description" CONTENT="CSYSTEMPROXY_getEnvironmentVariables">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1060.html">
 <LINK REL="previous" HREF="node1058.html">
-<LINK REL="up" HREF="node1044.html">
+<LINK REL="up" HREF="node1055.html">
 <LINK REL="next" HREF="node1060.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html20923"
+<A NAME="tex2html21060"
   HREF="node1060.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html20919"
-  HREF="node1044.html">
+<A NAME="tex2html21056"
+  HREF="node1055.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html20913"
+<A NAME="tex2html21050"
   HREF="node1058.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html20921"
+<A NAME="tex2html21058"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html20924"
-  HREF="node1060.html">CSystemProxy::setProxyHost</A>
-<B> Up:</B> <A NAME="tex2html20920"
-  HREF="node1044.html">./inc/CSystemProxy.php</A>
-<B> Previous:</B> <A NAME="tex2html20914"
-  HREF="node1058.html">CSystemProxy::setProxyActive</A>
- &nbsp; <B>  <A NAME="tex2html20922"
+<B> Next:</B> <A NAME="tex2html21061"
+  HREF="node1060.html">CSYSTEMPROXY_getAptGetProxyParamter</A>
+<B> Up:</B> <A NAME="tex2html21057"
+  HREF="node1055.html">./inc/CSystemProxy.php</A>
+<B> Previous:</B> <A NAME="tex2html21051"
+  HREF="node1058.html">CSYSTEMPROXY_getUserPasswordString</A>
+ &nbsp; <B>  <A NAME="tex2html21059"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0093615000000000000000">
-CSystemProxy::areProxySettingsAvailable</A>
+<H2><A NAME="SECTION009364000000000000000">
+CSYSTEMPROXY_getEnvironmentVariables</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Checks, if proxy settings are available.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Generates BASH proxy variables.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>true, if proxy settings are available, otherwise false.
+<LI>getAlways: If set to true, the variables will always be returned.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>BASH proxy variables.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -68,7 +74,7 @@ CSystemProxy::areProxySettingsAvailable</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

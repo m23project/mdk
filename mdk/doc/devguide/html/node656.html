@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CFDiskIO::fdiskGetFstabArray</TITLE>
-<META NAME="description" CONTENT="CFDiskIO::fdiskGetFstabArray">
+<TITLE>CFDiskIO::genManualFstab</TITLE>
+<META NAME="description" CONTENT="CFDiskIO::genManualFstab">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node657.html">
 <LINK REL="previous" HREF="node655.html">
-<LINK REL="up" HREF="node542.html">
+<LINK REL="up" HREF="node543.html">
 <LINK REL="next" HREF="node657.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15734"
+<A NAME="tex2html15865"
   HREF="node657.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15730"
-  HREF="node542.html">
+<A NAME="tex2html15861"
+  HREF="node543.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15724"
+<A NAME="tex2html15855"
   HREF="node655.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15732"
+<A NAME="tex2html15863"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15735"
-  HREF="node657.html">CFDiskIO::getPartitionStepsArray</A>
-<B> Up:</B> <A NAME="tex2html15731"
-  HREF="node542.html">./inc/CFDiskIO.php</A>
-<B> Previous:</B> <A NAME="tex2html15725"
-  HREF="node655.html">CFDiskIO::FDISK_genManualFstab</A>
- &nbsp; <B>  <A NAME="tex2html15733"
+<B> Next:</B> <A NAME="tex2html15866"
+  HREF="node657.html">CFDiskIO::FDISK_getOldStyleFstabArrayForHalfSister</A>
+<B> Up:</B> <A NAME="tex2html15862"
+  HREF="node543.html">./inc/CFDiskIO.php</A>
+<B> Previous:</B> <A NAME="tex2html15856"
+  HREF="node655.html">CFDiskIO::adjustFstabParam</A>
+ &nbsp; <B>  <A NAME="tex2html15864"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION00915114000000000000000">
-CFDiskIO::fdiskGetFstabArray</A>
+<H2><A NAME="SECTION00915113000000000000000">
+CFDiskIO::genManualFstab</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Gets the fstab of a client as array.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Generates commands to edit a given fstab, add new entries and remove old ones before.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>Array with the fstab (each line of the fstab as item).
+<LI>mntPrefix: Prefix to set before the mountpoint (e.g. /mnt/m23root/)
+</LI>
+<LI>sourceName: Name of the client's sources list.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>true, if fstab data in new format is used on the client, otherwise false.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -68,7 +76,7 @@ CFDiskIO::fdiskGetFstabArray</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

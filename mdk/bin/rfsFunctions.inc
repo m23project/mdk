@@ -88,7 +88,7 @@ createRFScopyLib()
 
 	if [ -z $libsrc ]
 	then
-		if [ `echo -n $lib | egrep -v ^not$ | grep -v linux-gate | grep -v linux-vdso | grep -v '\t'` ] && [ $neededBy ]
+		if [ `echo -n $lib  | grep -v 'required by' | egrep -v ^not$ | grep -v linux-gate | grep -v linux-vdso | grep -v '\t'` ] && [ $neededBy ]
 		then
 			echo "Error: Library $lib needed by \"$neededBy\" not found!"
 			echo "lib: $lib fnamelib: $fnamelib libsrc: $libsrc extractedDebsDir: $extractedDebsDir"
@@ -243,7 +243,7 @@ createRFSBins()
 			fi
 
 			#simple ldd for same architecture as the host
-			for lib in `ldd bin/$bin 2> /dev/null | cut -d " " -f1 | tr -d [:blank:] | grep -v '(0x'`
+			for lib in `ldd bin/$bin 2> /dev/null | grep -v 'required by' | cut -d " " -f1 | tr -d [:blank:] | grep -v '(0x'`
 			do
 				echo "LIB: $lib"
 				createRFScopyLib $lib $bin
@@ -260,11 +260,12 @@ createRFSBins()
 
 			# Get the needed libs by objdump and ldd
 			$objdump -x bin/$bin | grep NEEDED | tr -s [:blank:] | cut -d' ' -f3 | grep -v '(0x' > /tmp/mdk-createRFSLibs.txt
-			ldd bin/$bin 2> /dev/null | cut -d " " -f1 | tr -d [:blank:] | grep -v '(0x' >> /tmp/mdk-createRFSLibs.txt
+			ldd bin/$bin 2> /dev/null | grep -v 'required by' | cut -d " " -f1 | tr -d [:blank:] | grep -v '(0x' >> /tmp/mdk-createRFSLibs.txt
 
 			#special method for amd64
 			for lib in `sort -u /tmp/mdk-createRFSLibs.txt`
 			do
+				echo ">>>createRFScopyLib $lib $bin"
 				createRFScopyLib $lib $bin
 			done
 		fi
@@ -307,14 +308,17 @@ createRFSBins()
 	createRFScopyLib libx86emu.so.1				# for hwinfo
 # 	createRFScopyLib libpcre.so.3
 # 	createRFScopyLib libisccfg-export.so.90
-# 	createRFScopyLib libtasn1.so.6
-# 	createRFScopyLib libhogweed.so.2
 	createRFScopyLib libicuuc.so.52				# wget i386
+	createRFScopyLib libtasn1.so.6				# wget amd64 Debian 9
+	createRFScopyLib libhogweed.so.4			# wget amd64 Debian 9
+	createRFScopyLib libidn2.so.0				# wget amd64 Debian 9
+	createRFScopyLib libunistring.so.0			# wget amd64 Debian 9
+	createRFScopyLib libffi.so.6				# wget amd64 Debian 9
 
 	# Store all libraries used for the bootimage, if it's the same as the CPU architecture of the m23 server
 	if [ `getBuildArch` == `uname -m` ]
 	then
-		sort -u /tmp/mdk-createRFSAllLibs.txt > /mdk/client+server/allLibs.txt
+		sort -u /tmp/mdk-createRFSAllLibs.txt | grep -v ':' > /mdk/client+server/allLibs.txt
 	else
 		if [ -f /mdk/client+server/allLibs.txt ]
 		then
@@ -585,6 +589,9 @@ createRFSISO()
 	then
 	# BIOS + EFI for 64 bit systems
 		mkisofs -p "The m23 team [http://m23.sf.net]" -A "MDK [m23 development kit]" -T -J -joliet-long -R -V $bootCDPrefix -o $bootCDPrefix-$arch$extraName.iso -b isolinux/isolinux.bin -c isolinux/boot.cat --no-emul-boot -boot-load-size 4 -boot-info-table --eltorito-alt-boot boot/grub/efi.img .
+
+		#xorriso -as mkisofs -isohybrid-mbr /usr/lib/syslinux/mbr/isohdpfx.bin -c isolinux/boot.cat -b isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat -o $bootCDPrefix-$arch$extraName.iso .
+		
 	else
 		# BIOS only for 32 bit systems
 		mkisofs -p "The m23 team [http://m23.sf.net]" -A "MDK [m23 development kit]" -T -J -joliet-long -R -V $bootCDPrefix -m boot -m efi -m .disk -o $bootCDPrefix-$arch$extraName.iso -b isolinux/isolinux.bin -c isolinux/boot.cat --no-emul-boot -boot-load-size 4 -boot-info-table .
@@ -650,7 +657,9 @@ echo " done"
 mkdir -p $rootTempDir
 cd $rootTempDir
 
-echo "deb http://ftp.de.debian.org/debian/ jessie main non-free contrib
+echo "deb http://ftp.de.debian.org/debian/ stretch main non-free contrib
+deb http://security.debian.org/ stretch/updates main contrib non-free
+deb http://ftp.de.debian.org/debian/ jessie main non-free contrib
 deb http://security.debian.org/ jessie/updates main contrib non-free
 deb http://ftp.de.debian.org/debian/ wheezy main non-free contrib
 deb http://security.debian.org/ wheezy/updates main contrib non-free
@@ -658,7 +667,9 @@ deb http://dodger-tools.sourceforge.net/debs ./"> ./sources.list
 
 localArchAptUpdate
 
-localArchAptDownload lvm2 binutils bzip2 grub busybox cryptsetup isc-dhcp-client dialog dmidecode dmraid dropbear e2fsprogs findutils mdadm hdparm sysvinit mbr mount pciutils makedev util-linux dosfstools reiserfsprogs lilo mtools nano coreutils partimage scanlogd snarf tar wget libblkid1 libc6 libbz2-1.0 libuuid1 libselinux1 libsepol1 libpopt0 libpci3 libdebian-installer4 e2fslibs libgcc1 libncurses5 libgcc1 makedev testdisk iputils-ping dmtools parted p7zip discover lsb-base ncurses-bin discover-data hwinfo libdbus-1-3 rsync ntfs-3g ntfsprogs bash mktemp gptsync initscripts gawk module-init-tools dmsetup libudev0 openssh-client firmware-linux-nonfree kmod partclone xfsprogs jfsutils gdisk
+localArchAptDownload lvm2 binutils bzip2 grub busybox cryptsetup isc-dhcp-client dialog dmidecode dmraid dropbear e2fsprogs findutils mdadm hdparm sysvinit mbr mount pciutils makedev util-linux dosfstools reiserfsprogs lilo mtools nano coreutils partimage scanlogd snarf tar wget libblkid1 libc6 libbz2-1.0 libuuid1 libselinux1 libsepol1 libpopt0 libpci3 libdebian-installer4 e2fslibs libgcc1 libncurses5 libgcc1 makedev testdisk iputils-ping dmtools parted p7zip discover lsb-base ncurses-bin discover-data hwinfo libdbus-1-3 rsync ntfs-3g ntfsprogs bash mktemp gptsync initscripts gawk dmsetup libudev0 openssh-client firmware-linux-nonfree kmod partclone xfsprogs jfsutils gdisk
+
+# module-init-tools
 
 # libpcre3 libisccfg-export90 libtasn1-6 libhogweed2
 

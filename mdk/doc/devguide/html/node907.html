@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CObjectStorage::getObject</TITLE>
-<META NAME="description" CONTENT="CObjectStorage::getObject">
+<TITLE>CObjectStorageManager::getObjectMethodReturnValue</TITLE>
+<META NAME="description" CONTENT="CObjectStorageManager::getObjectMethodReturnValue">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node908.html">
 <LINK REL="previous" HREF="node906.html">
-<LINK REL="up" HREF="node903.html">
+<LINK REL="up" HREF="node900.html">
 <LINK REL="next" HREF="node908.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18960"
+<A NAME="tex2html19094"
   HREF="node908.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18956"
-  HREF="node903.html">
+<A NAME="tex2html19090"
+  HREF="node900.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18950"
+<A NAME="tex2html19084"
   HREF="node906.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18958"
+<A NAME="tex2html19092"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18961"
-  HREF="node908.html">CObjectStorage::destroy</A>
-<B> Up:</B> <A NAME="tex2html18957"
-  HREF="node903.html">./inc/CObjectStorage.php</A>
-<B> Previous:</B> <A NAME="tex2html18951"
-  HREF="node906.html">CObjectStorage::__destruct</A>
- &nbsp; <B>  <A NAME="tex2html18959"
+<B> Next:</B> <A NAME="tex2html19095"
+  HREF="node908.html">CObjectStorageManager::getCOSStatus</A>
+<B> Up:</B> <A NAME="tex2html19091"
+  HREF="node900.html">./inc/CObjectStorageManager.php</A>
+<B> Previous:</B> <A NAME="tex2html19085"
+  HREF="node906.html">CObjectStorageManager::deleteObject</A>
+ &nbsp; <B>  <A NAME="tex2html19093"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION009274000000000000000">
-CObjectStorage::getObject</A>
+<H2><A NAME="SECTION009267000000000000000">
+CObjectStorageManager::getObjectMethodReturnValue</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Gets the object.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Checks, if an objects implements a method, calls it and returns the return value. If the method is unimplemented, an error value will be returned.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>object.
+<LI>object: Object to use.
+</LI>
+<LI>fkt: Name of the function (method)
+</LI>
+<LI>error: Error value to return, if the method is unimplemented.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>Return value of the implemented method or given error value if unimplemented.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -68,7 +78,7 @@ CObjectStorage::getObject</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

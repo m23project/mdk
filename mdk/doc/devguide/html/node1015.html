@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CRON_getDayOfWeekArray</TITLE>
-<META NAME="description" CONTENT="CRON_getDayOfWeekArray">
+<TITLE>CPool::downloadPackagesAndCreatePool</TITLE>
+<META NAME="description" CONTENT="CPool::downloadPackagesAndCreatePool">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,48 +19,47 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
-<LINK REL="next" HREF="node1016.html">
 <LINK REL="previous" HREF="node1014.html">
-<LINK REL="up" HREF="node1005.html">
+<LINK REL="up" HREF="node969.html">
 <LINK REL="next" HREF="node1016.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html20352"
+<A NAME="tex2html20471"
   HREF="node1016.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html20348"
-  HREF="node1005.html">
+<A NAME="tex2html20467"
+  HREF="node969.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html20342"
+<A NAME="tex2html20463"
   HREF="node1014.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html20350"
+<A NAME="tex2html20469"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html20353"
-  HREF="node1016.html">CRON_checkMinute</A>
-<B> Up:</B> <A NAME="tex2html20349"
-  HREF="node1005.html">./inc/cron.php</A>
-<B> Previous:</B> <A NAME="tex2html20343"
-  HREF="node1014.html">CRON_getTimeBaseArray</A>
- &nbsp; <B>  <A NAME="tex2html20351"
+<B> Next:</B> <A NAME="tex2html20472"
+  HREF="node1016.html">./inc/cron.php</A>
+<B> Up:</B> <A NAME="tex2html20468"
+  HREF="node969.html">./inc/CPool.php</A>
+<B> Previous:</B> <A NAME="tex2html20464"
+  HREF="node1014.html">CPool::getPoolStatusFileContents</A>
+ &nbsp; <B>  <A NAME="tex2html20470"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0093410000000000000000">
-CRON_getDayOfWeekArray</A>
+<H2><A NAME="SECTION0093346000000000000000">
+CPool::downloadPackagesAndCreatePool</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Returns an associative array that contains the week day names for cron.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Downloads packages and creates a pool from them in one combined screen session.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>Associative array with the week day names for cron with three letter cron name as key and language specific human readable week day as value.
+<LI>clientName: Name of the client (only needed when downloadDebsFromClient is used)
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -68,7 +67,7 @@ CRON_getDayOfWeekArray</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

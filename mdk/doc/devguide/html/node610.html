@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CFDiskIO::isFreeSpaceBetween</TITLE>
-<META NAME="description" CONTENT="CFDiskIO::isFreeSpaceBetween">
+<TITLE>CFDiskIO::getBelongingRaidDev</TITLE>
+<META NAME="description" CONTENT="CFDiskIO::getBelongingRaidDev">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,60 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node611.html">
 <LINK REL="previous" HREF="node609.html">
-<LINK REL="up" HREF="node542.html">
+<LINK REL="up" HREF="node543.html">
 <LINK REL="next" HREF="node611.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15182"
+<A NAME="tex2html15313"
   HREF="node611.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15178"
-  HREF="node542.html">
+<A NAME="tex2html15309"
+  HREF="node543.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15172"
+<A NAME="tex2html15303"
   HREF="node609.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15180"
+<A NAME="tex2html15311"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15183"
-  HREF="node611.html">CFDiskIO::getPossiblePartitionTypesBetween</A>
-<B> Up:</B> <A NAME="tex2html15179"
-  HREF="node542.html">./inc/CFDiskIO.php</A>
-<B> Previous:</B> <A NAME="tex2html15173"
-  HREF="node609.html">CFDiskIO::collidesWithPartitionOfType</A>
- &nbsp; <B>  <A NAME="tex2html15181"
+<B> Next:</B> <A NAME="tex2html15314"
+  HREF="node611.html">CFDiskIO::FDISK_dev2VDiskVPart_Legacy</A>
+<B> Up:</B> <A NAME="tex2html15310"
+  HREF="node543.html">./inc/CFDiskIO.php</A>
+<B> Previous:</B> <A NAME="tex2html15304"
+  HREF="node609.html">CFDiskIO::virtualAddDisk</A>
+ &nbsp; <B>  <A NAME="tex2html15312"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0091568000000000000000">
-CFDiskIO::isFreeSpaceBetween</A>
+<H2><A NAME="SECTION0091567000000000000000">
+CFDiskIO::getBelongingRaidDev</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Checks if there is a free space between $start and $end and the type of partition could be created there.
+<SPAN  CLASS="textbf">Description:</SPAN> Searches for the RAID device, a physical partition belongs to, if it is part of a RAID.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>vDisk: Virtual (internally used) device number.
-</LI>
-<LI>type: type of the partition (primary, extended, logical, efipart)
-</LI>
-<LI>start: start position for the search
-</LI>
-<LI>end: end position for the search
-</LI>
-<LI>addErrorMsg: Set to true, if the error messages should be added.
+<LI>dev: The physical partition (e.g. /dev/hda4) that belongs to a RAID.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>true, if the there is free space, otherwise false.
+<LI>The RAID device (e.g. /dev/md0) the physical partition belongs to or false, if no belonging RAID was found.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -82,7 +74,7 @@ CFDiskIO::isFreeSpaceBetween</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

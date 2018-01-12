@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CLCFG_getRootDeviceFS</TITLE>
-<META NAME="description" CONTENT="CLCFG_getRootDeviceFS">
+<TITLE>CLCFG_importLocalPoolKey</TITLE>
+<META NAME="description" CONTENT="CLCFG_importLocalPoolKey">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1198.html">
 <LINK REL="previous" HREF="node1196.html">
-<LINK REL="up" HREF="node1131.html">
+<LINK REL="up" HREF="node1146.html">
 <LINK REL="next" HREF="node1198.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html22705"
+<A NAME="tex2html22847"
   HREF="node1198.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html22701"
-  HREF="node1131.html">
+<A NAME="tex2html22843"
+  HREF="node1146.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html22695"
+<A NAME="tex2html22837"
   HREF="node1196.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html22703"
+<A NAME="tex2html22845"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html22706"
-  HREF="node1198.html">CLCFG_genFakeFstab</A>
-<B> Up:</B> <A NAME="tex2html22702"
-  HREF="node1131.html">./inc/distr/debian/clientConfigCommon.php</A>
-<B> Previous:</B> <A NAME="tex2html22696"
-  HREF="node1196.html">CLCFG_hideKernelWarnings</A>
- &nbsp; <B>  <A NAME="tex2html22704"
+<B> Next:</B> <A NAME="tex2html22848"
+  HREF="node1198.html">CLCFG_installBasePackages</A>
+<B> Up:</B> <A NAME="tex2html22844"
+  HREF="node1146.html">./inc/distr/debian/clientConfigCommon.php</A>
+<B> Previous:</B> <A NAME="tex2html22838"
+  HREF="node1196.html">CLCFG_aptGet</A>
+ &nbsp; <B>  <A NAME="tex2html22846"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0093966000000000000000">
-CLCFG_getRootDeviceFS</A>
+<H2><A NAME="SECTION0093951000000000000000">
+CLCFG_importLocalPoolKey</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Gets the filesystem of the root device.
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Generates BASH code to import the local package pool key (if it exists) on the client's APT system.
+<BR><SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>rootDevice: the device, the kernel should be installed on
-</LI>
-<LI>clientName: the name of the client
-</LI>
-</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Returns:</SPAN>
-</SMALL></SMALL>
-<UL>
-<LI>Filesystem of the root device.
+<LI>BASH code to import the local package pool key or empty string, if there is no package pool sign key.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -76,7 +68,7 @@ CLCFG_getRootDeviceFS</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

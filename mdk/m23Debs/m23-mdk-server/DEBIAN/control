@@ -1,9 +1,9 @@
 Package: m23-mdk-server
-Version: 17.2-101013
+Version: 18.1-101083
 Section: base
 Priority: optional
 Architecture: all
-Installed-Size: 1288
+Installed-Size: 1284
 Pre-Depends: debconf
 Replaces: m23-mdk-bootcd
 Conflicts: m23-mdk-bootcd

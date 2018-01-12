@@ -1,0 +1,43 @@
+#!/bin/bash
+
+ret=1
+
+# Try to get a valid IP of an m23 server
+while [ $ret -ne 0 ]
+do
+	echo -n "Enter m23 server IP:"
+	read ip
+
+	# Check, if the (possible) m23 server is online
+	ping -t10 -c2 $ip &> /dev/null
+	ret=$?
+	if [ $ret -eq 0 ]
+	then
+		wget $ip/debugScreen.php -O /dev/null -qq
+		# Check, if it's an m23 server
+		if [ $? -eq 0 ]
+		then
+			ret=0
+
+			# Enter ID (or not) and build GET parameter
+			echo -n "Enter m23 client ID (or press return to continue without ID):"
+			read id
+			if [ $id ]
+			then
+				urlAdd="?m23clientID=$id"
+			else
+				urlAdd=''
+			fi
+
+			# Get the current job
+			wget $ip/work.php$urlAdd -O /tmp/work.php
+		else
+			echo "ERROR: work.php could not be fetched from the m23 server!"
+			ret=1
+		fi
+	else
+		echo "ERROR: m23 server not pingable!"
+	fi
+done
+
+sh /tmp/work.php

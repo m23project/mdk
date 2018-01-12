@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CFDiskIO::getPossiblePartitionTypesBetween</TITLE>
-<META NAME="description" CONTENT="CFDiskIO::getPossiblePartitionTypesBetween">
+<TITLE>CFDiskIO::FDISK_dev2VDiskVPart_Legacy</TITLE>
+<META NAME="description" CONTENT="CFDiskIO::FDISK_dev2VDiskVPart_Legacy">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node612.html">
 <LINK REL="previous" HREF="node610.html">
-<LINK REL="up" HREF="node542.html">
+<LINK REL="up" HREF="node543.html">
 <LINK REL="next" HREF="node612.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15194"
+<A NAME="tex2html15325"
   HREF="node612.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15190"
-  HREF="node542.html">
+<A NAME="tex2html15321"
+  HREF="node543.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15184"
+<A NAME="tex2html15315"
   HREF="node610.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15192"
+<A NAME="tex2html15323"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15195"
-  HREF="node612.html">CFDiskIO::isNewPartitionOfTypeCreatable</A>
-<B> Up:</B> <A NAME="tex2html15191"
-  HREF="node542.html">./inc/CFDiskIO.php</A>
-<B> Previous:</B> <A NAME="tex2html15185"
-  HREF="node610.html">CFDiskIO::isFreeSpaceBetween</A>
- &nbsp; <B>  <A NAME="tex2html15193"
+<B> Next:</B> <A NAME="tex2html15326"
+  HREF="node612.html">CFDiskIO::collidesWithPartitionOfType</A>
+<B> Up:</B> <A NAME="tex2html15322"
+  HREF="node543.html">./inc/CFDiskIO.php</A>
+<B> Previous:</B> <A NAME="tex2html15316"
+  HREF="node610.html">CFDiskIO::getBelongingRaidDev</A>
+ &nbsp; <B>  <A NAME="tex2html15324"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0091569000000000000000">
-CFDiskIO::getPossiblePartitionTypesBetween</A>
+<H2><A NAME="SECTION0091568000000000000000">
+CFDiskIO::FDISK_dev2VDiskVPart_Legacy</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Get a list of partition types that can be created in a range on a disk.
+<SPAN  CLASS="textbf">Description:</SPAN> searches a special device (e.g. /dev/hda2) and writes the virtual device and partition numbers to the variables. These values can be used to access the file system via $param["dev$vDev"."part$vPart"."_fs"]
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>vDisk: Internal disk number (for accessing the disk information in the array).
+<LI>param: the associative array containing all values describing the drives of the client
 </LI>
-<LI>start: Start position (in MB) of the partition to create.
+<LI>dev: the device (e.g. /dev/hda2)
 </LI>
-<LI>end: End position (in MB) of the partition to create.
+<LI>vDev: the virtual device number, that is used to build the variable name to access the associative array.
+</LI>
+<LI>vPart: the virtual partition number, that is used to build the variable name to access the associative array. This number has not to be qual to the partition number of the real drive (e.g. /dev/hda5 can be $vPart == 3). If it is set to "empty", only vDev is calculated.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>List of partition types that can be created in a range on a disk.
+<LI>true if the search worked otherwise false.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -78,7 +80,7 @@ CFDiskIO::getPossiblePartitionTypesBetween</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

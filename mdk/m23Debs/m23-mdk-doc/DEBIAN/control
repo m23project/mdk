@@ -1,9 +1,9 @@
 Package: m23-mdk-doc
-Version: 17.2-101006
+Version: 18.1-101083
 Section: base
 Priority: optional
 Architecture: all
-Installed-Size: 30036
+Installed-Size: 30428
 Pre-Depends: debconf
 Depends: bash, dialog
 Suggests: m23-mdk-screenshots, texlive-lang-french, texlive

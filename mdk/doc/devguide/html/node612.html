@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CFDiskIO::isNewPartitionOfTypeCreatable</TITLE>
-<META NAME="description" CONTENT="CFDiskIO::isNewPartitionOfTypeCreatable">
+<TITLE>CFDiskIO::collidesWithPartitionOfType</TITLE>
+<META NAME="description" CONTENT="CFDiskIO::collidesWithPartitionOfType">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node613.html">
 <LINK REL="previous" HREF="node611.html">
-<LINK REL="up" HREF="node542.html">
+<LINK REL="up" HREF="node543.html">
 <LINK REL="next" HREF="node613.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15206"
+<A NAME="tex2html15337"
   HREF="node613.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15202"
-  HREF="node542.html">
+<A NAME="tex2html15333"
+  HREF="node543.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15196"
+<A NAME="tex2html15327"
   HREF="node611.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15204"
+<A NAME="tex2html15335"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15207"
-  HREF="node613.html">CFDiskIO::getCreatablePartitionTypes</A>
-<B> Up:</B> <A NAME="tex2html15203"
-  HREF="node542.html">./inc/CFDiskIO.php</A>
-<B> Previous:</B> <A NAME="tex2html15197"
-  HREF="node611.html">CFDiskIO::getPossiblePartitionTypesBetween</A>
- &nbsp; <B>  <A NAME="tex2html15205"
+<B> Next:</B> <A NAME="tex2html15338"
+  HREF="node613.html">CFDiskIO::isFreeSpaceBetween</A>
+<B> Up:</B> <A NAME="tex2html15334"
+  HREF="node543.html">./inc/CFDiskIO.php</A>
+<B> Previous:</B> <A NAME="tex2html15328"
+  HREF="node611.html">CFDiskIO::FDISK_dev2VDiskVPart_Legacy</A>
+ &nbsp; <B>  <A NAME="tex2html15336"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0091570000000000000000">
-CFDiskIO::isNewPartitionOfTypeCreatable</A>
+<H2><A NAME="SECTION0091569000000000000000">
+CFDiskIO::collidesWithPartitionOfType</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Checks if a new partition from a certain type can be created.
+<SPAN  CLASS="textbf">Description:</SPAN> Checks if a partition (to be created) defined by start and end position would collide with existing partitions of given type.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>vDisk: Internal disk number (for accessing the disk information in the array).
+<LI>vDisk: Virtual (internally used) device number.
 </LI>
-<LI>type: type of the partition (CFDiskIO::PT_PRIMARY, CFDiskIO::PT_EXTENDED, CFDiskIO::PT_LOGICAL)
+<LI>type: type of the partition (primary, extended, logical, efipart, or -1 to match all partition types)
 </LI>
-<LI>addErrorMsg: Set to true, if the error messages should be added.
+<LI>start: start position for the partition (to be created)
+</LI>
+<LI>end: end position for the  partition (to be created)
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>true, if a new partition can be created, otherwise false.
+<LI>true, if the partition to create would collide, otherwise false.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -78,7 +80,7 @@ CFDiskIO::isNewPartitionOfTypeCreatable</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

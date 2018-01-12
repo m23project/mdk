@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CFDiskTest::addLineToReplay</TITLE>
-<META NAME="description" CONTENT="CFDiskTest::addLineToReplay">
+<TITLE>CFDiskIO::getNVMeMknodCommand</TITLE>
+<META NAME="description" CONTENT="CFDiskIO::getNVMeMknodCommand">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node665.html">
 <LINK REL="previous" HREF="node663.html">
-<LINK REL="up" HREF="node661.html">
+<LINK REL="up" HREF="node543.html">
 <LINK REL="next" HREF="node665.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15865"
+<A NAME="tex2html15961"
   HREF="node665.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15861"
-  HREF="node661.html">
+<A NAME="tex2html15957"
+  HREF="node543.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15855"
+<A NAME="tex2html15951"
   HREF="node663.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15863"
+<A NAME="tex2html15959"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15866"
-  HREF="node665.html">CFDiskTest::rand</A>
-<B> Up:</B> <A NAME="tex2html15862"
-  HREF="node661.html">./inc/CFDiskTest.php</A>
-<B> Previous:</B> <A NAME="tex2html15856"
-  HREF="node663.html">CFDiskTest::nextTurn</A>
- &nbsp; <B>  <A NAME="tex2html15864"
+<B> Next:</B> <A NAME="tex2html15962"
+  HREF="node665.html">CFDiskIO::getMknodCommand</A>
+<B> Up:</B> <A NAME="tex2html15958"
+  HREF="node543.html">./inc/CFDiskIO.php</A>
+<B> Previous:</B> <A NAME="tex2html15952"
+  HREF="node663.html">CFDiskIO::changeToEfiPartitionTypeIfInUefiMode</A>
+ &nbsp; <B>  <A NAME="tex2html15960"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION009163000000000000000">
-CFDiskTest::addLineToReplay</A>
+<H2><A NAME="SECTION00915121000000000000000">
+CFDiskIO::getNVMeMknodCommand</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Adds a line to the run log file.
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Generates the mknod commands for creating the NVMe devices.
+<BR><SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>line: The line to add.
-</LI>
-</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Returns:</SPAN>
-</SMALL></SMALL>
-<UL>
-<LI>true on sucessfully writing the line, otherwise false.
+<LI>mknod commands for creating the NVMe devices.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -74,7 +68,7 @@ CFDiskTest::addLineToReplay</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_OptionPageRender2</TITLE>
-<META NAME="description" CONTENT="PKG_OptionPageRender2">
+<TITLE>PKG_addHSUser</TITLE>
+<META NAME="description" CONTENT="PKG_addHSUser">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node2096.html">
 <LINK REL="previous" HREF="node2094.html">
-<LINK REL="up" HREF="node2073.html">
+<LINK REL="up" HREF="node2094.html">
 <LINK REL="next" HREF="node2096.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html34369"
+<A NAME="tex2html34518"
   HREF="node2096.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html34365"
-  HREF="node2073.html">
+<A NAME="tex2html34514"
+  HREF="node2094.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html34359"
+<A NAME="tex2html34508"
   HREF="node2094.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html34367"
+<A NAME="tex2html34516"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html34370"
-  HREF="node2096.html">PKG_countSpecialPackages</A>
-<B> Up:</B> <A NAME="tex2html34366"
-  HREF="node2073.html">./inc/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html34360"
-  HREF="node2094.html">PKG_decodeDebconfDescription</A>
- &nbsp; <B>  <A NAME="tex2html34368"
+<B> Next:</B> <A NAME="tex2html34519"
+  HREF="node2096.html">PKG_addUbuntuUser</A>
+<B> Up:</B> <A NAME="tex2html34515"
+  HREF="node2094.html">./inc/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html34509"
+  HREF="node2094.html">./inc/packages.php</A>
+ &nbsp; <B>  <A NAME="tex2html34517"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0096822000000000000000">
-PKG_OptionPageRender2</A>
+<H2><A NAME="SECTION009681000000000000000">
+PKG_addHSUser</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Renderes the layout of an OptionPage for debconf and stored the debconf settings into the DB.
+<SPAN  CLASS="textbf">Description:</SPAN> Adds a job for creating an user on a halfSister client.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>layout: The elements (variable name, type (string, boolean, (multi)select), default value, description) of the debconf templates.
+<LI>client: Name of the client.
 </LI>
-<LI>client: The name of the client, the debconf settings should be stored for.
+<LI>login: Login name of the new user.
 </LI>
-<LI>package: Name of the package, the debconf settings should be stored for.
+<LI>firstpw: Password for the new user.
+</LI>
+<LI>uid: Optional user ID of the new user.
+</LI>
+<LI>gid: Optional group ID of the new user.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -72,7 +76,7 @@ PKG_OptionPageRender2</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

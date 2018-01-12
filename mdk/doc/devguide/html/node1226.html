@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_fastGetInstalledPackages</TITLE>
-<META NAME="description" CONTENT="PKG_fastGetInstalledPackages">
+<TITLE>CLCFG_listDebianReleasesGeneric</TITLE>
+<META NAME="description" CONTENT="CLCFG_listDebianReleasesGeneric">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1227.html">
 <LINK REL="previous" HREF="node1225.html">
-<LINK REL="up" HREF="node1216.html">
+<LINK REL="up" HREF="node1224.html">
 <LINK REL="next" HREF="node1227.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html23082"
+<A NAME="tex2html23200"
   HREF="node1227.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html23078"
-  HREF="node1216.html">
+<A NAME="tex2html23196"
+  HREF="node1224.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html23072"
+<A NAME="tex2html23190"
   HREF="node1225.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html23080"
+<A NAME="tex2html23198"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html23083"
-  HREF="node1227.html">PKG_fastGetNewInstalledPackages</A>
-<B> Up:</B> <A NAME="tex2html23079"
-  HREF="node1216.html">./inc/distr/debian/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html23073"
-  HREF="node1225.html">PKG_convertPackagesToRepository</A>
- &nbsp; <B>  <A NAME="tex2html23081"
+<B> Next:</B> <A NAME="tex2html23201"
+  HREF="node1227.html">CLCFG_listDebianReleasesGeneric</A>
+<B> Up:</B> <A NAME="tex2html23197"
+  HREF="node1224.html">./inc/distr/debian/clientConfig.php</A>
+<B> Previous:</B> <A NAME="tex2html23191"
+  HREF="node1225.html">DEBIAN_desktopInstall</A>
+ &nbsp; <B>  <A NAME="tex2html23199"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0094110000000000000000">
-PKG_fastGetInstalledPackages</A>
+<H2><A NAME="SECTION009402000000000000000">
+CLCFG_listDebianReleasesGeneric</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Gets a list of all installed packages (faster than dpkg -get-selections).
+<SPAN  CLASS="textbf">Description:</SPAN> Generates an array of the different releases (e.g. sarge, sid, woody, potato) of a distribution.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>storeFile: File name to store the list of installed on the client or empty if the list should be outputted to stdout.
+<LI>selName: the name of the selection
+</LI>
+<LI>first: the release to show first
+</LI>
+<LI>distr: distribution directory
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>: Array with release names.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -68,7 +78,7 @@ PKG_fastGetInstalledPackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

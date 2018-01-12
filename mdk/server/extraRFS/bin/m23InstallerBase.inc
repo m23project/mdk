@@ -131,6 +131,10 @@ echo "resolv.conf erstellen"
 	echo "nameserver $nameserver" > /etc/resolv.conf
 done
 
+# Set network setting temporarily
+ifconfig eth0 $ip
+route add -net default gw $gateway
+
 /etc/init.d/networking start 2> /dev/null
 /etc/init.d/networking restart 2> /dev/null
 ifconfig lo up
@@ -169,43 +173,23 @@ configureMySQLmycnf()
 	sed -i 's/skip-innodb/#skip-innodb/g' /etc/mysql/my.cnf
 
 	#starting the server
-	/etc/init.d/mysql stop
 	/etc/init.d/mysql start
-	
-# 	echo "DEBUG"
-# 	read lala
-
 
 	#Get username and password for the MySQL database
-	dbadmin=`grep "^user" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
-	dbadmpass=`grep "^password" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
+	#dbadmin=`grep "^user" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
+	#dbadmpass=`grep "^password" /etc/mysql/debian.cnf | tr -d '[:blank:]' | cut -d'=' -f2 | head -1`
 
 	#Delete all contents of the tables in the m23 database
-	mysqlshow -u$dbadmin -p$dbadmpass m23 | grep -v Tables | grep -v "Database:" | cut -d' ' -f2 | grep -v "+--" | while read table
+	#-u$dbadmin -p$dbadmpass
+	
+	mysqlshow -uroot m23 | grep -v Tables | grep -v "Database:" | cut -d' ' -f2 | grep -v "+--" | while read table
 	do
-		mysql -u$dbadmin -p$dbadmpass m23 -e "TRUNCATE $table;"
+		mysql -uroot m23 -e "TRUNCATE $table;"
 	done
 
 # echo "DEBUG"
-# mysqlshow -u$dbadmin -p$dbadmpass m23
-# read lala
-
-# 	echo "TRUNCATE clientgroups;
-# 	TRUNCATE clientjobs;
-# 	TRUNCATE clientlogs;
-# 	TRUNCATE clientpackages;
-# 	TRUNCATE clientpreferences;
-# 	TRUNCATE clients;
-# 	TRUNCATE ftpusers;
-# 	TRUNCATE groupIDs;
-# 	TRUNCATE groups;
-# 	TRUNCATE m23update;
-# 	TRUNCATE packages;
-# 	TRUNCATE plugins;
-# 	TRUNCATE recommendpackages;
-# 	TRUNCATE remotevar;
-# 	TRUNCATE sourceslist;
-# 	TRUNCATE userIDs;" | mysql -u $dbadmin -p$dbadmpass m23
+# mysqlshow -uroot m23
+# exit
 }
 
 
@@ -871,13 +855,16 @@ installGrub()
 
 	if test `cat /tmp/dialog.value` = "y"
 	then
+		# Remove resume file that may contain the UUID of the swap partition for suspend/hibernation
+		rm /etc/initramfs-tools/conf.d/resume 2> /dev/null
+
 		checkFstabAndMount
 
 		bootDevice="/dev/$installdrive"
 		rootDevice="/dev/$rootdev"
 
 		createInitrd
-		
+
 		if /usr/sbin/grub-install $bootDevice
 		then
 			echo "grub ok"
@@ -1015,7 +1002,7 @@ installDebs()
 # read lala
 
 	#Make sure GPG will be configured and there are no keys stored
-	rm /home/grdmgpg/.gnupg/secring.gpg /home/grdmgpg/.gnupg/pubring.gpg
+	rm /home/grdmgpg/.gnupg/*
 
 # echo "DEBUG"
 	dpkg-reconfigure m23
@@ -1117,23 +1104,44 @@ setISOInitMySQL()
 {
 	if [ ! -f /etc/init.d/mysql.m23 ]
 	then
+		# Start MySQL/MariaDB
+		/usr/bin/mysqld_safe --log-error=/tmp/my.log --skip-syslog --socket=/var/run/mysqld/mysqld.sock&
+		sleep 5
+
+		# Move the initscript out of the way
 		mv /etc/init.d/mysql /etc/init.d/mysql.m23
-		
-		cat >> /etc/init.d/mysql << "EOF"
-#!/bin/bash
-case "${1:-''}" in
-	'start')
-		mysqld_safe&
-		sleep 3
-	;;
-	'stop')
-		killall -9 mysqld_safe
-		sleep 1
-	;;
-esac
-EOF
-	chmod +x /etc/init.d/mysql
+
+		# Create a fake initscript that does nothing
+		touch /etc/init.d/mysql
+		chmod +x /etc/init.d/mysql
+
+# 		cat >> /etc/init.d/mysql.raus << "EOF"
+# #!/bin/bash
+# case "${1:-''}" in
+# 	'start')
+# 		/usr/bin/mysqld_safe --log-error=/tmp/my.log --skip-syslog --socket=/var/run/mysqld/mysqld.sock&
+# 		sleep 3
+# 	;;
+# 	'stop')
+# 		killall -9 mysqld_safe
+# 		killall -9 mysqld
+# 		killall -9 mysql
+# 		sleep 3
+# 	;;
+# 	'restart')
+# 		killall -9 mysqld_safe
+# 		killall -9 mysqld
+# 		killall -9 mysql
+# 		sleep 3
+# 		/usr/bin/mysqld_safe --log-error=/tmp/my.log --skip-syslog --socket=/var/run/mysqld/mysqld.sock&
+# 		sleep 3
+# 	;;
+# esac
+# EOF
 	fi
+
+	# Make logger happy that expects existence /dev/log (systemd)
+	ln -s /dev/log /dev/stderr
 }
 
 
@@ -1143,7 +1151,10 @@ EOF
 # Change MySQL init to a version working with systemd
 setSystemdInitMySQL()
 {
+	# Switch back to original initscript
 	mv /etc/init.d/mysql.m23 /etc/init.d/mysql
+	# Remove fake logging device (systemd)
+	rm /dev/log
 }
 
 
@@ -1177,7 +1188,7 @@ startBaseInstallation()
 
 	extractFromCD
 	chrootSystem
-#	setISOInitMySQL
+	setISOInitMySQL
 	configureNetwork
 	configureMySQLmycnf
 	setRootPwd
@@ -1319,6 +1330,6 @@ keyboard-configuration keyboard-configuration/variantcode string' > /tmp/keyboar
 	updateSystem
 
 	umount /mnt/cdrom
-#	setSystemdInitMySQL
+	setSystemdInitMySQL
 	installGrub
 }

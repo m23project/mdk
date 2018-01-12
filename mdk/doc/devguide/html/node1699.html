@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HS_sysConfigurePrinter</TITLE>
-<META NAME="description" CONTENT="HS_sysConfigurePrinter">
+<TITLE>HS_hookBeginAfterChroot</TITLE>
+<META NAME="description" CONTENT="HS_hookBeginAfterChroot">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,49 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1700.html">
 <LINK REL="previous" HREF="node1698.html">
-<LINK REL="up" HREF="node1661.html">
+<LINK REL="up" HREF="node1680.html">
 <LINK REL="next" HREF="node1700.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html29194"
+<A NAME="tex2html29339"
   HREF="node1700.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html29190"
-  HREF="node1661.html">
+<A NAME="tex2html29335"
+  HREF="node1680.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html29184"
+<A NAME="tex2html29329"
   HREF="node1698.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html29192"
+<A NAME="tex2html29337"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html29195"
-  HREF="node1700.html">HS_sysInstallPrinter</A>
-<B> Up:</B> <A NAME="tex2html29191"
-  HREF="node1661.html">./inc/halfSister.php</A>
-<B> Previous:</B> <A NAME="tex2html29185"
-  HREF="node1698.html">HS_sysMakeBootable</A>
- &nbsp; <B>  <A NAME="tex2html29193"
+<B> Next:</B> <A NAME="tex2html29340"
+  HREF="node1700.html">HS_hookEndAfterChroot</A>
+<B> Up:</B> <A NAME="tex2html29336"
+  HREF="node1680.html">./inc/halfSister.php</A>
+<B> Previous:</B> <A NAME="tex2html29330"
+  HREF="node1698.html">HS_netDisableNTP</A>
+ &nbsp; <B>  <A NAME="tex2html29338"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0095438000000000000000">
-HS_sysConfigurePrinter</A>
+<H2><A NAME="SECTION0095419000000000000000">
+HS_hookBeginAfterChroot</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Detects and configures printer(s).
-<BR></SMALL></SMALL>
+<SPAN  CLASS="textbf">Description:</SPAN> Scripts that should be run at the beginning of the afterChroot.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>rootDevice: Device with partition where the os will be installed (e.g. /dev/hda1).
+</LI>
+<LI>bootDevice: Device (with partition) where the bootmanager will be installed (e.g. /dev/hda).
+</LI>
+<LI>bootDeviceFS: Filesystem of the root device.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
 <SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

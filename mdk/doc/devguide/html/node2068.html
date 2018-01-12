@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKGBUILDER_showKeySelectionDialog</TITLE>
-<META NAME="description" CONTENT="PKGBUILDER_showKeySelectionDialog">
+<TITLE>MSR_decodeClientSideBase64</TITLE>
+<META NAME="description" CONTENT="MSR_decodeClientSideBase64">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,49 +21,62 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node2069.html">
 <LINK REL="previous" HREF="node2067.html">
-<LINK REL="up" HREF="node2066.html">
+<LINK REL="up" HREF="node2052.html">
 <LINK REL="next" HREF="node2069.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html33938"
+<A NAME="tex2html34081"
   HREF="node2069.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html33934"
-  HREF="node2066.html">
+<A NAME="tex2html34077"
+  HREF="node2052.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html33928"
+<A NAME="tex2html34071"
   HREF="node2067.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html33936"
+<A NAME="tex2html34079"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html33939"
-  HREF="node2069.html">PKGBUILDER_showUploadDialog</A>
-<B> Up:</B> <A NAME="tex2html33935"
-  HREF="node2066.html">./inc/packageBuilder.php</A>
-<B> Previous:</B> <A NAME="tex2html33929"
-  HREF="node2067.html">PKGBUILDER_showDialog</A>
- &nbsp; <B>  <A NAME="tex2html33937"
+<B> Next:</B> <A NAME="tex2html34082"
+  HREF="node2069.html">MSR_clientSideBase64Encode</A>
+<B> Up:</B> <A NAME="tex2html34078"
+  HREF="node2052.html">./inc/messageReceive.php</A>
+<B> Previous:</B> <A NAME="tex2html34072"
+  HREF="node2067.html">MSR_markm23normalAsDone</A>
+ &nbsp; <B>  <A NAME="tex2html34080"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION009672000000000000000">
-PKGBUILDER_showKeySelectionDialog</A>
+<H2><A NAME="SECTION0096616000000000000000">
+MSR_decodeClientSideBase64</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Shows a dialog for choosing the GPG signing key for the extra packages.
-<BR></SMALL></SMALL>
+<SPAN  CLASS="textbf">Description:</SPAN> Decodes the slightly modificated base64 input stream created from MSR_clientSideBase64Encode.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>in: Base64 encoded input string.
+</LI>
+<LI>md5: md5 sum of the original input file.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>Decoded (maybe binary) string.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
 <SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

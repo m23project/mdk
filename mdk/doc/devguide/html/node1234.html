@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_listPackages</TITLE>
-<META NAME="description" CONTENT="PKG_listPackages">
+<TITLE>PKG_getSearchCacheFileName</TITLE>
+<META NAME="description" CONTENT="PKG_getSearchCacheFileName">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1235.html">
 <LINK REL="previous" HREF="node1233.html">
-<LINK REL="up" HREF="node1216.html">
+<LINK REL="up" HREF="node1232.html">
 <LINK REL="next" HREF="node1235.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html23178"
+<A NAME="tex2html23320"
   HREF="node1235.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html23174"
-  HREF="node1216.html">
+<A NAME="tex2html23316"
+  HREF="node1232.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html23168"
+<A NAME="tex2html23310"
   HREF="node1233.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html23176"
+<A NAME="tex2html23318"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html23179"
-  HREF="node1235.html">PKG_getAptArchOptions</A>
-<B> Up:</B> <A NAME="tex2html23175"
-  HREF="node1216.html">./inc/distr/debian/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html23169"
-  HREF="node1233.html">PKG_printStatus</A>
- &nbsp; <B>  <A NAME="tex2html23177"
+<B> Next:</B> <A NAME="tex2html23321"
+  HREF="node1235.html">PKG_genPackageSearchCacheFileCMD</A>
+<B> Up:</B> <A NAME="tex2html23317"
+  HREF="node1232.html">./inc/distr/debian/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html23311"
+  HREF="node1233.html">PKG_updatePackageSearchCacheFile</A>
+ &nbsp; <B>  <A NAME="tex2html23319"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0094118000000000000000">
-PKG_listPackages</A>
+<H2><A NAME="SECTION009412000000000000000">
+PKG_getSearchCacheFileName</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> list packages matching the key
+<SPAN  CLASS="textbf">Description:</SPAN> Returns the full path to the compressed package search file.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>key: search key
+<LI>dir: Directory where the package information is stored.
 </LI>
-<LI>distr: the distribution name
+<LI>arch: Architecture for the packages in the search file.
 </LI>
-<LI>packagesource: name of the package source
-</LI>
-<LI>client: Name of the client the packages are searched for. (Not used here and only for halfSister)
-</LI>
-<LI>completeDescription: If set to true, the full package description and sizes are fetched (time consuming)
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>Full path to the compressed package search file.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -76,7 +76,7 @@ PKG_listPackages</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

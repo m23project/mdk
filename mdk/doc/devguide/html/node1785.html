@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HTML_getOutputBuffer</TITLE>
-<META NAME="description" CONTENT="HTML_getOutputBuffer">
+<TITLE>HELPER_putFileContents</TITLE>
+<META NAME="description" CONTENT="HELPER_putFileContents">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,54 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1786.html">
 <LINK REL="previous" HREF="node1784.html">
-<LINK REL="up" HREF="node1778.html">
+<LINK REL="up" HREF="node1737.html">
 <LINK REL="next" HREF="node1786.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html30340"
+<A NAME="tex2html30423"
   HREF="node1786.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html30336"
-  HREF="node1778.html">
+<A NAME="tex2html30419"
+  HREF="node1737.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html30330"
+<A NAME="tex2html30413"
   HREF="node1784.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html30338"
+<A NAME="tex2html30421"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html30341"
-  HREF="node1786.html">HTML_setOutputBuffer</A>
-<B> Up:</B> <A NAME="tex2html30337"
-  HREF="node1778.html">./inc/html.php</A>
-<B> Previous:</B> <A NAME="tex2html30331"
-  HREF="node1784.html">HTML_sourceViewer</A>
- &nbsp; <B>  <A NAME="tex2html30339"
+<B> Next:</B> <A NAME="tex2html30424"
+  HREF="node1786.html">HELPER_getFileContents</A>
+<B> Up:</B> <A NAME="tex2html30420"
+  HREF="node1737.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html30414"
+  HREF="node1784.html">HELPER_getApacheGroup</A>
+ &nbsp; <B>  <A NAME="tex2html30422"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION009577000000000000000">
-HTML_getOutputBuffer</A>
+<H2><A NAME="SECTION0095548000000000000000">
+HELPER_putFileContents</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Gets the complete (previously rendered) HTML output buffer.
-<BR><SPAN  CLASS="textbf">Returns:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Writes data to a file.
+<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>The complete contents of the (previously rendered) HTML output buffer.
+<LI>fileName: name of the file to write
+</LI>
+<LI>contents: Text or data that should be written to the file.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>Error code from fwrite.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -68,7 +76,7 @@ HTML_getOutputBuffer</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

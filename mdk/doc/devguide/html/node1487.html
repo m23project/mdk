@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_updatePackageInfo</TITLE>
-<META NAME="description" CONTENT="PKG_updatePackageInfo">
+<TITLE>PKG_searchPackageSearchCacheFileCMD</TITLE>
+<META NAME="description" CONTENT="PKG_searchPackageSearchCacheFileCMD">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,54 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1488.html">
 <LINK REL="previous" HREF="node1486.html">
-<LINK REL="up" HREF="node1465.html">
+<LINK REL="up" HREF="node1483.html">
 <LINK REL="next" HREF="node1488.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html26436"
+<A NAME="tex2html26580"
   HREF="node1488.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html26432"
-  HREF="node1465.html">
+<A NAME="tex2html26576"
+  HREF="node1483.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html26426"
+<A NAME="tex2html26570"
   HREF="node1486.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html26434"
+<A NAME="tex2html26578"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html26437"
-  HREF="node1488.html">PKG_previewInstall</A>
-<B> Up:</B> <A NAME="tex2html26433"
-  HREF="node1465.html">./inc/distr/ubuntu/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html26427"
-  HREF="node1486.html">PKG_preparePackageDir</A>
- &nbsp; <B>  <A NAME="tex2html26435"
+<B> Next:</B> <A NAME="tex2html26581"
+  HREF="node1488.html">PKG_ncTarDebsFromClientToServer_Client</A>
+<B> Up:</B> <A NAME="tex2html26577"
+  HREF="node1483.html">./inc/distr/ubuntu/packages.php</A>
+<B> Previous:</B> <A NAME="tex2html26571"
+  HREF="node1486.html">PKG_genPackageSearchCacheFileCMD</A>
+ &nbsp; <B>  <A NAME="tex2html26579"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0095022000000000000000">
-PKG_updatePackageInfo</A>
+<H2><A NAME="SECTION009504000000000000000">
+PKG_searchPackageSearchCacheFileCMD</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Updates the package information to make it searchable.
+<SPAN  CLASS="textbf">Description:</SPAN> Generates BASH commands to search a compressed package search file.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>distr: the distribution name
+<LI>dir: Directory where the package information is stored.
 </LI>
-<LI>packagesource: name of the package source
+<LI>arch: Architecture for the packages in the search file.
 </LI>
-<LI>force: set to true if you want to update the package info and the time is not over
+<LI>search: Search terms.
 </LI>
-<LI>arch: Architecture to get package infos for.
-</LI>
-<LI>changeTime: Writes the time when the status file was last modified to.
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>BASH commands to search a compressed package search file.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -76,7 +78,7 @@ PKG_updatePackageInfo</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

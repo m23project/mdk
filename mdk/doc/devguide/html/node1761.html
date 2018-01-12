@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>HELPER_grepNot</TITLE>
-<META NAME="description" CONTENT="HELPER_grepNot">
+<TITLE>HELPER_createSelfSignedCAAndServerCertificate</TITLE>
+<META NAME="description" CONTENT="HELPER_createSelfSignedCAAndServerCertificate">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,58 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1762.html">
 <LINK REL="previous" HREF="node1760.html">
-<LINK REL="up" HREF="node1718.html">
+<LINK REL="up" HREF="node1737.html">
 <LINK REL="next" HREF="node1762.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html29990"
+<A NAME="tex2html30135"
   HREF="node1762.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html29986"
-  HREF="node1718.html">
+<A NAME="tex2html30131"
+  HREF="node1737.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html29980"
+<A NAME="tex2html30125"
   HREF="node1760.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html29988"
+<A NAME="tex2html30133"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html29991"
-  HREF="node1762.html">HELPER_grepCount</A>
-<B> Up:</B> <A NAME="tex2html29987"
-  HREF="node1718.html">./inc/helper.php</A>
-<B> Previous:</B> <A NAME="tex2html29981"
-  HREF="node1760.html">HELPER_grep</A>
- &nbsp; <B>  <A NAME="tex2html29989"
+<B> Next:</B> <A NAME="tex2html30136"
+  HREF="node1762.html">HELPER_arrayReOrderKeynumbers</A>
+<B> Up:</B> <A NAME="tex2html30132"
+  HREF="node1737.html">./inc/helper.php</A>
+<B> Previous:</B> <A NAME="tex2html30126"
+  HREF="node1760.html">HELPER_randomUsername</A>
+ &nbsp; <B>  <A NAME="tex2html30134"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0095543000000000000000">
-HELPER_grepNot</A>
+<H2><A NAME="SECTION0095524000000000000000">
+HELPER_createSelfSignedCAAndServerCertificate</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Returnes all lines from $string seperated by $cut that do NOT contain $search.
+<SPAN  CLASS="textbf">Description:</SPAN> Creates a selfsigned CA and a server certificate.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>string: the text, that should be searched
+<LI>CADn: Information about the CA.
 </LI>
-<LI>search: the string to be searched
+<LI>serverDn: Information about the server.
 </LI>
-<LI>cut: seperator for the input and output lines
+<LI>password: Password for the private server key.
+</LI>
+<LI>expirationDate: Expiration of the certificates in days.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>The found lines as string separated by $cut.
+<LI>Associative array with the certificate of the CA, the certificate and private key of the server.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -78,7 +80,7 @@ HELPER_grepNot</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

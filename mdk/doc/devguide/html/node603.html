@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CFDiskIO::getBiggestValueOf</TITLE>
-<META NAME="description" CONTENT="CFDiskIO::getBiggestValueOf">
+<TITLE>CFDiskIO::correctLogical</TITLE>
+<META NAME="description" CONTENT="CFDiskIO::correctLogical">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,48 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node604.html">
 <LINK REL="previous" HREF="node602.html">
-<LINK REL="up" HREF="node542.html">
+<LINK REL="up" HREF="node543.html">
 <LINK REL="next" HREF="node604.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html15098"
+<A NAME="tex2html15229"
   HREF="node604.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html15094"
-  HREF="node542.html">
+<A NAME="tex2html15225"
+  HREF="node543.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html15088"
+<A NAME="tex2html15219"
   HREF="node602.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html15096"
+<A NAME="tex2html15227"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html15099"
-  HREF="node604.html">CFDiskIO::getLowestValueOf</A>
-<B> Up:</B> <A NAME="tex2html15095"
-  HREF="node542.html">./inc/CFDiskIO.php</A>
-<B> Previous:</B> <A NAME="tex2html15089"
-  HREF="node602.html">CFDiskIO::getBiggestLowestValueOf</A>
- &nbsp; <B>  <A NAME="tex2html15097"
+<B> Next:</B> <A NAME="tex2html15230"
+  HREF="node604.html">CFDiskIO::devNrExists</A>
+<B> Up:</B> <A NAME="tex2html15226"
+  HREF="node543.html">./inc/CFDiskIO.php</A>
+<B> Previous:</B> <A NAME="tex2html15220"
+  HREF="node602.html">CFDiskIO::getLogicalpParts</A>
+ &nbsp; <B>  <A NAME="tex2html15228"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0091561000000000000000">
-CFDiskIO::getBiggestValueOf</A>
+<H2><A NAME="SECTION0091560000000000000000">
+CFDiskIO::correctLogical</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Gets the biggest value from all partitions of a given type.
+<SPAN  CLASS="textbf">Description:</SPAN> Corrects the order of the logical partitions after deleting a physical partition.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>vDisk: Virtual (internally used) disk number.
+<LI>vDisk: Internal disk number (for accessing the disk information in the array).
 </LI>
-<LI>partType: Type of the partition (CFDiskIO::PT_PRIMARY, CFDiskIO::PT_EXTENDED, CFDiskIO::PT_LOGICAL, CFDiskIO::PT_EFI)
-</LI>
-<LI>varType: Variable in the associative array ($this-<SPAN CLASS="MATH"></SPAN>wantedPartitioning[$vDisk][$vPart][$varType]) to check.
-</LI>
-</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Returns:</SPAN>
-</SMALL></SMALL>
-<UL>
-<LI>Biggest value from all partitions of a given type.
+<LI>pPart: The physical partition number to delete.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -78,7 +70,7 @@ CFDiskIO::getBiggestValueOf</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

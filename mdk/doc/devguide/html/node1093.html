@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>sendClientLogStatus</TITLE>
-<META NAME="description" CONTENT="sendClientLogStatus">
+<TITLE>DB_isConnectionValid</TITLE>
+<META NAME="description" CONTENT="DB_isConnectionValid">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,50 +21,46 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1094.html">
 <LINK REL="previous" HREF="node1092.html">
-<LINK REL="up" HREF="node1073.html">
+<LINK REL="up" HREF="node1084.html">
 <LINK REL="next" HREF="node1094.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html21365"
+<A NAME="tex2html21506"
   HREF="node1094.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html21361"
-  HREF="node1073.html">
+<A NAME="tex2html21502"
+  HREF="node1084.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html21355"
+<A NAME="tex2html21496"
   HREF="node1092.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html21363"
+<A NAME="tex2html21504"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html21366"
-  HREF="node1094.html">deleteClientLogs</A>
-<B> Up:</B> <A NAME="tex2html21362"
-  HREF="node1073.html">./inc/db.php</A>
-<B> Previous:</B> <A NAME="tex2html21356"
-  HREF="node1092.html">returnClientStageStatus</A>
- &nbsp; <B>  <A NAME="tex2html21364"
+<B> Next:</B> <A NAME="tex2html21507"
+  HREF="node1094.html">dbConnect</A>
+<B> Up:</B> <A NAME="tex2html21503"
+  HREF="node1084.html">./inc/db.php</A>
+<B> Previous:</B> <A NAME="tex2html21497"
+  HREF="node1092.html">DB_setConnection</A>
+ &nbsp; <B>  <A NAME="tex2html21505"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0093720000000000000000">
-sendClientLogStatus</A>
+<H2><A NAME="SECTION009379000000000000000">
+DB_isConnectionValid</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> generates a bash script to send log status to the server
-<BR><SPAN  CLASS="textbf">Parameter:</SPAN>
+<SPAN  CLASS="textbf">Description:</SPAN> Checks, if the MySQLi connection is valid.
+<BR><SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>status: how the line should be named, that is logged to the server
-</LI>
-<LI>ok: true: operation sucessful, false: failure
-</LI>
-<LI>critical: if it is set to "true" the execution of the script is stopped and a local rescue console is opened
+<LI>true on valid MySQLi connection, otherwise false.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -72,7 +68,7 @@ sendClientLogStatus</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

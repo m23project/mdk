@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>checkIP</TITLE>
-<META NAME="description" CONTENT="checkIP">
+<TITLE>CHECK_float</TITLE>
+<META NAME="description" CONTENT="CHECK_float">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,52 +21,56 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node747.html">
 <LINK REL="previous" HREF="node745.html">
-<LINK REL="up" HREF="node732.html">
+<LINK REL="up" HREF="node737.html">
 <LINK REL="next" HREF="node747.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html16893"
+<A NAME="tex2html17025"
   HREF="node747.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html16889"
-  HREF="node732.html">
+<A NAME="tex2html17021"
+  HREF="node737.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html16883"
+<A NAME="tex2html17015"
   HREF="node745.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html16891"
+<A NAME="tex2html17023"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html16894"
-  HREF="node747.html">checkMAC</A>
-<B> Up:</B> <A NAME="tex2html16890"
-  HREF="node732.html">./inc/checks.php</A>
-<B> Previous:</B> <A NAME="tex2html16884"
-  HREF="node745.html">countLinesInFile</A>
- &nbsp; <B>  <A NAME="tex2html16892"
+<B> Next:</B> <A NAME="tex2html17026"
+  HREF="node747.html">CHECK_strAlpha</A>
+<B> Up:</B> <A NAME="tex2html17022"
+  HREF="node737.html">./inc/checks.php</A>
+<B> Previous:</B> <A NAME="tex2html17016"
+  HREF="node745.html">CHECK_int</A>
+ &nbsp; <B>  <A NAME="tex2html17024"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0091914000000000000000">
-checkIP</A>
+<H2><A NAME="SECTION009199000000000000000">
+CHECK_float</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> checks if an ip is valid
+<SPAN  CLASS="textbf">Description:</SPAN> Checks if the input value is a float number and shuts down the application if not.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>string: ip value to check
+<LI>val: Input value to check.
+</LI>
+<LI>allowEmpty: Set to true if you want to allow empty strings.
+</LI>
+<LI>returnNoDie: Set to true if you want to return (instead of aborting the program) when an error in the input is found.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
 <SPAN  CLASS="textbf">Returns:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>true if IP is valid, else false
+<LI>The input value if it's a float number or false on an error.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -74,7 +78,7 @@ checkIP</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

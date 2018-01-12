@@ -12,7 +12,8 @@ UCS_detect()
 
 
 
-#Shows the MySQL / MariaDB admin userln -s /m23/vms/bin/restoreBTServer /etc/init.d/
+
+ln -s /m23/vms/bin/restoreBTServer /etc/init.d/
 update-rc.d -f restoreBTServer defaults
 
 
@@ -174,9 +175,17 @@ done
 
 if [ `grep -c Debian /etc/issue` -eq 0 ] && [ `grep -c Raspbian /etc/issue` -eq 0 ] && [ `grep -c Univention /etc/issue` -eq 0 ]
 then
-	echo "The m23 packages are ment for installation on Debian ONLY!"
+	echo "The m23 packages are ment for installation on Debian/Raspbian/UCS ONLY!"
 	exit 666
 fi
+
+# Set a new password for the pi user, if it is still the default password
+if [ -d /home/pi ] && [ -e /run/sshwarn ]
+then
+	db_get m23/PIpass
+	yes "$RET" | passwd pi
+fi
+
 
 ln -s /sbin/lilo /sbin/update-grub 2> /dev/null
 
@@ -318,6 +327,13 @@ then
 
 	/etc/init.d/mysql restart
 
+	# Start MySQL/MariaDB server without init system
+# 	if [ $(ps -A | grep mysql -c) -eq 0 ]
+# 	then
+# 		/usr/sbin/mysqld &
+# 		sleep 5
+# 	fi
+
 	dbname="m23"
 	dbserver="localhost"
 	#get username and password of the debian MySQL system 
@@ -331,9 +347,9 @@ then
 
 	updateDB
 
-	echo  "GRANT SELECT , INSERT , UPDATE , DELETE , FILE ON * . * TO 'm23dbuser'@'localhost' IDENTIFIED BY 'm23secret' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 ;" | mysql -u $dbadmin $dbadmpassParam m23
+	echo  "GRANT SELECT , INSERT , UPDATE , DELETE , FILE, TRIGGER ON * . * TO 'm23dbuser'@'localhost' IDENTIFIED BY 'm23secret' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 ;" | mysql -u $dbadmin $dbadmpassParam m23
 
-	echo "GRANT SELECT , INSERT , UPDATE , DELETE , CREATE , DROP , FILE , INDEX , ALTER , CREATE TEMPORARY TABLES , LOCK TABLES ON * . * TO 'm23dbroot'@'localhost' IDENTIFIED BY 'm23secretroot' WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 ;" | mysql -u $dbadmin $dbadmpassParam m23
+	echo "GRANT SELECT , INSERT , UPDATE , DELETE , CREATE , DROP , FILE , INDEX , ALTER , CREATE TEMPORARY TABLES , LOCK TABLES , TRIGGER ON * . * TO 'm23dbroot'@'localhost' IDENTIFIED BY 'm23secretroot' WITH GRANT OPTION MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 ;" | mysql -u $dbadmin $dbadmpassParam m23
 
 	#Delete all unused "defaut" groups (every configuration adds a new instance of the default group => if they don't get deleted there will be lots of unused default groups where no client is in. Only the first occurrance of the default group should have clients in it.)
 	echo "DELETE FROM groups WHERE id NOT IN (SELECT id FROM (SELECT groups.id FROM clientgroups, groups WHERE clientgroups.groupid = groups.id) as temp)" | mysql -u $dbadmin $dbadmpassParam m23
@@ -380,7 +396,7 @@ max-lease-time                21600;\
 
 option log-servers            $IPINT;\
 
-next-server                    $IPINT;\
+next-server   $IPINT;\
 
 option routers                $GATEINT;
 
@@ -450,11 +466,22 @@ then
 	then
 		squidName='squid3'
 		squidConf="/etc/squid3/squid.conf"
+		
 	else
 		squidName='squid'
 		squidConf="/etc/squid/squid.conf"
 	fi
 
+	# Special handling for Squid 3 that used squid.conf
+	if [ -f /usr/sbin/squid3 ]
+	then
+		squidName='squid3'
+		squidConf="/etc/squid/squid.conf"
+
+		# Create the spool and log directories
+		mkdir /var/spool/squid3 /var/log/squid3
+		chown -R proxy:proxy /var/spool/squid3 /var/log/squid3
+	fi
 
 	rm $squidConf 2> /dev/null
 
@@ -913,7 +940,7 @@ fi
 
 
 #Create the GPG key
-if [ ! -e /home/grdmgpg/.gnupg/secring.gpg ]
+if [ $(su -c "gpg --list-secret-keys | grep ^sec -c" grdmgpg) -eq 0 ]
 then
 	#Change random to non-blocking urandom
 	if [ -c /dev/random ]
@@ -967,6 +994,7 @@ Name-Real: backupsignkey
 Name-Comment: No comment
 Name-Email: backupsignkey@m23server
 Expire-Date: 0
+%no-protection
 %commit
 %echo done
 " > /tmp/gpgSettings
@@ -1029,8 +1057,19 @@ php -r "
 "
 fi
 
+
+echo "SELECT COUNT(*) FROM clients WHERE client='localhost' AND ip='$IPINT' | mysql -u $dbadmin $dbadmpassParam m23" > /m23serverinst.log
+ps -A >> /m23serverinst.log
+
+echo 'ergkompl' >> /m23serverinst.log
+echo "SELECT COUNT(*) FROM clients WHERE client='localhost' AND ip='$IPINT'" | mysql -u $dbadmin $dbadmpassParam m23 >> /m23serverinst.log
+echo 'erge' >> /m23serverinst.log
+
 #Add the server to the list of clients if it's missing
-localhostCount=`echo "SELECT COUNT(*) FROM clients WHERE client='localhost'" | mysql -u $dbadmin $dbadmpassParam m23 | tail -1`
+localhostCount=`echo "SELECT COUNT(*) FROM clients WHERE client='localhost' AND ip='$IPINT'" | mysql -u $dbadmin $dbadmpassParam m23 | tail -1`
+
+echo "erge2: $localhostCount" >> /m23serverinst.log
+
 if [ $localhostCount -eq 0 ]
 then
 	#Add the server to the list of clients as "localhost"
@@ -1040,6 +1079,10 @@ then
 	cpu=`grep name /proc/cpuinfo | cut -d':' -f2`
 	mhz=`grep MHz /proc/cpuinfo | cut -d':' -f2 | cut -d' ' -f2`
 
+	echo "DELETE FROM clients WHERE client='localhost' | mysql -u $dbadmin $dbadmpassParam m23" >> /m23serverinst.log
+	echo "DELETE FROM clients WHERE client='localhost'" | mysql -u $dbadmin $dbadmpassParam m23
+
+	echo "INSERT INTO clients (client,ip,installdate,lastmodify,status,cpu,MHz) VALUES ('localhost','$IPINT','$ts','$ts','2','$cpu','$mhz') | mysql -u $dbadmin $dbadmpassParam m23" >> /m23serverinst.log	
 	echo "INSERT INTO clients (client,ip,installdate,lastmodify,status,cpu,MHz) VALUES ('localhost','$IPINT','$ts','$ts','2','$cpu','$mhz')" | mysql -u $dbadmin $dbadmpassParam m23
 fi
 
@@ -1101,6 +1144,31 @@ updateSQLIfOlder $oldversionint 172100985 "CREATE TABLE autoUpdateSchedule ( id 
 
 # Extend the client table by fields for storing autoUpdate values
 updateSQLIfOlder $oldversionint 172100985 "ALTER TABLE clients ADD autoUpdate_lastAttempt int(10) DEFAULT NULL AFTER keyValueStore, ADD autoUpdate_gotJob BOOLEAN NOT NULL AFTER autoUpdate_lastAttempt, ADD autoUpdate_fails INT NOT NULL AFTER autoUpdate_gotJob;"
+
+# Add field for online status in the client's table
+updateSQLIfOlder $oldversionint 173101041 "ALTER TABLE clients ADD online TINYINT(1) UNSIGNED NOT NULL DEFAULT '0' AFTER status;"
+updateSQLIfOlder $oldversionint 173101041 "ALTER TABLE clientjobs ADD reason LONGTEXT NOT NULL COMMENT 'Grund für das Hinzufuegen des Jobs' AFTER package;"
+
+#Speed improvements
+
+# Add indices
+updateSQLIfOlder $oldversionint 173101041 "ALTER TABLE clientpackages ADD id INT NOT NULL AUTO_INCREMENT FIRST, ADD PRIMARY KEY (id);"
+updateSQLIfOlder $oldversionint 173101041 "ALTER TABLE clientpackages ADD INDEX idx_clientname_package (clientname, package);"
+updateSQLIfOlder $oldversionint 173101041 "ALTER TABLE clientjobs ADD INDEX idx_client_status (client, status);"
+
+# Longtext fields cannot be indexed, so make it indexable varchar
+updateSQLIfOlder $oldversionint 173101041 "ALTER TABLE clients CHANGE client client VARCHAR(512) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL;"
+updateSQLIfOlder $oldversionint 173101041 "ALTER TABLE clients ADD INDEX idx_client (client);"
+
+# Add triggers to calculate the sum of client packages in the SQL database itself
+# updateSQLIfOlder $oldversionint 173101041 "ALTER TABLE clients ADD trg_sum_clientpackages INT UNSIGNED NOT NULL DEFAULT '0' AFTER lastmodify;"
+# updateSQLIfOlder $oldversionint 173101041 "CREATE TRIGGER trg_sum_clientpackages_add AFTER INSERT ON clientpackages FOR EACH ROW UPDATE clients SET trg_sum_clientpackages = trg_sum_clientpackages + 1 WHERE client = NEW.clientname;"
+# updateSQLIfOlder $oldversionint 173101041 "CREATE TRIGGER trg_sum_clientpackages_del AFTER DELETE ON clientpackages FOR EACH ROW UPDATE clients SET trg_sum_clientpackages = trg_sum_clientpackages - 1 WHERE client = DEL.clientname;"
+
+# if [ -n "$oldversionint" ] && [ $oldversionint -lt 173101041 ]
+# then
+# 	/m23/bin/m23cli.php PKG_recountAllClientPackages
+# fi
 
 
 
@@ -1191,6 +1259,13 @@ fi
 
 # Needed on Debian 8
 /etc/init.d/mysql restart
+
+# Start MySQL/MariaDB server without init system
+# if [ $(ps -A | grep mysql -c) -eq 0 ]
+# then
+# 	/usr/sbin/mysqld &
+# 	sleep 5
+# fi
 
 postinstHook='/m23/bin/postinstHook.sh'
 if [ -f $postinstHook ]

@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>PKG_searchPackageSearchCacheFileCMD</TITLE>
-<META NAME="description" CONTENT="PKG_searchPackageSearchCacheFileCMD">
+<TITLE>CLCFG_installDesktopLanguagePackage</TITLE>
+<META NAME="description" CONTENT="CLCFG_installDesktopLanguagePackage">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,56 +21,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1221.html">
 <LINK REL="previous" HREF="node1219.html">
-<LINK REL="up" HREF="node1216.html">
+<LINK REL="up" HREF="node1146.html">
 <LINK REL="next" HREF="node1221.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html23010"
+<A NAME="tex2html23123"
   HREF="node1221.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html23006"
-  HREF="node1216.html">
+<A NAME="tex2html23119"
+  HREF="node1146.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html23000"
+<A NAME="tex2html23113"
   HREF="node1219.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html23008"
+<A NAME="tex2html23121"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html23011"
-  HREF="node1221.html">PKG_ncTarDebsFromClientToServer_Client</A>
-<B> Up:</B> <A NAME="tex2html23007"
-  HREF="node1216.html">./inc/distr/debian/packages.php</A>
-<B> Previous:</B> <A NAME="tex2html23001"
-  HREF="node1219.html">PKG_genPackageSearchCacheFileCMD</A>
- &nbsp; <B>  <A NAME="tex2html23009"
+<B> Next:</B> <A NAME="tex2html23124"
+  HREF="node1221.html">CLCFG_installApplicationLanguagePackages</A>
+<B> Up:</B> <A NAME="tex2html23120"
+  HREF="node1146.html">./inc/distr/debian/clientConfigCommon.php</A>
+<B> Previous:</B> <A NAME="tex2html23114"
+  HREF="node1219.html">CLCFG_disableNFSHome</A>
+ &nbsp; <B>  <A NAME="tex2html23122"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION009414000000000000000">
-PKG_searchPackageSearchCacheFileCMD</A>
+<H2><A NAME="SECTION0093974000000000000000">
+CLCFG_installDesktopLanguagePackage</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Generates BASH commands to search a compressed package search file.
+<SPAN  CLASS="textbf">Description:</SPAN> Installs some additional language packages for (KDE / Gnome) desktops.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>dir: Directory where the package information is stored.
+<LI>lang: short language
 </LI>
-<LI>arch: Architecture for the packages in the search file.
+<LI>kde: Install KDE language packages too.
 </LI>
-<LI>search: Search terms.
-</LI>
-</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Returns:</SPAN>
-</SMALL></SMALL>
-<UL>
-<LI>BASH commands to search a compressed package search file.
+<LI>gnome: Install Gnome language packages too.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -78,7 +72,7 @@ PKG_searchPackageSearchCacheFileCMD</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

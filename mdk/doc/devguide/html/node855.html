@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CLIENT_isAssimilated</TITLE>
-<META NAME="description" CONTENT="CLIENT_isAssimilated">
+<TITLE>CLIENT_addChangeElement</TITLE>
+<META NAME="description" CONTENT="CLIENT_addChangeElement">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -19,53 +19,50 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="STYLESHEET" HREF="devguide.css">
 
+<LINK REL="next" HREF="node856.html">
 <LINK REL="previous" HREF="node854.html">
-<LINK REL="up" HREF="node758.html">
+<LINK REL="up" HREF="node764.html">
 <LINK REL="next" HREF="node856.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html18296"
+<A NAME="tex2html18435"
   HREF="node856.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html18292"
-  HREF="node758.html">
+<A NAME="tex2html18431"
+  HREF="node764.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html18288"
+<A NAME="tex2html18425"
   HREF="node854.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html18294"
+<A NAME="tex2html18433"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html18297"
-  HREF="node856.html">./inc/Cm23AdminLister.php</A>
-<B> Up:</B> <A NAME="tex2html18293"
-  HREF="node758.html">./inc/client.php</A>
-<B> Previous:</B> <A NAME="tex2html18289"
-  HREF="node854.html">CLIENT_plinkFetchJob</A>
- &nbsp; <B>  <A NAME="tex2html18295"
+<B> Next:</B> <A NAME="tex2html18436"
+  HREF="node856.html">CLIENT_showDelDialog</A>
+<B> Up:</B> <A NAME="tex2html18432"
+  HREF="node764.html">./inc/client.php</A>
+<B> Previous:</B> <A NAME="tex2html18426"
+  HREF="node854.html">CLIENT_query</A>
+ &nbsp; <B>  <A NAME="tex2html18434"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION0092297000000000000000">
-CLIENT_isAssimilated</A>
+<H2><A NAME="SECTION0092291000000000000000">
+CLIENT_addChangeElement</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Checks, if a client was assimilated.
+<SPAN  CLASS="textbf">Description:</SPAN> Generates a HTML dialog element for changing a client property.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>clientName: name of the client
+<LI>elem: Name of the element.
 </LI>
-</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Returns:</SPAN>
-</SMALL></SMALL>
-<UL>
-<LI>true, if the client was assimilated. false, if the client was normaly installed.
+<LI>serverOnlyElement: Set to true if the element could only be changed in the DB and not on the server (e.g. a misspelled MAC)
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -73,7 +70,7 @@ CLIENT_isAssimilated</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>

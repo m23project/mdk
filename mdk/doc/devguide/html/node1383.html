@@ -7,8 +7,8 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
   Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
 <HTML>
 <HEAD>
-<TITLE>CLCFG_setDebConfDM</TITLE>
-<META NAME="description" CONTENT="CLCFG_setDebConfDM">
+<TITLE>DISTR_getUbuntuUserGroups</TITLE>
+<META NAME="description" CONTENT="DISTR_getUbuntuUserGroups">
 <META NAME="keywords" CONTENT="devguide">
 <META NAME="resource-type" CONTENT="document">
 <META NAME="distribution" CONTENT="global">
@@ -21,46 +21,52 @@ original version by:  Nikos Drakos, CBLU, University of Leeds
 
 <LINK REL="next" HREF="node1384.html">
 <LINK REL="previous" HREF="node1382.html">
-<LINK REL="up" HREF="node1379.html">
+<LINK REL="up" HREF="node1382.html">
 <LINK REL="next" HREF="node1384.html">
 </HEAD>
 
 <BODY >
 
 <DIV CLASS="navigation"><!--Navigation Panel-->
-<A NAME="tex2html25158"
+<A NAME="tex2html25227"
   HREF="node1384.html">
 <IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
-<A NAME="tex2html25154"
-  HREF="node1379.html">
+<A NAME="tex2html25223"
+  HREF="node1382.html">
 <IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
-<A NAME="tex2html25148"
+<A NAME="tex2html25217"
   HREF="node1382.html">
 <IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A> 
-<A NAME="tex2html25156"
+<A NAME="tex2html25225"
   HREF="node1.html">
 <IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents" SRC="contents.png"></A>  
 <BR>
-<B> Next:</B> <A NAME="tex2html25159"
-  HREF="node1384.html">CLCFG_installXDM</A>
-<B> Up:</B> <A NAME="tex2html25155"
-  HREF="node1379.html">./inc/distr/ubuntu/clientConfigCommon.php</A>
-<B> Previous:</B> <A NAME="tex2html25149"
-  HREF="node1382.html">CLCFG_monoRemove</A>
- &nbsp; <B>  <A NAME="tex2html25157"
+<B> Next:</B> <A NAME="tex2html25228"
+  HREF="node1384.html">DISTR_getDebianUserGroups</A>
+<B> Up:</B> <A NAME="tex2html25224"
+  HREF="node1382.html">./inc/distr.php</A>
+<B> Previous:</B> <A NAME="tex2html25218"
+  HREF="node1382.html">./inc/distr.php</A>
+ &nbsp; <B>  <A NAME="tex2html25226"
   HREF="node1.html">Contents</A></B> 
 <BR>
 <BR></DIV>
 <!--End of Navigation Panel-->
 
-<H2><A NAME="SECTION009484000000000000000">
-CLCFG_setDebConfDM</A>
+<H2><A NAME="SECTION009471000000000000000">
+DISTR_getUbuntuUserGroups</A>
 </H2><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
-<SPAN  CLASS="textbf">Description:</SPAN> Sets the display manager in debconf.
+<SPAN  CLASS="textbf">Description:</SPAN> Returns the default groups an user of a Ubuntu system should be in.
 <BR><SPAN  CLASS="textbf">Parameter:</SPAN>
 </SMALL></SMALL>
 <UL>
-<LI>dm: Name of the display manager (kdm, lightdm, mdm, ...).
+<LI>arrayOrSeparator: If set to true, the groups are returned as array, otherwise the value is used as separator character.
+</LI>
+</UL><SMALL CLASS="FOOTNOTESIZE"><SMALL CLASS="FOOTNOTESIZE">
+<SPAN  CLASS="textbf">Returns:</SPAN>
+</SMALL></SMALL>
+<UL>
+<LI>Default groups as array or as string, where the groups are separates by a separator character.
 </LI>
 </UL><SMALL CLASS="FOOTNOTESIZE"></SMALL>
 <P>
@@ -68,7 +74,7 @@ CLCFG_setDebConfDM</A>
 <BR><HR>
 <ADDRESS>
 root
-2017-06-27
+2018-01-11
 </ADDRESS>
 </BODY>
 </HTML>
