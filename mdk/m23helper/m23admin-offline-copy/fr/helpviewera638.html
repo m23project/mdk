@@ -1,0 +1,104 @@
+
+	<div align="right">
+		<a href="javascript:window.print()">
+			<img src="images/printer-mini.png" border="0" alt="Imprimer" title="Imprimer">
+		</a>
+		<a href="#m23helpBox">
+			<img src="images/helpred-mini.png" border="0" alt="Aide" title="Aide">
+		</a>
+	</div>
+	
+			<html>
+				
+<!-- Mirrored from 192.168.1.23/m23admin/misc/helpViewer.php?helpPage=externalDHCP&lang=fr by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:40:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+					<title>m23helpViewer - Aide: Utiliser m23 conjointement avec un serveur DHCP externe<!--new v10.3--></title>
+					<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+					<meta http-equiv="expires" content="0">
+					<link rel="stylesheet" type="text/css" href="images/printable.css">
+				</head>
+				<body><br><a name="m23helpBox"></a>
+	<table class="helptable" align="left" border="0" cellspacing="5" id="ID_helpBox">
+<tr><td><p><span class="subhighlight">Aide: Utiliser m23 conjointement avec un serveur DHCP externe<!--new v10.3-->
+</span></p><p>Supposons qu'un serveur DHCP diffuse, sur votre réseau local, les paramètres du réseau (IP, masque de réseau, etc ...) pour tous les ordinateurs et qu'il existe un serveur m23 hébergeant également un serveur DHCP, à partir duquel les postes client doivent être installés.
+</p><p>
+</p><p>Problème: L'installation des postes client m23 ne fonctionnera pas, parce que le serveur DHCP externe diffuse les paramètres du réseau plus vite que le serveur DHCP m23.
+</p><p>
+</p><p>La raison: Le serveur m23 doit assigner l'adresse IP et les autres paramètres du réseau au poste client lors de l'installation du système d'exploitation. Si un autre serveur DHCP fixe ces paramètres à la place du serveur DHCP m23, le poste client ne trouvera pas le serveur m23, en conséquence de quoi, l'image d'amorçage du réseau ne sera pas accessible et le poste client ne pourra pas être installé. Il n'est en principe pas possible de modifier ce comportement, parce que les standards réseaux et les protocoles d'amorçage par le réseau (netboot) suivent une procédure standardisé.
+</p><p>
+</p><p><h3>Si le serveur DHCP externe peut être désactivé:</h3>
+</p><p>Solutions:
+</p><p><ul>
+</p><p>	<li>Désactivez la réponse du serveur DHCP externe pour les adresses MAC des postes client à installer (au moins) pendant la durée de l'installation.</li>
+</p><p>	<li>Alternative: Reconfigurez le serveur DHCP externe de sorte qu'il diffuse les paramètres du réseau 2 secondes plus tard, afin que le serveur DHCP m23 réponde toujours plus rapidement.</li>
+</p><p>	<li>Alternative: Désactivez le serveur DHCP externe pour la durée de l'installation du système d'exploitation des postes m23.</li>
+</p><p></ul>
+</p><p>
+</p><p><h3>Si l'autre serveur DHCP NE PEUT PAS être désactivé:</h3>
+</p><p>Dans ce cas, vous devez ajuster la configuration du serveur DHCP externe manuellement et éventuellement installer un serveur TFTP. Suivez le manuel de vos serveurs DHCP et TFTP quant à la configuration à y apporter. 
+</p><p>
+</p><p><!-- v18.1 begin-->
+</p><p><h4>Alternativement: Création d'un média d'amorçage</h4>
+</p><p>Lorsque la modification de la configuration de votre serveur DHCP n'est pas possible, vous pouvez toujours démarrer votre client m23 à partir d'une clé USB ou d'un CD/DVD, puis depuis le shell du client, exécuter le script "<code>fetchJobManual</code>" pour démarrer le processus d'installation du client. De plus amples informations concernant la création du média d'amorçage sont disponibles sur <i>"Création d'un média d'amorçage"</i> dans ce menu.
+</p><p><!-- v18.1 end-->
+</p><p>
+</p><p><!-- v16.1 begin-->
+</p><p><h4>Configuration dynamique du serveur DHCP</h4>
+</p><p>Chaque fois l'état de démarrage par réseau d'un poste client est changé (activé / désactivé), le script <i>"/m23/bin/externalDHCPControl.sh"</i> sera exécuté. Vous pouvez adapter le script selon vos besoins afin de configurer dynamiquement un serveur DHCP existant. Trouvez plus d'information dans les commentaired dans le fichier script.
+</p><p><!-- v16.1 end-->
+</p><p>
+</p><p><!-- v13.2 begin-->
+</p><p><h4>Serveur DHCP ISC</h4>
+</p><p>Si le serveur DHCP externe est un <a href="http://www.isc.org/downloads/dhcp/">serveur DHCP "ISC"</a>, vous pouvez utiliser ce dernier à la place du serveur DHCP m23.
+</p><p>
+</p><p><ol>
+</p><p><br>
+</p><p>	<li>Choisissez <i>"PXE"</i> dans <i>"Type de boot"</i> lorsque vous ajoutez un nouveau client m23 par l'interface web. Saisissez le nom de l'ordinateur à assigner au client m23 par le serveur DHCP dans <i>"Nom du poste client"</i>.</li>
+</p><p>
+</p><p>	<li>Désactivez le serveur DHCP de votre serveur m23: En éditant le fichier suivant <pre>/etc/default/isc-dhcp-server</pre> sur le serveur m23, commentez la ligne ci-dessous en ajoutant un "#" au début de celle-ci <pre>INTERFACES=...</pre> cette dernière deviendra <pre>#INTERFACES=...</pre> puis ajoutez une nouvelle ligne <pre>INTERFACES=""</pre> en dessous de celle précédemment commenté. <br>Finalement, redémarrez le serveur DHCP en tapant la commande <pre>/etc/init.d/isc-dhcp-server restart</pre> Le serveur DHCP sera toujours fonctionnel mais ne répondra plus à aucune requète DHCP.</li>
+</p><p>
+</p><p>	<li>Dans la configuration de votre serveur DHCP, activez l'option <pre>use-host-decl-names on</pre> pour le groupe contenant les clients m23.</li>
+</p><p>
+</p><p>	<li>Mettez régulièrement à jour le groupe m23 dans la configuration de votre serveur DHCP (par exemple en utilisant une tâche "cron" ou une autre méthode automatisée) utilisant les données de votre serveur DHCP m23 par l'URL <pre>http://&lt;m23-Server-IP&gt;/exportDHCPSettings.php</pre> Cette URL fournit la configuration des clients m23, devant booter sur le réseau, dans le format attendu par le "serveur DHCP ISC". Le groupe pour les clients m23 pourrait par exemple ressembler au code ci-dessous.	
+</p><p><code>
+</p><p>group {
+</p><p>use-host-decl-names on; 
+</p><p>&lt;A partir des données de exportDHCPSettings.php insérées&gt;
+</p><p>}
+</p><p>	</code>
+</p><p>	</li>
+</p><p></ol>
+</p><p><!-- v13.2 end-->
+</p><p>
+</p><p><h4>Autre serveur DHCP</h4>
+</p><p>
+</p><p><ol>
+</p><p><br>
+</p><p>    <li>Choisissez <!--cha v13.2--><i>"PXE"</i><!--cha v13.2 end--> dans <i>"Type de boot"</i> lorsque vous ajoutez un nouveau client m23 par l'interface web. Saisissez le nom de l'ordinateur à assigner au client m23 par le serveur DHCP dans <i>"Nom du poste client"</i>.</li>
+</p><p>
+</p><p>	<li>Ajustez votre serveur DHCP de sorte qu'il assigne le nom du poste client indiqué dans l'interface web m23 au poste client m23.</li>
+</p><p>
+</p><p><!--cha v13.1-->
+</p><p>	<li>Le nom du noyau PXE, transmis par votre serveur DHCP au poste client, doit être <b>pxelinux.0</b>. Le serveur TFTP est le serveur m23.</li>
+</p><p><!--cha v13.1 end-->
+</p><p>
+</p><p><!-- v13.2 begin-->
+</p><p>	<li>Configurez le serveur DHCP de manière à ce qu'il fournisse l'adresse IP du serveur m23 comme adresse d'origine pour les clients m23.</li>
+</p><p><!-- v13.2 end-->
+</p><p>
+</p><p>	<li>Si malgré cela, votre serveur DHCP ne fonctionne toujours pas après l'ajustement des paramètres, vous devez installer un serveur TFTP sur l'ordinateur hébergeant votre serveur DHCP. La configuration de base du serveur TFTP peut s'inspirer des fichiers de configuration du répertoire /m23/tftp/.</li>
+</p><p></ol>
+</p><p>
+</p><p><!--new v13.1 -->
+</p><p><h3>Proxy DHCP</h3>
+</p><p>Il vous sera probablement utile d'utiliser un <a href="http://en.wikipedia.org/wiki/Preboot_Execution_Environment#Proxy_DHCP">Proxy DHCP</a>.
+</p><p><!--new v13.1 end -->
+</p><p>
+</p><p><div align="right">
+</p><p>	<b>Si vous avez besoin de compléments concernant l'installation et la configuration de votre système m23 ou des autres composants open source,</b> visitez l'URL (en Allemand) <a href="http://www.goos-habermann.de/index.php?s=Entwicklung#Support">Support für m23, Linux und OpenSource von goos-habermann.de</a>.
+</p><p></div>
+</p><p></p></td></tr></TABLE></body>
+			
+<!-- Mirrored from 192.168.1.23/m23admin/misc/helpViewer.php?helpPage=externalDHCP&lang=fr by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:40:43 GMT -->
+</html>

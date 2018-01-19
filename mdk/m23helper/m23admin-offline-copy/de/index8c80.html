@@ -1,0 +1,537 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=clientinfo&client=uefi64&id=925&infoType=clientLog by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:33:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+	<title>m23 - Admin (clientinfo)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="expires" content="0">
+	<link rel="stylesheet" type="text/css" href="images/index.css">
+	<link rel="stylesheet" type="text/css" href="images/jquery.css">
+	<script src="images/codepress.js" type="text/javascript"></script>
+	<script type="text/javascript" src="images/jquery.min.js"></script>
+	<script type="text/javascript" src="images/jquery-ui.min.js"></script>
+</head>
+
+ <body bgcolor="#596374" onload="if (typeof setEFIStartEndPositionIfEFIBootPartitionTypeIsSet == 'function') { setEFIStartEndPositionIfEFIBootPartitionTypeIsSet(); }">
+
+<table align="left" cellspacing="0"  cellpadding="5" border="0">
+	<tr>
+		<td colspan="2" align="center">
+			<table class="box" align="center" id="ID_headHeight">
+				<tr>
+					<td width="900">
+						
+<table cellspacing="0" cellpadding="3" width="100%" border="0">
+	<tr>
+		<td width="100" align="center">
+			<a HREF="http://m23.goos-habermann.de/" target="_blank">
+				<img src="images/m23.png" border="0">
+							</a>
+		</td>
+
+		<td align="center">
+			<table class="helptable">
+				<tr>
+				
+				<tr>
+					<td colspan=2>
+						<nobr><b>Ihre IP-Adresse:</b> 192.168.1.77 <b>Servername oder IP:</b> 192.168.1.23 <b>m23-Version und Patch-Level:</b> 18.1 rock (101083) <a href="index42f0.html?page=serverStatus">Server-Status</a></nobr>
+					</td>
+				</tr>
+				<tr><td colspan=2><hr></td></tr>
+				<tr>
+					<td align="left">
+						&raquo;&nbsp;<a href="http://m23.sf.net/" target="_blank">m23-Projektseite</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/faq/frageFAQ.htm" target="_blank">m23-Forum</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/" target="_blank">Kommerzieller Support</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/index.php?s=SchulungBeratung" target="_blank">m23-Schulungen</a>
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/fragebogen-de">m23-Fragebogen</a><br>
+					</td>
+					<td align="right">
+						god <a href="indexbfd1.html?logout=1">(Ausloggen)</a>
+					</td>
+				</tr>
+								
+			</table>
+		</td>
+
+		<td align="right">
+<!--m23customPatchBegin type=change id=tuxLogo-->
+			<img src="images/sweet-tux.png">
+<!--m23customPatchEnd id=tuxLogo-->
+		</td>
+	</tr>
+</table>					</td>
+				<tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="150">
+			<table class="box" valign="top">
+				<tr>
+					<td align="left">
+						<br>
+<form method="GET" action="http://god:m23@192.168.1.23/m23admin/index.php">
+<center>
+<SELECT  id="LB_language" name="LB_language"  >
+<option value="de">Deutsch</option>
+<option value="en">English</option>
+<option value="fr">Fran&ccedil;ais</option>
+</SELECT>
+<input type="hidden" name="page" value="clientinfo">
+<input type="hidden" name="m23_language" value="de">
+<input type="submit" name="BUT_lang" value="OK">
+</center>
+</form>
+
+
+<ul class="navmenu">
+<li>Server<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index.html"><img border="0" src="images/home_mini.png"></a></td>
+		<td><a href="index.html">Startseite</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexad98.html?page=serverSettings"><img border="0" src="images/settings_mini.png"></a></td>
+		<td><a href="indexad98.html?page=serverSettings">Server-&#8203;Einstellungen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9104.html?page=m23RemoteAdministrationService"><img border="0" src="images/m23remoteadministrationservice-mini.png"></a></td>
+		<td><a href="index9104.html?page=m23RemoteAdministrationService">m23 Fern-&#8203;Administrations-&#8203;Service</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexfb56.html?page=clientsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexfb56.html?page=clientsoverview">Überblick</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe9d8.html?page=addclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="indexe9d8.html?page=addclient&amp;clearSession=1">Hinzufügen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexc607.html?page=clientsoverview&amp;action=setup"><img border="0" src="images/yellow.png"></a></td>
+		<td><a href="indexc607.html?page=clientsoverview&amp;action=setup">Einrichten</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index95c9.html?page=clientsoverview&amp;action=delete"><img border="0" src="images/mini_trash.png"></a></td>
+		<td><a href="index95c9.html?page=clientsoverview&amp;action=delete">Löschen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb010.html?page=assimilate"><img border="0" src="images/assimilate-mini.png"></a></td>
+		<td><a href="indexb010.html?page=assimilate">Integrieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index79a0.html?page=makeBootMedia"><img border="0" src="images/cdrom-mini.png"></a></td>
+		<td><a href="index79a0.html?page=makeBootMedia">Bootmedien erstellen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Virtuelle Clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9740.html?page=addvmclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="index9740.html?page=addvmclient&amp;clearSession=1">VM erstellen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Gruppen<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf13d.html?page=groupsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexf13d.html?page=groupsoverview">Überblick</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbae6.html?page=creategroup"><img border="0" src="images/add-mini.png"></a></td>
+		<td><a href="indexbae6.html?page=creategroup">Hinzufügen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Pakete<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index6dcf.html?page=clientsoverview&amp;action=install"><img border="0" src="images/green.png"></a></td>
+		<td><a href="index6dcf.html?page=clientsoverview&amp;action=install">Installieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index936d.html?page=clientsoverview&amp;action=deinstall"><img border="0" src="images/deinstall-mini.png"></a></td>
+		<td><a href="index936d.html?page=clientsoverview&amp;action=deinstall">Deinstallieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbbd7.html?page=clientsoverview&amp;action=update"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexbbd7.html?page=clientsoverview&amp;action=update">Update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb5c4.html?page=autoUpdate"><img border="0" src="images/autoupdate_mini.png"></a></td>
+		<td><a href="indexb5c4.html?page=autoUpdate">Automatisches Update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf34f.html?page=poolBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexf34f.html?page=poolBuilder">Paketquellen-&#8203;Architekt</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index73d3.html?page=scriptEditor"><img border="0" src="images/scripteditor-mini.png"></a></td>
+		<td><a href="index73d3.html?page=scriptEditor">Skript-Editor</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index3a18.html?page=packageBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="index3a18.html?page=packageBuilder">Paket-Architekt</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexd1df.html?page=clientsourceslist"><img border="0" src="images/package-mini.png"></a></td>
+		<td><a href="indexd1df.html?page=clientsourceslist">Paketquellenliste</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index8b5a.html?page=installpackages&amp;action=packageSelection"><img border="0" src="images/packageselection-mini.png"></a></td>
+		<td><a href="index8b5a.html?page=installpackages&amp;action=packageSelection">Paketzusammen&shy;stellungen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index4804.html?page=comparePackageStatus"><img border="0" src="images/comparepackagestatus-mini.png"></a></td>
+		<td><a href="index4804.html?page=comparePackageStatus">Paketstatus vergleichen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Massen-Tools<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1"><img border="0" src="images/clientbuilder-mini.png"></a></td>
+		<td><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1">Client definieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall"><img border="0" src="images/massinstall-mini.png"></a></td>
+		<td><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall">Masseninstallation</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Support<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe767.html?page=support"><img border="0" src="images/help-mini.png"></a></td>
+		<td><a href="indexe767.html?page=support">Support</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/phpBB2"><img border="0" src="images/bug-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/phpBB2">!!!Bug melden!!!</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news"><img border="0" src="images/newsletter-mini.png"></a></td>
+		<td><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news">Newsletter bestellen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/fragebogen-de"><img border="0" src="images/questionaire-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/fragebogen-de">m23-Fragebogen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/m23manual/de/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/m23manual/de/index.html">Handbuch</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/devguide/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/devguide/index.html">Development Guide</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 </ul>					</td>
+				<tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table class="box" align="center" >
+				<tr>
+					<td valign="top" align="center"><br>
+						
+	<div align="right">
+		<a href="javascript:window.print()">
+			<img src="images/printer-mini.png" border="0" alt="Drucken" title="Drucken">
+		</a>
+		<a href="#m23helpBox">
+			<img src="images/helpred-mini.png" border="0" alt="Hilfe" title="Hilfe">
+		</a>
+	</div>
+	
+<span class="title">uefi64 : Client-Protokoll</span>
+
+<br><br>
+
+<table align="center"><tr><td><div class="subtable_shadow">
+<table class="subtable" align="center">
+		<tr>
+		<td><span class="subhighlight">Zeit</span></td>
+		<td><span class="subhighlight">Information</span></td>
+		<td><span class="subhighlight">Status</span></td>
+		</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">Partition or format OK:  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">Partition or format OK:  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">Partition or format OK:  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">Partition or format OK:  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">Partition or format OK:  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">Partition or format OK:  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">Partition or format OK:  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">Partition or format OK:  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">Partition or format OK:  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">Partition or format OK:  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_red">Partition or format error:  Â</span></td>
+				<td><span class="subhighlight_red"> failure</span></td>
+				</tr><tr>
+				<td valign="top">18.04.2015 17:11</td>
+				<td colspan="2"><span class="subhighlight_yellow"><pre><br></pre></span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">/dev/sda2 on root mounted Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">/etc/resolv.conf was written Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">/etc/network/interfaces was written Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">127.0.0.1 loopdevice setup Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">eth0 setup Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">/etc/hostname was written Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">/etc/hostname was written Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">/etc/resolv.conf was written Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">/etc/apt/apt.conf.d/70debconf was written Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:11</td>
+				<td><span class="subhighlight_green">/etc/apt/sources.list was written Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td valign="top">18.04.2015 17:12</td>
+				<td colspan="2"><span class="subhighlight_yellow"><pre>Ign http://192.168.1.77 ./ InRelease<br>Ign http://192.168.1.77 ./ Release.gpg<br>Get:1 http://192.168.1.77 ./ Release [1620 B]<br>Get:2 http://192.168.1.77 ./ Packages [2898 B]<br>Ign http://192.168.1.77 ./ Translation-en<br>Ign http://security.ubuntu.com trusty-security InRelease<br>Ign http://extras.ubuntu.com trusty InRelease<br>Get:3 http://security.ubuntu.com trusty-security Release.gpg [933 B]<br>Get:4 http://extras.ubuntu.com trusty Release.gpg [72 B]<br>Get:5 http://extras.ubuntu.com trusty Release [11.9 kB]<br>Ign http://extras.ubuntu.com trusty Release<br>Get:6 http://extras.ubuntu.com trusty/main amd64 Packages [14 B]<br>Get:7 http://security.ubuntu.com trusty-security Release [63.5 kB]<br>Ign http://extras.ubuntu.com trusty/main Translation-en<br>Ign http://switch.dl.sourceforge.net ./ InRelease<br>Get:8 http://security.ubuntu.com trusty-security/main amd64 Packages [258 kB]<br>Get:9 http://switch.dl.sourceforge.net ./ Release.gpg [198 B]<br>Get:10 http://switch.dl.sourceforge.net ./ Release [981 B]<br>Ign http://switch.dl.sourceforge.net ./ Release<br>Get:11 http://switch.dl.sourceforge.net ./ Packages [6692 B]<br>Get:12 http://security.ubuntu.com trusty-security/restricted amd64 Packages [8875 B]<br>Get:13 http://security.ubuntu.com trusty-security/universe amd64 Packages [95.9 kB]<br>Ign http://switch.dl.sourceforge.net ./ Translation-en<br>Get:14 http://security.ubuntu.com trusty-security/multiverse amd64 Packages [3451 B]<br>Get:15 http://security.ubuntu.com trusty-security/main Translation-en [131 kB]<br>Get:16 http://security.ubuntu.com trusty-security/multiverse Translation-en [1580 B]<br>Get:17 http://security.ubuntu.com trusty-security/restricted Translation-en [2266 B]<br>Get:18 http://security.ubuntu.com trusty-security/universe Translation-en [52.1 kB]<br>Ign http://de.archive.ubuntu.com trusty InRelease<br>Ign http://de.archive.ubuntu.com trusty-updates InRelease<br>Ign http://de.archive.ubuntu.com trusty-backports InRelease<br>Get:19 http://de.archive.ubuntu.com trusty Release.gpg [933 B]<br>Get:20 http://de.archive.ubuntu.com trusty-updates Release.gpg [933 B]<br>Get:21 http://de.archive.ubuntu.com trusty-backports Release.gpg [933 B]<br>Get:22 http://de.archive.ubuntu.com trusty Release [58.5 kB]<br>Get:23 http://de.archive.ubuntu.com trusty-updates Release [63.5 kB]<br>Get:24 http://de.archive.ubuntu.com trusty-backports Release [63.5 kB]<br>Get:25 http://de.archive.ubuntu.com trusty/main amd64 Packages [1350 kB]<br>Get:26 http://de.archive.ubuntu.com trusty/restricted amd64 Packages [13.0 kB]<br>Get:27 http://de.archive.ubuntu.com trusty/universe amd64 Packages [5859 kB]<br>Get:28 http://de.archive.ubuntu.com trusty/multiverse amd64 Packages [132 kB]<br>Get:29 http://de.archive.ubuntu.com trusty/main Translation-en [762 kB]<br>Get:30 http://de.archive.ubuntu.com trusty/multiverse Translation-en [102 kB]<br>Get:31 http://de.archive.ubuntu.com trusty/restricted Translation-en [3457 B]<br>Get:32 http://de.archive.ubuntu.com trusty/universe Translation-en [4089 kB]<br>Get:33 http://de.archive.ubuntu.com trusty-updates/main amd64 Packages [502 kB]<br>Get:34 http://de.archive.ubuntu.com trusty-updates/restricted amd64 Packages [9238 B]<br>Get:35 http://de.archive.ubuntu.com trusty-updates/universe amd64 Packages [269 kB]<br>Get:36 http://de.archive.ubuntu.com trusty-updates/multiverse amd64 Packages [11.7 kB]<br>Get:37 http://de.archive.ubuntu.com trusty-updates/main Translation-en [237 kB]<br>Get:38 http://de.archive.ubuntu.com trusty-updates/multiverse Translation-en [6076 B]<br>Get:39 http://de.archive.ubuntu.com trusty-updates/restricted Translation-en [2433 B]<br>Get:40 http://de.archive.ubuntu.com trusty-updates/universe Translation-en [138 kB]<br>Get:41 http://de.archive.ubuntu.com trusty-backports/main amd64 Packages [6256 B]<br>Get:42 http://de.archive.ubuntu.com trusty-backports/restricted amd64 Packages [28 B]<br>Get:43 http://de.archive.ubuntu.com trusty-backports/universe amd64 Packages [28.5 kB]<br>Get:44 http://de.archive.ubuntu.com trusty-backports/multiverse amd64 Packages [1245 B]<br>Get:45 http://de.archive.ubuntu.com trusty-backports/main Translation-en [3645 B]<br>Get:46 http://de.archive.ubuntu.com trusty-backports/multiverse Translation-en [776 B]<br>Get:47 http://de.archive.ubuntu.com trusty-backports/restricted Translation-en [14 B]<br>Get:48 http://de.archive.ubuntu.com trusty-backports/universe Translation-en [25.3 kB]<br>Fetched 14.4 MB in 1min 22s (173 kB/s)<br>Reading package lists...<br>W: GPG error: http://extras.ubuntu.com trusty Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 16126D3A3E5C1192<br>W: GPG error: http://switch.dl.sourceforge.net ./ Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY C6F0913D3305E63A<br></pre></span></td>
+				</tr><tr>
+				<td valign="top">18.04.2015 17:13</td>
+				<td colspan="2"><span class="subhighlight_yellow"><pre>Reading package lists...<br>Building dependency tree...<br>Reading state information...<br>The following extra packages will be installed:<br>  gettext-base grub-common libasprintf0c2 libfreetype6 libfuse2 os-prober<br>Suggested packages:<br>  grub-legacy-doc mdadm multiboot-doc grub-emu xorriso desktop-base fuse<br>The following NEW packages will be installed:<br>  gettext-base grub grub-common libasprintf0c2 libfreetype6 libfuse2 os-prober<br>0 upgraded, 7 newly installed, 0 to remove and 0 not upgraded.<br>3 not fully installed or removed.<br>Need to get 3058 kB of archives.<br>After this operation, 15.8 MB of additional disk space will be used.<br>Get:1 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libasprintf0c2 amd64 0.18.3.1-1ubuntu3 [6712 B]<br>Get:2 http://de.archive.ubuntu.com/ubuntu/ trusty/main libfuse2 amd64 2.9.2-4ubuntu4 [87.2 kB]<br>Get:3 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main libfreetype6 amd64 2.5.2-1ubuntu2.4 [305 kB]<br>Get:4 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main gettext-base amd64 0.18.3.1-1ubuntu3 [48.8 kB]<br>Get:5 http://de.archive.ubuntu.com/ubuntu/ trusty-updates/main grub-common amd64 2.02~beta2-9ubuntu1 [1680 kB]<br>Get:6 http://de.archive.ubuntu.com/ubuntu/ trusty/main grub amd64 0.97-29ubuntu66 [913 kB]<br>Get:7 http://de.archive.ubuntu.com/ubuntu/ trusty/main os-prober amd64 1.63ubuntu1 [18.1 kB]<br>Preconfiguring packages ...<br>Fetched 3058 kB in 0s (19.0 MB/s)<br>Selecting previously unselected package libasprintf0c2:amd64.<br>(Reading database ... 11565 files and directories currently installed.)<br>Preparing to unpack .../libasprintf0c2_0.18.3.1-1ubuntu3_amd64.deb ...<br>Unpacking libasprintf0c2:amd64 (0.18.3.1-1ubuntu3) ...<br>Selecting previously unselected package libfuse2:amd64.<br>Preparing to unpack .../libfuse2_2.9.2-4ubuntu4_amd64.deb ...<br>Unpacking libfuse2:amd64 (2.9.2-4ubuntu4) ...<br>Selecting previously unselected package libfreetype6:amd64.<br>Preparing to unpack .../libfreetype6_2.5.2-1ubuntu2.4_amd64.deb ...<br>Unpacking libfreetype6:amd64 (2.5.2-1ubuntu2.4) ...<br>Selecting previously unselected package gettext-base.<br>Preparing to unpack .../gettext-base_0.18.3.1-1ubuntu3_amd64.deb ...<br>Unpacking gettext-base (0.18.3.1-1ubuntu3) ...<br>Selecting previously unselected package grub-common.<br>Preparing to unpack .../grub-common_2.02~beta2-9ubuntu1_amd64.deb ...<br>Unpacking grub-common (2.02~beta2-9ubuntu1) ...<br>Selecting previously unselected package grub.<br>Preparing to unpack .../grub_0.97-29ubuntu66_amd64.deb ...<br>Unpacking grub (0.97-29ubuntu66) ...<br>Selecting previously unselected package os-prober.<br>Preparing to unpack .../os-prober_1.63ubuntu1_amd64.deb ...<br>Unpacking os-prober (1.63ubuntu1) ...<br>Processing triggers for ureadahead (0.100.0-16) ...<br>Setting up udev (204-5ubuntu20.11) ...<br> * udev requires devtmpfs support, not started<br>   ...fail!<br>invoke-rc.d: initscript udev, action "restart" failed.<br>dpkg: error processing package udev (--configure):<br> subprocess installed post-installation script returned error exit status 1<br>dpkg: dependency problems prevent configuration of initramfs-tools:<br> initramfs-tools depends on udev (>= 147~-5); however:<br>  Package udev is not configured yet.<br><br>dpkg: error processing package initramfs-tools (--configure):<br> dependency problems - leaving unconfigured<br>dpkg: dependency problems prevent configuration of plymouth:<br> plymouth depends on initramfs-tools; however:<br>  Package initramfs-tools is not configured yet.<br> plymouth depends on udev (>= 166-0ubuntu4); however:<br>  Package udev is not configured yet.<br><br>dpkg: error processing package plymouth (--configure):<br> dependency problems - leaving unconfigured<br>Setting up libasprintf0c2:amd64 (0.18.3.1-1ubuntu3) ...<br>Setting up libfuse2:amd64 (2.9.2-4ubuntu4) ...<br>Setting up libfreetype6:amd64 (2.5.2-1ubuntu2.4) ...<br>Setting up gettext-base (0.18.3.1-1ubuntu3) ...<br>Setting up grub-common (2.02~beta2-9ubuntu1) ...<br>dpkg: dependency problems prevent configuration of grub:<br> grub depends on udev (>= 117-5); however:<br>  Package udev is not configured yet.<br><br>dpkg: error processing package grub (--configure):<br> dependency problems - leaving unconfigured<br>Setting up os-prober (1.63ubuntu1) ...<br>Processing triggers for libc-bin (2.19-0ubuntu6.6) ...<br>Processing triggers for ureadahead (0.100.0-16) ...<br>Errors were encountered while processing:<br> udev<br> initramfs-tools<br> plymouth<br> grub<br></span><span class="subhighlight_red">E: Sub-process /usr/bin/dpkg returned an error code (1)</span><span class="subhighlight_yellow"><br></pre></span></td>
+				</tr><tr>
+				<td>18.04.2015 17:13</td>
+				<td><span class="subhighlight_red">apt-get install grub Â</span></td>
+				<td><span class="subhighlight_red"> failure</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:13</td>
+				<td><span class="subhighlight_green">apt-get install udev Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:13</td>
+				<td><span class="subhighlight_green">apt-get upgrade  Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td valign="top">18.04.2015 17:18</td>
+				<td colspan="2"><span class="subhighlight_yellow"><pre>Reading package lists...<br>Building dependency tree...<br>Reading state information...<br>Package console-tools is not available, but is referred to by another package.<br>This may mean that the package is missing, has been obsoleted, or<br>is only available from another source<br><br></span><span class="subhighlight_red">E: Package 'console-tools' has no installation candidate</span><span class="subhighlight_yellow"><br></pre></span></td>
+				</tr><tr>
+				<td>18.04.2015 17:18</td>
+				<td><span class="subhighlight_red">apt-get install apmd console-common console-data console-tools cron less screen sed ssh net-tools ntpdate parted gawk hdparm locales grub hwsetup hwdata-knoppix m23-initscripts m23hwscanner libncursesw5 pciutils mdadm m23-skel linux-image-generic Â</span></td>
+				<td><span class="subhighlight_red"> failure</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:18</td>
+				<td><span class="subhighlight_green">apt-get install ubuntu-keyring screen dialog gnupg sudo Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:18</td>
+				<td><span class="subhighlight_green">apt-get install ethtool Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:18</td>
+				<td><span class="subhighlight_green">apt-get install isc-dhcp-client Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:18</td>
+				<td><span class="subhighlight_green">apt-get install man nano Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:18</td>
+				<td><span class="subhighlight_green">/etc/resolv.conf was written Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:20</td>
+				<td><span class="subhighlight_green">apt-get install policykit-1 upower acpi-support iputils-ping ubuntu-extras-keyring ubuntu-sounds Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:20</td>
+				<td><span class="subhighlight_green">apt-get install pciutils Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:20</td>
+				<td><span class="subhighlight_green">Running m23hwscanner Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:20</td>
+				<td><span class="subhighlight_green">apt-get remove lilo Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:20</td>
+				<td><span class="subhighlight_green">apt-get install grub m23-grub-splash Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:20</td>
+				<td><span class="subhighlight_green">apt-get install udev Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:20</td>
+				<td><span class="subhighlight_green">Grub installation Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:20</td>
+				<td><span class="subhighlight_green">Grub: Kernels found in menu.lst Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:20</td>
+				<td><span class="subhighlight_green">/etc/fstab was written Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:20</td>
+				<td><span class="subhighlight_green">activating swap Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:21</td>
+				<td><span class="subhighlight_green">apt-get install efibootmgr shim grub-efi-amd64 grub-efi-amd64-bin linux-signed-generic grub-efi-amd64-signed shim-signed Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:21</td>
+				<td><span class="subhighlight_green">apt-get install console-setup keyboard-configuration Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:21</td>
+				<td><span class="subhighlight_green">hardware detection Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:22</td>
+				<td><span class="subhighlight_green">X11 installed Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:23</td>
+				<td><span class="subhighlight_green">apt-get install lightdm Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:24</td>
+				<td><span class="subhighlight_green">apt-get install lightdm-kde-greeter Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:25</td>
+				<td><span class="subhighlight_green">apt-get install plasma-desktop lightdm-kde-greeter acpi-support Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:25</td>
+				<td><span class="subhighlight_green">apt-get remove overlay-scrollbar Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td valign="top">18.04.2015 17:26</td>
+				<td colspan="2"><span class="subhighlight_yellow"><pre>Reading package lists...<br>Building dependency tree...<br>Reading state information...<br>Package language-pack-kde-de-base is not available, but is referred to by another package.<br>This may mean that the package is missing, has been obsoleted, or<br>is only available from another source<br>However the following packages replace it:<br>  language-pack-gnome-de-base language-pack-gnome-de language-pack-de-base<br>  language-pack-de<br><br></span><span class="subhighlight_red">E: Package 'language-pack-kde-de-base' has no installation candidate</span><span class="subhighlight_yellow"><br></pre></span></td>
+				</tr><tr>
+				<td>18.04.2015 17:26</td>
+				<td><span class="subhighlight_red">apt-get install language-pack-de language-pack-de-base language-pack-en language-pack-en-base language-pack-gnome-de language-pack-gnome-de-base language-pack-gnome-en language-pack-gnome-en-base language-pack-kde-de language-pack-kde-de-base Â</span></td>
+				<td><span class="subhighlight_red"> failure</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:26</td>
+				<td><span class="subhighlight_green">apt-get remove appmenu-gtk appmenu-gtk3 appmenu-qt firefox-globalmenu thunderbird-globalmenu Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td valign="top">18.04.2015 17:26</td>
+				<td colspan="2"><span class="subhighlight_yellow"><pre>Reading package lists...<br>Building dependency tree...<br>Reading state information...<br>Package 'ubuntuone-client' is not installed, so not removed<br>Package 'ubuntuone-installer' is not installed, so not removed<br>Package 'python-ubuntuone-storageprotocol' is not installed, so not removed<br></span><span class="subhighlight_red">E: Unable to locate package rhythmbox-ubuntuone</span><span class="subhighlight_yellow"><br></span><span class="subhighlight_red">E: Unable to locate package python-ubuntuone-client</span><span class="subhighlight_yellow"><br></pre></span></td>
+				</tr><tr>
+				<td>18.04.2015 17:26</td>
+				<td><span class="subhighlight_red">apt-get remove ubuntuone-client ubuntuone-installer rhythmbox-ubuntuone python-ubuntuone-storageprotocol python-ubuntuone-client Â</span></td>
+				<td><span class="subhighlight_red"> failure</span></td>
+				</tr><tr>
+				<td>18.04.2015 17:27</td>
+				<td><span class="subhighlight_green">adding user Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr><tr>
+				<td valign="top">18.04.2015 17:27</td>
+				<td colspan="2"><span class="subhighlight_yellow"><pre>Reading package lists...<br>Building dependency tree...<br>Reading state information...<br>The following packages were automatically installed and are no longer required:<br>  cdparanoia cdrdao dvd+rw-tools genisoimage growisofs k3b-data kde-l10n-de<br>  libao-common libao4 libdvdnav4 libdvdread4 libflac++6 libiso9660-8 libk3b6<br>  libkcddb4 libkcompactdisc4 libmpcdec6 libmusicbrainz5-0 libneon27-gnutls<br>  libperl4-corelibs-perl libvcdinfo0 vcdimager wodim<br>Use 'apt-get autoremove' to remove them.<br>The following NEW packages will be installed:<br>  printer-driver-splix<br>0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.<br>Need to get 35.8 kB of archives.<br>After this operation, 201 kB of additional disk space will be used.<br>Get:1 http://de.archive.ubuntu.com/ubuntu/ trusty/main printer-driver-splix amd64 2.0.0+svn315-2fakesync1 [35.8 kB]<br>Fetched 35.8 kB in 0s (0 B/s)<br>Selecting previously unselected package printer-driver-splix.<br>(Reading database ... 120514 files and directories currently installed.)<br>Preparing to unpack .../printer-driver-splix_2.0.0+svn315-2fakesync1_amd64.deb ...<br>Unpacking printer-driver-splix (2.0.0+svn315-2fakesync1) ...<br>Processing triggers for cups (1.7.2-0ubuntu1.5) ...<br>Updating PPD files for splix ...<br>Setting up printer-driver-splix (2.0.0+svn315-2fakesync1) ...<br></pre></span></td>
+				</tr><tr>
+				<td>18.04.2015 17:27</td>
+				<td><span class="subhighlight_green">apt-get install efibootmgr shim grub-efi-amd64 grub-efi-amd64-bin linux-signed-generic grub-efi-amd64-signed shim-signed Â</span></td>
+				<td><span class="subhighlight_green"> ok</span></td>
+				</tr></table></div></td><tr></table><br><a href="indexddec.html?page=clientdetails&amp;client=uefi64&amp;id=925#clientInformation"><img src="images/settings.png"> Zurück zum Kontrollzentrum <img src="images/settings.png"></a><br><br><br><br><a name="m23helpBox"></a>
+	<table class="helptable" align="left" border="0" cellspacing="5" id="ID_helpBox">
+<tr><td><p><span class="subhighlight">Hilfe: Client-Protokoll<!--new v1.6-->
+</span></p><p>In diesem Protokoll können Sie vorgenommene Installationen, Deinstallationen und andere Aktionen begutachten.</p></td></tr></TABLE>					</td>
+									</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=clientinfo&client=uefi64&id=925&infoType=clientLog by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:33:43 GMT -->
+</html>

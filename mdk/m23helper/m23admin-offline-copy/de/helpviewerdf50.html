@@ -1,0 +1,59 @@
+
+	<div align="right">
+		<a href="javascript:window.print()">
+			<img src="images/printer-mini.png" border="0" alt="Drucken" title="Drucken">
+		</a>
+		<a href="#m23helpBox">
+			<img src="images/helpred-mini.png" border="0" alt="Hilfe" title="Hilfe">
+		</a>
+	</div>
+	
+			<html>
+				
+<!-- Mirrored from 192.168.1.23/m23admin/misc/helpViewer.php?helpPage=serverRestore&lang=de by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:33:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+					<title>m23helpViewer - Hilfe: <!--v10.0 new-->Wiederherstellung Ihres m23-Servers</title>
+					<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+					<meta http-equiv="expires" content="0">
+					<link rel="stylesheet" type="text/css" href="images/printable.css">
+				</head>
+				<body><br><a name="m23helpBox"></a>
+	<table class="helptable" align="left" border="0" cellspacing="5" id="ID_helpBox">
+<tr><td><p><span class="subhighlight">Hilfe: <!--v10.0 new-->Wiederherstellung Ihres m23-Servers
+</span></p><p>Sollte es zu einem Ausfall Ihres m23-Servers kommen, so können Sie diesen mittels der zuvor angelegten Backups in einen der gesicherten Zustände zurückversetzen. Gehen Sie hierzu wie folgt vor:
+</p><p>
+</p><p><ol>
+</p><p>	<li>Installieren Sie Ihren m23-Server auf einer fehlerfreien Festplatte mit der m23-Serverinstallations-CD (zu beziehen von <a href="http://m23.sf.net/">m23.sf.net</a>).</li>
+</p><p>	<li>Speichern Sie die letzte Sicherungsdatei auf dem Rechner, der auch den GPG-Schlüssel zum ver- und entschlüsseln bereithält.</li>
+</p><p>	<li>Wenn es sich um ein Linux-System handelt, so entschlüsseln Sie die Backup-Datei auf der Kommandozeile mittels:
+</p><p>
+</p><p>	<code>gpg -d < m23serverBackup-*.tar.gpg > m23backup.tar</code>
+</p><p>
+</p><p>	Ansonsten verwenden Sie die GPG-Anwendung Ihres Betriebssystems.
+</p><p>	</li>
+</p><p>	<li>Kopieren Sie die entschlüsselte Sicherungsdatei <i>"m23backup.tar"</i> auf den neu installierten m23-Server in das Verzeichnis <i>"/tmp"</i>. Unter Linux können Sie das Kopieren mit SCP durchführen:
+</p><p>
+</p><p>	<code>scp m23backup.tar root@[IP]:/tmp</code>
+</p><p>
+</p><p>	Ersetzen Sie hierbei <i>"[IP]"</i> durch die IP Ihres m23-Servers. Unter Windows können Sie das Programm <a href="http://winscp.net/eng/docs/lang:de">WinSCP (www.winscp.net)</a> verwenden.</li>
+</p><p>	<li>Loggen Sie sich auf dem m23-Server als Benutzer <b>root</b> ein.</li>
+</p><p>	<li>Wechseln Sie in das Verzeichnis <i>"/tmp"</i> mit:
+</p><p>
+</p><p>	<code>cd /tmp</code></li>
+</p><p>	<li>Erstellen Sie ein neues Verzeichnis für die entpackten Daten und wechseln Sie in dieses:
+</p><p>
+</p><p>	<code>mkdir restore; cd restore</code></li>
+</p><p>	<li>Entpacken Sie das Backup mit:
+</p><p>
+</p><p>	<code>tar xfv /tmp/m23backup.tar</code></li>
+</p><p>	<li>Starten Sie den Wiederherstellungsprozeß mit:
+</p><p>
+</p><p>	<code>/m23/bin/m23Restore</code></li>
+</p><p>	<li>Nach Beendigung der Wiederherstellung sollten Sie Ihren m23-Server neu starten, z.B. mit:
+</p><p>	<code>reboot</code></li>
+</p><p>	<li>Nun sollte Ihr m23-Server wieder funktionsfähig sein.</li>
+</p><p></ol></p></td></tr></TABLE></body>
+			
+<!-- Mirrored from 192.168.1.23/m23admin/misc/helpViewer.php?helpPage=serverRestore&lang=de by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:33:31 GMT -->
+</html>

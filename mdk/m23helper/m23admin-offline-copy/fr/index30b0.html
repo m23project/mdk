@@ -1,0 +1,465 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=installpackages&client=ueficl0&id=928 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:40:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+	<title>m23 - Admin (installpackages)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="expires" content="0">
+	<link rel="stylesheet" type="text/css" href="images/index.css">
+	<link rel="stylesheet" type="text/css" href="images/jquery.css">
+	<script src="images/codepress.js" type="text/javascript"></script>
+	<script type="text/javascript" src="images/jquery.min.js"></script>
+	<script type="text/javascript" src="images/jquery-ui.min.js"></script>
+</head>
+
+ <body bgcolor="#596374" onload="if (typeof setEFIStartEndPositionIfEFIBootPartitionTypeIsSet == 'function') { setEFIStartEndPositionIfEFIBootPartitionTypeIsSet(); }">
+
+<table align="left" cellspacing="0"  cellpadding="5" border="0">
+	<tr>
+		<td colspan="2" align="center">
+			<table class="box" align="center" id="ID_headHeight">
+				<tr>
+					<td width="900">
+						
+<table cellspacing="0" cellpadding="3" width="100%" border="0">
+	<tr>
+		<td width="100" align="center">
+			<a HREF="http://m23.goos-habermann.de/" target="_blank">
+				<img src="images/m23.png" border="0">
+							</a>
+		</td>
+
+		<td align="center">
+			<table class="helptable">
+				<tr>
+				
+				<tr>
+					<td colspan=2>
+						<nobr><b>Votre adresse IP:</b> 192.168.1.77 <b>Nom ou numéro IP du serveur:</b> 192.168.1.23 <b>Version de m23 et niveau de patch:</b> 18.1 rock (101083) <a href="index42f0.html?page=serverStatus">État du serveur</a></nobr>
+					</td>
+				</tr>
+				<tr><td colspan=2><hr></td></tr>
+				<tr>
+					<td align="left">
+						&raquo;&nbsp;<a href="http://m23.sf.net/" target="_blank">Page Web du projet m23</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/faq/frageFAQ.htm" target="_blank">Forum de m23</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/" target="_blank">Support commercial</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/index.php?s=SchulungBeratung" target="_blank">Formation sur m23</a>
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/questionnaire-fr">Questionnaire de m23</a><br>
+					</td>
+					<td align="right">
+						god <a href="indexbfd1.html?logout=1">(Déconnexion)</a>
+					</td>
+				</tr>
+								
+			</table>
+		</td>
+
+		<td align="right">
+<!--m23customPatchBegin type=change id=tuxLogo-->
+			<img src="images/sweet-tux.png">
+<!--m23customPatchEnd id=tuxLogo-->
+		</td>
+	</tr>
+</table>					</td>
+				<tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="150">
+			<table class="box" valign="top">
+				<tr>
+					<td align="left">
+						<br>
+<form method="GET" action="http://god:m23@192.168.1.23/m23admin/index.php">
+<center>
+<SELECT  id="LB_language" name="LB_language"  >
+<option value="fr">Fran&ccedil;ais</option>
+<option value="de">Deutsch</option>
+<option value="en">English</option>
+</SELECT>
+<input type="hidden" name="page" value="installpackages">
+<input type="hidden" name="m23_language" value="fr">
+<input type="submit" name="BUT_lang" value="OK">
+</center>
+</form>
+
+
+<ul class="navmenu">
+<li>Serveur<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index.html"><img border="0" src="images/home_mini.png"></a></td>
+		<td><a href="index.html">Page d&apos;accueil</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexad98.html?page=serverSettings"><img border="0" src="images/settings_mini.png"></a></td>
+		<td><a href="indexad98.html?page=serverSettings">Configurations du serveur</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9104.html?page=m23RemoteAdministrationService"><img border="0" src="images/m23remoteadministrationservice-mini.png"></a></td>
+		<td><a href="index9104.html?page=m23RemoteAdministrationService">Service de téléadministration de m23</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Postes client<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexfb56.html?page=clientsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexfb56.html?page=clientsoverview">Vue d&apos;ensemble</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe9d8.html?page=addclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="indexe9d8.html?page=addclient&amp;clearSession=1">Ajouter</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexc607.html?page=clientsoverview&amp;action=setup"><img border="0" src="images/yellow.png"></a></td>
+		<td><a href="indexc607.html?page=clientsoverview&amp;action=setup">Configuration</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index95c9.html?page=clientsoverview&amp;action=delete"><img border="0" src="images/mini_trash.png"></a></td>
+		<td><a href="index95c9.html?page=clientsoverview&amp;action=delete">Effacer</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb010.html?page=assimilate"><img border="0" src="images/assimilate-mini.png"></a></td>
+		<td><a href="indexb010.html?page=assimilate">Intégrer</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index79a0.html?page=makeBootMedia"><img border="0" src="images/cdrom-mini.png"></a></td>
+		<td><a href="index79a0.html?page=makeBootMedia">Création d'un média d'amorçage</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Postes client virtuels<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9740.html?page=addvmclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="index9740.html?page=addvmclient&amp;clearSession=1">Créer une machine virtuelle</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Groupes<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf13d.html?page=groupsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexf13d.html?page=groupsoverview">Vue d&apos;ensemble</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbae6.html?page=creategroup"><img border="0" src="images/add-mini.png"></a></td>
+		<td><a href="indexbae6.html?page=creategroup">Ajouter</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Paquets<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index6dcf.html?page=clientsoverview&amp;action=install"><img border="0" src="images/green.png"></a></td>
+		<td><a href="index6dcf.html?page=clientsoverview&amp;action=install">Installer</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index936d.html?page=clientsoverview&amp;action=deinstall"><img border="0" src="images/deinstall-mini.png"></a></td>
+		<td><a href="index936d.html?page=clientsoverview&amp;action=deinstall">Désinstaller</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbbd7.html?page=clientsoverview&amp;action=update"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexbbd7.html?page=clientsoverview&amp;action=update">Mise à jour</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb5c4.html?page=autoUpdate"><img border="0" src="images/autoupdate_mini.png"></a></td>
+		<td><a href="indexb5c4.html?page=autoUpdate">Mises à jour automatiques</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf34f.html?page=poolBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexf34f.html?page=poolBuilder">Architecte de sources de paquets</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index73d3.html?page=scriptEditor"><img border="0" src="images/scripteditor-mini.png"></a></td>
+		<td><a href="index73d3.html?page=scriptEditor">Éditeur de scripts</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index3a18.html?page=packageBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="index3a18.html?page=packageBuilder">Constructeur de paquets</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexd1df.html?page=clientsourceslist"><img border="0" src="images/package-mini.png"></a></td>
+		<td><a href="indexd1df.html?page=clientsourceslist">Sources de paquets</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index8b5a.html?page=installpackages&amp;action=packageSelection"><img border="0" src="images/packageselection-mini.png"></a></td>
+		<td><a href="index8b5a.html?page=installpackages&amp;action=packageSelection">Modifier les combinaisons de paquets</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index4804.html?page=comparePackageStatus"><img border="0" src="images/comparepackagestatus-mini.png"></a></td>
+		<td><a href="index4804.html?page=comparePackageStatus">Comparer l'état de paquets</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Outils de masse<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1"><img border="0" src="images/clientbuilder-mini.png"></a></td>
+		<td><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1">Définir un poste client</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall"><img border="0" src="images/massinstall-mini.png"></a></td>
+		<td><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall">Installation de masse</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Support<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe767.html?page=support"><img border="0" src="images/help-mini.png"></a></td>
+		<td><a href="indexe767.html?page=support">Support</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/phpBB2"><img border="0" src="images/bug-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/phpBB2">!!!Rapporter une erreur!!!</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news"><img border="0" src="images/newsletter-mini.png"></a></td>
+		<td><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news">Abonnement au bulletin</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/questionnaire-fr"><img border="0" src="images/questionaire-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/questionnaire-fr">Questionnaire de m23</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/m23manual/fr/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/m23manual/fr/index.html">Manuel</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/devguide/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/devguide/index.html">Development Guide</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 </ul>					</td>
+				<tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table class="box" align="center" >
+				<tr>
+					<td valign="top" align="center"><br>
+						
+	<div align="right">
+		<a href="javascript:window.print()">
+			<img src="images/printer-mini.png" border="0" alt="Imprimer" title="Imprimer">
+		</a>
+		<a href="#m23helpBox">
+			<img src="images/helpred-mini.png" border="0" alt="Aide" title="Aide">
+		</a>
+	</div>
+	
+
+<span class="title">ueficl0: Installer des paquets</span>
+
+<br><br>
+
+<script>
+function showWait()
+{
+	document.getElementById("waitdiv").style.display = "block";
+}
+</script>
+
+
+<CENTER>
+<form method="post" action="http://god:m23@192.168.1.23/m23admin/index.php" name="htmlform" id="htmlformID" enctype="multipart/form-data">
+	<script language="javascript">document.write('<input type="hidden" name="javaScriptEnabled" value="on">');</script>
+			Recherche des paquets <INPUT type="text" name="ED_search" size="20" maxlength="255" value="">&nbsp;
+			<INPUT type="submit" name="BUT_search" value="Rechercher" onClick="showWait()">
+		<BR><INPUT type="radio" name="RB_packetType" value="recommend"> Combinaisons de paquets
+<INPUT type="radio" name="RB_packetType" value="normal" checked> Paquets normaux
+<INPUT type="radio" name="RB_packetType" value="special"> Paquets spéciaux (pour utilisateurs expérimentés)
+
+			<br><br><INPUT type="checkbox" name="CB_completeDescription" value="1" > Chercher les descriptions exhaustives des paquets (peut prendre beaucoup de temps dans de nombreux cas)<br>
+			
+			<INPUT type="submit" name="BUT_updatePackageSearchIndex" value="Mettre à jour l'index de recherche de paquets ">
+		 Dernière mise à jour 18/01/2018 23:37:08 (Dernière modification 1 minute(s) avant)
+
+			<div style="display: none" id="waitdiv">
+				<table class="infotable">
+					<tr>
+						<td>
+							<img id="waitimg" src="images/wait-ani.gif">
+							La recherche des paquets est en cours, veuillez patienter, s.v.p.
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			</CENTER>
+<BR>
+
+<input type="hidden" id="HID_packagesource" name="HID_packagesource" value="trusty"><input type="hidden" id="HID_distr" name="HID_distr" value="ubuntu"><input type="hidden" id="HID_groupStr" name="HID_groupStr" value=""><input type="hidden" id="HID_action" name="HID_action" value=""><input type="hidden" id="HID_id" name="HID_id" value="928"><input type="hidden" id="HID_client" name="HID_client" value="ueficl0"><input type="hidden" name="page" value="installpackages"><br><br><span class="titlesmal">Paquets trouvés</span><br><br>
+<center>
+
+<BR>
+			<INPUT type="submit" name="BUT_mark" value="Noter">
+		</center><BR><input type="hidden" id="HID_CB_counter" name="HID_CB_counter" value="0"><input type="hidden" id="HID_CB_client" name="HID_CB_client" value="ueficl0"><BR><BR><br><br><span class="titlesmal">Paquets préselectionnés</span><BR><BR>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable" align="center" >
+
+	<script language=JavaScript>
+	function checkboxChanger(mode)
+	{
+		for (f = 0; f < document.forms.length; f++)
+			for(i = 0; i < document.forms[f].elements.length; i++)
+			{
+				var ele = document.forms[f].elements[i];
+				if(ele.type == 'checkbox')
+				{
+					if(mode==0)
+						ele.checked = !ele.checked;
+					else if(mode==1)
+						ele.checked = false;
+					else
+						ele.checked = true;
+				}
+			}
+	}
+	</script>
+	<tr>
+		<td></td>
+		<td><span class="subhighlight">État</span></td>
+		<td><span class="subhighlight">Nom de paquet</span></td>
+<!--		<td><span class="subhighlight">Raison</span></td> -->
+		<td><span class="subhighlight">Taille</span></td>
+		<td><span class="subhighlight">Paramètres</span></td>
+		<td><span class="subhighlight">Options</span></td>
+		<td><span class="subhighlight">Priorité</span></td>
+		<td><img src="images/selectall.png" onclick="checkboxChanger(3);" alt="Sélectionner tous" title="Sélectionner tous"> <img src="images/deselectall.png" onclick="checkboxChanger(1);" alt="Désélectionner tous" title="Désélectionner tous"> <img src="images/invert.png" onclick="checkboxChanger(0);" alt="Inverser la sélection" title="Inverser la sélection"></td>
+	</tr>
+	
+		<tr>
+			<td colspan="7">
+				<hr>
+				Nombre de paquets: 0<br>
+				Taille totale: 0,00 MB<br>
+			</td>
+			<td>
+				<img src="images/selectall.png" onclick="checkboxChanger(3);" alt="Sélectionner tous" title="Sélectionner tous"> <img src="images/deselectall.png" onclick="checkboxChanger(1);" alt="Désélectionner tous" title="Désélectionner tous"> <img src="images/invert.png" onclick="checkboxChanger(0);" alt="Inverser la sélection" title="Inverser la sélection">
+			</td>
+		</tr>
+</table></div></td><tr></table>
+
+
+<center>
+
+
+			<INPUT type="submit" name="BUT_discardAll" value="Tout Annuler">
+		&nbsp;&nbsp;
+			<INPUT type="submit" name="BUT_discardSelected" value="Annuler la sélection">
+		<br><br><INPUT type="text" name="ED_priority" size="3" maxlength="3" value="25">&nbsp;&nbsp;
+			<INPUT type="submit" name="BUT_priority" value="Changer la priorité">
+		<br><br>
+			<INPUT type="submit" name="BUT_refresh" value="Actualiser">
+		&nbsp;&nbsp;
+			<INPUT type="submit" name="BUT_previewInstallation" value="Prévisualisation de l&apos;installation">
+		<br><br>
+			<INPUT type="submit" name="BUT_acceptJobs" value="Installer les paquets sélectionnés">
+		<br><br><span class="titlesmal">Combinaisons de paquets</span>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable" align="center" >
+<tr><td align="center">Nom de la combinaison de paquets <INPUT type="text" name="ED_packageSelection" size="20" maxlength="50" value="">&nbsp;
+			<INPUT type="submit" name="BUT_saveSelectedPackages" value="Enregistrer">
+		<br>
+		<table>
+			<tr>
+				<td valign="top">
+					Fichier avec les paquets sélectionnés (Taille maximale du fichier: 5.00 MB)<br>
+					<input type="hidden" name="MAX_FILE_SIZE" value="5242880">
+					<input name="UP_importSelectedPackages" type="file" size="" maxlength="5242880" accept="text/*">
+					
+			<INPUT type="submit" name="BUT_UL_UP_importSelectedPackages" value="Téléverser">
+		
+				</td>
+			</tr>
+		</table>
+		<br><a href="images/m23packagelist-ueficl0f72f.txt?client=ueficl0" class="linkAsButton">Exporter la sélection de paquets</a>
+</td></tr>
+</table></div></td><tr></table>
+<input type="hidden" name="MSESS_variables" value="a%3A9%3A%7Bs%3A15%3A%22clientAddAction%22%3Bs%3A13%3A%22clientBuilder%22%3Bs%3A15%3A%22preferenceSpace%22%3Ba%3A30%3A%7Bs%3A6%3A%22client%22%3Bs%3A0%3A%22%22%3Bs%3A6%3A%22office%22%3Bs%3A0%3A%22%22%3Bs%3A4%3A%22name%22%3Bs%3A0%3A%22%22%3Bs%3A10%3A%22familyname%22%3Bs%3A0%3A%22%22%3Bs%3A5%3A%22eMail%22%3Bs%3A0%3A%22%22%3Bs%3A3%3A%22mac%22%3Bs%3A0%3A%22%22%3Bs%3A2%3A%22ip%22%3Bs%3A12%3A%22192.168.1.83%22%3Bs%3A7%3A%22netmask%22%3Bs%3A13%3A%22255.255.255.0%22%3Bs%3A7%3A%22gateway%22%3Bs%3A11%3A%22192.168.1.5%22%3Bs%3A4%3A%22dns1%22%3Bs%3A11%3A%2285.88.19.10%22%3Bs%3A4%3A%22dns2%22%3Bs%3A7%3A%228.8.8.8%22%3Bs%3A7%3A%22firstpw%22%3Bs%3A8%3A%22dePh2Tie%22%3Bs%3A12%3A%22rootpassword%22%3Bs%3A8%3A%22ohSoh9wo%22%3Bs%3A8%3A%22boottype%22%3Bs%3A3%3A%22pxe%22%3Bs%3A8%3A%22language%22%3Bs%3A2%3A%22fr%22%3Bs%3A8%3A%22newgroup%22%3Ba%3A1%3A%7Bi%3A0%3Bb%3A0%3B%7Ds%3A5%3A%22login%22%3Bs%3A0%3A%22%22%3Bs%3A4%3A%22arch%22%3Bs%3A5%3A%22amd64%22%3Bs%3A10%3A%22bootloader%22%3Bs%3A4%3A%22grub%22%3Bs%3A12%3A%22packageProxy%22%3Bs%3A12%3A%22192.168.1.23%22%3Bs%3A11%3A%22packagePort%22%3Bs%3A4%3A%222323%22%3Bs%3A8%3A%22timeZone%22%3Bs%3A12%3A%22Europe%2FParis%22%3Bs%3A10%3A%22ldapserver%22%3Bs%3A8%3A%22m23-LDAP%22%3Bs%3A6%3A%22userID%22%3Bi%3A1001%3Bs%3A7%3A%22groupID%22%3Bi%3A1001%3Bs%3A8%3A%22ldaptype%22%3Bs%3A4%3A%22none%22%3Bs%3A13%3A%22nfshomeserver%22%3Bs%3A0%3A%22%22%3Bs%3A18%3A%22getSystemtimeByNTP%22%3Bb%3A1%3Bs%3A16%3A%22addNewLocalLogin%22%3Bb%3A1%3Bs%3A14%3A%22installPrinter%22%3Bb%3A1%3B%7Ds%3A14%3A%22changeElements%22%3Bs%3A215%3A%22client%23office%23name%23familyname%23eMail%23mac%23ip%23netmask%23gateway%23dns1%23dns2%23firstpw%23rootpassword%23boottype%23language%23login%23arch%23bootloader%23proxy%23timeZone%23ldap%23nfshomeserver%23getSystemtimeByNTP%23addNewLocalLogin%23installPrinter%23%22%3Bs%3A31%3A%22preferenceForceHTMLReloadValues%22%3BN%3Bs%3A7%3A%22to_show%22%3Bs%3A1%3A%220%22%3Bs%3A11%3A%22last_button%22%3Bs%3A9%3A%22no_button%22%3Bs%3A10%3A%22to_compute%22%3Bs%3A1%3A%220%22%3Bs%3A10%3A%22clientName%22%3Bs%3A7%3A%22ueficl0%22%3Bs%3A8%3A%22clientID%22%3Bs%3A3%3A%22928%22%3B%7D">
+</form>
+	
+	<script language=JavaScript>
+		set(1);
+	</script>
+
+	<BR><BR>
+	</center>
+	<br><a href="index8bda.html?page=clientdetails&amp;client=ueficl0&amp;id=928#clientAdmin"><img src="images/settings.png"> Retourner au centre de contrôle <img src="images/settings.png"></a><br><br><br><br><a name="m23helpBox"></a>
+	<table class="helptable" align="left" border="0" cellspacing="5" id="ID_helpBox">
+<tr><td><p><span class="subhighlight">Aide: Installer des paquets
+</span></p><p>
+</p><p><u>Notez</u>
+</p><p>m23 distingue trois types de paquet différents:<ul>
+</p><p><LI><b>Combinaisons de paquets:</b> Ce sont des combinaisons de paquets distincts appelés également meta-paquets. Vous pouvez regrouper un nombre conséquent d'applications dans un meta-paquet et ainsi simplifier énormément l'installation des paquets identiques sur plusieurs ordinateurs.</LI>
+</p><p><LI><b>Paquets normaux:</b> Ce sont des paquets de programmes standards. Il s'agit, en général, des programmes isolés.</LI>
+</p><p><LI><b>Paquets spéciaux (pour utilisateurs expérimentés):</b> Ils contiennent des paquets devant exécuter des travaux spéciaux comme formater etc., qui devraient être utilisés seulement par des utilisateurs expérimentés.</LI></ul>
+</p><p>
+</p><p><u>Installer des paquets:</u>
+</p><p><ol>
+</p><p><LI>Choisissez <i>&laquo;Combinaisons de paquets&raquo;</i>, <i>&laquo;Paquets normaux&raquo;</i> ou <i>&laquo;Paquets spéciaux (pour utilisateurs expérimentés)&raquo;</i>.</LI>
+</p><p><LI>Entrez le critère de recherche pour le paquet dans le champ de saisie &laquo;Recherche des paquets&raquo; ou laissez vide ce champs pour chercher tous les paquets d'un type donné. A cause de la multitude de paquets existant, cette option n'est pas possible pour les paquets standards - dans ce cas, il est obligatoire d'entrer un critère de recherche.</LI>
+</p><p><LI>Sous <i>&laquo;Paquets trouvés&raquo;</i>, s'affichent tous les paquets correspondant à vos critères de recherche.</LI>
+</p><p><LI>Cliquez sur la case à cocher derrière les paquets souhaités.</LI>
+</p><p><LI>Notez les paquets pour l'installation en cliquant sur <i>&laquo;Noter&raquo;</i>.</LI>
+</p><p><LI>Répétez les étapes 1 à 5 selon vos besoins.</LI></ol>
+</p><p>
+</p><p>Maintenant, vous avez préselectionné des paquets pour l'installation. <!-- v1.5--> Une coche verte indique que ce paquet est à installer, une croix rouge indique qu'il est à effacer du client.<!--end v1.5--> Vous pouvez effacer la liste de ces paquets en cliquant sur <i>&laquo;Tout Annuler&raquo;</i> ou sélectionner des paquets <!-- v12.3-->(en cliquant sur les symboles en haut de la colonne avec les cases à cocher, vous pouvez sélectionner tous les paquets ou aucun paquet ou inverser votre sélection)<!-- end v12.3--> et les effacer après en cliquant sur <i>&laquo;Annuler la sélection&raquo;</i>.
+</p><p>
+</p><p>Confirmez votre choix en cliquant sur <i>&laquo;Installer les paquets sélectionnés&raquo;</i>.
+</p><p>
+</p><p><!-- v12.3--><u>Changer la priorité des paquets</u>
+</p><p>Les paquets et les tâches seront exécutés dans l'ordre de leur priorité (les petits chiffres avant les grands) sur le poste client. Si vous voudriez changer la priorité, sélectionnez les paquets souhaités et entrez la nouvelle valeur de la priorité dans la case à côté de <i>&laquo;Changer la priorité&raquo;</i>. Enfin, cliquez sur <i>&laquo;Changer la priorité&raquo;</i>. Le cas échéant, répétez le procès pour des autres tâches/paquets.<!-- end v12.3-->
+</p><p>
+</p><p><!-- v1.3--><!-- v1.5--><u>Prévisualisation de l'installation</u><!--end v1.5-->
+</p><p>Avant l'installation réelle, vous pouvez prévisualiser les conséquences de l'installation pour le poste client; grace à l'affichage des paquets additionels à installer ainsi que les problèmes possiblement rencontrés durant l'installation. Pour la prévisualisation, cliquez sur <i>&laquo;Prévisualisation de l&apos;installation&raquo;</i> après que vous ayez choisi les paquets. Puis, vous verrez une synthèse prévisionnelle de l'installation.<!--end v1.3--><!-- v1.5-->
+</p><p>Une prévisualisation est seulement possible si vous avez choisi d'installer un poste client unique et non un groupe.
+</p><p><!--end v1.5-->
+</p><p>
+</p><p><!-- v1.5--><u>Notez: Combinaisons de paquets</u>
+</p><p>Si vous cliquez sur <i>&laquo;Combinaisons de paquets&raquo;</i>, vous pouvez décider l'installation ou la désinstallation des paquets sur le poste client. De plus, vous pouvez conserver les actions enregistrées dans la combinaison de paquets. Ceci vous permet d'utiliser des travaux d'installation et de désinstallation dans une combinaison particulière. Pour cela, choisissez l'action souhaitée dans la liste.<!--end v1.5-->
+</p><p>
+</p><p><u>CONSEIL:</u>
+</p><p>Si vous souhaitez enregistrer votre choix de paquets afin de pouvoir l'utiliser plus tard, entrez un nom pour votre combinaison de paquets après <i>&laquo;Nom de la combinaison de paquets&raquo;</i>, puis cliquez sur <i>&laquo;Enregistrer&raquo;</i>. Cette combinaison sera à votre disposition dès validation dans les <i>&laquo;Combinaisons de paquets&raquo;</i>.
+</p><p></p></td></tr></TABLE>					</td>
+									</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=installpackages&client=ueficl0&id=928 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:40:44 GMT -->
+</html>

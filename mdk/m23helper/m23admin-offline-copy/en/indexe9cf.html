@@ -1,0 +1,564 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=createImage&client=ueficl0&id=928 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:37:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+	<title>m23 - Admin (createImage)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="expires" content="0">
+	<link rel="stylesheet" type="text/css" href="images/index.css">
+	<link rel="stylesheet" type="text/css" href="images/jquery.css">
+	<script src="images/codepress.js" type="text/javascript"></script>
+	<script type="text/javascript" src="images/jquery.min.js"></script>
+	<script type="text/javascript" src="images/jquery-ui.min.js"></script>
+</head>
+
+ <body bgcolor="#596374" onload="if (typeof setEFIStartEndPositionIfEFIBootPartitionTypeIsSet == 'function') { setEFIStartEndPositionIfEFIBootPartitionTypeIsSet(); }">
+
+<table align="left" cellspacing="0"  cellpadding="5" border="0">
+	<tr>
+		<td colspan="2" align="center">
+			<table class="box" align="center" id="ID_headHeight">
+				<tr>
+					<td width="900">
+						
+<table cellspacing="0" cellpadding="3" width="100%" border="0">
+	<tr>
+		<td width="100" align="center">
+			<a HREF="http://m23.goos-habermann.de/" target="_blank">
+				<img src="images/m23.png" border="0">
+							</a>
+		</td>
+
+		<td align="center">
+			<table class="helptable">
+				<tr>
+				
+				<tr>
+					<td colspan=2>
+						<nobr><b>Your IP address:</b> 192.168.1.77 <b>Servername or IP:</b> 192.168.1.23 <b>m23 version and patch level:</b> 18.1 rock (101083) <a href="index42f0.html?page=serverStatus">Server status</a></nobr>
+					</td>
+				</tr>
+				<tr><td colspan=2><hr></td></tr>
+				<tr>
+					<td align="left">
+						&raquo;&nbsp;<a href="http://m23.sf.net/" target="_blank">m23 project page</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/faq/frageFAQ.htm" target="_blank">m23 forum</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/" target="_blank">Commercial support</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/index.php?s=SchulungBeratung" target="_blank">m23 training</a>
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/questionnaire">m23 questionnaire</a><br>
+					</td>
+					<td align="right">
+						god <a href="indexbfd1.html?logout=1">(Log out)</a>
+					</td>
+				</tr>
+								
+			</table>
+		</td>
+
+		<td align="right">
+<!--m23customPatchBegin type=change id=tuxLogo-->
+			<img src="images/sweet-tux.png">
+<!--m23customPatchEnd id=tuxLogo-->
+		</td>
+	</tr>
+</table>					</td>
+				<tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="150">
+			<table class="box" valign="top">
+				<tr>
+					<td align="left">
+						<br>
+<form method="GET" action="http://god:m23@192.168.1.23/m23admin/index.php">
+<center>
+<SELECT  id="LB_language" name="LB_language"  >
+<option value="en">English</option>
+<option value="de">Deutsch</option>
+<option value="fr">Fran&ccedil;ais</option>
+</SELECT>
+<input type="hidden" name="page" value="createImage">
+<input type="hidden" name="m23_language" value="en">
+<input type="submit" name="BUT_lang" value="OK">
+</center>
+</form>
+
+
+<ul class="navmenu">
+<li>Server<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index.html"><img border="0" src="images/home_mini.png"></a></td>
+		<td><a href="index.html">Home</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexad98.html?page=serverSettings"><img border="0" src="images/settings_mini.png"></a></td>
+		<td><a href="indexad98.html?page=serverSettings">Server settings</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9104.html?page=m23RemoteAdministrationService"><img border="0" src="images/m23remoteadministrationservice-mini.png"></a></td>
+		<td><a href="index9104.html?page=m23RemoteAdministrationService">m23 remote administration service</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexfb56.html?page=clientsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexfb56.html?page=clientsoverview">Overview</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe9d8.html?page=addclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="indexe9d8.html?page=addclient&amp;clearSession=1">Add</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexc607.html?page=clientsoverview&amp;action=setup"><img border="0" src="images/yellow.png"></a></td>
+		<td><a href="indexc607.html?page=clientsoverview&amp;action=setup">Setup</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index95c9.html?page=clientsoverview&amp;action=delete"><img border="0" src="images/mini_trash.png"></a></td>
+		<td><a href="index95c9.html?page=clientsoverview&amp;action=delete">Delete</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb010.html?page=assimilate"><img border="0" src="images/assimilate-mini.png"></a></td>
+		<td><a href="indexb010.html?page=assimilate">Assimilate</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index79a0.html?page=makeBootMedia"><img border="0" src="images/cdrom-mini.png"></a></td>
+		<td><a href="index79a0.html?page=makeBootMedia">Create boot media</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Virtual clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9740.html?page=addvmclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="index9740.html?page=addvmclient&amp;clearSession=1">Create VM</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Groups<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf13d.html?page=groupsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexf13d.html?page=groupsoverview">Overview</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbae6.html?page=creategroup"><img border="0" src="images/add-mini.png"></a></td>
+		<td><a href="indexbae6.html?page=creategroup">Add</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Packages<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index6dcf.html?page=clientsoverview&amp;action=install"><img border="0" src="images/green.png"></a></td>
+		<td><a href="index6dcf.html?page=clientsoverview&amp;action=install">Install</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index936d.html?page=clientsoverview&amp;action=deinstall"><img border="0" src="images/deinstall-mini.png"></a></td>
+		<td><a href="index936d.html?page=clientsoverview&amp;action=deinstall">Deinstall</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbbd7.html?page=clientsoverview&amp;action=update"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexbbd7.html?page=clientsoverview&amp;action=update">Update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb5c4.html?page=autoUpdate"><img border="0" src="images/autoupdate_mini.png"></a></td>
+		<td><a href="indexb5c4.html?page=autoUpdate">Automatical update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf34f.html?page=poolBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexf34f.html?page=poolBuilder">Pool builder</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index73d3.html?page=scriptEditor"><img border="0" src="images/scripteditor-mini.png"></a></td>
+		<td><a href="index73d3.html?page=scriptEditor">Script editor</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index3a18.html?page=packageBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="index3a18.html?page=packageBuilder">Package builder</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexd1df.html?page=clientsourceslist"><img border="0" src="images/package-mini.png"></a></td>
+		<td><a href="indexd1df.html?page=clientsourceslist">Package sources</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index8b5a.html?page=installpackages&amp;action=packageSelection"><img border="0" src="images/packageselection-mini.png"></a></td>
+		<td><a href="index8b5a.html?page=installpackages&amp;action=packageSelection">Edit package selections</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index4804.html?page=comparePackageStatus"><img border="0" src="images/comparepackagestatus-mini.png"></a></td>
+		<td><a href="index4804.html?page=comparePackageStatus">Compare package status</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Mass tools<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1"><img border="0" src="images/clientbuilder-mini.png"></a></td>
+		<td><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1">Client builder</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall"><img border="0" src="images/massinstall-mini.png"></a></td>
+		<td><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall">Mass install</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Support<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe767.html?page=support"><img border="0" src="images/help-mini.png"></a></td>
+		<td><a href="indexe767.html?page=support">Support</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/phpBB2"><img border="0" src="images/bug-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/phpBB2">!!!Report a bug!!!</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news"><img border="0" src="images/newsletter-mini.png"></a></td>
+		<td><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news">Subscribe to newsletter</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/questionnaire"><img border="0" src="images/questionaire-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/questionnaire">m23 questionnaire</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/m23manual/en/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/m23manual/en/index.html">User manual</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/devguide/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/devguide/index.html">Development Guide</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 </ul>					</td>
+				<tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table class="box" align="center" >
+				<tr>
+					<td valign="top" align="center"><br>
+						
+	<div align="right">
+		<a href="javascript:window.print()">
+			<img src="images/printer-mini.png" border="0" alt="Print" title="Print">
+		</a>
+		<a href="#m23helpBox">
+			<img src="images/helpred-mini.png" border="0" alt="Help" title="Help">
+		</a>
+	</div>
+	
+
+
+<span class="title">ueficl0 : Create image</span>
+
+<br><br>
+
+
+
+	<span class="title"> Partition information </span>
+	<br>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable" align="center" >
+
+	<tr>
+		<td><br><span class="title">/dev/sda (21475 MB)</span><table id="fdiskbar" cellspacing="1" cellpadding="1" border="2" width="100%" height="40"><tr><td  
+onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-0-11.5')" onClick="emptySpace(0, 11.5, '/dev/sda')"
+ bgcolor="#FFFFFF" width="1%"><center><H3></H3></center></td><td  onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-11.5-1314')" onClick="selectPartition('/dev/sda1','/dev/sda')"  bgcolor="#9D2764" width="7%"><center><b>1</b><img width=16 height=16 src="images/info.png" title="/dev/sda1: File system: fat32" alt="/dev/sda1: File system: fat32"></center></td><td  
+onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-1314-1327')" onClick="emptySpace(1314, 1327, '/dev/sda')"
+ bgcolor="#FFFFFF" width="1%"><center><H3></H3></center></td><td  onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-1327-20137')" onClick="selectPartition('/dev/sda2','/dev/sda')"  bgcolor="#406BA9" width="88%"><center><b>2</b><img width=16 height=16 src="images/info.png" title="/dev/sda2: File system: ext4" alt="/dev/sda2: File system: ext4"><img width=16 height=16 src="images/instpart.png" title="Installation partition" alt="Installation partition"></center></td><td  
+onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-20137-20150')" onClick="emptySpace(20137, 20150, '/dev/sda')"
+ bgcolor="#FFFFFF" width="1%"><center><H3></H3></center></td><td  onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-20150-20652')" onClick="selectPartition('/dev/sda3','/dev/sda')"  bgcolor="#BCE408" width="3%"><center><b>3</b><img width=16 height=16 src="images/info.png" title="/dev/sda3: File system: linux-swap(v1)" alt="/dev/sda3: File system: linux-swap(v1)"><img width=16 height=16 src="images/swappart.png" title="Swap partition" alt="Swap partition"></center></td><td  
+onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-20652-20666')" onClick="emptySpace(20652, 20666, '/dev/sda')"
+ bgcolor="#FFFFFF" width="1%"><center><H3></H3></center></td><td  onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-20666-21147')" onClick="selectPartition('/dev/sda4','/dev/sda')"  bgcolor="#FFEC73" width="3%"><center><b>4</b><img width=16 height=16 src="images/info.png" title="/dev/sda4: File system: reiserfs Mountpoint: /mnt/mini" alt="/dev/sda4: File system: reiserfs Mountpoint: /mnt/mini"></center></td><td  
+onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-21147-21475')" onClick="emptySpace(21147, 21475, '/dev/sda')"
+ bgcolor="#FFFFFF" width="2%"><center><H3></H3></center></td></tr></table><br>
+				<div name="partTables" id="partTables/dev/sda">
+					<span class="titlesmal">/dev/sda (21475 MB)</span>
+						<p><table class="partTables" align="center" border=0 cellspacing=5>
+		<tr>
+			<td width="10"></td>
+			<td><span class="subhighlight">Partition</span></td>
+			<td><span class="subhighlight">Type</span></td>
+			<td><span class="subhighlight">File system</span></td>
+			<td><span class="subhighlight">Size</span></td>
+			<td><span class="subhighlight">Range</span></td>
+		</tr>
+			<tr id="PartTableEntry0-0-11.5">
+				<td width="20" bgcolor="#FFFFFF"></td>
+				<td></td>
+				<td>Unused</td>
+				<td>no file system</td>
+				<td>11.5</td>
+				<td>0 - 11.5</td>
+			</tr>
+			<tr id="PartTableEntry0-11.5-1314">
+				<td width="20" bgcolor="#9D2764"></td>
+				<td>/dev/sda1</td>
+				<td>UEFI partition</td>
+				<td>fat32</td>
+				<td>1302.5</td>
+				<td>11.5 - 1314</td>
+			</tr>
+			<tr id="PartTableEntry0-1314-1327">
+				<td width="20" bgcolor="#FFFFFF"></td>
+				<td></td>
+				<td>Unused</td>
+				<td>no file system</td>
+				<td>13</td>
+				<td>1314 - 1327</td>
+			</tr>
+			<tr id="PartTableEntry0-1327-20137">
+				<td width="20" bgcolor="#406BA9"></td>
+				<td>/dev/sda2</td>
+				<td>UEFI partition</td>
+				<td>ext4</td>
+				<td>18810</td>
+				<td>1327 - 20137</td>
+			</tr>
+			<tr id="PartTableEntry0-20137-20150">
+				<td width="20" bgcolor="#FFFFFF"></td>
+				<td></td>
+				<td>Unused</td>
+				<td>no file system</td>
+				<td>13</td>
+				<td>20137 - 20150</td>
+			</tr>
+			<tr id="PartTableEntry0-20150-20652">
+				<td width="20" bgcolor="#BCE408"></td>
+				<td>/dev/sda3</td>
+				<td>UEFI partition</td>
+				<td>linux-swap(v1)</td>
+				<td>502</td>
+				<td>20150 - 20652</td>
+			</tr>
+			<tr id="PartTableEntry0-20652-20666">
+				<td width="20" bgcolor="#FFFFFF"></td>
+				<td></td>
+				<td>Unused</td>
+				<td>no file system</td>
+				<td>14</td>
+				<td>20652 - 20666</td>
+			</tr>
+			<tr id="PartTableEntry0-20666-21147">
+				<td width="20" bgcolor="#FFEC73"></td>
+				<td>/dev/sda4</td>
+				<td>UEFI partition</td>
+				<td>reiserfs</td>
+				<td>481</td>
+				<td>20666 - 21147</td>
+			</tr>
+			<tr id="PartTableEntry0-21147-21475">
+				<td width="20" bgcolor="#FFFFFF"></td>
+				<td></td>
+				<td>Unused</td>
+				<td>no file system</td>
+				<td>328</td>
+				<td>21147 - 21475</td>
+			</tr></table></p>
+				<br>
+				</div><table cellspacing="4">
+			<tr>
+				<td width="20">&nbsp;&nbsp;</td>
+				<td width="20">&nbsp;&nbsp;</td>
+				<td><nobr><span class="titlesmal">Supported file systems</span></nobr><br></td>
+			</tr>
+		
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#62A1FF">&nbsp;&nbsp;</td>
+					<td>ext2</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#5186D4">&nbsp;&nbsp;</td>
+					<td>ext3</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#406BA9">&nbsp;&nbsp;</td>
+					<td>ext4</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#BCE408">&nbsp;&nbsp;</td>
+					<td>linux-swap</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#FFEC73">&nbsp;&nbsp;</td>
+					<td>reiserfs</td>
+				</tr>
+			
+			<tr>
+				<td width="20">&nbsp;&nbsp;</td>
+				<td width="20">&nbsp;&nbsp;</td>
+				<td><nobr><span class="titlesmal">Non file systems</span></nobr><br></td>
+			</tr>
+		
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#7FFFF2">&nbsp;&nbsp;</td>
+					<td>no file system</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#FFFFFF">&nbsp;&nbsp;</td>
+					<td>free</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#F0F0F0">&nbsp;&nbsp;</td>
+					<td>extfree</td>
+				</tr>
+			
+		</table></td>
+	</tr>
+</table></div></td><tr></table>
+<form method="post" action="http://god:m23@192.168.1.23/m23admin/index.php" name="htmlform" id="htmlformID" enctype="multipart/form-data">
+	<script language="javascript">document.write('<input type="hidden" name="javaScriptEnabled" value="on">');</script>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable" align="center" >
+<input type="hidden" name="page" value="createImage">
+	<input type="hidden" name="client" value="ueficl0">
+	<tr>
+		<td><span class="subhighlight">Image format</span></td>
+		<td><span class="subhighlight">Image transfer type</span></td>
+		<td><span class="subhighlight">Image compression</span></td>
+	</tr>
+	<tr>
+		<td><SELECT  id="SEL_imageFormat" name="SEL_imageFormat"  >
+<option value="7">Partclone</option>
+<option value="1">dd (Convert and Copy)</option>
+</SELECT></td>
+		<td><SELECT  id="SEL_ddTrans" name="SEL_ddTrans"  >
+<option value="0">nc (netcat)</option>
+</SELECT></td>
+		<td><SELECT  id="SEL_ddComp" name="SEL_ddComp"  >
+<option value="3">-</option>
+<option value="4">Gzip</option>
+<option value="5">bzip2</option>
+</SELECT></td>
+	</tr>
+
+	<tr>
+		<td colspan="3"><span class="subhighlight">Image source</span></td>
+	</tr>
+
+	<tr>
+		<td colspan="3">
+			<SELECT name="SEL_ddDrive" size="1">
+<option value="/dev/sda Size:21475">/dev/sda Size:21475</option>
+<option value="/dev/sda1 Size: 1302.5 File system: fat32 Type: efipart">/dev/sda1 Size: 1302.5 File system: fat32 Type: efipart</option>
+<option value="/dev/sda2 Size: 18810 File system: ext4 Type: efipart">/dev/sda2 Size: 18810 File system: ext4 Type: efipart</option>
+<option value="/dev/sda3 Size: 502 File system: linux-swap(v1) Type: efipart">/dev/sda3 Size: 502 File system: linux-swap(v1) Type: efipart</option>
+<option value="/dev/sda4 Size: 481 File system: reiserfs Type: efipart">/dev/sda4 Size: 481 File system: reiserfs Type: efipart</option>
+</SELECT>
+
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2" align="left">
+			<span class="subhighlight">Transfer port</span>
+		</td>
+		<td colspan="1" align="left"></td>
+	</tr>
+
+	<tr>
+		<td colspan="2" align="left">
+			<INPUT type="text" name="ED_transferPort" size="5" maxlength="255" value="38773">
+		</td>
+		<td colspan="1" align="left"></td>
+	</tr>
+
+	<tr><td colspan="3" align="left"><span class="subhighlight">Image name</span></td></tr>
+
+	<tr>
+		<td colspan="3" align="left">
+			<nobr>
+				<INPUT type="text" name="ED_imageName" size="50" maxlength="200" value="">
+				
+			<INPUT type="submit" name="BUT_createImage" value="Create image">
+		
+			</nobr>
+		</td>
+	</tr>
+	
+</table></div></td><tr></table>
+<input type="hidden" name="MSESS_variables" value="a%3A10%3A%7Bs%3A15%3A%22clientAddAction%22%3Bs%3A13%3A%22clientBuilder%22%3Bs%3A15%3A%22preferenceSpace%22%3Ba%3A31%3A%7Bs%3A6%3A%22client%22%3Bs%3A0%3A%22%22%3Bs%3A6%3A%22office%22%3Bs%3A0%3A%22%22%3Bs%3A4%3A%22name%22%3Bs%3A0%3A%22%22%3Bs%3A10%3A%22familyname%22%3Bs%3A0%3A%22%22%3Bs%3A5%3A%22eMail%22%3Bs%3A0%3A%22%22%3Bs%3A3%3A%22mac%22%3Bs%3A0%3A%22%22%3Bs%3A2%3A%22ip%22%3Bs%3A12%3A%22192.168.1.83%22%3Bs%3A7%3A%22netmask%22%3Bs%3A13%3A%22255.255.255.0%22%3Bs%3A7%3A%22gateway%22%3Bs%3A11%3A%22192.168.1.5%22%3Bs%3A4%3A%22dns1%22%3Bs%3A11%3A%2285.88.19.10%22%3Bs%3A4%3A%22dns2%22%3Bs%3A7%3A%228.8.8.8%22%3Bs%3A7%3A%22firstpw%22%3Bs%3A8%3A%22Nashiec0%22%3Bs%3A12%3A%22rootpassword%22%3Bs%3A8%3A%22Eojaing9%22%3Bs%3A8%3A%22boottype%22%3Bs%3A3%3A%22pxe%22%3Bs%3A8%3A%22language%22%3Bs%3A2%3A%22uk%22%3Bs%3A8%3A%22newgroup%22%3Ba%3A1%3A%7Bi%3A0%3Bb%3A0%3B%7Ds%3A5%3A%22login%22%3Bs%3A0%3A%22%22%3Bs%3A4%3A%22arch%22%3Bs%3A5%3A%22amd64%22%3Bs%3A10%3A%22bootloader%22%3Bs%3A4%3A%22grub%22%3Bs%3A12%3A%22packageProxy%22%3Bs%3A12%3A%22192.168.1.23%22%3Bs%3A11%3A%22packagePort%22%3Bs%3A4%3A%222323%22%3Bs%3A8%3A%22timeZone%22%3Bs%3A13%3A%22Europe%2FLondon%22%3Bs%3A10%3A%22ldapserver%22%3Bs%3A8%3A%22m23-LDAP%22%3Bs%3A6%3A%22userID%22%3Bi%3A1001%3Bs%3A7%3A%22groupID%22%3Bi%3A1001%3Bs%3A8%3A%22ldaptype%22%3Bs%3A4%3A%22none%22%3Bs%3A13%3A%22nfshomeserver%22%3Bs%3A0%3A%22%22%3Bs%3A18%3A%22getSystemtimeByNTP%22%3Bb%3A1%3Bs%3A16%3A%22addNewLocalLogin%22%3Bb%3A1%3Bs%3A14%3A%22installPrinter%22%3Bb%3A1%3Bs%3A6%3A%22kernel%22%3Bs%3A19%3A%22linux-image-generic%22%3B%7Ds%3A14%3A%22changeElements%22%3Bs%3A222%3A%22client%23office%23name%23familyname%23eMail%23mac%23ip%23netmask%23gateway%23dns1%23dns2%23firstpw%23rootpassword%23boottype%23language%23login%23arch%23bootloader%23proxy%23timeZone%23ldap%23nfshomeserver%23getSystemtimeByNTP%23addNewLocalLogin%23installPrinter%23kernel%23%22%3Bs%3A31%3A%22preferenceForceHTMLReloadValues%22%3BN%3Bs%3A7%3A%22to_show%22%3Bs%3A1%3A%220%22%3Bs%3A11%3A%22last_button%22%3Bs%3A9%3A%22no_button%22%3Bs%3A10%3A%22to_compute%22%3Bs%3A1%3A%220%22%3Bs%3A10%3A%22clientName%22%3Bs%3A7%3A%22ueficl0%22%3Bs%3A8%3A%22clientID%22%3Bs%3A3%3A%22928%22%3Bs%3A20%3A%22createChangeElements%22%3Bb%3A1%3B%7D">
+</form>
+	<br><a href="index8bda.html?page=clientdetails&amp;client=ueficl0&amp;id=928#clientAdmin"><img src="images/settings.png"> Back to control center <img src="images/settings.png"></a><br><br><br><br><a name="m23helpBox"></a>
+	<table class="helptable" align="left" border="0" cellspacing="5" id="ID_helpBox">
+<tr><td><p><span class="subhighlight">Help: Create image<!--V 1.11 new-->
+</span></p><p>
+</p><p>You can create images from a partition or a whole drive of your client in this dialog. This image can be used to install clients. Select your preferred Image format, the Image transfer type and the Image compression. You have to make additional designations under <i>"Image source"</i> for some image formats e.g. the partition or drive that should be stored in the image.
+</p><p>
+</p><p><!--V13.3 begin-->At <i>"Image format"</i> select the desired format, at <i>"Image transfer type"</i> the network transfer type and at <i>"Image compression"</i> the kind of compression. At <i>"Image source"</i>, select the partition or hard disk that you would like to use.<!--V13.3 end--> Choose a name for the image and enter it at <i>"Image name"</i>. Click on <i>"Create image"</i> afterwards.
+</p><p>
+</p><p><!--V13.2 begin-->You can access the overview about all created image files at <i>"Server settings"</i> &rarr; <i>"Manage image files"</i>, where it is also possible to delete image files which are no longer needed.
+</p><p>If you would like to use the image file which you created here for the installation of a client, please select <i>"Imaging"</i> as client distribution during client <i>"Setup"</i>.<!--V13.2 end-->
+</p><p>
+</p><p><!--V11.4 begin--><u><b>Caution</b></u>
+</p><p>The client will <b>reboot immediately</b> after clicking on <i>"Create image"</i> and before it begins to create the image! Data that has not been saved before <b>will be lost</b>.<!--V11.4 end-->
+</p><p>
+</p><p><u>Hint for image files</u>
+</p><p>The files are stored in the directory <b>/m23/data+scripts/clientImages</b> in different types and with distinct compressions. The file names are always created after the following scheme: &lt;Image name&gt;&lt;Size of the extracted image in bytes&gt;&lt;Image format&gt;&lt;Compression&gt;
+</p><p>Image format is one of the following values:
+</p><p>
+</p><p><!--V13.3 begin--><ul><LI><a href="http://partclone.org/" target="_blank"><b>Partclone</b></a>: For a partition whose file system is supported, only the used sectors will be saved, else the whole disk.</LI></ul><!--V13.3 end-->
+</p><p><ul><LI><a href="index79cf.html?page=manViewer&amp;manPage=dd" target="_blank"><b>dd</b></a>: Saves the whole data of a partition or harddisk.</LI></ul>
+</p><p>For the compression the following is valid:
+</p><p><ul><LI>(no extension): The image file will be stored with no compression.</LI>
+</p><p><LI><a href="index73c9.html?page=manViewer&amp;manPage=gzip" target="_blank"><b>gz</b></a>: The image will be compressed with  gzip.</LI>
+</p><p><LI><a href="index7707.html?page=manViewer&amp;manPage=bzip2" target="_blank"><b>bz2</b></a>: It will be compressed with bzip2 that compresses better mostly.</LI></ul>
+</p><p>
+</p><p><u>Hint for the Transfer port</u>
+</p><p>You have to enter a network port that can be used on client and server side and is not blocked (e.g. firewall) for the Image transfer type. If you want to create images from multiple clients concurrently you have to choose different port numbers.
+</p><p></p></td></tr></TABLE>					</td>
+									</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=createImage&client=ueficl0&id=928 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:37:36 GMT -->
+</html>

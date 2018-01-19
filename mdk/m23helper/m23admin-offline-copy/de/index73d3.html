@@ -1,0 +1,528 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=scriptEditor by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:31:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+	<title>m23 - Admin (scriptEditor)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="expires" content="0">
+	<link rel="stylesheet" type="text/css" href="images/index.css">
+	<link rel="stylesheet" type="text/css" href="images/jquery.css">
+	<script src="images/codepress.js" type="text/javascript"></script>
+	<script type="text/javascript" src="images/jquery.min.js"></script>
+	<script type="text/javascript" src="images/jquery-ui.min.js"></script>
+</head>
+
+ <body bgcolor="#596374" onload="if (typeof setEFIStartEndPositionIfEFIBootPartitionTypeIsSet == 'function') { setEFIStartEndPositionIfEFIBootPartitionTypeIsSet(); }">
+
+<table align="left" cellspacing="0"  cellpadding="5" border="0">
+	<tr>
+		<td colspan="2" align="center">
+			<table class="box" align="center" id="ID_headHeight">
+				<tr>
+					<td width="900">
+						
+<table cellspacing="0" cellpadding="3" width="100%" border="0">
+	<tr>
+		<td width="100" align="center">
+			<a HREF="http://m23.goos-habermann.de/" target="_blank">
+				<img src="images/m23.png" border="0">
+							</a>
+		</td>
+
+		<td align="center">
+			<table class="helptable">
+				<tr>
+				
+				<tr>
+					<td colspan=2>
+						<nobr><b>Ihre IP-Adresse:</b> 192.168.1.77 <b>Servername oder IP:</b> 192.168.1.23 <b>m23-Version und Patch-Level:</b> 18.1 rock (101083) <a href="index42f0.html?page=serverStatus">Server-Status</a></nobr>
+					</td>
+				</tr>
+				<tr><td colspan=2><hr></td></tr>
+				<tr>
+					<td align="left">
+						&raquo;&nbsp;<a href="http://m23.sf.net/" target="_blank">m23-Projektseite</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/faq/frageFAQ.htm" target="_blank">m23-Forum</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/" target="_blank">Kommerzieller Support</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/index.php?s=SchulungBeratung" target="_blank">m23-Schulungen</a>
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/fragebogen-de">m23-Fragebogen</a><br>
+					</td>
+					<td align="right">
+						god <a href="indexbfd1.html?logout=1">(Ausloggen)</a>
+					</td>
+				</tr>
+								
+			</table>
+		</td>
+
+		<td align="right">
+<!--m23customPatchBegin type=change id=tuxLogo-->
+			<img src="images/sweet-tux.png">
+<!--m23customPatchEnd id=tuxLogo-->
+		</td>
+	</tr>
+</table>					</td>
+				<tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="150">
+			<table class="box" valign="top">
+				<tr>
+					<td align="left">
+						<br>
+<form method="GET" action="http://god:m23@192.168.1.23/m23admin/index.php">
+<center>
+<SELECT  id="LB_language" name="LB_language"  >
+<option value="de">Deutsch</option>
+<option value="en">English</option>
+<option value="fr">Fran&ccedil;ais</option>
+</SELECT>
+<input type="hidden" name="page" value="scriptEditor">
+<input type="hidden" name="m23_language" value="de">
+<input type="submit" name="BUT_lang" value="OK">
+</center>
+</form>
+
+
+<ul class="navmenu">
+<li>Server<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index.html"><img border="0" src="images/home_mini.png"></a></td>
+		<td><a href="index.html">Startseite</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexad98.html?page=serverSettings"><img border="0" src="images/settings_mini.png"></a></td>
+		<td><a href="indexad98.html?page=serverSettings">Server-&#8203;Einstellungen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9104.html?page=m23RemoteAdministrationService"><img border="0" src="images/m23remoteadministrationservice-mini.png"></a></td>
+		<td><a href="index9104.html?page=m23RemoteAdministrationService">m23 Fern-&#8203;Administrations-&#8203;Service</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexfb56.html?page=clientsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexfb56.html?page=clientsoverview">Überblick</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe9d8.html?page=addclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="indexe9d8.html?page=addclient&amp;clearSession=1">Hinzufügen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexc607.html?page=clientsoverview&amp;action=setup"><img border="0" src="images/yellow.png"></a></td>
+		<td><a href="indexc607.html?page=clientsoverview&amp;action=setup">Einrichten</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index95c9.html?page=clientsoverview&amp;action=delete"><img border="0" src="images/mini_trash.png"></a></td>
+		<td><a href="index95c9.html?page=clientsoverview&amp;action=delete">Löschen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb010.html?page=assimilate"><img border="0" src="images/assimilate-mini.png"></a></td>
+		<td><a href="indexb010.html?page=assimilate">Integrieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index79a0.html?page=makeBootMedia"><img border="0" src="images/cdrom-mini.png"></a></td>
+		<td><a href="index79a0.html?page=makeBootMedia">Bootmedien erstellen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Virtuelle Clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9740.html?page=addvmclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="index9740.html?page=addvmclient&amp;clearSession=1">VM erstellen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Gruppen<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf13d.html?page=groupsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexf13d.html?page=groupsoverview">Überblick</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbae6.html?page=creategroup"><img border="0" src="images/add-mini.png"></a></td>
+		<td><a href="indexbae6.html?page=creategroup">Hinzufügen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Pakete<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index6dcf.html?page=clientsoverview&amp;action=install"><img border="0" src="images/green.png"></a></td>
+		<td><a href="index6dcf.html?page=clientsoverview&amp;action=install">Installieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index936d.html?page=clientsoverview&amp;action=deinstall"><img border="0" src="images/deinstall-mini.png"></a></td>
+		<td><a href="index936d.html?page=clientsoverview&amp;action=deinstall">Deinstallieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbbd7.html?page=clientsoverview&amp;action=update"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexbbd7.html?page=clientsoverview&amp;action=update">Update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb5c4.html?page=autoUpdate"><img border="0" src="images/autoupdate_mini.png"></a></td>
+		<td><a href="indexb5c4.html?page=autoUpdate">Automatisches Update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf34f.html?page=poolBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexf34f.html?page=poolBuilder">Paketquellen-&#8203;Architekt</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index73d3.html?page=scriptEditor"><img border="0" src="images/scripteditor-mini.png"></a></td>
+		<td><a href="index73d3.html?page=scriptEditor"><span class="menuhighlight">Skript-Editor</span></a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index3a18.html?page=packageBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="index3a18.html?page=packageBuilder">Paket-Architekt</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexd1df.html?page=clientsourceslist"><img border="0" src="images/package-mini.png"></a></td>
+		<td><a href="indexd1df.html?page=clientsourceslist">Paketquellenliste</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index8b5a.html?page=installpackages&amp;action=packageSelection"><img border="0" src="images/packageselection-mini.png"></a></td>
+		<td><a href="index8b5a.html?page=installpackages&amp;action=packageSelection">Paketzusammen&shy;stellungen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index4804.html?page=comparePackageStatus"><img border="0" src="images/comparepackagestatus-mini.png"></a></td>
+		<td><a href="index4804.html?page=comparePackageStatus">Paketstatus vergleichen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Massen-Tools<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1"><img border="0" src="images/clientbuilder-mini.png"></a></td>
+		<td><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1">Client definieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall"><img border="0" src="images/massinstall-mini.png"></a></td>
+		<td><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall">Masseninstallation</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Support<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe767.html?page=support"><img border="0" src="images/help-mini.png"></a></td>
+		<td><a href="indexe767.html?page=support">Support</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/phpBB2"><img border="0" src="images/bug-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/phpBB2">!!!Bug melden!!!</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news"><img border="0" src="images/newsletter-mini.png"></a></td>
+		<td><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news">Newsletter bestellen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/fragebogen-de"><img border="0" src="images/questionaire-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/fragebogen-de">m23-Fragebogen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/m23manual/de/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/m23manual/de/index.html">Handbuch</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/devguide/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/devguide/index.html">Development Guide</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 </ul>					</td>
+				<tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table class="box" align="center" >
+				<tr>
+					<td valign="top" align="center"><br>
+						
+	<div align="right">
+		<a href="javascript:window.print()">
+			<img src="images/printer-mini.png" border="0" alt="Drucken" title="Drucken">
+		</a>
+		<a href="#m23helpBox">
+			<img src="images/helpred-mini.png" border="0" alt="Hilfe" title="Hilfe">
+		</a>
+	</div>
+	
+			<span class="title">Skript-Editor !!!Noch nicht gespeichert!!!</span><span class="warningtable" style="display: none;" id="SP_documentChanged"></span><br><br><!-- MessageBoxPlaceholder --><form method="post" action="http://god:m23@192.168.1.23/m23admin/index.php" name="htmlform" id="htmlformID" enctype="multipart/form-data">
+	<script language="javascript">document.write('<input type="hidden" name="javaScriptEnabled" value="on">');</script>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable" align="center" >
+<input type="hidden" name="page" value="scriptEditor"><input type="hidden" id="ACE_postContents" name="ACE_postContents" value=""><input type="hidden" id="currentFile" name="currentFile" value="">
+			<tr>
+				<style type="text/css" media="screen">
+					#editor {
+						margin: 0;
+						width:  80em;
+						height: 40em;
+					}
+				</style>
+	
+				<pre id="editor"></pre>
+					<script src="images/ace.js"></script>
+					<script src="images/ext-settings_menu.js"></script>
+					<script>
+						var editor = ace.edit("editor");
+						var freshLoaded = true;
+
+						ace.require("ace/ext/settings_menu").init(editor);
+						editor.focus();
+						editor.setTheme("ace/theme/cobalt");
+						editor.setHighlightActiveLine(true);
+						editor.session.setMode("ace/mode/php");
+						editor.setValue(decodeURIComponent(""), -1);
+						editor.session.on('change', function() {
+							var span = document.getElementById('SP_documentChanged');
+							span.innerHTML="Änderungen nicht gespeichert!";
+							span.style.display="block";
+						});
+						editor.session.newLineMode("unix");
+						editor.commands.addCommands([{
+							name: "showSettingsMenu",
+							bindKey: {win: "Ctrl-m", mac: "Command-m"},
+							exec: function(editor) {
+								editor.showSettingsMenu();
+							},
+							readOnly: false
+						}]);
+
+					</script>
+				<script>
+			$(function()
+			{
+		$("body").scrollTop(0);
+
+		$(window).scroll(function () {
+		$( "#scriptEditYPositionlastYPos" ).val($("body").scrollTop());
+		});
+	
+			});
+			</script>
+			
+					<input type="hidden" id="scriptEditYPositionlastYPos" name="scriptEditYPositionlastYPos" value="0">
+				<br>
+				</td>
+			</tr>
+			</tr>
+				<td valign="top" width="50%">
+					<span class="title">Skriptverwaltung</span><br><br>
+					<SELECT name="SEL_file" size="1">
+<option value="alleZeichenInstall.php">alleZeichenInstall.php</option>
+<option value="lala">lala</option>
+<option value="m232lösch2Install.php">m232lösch2Install.php</option>
+<option value="m23aticonf2Install.php">m23aticonf2Install.php</option>
+<option value="m23aticonfigInstall.php">m23aticonfigInstall.php</option>
+<option value="m23bittorrentVMDeployInstall.php">m23bittorrentVMDeployInstall.php</option>
+<option value="m23configUploadInstall.php">m23configUploadInstall.php</option>
+<option value="m23lala3Install.php">m23lala3Install.php</option>
+<option value="m23lalaInstall.php">m23lalaInstall.php</option>
+<option value="m23muhInstall.php">m23muhInstall.php</option>
+<option value="m23printerInstallInstall.php">m23printerInstallInstall.php</option>
+<option value="m23t1Install.php">m23t1Install.php</option>
+<option value="m23test12345Install.php">m23test12345Install.php</option>
+<option value="m23test2Install.php">m23test2Install.php</option>
+<option value="m23test3Install.php">m23test3Install.php</option>
+<option value="m23testInstall.php">m23testInstall.php</option>
+<option value="m23testslashInstall.php">m23testslashInstall.php</option>
+</SELECT>
+ 
+			<INPUT type="submit" name="BUT_load" value="Laden">
+		 
+			<INPUT type="submit" name="BUT_save" value="Speichern" onClick="document.getElementById('ACE_postContents').value=encodeURIComponent(editor.getValue());">
+		 
+			<INPUT type="submit" name="BUT_delete" value="Löschen">
+		<br><br>
+					<span class="titlesmal">Speichern unter</span><br>
+					<INPUT type="text" name="ED_saveAsName" size="20" maxlength="255" value=""> 
+			<INPUT type="submit" name="BUT_saveAsName" value="Speichern" onClick="document.getElementById('ACE_postContents').value=encodeURIComponent(editor.getValue());">
+		<br><br>
+	
+					<span class="titlesmal">Neues Skript erstellen</span><br>
+					<INPUT type="text" name="ED_newFile" size="20" maxlength="255" value=""> 
+			<INPUT type="submit" name="BUT_create" value="Anlegen">
+		<br><br>
+					<span class="title">Skript-Download</span><br><br>
+					<div class="errortable"><b>Überprüfen</b> Sie unbedingt jedes Skript nach dem Herunterladen. Sie verwenden jedes Skript auf <b>Ihr eigenes Risiko</b>!</div><br><SELECT onChange="changeScriptInfoFields();" id="SEL_scriptIdToLoad" name="SEL_scriptIdToLoad"  >
+<option value="-1">Keine Online-Skriptliste vorhanden</option>
+</SELECT> 
+			<INPUT type="submit" name="BUT_downloadScript" value="Laden">
+		<br>
+			<span class="titlesmal">Autor</span>
+			<div style="margin-left:10px" id="DIV_author"></div>
+			<span class="titlesmal">Veröffentlichungsdatum</span>
+			<div style="margin-left:10px" id="DIV_scriptReleaseDate"></div>
+			<span class="titlesmal">Beschreibung</span>
+			<div style="margin-left:10px" id="DIV_description"></div><br>
+			
+			<INPUT type="submit" name="BUT_updateOnlineScriptList" value="Online-Skriptliste aktualisieren">
+		
+			
+			<script>
+				scriptInfoArray = new Array();
+		
+				// Changes the texts of the release date, author and description spans by the choosen script name
+				function changeScriptInfoFields()
+				{
+					var sel = document.getElementById('SEL_scriptIdToLoad');
+					changeScriptInfoFieldsById(sel.value);
+				}
+
+				// Changes the texts of the release date, author and description spans
+				function changeScriptInfoFieldsById(id)
+				{
+					document.getElementById('DIV_scriptReleaseDate').innerHTML = scriptInfoArray[id][0];
+					document.getElementById('DIV_author').innerHTML = scriptInfoArray[id][2];
+					document.getElementById('DIV_description').innerHTML = scriptInfoArray[id][3];
+				}
+
+				// Show the texts of the release date, author and description spans for the script send by POST
+				changeScriptInfoFieldsById(-1);
+			</script>
+
+				</td>
+				<td valign="top" width="50%">
+					<span class="title">Aktuelles Skript veröffentlichen</span><br><br>
+					<div class="errortable">Wenn Sie Ihr Skript hochladen, wird dieses unter den <b>Bedingungen der <a href="https://www.gnu.org/copyleft/gpl.html">GPL</a></b> veröffentlicht. Bitte lesen Sie den Lizenztext <b>vor einer Veröffentlichung</b> Ihrer Skripte aufmerksam durch.</div><br>
+					<span class="titlesmal">Beschreibung</span><br>
+					<textarea name="TA_description" rows="5" cols="50"></textarea><br><br>
+					<span class="titlesmal">Autor</span><br>
+					<INPUT type="text" name="ED_author" size="50" maxlength="255" value=""><br><br>
+					
+			<INPUT type="submit" name="BUT_uploadScriptToSF" value="Skript auf m23.sf.net veröffentlichen" onClick="document.getElementById('ACE_postContents').value=encodeURIComponent(editor.getValue());">
+		<br><br>
+					<span class="title">Skriptausgabe betrachten</span><br><br>
+					
+		<table>
+			<tr>
+				<td>
+					<span class="titlesmal">Clientname</span><br><SELECT onChange="changeScriptOutputViewLink();" id="SEL_clientForScriptOutputView" name="SEL_clientForScriptOutputView"  >
+<option value="index34c0.html?page=showCurrentWorkPHP&amp;client=defuefi&amp;id=927&amp;m23clientID=927&amp;script=">defuefi</option>
+<option value="index7925.html?page=showCurrentWorkPHP&amp;client=m23-boot-iso-usbnet&amp;id=1038&amp;m23clientID=1038&amp;script=">m23-boot-iso-usbnet</option>
+<option value="indexa050.html?page=showCurrentWorkPHP&amp;client=uefi64&amp;id=925&amp;m23clientID=925&amp;script=">uefi64</option>
+<option value="index4abf.html?page=showCurrentWorkPHP&amp;client=ueficl0&amp;id=928&amp;m23clientID=928&amp;script=">ueficl0</option>
+</SELECT>
+				</td>
+				<td align="center">
+					<a href="xxx.html" target="_blank" id="A_scriptOutputViewLink">
+						<img src="images/workphp.png"><br>
+						Skriptausgabenbetrachter öffnen
+					</a>
+				</td>
+			</tr>
+		</table>
+		<script>
+			// Changes the link to the script output viewer
+			function changeScriptOutputViewLink()
+			{
+				document.getElementById("A_scriptOutputViewLink").href = document.getElementById("SEL_clientForScriptOutputView").value;
+			}
+			
+			changeScriptOutputViewLink();
+		</script>
+		
+				</td>
+			</tr>
+			<script>
+				document.getElementById('ACE_postContents').value=encodeURIComponent(editor.getValue());
+			</script>
+		
+</table></div></td><tr></table>
+<input type="hidden" id="onlineScriptInfoArray" name="onlineScriptInfoArray" value="N%3B"><input type="hidden" name="MSESS_variables" value="a%3A3%3A%7Bs%3A13%3A%22VM_createStep%22%3Bi%3A0%3Bs%3A31%3A%22preferenceForceHTMLReloadValues%22%3BN%3Bs%3A8%3A%22poolOGUI%22%3BO%3A8%3A%22CPoolGUI%22%3A10%3A%7Bs%3A14%3A%22%00CPoolGUI%00page%22%3Bi%3A0%3Bs%3A18%3A%22%00CPoolGUI%00helpPage%22%3BN%3Bs%3A15%3A%22%00CPool%00poolName%22%3BN%3Bs%3A14%3A%22%00CPool%00poolDir%22%3BN%3Bs%3A34%3A%22%00CMessageManager%00errorMessagesHTML%22%3Bs%3A0%3A%22%22%3Bs%3A28%3A%22%00CMessageManager%00errorsFound%22%3Bb%3A0%3Bs%3A33%3A%22%00CMessageManager%00infoMessagesHTML%22%3Bs%3A0%3A%22%22%3Bs%3A27%3A%22%00CMessageManager%00infosFound%22%3Bb%3A0%3Bs%3A36%3A%22%00CMessageManager%00warningMessagesHTML%22%3Bs%3A0%3A%22%22%3Bs%3A30%3A%22%00CMessageManager%00warningsFound%22%3Bb%3A0%3B%7D%7D">
+</form>
+	<br><br><br><a name="m23helpBox"></a>
+	<table class="helptable" align="left" border="0" cellspacing="5" id="ID_helpBox">
+<tr><td><p><span class="subhighlight">Hilfe: Skript-Editor<!--v1.18 new-->
+</span></p><p>
+</p><p><!--v15.1 begin-->Mit Skripten<!--v15.1 end--> ist das Ausführen von wiederkehrenden Aufgaben auf den Clients so einfach wie die Installation eines Paketes. Mithilfe des Editors können Sie eigene Skripte erstellen und dabei den ganzen Funktionsumfang von m23 nutzen, um den auf den Clients auszuführenden <a href="http://de.wikipedia.org/wiki/Unix-Shell#Die_Bourne-Again-Shell" target="_blank">BASH</a>-Code zu generieren. Sie können dabei alle BASH-Befehle verwenden, sowie alle auf den Clients installierten Kommandozeilenprogramme. Die Übersicht über die m23-Befehle finden Sie im <i>"Development Guide"</i>, der links im Menü zu finden ist.
+</p><p>
+</p><p><ul>
+</p><p><li><b>Vorhandene Skripte öffnen</b>: Wählen Sie hierzu das betreffende Skript aus der Liste unter <i>"Skriptverwaltung"</i> und klicken Sie anschließend auf <i>"Laden"</i>. Darauf erscheint der Quelltext im Editorfenster.</li>
+</p><p><li><b>Skripte speichern und löschen</b>: Klicken Sie hierzu entweder auf <i>"Speichern"</i> oder <i>"Löschen"</i>. Die Operationen beziehen sie jeweils auf das gerade geladenen Skript.</li>
+</p><p><!--v15.2 begin--><li><b>Skript unter einem neuen Namen speichern</b>: Möchten Sie das Skript im Editor unter einem neuen Namen speichern, so geben Sie diesen unter <i>"Speichern unter"</i> an und klicken auf <i>"Speichern"</i>.<!--v15.2 end-->
+</p><p><li><b>Erstellung eines neuen Skriptes</b>: Geben Sie hierzu einen Namen für das neue Skript bei <i>"Neues Skript erstellen"</i> ein und bestätigen Sie mit einem Klick auf <i>"Anlegen"</i>. In das Editorfenster wird ein kurzes Beispielskript geladen, das Sie anpassen können.</li>
+</p><p><!--v15.2 begin--><li><b>Skripte von m23-Benutzern herunterladen</b>: Sie können die von anderen m23-Nutzern veröffentlichten Skripte direkt in den Editor laden. Aktualisieren Sie hierzu die Liste der Skripte mit einem Klick auf <i>"Online-Skriptliste aktualisieren"</i>. Wählen Sie dann das gewünschte Skript aus der Liste unter <i>"Skript-Download"</i> aus und laden es mittels Klick auf <i>"Laden"</i> in den Editor.<!--v15.2 end--></li>
+</p><p><li><b>Teilen Sie Ihre Skripte mit anderen m23-Benutzern</b>: Der Editor beinhaltet eine einfache Möglichkeit, Ihre Skripte mit anderen m23-Benutzern zu teilen und somit einmal erstellte Skripte für einen größeren Nutzerkreis zu öffnen. Alle Skripte werden auf der m23-Webseite in der Rubrik "Skripte von Benutzern" veröffentlicht. Um das aktuell geladene Skript zu veröffentlichen, geben Sie bitte unter <i>"Beschreibung"</i> an, wofür Ihr Skript verwendet werden kann. Geben Sie bitte zusätzlich unter <i>"Autor"</i> Ihr Kürzel, Ihren Namen oder etwas anderes an, womit Ihre freigegebenen Skripte identifiziert werden können. Klicken Sie anschließend auf <i>"Skript auf m23.sf.net veröffentlichen"</i>. Ihr Skript wird nun umgehend hochgeladen und erscheint auf der m23-Webseite.<!--v15.2 deleted--></li>
+</p><p><!--v15.2 begin--><li><b>Ausgabe des Skriptes begutachten</b>: Als ersten Test Ihres Skriptes können Sie dessen Ausgabe überprüfen, um z.B. Syntaxfehler zu korrigieren. Das Skript wird hierzu temporär einem Client zugewiesen und der individuell für den Client generierte BASH-Code in einem Fester angezeigt. Wählen Sie den Client aus der Liste <i>"Clientname"</i> unter <i>"Skriptausgabe betrachten"</i> aus und klicken Sie anschließend auf <i>"Skriptausgabenbetrachter öffnen"</i>.<!--v15.2 end--></li>
+</p><p></ul>
+</p><p>
+</p><p><u>Hinweise</u>
+</p><p><ul><li>Ihre selbsterstellten Skripte finden Sie im Installationsdialog für Pakete in der Kategorie <i>"Spezialpakete (für erfahrene Benutzer)"</i>.</li>
+</p><p><!--v15.2 begin--><li>Um den Editor nutzen zu können, müssen Sie JavaScript in Ihrem Browser aktivieren.</li><!--v15.2 end--></ul>
+</p><p><!--v15.2 deleted-->
+</p><p>
+</p><p><!--v15.2 begin--><h3>Einige Tastenkürzel</h3>
+</p><p><u>Textauswahl</u>
+</p><p><ul>
+</p><p>	<li>Aktuelle Zeile löschen: <i>Strg + D</i> (PC), <i>Command + D</i> (Mac)</li>
+</p><p>	<li>Kompletten Quelltext auswählen: <i>Strg + A</i> (PC), <i>Command + A</i> (Mac)</li>
+</p><p>	<li>Worte im Text ausgehend vom Textcursor auswählen: <i>&uArr; + &larr; bzw. &rarr;</i> (PC), <i>&uArr; + &larr; bzw. &rarr;</i> (Mac)</li>
+</p><p>	<li>Zeile über bzw. unter aktueller wählen: <i>&uArr; + &uarr; bzw. &darr;</i> (PC), <i>&uArr; + &uarr; bzw. &darr;</i>
+</p><p>	<li>Text zum Zeilenanfang bzw. Zeilenende ausgehend vom Textcursor auswählen: <i>&uArr; + Pos1 bzw. Ende</i> (PC), <i>&uArr; + Home bzw. Ende</i>
+</p><p></ul>
+</p><p><u>Suchen und ersetzen</u>
+</p><p><ul>
+</p><p>	<li>Suchen: <i>Strg + F</i> (PC), <i>Command + F</i> (Mac)</li>
+</p><p>	<li>Nächstes Vorkommen suchen: <i>Strg + K</i> (PC), <i>Command + G</i> (Mac)</li>
+</p><p>	<li>Voriges Vorkommen suchen: <i>Strg + &uArr; + K</i> (PC), <i>Command + &uArr; + G</i> (Mac)</li>
+</p><p>	<li>Suchen und ersetzen: <i>Strg + H</i> (PC), <i>Command + Option + F</i> (Mac)</li>
+</p><p>	<li>Zu einer bestimmten Zeilennummer springen: <i>Strg + L</i> (PC), <i>Command + L</i> (Mac)</li>
+</p><p></ul>
+</p><p><u>Einrücken</u>
+</p><p><ul>
+</p><p>	<li>Einrücken: <i>Tabulator</i> (PC), <i>Tabulator</i> (Mac)</li>
+</p><p>	<li>Einrücken rückgängig machen: <i>&uArr; + Tabulator</i> (PC), <i>&uArr; + Tabulator</i> (Mac)</li>
+</p><p></ul>
+</p><p><u>Rückgängig und wiederholen</u>
+</p><p><ul>
+</p><p>	<li>Rückgängig: <i>Strg + Z</i> (PC), <i>Command + Z</i> (Mac)</li>
+</p><p>	<li>Wiederholen: <i>Strg + Y</i> (PC), <i>Command + Y</i> (Mac)</li>
+</p><p></ul>
+</p><p>
+</p><p>Hinweis: &uArr; = Umschalt / Shift, &larr;, &rarr;, &uarr; und &darr; = Richtungstasten
+</p><p>
+</p><p>Weitere Tastaturkürzel unter <a href="https://github.com/ajaxorg/ace/wiki/Default-Keyboard-Shortcuts">ace: Default Keyboard Shortcuts</a>.
+</p><p><!--v15.2 end--></p></td></tr></TABLE>					</td>
+									</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=scriptEditor by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:31:28 GMT -->
+</html>

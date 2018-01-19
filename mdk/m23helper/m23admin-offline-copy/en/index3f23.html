@@ -1,0 +1,480 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=ipManagement by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:35:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+	<title>m23 - Admin (ipManagement)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="expires" content="0">
+	<link rel="stylesheet" type="text/css" href="images/index.css">
+	<link rel="stylesheet" type="text/css" href="images/jquery.css">
+	<script src="images/codepress.js" type="text/javascript"></script>
+	<script type="text/javascript" src="images/jquery.min.js"></script>
+	<script type="text/javascript" src="images/jquery-ui.min.js"></script>
+</head>
+
+ <body bgcolor="#596374" onload="if (typeof setEFIStartEndPositionIfEFIBootPartitionTypeIsSet == 'function') { setEFIStartEndPositionIfEFIBootPartitionTypeIsSet(); }">
+
+<table align="left" cellspacing="0"  cellpadding="5" border="0">
+	<tr>
+		<td colspan="2" align="center">
+			<table class="box" align="center" id="ID_headHeight">
+				<tr>
+					<td width="900">
+						
+<table cellspacing="0" cellpadding="3" width="100%" border="0">
+	<tr>
+		<td width="100" align="center">
+			<a HREF="http://m23.goos-habermann.de/" target="_blank">
+				<img src="images/m23.png" border="0">
+							</a>
+		</td>
+
+		<td align="center">
+			<table class="helptable">
+				<tr>
+				
+				<tr>
+					<td colspan=2>
+						<nobr><b>Your IP address:</b> 192.168.1.77 <b>Servername or IP:</b> 192.168.1.23 <b>m23 version and patch level:</b> 18.1 rock (101083) <a href="index42f0.html?page=serverStatus">Server status</a></nobr>
+					</td>
+				</tr>
+				<tr><td colspan=2><hr></td></tr>
+				<tr>
+					<td align="left">
+						&raquo;&nbsp;<a href="http://m23.sf.net/" target="_blank">m23 project page</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/faq/frageFAQ.htm" target="_blank">m23 forum</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/" target="_blank">Commercial support</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/index.php?s=SchulungBeratung" target="_blank">m23 training</a>
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/questionnaire">m23 questionnaire</a><br>
+					</td>
+					<td align="right">
+						god <a href="indexbfd1.html?logout=1">(Log out)</a>
+					</td>
+				</tr>
+								
+			</table>
+		</td>
+
+		<td align="right">
+<!--m23customPatchBegin type=change id=tuxLogo-->
+			<img src="images/sweet-tux.png">
+<!--m23customPatchEnd id=tuxLogo-->
+		</td>
+	</tr>
+</table>					</td>
+				<tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="150">
+			<table class="box" valign="top">
+				<tr>
+					<td align="left">
+						<br>
+<form method="GET" action="http://god:m23@192.168.1.23/m23admin/index.php">
+<center>
+<SELECT  id="LB_language" name="LB_language"  >
+<option value="en">English</option>
+<option value="de">Deutsch</option>
+<option value="fr">Fran&ccedil;ais</option>
+</SELECT>
+<input type="hidden" name="page" value="ipManagement">
+<input type="hidden" name="m23_language" value="en">
+<input type="submit" name="BUT_lang" value="OK">
+</center>
+</form>
+
+
+<ul class="navmenu">
+<li>Server<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index.html"><img border="0" src="images/home_mini.png"></a></td>
+		<td><a href="index.html">Home</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexad98.html?page=serverSettings"><img border="0" src="images/settings_mini.png"></a></td>
+		<td><a href="indexad98.html?page=serverSettings">Server settings</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9104.html?page=m23RemoteAdministrationService"><img border="0" src="images/m23remoteadministrationservice-mini.png"></a></td>
+		<td><a href="index9104.html?page=m23RemoteAdministrationService">m23 remote administration service</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexfb56.html?page=clientsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexfb56.html?page=clientsoverview">Overview</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe9d8.html?page=addclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="indexe9d8.html?page=addclient&amp;clearSession=1">Add</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexc607.html?page=clientsoverview&amp;action=setup"><img border="0" src="images/yellow.png"></a></td>
+		<td><a href="indexc607.html?page=clientsoverview&amp;action=setup">Setup</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index95c9.html?page=clientsoverview&amp;action=delete"><img border="0" src="images/mini_trash.png"></a></td>
+		<td><a href="index95c9.html?page=clientsoverview&amp;action=delete">Delete</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb010.html?page=assimilate"><img border="0" src="images/assimilate-mini.png"></a></td>
+		<td><a href="indexb010.html?page=assimilate">Assimilate</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index79a0.html?page=makeBootMedia"><img border="0" src="images/cdrom-mini.png"></a></td>
+		<td><a href="index79a0.html?page=makeBootMedia">Create boot media</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Virtual clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9740.html?page=addvmclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="index9740.html?page=addvmclient&amp;clearSession=1">Create VM</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Groups<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf13d.html?page=groupsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexf13d.html?page=groupsoverview">Overview</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbae6.html?page=creategroup"><img border="0" src="images/add-mini.png"></a></td>
+		<td><a href="indexbae6.html?page=creategroup">Add</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Packages<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index6dcf.html?page=clientsoverview&amp;action=install"><img border="0" src="images/green.png"></a></td>
+		<td><a href="index6dcf.html?page=clientsoverview&amp;action=install">Install</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index936d.html?page=clientsoverview&amp;action=deinstall"><img border="0" src="images/deinstall-mini.png"></a></td>
+		<td><a href="index936d.html?page=clientsoverview&amp;action=deinstall">Deinstall</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbbd7.html?page=clientsoverview&amp;action=update"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexbbd7.html?page=clientsoverview&amp;action=update">Update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb5c4.html?page=autoUpdate"><img border="0" src="images/autoupdate_mini.png"></a></td>
+		<td><a href="indexb5c4.html?page=autoUpdate">Automatical update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf34f.html?page=poolBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexf34f.html?page=poolBuilder">Pool builder</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index73d3.html?page=scriptEditor"><img border="0" src="images/scripteditor-mini.png"></a></td>
+		<td><a href="index73d3.html?page=scriptEditor">Script editor</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index3a18.html?page=packageBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="index3a18.html?page=packageBuilder">Package builder</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexd1df.html?page=clientsourceslist"><img border="0" src="images/package-mini.png"></a></td>
+		<td><a href="indexd1df.html?page=clientsourceslist">Package sources</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index8b5a.html?page=installpackages&amp;action=packageSelection"><img border="0" src="images/packageselection-mini.png"></a></td>
+		<td><a href="index8b5a.html?page=installpackages&amp;action=packageSelection">Edit package selections</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index4804.html?page=comparePackageStatus"><img border="0" src="images/comparepackagestatus-mini.png"></a></td>
+		<td><a href="index4804.html?page=comparePackageStatus">Compare package status</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Mass tools<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1"><img border="0" src="images/clientbuilder-mini.png"></a></td>
+		<td><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1">Client builder</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall"><img border="0" src="images/massinstall-mini.png"></a></td>
+		<td><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall">Mass install</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Support<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe767.html?page=support"><img border="0" src="images/help-mini.png"></a></td>
+		<td><a href="indexe767.html?page=support">Support</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/phpBB2"><img border="0" src="images/bug-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/phpBB2">!!!Report a bug!!!</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news"><img border="0" src="images/newsletter-mini.png"></a></td>
+		<td><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news">Subscribe to newsletter</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/questionnaire"><img border="0" src="images/questionaire-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/questionnaire">m23 questionnaire</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/m23manual/en/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/m23manual/en/index.html">User manual</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/devguide/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/devguide/index.html">Development Guide</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 </ul>					</td>
+				<tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table class="box" align="center" >
+				<tr>
+					<td valign="top" align="center"><br>
+						
+	<div align="right">
+		<a href="javascript:window.print()">
+			<img src="images/printer-mini.png" border="0" alt="Print" title="Print">
+		</a>
+		<a href="#m23helpBox">
+			<img src="images/helpred-mini.png" border="0" alt="Help" title="Help">
+		</a>
+	</div>
+	<span class="title">IP management</span><form method="post" action="http://god:m23@192.168.1.23/m23admin/index.php" name="htmlform" id="htmlformID" enctype="multipart/form-data">
+	<script language="javascript">document.write('<input type="hidden" name="javaScriptEnabled" value="on">');</script><!-- MessageBoxPlaceholder --><input type="hidden" name="page" value="ipManagement"><br><br>
+				<table>
+					<tr>
+						<td valign="top"><br><br><span class="titlesmal">Single clients / network settings</span>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable2" align="center" >
+<tr>
+<td ><p>Client name <sup>1,2</sup></p></td>
+<td ><p><INPUT type="text" name="ED_singleClientName" size="20" maxlength="64" value=""></p></td>
+<td ><p></p></td>
+</tr>
+<tr>
+<td ><p>IP Address <sup>1,2</sup></p></td>
+<td ><p><INPUT type="text" name="ED_singleIp" size="16" maxlength="16" value=""></p></td>
+<td ><p>(eg. 255.255.255.0)</p></td>
+</tr>
+<tr>
+<td ><p>Netmask <sup>2</sup></p></td>
+<td ><p><INPUT type="text" name="ED_singleNetmask" size="16" maxlength="16" value=""></p></td>
+<td ><p>(eg. 255.255.255.0)</p></td>
+</tr>
+<tr>
+<td ><p>MAC Address <sup>1,2</sup></p></td>
+<td ><p><INPUT type="text" name="ED_singleMac" size="12" maxlength="12" value=""></p></td>
+<td ><p>(eg. 009b52a5e121)</p></td>
+</tr>
+<tr>
+<td ><p>Gateway <sup>2</sup></p></td>
+<td ><p><INPUT type="text" name="ED_singleGateway" size="16" maxlength="16" value=""></p></td>
+<td ><p> (eg. 192.168.0.1)</p></td>
+</tr>
+<tr>
+<td ><p>
+			<INPUT type="submit" name="BUT_lockIPClientName" value="Lock clientname / IP / MAC¹">
+		</p></td>
+<td ><p>
+			<INPUT type="submit" name="BUT_addSettingsToDhcp" value="Add settings to DHCP server²">
+		</p></td>
+<td ><p></p></td>
+</tr>
+
+</table></div></td><tr></table>
+
+						</td>
+						<td valign="top"><br><br><span class="titlesmal">IP adress range</span>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable2" align="center" >
+<tr>
+<td ><p>First IP <sup>1,2</sup></p></td>
+<td ><p><INPUT type="text" name="ED_rangeFirstIp" size="16" maxlength="16" value=""></p></td>
+<td ><p>(eg. 192.168.0.200)</p></td>
+</tr>
+<tr>
+<td ><p>Last IP <sup>1,2</sup></p></td>
+<td ><p><INPUT type="text" name="ED_rangeLastIp" size="16" maxlength="16" value=""></p></td>
+<td ><p>(eg. 192.168.0.254)</p></td>
+</tr>
+<tr>
+<td ><p>Netmask <sup>2</sup></p></td>
+<td ><p><INPUT type="text" name="ED_rangeNetmask" size="16" maxlength="16" value=""></p></td>
+<td ><p>(eg. 255.255.255.0)</p></td>
+</tr>
+<tr>
+<td ><p>Gateway <sup>2</sup></p></td>
+<td ><p><INPUT type="text" name="ED_rangeGateway" size="16" maxlength="16" value=""></p></td>
+<td ><p> (eg. 192.168.0.1)</p></td>
+</tr>
+<tr>
+<td ><p>
+			<INPUT type="submit" name="BUT_lockIpRange" value="Lock IP range¹">
+		</p></td>
+<td ><p>
+			<INPUT type="submit" name="BUT_addDynamicIpRange" value="Add dynamic IP range²">
+		</p></td>
+<td ><p></p></td>
+</tr>
+
+</table></div></td><tr></table>
+
+						</td>
+					</tr>
+					<tr>
+						<td valign="top"><br><br><span class="titlesmal">Search</span>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable2" align="center" >
+<tr>
+<td ><p><INPUT type="text" name="ED_searchIPsAndMACs" size="30" maxlength="255" value="192.168.1.83"></p></td>
+<td ><p>
+			<INPUT type="submit" name="BUT_searchIPsAndMACs" value="Search">
+		</p></td>
+</tr>
+
+</table></div></td><tr></table>
+<br><br><span class="titlesmal">Locked IP ranges</span>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable2" align="center" >
+<tr>
+<td class="subhighlight"><p>First IP</p></td>
+<td class="subhighlight"><p>Last IP</p></td>
+<td class="subhighlight"><p>Action</p></td>
+</tr>
+
+</table></div></td><tr></table>
+<br><br><span class="titlesmal">Dynamic IP ranges</span>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable2" align="center" >
+<tr>
+<td class="subhighlight"><p>First IP</p></td>
+<td class="subhighlight"><p>Last IP</p></td>
+<td class="subhighlight"><p>Netmask</p></td>
+<td class="subhighlight"><p>Gateway</p></td>
+<td class="subhighlight"><p>Action</p></td>
+</tr>
+
+</table></div></td><tr></table>
+
+						</td>
+						<td valign="top"><br><br><span class="titlesmal">Used IP addresses</span>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable" align="center" >
+<tr>
+<td class="subhighlight"><p> </p></td>
+<td class="subhighlight"><p><center>Status<br>
+		<INPUT type="image" src="images/uparrow.png" name="33db21c62158f1e060cd93db9c9cd93c" value="33db21c62158f1e060cd93db9c9cd93c" alt="Ascending">
+	
+		<INPUT type="image" src="images/downarrow.png" name="04824e7a0cfc03a6a38e1ec2cacea201" value="04824e7a0cfc03a6a38e1ec2cacea201" alt="Descending">
+	</center></p></td>
+<td class="subhighlight"><p><center>Client name<br>
+		<INPUT type="image" src="images/uparrow.png" name="91414ebaf65a70777e60a90f5cd15dba" value="91414ebaf65a70777e60a90f5cd15dba" alt="Ascending">
+	
+		<INPUT type="image" src="images/downarrow.png" name="76cdb0f91f88ae7bd05755994cd20085" value="76cdb0f91f88ae7bd05755994cd20085" alt="Descending">
+	</center></p></td>
+<td class="subhighlight"><p><center>IP Address<br>
+		<INPUT type="image" src="images/uparrow.png" name="beafa260736f83a0c70776dbbe55484d" value="beafa260736f83a0c70776dbbe55484d" alt="Ascending">
+	
+		<INPUT type="image" src="images/downarrow.png" name="81372eb0bf378c6e8aebd8f4fc8ab228" value="81372eb0bf378c6e8aebd8f4fc8ab228" alt="Descending">
+	</center></p></td>
+<td class="subhighlight"><p><center>MAC Address<br>
+		<INPUT type="image" src="images/uparrow.png" name="b3ecb8a9ea0704a26ff331ab213b859c" value="b3ecb8a9ea0704a26ff331ab213b859c" alt="Ascending">
+	
+		<INPUT type="image" src="images/downarrow.png" name="6ca8272f696ed0a17d52a39096fb2e65" value="6ca8272f696ed0a17d52a39096fb2e65" alt="Descending">
+	</center></p></td>
+<td class="subhighlight"><p> </p></td>
+</tr>
+<tr>
+<td ><p></p></td>
+<td ><p></p></td>
+<td ><p></p></td>
+<td ><p></p></td>
+<td ><p>
+			<INPUT type="submit" name="BUT_delete" value="remove">
+		</p></td>
+<td ><p></p></td>
+</tr>
+
+</table></div></td><tr></table>
+
+						</td>
+					</tr>
+				</table><input type="hidden" name="MSESS_variables" value="a%3A4%3A%7Bs%3A15%3A%22clientAddAction%22%3Bs%3A13%3A%22clientBuilder%22%3Bs%3A15%3A%22preferenceSpace%22%3Ba%3A30%3A%7Bs%3A6%3A%22client%22%3Bs%3A0%3A%22%22%3Bs%3A6%3A%22office%22%3Bs%3A0%3A%22%22%3Bs%3A4%3A%22name%22%3Bs%3A0%3A%22%22%3Bs%3A10%3A%22familyname%22%3Bs%3A0%3A%22%22%3Bs%3A5%3A%22eMail%22%3Bs%3A0%3A%22%22%3Bs%3A3%3A%22mac%22%3Bs%3A0%3A%22%22%3Bs%3A2%3A%22ip%22%3Bs%3A12%3A%22192.168.1.83%22%3Bs%3A7%3A%22netmask%22%3Bs%3A13%3A%22255.255.255.0%22%3Bs%3A7%3A%22gateway%22%3Bs%3A11%3A%22192.168.1.5%22%3Bs%3A4%3A%22dns1%22%3Bs%3A11%3A%2285.88.19.10%22%3Bs%3A4%3A%22dns2%22%3Bs%3A7%3A%228.8.8.8%22%3Bs%3A7%3A%22firstpw%22%3Bs%3A8%3A%22Nashiec0%22%3Bs%3A12%3A%22rootpassword%22%3Bs%3A8%3A%22Eojaing9%22%3Bs%3A8%3A%22boottype%22%3Bs%3A3%3A%22pxe%22%3Bs%3A8%3A%22language%22%3Bs%3A2%3A%22uk%22%3Bs%3A8%3A%22newgroup%22%3Ba%3A1%3A%7Bi%3A0%3Bb%3A0%3B%7Ds%3A5%3A%22login%22%3Bs%3A0%3A%22%22%3Bs%3A4%3A%22arch%22%3Bs%3A5%3A%22amd64%22%3Bs%3A10%3A%22bootloader%22%3Bs%3A4%3A%22grub%22%3Bs%3A12%3A%22packageProxy%22%3Bs%3A12%3A%22192.168.1.23%22%3Bs%3A11%3A%22packagePort%22%3Bs%3A4%3A%222323%22%3Bs%3A8%3A%22timeZone%22%3Bs%3A13%3A%22Europe%2FLondon%22%3Bs%3A10%3A%22ldapserver%22%3Bs%3A8%3A%22m23-LDAP%22%3Bs%3A6%3A%22userID%22%3Bi%3A1001%3Bs%3A7%3A%22groupID%22%3Bi%3A1001%3Bs%3A8%3A%22ldaptype%22%3Bs%3A4%3A%22none%22%3Bs%3A13%3A%22nfshomeserver%22%3Bs%3A0%3A%22%22%3Bs%3A18%3A%22getSystemtimeByNTP%22%3Bb%3A1%3Bs%3A16%3A%22addNewLocalLogin%22%3Bb%3A1%3Bs%3A14%3A%22installPrinter%22%3Bb%3A1%3B%7Ds%3A14%3A%22changeElements%22%3Bs%3A215%3A%22client%23office%23name%23familyname%23eMail%23mac%23ip%23netmask%23gateway%23dns1%23dns2%23firstpw%23rootpassword%23boottype%23language%23login%23arch%23bootloader%23proxy%23timeZone%23ldap%23nfshomeserver%23getSystemtimeByNTP%23addNewLocalLogin%23installPrinter%23%22%3Bs%3A31%3A%22preferenceForceHTMLReloadValues%22%3BN%3B%7D">
+</form>
+	<br><br><br><a name="m23helpBox"></a>
+	<table class="helptable" align="left" border="0" cellspacing="5" id="ID_helpBox">
+<tr><td><p><span class="subhighlight">Help: IP management
+</span></p><p>This dialog helps you to administer network settings for devices beyond m23.
+</p><p>
+</p><p><u>Single clients / network settings</u>
+</p><p>Here you can assign specific network settings to single devices or lock specific values, that are then no longer available for m23 clients and thus cannot wrongly be assigned to an m23 client.
+</p><p><ul>
+</p><p>	<li>
+</p><p>		<b>Lock clientname / IP / MAC</b>: By use of the function <b>Lock clientname / IP / MAC</b>, you can lock a client name, an IP address or a MAC address (e.g. the IP address of a network printer), so that this value cannot wrongly be used for m23 clients. Enter the IP, MAC address or name you would like to lock into the fields <i>"Client name"</i>, <i>"IP Address"</i> or <i>"MAC Address"</i> and click on <i>"Lock clientname / IP / MAC"</i>. The usage of the "Lock clientname / IP / MAC" function requires you to fill out at least one of the fields marked with <sup>1</sup>.
+</p><p>	</li>
+</p><p>	<li>
+</p><p>		<b>Add settings to DHCP server</b>: If you would like to allocate network settings to a device by use of DHCP, you can enter your values in the fields <i>"Client name"</i>, <i>"IP Address"</i>, <i>"Netmask"</i>, <i>"MAC Address"</i> and <i>"Gateway"</i> and click on <i>"Add settings to DHCP server"</i>. The fields marked with <sup>2</sup> are all required for this function.
+</p><p>	</li>
+</p><p></ul>
+</p><p>
+</p><p><u>IP adress range</u>
+</p><p>For IP address ranges, a similar functionality is available. Unlike at <i>"Single clients / network settings"</i> you will not enter single devices or network settings, but you can define a range of IP addresses where the IPs will be locked for m23 or where the IPs will be dynamically allotted to devices which are not m23 clients.
+</p><p><ul>
+</p><p>	<li>
+</p><p>		<b>Lock IP range</b>: Please enter the first and the last IP address into the fields <i>"First IP"</i> and <i>"Last IP"</i> and the corresponding network mask (<i>"Netmask"</i>) and click on <i>"Lock IP range"</i>. All IPs in the indicated range  (including the first and the last IP address) will be blocked for m23 and can no longer wrongly be used for m23 clients. The values marked with <sup>1</sup> are required for this function.
+</p><p>	</li>
+</p><p>	<li>
+</p><p>		<b>Add dynamic IP range</b>: Please enter the first and the last IP address into the fields <i>"First IP"</i> and <i>"Last IP"</i> and the corresponding network mask (<i>"Netmask"</i>) and the gateway (<i>"Gateway"</i>) and click on <i>"Add dynamic IP range"</i>. All IPs in the indicated range  (including the first and the last IP address) will be allotted dynamically to devices searching for a DHCP server in the network. The values marked with <sup>2</sup> are required for this function.
+</p><p>	</li>
+</p><p></ul>
+</p><p>
+</p><p><u>Adress tables</u>
+</p><p>The three tables <i>"Used IP addresses"</i>, <i>"Dynamic IP ranges"</i> and <i>"Locked IP ranges"</i> contain the values administered by the IP management. You can use the  <i>"Search"</i> field to enter a search term (IP, network mask, MAC, group name or other client properties) to narrow down the number of values shown in the tables. If you would like to remove the settings in one of the table rows, check the box at the end of the corresponding row and click on <i>"remove"</i> or use the <i>"remove"</i> button at the end of the row.</p></td></tr></TABLE>					</td>
+									</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=ipManagement by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:35:17 GMT -->
+</html>

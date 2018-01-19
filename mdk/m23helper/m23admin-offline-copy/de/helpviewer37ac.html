@@ -1,0 +1,108 @@
+
+	<div align="right">
+		<a href="javascript:window.print()">
+			<img src="images/printer-mini.png" border="0" alt="Drucken" title="Drucken">
+		</a>
+		<a href="#m23helpBox">
+			<img src="images/helpred-mini.png" border="0" alt="Hilfe" title="Hilfe">
+		</a>
+	</div>
+	
+			<html>
+				
+<!-- Mirrored from 192.168.1.23/m23admin/misc/helpViewer.php?helpPage=externalDHCP&lang=de by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:33:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+					<title>m23helpViewer - Hilfe: m23 mit einem externen DHCP-Server benutzen<!--new v10.3--></title>
+					<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+					<meta http-equiv="expires" content="0">
+					<link rel="stylesheet" type="text/css" href="images/printable.css">
+				</head>
+				<body><br><a name="m23helpBox"></a>
+	<table class="helptable" align="left" border="0" cellspacing="5" id="ID_helpBox">
+<tr><td><p><span class="subhighlight">Hilfe: m23 mit einem externen DHCP-Server benutzen<!--new v10.3-->
+</span></p><p>Szenario: Im lokalen Netzwerk gibt es einen DHCP-Server, der Netzwerkeinstellungen (IP, Netzwerkmaske etc.) an alle Rechner verteilt. Zusätzlich ist ein m23-Server vorhanden, mit dem Clients aufgesetzt werden sollen.
+</p><p>
+</p><p>Problem: Die Installation der Clients funktioniert nicht, da der lokale DHCP die Netzwerkeinstellungen schneller als der m23-DHCP zuweist.
+</p><p>
+</p><p>Begründung: Der m23-Server muß dem Client bei der Installation des Betriebssystems die IP und weitere Netzwerkeinstellungen zuweisen. Werden diese Einstellungen von einem anderen DHCP-Server vorgenommen, so findet der Client den m23-Server nicht, das Netzwerkbootimage wird nicht gefunden und der Client kann nicht installiert werden. Grundsätzlich kann man an dem Vorgehen nichts ändern, wenn es um Netzwerkinstallationen geht, da dies von den Netzwerkprotokollen und -standards so vorgesehen ist.
+</p><p>
+</p><p><h3>Der andere DHCP-Server kann deaktiviert werden</h3>
+</p><p>Lösungen:
+</p><p><ul>
+</p><p>	<li>Für die Dauer der Installation können Sie den anderen DHCP-Server für die MAC der Clients deaktivieren.</li>
+</p><p>	<li>Oder: Wahrscheinlich reicht es schon, wenn Sie Ihren DHCP-Server so konfigurieren, daß er seine Netzwerkeinstellungen erst 2 Sekunden verspätet verteilt, damit der m23-Server immer schneller antwortet.</li>
+</p><p>	<li>Oder: Deaktivieren Sie den anderen DHCP-Server für die Dauer der Betriebssysteminstallation mit m23.</li>
+</p><p></ul>
+</p><p>
+</p><p><h3>Der andere DHCP-Server kann NICHT deaktiviert werden</h3>
+</p><p>In diesem Falle müssen Sie die Konfiguration des anderen DHCP-Servers per Hand anpassen und ggf. einen TFTP-Server einrichten. Wie die Konfiguration genau vorzunehmen ist, entnehmen Sie bitte der Dokumentation Ihres DHCP- und des TFTP-Servers.
+</p><p>
+</p><p><!-- v18.1 begin-->
+</p><p><h4>Alternativ: Bootmedien erstellen</h4>
+</p><p>Sollte eine Umkonfiguration Ihres DHCP-Servers nicht möglich sein, so können Sie Ihren m23-Client über ein USB/CD-Bootmedium starten und auf der Kommandozeile des Clients das Skript "<code>fetchJobManual</code>" aufrufen, um die Clientinstallation zu starten. Weitere Informationen zu Bootmedien finden Sie im Menü unter <i>"Bootmedien erstellen"</i>
+</p><p><!-- v18.1 end-->
+</p><p>
+</p><p><!-- v16.1 begin-->
+</p><p><h4>Dynamische Konfiguration von DHCP-Servern</h4>
+</p><p>Bei jeder Netzwerkboot-Status-Änderung (Aktivierung bzw. Deaktivierung) eines Clients wird das Skript <i>"/m23/bin/externalDHCPControl.sh"</i> aufgerufen. Sie können dieses nach Ihren Wünschen anpassen, um damit einen vorhandenen DHCP-Server dynamisch zu konfigurieren. Weitere Informationen entnehmen Sie bitte den Kommentaren innerhalb des Skriptes.
+</p><p><!-- v16.1 end-->
+</p><p>
+</p><p><!-- v13.2 begin-->
+</p><p><h4>ISC DHCP Server</h4>
+</p><p>Handelt es sich bei dem anderen DHCP-Server um den <a href="http://www.isc.org/downloads/dhcp/">ISC DHCP server</a>, so können Sie diesen anstelle des m23-DHCP-Servers verwenden.
+</p><p>
+</p><p><ol>
+</p><p>	<li>In der m23-Weboberfläche wählen Sie beim Anlegen eines neuen Clients <i>"PXE"</i> unter <i>"Boottyp"</i> aus. Vergeben Sie bei <i>"Clientname"</i> den Rechnernamen, den Ihr DHCP-Server dem Client zuweist.</li>
+</p><p>
+</p><p>	<li>Deaktivieren Sie den DHCP-Server auf dem m23-Server: Editieren Sie die Datei <pre>/etc/default/isc-dhcp-server</pre> auf dem m23-Server, kommentieren die Zeile <pre>INTERFACES=...</pre> mit einer vorangestellten "#" aus und fügen darunter die neue Zeile <pre>INTERFACES=""</pre> ein. Starten Sie anschließend den DHCP-Server mit <pre>/etc/init.d/isc-dhcp-server restart</pre> neu. Dieser läuft dann zwar, beantwortet aber keine Anfragen mehr.</li>
+</p><p>	
+</p><p>	<li>Setzen Sie in der Konfiguration Ihres DHCP-Servers die Option <pre>use-host-decl-names on</pre> für die Gruppe, die die m23-Clients enthalten soll.</li>
+</p><p>	
+</p><p>	<li>Aktualisieren Sie die m23-Gruppe in der Konfiguration Ihres DHCP-Servers regelmäßig (z.B. mittels cronjob oder anderer Verfahren) mit den Daten des m23-Servers von der URL <pre>http://&lt;m23-Server-IP&gt;/exportDHCPSettings.php</pre>. Diese URL stellt die Konfiguration in "ISC DHCP server"-Notation für m23-Clients, die über das Netzwerk booten sollen, bereit. Die Gruppe mit den m23-Clients könnte dann wie folgt aussehen:
+</p><p>	<code>
+</p><p>group {
+</p><p>use-host-decl-names on;
+</p><p>&lt;Aus exportDHCPSettings.php eingefügte Daten&gt;
+</p><p>}
+</p><p>	</code>
+</p><p>
+</p><p>	
+</p><p>	
+</p><p>	</li>
+</p><p></ol>
+</p><p>
+</p><p>
+</p><p><!-- v13.2 end-->
+</p><p>
+</p><p><h4>Anderer DHCP-Server</h4>
+</p><p>
+</p><p><ol>
+</p><p>	<li>In der m23-Weboberfläche wählen Sie beim Anlegen eines neuen Clients <!--cha v13.2--><i>"PXE"</i><!--cha v13.2 end--> unter <i>"Boottyp"</i> aus. Vergeben Sie bei <i>"Clientname"</i> den Rechnernamen, den Ihr DHCP-Server dem Client zuweist.</li>
+</p><p>
+</p><p>	<li>Konfigurieren Sie Ihren DHCP-Server so, daß der m23-Client den in der m23-Weboberfläche angegebenen Rechnernamen zugewiesen bekommt.</li>
+</p><p>
+</p><p><!--cha v13.1-->
+</p><p>	<li>Der PXE-Kernel, den Ihr DHCP-Server an den m23-Client übermittelt, muß <b>pxelinux.0</b> heißen. TFTP-Server ist der m23-Server.</li>
+</p><p><!--cha v13.1 end-->
+</p><p>
+</p><p><!-- v13.2 begin-->
+</p><p>	<li>Konfigurieren Sie den DHCP-Server so, daß dieser den m23-Clients als Herkunfts-IP die IP des m23-Servers übermittelt.</li>
+</p><p><!-- v13.2 end-->
+</p><p>
+</p><p>	<li>Sollte sich der DHCP-Server nicht so einrichten lassen, so müssen Sie ggf. einen eigenen TFTP-Server auf demselben Rechner einrichten, der auch Ihren DHCP-Server beinhaltet. Als Basis für die Einrichtung des TFTPs können Sie die Konfigurationsdateien aus dem Verzeichnis /m23/tftp/ verwenden.</li>
+</p><p></ol>
+</p><p>
+</p><p><!--new v13.1 -->
+</p><p><h3>Proxy DHCP</h3>
+</p><p>Evtl. könnte es für Sie auch hilfreich sein, <a href="http://de.wikipedia.org/wiki/Preboot_Execution_Environment#Proxy_DHCP">Proxy DHCP</a> zu verwenden.
+</p><p><!--new v13.1 end -->
+</p><p>
+</p><p><div align="right">
+</p><p>	<b>Sie benötigen Unterstützung bei der Einrichtung und Konfiguration von m23 oder anderen OpenSource-Komponenten?</b>
+</p><p>	Dann schauen Sie doch mal beim <a href="http://www.goos-habermann.de/index.php?s=Entwicklung#Support">Support für m23, Linux und OpenSource von goos-habermann.de</a> vorbei.
+</p><p></div>
+</p><p></p></td></tr></TABLE></body>
+			
+<!-- Mirrored from 192.168.1.23/m23admin/misc/helpViewer.php?helpPage=externalDHCP&lang=de by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:33:29 GMT -->
+</html>

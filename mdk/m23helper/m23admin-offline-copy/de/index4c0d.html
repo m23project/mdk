@@ -1,0 +1,428 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=server_daemonsAndPrograms by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:31:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+	<title>m23 - Admin (server_daemonsAndPrograms)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="expires" content="0">
+	<link rel="stylesheet" type="text/css" href="images/index.css">
+	<link rel="stylesheet" type="text/css" href="images/jquery.css">
+	<script src="images/codepress.js" type="text/javascript"></script>
+	<script type="text/javascript" src="images/jquery.min.js"></script>
+	<script type="text/javascript" src="images/jquery-ui.min.js"></script>
+</head>
+
+ <body bgcolor="#596374" onload="if (typeof setEFIStartEndPositionIfEFIBootPartitionTypeIsSet == 'function') { setEFIStartEndPositionIfEFIBootPartitionTypeIsSet(); }">
+
+<table align="left" cellspacing="0"  cellpadding="5" border="0">
+	<tr>
+		<td colspan="2" align="center">
+			<table class="box" align="center" id="ID_headHeight">
+				<tr>
+					<td width="900">
+						
+<table cellspacing="0" cellpadding="3" width="100%" border="0">
+	<tr>
+		<td width="100" align="center">
+			<a HREF="http://m23.goos-habermann.de/" target="_blank">
+				<img src="images/m23.png" border="0">
+							</a>
+		</td>
+
+		<td align="center">
+			<table class="helptable">
+				<tr>
+				
+				<tr>
+					<td colspan=2>
+						<nobr><b>Ihre IP-Adresse:</b> 192.168.1.77 <b>Servername oder IP:</b> 192.168.1.23 <b>m23-Version und Patch-Level:</b> 18.1 rock (101083) <a href="index42f0.html?page=serverStatus">Server-Status</a></nobr>
+					</td>
+				</tr>
+				<tr><td colspan=2><hr></td></tr>
+				<tr>
+					<td align="left">
+						&raquo;&nbsp;<a href="http://m23.sf.net/" target="_blank">m23-Projektseite</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/faq/frageFAQ.htm" target="_blank">m23-Forum</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/" target="_blank">Kommerzieller Support</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/index.php?s=SchulungBeratung" target="_blank">m23-Schulungen</a>
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/fragebogen-de">m23-Fragebogen</a><br>
+					</td>
+					<td align="right">
+						god <a href="indexbfd1.html?logout=1">(Ausloggen)</a>
+					</td>
+				</tr>
+								
+			</table>
+		</td>
+
+		<td align="right">
+<!--m23customPatchBegin type=change id=tuxLogo-->
+			<img src="images/sweet-tux.png">
+<!--m23customPatchEnd id=tuxLogo-->
+		</td>
+	</tr>
+</table>					</td>
+				<tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="150">
+			<table class="box" valign="top">
+				<tr>
+					<td align="left">
+						<br>
+<form method="GET" action="http://god:m23@192.168.1.23/m23admin/index.php">
+<center>
+<SELECT  id="LB_language" name="LB_language"  >
+<option value="de">Deutsch</option>
+<option value="en">English</option>
+<option value="fr">Fran&ccedil;ais</option>
+</SELECT>
+<input type="hidden" name="page" value="server_daemonsAndPrograms">
+<input type="hidden" name="m23_language" value="de">
+<input type="submit" name="BUT_lang" value="OK">
+</center>
+</form>
+
+
+<ul class="navmenu">
+<li>Server<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index.html"><img border="0" src="images/home_mini.png"></a></td>
+		<td><a href="index.html">Startseite</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexad98.html?page=serverSettings"><img border="0" src="images/settings_mini.png"></a></td>
+		<td><a href="indexad98.html?page=serverSettings">Server-&#8203;Einstellungen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9104.html?page=m23RemoteAdministrationService"><img border="0" src="images/m23remoteadministrationservice-mini.png"></a></td>
+		<td><a href="index9104.html?page=m23RemoteAdministrationService">m23 Fern-&#8203;Administrations-&#8203;Service</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexfb56.html?page=clientsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexfb56.html?page=clientsoverview">Überblick</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe9d8.html?page=addclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="indexe9d8.html?page=addclient&amp;clearSession=1">Hinzufügen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexc607.html?page=clientsoverview&amp;action=setup"><img border="0" src="images/yellow.png"></a></td>
+		<td><a href="indexc607.html?page=clientsoverview&amp;action=setup">Einrichten</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index95c9.html?page=clientsoverview&amp;action=delete"><img border="0" src="images/mini_trash.png"></a></td>
+		<td><a href="index95c9.html?page=clientsoverview&amp;action=delete">Löschen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb010.html?page=assimilate"><img border="0" src="images/assimilate-mini.png"></a></td>
+		<td><a href="indexb010.html?page=assimilate">Integrieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index79a0.html?page=makeBootMedia"><img border="0" src="images/cdrom-mini.png"></a></td>
+		<td><a href="index79a0.html?page=makeBootMedia">Bootmedien erstellen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Virtuelle Clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9740.html?page=addvmclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="index9740.html?page=addvmclient&amp;clearSession=1">VM erstellen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Gruppen<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf13d.html?page=groupsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexf13d.html?page=groupsoverview">Überblick</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbae6.html?page=creategroup"><img border="0" src="images/add-mini.png"></a></td>
+		<td><a href="indexbae6.html?page=creategroup">Hinzufügen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Pakete<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index6dcf.html?page=clientsoverview&amp;action=install"><img border="0" src="images/green.png"></a></td>
+		<td><a href="index6dcf.html?page=clientsoverview&amp;action=install">Installieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index936d.html?page=clientsoverview&amp;action=deinstall"><img border="0" src="images/deinstall-mini.png"></a></td>
+		<td><a href="index936d.html?page=clientsoverview&amp;action=deinstall">Deinstallieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbbd7.html?page=clientsoverview&amp;action=update"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexbbd7.html?page=clientsoverview&amp;action=update">Update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb5c4.html?page=autoUpdate"><img border="0" src="images/autoupdate_mini.png"></a></td>
+		<td><a href="indexb5c4.html?page=autoUpdate">Automatisches Update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf34f.html?page=poolBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexf34f.html?page=poolBuilder">Paketquellen-&#8203;Architekt</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index73d3.html?page=scriptEditor"><img border="0" src="images/scripteditor-mini.png"></a></td>
+		<td><a href="index73d3.html?page=scriptEditor">Skript-Editor</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index3a18.html?page=packageBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="index3a18.html?page=packageBuilder">Paket-Architekt</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexd1df.html?page=clientsourceslist"><img border="0" src="images/package-mini.png"></a></td>
+		<td><a href="indexd1df.html?page=clientsourceslist">Paketquellenliste</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index8b5a.html?page=installpackages&amp;action=packageSelection"><img border="0" src="images/packageselection-mini.png"></a></td>
+		<td><a href="index8b5a.html?page=installpackages&amp;action=packageSelection">Paketzusammen&shy;stellungen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index4804.html?page=comparePackageStatus"><img border="0" src="images/comparepackagestatus-mini.png"></a></td>
+		<td><a href="index4804.html?page=comparePackageStatus">Paketstatus vergleichen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Massen-Tools<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1"><img border="0" src="images/clientbuilder-mini.png"></a></td>
+		<td><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1">Client definieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall"><img border="0" src="images/massinstall-mini.png"></a></td>
+		<td><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall">Masseninstallation</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Support<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe767.html?page=support"><img border="0" src="images/help-mini.png"></a></td>
+		<td><a href="indexe767.html?page=support">Support</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/phpBB2"><img border="0" src="images/bug-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/phpBB2">!!!Bug melden!!!</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news"><img border="0" src="images/newsletter-mini.png"></a></td>
+		<td><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news">Newsletter bestellen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/fragebogen-de"><img border="0" src="images/questionaire-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/fragebogen-de">m23-Fragebogen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/m23manual/de/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/m23manual/de/index.html">Handbuch</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/devguide/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/devguide/index.html">Development Guide</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 </ul>					</td>
+				<tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table class="box" align="center" >
+				<tr>
+					<td valign="top" align="center"><br>
+						
+	<div align="right">
+		<a href="javascript:window.print()">
+			<img src="images/printer-mini.png" border="0" alt="Drucken" title="Drucken">
+		</a>
+		<a href="#m23helpBox">
+			<img src="images/helpred-mini.png" border="0" alt="Hilfe" title="Hilfe">
+		</a>
+	</div>
+	<span class="title"> Dämonen und Programme </span><br><br>
+
+<form method="post" action="http://god:m23@192.168.1.23/m23admin/index.php" name="htmlform" id="htmlformID" enctype="multipart/form-data">
+	<script language="javascript">document.write('<input type="hidden" name="javaScriptEnabled" value="on">');</script><input type="hidden" name="page" value="server_daemonsAndPrograms"><span class="titlesmal">Dämonen</span>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable" align="center" >
+
+		<tr>
+			<td><span class="subhighlight">Programmname</span></td>
+			<td><span class="subhighlight">Beschreibung</span></td>
+			<td><span class="subhighlight">Status</span></td>
+			<td><span class="subhighlight">Aktion</span></td>
+		</tr>
+		
+<tr>
+	<td valign="top">apache2</td>
+	<td valign="top">Apache Webserver</td>
+	<td valign="top"><table cellpadding="5">
+		<tr>
+			<td valign="top"><img src="images/green.png"></td>
+			<td>Apache/2.4.25 (Debian)</td>
+		</tr>
+		</table></td>
+	<td><SELECT name="SEL_actionapache2" size="1">
+<option value="nothing">Keine Aktion</option>
+<option value="stop">Stop</option>
+<option value="restart">Neustart</option>
+</SELECT>
+</td>
+</tr>
+	
+<tr>
+	<td valign="top">mysql</td>
+	<td valign="top">MySQL Datenbank-Server</td>
+	<td valign="top"><table cellpadding="5">
+		<tr>
+			<td valign="top"><img src="images/green.png"></td>
+			<td>MySQL-Version: mysqlnd 5.0.12-dev - 20150407 - $Id: b5c5906d452ec590732a93b051f3827e02749b83 $ MySQL-Protokoll: 10 Uptime: 41216  Threads: 1  Questions: 6041  Slow queries: 0  Opens: 53  Flush tables: 1  Open tables: 40  Queries per second avg: 0.146</td>
+		</tr>
+		</table></td>
+	<td><SELECT name="SEL_actionmysql" size="1">
+<option value="nothing">Keine Aktion</option>
+<option value="stop">Stop</option>
+<option value="restart">Neustart</option>
+</SELECT>
+</td>
+</tr>
+	
+<tr>
+	<td valign="top">dhcpd</td>
+	<td valign="top">Internet Systems Consortium DHCP Server</td>
+	<td valign="top"><table cellpadding="5">
+		<tr>
+			<td valign="top"><img src="images/yellow.png"></td>
+			<td>Durch den DHCP-Server verwaltete Clients: 4</td>
+		</tr>
+		</table></td>
+	<td><SELECT name="SEL_actiondhcpd" size="1">
+<option value="nothing">Keine Aktion</option>
+<option value="start">Start</option>
+</SELECT>
+</td>
+</tr>
+	
+<tr>
+	<td valign="top">slapd</td>
+	<td valign="top">OpenLDAP LDAP-Server</td>
+	<td valign="top"><table cellpadding="5">
+		<tr>
+			<td valign="top"><img src="images/yellow.png"></td>
+			<td></td>
+		</tr>
+		</table></td>
+	<td><SELECT name="SEL_actionslapd" size="1">
+<option value="nothing">Keine Aktion</option>
+<option value="start">Start</option>
+</SELECT>
+</td>
+</tr>
+	
+<tr>
+	<td valign="top">opentracker</td>
+	<td valign="top">Bittorrent Tracker und ursprünglicher Bittorrent-Client</td>
+	<td valign="top"><table cellpadding="5">
+		<tr>
+			<td valign="top"><img src="images/red.png"></td>
+			<td>Bittorrent tracker: <br />
+	[-] screen session: nonexisting<br />
+	[-] opentracker process: nonexisting<br />
+	[-] opentracker port 6969: nonexisting<br />
+<br />
+Bittorrent initial client: <br />
+	[-] screen session: nonexisting<br />
+	[-] aria2c process: nonexisting<br />
+</td>
+		</tr>
+		</table></td>
+	<td><SELECT name="SEL_actionopentracker" size="1">
+<option value="nothing">Keine Aktion</option>
+</SELECT>
+</td>
+</tr>
+	
+</table></div></td><tr></table>
+<center><INPUT type="submit" name="BUT_submit" value="Aktionen ausführen"></center><input type="hidden" name="MSESS_variables" value="a%3A4%3A%7Bs%3A15%3A%22clientAddAction%22%3Bs%3A13%3A%22clientBuilder%22%3Bs%3A15%3A%22preferenceSpace%22%3Ba%3A30%3A%7Bs%3A6%3A%22client%22%3Bs%3A0%3A%22%22%3Bs%3A6%3A%22office%22%3Bs%3A0%3A%22%22%3Bs%3A4%3A%22name%22%3Bs%3A0%3A%22%22%3Bs%3A10%3A%22familyname%22%3Bs%3A0%3A%22%22%3Bs%3A5%3A%22eMail%22%3Bs%3A0%3A%22%22%3Bs%3A3%3A%22mac%22%3Bs%3A0%3A%22%22%3Bs%3A2%3A%22ip%22%3Bs%3A12%3A%22192.168.1.83%22%3Bs%3A7%3A%22netmask%22%3Bs%3A13%3A%22255.255.255.0%22%3Bs%3A7%3A%22gateway%22%3Bs%3A11%3A%22192.168.1.5%22%3Bs%3A4%3A%22dns1%22%3Bs%3A11%3A%2285.88.19.10%22%3Bs%3A4%3A%22dns2%22%3Bs%3A7%3A%228.8.8.8%22%3Bs%3A7%3A%22firstpw%22%3Bs%3A8%3A%22ida2GahZ%22%3Bs%3A12%3A%22rootpassword%22%3Bs%3A8%3A%22kohW1cho%22%3Bs%3A8%3A%22boottype%22%3Bs%3A3%3A%22pxe%22%3Bs%3A8%3A%22language%22%3Bs%3A2%3A%22de%22%3Bs%3A8%3A%22newgroup%22%3Ba%3A1%3A%7Bi%3A0%3Bb%3A0%3B%7Ds%3A5%3A%22login%22%3Bs%3A0%3A%22%22%3Bs%3A4%3A%22arch%22%3Bs%3A5%3A%22amd64%22%3Bs%3A10%3A%22bootloader%22%3Bs%3A4%3A%22grub%22%3Bs%3A12%3A%22packageProxy%22%3Bs%3A12%3A%22192.168.1.23%22%3Bs%3A11%3A%22packagePort%22%3Bs%3A4%3A%222323%22%3Bs%3A8%3A%22timeZone%22%3Bs%3A13%3A%22Europe%2FBerlin%22%3Bs%3A10%3A%22ldapserver%22%3Bs%3A8%3A%22m23-LDAP%22%3Bs%3A6%3A%22userID%22%3Bi%3A1001%3Bs%3A7%3A%22groupID%22%3Bi%3A1001%3Bs%3A8%3A%22ldaptype%22%3Bs%3A4%3A%22none%22%3Bs%3A13%3A%22nfshomeserver%22%3Bs%3A0%3A%22%22%3Bs%3A18%3A%22getSystemtimeByNTP%22%3Bb%3A1%3Bs%3A16%3A%22addNewLocalLogin%22%3Bb%3A1%3Bs%3A14%3A%22installPrinter%22%3Bb%3A1%3B%7Ds%3A14%3A%22changeElements%22%3Bs%3A215%3A%22client%23office%23name%23familyname%23eMail%23mac%23ip%23netmask%23gateway%23dns1%23dns2%23firstpw%23rootpassword%23boottype%23language%23login%23arch%23bootloader%23proxy%23timeZone%23ldap%23nfshomeserver%23getSystemtimeByNTP%23addNewLocalLogin%23installPrinter%23%22%3Bs%3A31%3A%22preferenceForceHTMLReloadValues%22%3BN%3B%7D">
+</form>
+	<br><br><br><a name="m23helpBox"></a>
+	<table class="helptable" align="left" border="0" cellspacing="5" id="ID_helpBox">
+<tr><td><p><span class="subhighlight">Hilfe: <!-- new 1.6 -->Dämonen und Programme
+</span></p><p>
+</p><p><b>Dämonen</b>
+</p><p>
+</p><p><u>Hinweis</u>
+</p><p><b>Dämonen</b> sind Server-Programme, die ständig im Hintergrund laufen und von denen man nichts sieht, solange sie ihre Arbeit gut machen ;-). Solche Dämonen sind z.B. der Webserver Apache oder der Datenbankserver MySQL.
+</p><p>
+</p><p><u>Farberklärung</u>
+</p><p><ul><LI><b>grün</b>: Der Dämon läuft im Hintergrund und kann gestoppt oder neu gestartet werden. Das Stoppen einen Dämons wird <b>nicht</b> empfohlen.</LI>
+</p><p><LI><b>gelb</b>: Der Dämon ist installiert, aber nicht gestartet. Einige Dämonen werden erst gestartet, wenn sie das erste Mal benötigt werden. Ein Dämon mit diesem Status kann gestartet werden.</LI>
+</p><p><LI><b>rot</b>: Der Dämon läuft nicht und ist auch nicht installiert. Hier wurde eine wichtige Serverkomponente von m23 entfernt oder nicht installiert. Sie können diese installieren, indem Sie bei Aktionen hinter dem Dämon <i>"Installieren"</i> auswählen und danach auf <i>"Aktionen ausführen"</i> klicken.</LI>
+</p><p></ul>
+</p><p>
+</p><p><u>Dämonenerklärung</u>
+</p><p><ul><LI><b>apache</b>: Apache ist ein Webserver, der gleichzeitig das Herzstück von m23 darstellt. Durch ihn wird die m23-Administrationsoberfläche generiert und die Jobs für die Clients erstellt.</LI>
+</p><p><LI><b>mysql</b>: MySQL ist der Datenbankserver, der z.B. die Daten der Clients verwaltet.</LI>
+</p><p><LI><b>dhcpd3</b>: Der DHCP-Server weist den Clients IP-Adressen für die Installation zu. Der DHCP-Server kann erst dann gestartet werden, wenn mindestens ein Client aufgesetzt werden soll. Ein gelber Status ist hier kein Anzeichen für einen Fehler.</LI>
+</p><p><!--V1.11 begin--><LI><b>slapd</b>: Dies ist der Dämon des LDAP-Servers <a href="http://www.openldap.org/">OpenLDAP</a>. Mit LDAP ist es möglich, Benutzerkonten auf einem zentralen Server zu speichern und von jedem Client zu benutzen, der Zugriff hat.</LI><!--V1.11 end-->
+</p><p></ul>
+</p><p>
+</p><p>
+</p><p><!-- commented out in 11.3 <b>Hilfsprogramme</b>
+</p><p>
+</p><p><u>Hinweis</u>
+</p><p><b>Hilfsprogramme</b> sind Programme die benötigt, aber nur bei Benutzung ausgeführt werden. Einige der Hilfsprogramme sind unbedingt für m23 nötig, andere sind "nett zu haben".
+</p><p>
+</p><p><ul><LI><b>wget (unbedingt erforderlich)</b>: Wird zum Updaten der Serversoftware benötigt.</LI>
+</p><p><li><b>pwgen (nett)</b>: Erzeugt für die Massen-Installations-Clients Zufallspaßwörter, die man sich leichter merken kann. Wird pwgen nicht installiert, so können nur komplett zufällige Paßwörter generiert werden.</li>
+</p><p><li><b>Brennprogramme (nett)</b>: Dies sind verschiedene Programme, die dazu benötigt werden, um mit dem m23-Server Client-Boot-CDs zu brennen. Das Brennen ist dann sogar aus der m23-Administrationsoberfläche möglich.
+</p><p></ul>-->
+</p><p></p></td></tr></TABLE>					</td>
+									</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=server_daemonsAndPrograms by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:31:32 GMT -->
+</html>

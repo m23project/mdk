@@ -1,0 +1,5017 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=clientinfo&client=ueficl0&id=928&infoType=hardware by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:33:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=ISO-8859-1" /><!-- /Added by HTTrack -->
+<head>
+	<title>m23 - Admin (clientinfo)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="expires" content="0">
+	<link rel="stylesheet" type="text/css" href="images/index.css">
+	<link rel="stylesheet" type="text/css" href="images/jquery.css">
+	<script src="images/codepress.js" type="text/javascript"></script>
+	<script type="text/javascript" src="images/jquery.min.js"></script>
+	<script type="text/javascript" src="images/jquery-ui.min.js"></script>
+</head>
+
+ <body bgcolor="#596374" onload="if (typeof setEFIStartEndPositionIfEFIBootPartitionTypeIsSet == 'function') { setEFIStartEndPositionIfEFIBootPartitionTypeIsSet(); }">
+
+<table align="left" cellspacing="0"  cellpadding="5" border="0">
+	<tr>
+		<td colspan="2" align="center">
+			<table class="box" align="center" id="ID_headHeight">
+				<tr>
+					<td width="900">
+						
+<table cellspacing="0" cellpadding="3" width="100%" border="0">
+	<tr>
+		<td width="100" align="center">
+			<a HREF="http://m23.goos-habermann.de/" target="_blank">
+				<img src="images/m23.png" border="0">
+							</a>
+		</td>
+
+		<td align="center">
+			<table class="helptable">
+				<tr>
+				
+				<tr>
+					<td colspan=2>
+						<nobr><b>Ihre IP-Adresse:</b> 192.168.1.77 <b>Servername oder IP:</b> 192.168.1.23 <b>m23-Version und Patch-Level:</b> 18.1 rock (101083) <a href="index42f0.html?page=serverStatus">Server-Status</a></nobr>
+					</td>
+				</tr>
+				<tr><td colspan=2><hr></td></tr>
+				<tr>
+					<td align="left">
+						&raquo;&nbsp;<a href="http://m23.sf.net/" target="_blank">m23-Projektseite</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/faq/frageFAQ.htm" target="_blank">m23-Forum</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/" target="_blank">Kommerzieller Support</a>&nbsp;&nbsp;
+						&raquo;&nbsp;<a href="http://www.goos-habermann.de/index.php?s=SchulungBeratung" target="_blank">m23-Schulungen</a>
+						&raquo;&nbsp;<a href="http://m23.sourceforge.net/fragebogen-de">m23-Fragebogen</a><br>
+					</td>
+					<td align="right">
+						god <a href="indexbfd1.html?logout=1">(Ausloggen)</a>
+					</td>
+				</tr>
+								
+			</table>
+		</td>
+
+		<td align="right">
+<!--m23customPatchBegin type=change id=tuxLogo-->
+			<img src="images/sweet-tux.png">
+<!--m23customPatchEnd id=tuxLogo-->
+		</td>
+	</tr>
+</table>					</td>
+				<tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="150">
+			<table class="box" valign="top">
+				<tr>
+					<td align="left">
+						<br>
+<form method="GET" action="http://god:m23@192.168.1.23/m23admin/index.php">
+<center>
+<SELECT  id="LB_language" name="LB_language"  >
+<option value="de">Deutsch</option>
+<option value="en">English</option>
+<option value="fr">Fran&ccedil;ais</option>
+</SELECT>
+<input type="hidden" name="page" value="clientinfo">
+<input type="hidden" name="m23_language" value="de">
+<input type="submit" name="BUT_lang" value="OK">
+</center>
+</form>
+
+
+<ul class="navmenu">
+<li>Server<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index.html"><img border="0" src="images/home_mini.png"></a></td>
+		<td><a href="index.html">Startseite</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexad98.html?page=serverSettings"><img border="0" src="images/settings_mini.png"></a></td>
+		<td><a href="indexad98.html?page=serverSettings">Server-&#8203;Einstellungen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9104.html?page=m23RemoteAdministrationService"><img border="0" src="images/m23remoteadministrationservice-mini.png"></a></td>
+		<td><a href="index9104.html?page=m23RemoteAdministrationService">m23 Fern-&#8203;Administrations-&#8203;Service</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexfb56.html?page=clientsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexfb56.html?page=clientsoverview">Überblick</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe9d8.html?page=addclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="indexe9d8.html?page=addclient&amp;clearSession=1">Hinzufügen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexc607.html?page=clientsoverview&amp;action=setup"><img border="0" src="images/yellow.png"></a></td>
+		<td><a href="indexc607.html?page=clientsoverview&amp;action=setup">Einrichten</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index95c9.html?page=clientsoverview&amp;action=delete"><img border="0" src="images/mini_trash.png"></a></td>
+		<td><a href="index95c9.html?page=clientsoverview&amp;action=delete">Löschen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb010.html?page=assimilate"><img border="0" src="images/assimilate-mini.png"></a></td>
+		<td><a href="indexb010.html?page=assimilate">Integrieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index79a0.html?page=makeBootMedia"><img border="0" src="images/cdrom-mini.png"></a></td>
+		<td><a href="index79a0.html?page=makeBootMedia">Bootmedien erstellen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Virtuelle Clients<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9740.html?page=addvmclient&amp;clearSession=1"><img border="0" src="images/red.png"></a></td>
+		<td><a href="index9740.html?page=addvmclient&amp;clearSession=1">VM erstellen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Gruppen<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf13d.html?page=groupsoverview"><img border="0" src="images/overview-mini.png"></a></td>
+		<td><a href="indexf13d.html?page=groupsoverview">Überblick</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbae6.html?page=creategroup"><img border="0" src="images/add-mini.png"></a></td>
+		<td><a href="indexbae6.html?page=creategroup">Hinzufügen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Pakete<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index6dcf.html?page=clientsoverview&amp;action=install"><img border="0" src="images/green.png"></a></td>
+		<td><a href="index6dcf.html?page=clientsoverview&amp;action=install">Installieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index936d.html?page=clientsoverview&amp;action=deinstall"><img border="0" src="images/deinstall-mini.png"></a></td>
+		<td><a href="index936d.html?page=clientsoverview&amp;action=deinstall">Deinstallieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexbbd7.html?page=clientsoverview&amp;action=update"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexbbd7.html?page=clientsoverview&amp;action=update">Update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexb5c4.html?page=autoUpdate"><img border="0" src="images/autoupdate_mini.png"></a></td>
+		<td><a href="indexb5c4.html?page=autoUpdate">Automatisches Update</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexf34f.html?page=poolBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="indexf34f.html?page=poolBuilder">Paketquellen-&#8203;Architekt</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index73d3.html?page=scriptEditor"><img border="0" src="images/scripteditor-mini.png"></a></td>
+		<td><a href="index73d3.html?page=scriptEditor">Skript-Editor</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index3a18.html?page=packageBuilder"><img border="0" src="images/update_mini.png"></a></td>
+		<td><a href="index3a18.html?page=packageBuilder">Paket-Architekt</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexd1df.html?page=clientsourceslist"><img border="0" src="images/package-mini.png"></a></td>
+		<td><a href="indexd1df.html?page=clientsourceslist">Paketquellenliste</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index8b5a.html?page=installpackages&amp;action=packageSelection"><img border="0" src="images/packageselection-mini.png"></a></td>
+		<td><a href="index8b5a.html?page=installpackages&amp;action=packageSelection">Paketzusammen&shy;stellungen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index4804.html?page=comparePackageStatus"><img border="0" src="images/comparepackagestatus-mini.png"></a></td>
+		<td><a href="index4804.html?page=comparePackageStatus">Paketstatus vergleichen</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Massen-Tools<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1"><img border="0" src="images/clientbuilder-mini.png"></a></td>
+		<td><a href="index42cc.html?page=addclient&amp;action=clientBuilder&amp;clearSession=1">Client definieren</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall"><img border="0" src="images/massinstall-mini.png"></a></td>
+		<td><a href="index9ac3.html?page=clientsoverview&amp;action=massInstall">Masseninstallation</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 <li>Support<br>
+	 <table> 
+	 <tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="indexe767.html?page=support"><img border="0" src="images/help-mini.png"></a></td>
+		<td><a href="indexe767.html?page=support">Support</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/phpBB2"><img border="0" src="images/bug-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/phpBB2">!!!Bug melden!!!</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news"><img border="0" src="images/newsletter-mini.png"></a></td>
+		<td><a href="http://lists.sourceforge.net/mailman/listinfo/m23-news">Newsletter bestellen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://m23.sourceforge.net/fragebogen-de"><img border="0" src="images/questionaire-mini.png"></a></td>
+		<td><a href="http://m23.sourceforge.net/fragebogen-de">m23-Fragebogen</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/m23manual/de/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/m23manual/de/index.html">Handbuch</a></td>
+		<td></td>
+		</tr><tr>
+		<td>&nbsp;&nbsp;</td>
+		<td valign="top"><a href="http://god:m23@192.168.1.23/devguide/index.html"><img border="0" src="images/book-mini.png"></a></td>
+		<td><a href="http://god:m23@192.168.1.23/devguide/index.html">Development Guide</a></td>
+		<td></td>
+		</tr></table></li><br>
+	 </ul>					</td>
+				<tr>
+			</table>
+		</td>
+		<td valign="top">
+			<table class="box" align="center" >
+				<tr>
+					<td valign="top" align="center"><br>
+						
+	<div align="right">
+		<a href="javascript:window.print()">
+			<img src="images/printer-mini.png" border="0" alt="Drucken" title="Drucken">
+		</a>
+		<a href="#m23helpBox">
+			<img src="images/helpred-mini.png" border="0" alt="Hilfe" title="Hilfe">
+		</a>
+	</div>
+	
+<span class="title">ueficl0 : Hardware-Informationen</span>
+
+<br><br>
+
+<table align="center"><tr><td><div class="subtable_shadow">
+	<table class="subtable" align="center" border="0" cellspacing=5>
+	<tr>
+		<td colspan="2"><span class="subhighlight">Hardware-Informationen:</span></td>
+	</tr>
+	<tr>
+		<td><span class="subhighlight">Eigenschaft</span></td>
+		<td><span class="subhighlight">Wert</span></td>
+	</tr>
+
+	<tr> <td valign="top">Gehäuse</td> <td> </td> </tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+	<tr> <td valign="top">Mainboard</td> <td>Hersteller: <br>
+Name: <br>
+Version: </td> </tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+	<tr> <td valign="top">Bios</td> <td></td> </tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+	<tr> <td valign="top">Prozessor</td> <td><table>
+<tr>
+		<td>CPU 0: </td>
+		<td>Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz @ 2593.976 Mhz</td>
+		</tr>
+</table>
+</td> </tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+	<tr> <td valign="top">Cache</td> <td></td> </tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+	<tr>
+	<td valign="top" align="center">
+		<img src="images/ram.png"><br>
+		Arbeitsspeicher
+	</td>
+	<td>Größe: 1001 MB<br>
+		
+	</td>
+	</tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+
+	<tr>
+	<td valign="top" align="center">
+		<img src="images/interfaces.png"><br>
+		Schnittstellen
+	</td>
+	<td>
+	</td>
+	</tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+
+	<tr>
+	<td valign="top" align="center">
+		<img src="images/hwinfo.png"><br>
+		Steckplätze
+	</td>
+	<td>Steckplätze: <BR>
+Typ:  32-bit PCI<br>
+Status:  In Use <br>
+Fähigkeiten: <br>&bull; 		5.0 V is provided<br>&bull; 		3.3 V is provided<br>&bull; 	Bus Address: 0000:00:10.0<br>
+<br>Steckplätze: <BR>
+Typ:  32-bit PCI<br>
+Status:  In Use <br>
+Fähigkeiten: <br>&bull; 		5.0 V is provided<br>&bull; 		3.3 V is provided<br>&bull; 	Bus Address: 0000:00:11.0<br>
+<br>Steckplätze: <BR>
+Typ:  32-bit PCI<br>
+Status:  In Use <br>
+Fähigkeiten: <br>&bull; 		5.0 V is provided<br>&bull; 		3.3 V is provided<br>&bull; 	Bus Address: 0000:00:12.0<br>
+<br>Steckplätze: <BR>
+Typ:  32-bit PCI<br>
+Status:  Available <br>
+Fähigkeiten: <br>&bull; 		5.0 V is provided<br>&bull; 		3.3 V is provided<br>&bull; 	Bus Address: 0000:00:13.0<br>
+</td>
+	</tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+
+	<tr>
+	<td valign="top" align="center">
+		<img src="images/hwinfo.png"><br>
+		Netzwerkkarte(n)
+	</td>
+	<td>02:01.0 Ethernet controller: Intel Corporation 82545EM Gigabit Ethernet Controller (Copper) (rev 01)</td>
+	</tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+
+	<tr>
+	<td valign="top" align="center">
+		<img src="images/hwinfo.png"><br>
+		Grafikkarte
+	</td>
+	<td>00:0f.0 VGA compatible controller: VMware SVGA II Adapter</td>
+	</tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+
+	<tr>
+	<td valign="top" align="center">
+		<img src="images/soundcard.png"><br>
+		Soundkarte
+	</td>
+	<td>02:02.0 Multimedia audio controller: Ensoniq ES1371 / Creative Labs CT2518 [AudioPCI-97] (rev 02)</td>
+	</tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+
+	<tr>
+	<td valign="top">ISA-Hardware</td>
+	<td></td>
+	</tr>
+
+	<tr><td colspan="2"><hr></td></tr>
+
+	<tr>
+	<td valign="top" align="center">
+		<img src="images/harddrive.png"><br>
+		Festplatte
+	</td>
+	<td>/dev/sda: 21475 MB<br></td>
+	</tr>
+	
+	<tr><td colspan="2"><hr></td></tr>
+
+	<tr>
+	<td valign="top" align="center">
+		DMI
+	</td>
+	<td><textarea  name="TB_dmi" cols="80" rows="20"># dmidecode 2.11
+# SMBIOS entry point at 0x0efac000
+SMBIOS 2.7 present.
+219 structures occupying 15427 bytes.
+Table at 0x0EFAC01F.
+
+Handle 0x0000, DMI type 0, 24 bytes
+BIOS Information
+	Vendor: VMware, Inc.
+	Version: VMW71.00V.0.B64.1412192030
+	Release Date: 12/19/2014
+	ROM Size: 2048 kB
+	Characteristics:
+		ISA is supported
+		PCI is supported
+		PNP is supported
+		BIOS is upgradeable
+
+Handle 0x0001, DMI type 1, 27 bytes
+System Information
+	Manufacturer: VMware, Inc.
+	Product Name: VMware7,1
+	Version: None
+	Serial Number: VMware-56 4d 92 79 2c 07 87 9f-9f 10 7d 50 75 6b 3f ec
+	UUID: 79924D56-072C-9F87-9F10-7D50756B3FEC
+	Wake-up Type: Power Switch
+	SKU Number: Not Specified
+	Family: Not Specified
+
+Handle 0x0002, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: Intel Corporation
+	Product Name: 440BX Desktop Reference Platform
+	Version: None
+	Serial Number: None
+	Asset Tag: Not Specified
+	Features: None
+	Location In Chassis: Not Specified
+	Chassis Handle: 0x0000
+	Type: Other
+	Contained Object Handles: 0
+
+Handle 0x0003, DMI type 3, 21 bytes
+Chassis Information
+	Manufacturer: No Enclosure
+	Type: Other
+	Lock: Not Present
+	Version: N/A
+	Serial Number: None
+	Asset Tag: No Asset Tag
+	Boot-up State: Safe
+	Power Supply State: Safe
+	Thermal State: Safe
+	Security Status: None
+	OEM Information: 0x00000000
+	Height: Unspecified
+	Number Of Power Cords: Unspecified
+	Contained Elements: 0
+
+Handle 0x0004, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: GenuineIntel
+	ID: A7 06 02 00 FF FB AB 0F
+	Version: Intel(R) Core(TM) i3-2120T CPU @ 2.60GHz
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: 2473 MHz
+	Status: Populated, Enabled
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Core Count: 1
+	Core Enabled: 1
+	Characteristics:
+		64-bit capable
+
+Handle 0x0005, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0006, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0007, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0008, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0009, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x000A, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x000B, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x000C, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x000D, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x000E, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x000F, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0010, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0011, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0012, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0013, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0014, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0015, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0016, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0017, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0018, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0019, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x001A, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x001B, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x001C, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x001D, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x001E, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x001F, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0020, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0021, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0022, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0023, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0024, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0025, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0026, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0027, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0028, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0029, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x002A, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x002B, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x002C, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x002D, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x002E, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x002F, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0030, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0031, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0032, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0033, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0034, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0035, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0036, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0037, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0038, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0039, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x003A, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x003B, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x003C, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x003D, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x003E, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x003F, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0040, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0041, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0042, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0043, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0044, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0045, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0046, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0047, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0048, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0049, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x004A, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x004B, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x004C, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x004D, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x004E, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x004F, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0050, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0051, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0052, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0053, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0054, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0055, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0056, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0057, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0058, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0059, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x005A, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x005B, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x005C, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x005D, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x005E, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x005F, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0060, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0061, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0062, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0063, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0064, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0065, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0066, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0067, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0068, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0069, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x006A, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x006B, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x006C, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x006D, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x006E, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x006F, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0070, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0071, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0072, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0073, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0074, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0075, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0076, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0077, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0078, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0079, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x007A, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x007B, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x007C, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x007D, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x007E, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x007F, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0080, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0081, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0082, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0083, DMI type 4, 42 bytes
+Processor Information
+	Socket Designation: CPU 542462019
+	Type: Central Processor
+	Family: Unknown
+	Manufacturer: Not Specified
+	ID: 00 00 00 00 00 00 00 00
+	Version: Unknown Processor
+	Voltage: 3.3 V
+	External Clock: Unknown
+	Max Speed: 2473 MHz
+	Current Speed: Unknown
+	Status: Unpopulated
+	Upgrade: ZIF Socket
+	L1 Cache Handle: Not Provided
+	L2 Cache Handle: Not Provided
+	L3 Cache Handle: Not Provided
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Characteristics: None
+
+Handle 0x0084, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J19
+	Internal Connector Type: 9 Pin Dual Inline (pin 10 cut)
+	External Reference Designator: COM 1
+	External Connector Type: DB-9 male
+	Port Type: Serial Port 16550A Compatible
+
+Handle 0x0085, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J23
+	Internal Connector Type: 25 Pin Dual Inline (pin 26 cut)
+	External Reference Designator: Parallel
+	External Connector Type: DB-25 female
+	Port Type: Parallel Port ECP/EPP
+
+Handle 0x0086, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J11
+	Internal Connector Type: None
+	External Reference Designator: Keyboard
+	External Connector Type: Circular DIN-8 male
+	Port Type: Keyboard Port
+
+Handle 0x0087, DMI type 8, 9 bytes
+Port Connector Information
+	Internal Reference Designator: J12
+	Internal Connector Type: None
+	External Reference Designator: PS/2 Mouse
+	External Connector Type: Circular DIN-8 male
+	Port Type: Keyboard Port
+
+Handle 0x0088, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI Slot J11
+	Type: 32-bit PCI
+	Current Usage: In Use
+	Length: Long
+	ID: 1
+	Characteristics:
+		5.0 V is provided
+		3.3 V is provided
+	Bus Address: 0000:00:10.0
+
+Handle 0x0089, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI Slot J12
+	Type: 32-bit PCI
+	Current Usage: In Use
+	Length: Long
+	ID: 2
+	Characteristics:
+		5.0 V is provided
+		3.3 V is provided
+	Bus Address: 0000:00:11.0
+
+Handle 0x008A, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI Slot J13
+	Type: 32-bit PCI
+	Current Usage: In Use
+	Length: Long
+	ID: 3
+	Characteristics:
+		5.0 V is provided
+		3.3 V is provided
+	Bus Address: 0000:00:12.0
+
+Handle 0x008B, DMI type 9, 17 bytes
+System Slot Information
+	Designation: PCI Slot J14
+	Type: 32-bit PCI
+	Current Usage: Available
+	Length: Long
+	ID: 4
+	Characteristics:
+		5.0 V is provided
+		3.3 V is provided
+	Bus Address: 0000:00:13.0
+
+Handle 0x008C, DMI type 10, 8 bytes
+On Board Device 1 Information
+	Type: Video
+	Status: Disabled
+	Description: VMware SVGA II
+On Board Device 2 Information
+	Type: Sound
+	Status: Disabled
+	Description: ES1371
+
+Handle 0x008D, DMI type 11, 5 bytes
+OEM Strings
+	String 1: [MS_VM_CERT/SHA1/27d66596a61c48dd3dc7216fd715126e33f59ae7]
+	String 2: Welcome to the Virtual Machine
+
+Handle 0x008E, DMI type 16, 23 bytes
+Physical Memory Array
+	Location: System Board Or Motherboard
+	Use: System Memory
+	Error Correction Type: None
+	Maximum Capacity: 4 GB
+	Error Information Handle: Not Provided
+	Number Of Devices: 64
+
+Handle 0x008F, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: 64 bits
+	Data Width: 64 bits
+	Size: 1024 MB
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: DRAM
+	Type Detail: Synchronous
+	Speed: Unknown
+	Manufacturer: VMware Virtual RAM
+	Serial Number: 541933906
+	Asset Tag: Not Specified
+	Part Number: VMW-760696150MB
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x0090, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x0091, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x0092, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x0093, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x0094, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x0095, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x0096, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x0097, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x0098, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x0099, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x009A, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x009B, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x009C, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x009D, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x009E, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x009F, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00A0, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00A1, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00A2, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00A3, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00A4, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00A5, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00A6, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00A7, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00A8, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00A9, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00AA, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00AB, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00AC, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00AD, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00AE, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00AF, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00B0, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00B1, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00B2, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00B3, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00B4, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00B5, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00B6, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00B7, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00B8, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00B9, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00BA, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00BB, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00BC, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00BD, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00BE, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00BF, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00C0, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00C1, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00C2, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00C3, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00C4, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00C5, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00C6, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00C7, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00C8, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00C9, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00CA, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00CB, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00CC, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00CD, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00CE, DMI type 17, 34 bytes
+Memory Device
+	Array Handle: 0x008E
+	Error Information Handle: No Error
+	Total Width: Unknown
+	Data Width: Unknown
+	Size: No Module Installed
+	Form Factor: DIMM
+	Set: None
+	Locator: RAM slot #541933906
+	Bank Locator: RAM slot #541933906
+	Type: Unknown
+	Type Detail: Unknown
+	Speed: Unknown
+	Manufacturer: Not Specified
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Part Number: Not Specified
+	Rank: Unknown
+	Configured Clock Speed: Unknown
+
+Handle 0x00CF, DMI type 18, 23 bytes
+32-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: 0x00800000
+
+Handle 0x00D0, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0000009FFFF
+	Range Size: 640 kB
+	Physical Array Handle: 0x008E
+	Partition Width: 0
+
+Handle 0x00D1, DMI type 19, 31 bytes
+Memory Array Mapped Address
+	Starting Address: 0x00000100000
+	Ending Address: 0x0000FFFFFFF
+	Range Size: 255 MB
+	Physical Array Handle: 0x008E
+	Partition Width: 0
+
+Handle 0x00D2, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000000000
+	Ending Address: 0x0000009FFFF
+	Range Size: 640 kB
+	Physical Device Handle: 0x008F
+	Memory Array Mapped Address Handle: 0x00D0
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x00D3, DMI type 20, 35 bytes
+Memory Device Mapped Address
+	Starting Address: 0x00000100000
+	Ending Address: 0x0000FFFFFFF
+	Range Size: 255 MB
+	Physical Device Handle: 0x008F
+	Memory Array Mapped Address Handle: 0x00D1
+	Partition Row Position: Unknown
+	Interleave Position: Unknown
+	Interleaved Data Depth: Unknown
+
+Handle 0x00D4, DMI type 23, 13 bytes
+System Reset
+	Status: Enabled
+	Watchdog Timer: Present
+	Boot Option: Do Not Reboot
+	Boot Option On Limit: Do Not Reboot
+	Reset Count: Unknown
+	Reset Limit: Unknown
+	Timer Interval: Unknown
+	Timeout: Unknown
+
+Handle 0x00D5, DMI type 24, 5 bytes
+Hardware Security
+	Power-On Password Status: Disabled
+	Keyboard Password Status: Unknown
+	Administrator Password Status: Enabled
+	Front Panel Reset Status: Unknown
+
+Handle 0x00D6, DMI type 30, 6 bytes
+Out-of-band Remote Access
+	Manufacturer Name: Intel
+	Inbound Connection: Enabled
+	Outbound Connection: Disabled
+
+Handle 0x00D7, DMI type 32, 11 bytes
+System Boot Information
+	Status: No errors detected
+
+Handle 0x00D8, DMI type 33, 31 bytes
+64-bit Memory Error Information
+	Type: OK
+	Granularity: Unknown
+	Operation: Unknown
+	Vendor Syndrome: Unknown
+	Memory Array Address: Unknown
+	Device Address: Unknown
+	Resolution: Unknown
+
+Handle 0x00D9, DMI type 126, 4 bytes
+Inactive
+
+Handle 0x00DA, DMI type 127, 4 bytes
+End Of Table</textarea></td>
+	</tr>
+
+	</table>
+	</div></td><tr></table><br><BR>
+	<span class="title"> Partitionierungsinformation </span>
+	<br>
+<table align="center" ><tr><td><div class="subtable_shadow">
+<table class="subtable" align="center" >
+
+	<tr>
+		<td><br><span class="title">/dev/sda (21475 MB)</span><table id="fdiskbar" cellspacing="1" cellpadding="1" border="2" width="100%" height="40"><tr><td  
+onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-0-11.5')" onClick="emptySpace(0, 11.5, '/dev/sda')"
+ bgcolor="#FFFFFF" width="1%"><center><H3></H3></center></td><td  onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-11.5-1314')" onClick="selectPartition('/dev/sda1','/dev/sda')"  bgcolor="#9D2764" width="7%"><center><b>1</b><img width=16 height=16 src="images/info.png" title="/dev/sda1: Dateisystem: fat32" alt="/dev/sda1: Dateisystem: fat32"></center></td><td  
+onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-1314-1327')" onClick="emptySpace(1314, 1327, '/dev/sda')"
+ bgcolor="#FFFFFF" width="1%"><center><H3></H3></center></td><td  onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-1327-20137')" onClick="selectPartition('/dev/sda2','/dev/sda')"  bgcolor="#406BA9" width="88%"><center><b>2</b><img width=16 height=16 src="images/info.png" title="/dev/sda2: Dateisystem: ext4" alt="/dev/sda2: Dateisystem: ext4"><img width=16 height=16 src="images/instpart.png" title="Installationspartition" alt="Installationspartition"></center></td><td  
+onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-20137-20150')" onClick="emptySpace(20137, 20150, '/dev/sda')"
+ bgcolor="#FFFFFF" width="1%"><center><H3></H3></center></td><td  onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-20150-20652')" onClick="selectPartition('/dev/sda3','/dev/sda')"  bgcolor="#BCE408" width="3%"><center><b>3</b><img width=16 height=16 src="images/info.png" title="/dev/sda3: Dateisystem: linux-swap(v1)" alt="/dev/sda3: Dateisystem: linux-swap(v1)"><img width=16 height=16 src="images/swappart.png" title="Swappartition" alt="Swappartition"></center></td><td  
+onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-20652-20666')" onClick="emptySpace(20652, 20666, '/dev/sda')"
+ bgcolor="#FFFFFF" width="1%"><center><H3></H3></center></td><td  onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-20666-21147')" onClick="selectPartition('/dev/sda4','/dev/sda')"  bgcolor="#FFEC73" width="3%"><center><b>4</b><img width=16 height=16 src="images/info.png" title="/dev/sda4: Dateisystem: reiserfs Mountpunkt: /mnt/mini" alt="/dev/sda4: Dateisystem: reiserfs Mountpunkt: /mnt/mini"></center></td><td  
+onMouseOver="showPartTable('partTables/dev/sda'); markPartTableEntry('PartTableEntry0-21147-21475')" onClick="emptySpace(21147, 21475, '/dev/sda')"
+ bgcolor="#FFFFFF" width="2%"><center><H3></H3></center></td></tr></table><br>
+				<div name="partTables" id="partTables/dev/sda">
+					<span class="titlesmal">/dev/sda (21475 MB)</span>
+						<p><table class="partTables" align="center" border=0 cellspacing=5>
+		<tr>
+			<td width="10"></td>
+			<td><span class="subhighlight">Partition</span></td>
+			<td><span class="subhighlight">Typ</span></td>
+			<td><span class="subhighlight">Dateisystem</span></td>
+			<td><span class="subhighlight">Größe</span></td>
+			<td><span class="subhighlight">Bereich</span></td>
+		</tr>
+			<tr id="PartTableEntry0-0-11.5">
+				<td width="20" bgcolor="#FFFFFF"></td>
+				<td></td>
+				<td>Frei</td>
+				<td>kein Dateisystem</td>
+				<td>11.5</td>
+				<td>0 - 11.5</td>
+			</tr>
+			<tr id="PartTableEntry0-11.5-1314">
+				<td width="20" bgcolor="#9D2764"></td>
+				<td>/dev/sda1</td>
+				<td>UEFI-Partition</td>
+				<td>fat32</td>
+				<td>1302.5</td>
+				<td>11.5 - 1314</td>
+			</tr>
+			<tr id="PartTableEntry0-1314-1327">
+				<td width="20" bgcolor="#FFFFFF"></td>
+				<td></td>
+				<td>Frei</td>
+				<td>kein Dateisystem</td>
+				<td>13</td>
+				<td>1314 - 1327</td>
+			</tr>
+			<tr id="PartTableEntry0-1327-20137">
+				<td width="20" bgcolor="#406BA9"></td>
+				<td>/dev/sda2</td>
+				<td>UEFI-Partition</td>
+				<td>ext4</td>
+				<td>18810</td>
+				<td>1327 - 20137</td>
+			</tr>
+			<tr id="PartTableEntry0-20137-20150">
+				<td width="20" bgcolor="#FFFFFF"></td>
+				<td></td>
+				<td>Frei</td>
+				<td>kein Dateisystem</td>
+				<td>13</td>
+				<td>20137 - 20150</td>
+			</tr>
+			<tr id="PartTableEntry0-20150-20652">
+				<td width="20" bgcolor="#BCE408"></td>
+				<td>/dev/sda3</td>
+				<td>UEFI-Partition</td>
+				<td>linux-swap(v1)</td>
+				<td>502</td>
+				<td>20150 - 20652</td>
+			</tr>
+			<tr id="PartTableEntry0-20652-20666">
+				<td width="20" bgcolor="#FFFFFF"></td>
+				<td></td>
+				<td>Frei</td>
+				<td>kein Dateisystem</td>
+				<td>14</td>
+				<td>20652 - 20666</td>
+			</tr>
+			<tr id="PartTableEntry0-20666-21147">
+				<td width="20" bgcolor="#FFEC73"></td>
+				<td>/dev/sda4</td>
+				<td>UEFI-Partition</td>
+				<td>reiserfs</td>
+				<td>481</td>
+				<td>20666 - 21147</td>
+			</tr>
+			<tr id="PartTableEntry0-21147-21475">
+				<td width="20" bgcolor="#FFFFFF"></td>
+				<td></td>
+				<td>Frei</td>
+				<td>kein Dateisystem</td>
+				<td>328</td>
+				<td>21147 - 21475</td>
+			</tr></table></p>
+				<br>
+				</div><table cellspacing="4">
+			<tr>
+				<td width="20">&nbsp;&nbsp;</td>
+				<td width="20">&nbsp;&nbsp;</td>
+				<td><nobr><span class="titlesmal">Unterstützte Dateisysteme</span></nobr><br></td>
+			</tr>
+		
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#62A1FF">&nbsp;&nbsp;</td>
+					<td>ext2</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#5186D4">&nbsp;&nbsp;</td>
+					<td>ext3</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#406BA9">&nbsp;&nbsp;</td>
+					<td>ext4</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#BCE408">&nbsp;&nbsp;</td>
+					<td>linux-swap</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#FFEC73">&nbsp;&nbsp;</td>
+					<td>reiserfs</td>
+				</tr>
+			
+			<tr>
+				<td width="20">&nbsp;&nbsp;</td>
+				<td width="20">&nbsp;&nbsp;</td>
+				<td><nobr><span class="titlesmal">Nicht-Dateisysteme</span></nobr><br></td>
+			</tr>
+		
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#7FFFF2">&nbsp;&nbsp;</td>
+					<td>kein Dateisystem</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#FFFFFF">&nbsp;&nbsp;</td>
+					<td>free</td>
+				</tr>
+			
+				<tr>
+					<td width="20">&nbsp;&nbsp;</td>
+					<td width="20" bgcolor="#F0F0F0">&nbsp;&nbsp;</td>
+					<td>extfree</td>
+				</tr>
+			
+		</table></td>
+	</tr>
+</table></div></td><tr></table>
+<br><a href="index8bda.html?page=clientdetails&amp;client=ueficl0&amp;id=928#clientInformation"><img src="images/settings.png"> Zurück zum Kontrollzentrum <img src="images/settings.png"></a><br><br><br><br><a name="m23helpBox"></a>
+	<table class="helptable" align="left" border="0" cellspacing="5" id="ID_helpBox">
+<tr><td><p><span class="subhighlight">Hilfe: Hardware-Informationen<!--new v1.6-->
+</span></p><p>Sehen Sie hier Informationen über die in dem gewählten Client eingesetzte Hardware.</p></td></tr></TABLE>					</td>
+									</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+
+
+<!-- Mirrored from 192.168.1.23/m23admin/index.php?page=clientinfo&client=ueficl0&id=928&infoType=hardware by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2018 22:33:57 GMT -->
+</html>
